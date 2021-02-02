@@ -5,8 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BasePage {
     WebDriver driver;
 
-    public void setUp(WebDriver driver){
+    public BasePage(WebDriver driver){
         this.driver = driver;
     }
-
 }
