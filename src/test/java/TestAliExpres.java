@@ -6,9 +6,8 @@ public class TestAliExpres extends TestInit {
 
     public void startTest() {
         PageAliExpres pageAliExpres = new PageAliExpres (driver);
-        driver.get ("https://allo.ua/ru/kompjutery/");
+        openUrl ("https://allo.ua/ru/kompjutery/");
         pageAliExpres.serchFild ().click ();
         pageAliExpres.serchFild ().sendKeys ("холодильник");
     }
-
 }

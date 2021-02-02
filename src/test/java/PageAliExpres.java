@@ -9,11 +9,6 @@ public class PageAliExpres extends BasePage {
     }
 
     public WebElement serchFild() {
-        return driver.findElement (By.xpath ("//input[@id='search-form__input']"));
+        return findElement ("//input[@id='search-form__input']");
     }
-
-    public WebElement closeSpam() {
-        return driver.findElement (By.xpath ("//div[@id='cookies-banner__container__close-btn']"));
-    }
-
 }
