@@ -8,7 +8,11 @@ public class TestInit {
 
     @BeforeTest
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.chromedriver ().setup ();
+        driver = new ChromeDriver ();
+    }
+
+    public void openUrl(String site) {
+        driver.get (site);
     }
 }
