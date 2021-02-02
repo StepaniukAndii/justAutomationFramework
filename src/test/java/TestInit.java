@@ -7,7 +7,7 @@ public class TestInit {
     WebDriver driver;
 
     @BeforeTest
-    public void setapDriver() {
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
