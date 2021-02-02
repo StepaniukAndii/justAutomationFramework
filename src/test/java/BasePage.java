@@ -14,5 +14,4 @@ public class BasePage {
     public void findElement(String element){
         driver.findElement(By.xpath(element));
     }
-
 }

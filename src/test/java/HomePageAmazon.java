@@ -11,5 +11,4 @@ public class HomePageAmazon extends BasePage{
     public WebElement tapToSearchField(){
         return (WebElement) driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
     }
-
 }
