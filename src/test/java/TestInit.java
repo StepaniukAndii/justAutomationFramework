@@ -28,6 +28,5 @@ public class TestInit {
         Actions action = new Actions(driver);
         action.sendKeys(Keys.RETURN);
         action.perform();
-
     }
 }

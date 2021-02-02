@@ -11,7 +11,7 @@ public class BasePage {
         this.driver = driver;
     }
 
-    public void findElement(String element){
-        driver.findElement(By.xpath(element));
+    public void findElement(String locator){
+        driver.findElement(By.xpath(locator));
     }
 }
