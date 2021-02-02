@@ -24,6 +24,7 @@ public class TestInit {
         driver.get(Url);
     }
 
+//when you need to push the "enter"
     public void pushBtnReturn() {
         Actions action = new Actions(driver);
         action.sendKeys(Keys.RETURN);
