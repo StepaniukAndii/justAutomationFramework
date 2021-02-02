@@ -15,16 +15,17 @@ public class TestInit {
         driver = new ChromeDriver();
     }
 
+    public void openUrl(String site) {
+        driver.get(site);
+    }
+
     @AfterTest
     public void tearDown() {
         driver.quit();
     }
 
-    public void openUrl(String Url) {
-        driver.get(Url);
-    }
 
-//when you need to push the "enter"
+    //when you need to push the "enter"
     public void pushBtnReturn() {
         Actions action = new Actions(driver);
         action.sendKeys(Keys.RETURN);
