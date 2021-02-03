@@ -1,5 +1,4 @@
 package AliExpres;
-
 import BasePageAndTestInit.TestInit;
 import org.testng.annotations.Test;
 
