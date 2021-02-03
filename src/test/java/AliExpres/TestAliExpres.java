@@ -1,3 +1,6 @@
+package AliExpres;
+
+import BasePageAndTestInit.TestInit;
 import org.testng.annotations.Test;
 
 public class TestAliExpres extends TestInit {

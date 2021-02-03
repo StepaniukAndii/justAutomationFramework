@@ -1,11 +1,8 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+package BasePageAndTestInit;
+
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class TestAmazon extends TestInit{
+public class TestAmazon extends TestInit {
 
     @Test
     public void testCart(){

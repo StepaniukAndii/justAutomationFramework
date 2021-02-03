@@ -1,8 +1,9 @@
-import org.openqa.selenium.WebDriver;
+package BasePageAndTestInit;
+
 import org.testng.annotations.Test;
 
 
-public class TestFacebook extends TestInit{
+public class TestFacebook extends TestInit {
     @Test
         public void loginFacebook(){
         TestFacebook testFacebook = new TestFacebook();
