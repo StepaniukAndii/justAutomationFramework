@@ -8,12 +8,10 @@ public class HomePageRozetka extends BasePage {
 
     public WebElement searchFild() {
         return findElement("//input[@name='search']");
-
     }
 
     public WebElement getRefrigerator() {
        return findElement("//span[@class='goods-tile__title']");
-
     }
 
     public WebElement addCart() {
