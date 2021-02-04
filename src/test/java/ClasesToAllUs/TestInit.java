@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src/test/java/BasePageAndTestInit/TestInit.java
 package BasePageAndTestInit;
+=======
+package ClasesToAllUs;
+>>>>>>> master:src/test/java/ClasesToAllUs/TestInit.java
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Keys;
