@@ -27,10 +27,10 @@ public class HomePageAmazon extends BasePage{
     }
 
     public WebElement openCard() {
-        return driver.findElement(By.xpath("//a[@id='hlb-view-cart-announce']"));
+        return driver.findElement(By.xpath("//a[@class='nav-a nav-a-2 nav-progressive-attribute']"));
     }
 
-    public List<WebElement> itemsInCard() {
-        return driver.findElements(By.xpath("//div[@style='padding-left:190px']"));
+    public WebElement itemsInCard() {
+        return driver.findElement(By.xpath("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']"));
     }
 }
