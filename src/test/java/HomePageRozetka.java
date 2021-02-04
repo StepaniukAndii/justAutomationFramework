@@ -6,7 +6,7 @@ public class HomePageRozetka extends BasePage {
         super(driver);
     }
 
-    public WebElement surchFild() {
+    public WebElement searchFild() {
         return findElement("//input[@name='search']");
 
     }
@@ -16,9 +16,7 @@ public class HomePageRozetka extends BasePage {
 
     }
 
-    public WebElement addInBaskets() {
+    public WebElement addCart() {
         return findElement("//button[@class='buy-button button button_with_icon button_color_green button_size_large']");
     }
-
-
 }
