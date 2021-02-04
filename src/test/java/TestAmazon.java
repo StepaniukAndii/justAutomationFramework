@@ -27,8 +27,7 @@ public class TestAmazon extends TestInit{
         sleep(3);
         homePageAmazon.openCard();
         sleep(3);
-        Assert.assertTrue(driver.findElement
-                (By.xpath("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']")).isDisplayed());
-        System.out.println("Well Done!");
+        Assert.assertTrue(homePageAmazon.getElement(homePageAmazon.bigLocator).isDisplayed());
+        System.out.println("If you see this text, it means that the test - Well Done!");
     }
 }
