@@ -1,12 +1,10 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+package TestAmazon;
+
+
+import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.List;
-
-public class TestAmazon extends TestInit{
+public class TestAmazon extends TestInit {
 
     /**
      * @This my new test

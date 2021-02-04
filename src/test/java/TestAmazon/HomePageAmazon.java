@@ -1,4 +1,6 @@
-import org.openqa.selenium.By;
+package TestAmazon;
+
+import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
