@@ -1,18 +1,9 @@
-<<<<<<< HEAD:src/test/java/BasePageAndTestInit/BasePage.java
-package BasePageAndTestInit;
-=======
 package ClasesToAllUs;
->>>>>>> master:src/test/java/ClasesToAllUs/BasePage.java
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-<<<<<<< HEAD:src/test/java/BasePageAndTestInit/BasePage.java
-=======
-
 import java.util.List;
->>>>>>> master:src/test/java/ClasesToAllUs/BasePage.java
-
 
 public class BasePage {
     WebDriver driver;

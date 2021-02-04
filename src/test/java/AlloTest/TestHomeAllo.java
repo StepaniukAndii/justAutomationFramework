@@ -7,7 +7,7 @@ public class TestHomeAllo extends TestInitAllo {
     PageHomeAllo pageHomeAllo;
 
     @Test
-    public void checkAuthenticationButtonRegister(){
+    public void checkAuthenticationRegister(){
         pageHomeAllo = new PageHomeAllo(driver);
         pageHomeAllo.singIn().click();
         pageHomeAllo.loginTab().click();
@@ -42,6 +42,7 @@ public class TestHomeAllo extends TestInitAllo {
 
     @Test
     public void testSerch(){
+        pageHomeAllo = new PageHomeAllo(driver);
 
     }
 }

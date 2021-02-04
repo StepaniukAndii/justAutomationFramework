@@ -1,12 +1,4 @@
-<<<<<<< HEAD:src/test/java/BasePageAndTestInit/TestAmazon.java
-package BasePageAndTestInit;
-
-import org.testng.annotations.Test;
-
-public class TestAmazon extends TestInit {
-=======
 package TestAmazon;
-
 
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -16,7 +8,6 @@ public class TestAmazon extends TestInit {
     /**
      * @This my new test
      */
->>>>>>> master:src/test/java/TestAmazon/TestAmazon.java
 
     @Test
     public void testCart(){
