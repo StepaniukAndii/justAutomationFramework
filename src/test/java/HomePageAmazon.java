@@ -4,33 +4,42 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class HomePageAmazon extends BasePage{
+public class HomePageAmazon extends BasePage {
 
-    public HomePageAmazon(WebDriver driver){
+    public HomePageAmazon(WebDriver driver) {
         super(driver);
     }
-    public WebElement tapToSearchField(){
-        return driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+
+    public WebElement tapToSearchField() {
+        return getElement("//input[@id='twotabsearchtextbox']");
     }
+
     public WebElement addItemToCard() {
-        return driver.findElement(By.xpath("//input[@id='add-to-cart-button']"));
+        return getElement("//input[@id='add-to-cart-button']");
     }
+
     public WebElement chooseSize() {
-        return driver.findElement
-                (By.xpath("//span[@id='dropdown_selected_size_name']"));
+        return getElement("//span[@id='dropdown_selected_size_name']");
     }
-    public WebElement chooseSizeLargeX(){
-        return driver.findElement(By.xpath("//a[@id='native_dropdown_selected_size_name_4']"));
+
+    public WebElement chooseSizeLargeX() {
+        return getElement("//a[@id='native_dropdown_selected_size_name_4']");
     }
+
     public List<WebElement> chooseItem() {
-        return driver.findElements(By.xpath("//div[@class='a-section aok-relative s-image-square-aspect']"));
+        return getElements("//div[@class='a-section aok-relative s-image-square-aspect']");
     }
 
     public WebElement openCard() {
-        return driver.findElement(By.xpath("//a[@id='hlb-view-cart-announce']"));
+        return getElement("//a[@class='nav-a nav-a-2 nav-progressive-attribute']");
     }
 
-    public List<WebElement> itemsInCard() {
-        return driver.findElements(By.xpath("//div[@style='padding-left:190px']"));
+    public WebElement itemsInCard() {
+        return getElement("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
     }
+
+    public WebElement openCart() {
+        return getElement("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
+    }
+    String bigLocator = "//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']";
 }
