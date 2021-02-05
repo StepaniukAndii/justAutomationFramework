@@ -1,6 +1,5 @@
 package TestAmazon;
 
-
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
