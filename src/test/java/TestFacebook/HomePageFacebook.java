@@ -1,3 +1,5 @@
+package TestFacebook;
+
 import org.openqa.selenium.WebDriver;
 
 public class HomePageFacebook extends BasePage {
