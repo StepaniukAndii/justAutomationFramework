@@ -5,7 +5,11 @@ import org.testng.annotations.Test;
 public class TestFacebook extends TestInit{
     @Test
         public void loginFacebook(){
-        TestFacebook testFacebook = new TestFacebook();
+
+    HomePageFacebook homePageFacebook = new HomePageFacebook(driver);
+
+    openUrl("https://www.facebook.com/");
+    homePageFacebook.ta
 
 
 
