@@ -1,8 +1,9 @@
+import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-public class TestRozetka extends TestInit{
+public class TestRozetka extends TestInit {
     @Test
     public void testRozetka() {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -12,6 +13,6 @@ public class TestRozetka extends TestInit{
         homePageRozetka.searchFild().sendKeys("холодильник\n");
         homePageRozetka.getRefrigerator().click();
         homePageRozetka.addCart().click();
-        Assert.assertTrue((homePageRozetka.findElement("//a[@class='cart-product__title']")).isDisplayed());
+        Assert.assertTrue((homePageRozetka.getElement("//a[@class='cart-product__title']")).isDisplayed());
     }
 }

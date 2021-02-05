@@ -1,10 +1,11 @@
-package TestAmazon;
+package TestAmazon.AllTest;
 
 
 import ClasesToAllUs.TestInit;
+import TestAmazon.Pages.HomePage.HomePageAmazon;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-public class TestAmazon extends TestInit {
+public class TestAmazonCart extends TestInit {
 
     /**
      * @This my new test
