@@ -1,6 +1,5 @@
 package TestAmazon.AllTest;
 
-
 import ClasesToAllUs.TestInit;
 import TestAmazon.Pages.HomePage.HomePageAmazon;
 import org.testng.Assert;
