@@ -1,11 +1,14 @@
+package TestRozetka;
+
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-public class TestRozetka extends TestInit {
+public class testRozetkaCart extends TestInit {
+
     @Test
-    public void testRozetka() {
+    public void testRozetkaCart() {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
         openUrl("https://rozetka.com.ua");
