@@ -1,10 +1,14 @@
+package TestRozetka;
+
+import ClasesToAllUs.TestInit;
+import TestRozetka.HomePageRozetka;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-public class TestRozetka extends TestInit{
+public class TestRozetkaCart extends TestInit {
     @Test
-    public void testRozetka() {
+    public void testRozetkaCart() {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
         openUrl("https://rozetka.com.ua");
@@ -12,6 +16,6 @@ public class TestRozetka extends TestInit{
         homePageRozetka.searchFild().sendKeys("холодильник\n");
         homePageRozetka.getRefrigerator().click();
         homePageRozetka.addCart().click();
-        Assert.assertTrue((homePageRozetka.findElement("//a[@class='cart-product__title']")).isDisplayed());
+        Assert.assertTrue((homePageRozetka.getElement("//a[@class='cart-product__title']")).isDisplayed());
     }
 }

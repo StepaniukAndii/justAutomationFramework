@@ -8,6 +8,4 @@ public class HomePageFacebook extends BasePage {
     public HomePageFacebook(WebDriver d) {
         super(d);
     }
-
-
 }
