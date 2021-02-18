@@ -32,11 +32,21 @@ public class HomePageRozetka extends BasePage {
     }
 
     public WebElement filterGamer() {
-        return getElement("//a[@class='menu-categories__link js-menu-categories__link menu-categories__link_state_hovered']");
+        return getElement("//a[@href='https://rozetka.com.ua/ua/telefony-tv-i-ehlektronika/c4627949/']");
     }
 
+    public WebElement getPhoneProductCatalog() {
+        return getElement("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']");
+    }
+
+    public List<WebElement> getAllCheckBox() {
+        return getElements("//a[@class='checkbox-filter__link']");
+    }
+
+
+
     public WebElement productCatalog() {
-        return getElement("//span[@class='menu-toggler__text']");
+        return getElement("//button[@class='menu-toggler']");
     }
 
 
@@ -44,19 +54,5 @@ public class HomePageRozetka extends BasePage {
         return getElements("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
     }
 
-    public void checkCorrectElements() {
-        LinkedList<String> listElements = new LinkedList<String>();
-        for (WebElement element : getElementsRefrigerator()) {
-             listElements.add(element.getAttribute("title"));
-        }
 
-        for (String elem : listElements) {
-            if (elem.contains("Машина")) {
-                System.out.println("");
-            } else {
-                System.out.println("dfsf");
-            }
-        }
-
-    }
 }

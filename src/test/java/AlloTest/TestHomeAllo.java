@@ -1,8 +1,9 @@
 package AlloTest;
 
+import ClasesToAllUs.TestInit;
 import org.testng.annotations.Test;
 
-public class TestHomeAllo extends TestInitAllo {
+public class TestHomeAllo extends TestInit {
 
     PageHomeAllo pageHomeAllo;
 
