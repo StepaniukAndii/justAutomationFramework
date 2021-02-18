@@ -13,7 +13,7 @@ public class TestRozetkaCart extends TestInit {
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
         openUrl("https://rozetka.com.ua");
         homePageRozetka.searchFild().click();
-        homePageRozetka.searchFild().sendKeys("холодильник\n");
+        homePageRozetka.searchFild().sendKeys(homePageRozetka.goods+"\n");
         homePageRozetka.getRefrigerator().click();
         homePageRozetka.addCart().click();
         Assert.assertTrue((homePageRozetka.getElement("//a[@class='cart-product__title']")).isDisplayed());

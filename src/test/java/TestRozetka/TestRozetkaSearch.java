@@ -12,7 +12,7 @@ public class TestRozetkaSearch extends TestInit {
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
         openUrl("https://rozetka.com.ua");
         homePageRozetka.searchFild().click();
-        homePageRozetka.searchFild().sendKeys(homePageRozetka.gools);
+        homePageRozetka.searchFild().sendKeys(homePageRozetka.goods);
         homePageRozetka.getButtonFild().click();
         List<String> elements = getAllElementsWithAttribute(homePageRozetka.getElementsRefrigerator(),"title");
         boolean result = false;

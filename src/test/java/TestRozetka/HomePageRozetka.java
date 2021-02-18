@@ -9,7 +9,7 @@ import java.util.List;
 
 public class HomePageRozetka extends BasePage {
 
-    public String gools = "Холодильник";
+    public String goods = "Холодильник";
 
     public HomePageRozetka(WebDriver driver) {
         super(driver);
