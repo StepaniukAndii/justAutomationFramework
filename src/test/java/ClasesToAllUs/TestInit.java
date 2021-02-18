@@ -9,6 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class TestInit {
     public WebDriver driver;
 
@@ -44,5 +47,13 @@ public class TestInit {
     public void moveMouseToElement(WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
+    }
+
+    public List<String> getAllElementsWithAttribute(List<WebElement> webElementList, String attribute) {
+        LinkedList<String> listElements = new LinkedList<String>();
+        for (WebElement element : webElementList) {
+            listElements.add(element.getAttribute(attribute));
+        }
+        return listElements;
     }
 }

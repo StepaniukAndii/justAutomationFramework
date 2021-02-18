@@ -20,11 +20,10 @@ public class TestAmazonCart extends TestInit {
         homePageAmazon.chooseSize().click();
         homePageAmazon.chooseSizeLargeX().click();
         moveMouseToElement(homePageAmazon.addItemToCard()); //In this method we move mouse
-        sleep(3);
+        sleep(2);
         homePageAmazon.addItemToCard().click();
-        sleep(3);
         homePageAmazon.openCard();
-        sleep(3);
+        sleep(2);
         Assert.assertTrue(homePageAmazon.getElement(homePageAmazon.bigLocator).isDisplayed());
         System.out.println("If you see this text, it means that the test - Well Done!");
     }

@@ -1,6 +1,5 @@
 package TestFacebook;
 
-
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 
