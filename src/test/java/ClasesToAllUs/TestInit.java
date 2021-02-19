@@ -49,9 +49,6 @@ public class TestInit {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
-<<<<<<< HEAD
-}
-=======
 
     public List<String> getAllElementsWithAttribute(List<WebElement> webElementList, String attribute) {
         LinkedList<String> listElements = new LinkedList<String>();
@@ -61,4 +58,3 @@ public class TestInit {
         return listElements;
     }
 }
->>>>>>> 6a648aa9c562620edbd5e3cb1b4c0185d475653d
