@@ -16,7 +16,7 @@ public class TestAmazonCart extends TestInit {
         openUrl("https://www.amazon.com/");
         homePageAmazon.tapToSearchField().sendKeys("caps");
         pushBtnReturn();
-        homePageAmazon.chooseItem().get(0).click();
+        homePageAmazon.chooseItem().get(1).click();
         homePageAmazon.chooseSize().click();
         homePageAmazon.chooseSizeLargeX().click();
         moveMouseToElement(homePageAmazon.addItemToCard()); //In this method we move mouse
