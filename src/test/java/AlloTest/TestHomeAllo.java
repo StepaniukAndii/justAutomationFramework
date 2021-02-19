@@ -1,11 +1,9 @@
 package AlloTest;
 
 import ClasesToAllUs.TestInit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class TestHomeAllo extends TestInit{
+public class TestHomeAllo extends TestInit {
 
     PageHomeAllo pageHomeAllo;
 
