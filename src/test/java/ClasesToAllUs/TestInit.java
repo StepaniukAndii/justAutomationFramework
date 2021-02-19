@@ -22,10 +22,10 @@ public class TestInit {
         driver.get(site);
     }
 
-    @AfterTest
-    public void tearDown() {
-        driver.quit();
-    }
+//    @AfterTest
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
     //when you need to push the "enter"
     public void pushBtnReturn() {
@@ -41,7 +41,7 @@ public class TestInit {
             e.printStackTrace();
         }
     }
-    public void moveMouseToElement(WebElement element){
+    public void moveMouseToElement(WebElement element) {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
