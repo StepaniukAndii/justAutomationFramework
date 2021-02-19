@@ -1,4 +1,4 @@
-package TestAmazon;
+package TestAmazon.Pages.HomePage;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -43,5 +43,13 @@ public class HomePageAmazon extends BasePage {
     public WebElement openCart() {
         return getElement("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
     }
-    String bigLocator = "//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']";
+    public String bigLocator = "//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']";
+
+    public WebElement sortByPrice() {
+        return getElement("//div[@class='a-carousel-col a-carousel-center']//*[contains(text(),'$25 to $50')]");
+    }
+
+    public WebElement clickToPageNumb3() {
+        return getElement("//li[@class='a-normal']//*[contains(text(),'3')]");
+    }
 }

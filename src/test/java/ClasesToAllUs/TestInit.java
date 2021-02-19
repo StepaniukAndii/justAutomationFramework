@@ -19,6 +19,7 @@ public class TestInit {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
 
     public void openUrl(String site) {
