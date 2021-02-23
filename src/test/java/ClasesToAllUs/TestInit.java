@@ -16,6 +16,9 @@ public class TestInit {
     public WebDriver driver;
     ChromeOptions options = new ChromeOptions();
 
+//    put false here if you want to see browser)
+    boolean headless = true;
+
     @BeforeTest
     public void setUp() {
 //        if webdriver manager worrk fine, there is a bug at the moment
@@ -35,7 +38,9 @@ public class TestInit {
 
     private void setProperty(String path) {
         System.setProperty("webdriver.chrome.driver", path);
-        options.addArguments("--headless");
+        if (headless){
+            options.addArguments("--headless");
+        }
     }
 
     private boolean isOSWindows() {
