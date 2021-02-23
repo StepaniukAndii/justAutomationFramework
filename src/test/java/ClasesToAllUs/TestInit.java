@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -13,22 +14,33 @@ import java.util.List;
 
 public class TestInit {
     public WebDriver driver;
+    ChromeOptions options = new ChromeOptions();
+
+//    put false here if you want to see browser)
+    boolean headless = true;
 
     @BeforeTest
     public void setUp() {
-//        if webdriver manager
+//        if webdriver manager worrk fine, there is a bug at the moment
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
-            System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver_88_mac");
+            setProperty("src/test/drivers/chromedriver_88_mac");
         }else if (isOSWindows()){
-            System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver_88_windows.exe");
+            setProperty("src/test/drivers/chromedriver_88_windows.exe");
         }else {
-            System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver_88_linux");
+            setProperty("src/test/drivers/chromedriver_88_linux");
         }
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
+    }
+
+    private void setProperty(String path) {
+        System.setProperty("webdriver.chrome.driver", path);
+        if (headless){
+            options.addArguments("--headless");
+        }
     }
 
     private boolean isOSWindows() {
