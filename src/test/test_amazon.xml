@@ -3,8 +3,8 @@
 <suite name="TestAllSuite">
     <test name="Amazon tests">
         <classes>
-            <class name="TestAmazon.AllTest.TestAmazonCart"/>
-            <class name="TestAmazon.AllTest.TestCategoryElectronics"/>
+<!--            <class name="TestAmazon.AllTest.TestAmazonCart"/>-->
+<!--            <class name="TestAmazon.AllTest.TestCategoryElectronics"/>-->
             <class name="TestAmazon.AllTest.TestSearchField"/>
         </classes>
     </test>
