@@ -1,6 +1,5 @@
 package ClasesToAllUs;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,9 +16,31 @@ public class TestInit {
 
     @BeforeTest
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
+//        if webdriver manager
+//        WebDriverManager.chromedriver_88_mac().setup();
+
+        if (isOSMac()){
+            System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver_88_mac");
+        }else if (isOSWindows()){
+            System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver_88_windows.exe");
+        }else {
+            System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver_88_linux");
+        }
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+    }
+
+    private boolean isOSWindows() {
+        return getOSName().contains("win");
+    }
+
+    private boolean isOSMac() {
+        return getOSName().contains("mac");
+    }
+
+    private String getOSName() {
+        return System.getProperty("os.name").toLowerCase();
     }
 
     public void openUrl(String site) {
