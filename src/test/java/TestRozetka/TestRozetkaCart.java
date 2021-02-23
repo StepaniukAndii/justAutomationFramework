@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-public class testRozetkaCart extends TestInit {
+public class TestRozetkaCart extends TestInit {
 
     @Test
     public void testRozetkaCart() {
