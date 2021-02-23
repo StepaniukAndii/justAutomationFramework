@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import java.util.LinkedList;
@@ -19,7 +20,7 @@ public class TestInit {
 //    put false here if you want to see browser)
     boolean headless = true;
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp() {
 //        if webdriver manager worrk fine, there is a bug at the moment
 //        WebDriverManager.chromedriver_88_mac().setup();
