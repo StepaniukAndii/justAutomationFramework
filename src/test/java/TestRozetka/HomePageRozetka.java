@@ -1,8 +1,11 @@
 package TestRozetka;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -46,7 +49,10 @@ public class HomePageRozetka extends BasePage {
 
 
     public WebElement productCatalog() {
-        return getElement("//button[@class='menu-toggler']");
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        captureScreen();
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(getElement("//button[@id='fat-menu']")));
+        return element;
     }
 
 

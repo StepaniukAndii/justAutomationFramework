@@ -16,6 +16,7 @@ public class TestRozetkaSearch extends TestInit {
         homePageRozetka.getButtonFild().click();
         List<String> elements = getAllElementsWithAttribute(homePageRozetka.getElementsRefrigerator(),"title");
         boolean result = false;
+        sleep(2);
         for (String element : elements) {
             if (element.contains("Холодильник")) {
                result = true;
