@@ -16,8 +16,7 @@ public class TestCategoryElectronics extends TestInit {
         electronicsPage.tapToCategoryElectronics().click();
         sleep(3);
         electronicsPage.tapToCatPortableAudioVideo().click();
-        sleep(3);
         electronicsPage.tapToFeatureBrands().click();
-        Assert.assertTrue(electronicsPage.getResultList().get(1).isDisplayed());
+        Assert.assertTrue(electronicsPage.getResultList().get(0).isDisplayed());
     }
 }

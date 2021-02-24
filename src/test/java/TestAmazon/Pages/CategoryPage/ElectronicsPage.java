@@ -25,6 +25,6 @@ public class ElectronicsPage extends BasePage {
     }
 
     public List<WebElement> getResultList() {
-        return getElements("//div[@class='s-include-content-margin s-border-bottom s-latency-cf-section']");
+        return getElements("//div[@class='s-expand-height s-include-content-margin s-border-bottom s-latency-cf-section']");
     }
 }
