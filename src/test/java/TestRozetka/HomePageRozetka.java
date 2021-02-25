@@ -35,11 +35,11 @@ public class HomePageRozetka extends BasePage {
     }
 
     public WebElement filterGamer() {
-        return getElement("//a[@href='https://rozetka.com.ua/ua/telefony-tv-i-ehlektronika/c4627949/']");
+        return getElement("//a[text()=' Смартфони, ТВ і електроніка ']");
     }
 
     public WebElement getPhoneProductCatalog() {
-        return getElement("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']");
+        return getElement("//li[@class='fat-popular__item']/a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/filter/']");
     }
 
     public List<WebElement> getAllCheckBox() {

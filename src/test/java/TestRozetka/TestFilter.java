@@ -10,12 +10,7 @@ public class TestFilter extends TestInit {
     public void testFilterRozetka() {
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
         openUrl("https://rozetka.com.ua");
-        homePageRozetka.productCatalog().click();
-        moveMouseToElement(homePageRozetka.filterGamer());
+        homePageRozetka.filterGamer().click();
         homePageRozetka.getPhoneProductCatalog().click();
-        sleep(5);
-        for (int i=3;i<5;i++) {
-           homePageRozetka.getAllCheckBox().get(i).click();
-        }
     }
 }
