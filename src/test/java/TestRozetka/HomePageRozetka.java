@@ -12,6 +12,8 @@ import java.util.List;
 
 public class HomePageRozetka extends BasePage {
 
+    WebDriverWait wait = new WebDriverWait(driver, 10);
+
     public String gools = "Холодильник";
 
     public HomePageRozetka(WebDriver driver) {
@@ -34,25 +36,25 @@ public class HomePageRozetka extends BasePage {
         return getElement("//button[@class='button button_color_green button_size_medium search-form__submit']");
     }
 
-    public WebElement filterGamer() {
-        return getElement("//a[text()=' Смартфони, ТВ і електроніка ']");
+    public WebElement getPhone() {
+        return wait.until(ExpectedConditions.
+                elementToBeClickable(By.xpath("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']")));
     }
 
     public WebElement getPhoneProductCatalog() {
-        return getElement("//li[@class='fat-popular__item']/a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/filter/']");
+        return wait.until(ExpectedConditions.
+                elementToBeClickable(By.xpath("//a[text()='Смартфони, ТВ і електроніка']")));
     }
 
-    public List<WebElement> getAllCheckBox() {
-        return getElements("//a[@class='checkbox-filter__link']");
+    public WebElement getCheckBoxApple() {
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='Apple']")));
+
     }
 
 
 
     public WebElement productCatalog() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        captureScreen();
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(getElement("//button[@id='fat-menu']")));
-        return element;
+       return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
     }
 
 
