@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.LinkedList;
 import java.util.List;
 
 public class HomePageRozetka extends BasePage {
@@ -51,16 +49,11 @@ public class HomePageRozetka extends BasePage {
 
     }
 
-
-
     public WebElement productCatalog() {
        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
     }
 
-
     public List<WebElement> getElementsRefrigerator() {
         return getElements("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
     }
-
-
 }
