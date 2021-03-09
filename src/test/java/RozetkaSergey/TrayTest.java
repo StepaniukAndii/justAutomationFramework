@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TrayTestddsfsddsfwq            qw extends TestInit {
+public class TrayTest extends TestInit {
     @Test
     public void ersTest() {
         googleIt("Розетка");
