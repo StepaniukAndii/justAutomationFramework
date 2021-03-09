@@ -1,8 +1,9 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 public class TestRozetkaSearch extends TestInit {
 
@@ -13,6 +14,16 @@ public class TestRozetkaSearch extends TestInit {
         homePageRozetka.searchFild().click();
         homePageRozetka.searchFild().sendKeys(homePageRozetka.gools);
         homePageRozetka.getButtonFild().click();
-        homePageRozetka.checkCorrectElements();
+        List<String> elements = getAllElementsWithAttribute(homePageRozetka.getElementsRefrigerator(),"title");
+        boolean result = false;
+        for (String element : elements) {
+            if (element.contains("Холодильник")) {
+               result = true;
+            } else {
+                result=false;
+                break;
+            }
+        }
+        Assert.assertTrue(result);
     }
 }

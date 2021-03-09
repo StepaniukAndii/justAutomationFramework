@@ -1,12 +1,12 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
-import TestRozetka.HomePageRozetka;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class TestRozetkaCart extends TestInit {
+
     @Test
     public void testRozetkaCart() {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
