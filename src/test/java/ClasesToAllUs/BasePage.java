@@ -1,20 +1,37 @@
 package ClasesToAllUs;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.remote.Augmenter;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 public class BasePage {
-    WebDriver driver;
+    public WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public WebElement getElement(String locator) {
-        return driver.findElement (By.xpath (locator));
+    public String captureScreen() {
+        String path;
+        try {
+            WebDriver augmentedDriver = new Augmenter().augment(driver);
+            File source = ((TakesScreenshot)augmentedDriver).getScreenshotAs(OutputType.FILE);
+            path = "./target/screenshots/" + source.getName();
+            FileUtils.copyFile(source, new File(path));
+        }
+        catch(IOException e) {
+            path = "Failed to capture screenshot: " + e.getMessage();
+        }
+        return path;
     }
+
+    public WebElement getElement(String locator) {
+        return driver.findElement(By.xpath(locator));
+    }
+
     public List<WebElement> getElements(String locator) {
         return driver.findElements(By.xpath(locator));
     }
