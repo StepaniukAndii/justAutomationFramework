@@ -13,9 +13,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class OlxTest  {
-
-
+public class OlxTest {
 
     @Test
     public void justTest() {
@@ -31,15 +29,9 @@ public class OlxTest  {
         chooseWithImage().click();
         chooseRubric().click();
         moveMouseToElement(driver.findElement(By.xpath("")));
-
-
-
-
     }
 
-
-
-    public void moveMouseToElement (WebElement element) {
+    public void moveMouseToElement(WebElement element) {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
@@ -59,7 +51,6 @@ public class OlxTest  {
     public WebElement olxSearchField() {
         return getElement("//input[@id='headerSearch']");
     }
-
 
     public WebElement goToOlx() {
         return getElement("//span[text()='Сервис объявлений OLX: сайт объявлений в Украине ...']");
@@ -83,7 +74,6 @@ public class OlxTest  {
 
     WebDriver driver;
 
-
     @BeforeTest
     public void beforeTest() {
         WebDriverManager.chromedriver().setup();
@@ -100,10 +90,10 @@ public class OlxTest  {
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.RETURN);
         actions.perform();
-
     }
+
     public WebElement getElement(String locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 10 );
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 }
