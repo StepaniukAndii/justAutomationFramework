@@ -8,7 +8,7 @@ public class TestHomeAllo extends TestInit {
     PageHomeAllo pageHomeAllo;
 
     @Test
-    public void checkAuthenticationRegister() {
+    public void checkAuthenticationRegister(){
         pageHomeAllo = new PageHomeAllo(driver);
         openUrl("https://allo.ua/ru/");
         pageHomeAllo.singIn().click();
@@ -25,7 +25,7 @@ public class TestHomeAllo extends TestInit {
     }
 
     @Test
-    public void checkCategories() {
+    public void checkCategories(){
         pageHomeAllo = new PageHomeAllo(driver);
         openUrl("https://allo.ua/ru/");
         pageHomeAllo.logo().click();
@@ -48,7 +48,7 @@ public class TestHomeAllo extends TestInit {
     }
 
     @Test
-    public void testAddItemsInBasket() {
+    public void testAddItemsInBasket(){
         pageHomeAllo = new PageHomeAllo (driver);
         openUrl("https://allo.ua/ru/");
         pageHomeAllo.serchFild().sendKeys("Холодильник");
