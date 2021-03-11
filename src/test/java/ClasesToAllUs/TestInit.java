@@ -32,7 +32,12 @@ public class TestInit {
         }
 
         driver = new ChromeDriver(options);
-        driver.manage().window().setSize(new Dimension(1920, 1200));
+        if(headless) {
+            driver.manage().window().setSize(new Dimension(1920, 1200));
+        } else {
+            driver.manage().window().maximize();
+        }
+
     }
 
     private void setProperty(String path) {

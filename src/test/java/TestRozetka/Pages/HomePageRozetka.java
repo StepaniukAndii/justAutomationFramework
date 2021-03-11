@@ -1,4 +1,4 @@
-package TestRozetka;
+package TestRozetka.Pages;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
@@ -65,5 +65,10 @@ public class HomePageRozetka extends BasePage {
     public WebElement contacts() {
         return wait.until(ExpectedConditions.elementToBeClickable
                 (By.xpath("//a[@href='https://rozetka.com.ua/contacts/']")));
+    }
+
+    public WebElement advertisingOnHome() {
+        return wait.until(ExpectedConditions.elementToBeClickable
+                (By.xpath("//a[@id='rz-banner']")));
     }
 }
