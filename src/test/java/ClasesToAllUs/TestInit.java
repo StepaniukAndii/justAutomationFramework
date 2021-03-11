@@ -1,14 +1,16 @@
 package ClasesToAllUs;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,16 +24,15 @@ public class TestInit {
         driver.manage().window().maximize();
     }
 
+    @AfterTest
+    public void reportReady() {
+        System.out.println("Report is ready, you best");
+    }
+
     public void openUrl(String site) {
         driver.get(site);
     }
 
-//    @AfterTest
-//    public void tearDown() {
-//        driver.quit();
-//    }
-
-    //when you need to push the "enter"
     public void pushBtnReturn() {
         Actions action = new Actions(driver);
         action.sendKeys(Keys.RETURN);

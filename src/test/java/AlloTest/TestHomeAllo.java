@@ -56,10 +56,12 @@ public class TestHomeAllo extends TestInit {
         sleep (2);
         pageHomeAllo.oneItem().click();
         pageHomeAllo.buttonBay().click();
-        pageHomeAllo.serchFild().sendKeys("Холодильник");
+        pageHomeAllo.buttonComeback().click();
+        pageHomeAllo.serchFild().sendKeys("Наушники");
         pageHomeAllo.buttonSerch().click();
         sleep (2);
         pageHomeAllo.oneItem().click();
         pageHomeAllo.buttonBay().click();
+        pageHomeAllo.buttonComeback().click();
     }
 }
