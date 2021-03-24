@@ -49,8 +49,7 @@ public class OlxTest extends TestInit {
     }
 
     public WebElement goToOlx() {
-        return getElement("//span[text()='Сервис объявлений OLX: сайт объявлений в Украине ...']");
-    }
+        return getElement("//span[text()='Сервис объявлений OLX: сайт объявлений в Украине ...']");    }
 
     public void entryGoogle() {
         driver.get("https://google.com");
@@ -68,9 +67,3 @@ public class OlxTest extends TestInit {
         }
     }
 }
-
-
-
-
-
-
