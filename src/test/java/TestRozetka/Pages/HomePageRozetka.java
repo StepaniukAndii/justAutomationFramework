@@ -62,6 +62,10 @@ public class HomePageRozetka extends BasePage {
         return getElements("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
     }
 
+    public List<WebElement> getElementsGoods() {
+        return getElements("//div[@class='goods-tile__inner']");
+    }
+
     public WebElement contacts() {
         return wait.until(ExpectedConditions.elementToBeClickable
                 (By.xpath("//a[@href='https://rozetka.com.ua/contacts/']")));

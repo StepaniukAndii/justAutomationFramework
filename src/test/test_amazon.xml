@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestAllSuite">
-    <test name="Amazon tests">
+    <test name="Amazon tests" parallel="methods" thread-count="2">
         <classes>
 <!--            <class name="TestAmazon.AllTest.TestAmazonCart"/>-->
-<!--            <class name="TestAmazon.AllTest.TestCategoryElectronics"/>-->
             <class name="TestAmazon.AllTest.TestSearchField"/>
+           <class name="TestAmazon.AllTest.TestCategoryElectronics"/>
+
         </classes>
     </test>
 </suite>
