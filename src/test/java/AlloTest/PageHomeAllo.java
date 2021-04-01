@@ -4,6 +4,10 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class PageHomeAllo extends BasePage{
 
@@ -15,7 +19,7 @@ public class PageHomeAllo extends BasePage{
         return getElement ("//button[@class='authentication__button--login']");
     }
 
-    public WebElement loginTab() {
+    public WebElement loginTab(){
         return getElement ("//div[@class='v-modal__cmp-body']//li[@class='login-tab']");
     }
 
@@ -27,7 +31,7 @@ public class PageHomeAllo extends BasePage{
         return getElement ("//input[@id='v-register_telephone_number']");
     }
 
-    public WebElement enterEmail() {
+    public WebElement enterEmail(){
         return getElement ("//input[@id='v-register-email']");
     }
 
@@ -39,7 +43,7 @@ public class PageHomeAllo extends BasePage{
        System.out.println ("Test Complite");
     }
 
-    public WebElement logo() {
+    public WebElement logo(){
         return getElement("//div[@class='v-header__line v-header__line--second page-container main-header-second-line']/a[@class='header-logo__link']");
     }
 
@@ -71,22 +75,37 @@ public class PageHomeAllo extends BasePage{
         return getElement ("//input[@id='search-form__input']");
     }
 
-    public WebElement showPass() {
+    public WebElement showPass(){
         return getElement ("//span[@class='password-eye']");
     }
 
-    public WebElement buttonSerch() {
+    public WebElement buttonSerch(){
         return getElement ("//button[@class='search-form__submit-button search-form__submit-button--active']");
     }
 
-    public WebElement oneItem() {
+    public WebElement oneItem(){
         return getElement ("//div[@class='products-layout__container products-layout--grid']/div[2]");
     }
 
-    public WebElement buttonBay() {
+    public WebElement buttonBay(){
         return getElement ("//button[@id='product-buy-button']");
     }
-    public WebElement buttonComeback() {
+
+    public WebElement bayWindowClose(){
         return getElement ("//button[@class='comeback']");
     }
+
+    public WebElement aLotOfItems(){
+        return getElement ("//ul[@id='breadcrumbs']/li[2]");
+    }
+
+    public WebElement basked(){
+        return getElement ("//div[@class='shopping-cart']");
+    }
+
+    public List<WebElement> itemListInBasked(){
+        return  getElements ("//ul[@class='products__list']/li");
+    }
+
 }
+
