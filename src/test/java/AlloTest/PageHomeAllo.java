@@ -4,6 +4,10 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class PageHomeAllo extends BasePage{
 
@@ -86,7 +90,22 @@ public class PageHomeAllo extends BasePage{
     public WebElement buttonBay(){
         return getElement ("//button[@id='product-buy-button']");
     }
-    public WebElement buttonComeback(){
+
+    public WebElement bayWindowClose(){
         return getElement ("//button[@class='comeback']");
     }
+
+    public WebElement aLotOfItems(){
+        return getElement ("//ul[@id='breadcrumbs']/li[2]");
+    }
+
+    public WebElement basked(){
+        return getElement ("//div[@class='shopping-cart']");
+    }
+
+    public List<WebElement> itemListInBasked(){
+        return  getElements ("//ul[@class='products__list']/li");
+    }
+
 }
+

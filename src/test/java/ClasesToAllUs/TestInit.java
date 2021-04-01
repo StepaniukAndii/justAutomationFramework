@@ -86,7 +86,7 @@ public class TestInit {
         getGoogleSearchField().sendKeys(textToGoogle + "\n");
     }
 
-    public void navigationGoogle() {
+    private void navigationGoogle() {
         driver.get("https://google.com");
     }
     private WebElement getGoogleSearchField() {
