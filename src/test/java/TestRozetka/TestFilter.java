@@ -1,6 +1,7 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
+import TestRozetka.Pages.HomePageRozetka;
 import org.testng.annotations.Test;
 
 public class TestFilter extends TestInit {

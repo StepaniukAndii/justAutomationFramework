@@ -1,6 +1,8 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
+import TestRozetka.Pages.ContacsPageRozetka;
+import TestRozetka.Pages.HomePageRozetka;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
