@@ -20,7 +20,7 @@ public class TestInit {
 
     @BeforeMethod
     public void setUp() {
-//        if webdriver manager worrk fine, there is a bug at the moment
+//        if webdriver manager work fine, there is a bug at the moment
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
