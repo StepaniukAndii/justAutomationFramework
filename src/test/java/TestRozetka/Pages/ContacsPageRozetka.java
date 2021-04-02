@@ -1,4 +1,4 @@
-package TestRozetka;
+package TestRozetka.Pages;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
