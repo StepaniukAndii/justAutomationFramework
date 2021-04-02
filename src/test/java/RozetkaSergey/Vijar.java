@@ -25,5 +25,28 @@ public class Vijar extends TestInit {
         homePageVijar.closeAdverb().click();
         System.out.println("Sehr gut!");
     }
-}
 
+    public WebElement goToVijar() {
+        return driver.findElement(By.xpath("//*[@class='LC20lb DKV0Md' and text()='Вияр - интернет-магазин мебельной фурнитуры. Все ...']"));
+    }
+
+    public WebElement goToEnter() {
+        return driver.findElement(By.xpath("//div[@class='login-in']//a[@id='modal_ancor']"));
+    }
+
+    public WebElement closeAdverb() {
+        return driver.findElement(By.xpath("//img[@src='/img/close_white-24px.svg']"));
+    }
+
+    public WebElement getLogin() {
+        return driver.findElement(By.xpath("//input[@class='flat_input login']"));
+    }
+
+    public WebElement getPass() {
+        return driver.findElement(By.xpath("//input[@class='flat_input password']"));
+    }
+
+    public WebElement clickEnter() {
+        return driver.findElement(By.xpath("//input[@class='login_btn']"));
+    }
+}
