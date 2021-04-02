@@ -33,10 +33,6 @@ public class Vijar extends TestInit {
         sleep(1);
     }
 
-
-
-
-
     public WebElement goToVijar() {
         return driver.findElement(By.xpath("//*[@class='LC20lb DKV0Md' and text()='Вияр - интернет-магазин мебельной фурнитуры. Все ...']"));
     }
