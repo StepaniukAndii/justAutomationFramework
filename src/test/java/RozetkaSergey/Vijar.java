@@ -57,4 +57,3 @@ public class Vijar extends TestInit {
         return driver.findElement(By.xpath("//input[@class='login_btn']"));
     }
 }
-
