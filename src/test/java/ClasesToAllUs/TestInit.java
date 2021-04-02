@@ -20,7 +20,7 @@ public class TestInit {
 
     @BeforeMethod
     public void setUp() {
-//        if webdriver manager worrk fine, there is a bug at the moment
+//        if webdriver manager work fine, there is a bug at the moment
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
@@ -32,7 +32,12 @@ public class TestInit {
         }
 
         driver = new ChromeDriver(options);
-        driver.manage().window().setSize(new Dimension(1920, 1200));
+        if(headless) {
+            driver.manage().window().setSize(new Dimension(1920, 1200));
+        } else {
+            driver.manage().window().maximize();
+        }
+
     }
 
     private void setProperty(String path) {
