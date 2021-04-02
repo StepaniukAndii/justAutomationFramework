@@ -39,10 +39,6 @@ public class PageHomeAllo extends BasePage{
         return getElement ("//input[@id='vregister-password']");
     }
 
-    public void testComplite(){
-       System.out.println ("Test Complite");
-    }
-
     public WebElement logo(){
         return getElement("//div[@class='v-header__line v-header__line--second page-container main-header-second-line']/a[@class='header-logo__link']");
     }
