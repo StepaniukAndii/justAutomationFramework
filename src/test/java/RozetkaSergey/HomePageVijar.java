@@ -23,7 +23,8 @@ public class HomePageVijar extends BasePage {
     }
 
     public WebElement goToVijar() {
-        return getElement("//*[@class='LC20lb DKV0Md' and text()='Вияр - интернет-магазин мебельной фурнитуры. Все ...']");
+        return getElement(
+                "//*[@class='LC20lb DKV0Md' and text()='Вияр - интернет-магазин мебельной фурнитуры. Все ...']");
     }
 
     public WebElement closeAdverb() {
@@ -41,17 +42,13 @@ public class HomePageVijar extends BasePage {
     public WebElement getPass() {
          return getElement("//input[@class='flat_input password']");
     }
-
     public WebElement clickEnter() {
         return getElement("//input[@class='login_btn']");
     }
     public String getterPass() {
         return pass;
     }
-
     public String getterLogin() {
         return login;
     }
-
-
 }
