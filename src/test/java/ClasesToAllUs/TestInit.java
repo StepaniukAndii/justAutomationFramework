@@ -16,7 +16,7 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
 //    put false here if you want to see browser)
-    boolean headless = false;
+    boolean headless = true;
 
     @BeforeMethod
     public void setUp() {
