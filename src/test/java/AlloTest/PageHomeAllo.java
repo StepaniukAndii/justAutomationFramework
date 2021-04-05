@@ -103,5 +103,25 @@ public class PageHomeAllo extends BasePage{
         return  getElements ("//ul[@class='products__list']/li");
     }
 
+    public WebElement citiesOpenFild() {return getElement ("//div[@class='geo-label js-geo-label']"); }
+
+    public WebElement kiev() {return getElement ("//li[@data-geo-select-city='Киев']"); }
+
+    public WebElement kharkov() {return getElement ("//li[@data-geo-select-city='Харьков']"); }
+
+    public WebElement odessa() {return getElement ("//li[@data-geo-select-city='Одесса']"); }
+
+    public WebElement dnipro() {return getElement ("//li[@data-geo-select-city='Днепр']"); }
+
+    public WebElement lvov() {return getElement ("//li[@data-geo-select-city='Львов']"); }
+
+    public WebElement zaporozhee() {return getElement ("//li[@data-geo-select-city='Запорожье']"); }
+
+    public WebElement closeSpam() {return getElement ("//div[@class='geolocation__content geolocation__content--success geolocation__content--decoration geolocation']/*[name()='svg']");}
+
+    public WebElement inputCitie() {return getElement ("//input[@id='city']");}
+
+    public WebElement brovaryCitie(){return getElement ("//div[@data-geo-label='Бровары']");}
 }
 
+//div[@class="geolocation__content geolocation__content--success geolocation__content--decoration geolocation"]/*[name()='svg']

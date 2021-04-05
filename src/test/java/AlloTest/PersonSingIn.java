@@ -29,19 +29,19 @@ public class PersonSingIn {
         return tell;
     }
     public void setEmail(String email) {
-//        String name = email;
-//
-//        List<String> tokens = new ArrayList<String> ();
-//        tokens.add("@gmail");
-//
-//        for(String l:tokens){
-//            if(name.contains (l)){
-//                System.out.println ("Вы ввели " +l);
-//            }  else {
-//                System.out.println ("Вы должны ввести жемей-почту ");
-//                return;
-//            }
-//        }
+        String name = email;
+
+        List<String> tokens = new ArrayList<String> ();
+        tokens.add("@gmail");
+
+        for(String l:tokens){
+            if(name.contains (l)){
+                System.out.println ("Вы ввели " +l);
+            }  else {
+                System.out.println ("Вы должны ввести жемей-почту");
+                return;
+            }
+        }
         this.email = email;
     }
     public String getEmail(){
