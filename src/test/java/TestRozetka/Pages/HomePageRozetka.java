@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Arrays;
 import java.util.List;
 
 public class HomePageRozetka extends BasePage {
@@ -74,5 +76,17 @@ public class HomePageRozetka extends BasePage {
     public WebElement advertisingOnHome() {
         return wait.until(ExpectedConditions.elementToBeClickable
                 (By.xpath("//a[@id='rz-banner']")));
+    }
+
+    public List<WebElement> allGoolsCost() {
+        return getElements("//span[@class='goods-tile__price-value']");
+    }
+
+    public WebElement catalogSettingzSorting() {
+        return getElement("//select[contains(@class,'select-css')]");
+    }
+
+    public List<WebElement> catalogSettingzSortingChildren() {
+        return getElements("//select[contains(@class,'select-css')]/child::option");
     }
 }
