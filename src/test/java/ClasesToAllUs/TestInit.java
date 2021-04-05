@@ -60,9 +60,6 @@ public class TestInit {
     }
 
     @AfterTest
-    public void reportReady() {
-        System.out.println("Report is ready, you best");
-    }
 
     public void openUrl(String site) {
         driver.get(site);
