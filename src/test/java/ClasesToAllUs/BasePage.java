@@ -3,6 +3,9 @@ package ClasesToAllUs;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -10,7 +13,7 @@ import java.util.List;
 public class BasePage {
     public WebDriver driver;
 
-    public BasePage(WebDriver driver) {
+    public  BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -29,7 +32,8 @@ public class BasePage {
     }
 
     public WebElement getElement(String locator) {
-        return driver.findElement(By.xpath(locator));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 
     public List<WebElement> getElements(String locator) {
