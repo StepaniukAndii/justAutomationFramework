@@ -10,40 +10,63 @@ public class TestHomeAllo extends TestInit {
     @Test
     public void checkAuthenticationRegister(){
         pageHomeAllo = new PageHomeAllo(driver);
+        openUrl("https://allo.ua/ru/");
         pageHomeAllo.singIn().click();
         pageHomeAllo.loginTab().click();
-        pageHomeAllo.enterName().sendKeys("Sergey");
-        pageHomeAllo.enterNumber().sendKeys("123456789");
-        pageHomeAllo.enterEmail().sendKeys("sergey1234567@gmail");
-        pageHomeAllo.enterPassword().sendKeys("qwerty");
-        pageHomeAllo.testComplite();
+
+        PersonSingIn person = new PersonSingIn ();
+        person.setName("Sergey");
+        person.setTell ("0682223344");
+        person.setEmail ("sergey1234@gmail.com");
+        person.setPassword ("qwerty");
+
+        pageHomeAllo.enterName().sendKeys (person.getName());
+        pageHomeAllo.enterNumber().sendKeys(person.getTell());
+        pageHomeAllo.enterEmail().sendKeys(person.getEmail());
+        pageHomeAllo.enterPassword().sendKeys(person.getPassword());
+        pageHomeAllo.showPass().click();
     }
 
     @Test
     public void checkCategories(){
         pageHomeAllo = new PageHomeAllo(driver);
+        openUrl("https://allo.ua/ru/");
         pageHomeAllo.logo().click();
-        sleep(1);
         pageHomeAllo.categoriesClick().click();
-        pageHomeAllo.telefonItems().click ();
-        sleep(1);
+        pageHomeAllo.telefonItems().click();
         pageHomeAllo.categoriesClick().click();
-        pageHomeAllo.telefonItems ().click ();
-        sleep(1);
+        pageHomeAllo.toolsItem().click();
         pageHomeAllo.categoriesClick().click();
         pageHomeAllo.appLiancesItems().click();
-        sleep(1);
         pageHomeAllo.categoriesClick().click();
         pageHomeAllo.carsItems().click();
-        sleep(1);
         pageHomeAllo.categoriesClick().click();
         pageHomeAllo.sportItems().click();
-        pageHomeAllo.testComplite();
     }
 
     @Test
-    public void testSerch(){
-        pageHomeAllo = new PageHomeAllo(driver);
+    public void testAddItemsInBasket(){
+        pageHomeAllo = new PageHomeAllo (driver);
+        openUrl("https://allo.ua/ru/");
+        pageHomeAllo.serchFild().sendKeys("Холодильник");
+        pageHomeAllo.buttonSerch().click();
+        pageHomeAllo.oneItem().click();
+        pageHomeAllo.buttonBay().click();
+        pageHomeAllo.bayWindowClose().click();
+        pageHomeAllo.aLotOfItems().click();
+        pageHomeAllo.serchFild().sendKeys("Наушники");
+        pageHomeAllo.buttonSerch().click();
+        pageHomeAllo.oneItem().click();
+        pageHomeAllo.buttonBay().click();
+        pageHomeAllo.bayWindowClose().click();
+        pageHomeAllo.aLotOfItems().click();
+        pageHomeAllo.basked().click();
 
+       int x = pageHomeAllo.itemListInBasked().size ();
+       if (x==2){
+           System.out.println ("В корзине сейчас " + x );
+       } else {
+           System.out.println ("В корзине сейчас не два элемента а " + x );
+       }
     }
 }
