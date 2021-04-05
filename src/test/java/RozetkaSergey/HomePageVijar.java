@@ -17,6 +17,9 @@ public class HomePageVijar extends BasePage {
     public void enterToGoogle(String site) {
         driver.get(site);
     }
+    public void enterToVijar(String site) {
+        driver.get(site);
+    }
 
     public WebElement googleField() {
         return getElement("//input[@class='gLFyf gsfi']");
@@ -51,4 +54,11 @@ public class HomePageVijar extends BasePage {
     public String getterLogin() {
         return login;
     }
+    public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
+    public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
+
+
+
 }
+
+
