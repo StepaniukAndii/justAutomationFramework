@@ -31,4 +31,5 @@ public class Vijar extends TestInit {
         String lang = homePageVijar.newsHeaderElement().getText();
         Assert.assertEquals(lang, "Новини");
     }
+
 }
