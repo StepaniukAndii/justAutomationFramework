@@ -60,6 +60,9 @@ public class TestInit {
     }
 
     @AfterTest
+    public void tearDown()  {
+        driver.quit();
+    }
 
     public void openUrl(String site) {
         driver.get(site);
