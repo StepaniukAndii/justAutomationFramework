@@ -122,6 +122,10 @@ public class PageHomeAllo extends BasePage{
     public WebElement inputCitie() {return getElement ("//input[@id='city']");}
 
     public WebElement brovaryCitie(){return getElement ("//div[@data-geo-label='Бровары']");}
+
+    public WebElement chengesLanguage(){return getElement ("//div[@class='language']/span/div");}
+
+    public WebElement checkLanguage(){return getElement ("//div[@class='header-catalog-button']/p");}
+
 }
 
-//div[@class="geolocation__content geolocation__content--success geolocation__content--decoration geolocation"]/*[name()='svg']

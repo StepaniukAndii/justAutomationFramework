@@ -36,7 +36,7 @@ public class TestCities extends TestInit {
         locators.inputCitie().clear();
         locators.inputCitie().sendKeys("Бровары");
         locators.citiesOpenFild().click();
-        String x = locators.brovaryCitie().getText ();
+        String x = locators.brovaryCitie().getText();
         String y ="Бровары";
             if(y.equals(x)){
                 System.out.println ("Город Бровары выбрало");
