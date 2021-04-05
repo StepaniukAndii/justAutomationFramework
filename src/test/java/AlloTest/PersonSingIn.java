@@ -42,6 +42,7 @@ public class PersonSingIn {
                 return;
             }
         }
+
         this.email = email;
     }
     public String getEmail(){
