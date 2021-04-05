@@ -57,6 +57,7 @@ public class HomePageVijar extends BasePage {
     public WebElement itemForCompareTwo (){return getElement("//div[@class='col-xs-12 col-sm-6 col-md-6 col-lg-4 product_prewiew-wrapper paginator-item'][2]//div[@class='compare_button']");}
     public WebElement itemCounter () {return  getElement("//div[@class='back-comp']//span");}
     public WebElement goToCompare (){return getElement("//div[@class='back-comp']//span");}
+<<<<<<< HEAD
     public WebElement topBar1 (){counter++; return  getElement("//li[@class='item0']");}
     public WebElement topBar2 (){counter++; return  getElement("//li[@class='item1']");}
     public WebElement topBar3 (){counter++; return  getElement("//li[@class='item2']");}
@@ -65,6 +66,9 @@ public class HomePageVijar extends BasePage {
     public WebElement topBar6 (){counter++; return  getElement("//li[@class='item5']");}
     public WebElement topBar7 (){counter++; return  getElement("//li[@class='item6']");}
     public WebElement topBar8 (){counter++; return  getElement("//li[@class='item7']");}
+=======
+
+>>>>>>> 3de7b5003e0ac70532a9f75e1ba807611ee81112
 
 }
 

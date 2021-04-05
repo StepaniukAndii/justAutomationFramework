@@ -60,7 +60,11 @@ public class TestInit {
     }
 
     @AfterTest
+<<<<<<< HEAD
     public void tearDown()  {
+=======
+    public void tearDown() {
+>>>>>>> 3de7b5003e0ac70532a9f75e1ba807611ee81112
         driver.quit();
     }
 
