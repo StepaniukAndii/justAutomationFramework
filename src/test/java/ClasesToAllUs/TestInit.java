@@ -59,6 +59,11 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
+    @AfterTest
+    public void tearDown() {
+        driver.quit();
+    }
+
     public void openUrl(String site) {
         driver.get(site);
     }
