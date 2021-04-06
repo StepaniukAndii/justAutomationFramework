@@ -3,6 +3,8 @@ package TestRozetka;
 import ClasesToAllUs.TestInit;
 import TestRozetka.Pages.HomePageRozetka;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.LinkedList;
@@ -19,7 +21,8 @@ public class TestRozetkaFilter extends TestInit {
         homePageRozetka.catalogSettingzSorting().click();
         homePageRozetka.catalogSettingzSortingChildren().stream().skip(1).findFirst().get().click();
         List<Integer> list = new LinkedList<>();
-        sleep(4);
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.urlContains("sort=cheap"));
         for (WebElement element : homePageRozetka.allGoolsCost()) {
             String str = element.getText();
             while (str.contains(" ")) {
