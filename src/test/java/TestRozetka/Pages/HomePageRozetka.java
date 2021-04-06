@@ -1,6 +1,7 @@
 package TestRozetka.Pages;
 
 import ClasesToAllUs.BasePage;
+import TestRozetka.Logators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,13 +22,11 @@ public class HomePageRozetka extends BasePage {
     }
 
     public WebElement searchFild() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//input[@name='search']")));
+        return getElement(Logators.SEARCHFIELD);
     }
 
     public WebElement getRefrigerator() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//span[@class='goods-tile__title']")));
+        return getElement(Logators.GETREFRIGERATOR);
     }
 
     public WebElement addCart() {
