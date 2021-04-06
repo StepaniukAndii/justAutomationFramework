@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TestRozetkaFilter extends TestInit {
+
     @Test
     public void testRozetkaFilter() {
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
