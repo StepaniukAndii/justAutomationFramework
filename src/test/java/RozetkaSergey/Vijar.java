@@ -72,35 +72,10 @@ public class Vijar extends TestInit {
         homePageVijar.topBar8().click();
         sleep(1);
         Assert.assertEquals(homePageVijar.counter,8);
-
-
-
     }
     @Test
     void checkSearchField () {
         
     }
-
-
-
-
-    @Test
-    public void addToCard() {
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.clickAtToolbar().click();
-        homePageVijar.clickToDSP().click();
-        homePageVijar.closeAdverb().click();
-        sleep(1);
-        homePageVijar.itemForCompareOne().click();
-        sleep(1);
-        homePageVijar.itemForCompareTwo().click();
-        sleep(1);
-        homePageVijar.goToCompare().click();
-        String  lang = homePageVijar.itemCounter().getText();
-        Assert.assertEquals(lang,"2");
-    }
-
 
 }
