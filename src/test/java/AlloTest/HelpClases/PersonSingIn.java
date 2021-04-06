@@ -1,4 +1,4 @@
-package AlloTest;
+package AlloTest.HelpClases;
 
 import java.util.ArrayList;
 import java.util.List;

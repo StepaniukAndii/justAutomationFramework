@@ -1,5 +1,7 @@
-package AlloTest;
+package AlloTest.TestClases;
 
+import AlloTest.Pages.PageHomeAllo;
+import AlloTest.HelpClases.PersonSingIn;
 import ClasesToAllUs.TestInit;
 import org.testng.annotations.Test;
 

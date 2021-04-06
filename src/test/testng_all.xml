@@ -25,7 +25,7 @@
 
     <test name="Allo tests">
         <classes>
-            <class name="AlloTest.TestHomeAllo"/>
+            <class name="AlloTest.TestClases.TestHomeAllo"/>
         </classes>
     </test>
 </suite>
