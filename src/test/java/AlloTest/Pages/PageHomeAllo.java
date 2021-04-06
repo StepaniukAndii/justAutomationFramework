@@ -1,12 +1,8 @@
-package AlloTest;
+package AlloTest.Pages;
 
 import ClasesToAllUs.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.List;
 
 public class PageHomeAllo extends BasePage{
@@ -102,6 +98,30 @@ public class PageHomeAllo extends BasePage{
     public List<WebElement> itemListInBasked(){
         return  getElements ("//ul[@class='products__list']/li");
     }
+
+    public WebElement citiesOpenFild() {return getElement ("//div[@class='geo-label js-geo-label']"); }
+
+    public WebElement kiev() {return getElement ("//li[@data-geo-select-city='Киев']"); }
+
+    public WebElement kharkov() {return getElement ("//li[@data-geo-select-city='Харьков']"); }
+
+    public WebElement odessa() {return getElement ("//li[@data-geo-select-city='Одесса']"); }
+
+    public WebElement dnipro() {return getElement ("//li[@data-geo-select-city='Днепр']"); }
+
+    public WebElement lvov() {return getElement ("//li[@data-geo-select-city='Львов']"); }
+
+    public WebElement zaporozhee() {return getElement ("//li[@data-geo-select-city='Запорожье']"); }
+
+    public WebElement closeSpam() {return getElement ("//div[@class='geolocation__content geolocation__content--success geolocation__content--decoration geolocation']/*[name()='svg']");}
+
+    public WebElement inputCitie() {return getElement ("//input[@id='city']");}
+
+    public WebElement brovaryCitie(){return getElement ("//div[@data-geo-label='Бровары']");}
+
+    public WebElement chengesLanguage(){return getElement ("//div[@class='language']/span/div");}
+
+    public WebElement checkLanguage(){return getElement ("//div[@class='header-catalog-button']/p");}
 
 }
 
