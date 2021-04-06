@@ -1,11 +1,14 @@
 package TestRozetka.Pages;
 
 import ClasesToAllUs.BasePage;
+import TestRozetka.Logators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Arrays;
 import java.util.List;
 
 public class HomePageRozetka extends BasePage {
@@ -19,13 +22,11 @@ public class HomePageRozetka extends BasePage {
     }
 
     public WebElement searchFild() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//input[@name='search']")));
+        return getElement(Logators.SEARCHFIELD);
     }
 
     public WebElement getRefrigerator() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//span[@class='goods-tile__title']")));
+        return getElement(Logators.GETREFRIGERATOR);
     }
 
     public WebElement addCart() {
@@ -74,5 +75,25 @@ public class HomePageRozetka extends BasePage {
     public WebElement advertisingOnHome() {
         return wait.until(ExpectedConditions.elementToBeClickable
                 (By.xpath("//a[@id='rz-banner']")));
+    }
+
+    public List<WebElement> allGoolsCost() {
+        return getElements("//span[@class='goods-tile__price-value']");
+    }
+
+    public WebElement catalogSettingzSorting() {
+        return getElement("//select[contains(@class,'select-css')]");
+    }
+
+    public List<WebElement> catalogSettingzSortingChildren() {
+        return getElements("//select[contains(@class,'select-css')]/child::option");
+    }
+
+    public WebElement getLanguageRU() {
+        return getElement("//a[@class='lang__link']");
+    }
+
+    public List<WebElement> getTextOnPage() {
+        return getElements("//h2[@class='main-goods__heading']");
     }
 }
