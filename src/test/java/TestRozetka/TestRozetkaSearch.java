@@ -21,7 +21,7 @@ public class TestRozetkaSearch extends TestInit {
         List<String> elements = getAllElementsWithAttribute(homePageRozetka.getElementsRefrigerator(),"title");
         for (String element : elements) {
             if (!element.contains("Холодильник")) {
-               Assert.fail();
+                Assert.fail();
             }
         }
     }
