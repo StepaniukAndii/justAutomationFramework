@@ -21,8 +21,9 @@ public class Vijar extends TestInit {
         homePageVijar.closeAdverb().click();
         System.out.println("Sehr gut!");
     }
+
     @Test
-    public void switchLanguage () {
+    public void switchLanguage() {
         HomePageVijar homePageVijar = new HomePageVijar(driver);
         homePageVijar.enterToVijar("https://viyar.ua/");
         homePageVijar.closeAdverb().click();
@@ -31,5 +32,24 @@ public class Vijar extends TestInit {
         String lang = homePageVijar.newsHeaderElement().getText();
         Assert.assertEquals(lang, "Новини");
     }
+
+    @Test
+    public void addToCard() {
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.clickAtToolbar().click();
+        homePageVijar.clickToDSP().click();
+        homePageVijar.closeAdverb().click();
+        sleep(1);
+        homePageVijar.itemForCompareOne().click();
+        sleep(1);
+        homePageVijar.itemForCompareTwo().click();
+        sleep(1);
+        homePageVijar.goToCompare().click();
+        String  lang = homePageVijar.itemCounter().getText();
+        Assert.assertEquals(lang,"2");
+    }
+
 
 }
