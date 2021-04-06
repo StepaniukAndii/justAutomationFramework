@@ -88,4 +88,12 @@ public class HomePageRozetka extends BasePage {
     public List<WebElement> catalogSettingzSortingChildren() {
         return getElements("//select[contains(@class,'select-css')]/child::option");
     }
+
+    public WebElement getLanguageRU() {
+        return getElement("//a[@class='lang__link']");
+    }
+
+    public List<WebElement> getTextOnPage() {
+        return getElements("//h2[@class='main-goods__heading']");
+    }
 }
