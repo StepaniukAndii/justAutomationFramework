@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePageVijar extends BasePage {
     private String login = "grinred69@gmail.com";
     private String pass = "23112010vi";
@@ -65,7 +67,16 @@ public class HomePageVijar extends BasePage {
     public WebElement topBar6 (){counter++; return  getElement("//li[@class='item5']");}
     public WebElement topBar7 (){counter++; return  getElement("//li[@class='item6']");}
     public WebElement topBar8 (){counter++; return  getElement("//li[@class='item7']");}
+    public WebElement findSearchFiel (){ return getElement("//input[@id='title-search-input']");}
+    public WebElement clickOnFind (){ return getElement("//input[@name='s' and @value='Найти' ]");}
+    public List<WebElement> getElementsEgger(){return getElements("//div[@class='product_prewiew']/a");}
+    public WebElement clickToOpenFindPhonNumber (){return getElement("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");}
+    public WebElement chosePhone () {return getElement("//p[@class='work_time']//a[@class='c-tel']");}
+
+
+
 
 }
+
 
 

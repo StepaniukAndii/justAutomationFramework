@@ -4,6 +4,8 @@ import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class Vijar extends TestInit {
 
     @Test
@@ -21,7 +23,6 @@ public class Vijar extends TestInit {
         homePageVijar.closeAdverb().click();
         System.out.println("Sehr gut!");
     }
-
     @Test
     public void switchLanguage() {
         HomePageVijar homePageVijar = new HomePageVijar(driver);
@@ -51,7 +52,7 @@ public class Vijar extends TestInit {
         Assert.assertEquals(lang,"2");
     }
     @Test
-    void checkSwitching (){
+    public void checkSwitching (){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
         homePageVijar.enterToVijar("https://viyar.ua/");
         homePageVijar.closeAdverb().click();
@@ -74,8 +75,39 @@ public class Vijar extends TestInit {
         Assert.assertEquals(homePageVijar.counter,8);
     }
     @Test
-    void checkSearchField () {
+    public void checkSearchField () {
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.findSearchFiel().sendKeys("Egger");
+        homePageVijar.clickOnFind().click();
+        homePageVijar.closeAdverb().click();
+        List<String> elements = getAllElementsWithAttribute(homePageVijar.getElementsEgger(), "title");
+        for (String elenent : elements) {
+         String str  =   elenent.toLowerCase();
+            if (!str.contains("egger")) {
+                Assert.fail();
+            }
+        }
+
+
+
+
         
     }
+    @Test
+    public void checkPhoneNumbers () {
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.switchToUa().click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.clickToOpenFindPhonNumber().click();
+        homePageVijar.closeAdverb().click();
+        String  lang = homePageVijar.chosePhone().getText();
+        Assert.assertEquals(lang,"+38 (044) 500-57-07");
+
+    }
+
 
 }

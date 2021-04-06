@@ -19,15 +19,10 @@ public class TestRozetkaSearch extends TestInit {
         homePageRozetka.searchFild().sendKeys(homePageRozetka.gools);
         homePageRozetka.getButtonFild().click();
         List<String> elements = getAllElementsWithAttribute(homePageRozetka.getElementsRefrigerator(),"title");
-        boolean result = false;
         for (String element : elements) {
-            if (element.contains("Холодильник")) {
-               result = true;
-            } else {
-                result=false;
-                break;
+            if (!element.contains("Холодильник")) {
+               Assert.fail();
             }
         }
-        Assert.assertTrue(result);
     }
 }
