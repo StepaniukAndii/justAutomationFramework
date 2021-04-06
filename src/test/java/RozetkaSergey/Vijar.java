@@ -89,11 +89,6 @@ public class Vijar extends TestInit {
                 Assert.fail();
             }
         }
-
-
-
-
-        
     }
     @Test
     public void checkPhoneNumbers () {
