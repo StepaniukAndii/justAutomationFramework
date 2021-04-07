@@ -72,11 +72,23 @@ public class HomePageVijar extends BasePage {
     public List<WebElement> getElementsEgger(){return getElements("//div[@class='product_prewiew']/a");}
     public WebElement clickToOpenFindPhonNumber (){return getElement("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");}
     public WebElement chosePhone () {return getElement("//p[@class='work_time']//a[@class='c-tel']");}
-
-
-
-
+    public WebElement scrollDown () { return getElement("//button[@class='proezd']");}
+    public WebElement scrollFastUpButton () { return getElement("//img[@src='/img/up.svg']");}
+    public WebElement getSurname (){ return getElement("//input[@placeholder='Фамилия']");}
+    public WebElement getName (){ return getElement("//input[@placeholder='Имя']");}
+    public WebElement goToProfil(){return getElement("//div[@id='comp_3d516dd61c87243ff4c44464480b12fd']");}
+    public WebElement getLog () { return getElement("//input[@placeholder='Логин']");}
+    public WebElement getPassword() { return getElement("//input[@placeholder='Почтовый адрес']");}
+    public WebElement clickOnSamorezy (){ return getElement("//a[@href='/catalog/samorezy/']");}
+    public List<WebElement> getItems (){return  getElements("//div[@class='col-xs-12 col-sm-6 col-md-6 col-lg-4 product_prewiew-wrapper paginator-item']");}
+    public List<WebElement> pickBuy (){return getElements("//a[@id='btn-buy-items']");}
+    public List<WebElement> pickBuy2 (){return getElements("//a[@id='btn-buy-items']");}
+    public WebElement checkOut (){ return getElement("//*[@id=\"modal-addToCart\"]/div/div[3]/div[2]/a");}
+    public WebElement addItemToCard (){return getElement("//a[@class='plus-button plus']");}
+    public WebElement getPrice () { return getElement("//*[@id=\"site_panel\"]/section/section/div[2]/div[6]/div/div[1]/div/span[1]");}
+    public WebElement getTheSecondPrice (){return getElement("//span[@class='current-price']");}
 }
+
 
 
 

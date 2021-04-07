@@ -1,9 +1,10 @@
 package RozetkaSergey;
 
 import ClasesToAllUs.TestInit;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class Vijar extends TestInit {
@@ -103,6 +104,92 @@ public class Vijar extends TestInit {
         Assert.assertEquals(lang,"+38 (044) 500-57-07");
 
     }
+    @Test
+    public void checkFastScroll(){
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.scrollDown().sendKeys(Keys.PAGE_DOWN);
+        sleep(2);
+        homePageVijar.scrollFastUpButton().click();
+        sleep(2);
+    }
+    @Test
+    public void checkOutNameAndSurname(){
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.goToEnter().click();
+        homePageVijar.getLogin().sendKeys(homePageVijar.getterLogin());
+        homePageVijar.getPass().sendKeys(homePageVijar.getterPass());
+        homePageVijar.clickEnter().click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.goToProfil().click();
+        String surname = homePageVijar.getSurname().getAttribute("value");
+        Assert.assertEquals(surname,"Гринчук");
+        String name = homePageVijar.getName().getAttribute("value");
+        Assert.assertEquals(name, "Сергей");
+            }
+    @Test
+    public void checkOutLoginAndPass () {
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.goToEnter().click();
+        homePageVijar.getLogin().sendKeys(homePageVijar.getterLogin());
+        homePageVijar.getPass().sendKeys(homePageVijar.getterPass());
+        homePageVijar.clickEnter().click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.goToProfil().click();
+        String log = homePageVijar.getLog().getAttribute("value");
+        String pas = homePageVijar.getPassword().getAttribute("value");
+        Assert.assertEquals(pas,log);
+    }
+    @Test
+    public void addItemToBasket (){
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.topBar2().click();
+        homePageVijar.clickOnSamorezy().click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.getItems().get(0).click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.pickBuy().get(0).click();
+        homePageVijar.pickBuy2().get(0).click();
+
+    }
+    @Test
+    public void CheckBasket (){
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.topBar2().click();
+        homePageVijar.clickOnSamorezy().click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.getItems().get(0).click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.pickBuy().get(0).click();
+        String boltFirstPrice = homePageVijar.getPrice().getText();
+        double convertetBoltFirstPrice = Double.parseDouble(boltFirstPrice);
+        homePageVijar.pickBuy2().get(0).click();
+        homePageVijar.checkOut().click();
+        homePageVijar.addItemToCard().click();
+        getElement("//input[@class='onlyNumber pull-left']").sendKeys("0");
+        sleep(1);
+        double fullBoltsPrice = convertetBoltFirstPrice*30*10/10;
+        getElement("//h2[@class='lk_heading_content']").click();
+        sleep(1);
+        String  totalOrderPrise = homePageVijar.getTheSecondPrice().getText().split(" ")[0];
+        double convertedTotalPrise = Double.parseDouble(totalOrderPrise);
+        Assert.assertEquals(fullBoltsPrice,convertedTotalPrise);
+
+    }
+    @Test//12
+    public void deleteFromBasket(){
 
 
+
+
+    }
 }
