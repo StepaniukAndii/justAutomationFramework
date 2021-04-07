@@ -1,5 +1,7 @@
-package AlloTest;
+package AlloTest.TestClases;
 
+import AlloTest.Pages.PageHomeAllo;
+import AlloTest.HelpClases.PersonSingIn;
 import ClasesToAllUs.TestInit;
 import org.testng.annotations.Test;
 
@@ -13,13 +15,11 @@ public class TestHomeAllo extends TestInit {
         openUrl("https://allo.ua/ru/");
         pageHomeAllo.singIn().click();
         pageHomeAllo.loginTab().click();
-
         PersonSingIn person = new PersonSingIn ();
         person.setName("Sergey");
         person.setTell ("0682223344");
         person.setEmail ("sergey1234@gmail.com");
         person.setPassword ("qwerty");
-
         pageHomeAllo.enterName().sendKeys (person.getName());
         pageHomeAllo.enterNumber().sendKeys(person.getTell());
         pageHomeAllo.enterEmail().sendKeys(person.getEmail());
@@ -62,11 +62,11 @@ public class TestHomeAllo extends TestInit {
         pageHomeAllo.aLotOfItems().click();
         pageHomeAllo.basked().click();
 
-       int x = pageHomeAllo.itemListInBasked().size ();
-       if (x==2){
-           System.out.println ("В корзине сейчас " + x );
-       } else {
-           System.out.println ("В корзине сейчас не два элемента а " + x );
-       }
+           int x = pageHomeAllo.itemListInBasked().size();
+           if (x==2){
+               System.out.println ("В корзине сейчас " + x );
+           } else {
+               System.out.println ("В корзине сейчас не два элемента а " + x );
+           }
     }
 }
