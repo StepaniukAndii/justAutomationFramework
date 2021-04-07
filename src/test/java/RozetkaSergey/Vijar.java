@@ -2,7 +2,6 @@ package RozetkaSergey;
 
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -157,6 +156,7 @@ public class Vijar extends TestInit {
         homePageVijar.closeAdverb().click();
         homePageVijar.pickBuy().get(0).click();
         homePageVijar.pickBuy2().get(0).click();
+        sleep(1);
 
     }
     @Test
@@ -187,6 +187,23 @@ public class Vijar extends TestInit {
     }
     @Test//12
     public void deleteFromBasket(){
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.topBar2().click();
+        homePageVijar.clickOnSamorezy().click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.getItems().get(0).click();
+        homePageVijar.closeAdverb().click();
+        homePageVijar.pickBuy().get(0).click();
+        homePageVijar.pickBuy2().get(0).click();
+        homePageVijar.ordering().click();
+        homePageVijar.deliteItemFromBasket().click();
+        String value = homePageVijar.getfromseitText().getText();
+        Assert.assertEquals(value,"В вашей корзине ещё нет товаров.");
+        sleep(1);
+
+
 
 
 
