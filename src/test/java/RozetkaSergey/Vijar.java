@@ -4,9 +4,12 @@ import ClasesToAllUs.TestInit;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.util.List;
+
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Vijar extends TestInit {
+
 
     @Test
     public void loginTest() {
@@ -82,7 +85,7 @@ public class Vijar extends TestInit {
         homePageVijar.findSearchFiel().sendKeys("Egger");
         homePageVijar.clickOnFind().click();
         homePageVijar.closeAdverb().click();
-        List<String> elements = getAllElementsWithAttribute(homePageVijar.getElementsEgger(), "title");
+        List<String> elements = getAttributeCollection(homePageVijar.getElementsEgger(), "title");
         for (String elenent : elements) {
          String str  =   elenent.toLowerCase();
             if (!str.contains("egger")) {
@@ -156,11 +159,10 @@ public class Vijar extends TestInit {
         homePageVijar.closeAdverb().click();
         homePageVijar.pickBuy().get(0).click();
         homePageVijar.pickBuy2().get(0).click();
-        sleep(1);
 
     }
     @Test
-    public void CheckBasket (){
+    public void checkBasket (){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
         homePageVijar.enterToVijar("https://viyar.ua/");
         homePageVijar.closeAdverb().click();
@@ -185,7 +187,7 @@ public class Vijar extends TestInit {
         Assert.assertEquals(fullBoltsPrice,convertedTotalPrise);
 
     }
-    @Test//12
+    @Test
     public void deleteFromBasket(){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
         homePageVijar.enterToVijar("https://viyar.ua/");
@@ -208,5 +210,36 @@ public class Vijar extends TestInit {
 
 
 
+    }
+    @Test
+    public void checkSchedule () {
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.clickOnStatusOfOrder().click();
+        homePageVijar.closeAdverb().click();
+        List<String> listFromSchedule = getElementsText(homePageVijar.getDigit());
+        String firsDigitFromTable = listFromSchedule.get(0);
+        SimpleDateFormat formater = new SimpleDateFormat("(dd.MM)");
+        Date realDate = new Date();
+        System.out.println(firsDigitFromTable);
+        System.out.println(formater.format(realDate));
+        // Тест рабочий но не завершен до логического конца, так как есть два вопроса.
+    }
+    @Test //14
+    public void checkMainAdvertisement () {
+        HomePageVijar homePageVijar = new HomePageVijar(driver);
+        homePageVijar.enterToVijar("https://viyar.ua/");
+        homePageVijar.closeAdverb().click();
+        homePageVijar.clickAdvertisement().get(0).click();
+        sleep(1);
+        homePageVijar.clickAdvertisement().get(0).click();
+        sleep(1);
+        homePageVijar.clickAdvertisement().get(0).click();
+        sleep(1);
+        homePageVijar.clickAdvertisement().get(0).click();
+        sleep(1);
+        homePageVijar.clickAdvertisement().get(0).click();
+        sleep(1);
     }
 }
