@@ -13,6 +13,4 @@ public class GooglePositionLocators extends BasePage {
     public WebElement serchGoogle(){return getElement ("//input[@class='gLFyf gsfi']");}
     public List<WebElement>  serchItems(){return getElements ("//div[@class='yuRUbf']/a");}
     public WebElement nextList(){return getElement ("//td[@class='d6cvqb'][2]");}
-
-
 }
