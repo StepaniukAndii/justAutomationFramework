@@ -2,7 +2,6 @@ package AlloTest.TestClases;
 
 import AlloTest.Pages.LocatorsForPriceCheckTelefons;
 import ClasesToAllUs.TestInit;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;

@@ -4,7 +4,6 @@ import AlloTest.Pages.GooglePositionLocators;
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class GooglePosition extends TestInit {
@@ -16,7 +15,6 @@ public class GooglePosition extends TestInit {
     List<WebElement> link;
 
     @Test
-
     public void googlePosition(){
         locators = new GooglePositionLocators (driver);
         openUrl ("https://www.google.com.ua/?hl=ru");
