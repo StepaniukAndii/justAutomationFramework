@@ -59,10 +59,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-    @AfterTest
-    public void afterTest() {
-        driver.quit();
-    }
+//    @AfterTest
+//    public void afterTest() {
+//        driver.quit();
+//    }
     public void openUrl(String site) {
         driver.get(site);
     }

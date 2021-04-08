@@ -13,21 +13,21 @@ public class ChoiceModelsTelefons extends TestInit {
 
     @Test
     public void choiceModelsTelefons() {
-        LocatorsForPriceCheckTelefons locators = new LocatorsForPriceCheckTelefons (driver);
-        openUrl ("https://allo.ua/ru/");
-        locators.smartAndTelefons ().click ();
-        locators.telefons ().click ();
-        locators.samsung ().click ();
-        locators.showFilterTelefons ().click ();
+        LocatorsForPriceCheckTelefons locators = new LocatorsForPriceCheckTelefons(driver);
+        openUrl("https://allo.ua/ru/");
+        locators.smartAndTelefons().click();
+        locators.telefons().click();
+        locators.samsung().click();
+        locators.showFilterTelefons().click();
         WebDriverWait wait = new WebDriverWait (driver, 10);
-        wait.until(ExpectedConditions.urlContains ("samsung"));
-        List<String> list = getAllElementsWithAttribute (locators.listSamsung (), "title");
+        wait.until(ExpectedConditions.urlContains("samsung"));
+        List<String> list = getAllElementsWithAttribute(locators.listSamsung(), "title");
         String  token = "Samsung";
         for(String l:list){
             if(l.contains(token)){
-                System.out.println ("Совпадение с самсунгом");
+                System.out.println("Совпадение с самсунгом");
             } else {
-                System.out.println ("Нету совпадений с самсунгом");
+                System.out.println("Нету совпадений с самсунгом");
             }
         }
     }
