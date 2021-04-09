@@ -106,11 +106,20 @@ public class TestInit {
         actions.sendKeys(Keys.RETURN);
         actions.perform();
     }
-    public List<String> getAllElementsWithAttribute(List<WebElement> webElementList, String attribute) {
+    public List<String> getAttributeCollection(List<WebElement> webElementList, String attribute) {
         LinkedList<String> listElements = new LinkedList<String>();
         for (WebElement element : webElementList) {
             listElements.add(element.getAttribute(attribute));
         }
         return listElements;
     }
+
+    public List<String> getElementsText(List<WebElement> webElementList) {
+        LinkedList<String> listElements = new LinkedList<String>();
+        for (WebElement element : webElementList) {
+            listElements.add(element.getText());
+        }
+        return listElements;
+    }
 }
+
