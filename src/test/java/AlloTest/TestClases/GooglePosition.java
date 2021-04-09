@@ -9,7 +9,7 @@ import java.util.List;
 public class GooglePosition extends TestInit {
 
     GooglePositionLocators locators;
-    boolean aBoolean;
+    boolean isSiteInList;
     String token;
     String myItem;
     List<WebElement> link;
@@ -20,30 +20,27 @@ public class GooglePosition extends TestInit {
         openUrl ("https://www.google.com.ua/?hl=ru");
         locators.serchGoogle().sendKeys("сковорода");
         enter();
-
         link = locators.serchItems();
         myItem ="https://allo.ua";
-        aBoolean = false;
-
-        if(aBoolean==false){
-            useForMethod ();
+        isSiteInList = false;
+        if(isSiteInList ==false){
+            searchSite();
         }
-        if (aBoolean==true ){
+        if (isSiteInList != false){
             clickNextList();
         }
     }
-    public void useForMethod(){
+    public void searchSite(){
         for (int i = 0; i < link.size(); i++) {
             token = (link.get(i).getAttribute("href"));
             System.out.println (token);
-
             if(token.contains (myItem)){
                 System.out.println ("Есть совпадения");
-                aBoolean =false;
+                isSiteInList =false;
                 break;
             }else {
                 System.out.println ("НЕТ совпадения");
-                aBoolean = true;
+                isSiteInList = true;
             }
         }
     }
