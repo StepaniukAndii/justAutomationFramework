@@ -20,4 +20,7 @@ public class LocatorsForPriceCheckTelefons extends BasePage {
         return  getElements ("//div[@class='products-layout__container products-layout--grid']/div[@class='products-layout__item']");}
     public List<WebElement> priceTelefons(){
         return  getElements ("//div[@class='v-price-box__cur v-price-box__cur--discount']/span[@class='sum']");}
+    public WebElement samsung(){return getElement ("//a[@id='filter_id-847']");}
+    public List<WebElement> listSamsung(){
+        return getElements ("//div[@class='product-card__content']/a");}
 }
