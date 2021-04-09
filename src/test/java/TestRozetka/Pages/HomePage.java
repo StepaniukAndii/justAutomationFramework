@@ -109,4 +109,12 @@ public class HomePage extends BasePage {
     public List<WebElement> getTextOnPgeHelpCenter() {
         return getElements("//ul[@class='search-results-list']/li/a");
     }
+
+    public WebElement getButtonFilterLittleTile() {
+        return getElement("//button[@class='catalog-view__button catalog-view__button_state_active']");
+    }
+
+    public WebElement getButtonFilterBigTile() {
+        return getElement("//button[@class='catalog-view__button']");
+    }
 }
