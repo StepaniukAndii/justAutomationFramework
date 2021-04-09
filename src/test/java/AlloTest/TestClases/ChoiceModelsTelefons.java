@@ -19,7 +19,7 @@ public class ChoiceModelsTelefons extends TestInit {
         locators.showFilterTelefons().click();
         WebDriverWait wait = new WebDriverWait (driver, 10);
         wait.until(ExpectedConditions.urlContains("samsung"));
-        List<String> list = getAllElementsWithAttribute(locators.listSamsung(), "title");
+        List<String> list = getAttributeCollection(locators.listSamsung(), "title");
         String  token = "Samsung";
         for(String l:list){
             if(l.contains(token)){
