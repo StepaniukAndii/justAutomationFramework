@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CheckingProductCatalog extends TestInit {
+public class CheckingHederItems extends TestInit {
 
     CheckingProductCatalogLocators locators;
     List<String> listWords;
