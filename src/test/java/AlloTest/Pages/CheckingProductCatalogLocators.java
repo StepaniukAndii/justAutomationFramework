@@ -10,6 +10,5 @@ public class CheckingProductCatalogLocators extends BasePage {
     public CheckingProductCatalogLocators(WebDriver driver) {
         super (driver);
     }
-    List<WebElement> menuBlockLeft(){return getElements ("class='menu__list js-menu__list'");}
-
+    public List<WebElement> alloPrograms(){return getElements ("//ul[@class='allo-programs__list']/li");}
 }
