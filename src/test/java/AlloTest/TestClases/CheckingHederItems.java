@@ -4,7 +4,6 @@ import AlloTest.Pages.CheckingProductCatalogLocators;
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
