@@ -30,5 +30,7 @@ public class VijarPages9_12 extends BasePage {
     public WebElement ordering (){ return getElement("//div[@id='modal-addToCart']//div[@class='btn_buy']");}
     public WebElement deliteItemFromBasket () {return getElement("//img[@src='/images/viyarbox/close_little.png']");    }
     public WebElement getfromseitText(){return getElement("//td[@style='text-align:center']");}
+    public List<WebElement> clickAdvertisement(){ return getElements("/html/body/main/section/div[1]/div/div[1]/a[1]");}
+
 }
 
