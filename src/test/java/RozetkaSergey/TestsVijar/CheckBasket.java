@@ -34,4 +34,5 @@ public class CheckBasket extends TestInit    {
         Assert.assertEquals(fullBoltsPrice,convertedTotalPrise);
     }
 
+
 }
