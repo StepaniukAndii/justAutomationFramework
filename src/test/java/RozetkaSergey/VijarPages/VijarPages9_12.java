@@ -18,11 +18,6 @@ public class VijarPages9_12 extends BasePage {
     public WebElement closeAdverb() {
         return getElement("//img[@src='/img/close_white-24px.svg']");
     }
-
-    public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
-    public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
-    public WebElement getLog () { return getElement("//input[@placeholder='Логин']");}
-    public WebElement getPassword() { return getElement("//input[@placeholder='Почтовый адрес']");}
     public WebElement topBar2 (){counter++; return  getElement("//li[@class='item1']");}
     public WebElement clickOnSamorezy (){ return getElement("//a[@href='/catalog/samorezy/']");}
     public List<WebElement> getItems (){return  getElements("//div[@class='col-xs-12 col-sm-6 col-md-6 col-lg-4 product_prewiew-wrapper paginator-item']");}

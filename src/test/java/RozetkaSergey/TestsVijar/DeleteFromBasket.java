@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 public class DeleteFromBasket extends TestInit {
     @Test
-    public void deleteFromBasket(){
-        VijarPages9_12 vijarPages9_12 =new VijarPages9_12(driver);
+    public void deleteFromBasket() {
+        VijarPages9_12 vijarPages9_12 = new VijarPages9_12(driver);
         vijarPages9_12.enterToVijar("https://viyar.ua/");
         vijarPages9_12.closeAdverb().click();
         vijarPages9_12.topBar2().click();
@@ -22,7 +22,7 @@ public class DeleteFromBasket extends TestInit {
         vijarPages9_12.ordering().click();
         vijarPages9_12.deliteItemFromBasket().click();
         String value = vijarPages9_12.getfromseitText().getText();
-        Assert.assertEquals(value,"В вашей корзине ещё нет товаров.");
+        Assert.assertEquals(value, "В вашей корзине ещё нет товаров.");
         sleep(1);
     }
-   }
+}
