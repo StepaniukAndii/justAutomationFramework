@@ -15,10 +15,10 @@ public class TestRozetkaNegative extends TestInit {
         HomePage homePage= new HomePage(driver);
         openUrl("https://rozetka.com.ua/");
         RandomString randomString = new RandomString();
-        homePage.searchFild().sendKeys(randomString+"\n");
+        homePage.searchField().sendKeys(randomString+"\n");
         ArrayList<WebElement> list = new ArrayList<>(homePage.getElementsGoods());
         int str = list.size();
-        homePage.searchFild().clear();
+        homePage.searchField().clear();
         Assert.assertEquals(str,0);
     }
 }

@@ -18,7 +18,7 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public WebElement searchFild() {
+    public WebElement searchField() {
         return getElement("//input[@name='search']");
     }
 
@@ -53,7 +53,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement productCatalog() {
-       return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
     }
 
     public List<WebElement> getElementsRefrigerator() {
@@ -61,7 +61,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getElementsGoods() {
-        return getElements("//div[@class='goods-tile__inner']");
+        return getElements("//a[@class='goods-tile__picture']");
     }
 
     public WebElement contacts() {
@@ -107,6 +107,11 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getTextOnPgeHelpCenter() {
-        return getElements("//ul[@class='search-results-list']/li/a");
+        return getElements("//ul[@class='search" +
+                "-results-list']/li/a");
+    }
+
+    public List<WebElement> getButtonProductFilter() {
+        return getElements("//ul[@class='tabs__list']/li/a");
     }
 }

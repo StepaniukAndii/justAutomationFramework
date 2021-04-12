@@ -13,8 +13,8 @@ public class TestRozetkaCart extends TestInit {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
-        homePage.searchFild().click();
-        homePage.searchFild().sendKeys("холодильник\n");
+        homePage.searchField().click();
+        homePage.searchField().sendKeys("холодильник\n");
         homePage.getRefrigerator().click();
         homePage.addCart().click();
         Assert.assertTrue((homePage.getElement("//a[@class='cart-product__title']")).isDisplayed());

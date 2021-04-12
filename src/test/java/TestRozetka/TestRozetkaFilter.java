@@ -13,8 +13,8 @@ public class TestRozetkaFilter extends TestInit {
     public void testRozetkaFilter() {
         HomePage homePageRozetka = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
-        homePageRozetka.searchFild().click();
-        homePageRozetka.searchFild().sendKeys("холодильник\n");
+        homePageRozetka.searchField().click();
+        homePageRozetka.searchField().sendKeys("холодильник\n");
         homePageRozetka.catalogSettingzSorting().click();
         homePageRozetka.catalogSettingzSortingChildren().stream().skip(1).findFirst().get().click();
         List<String> list = new LinkedList<>();

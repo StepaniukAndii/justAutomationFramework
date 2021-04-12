@@ -37,6 +37,7 @@ public class BasePage {
     }
 
     public List<WebElement> getElements(String locator) {
-        return driver.findElements(By.xpath(locator));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator)));
     }
 }

@@ -15,8 +15,8 @@ public class TestRozetkaSearch extends TestInit {
         HashMap<Integer, Boolean> hashMap = new HashMap<>();
         HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
-        homePage.searchFild().click();
-        homePage.searchFild().sendKeys(homePage.gools);
+        homePage.searchField().click();
+        homePage.searchField().sendKeys(homePage.gools);
         homePage.getButtonFild().click();
         List<String> elements = getAttributeCollection(homePage.getElementsRefrigerator(), "title");
         for (String element : elements) {
