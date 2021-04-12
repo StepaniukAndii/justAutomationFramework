@@ -9,19 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Vijar extends TestInit {
-
-
-
-    @Test
-    public void checkFastScroll(){
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.scrollDown().sendKeys(Keys.PAGE_DOWN);
-        sleep(2);
-        homePageVijar.scrollFastUpButton().click();
-        sleep(2);
-    }
     @Test
     public void checkOutNameAndSurname(){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
