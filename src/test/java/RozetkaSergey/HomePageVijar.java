@@ -23,31 +23,11 @@ public class HomePageVijar extends BasePage {
         return getElement("//img[@src='/img/close_white-24px.svg']");
     }
 
-    public WebElement goToEnter() {
-        return getElement("//div[@class='login-in']//a[@id='modal_ancor']");
-    }
-    public WebElement getLogin() {
-        return getElement("//input[@class='flat_input login']");
-    }
-    public WebElement getPass() {
-         return getElement("//input[@class='flat_input password']");
-    }
-    public WebElement clickEnter() {
-        return getElement("//input[@class='login_btn']");
-    }
-    public String getterPass() {
-        return pass;
-    }
-    public WebElement topBar2 (){counter++; return  getElement("//li[@class='item1']");}
 
-    public String getterLogin() {
-        return login;
-    }
+
+    public WebElement topBar2 (){counter++; return  getElement("//li[@class='item1']");}
     public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
     public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
-    public WebElement getSurname (){ return getElement("//input[@placeholder='Фамилия']");}
-    public WebElement getName (){ return getElement("//input[@placeholder='Имя']");}
-    public WebElement goToProfil(){return getElement("//div[@id='comp_3d516dd61c87243ff4c44464480b12fd']");}
     public WebElement getLog () { return getElement("//input[@placeholder='Логин']");}
     public WebElement getPassword() { return getElement("//input[@placeholder='Почтовый адрес']");}
     public WebElement clickOnSamorezy (){ return getElement("//a[@href='/catalog/samorezy/']");}
@@ -64,7 +44,9 @@ public class HomePageVijar extends BasePage {
     public WebElement clickOnStatusOfOrder() {return getElement("//a[@class='ico-services']");}
     public List<WebElement> getDigit () {return  getElements("//div[@class='work_day filial_location']");}
     public List<WebElement> clickAdvertisement(){ return getElements("/html/body/main/section/div[1]/div/div[1]/a[1]");}
+
 }
+
 
 
 
