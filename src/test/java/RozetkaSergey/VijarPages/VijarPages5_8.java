@@ -28,7 +28,9 @@ public class VijarPages5_8 extends BasePage {
     public WebElement findSearchFiel (){ return getElement("//input[@id='title-search-input']");}
     public WebElement clickOnFind (){ return getElement("//input[@name='s' and @value='Найти' ]");}
     public List<WebElement> getElementsEgger(){return getElements("//div[@class='product_prewiew']/a");}
-
+    public WebElement clickToOpenFindPhonNumber (){return getElement("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");}
+    public WebElement chosePhone () {return getElement("//p[@class='work_time']//a[@class='c-tel']");}
+    public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
 
 
 }

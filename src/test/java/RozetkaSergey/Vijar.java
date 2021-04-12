@@ -11,19 +11,7 @@ import java.util.*;
 public class Vijar extends TestInit {
 
 
-    @Test
-    public void checkPhoneNumbers () {
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.switchToUa().click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.clickToOpenFindPhonNumber().click();
-        homePageVijar.closeAdverb().click();
-        String  lang = homePageVijar.chosePhone().getText();
-        Assert.assertEquals(lang,"+38 (044) 500-57-07");
 
-    }
     @Test
     public void checkFastScroll(){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
