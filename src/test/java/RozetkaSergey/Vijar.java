@@ -10,32 +10,7 @@ import java.util.*;
 
 public class Vijar extends TestInit {
 
-    @Test
-    public void checkBasket (){
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.topBar2().click();
-        homePageVijar.clickOnSamorezy().click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.getItems().get(0).click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.pickBuy().get(0).click();
-        String boltFirstPrice = homePageVijar.getPrice().getText();
-        double convertetBoltFirstPrice = Double.parseDouble(boltFirstPrice);
-        homePageVijar.pickBuy2().get(0).click();
-        homePageVijar.checkOut().click();
-        homePageVijar.addItemToCard().click();
-        getElement("//input[@class='onlyNumber pull-left']").sendKeys("0");
-        sleep(1);
-        double fullBoltsPrice = convertetBoltFirstPrice*30*10/10;
-        getElement("//h2[@class='lk_heading_content']").click();
-        sleep(1);
-        String  totalOrderPrise = homePageVijar.getTheSecondPrice().getText().split(" ")[0];
-        double convertedTotalPrise = Double.parseDouble(totalOrderPrise);
-        Assert.assertEquals(fullBoltsPrice,convertedTotalPrise);
 
-    }
     @Test
     public void deleteFromBasket(){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
