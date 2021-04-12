@@ -9,20 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Vijar extends TestInit {
-    @Test
-    public void addItemToBasket (){
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.topBar2().click();
-        homePageVijar.clickOnSamorezy().click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.getItems().get(0).click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.pickBuy().get(0).click();
-        homePageVijar.pickBuy2().get(0).click();
 
-    }
     @Test
     public void checkBasket (){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
