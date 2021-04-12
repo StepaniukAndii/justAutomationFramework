@@ -63,6 +63,7 @@ public class TestInit {
     public void afterTest() {
         driver.quit();
     }
+
     public void openUrl(String site) {
         driver.get(site);
     }
