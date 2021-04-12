@@ -10,22 +10,7 @@ import java.util.*;
 
 public class Vijar extends TestInit {
 
-    @Test
-    public void checkSearchField () {
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.findSearchFiel().sendKeys("Egger");
-        homePageVijar.clickOnFind().click();
-        homePageVijar.closeAdverb().click();
-        List<String> elements = getAttributeCollection(homePageVijar.getElementsEgger(), "title");
-        for (String elenent : elements) {
-         String str  =   elenent.toLowerCase();
-            if (!str.contains("egger")) {
-                Assert.fail();
-            }
-        }
-    }
+
     @Test
     public void checkPhoneNumbers () {
         HomePageVijar homePageVijar = new HomePageVijar(driver);
