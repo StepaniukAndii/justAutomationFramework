@@ -9,6 +9,14 @@ public class VijarPages1_4 extends BasePage {
     private String login = "grinred69@gmail.com";
     private String pass = "23112010vi";
 
+    public void enterToVijar(String site) {
+        driver.get(site);
+    }
+    public WebElement closeAdverb() {
+        return getElement("//img[@src='/img/close_white-24px.svg']");
+    }
+
+
     public VijarPages1_4(WebDriver driver) {
         super(driver);
     }
@@ -26,9 +34,6 @@ public class VijarPages1_4 extends BasePage {
                 "//*[@class='LC20lb DKV0Md' and text()='Вияр - интернет-магазин мебельной фурнитуры. Все ...']");
     }
 
-    public WebElement closeAdverb() {
-        return getElement("//img[@src='/img/close_white-24px.svg']");
-    }
 
     public WebElement goToEnter() {
         return getElement("//div[@class='login-in']//a[@id='modal_ancor']");
@@ -53,5 +58,9 @@ public class VijarPages1_4 extends BasePage {
     public WebElement clickEnter() {
         return getElement("//input[@class='login_btn']");
     }
+    public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
+
+    public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
+
 
 }

@@ -20,11 +20,9 @@ public class HomePageVijar extends BasePage {
         driver.get(site);
     }
 
-
     public WebElement closeAdverb() {
         return getElement("//img[@src='/img/close_white-24px.svg']");
     }
-
 
     public WebElement goToEnter() {
         return getElement("//div[@class='login-in']//a[@id='modal_ancor']");
