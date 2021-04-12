@@ -15,24 +15,17 @@ public class HomePageVijar extends BasePage {
         super(driver);
     }
 
-    public void enterToGoogle(String site) {
-        driver.get(site);
-    }
+
     public void enterToVijar(String site) {
         driver.get(site);
     }
 
-    public WebElement googleField() {
-        return getElement("//input[@class='gLFyf gsfi']");
-    }
 
-    public WebElement goToVijar() {
-        return getElement(
-                "//*[@class='LC20lb DKV0Md' and text()='Вияр - интернет-магазин мебельной фурнитуры. Все ...']");
-    }
     public WebElement closeAdverb() {
         return getElement("//img[@src='/img/close_white-24px.svg']");
     }
+
+
     public WebElement goToEnter() {
         return getElement("//div[@class='login-in']//a[@id='modal_ancor']");
     }
