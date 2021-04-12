@@ -12,4 +12,6 @@ public class FooterLocators extends BasePage {
     public List<WebElement> footerCompaniList(){return getElements ("//div[@class='footer-section'][1]/div[@class='footer-section__list']/ul/li");}
     public List<WebElement> footerHelpList(){return getElements ("//div[@class='footer-section'][2]/div[@class='footer-section__list']/ul/li");}
     public List<WebElement> footerUsefulInformationList(){return getElements ("//div[@class='footer-section'][3]/div[@class='footer-section__list']/ul/li");}
+    public WebElement feedBack(){return getElement ("//div[@class='main-button-block']");}
+    public List<WebElement> feedBackList(){return getElements ("//div[@class='contact-us-additional-buttons active']/a/span");}
 }
