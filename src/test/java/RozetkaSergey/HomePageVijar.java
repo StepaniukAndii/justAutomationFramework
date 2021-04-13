@@ -23,9 +23,7 @@ public class HomePageVijar extends BasePage {
         return getElement("//img[@src='/img/close_white-24px.svg']");
     }
 
-    public WebElement ordering (){ return getElement("//div[@id='modal-addToCart']//div[@class='btn_buy']");}
-    public WebElement deliteItemFromBasket () {return getElement("//img[@src='/images/viyarbox/close_little.png']");    }
-    public WebElement getfromseitText(){return getElement("//td[@style='text-align:center']");}
+
     public WebElement clickOnStatusOfOrder() {return getElement("//a[@class='ico-services']");}
     public List<WebElement> getDigit () {return  getElements("//div[@class='work_day filial_location']");}
     public List<WebElement> clickAdvertisement(){ return getElements("/html/body/main/section/div[1]/div/div[1]/a[1]");}
