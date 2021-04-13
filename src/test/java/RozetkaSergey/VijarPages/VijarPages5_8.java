@@ -31,6 +31,8 @@ public class VijarPages5_8 extends BasePage {
     public WebElement clickToOpenFindPhonNumber (){return getElement("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");}
     public WebElement chosePhone () {return getElement("//p[@class='work_time']//a[@class='c-tel']");}
     public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
+    public WebElement scrollDown () { return getElement("//button[@class='proezd']");}
+    public WebElement scrollFastUpButton () { return getElement("//img[@src='/img/up.svg']");}
 
 
 }

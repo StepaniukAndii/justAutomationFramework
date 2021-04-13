@@ -45,10 +45,6 @@ public class HomePageVijar extends BasePage {
     }
     public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
     public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
-
-
-    public WebElement scrollDown () { return getElement("//button[@class='proezd']");}
-    public WebElement scrollFastUpButton () { return getElement("//img[@src='/img/up.svg']");}
     public WebElement getSurname (){ return getElement("//input[@placeholder='Фамилия']");}
     public WebElement getName (){ return getElement("//input[@placeholder='Имя']");}
     public WebElement goToProfil(){return getElement("//div[@id='comp_3d516dd61c87243ff4c44464480b12fd']");}
