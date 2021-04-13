@@ -23,12 +23,6 @@ public class HomePageVijar extends BasePage {
         return getElement("//img[@src='/img/close_white-24px.svg']");
     }
 
-
-
-    public WebElement checkOut (){ return getElement("//*[@id=\"modal-addToCart\"]/div/div[3]/div[2]/a");}
-    public WebElement addItemToCard (){return getElement("//a[@class='plus-button plus']");}
-    public WebElement getPrice () { return getElement("//*[@id=\"site_panel\"]/section/section/div[2]/div[6]/div/div[1]/div/span[1]");}
-    public WebElement getTheSecondPrice (){return getElement("//span[@class='current-price']");}
     public WebElement ordering (){ return getElement("//div[@id='modal-addToCart']//div[@class='btn_buy']");}
     public WebElement deliteItemFromBasket () {return getElement("//img[@src='/images/viyarbox/close_little.png']");    }
     public WebElement getfromseitText(){return getElement("//td[@style='text-align:center']");}
