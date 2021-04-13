@@ -24,5 +24,8 @@ public class RozetkaPages1_4 extends BasePage {
     public List<WebElement> getElementsConstructor() {
         return getElements("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
     }
-
+    public WebElement closeAdverb (){ return getElement("//span[@class='exponea-close-cross']");}
+    public WebElement pickMainMenu (){ return getElement("//rz-mobile-user-menu[@class='header-menu']");}
+    public List<WebElement> goToMainMenu(){return  getElements("//li[@class='side-menu__item']");}
+    public WebElement chooseComp (){return getElement("//a[text()=' Компьютеры, неттопы, моноблоки ']");}
 }
