@@ -38,5 +38,10 @@ public class VijarPages13_16 extends BasePage {
     public WebElement closeForeverAbverb (){return getElement("//h4[@data-filial='kyiv']");}
     public List<WebElement> clickOnContact (){return getElements("//a[@href='/contacts/']");}
     public WebElement getMail (){return getElement("//a[@href='mailto:office@viyar.ua']");}
+    public WebElement services(){return getElement("//li[@class='item7']");}
+    public WebElement cutButton (){return getElement("//a[@href='/catalog/porezka/']");}
+    public WebElement clickOnDownload () {return getElement("//a[@class=' priceDownload']");}
+    public WebElement xml (){return getElement("//a[@class='xls']");}
+
 }
 
