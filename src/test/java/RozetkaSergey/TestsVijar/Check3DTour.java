@@ -17,6 +17,10 @@ public class Check3DTour extends TestInit {
         vijarPages13_16.chooseNovokonstantinovskaja().click();
         vijarPages13_16.clickOnNewTitle();
         vijarPages13_16.clickOnFirstButtonToEnter().click();
-        sleep(2);
-           }
+        sleep(3);
+        vijarPages13_16.clickOnSecondButtonToEnter().get(3).click();
+        sleep(3);
+        vijarPages13_16.clickOnThirdButtonToEnter().get(1).click();
+        sleep(3);
+    }
 }

@@ -24,20 +24,19 @@ public class VijarPages13_16 extends BasePage {
         List<String> windows = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(windows.get(1));
     }
-    public List<WebElement> clickOnSecondButtonToEnter(){return  getElements("clickOnFirstButtonToEnter");}
-
-
-
+    public List<WebElement> clickOnSecondButtonToEnter(){return  getElements("//div[@style='height: 80px;" +
+            " left: -61px; position: absolute; top: -170px; visibility: inherit; width: 120px; " +
+            "pointer-events: auto; transform-origin: 50% 50%;']");}
+    public List<WebElement> clickOnThirdButtonToEnter (){return  getElements("//div[@style='height: 80px;" +
+            " left: -61px; position: absolute; top: -170px; visibility: inherit;" +
+            " width: 120px; pointer-events: auto; transform-origin: 50% 50%;']"  );}
     public WebElement clickOnFirstButtonToEnter () {return getElement(
             "//div[@style='height: 80px; left: -61px; position: absolute;" +
                     " top: -170px; visibility: inherit; width: 120px; pointer-events: auto;" +
                     " transform-origin: 50% 50%;']");}
-
-
-
-
-
-
-
+    public WebElement proezd (){return getElement("//button[@class='proezd']");}
+    public WebElement closeForeverAbverb (){return getElement("//h4[@data-filial='kyiv']");}
+    public List<WebElement> clickOnContact (){return getElements("//a[@href='/contacts/']");}
+    public WebElement getMail (){return getElement("//a[@href='mailto:office@viyar.ua']");}
 }
 
