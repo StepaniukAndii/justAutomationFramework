@@ -25,15 +25,6 @@ public class HomePageVijar extends BasePage {
 
 
 
-    public WebElement topBar2 (){counter++; return  getElement("//li[@class='item1']");}
-    public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
-    public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
-    public WebElement getLog () { return getElement("//input[@placeholder='Логин']");}
-    public WebElement getPassword() { return getElement("//input[@placeholder='Почтовый адрес']");}
-    public WebElement clickOnSamorezy (){ return getElement("//a[@href='/catalog/samorezy/']");}
-    public List<WebElement> getItems (){return  getElements("//div[@class='col-xs-12 col-sm-6 col-md-6 col-lg-4 product_prewiew-wrapper paginator-item']");}
-    public List<WebElement> pickBuy (){return getElements("//a[@id='btn-buy-items']");}
-    public List<WebElement> pickBuy2 (){return getElements("//a[@id='btn-buy-items']");}
     public WebElement checkOut (){ return getElement("//*[@id=\"modal-addToCart\"]/div/div[3]/div[2]/a");}
     public WebElement addItemToCard (){return getElement("//a[@class='plus-button plus']");}
     public WebElement getPrice () { return getElement("//*[@id=\"site_panel\"]/section/section/div[2]/div[6]/div/div[1]/div/span[1]");}
@@ -44,6 +35,11 @@ public class HomePageVijar extends BasePage {
     public WebElement clickOnStatusOfOrder() {return getElement("//a[@class='ico-services']");}
     public List<WebElement> getDigit () {return  getElements("//div[@class='work_day filial_location']");}
     public List<WebElement> clickAdvertisement(){ return getElements("/html/body/main/section/div[1]/div/div[1]/a[1]");}
+    public WebElement topBar2 (){counter++; return  getElement("//li[@class='item1']");}
+    public WebElement clickOnSamorezy (){ return getElement("//a[@href='/catalog/samorezy/']");}
+    public List<WebElement> getItems (){return  getElements("//div[@class='col-xs-12 col-sm-6 col-md-6 col-lg-4 product_prewiew-wrapper paginator-item']");}
+    public List<WebElement> pickBuy (){return getElements("//a[@id='btn-buy-items']");}
+    public List<WebElement> pickBuy2 (){return getElements("//a[@id='btn-buy-items']");}
 
 }
 
