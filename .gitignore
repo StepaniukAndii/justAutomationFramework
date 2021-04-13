@@ -2,4 +2,5 @@ target/
 .idea
 justAutomationFramework.iml
 HomePageFacebook.java
+CheckSeidMenu.java
 
