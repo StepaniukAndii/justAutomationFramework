@@ -10,37 +10,6 @@ import java.util.*;
 
 public class Vijar extends TestInit {
     @Test
-    public void checkOutNameAndSurname(){
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.goToEnter().click();
-        homePageVijar.getLogin().sendKeys(homePageVijar.getterLogin());
-        homePageVijar.getPass().sendKeys(homePageVijar.getterPass());
-        homePageVijar.clickEnter().click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.goToProfil().click();
-        String surname = homePageVijar.getSurname().getAttribute("value");
-        Assert.assertEquals(surname,"Гринчук");
-        String name = homePageVijar.getName().getAttribute("value");
-        Assert.assertEquals(name, "Сергей");
-            }
-    @Test
-    public void checkOutLoginAndPass () {
-        HomePageVijar homePageVijar = new HomePageVijar(driver);
-        homePageVijar.enterToVijar("https://viyar.ua/");
-        homePageVijar.closeAdverb().click();
-        homePageVijar.goToEnter().click();
-        homePageVijar.getLogin().sendKeys(homePageVijar.getterLogin());
-        homePageVijar.getPass().sendKeys(homePageVijar.getterPass());
-        homePageVijar.clickEnter().click();
-        homePageVijar.closeAdverb().click();
-        homePageVijar.goToProfil().click();
-        String log = homePageVijar.getLog().getAttribute("value");
-        String pas = homePageVijar.getPassword().getAttribute("value");
-        Assert.assertEquals(pas,log);
-    }
-    @Test
     public void addItemToBasket (){
         HomePageVijar homePageVijar = new HomePageVijar(driver);
         homePageVijar.enterToVijar("https://viyar.ua/");
