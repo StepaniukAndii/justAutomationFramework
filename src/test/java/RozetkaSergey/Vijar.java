@@ -11,21 +11,6 @@ import java.util.*;
 public class Vijar extends TestInit {
 
 
-//    @Test
-//    public void loginTest() {
-//        HomePageVijar homePageVijar = new HomePageVijar(driver);
-//        homePageVijar.enterToGoogle("https://www.google.com");
-//        homePageVijar.googleField().sendKeys("Вияр");
-//        enter();
-//        homePageVijar.goToVijar().click();
-//        homePageVijar.closeAdverb().click();
-//        homePageVijar.goToEnter().click();
-//        homePageVijar.getLogin().sendKeys(homePageVijar.getterLogin());
-//        homePageVijar.getPass().sendKeys(homePageVijar.getterPass());
-//        homePageVijar.clickEnter().click();
-//        homePageVijar.closeAdverb().click();
-//        System.out.println("Sehr gut!");
-//    }
     @Test
     public void switchLanguage() {
         HomePageVijar homePageVijar = new HomePageVijar(driver);
