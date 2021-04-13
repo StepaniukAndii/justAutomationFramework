@@ -32,14 +32,14 @@ public class FooterCompani extends TestInit {
         }
     }
     private void listMyWords() {
-        listMyWords = new LinkedList<>();
-        listMyWords.add("Про нас");
-        listMyWords.add("Вакансії");
-        listMyWords.add("Прес-центр");
-        listMyWords.add("Мережа магазинів");
-        listMyWords.add("Корпоративним кліентам");
-        listMyWords.add("Контакти");
-        listMyWords.add("Умови використання сайту");
-        listMyWords.add("Як продавати на Allo.ua");
+        listMyWords = new LinkedList<> ();
+        listMyWords.add ("Про нас");
+        listMyWords.add ("Вакансії");
+        listMyWords.add ("Прес-центр");
+        listMyWords.add ("Мережа магазинів");
+        listMyWords.add ("Корпоративним кліентам");
+        listMyWords.add ("Контакти");
+        listMyWords.add ("Умови використання сайту");
+        listMyWords.add ("Як продавати на Allo.ua");
     }
 }
