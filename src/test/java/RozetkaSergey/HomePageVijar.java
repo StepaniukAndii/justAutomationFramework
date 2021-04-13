@@ -45,11 +45,8 @@ public class HomePageVijar extends BasePage {
     }
     public WebElement switchToUa() { return getElement("//a[@href='/ua/']");}
     public WebElement newsHeaderElement() { return getElement("//nav[contains(@class, 'top-menu')]//a[@href='/ua/news/']");}
-    public WebElement findSearchFiel (){ return getElement("//input[@id='title-search-input']");}
-    public WebElement clickOnFind (){ return getElement("//input[@name='s' and @value='Найти' ]");}
-    public List<WebElement> getElementsEgger(){return getElements("//div[@class='product_prewiew']/a");}
-    public WebElement clickToOpenFindPhonNumber (){return getElement("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");}
-    public WebElement chosePhone () {return getElement("//p[@class='work_time']//a[@class='c-tel']");}
+
+
     public WebElement scrollDown () { return getElement("//button[@class='proezd']");}
     public WebElement scrollFastUpButton () { return getElement("//img[@src='/img/up.svg']");}
     public WebElement getSurname (){ return getElement("//input[@placeholder='Фамилия']");}

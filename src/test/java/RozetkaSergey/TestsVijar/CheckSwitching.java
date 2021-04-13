@@ -1,7 +1,6 @@
-package RozetkaSergey.Tests;
+package RozetkaSergey.TestsVijar;
 
 import ClasesToAllUs.TestInit;
-import RozetkaSergey.HomePageVijar;
 import RozetkaSergey.VijarPages.VijarPages1_4;
 import org.testng.Assert;
 import org.testng.annotations.Test;
