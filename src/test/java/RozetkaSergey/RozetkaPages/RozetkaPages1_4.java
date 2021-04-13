@@ -20,5 +20,9 @@ public class RozetkaPages1_4 extends BasePage {
             Thread.sleep(1000);
         }
     }
+    public WebElement findSearchField (){return getElement("//input[@class='search-form__input ng-untouched ng-pristine ng-valid']");}
+    public List<WebElement> getElementsConstructor() {
+        return getElements("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
+    }
 
 }
