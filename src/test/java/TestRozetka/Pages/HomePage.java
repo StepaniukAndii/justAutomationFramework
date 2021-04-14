@@ -42,9 +42,8 @@ public class HomePage extends BasePage {
                 elementToBeClickable(By.xpath("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']")));
     }
 
-    public WebElement getPhoneProductCatalog() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//a[text()='Смартфони, ТВ і електроніка']")));
+    public List<WebElement> getPhoneProductCatalog() {
+        return getElements("//a[@class='menu-categories__link']");
     }
 
     public WebElement getCheckBoxApple() {

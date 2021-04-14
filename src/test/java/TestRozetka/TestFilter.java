@@ -11,7 +11,7 @@ public class TestFilter extends TestInit {
         HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
         homePage.productCatalog().click();
-        moveMouseToElement(homePage.getPhoneProductCatalog());
+        moveMouseToElement(homePage.getPhoneProductCatalog().get(1));
         homePage.getPhone().click();
         homePage.getCheckBoxApple().click();
     }
