@@ -3,6 +3,7 @@ package AlloTest.Pages;
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import java.util.List;
 
 public class SmartAndTelefonsCheckBarLocators extends BasePage {
     public SmartAndTelefonsCheckBarLocators(WebDriver driver) {
@@ -26,6 +27,17 @@ public class SmartAndTelefonsCheckBarLocators extends BasePage {
     public WebElement  relatedCategories(){
         return getElement ("//div[@class='accordion__header portal-category__title-wrapper']/h2[text()[contains(.,'Суміжні категорії')]]");
     }
-
-
+    public List<WebElement> listURLPopular(){
+        return getElements ("//a[text()='Смартфони']/parent::li/parent::ul/li");
+    }
+    public List<WebElement> listURLCatalog(){
+        return getElements ("//a[text()='Смартфони і мобільні телефони']/parent::li/parent::ul/li");
+    }public List<WebElement> listURLManufakture(){
+        return getElements ("//a[text()='Xiaomi']/parent::li/parent::ul/li");
+    }
+    public List<WebElement> listURLRelatedCategories(){
+        return getElements ("//a[text()='Планшети']/parent::li/parent::ul/li");
+    }
+    public WebElement manufaktureButtonAllGoods(){return  getElement ("//a[text()[contains(.,'Всі виробники')]]");
+    }
 }
