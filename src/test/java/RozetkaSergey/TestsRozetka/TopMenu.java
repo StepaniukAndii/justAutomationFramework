@@ -9,7 +9,6 @@ public class TopMenu extends TestInit {
     public void topMenu(){
         RozetkaPages1_4 rozetkaPages1_4 = new RozetkaPages1_4(driver);
         rozetkaPages1_4.enterToRozetka("https://rozetka.com.ua/");
-        rozetkaPages1_4.closeAdverb().click();
         rozetkaPages1_4.pickMainMenu().click();
         rozetkaPages1_4.goToMainMenu().get(0).click();
         sleep(1);
