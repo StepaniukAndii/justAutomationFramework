@@ -19,4 +19,5 @@ public class FooterLocators extends BasePage {
     public WebElement helpLinkTry(){return getElement ("//div[@class='footer-section'][2]/div[@class='footer-section__list']/ul/li/a[text()='Купити в кредит']");}
     public WebElement helpLinkFor(){return getElement ("//div[@class='footer-section'][2]/div[@class='footer-section__list']/ul/li/a[text()='Оплата частинами']");}
     public WebElement helpLinkFive(){return getElement ("//div[@class='footer-section'][2]/div[@class='footer-section__list']/ul/li/a[text()='Залиште відгук про нашу роботу']");}
+    public  List<WebElement> sss(){return getElements ("//div[@class='footer-section'][3]/div[@class='footer-section__list']/ul/li");}
 }
