@@ -24,7 +24,6 @@ public class DeleteFromBasket extends TestInit {
             rozetkaPages8_12.affirmDelete().click();
             String allDeleted = rozetkaPages8_12.returnWords().getText();
             Assert.assertEquals(allDeleted,"Корзина пуста");
-           sleep(1);
         }
     }
 

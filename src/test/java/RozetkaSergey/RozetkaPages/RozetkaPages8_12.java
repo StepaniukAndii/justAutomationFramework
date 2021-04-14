@@ -57,4 +57,8 @@ public class RozetkaPages8_12 extends BasePage {
         actions.moveToElement(element).perform();
     }
     public WebElement returnWords (){return getElement("//h4[@class='cart-dummy__heading']");}
+    public List<WebElement> addMore (){ return getElements("//button[@class='button button_color_white button_size_medium cart-counter__button']");}
+    public WebElement takePrice (){ return getElement("//div[@class='cart-receipt__sum-price']");}
+    public WebElement takeSume (){ return getElement("//div[@class='cart-receipt__sum-price']");}
+
 }
