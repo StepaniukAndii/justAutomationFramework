@@ -123,4 +123,3 @@ public class TestInit {
         return listElements;
     }
 }
-
