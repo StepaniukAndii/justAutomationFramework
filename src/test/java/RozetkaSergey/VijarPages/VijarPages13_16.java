@@ -42,6 +42,5 @@ public class VijarPages13_16 extends BasePage {
     public WebElement cutButton (){return getElement("//a[@href='/catalog/porezka/']");}
     public WebElement clickOnDownload () {return getElement("//a[@class=' priceDownload']");}
     public WebElement xml (){return getElement("//a[@class='xls']");}
-
 }
 
