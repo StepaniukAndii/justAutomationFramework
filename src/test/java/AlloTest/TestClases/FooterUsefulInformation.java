@@ -4,9 +4,7 @@ import AlloTest.Pages.FooterLocators;
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.util.List;
-import java.util.WeakHashMap;
 
 public class FooterUsefulInformation extends TestInit {
 
@@ -18,7 +16,6 @@ public class FooterUsefulInformation extends TestInit {
         driver.get("https://allo.ua");
         getLink();
         useLink();
-
     }
     private void useLink() {
     }
