@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
-    public String gools = "Холодильник";
+    public String goods = "Холодильник";
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -27,10 +27,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement addCart() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By
-                        .xpath("//button[@class=" +
-                                "'buy-button button button_with_icon button_color_green button_size_large']")));
+        return getElement("//button[@ac='Купити' or @aria-label='Купить']/span[@class='buy-button__label']");
     }
 
     public WebElement getButtonFild() {
@@ -112,5 +109,13 @@ public class HomePage extends BasePage {
 
     public List<WebElement> getButtonProductFilter() {
         return getElements("//ul[@class='tabs__list']/li/a");
+    }
+
+    public WebElement getButtonAddOneMoreProduct() {
+        return getElement("//button[contains(@class,'button button') and contains(@aria-label,'До')]");
+    }
+
+    public WebElement getProductPrices() {
+        return getElement("//p[@class='product-prices__big']");
     }
 }

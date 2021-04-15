@@ -16,7 +16,7 @@ public class TestRozetkaSearch extends TestInit {
         HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
         homePage.searchField().click();
-        homePage.searchField().sendKeys(homePage.gools);
+        homePage.searchField().sendKeys(homePage.goods);
         homePage.getButtonFild().click();
         List<String> elements = getAttributeCollection(homePage.getElementsRefrigerator(), "title");
         for (String element : elements) {

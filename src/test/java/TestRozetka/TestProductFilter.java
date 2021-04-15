@@ -11,7 +11,7 @@ public class TestProductFilter extends TestInit {
         HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
         homePage.searchField().click();
-        homePage.searchField().sendKeys(homePage.gools+"\n");
+        homePage.searchField().sendKeys(homePage.goods +"\n");
         System.out.println(homePage.getElementsGoods());
         homePage.getElementsGoods().get(0).click();
         for (int i = 1; i < homePage.getButtonProductFilter().size(); i++) {
