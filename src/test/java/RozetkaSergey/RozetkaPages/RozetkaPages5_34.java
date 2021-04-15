@@ -7,8 +7,8 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
-public class RozetkaPages8_12 extends BasePage {
-    public RozetkaPages8_12(WebDriver driver) {
+public class RozetkaPages5_34 extends BasePage {
+    public RozetkaPages5_34(WebDriver driver) {
         super(driver);
     }
 
@@ -51,11 +51,6 @@ public class RozetkaPages8_12 extends BasePage {
     public WebElement affirmDelete() {
         return getElement("//button[@class='button button--medium button--with-icon button--link context-menu-actions__button']");
     }
-
-    public void moveMouseToElement(WebElement element) {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element).perform();
-    }
     public WebElement returnWords (){return getElement("//h4[@class='cart-dummy__heading']");}
     public List<WebElement> addMore (){ return getElements("//button[@class='button button_color_white button_size_medium cart-counter__button']");}
     public WebElement takePrice (){ return getElement("//div[@class='cart-receipt__sum-price']");}
@@ -67,8 +62,15 @@ public class RozetkaPages8_12 extends BasePage {
     public WebElement goWeiter (){return getElement("//a[@class='comparison-modal__link']");}
     public List<WebElement> likeButtons (){return getElements("//section[@class='content content_type_catalog']//button[@class='wish-button js-wish-button']");}
     public WebElement closeAdvertisement (){return getElement("//span[@class='exponea-close-cross']");}
-
+    public WebElement listToleft (){return getElement("//button[@aria-label='Предыдущий слайд']");}
+    public WebElement listToRight (){return getElement("//button[@aria-label='Следующий слайд']");}
 
     }
+
+
+
+
+
+
 
 
