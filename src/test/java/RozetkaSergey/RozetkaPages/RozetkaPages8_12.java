@@ -65,6 +65,7 @@ public class RozetkaPages8_12 extends BasePage {
     public List<WebElement> addToCompare (){return  getElements("//button[@class='compare-button']");}
     public List<WebElement> goToComparator (){return getElements("//button[@class='header__button' or contains(text(),'Списки сравнения')]  ");}
     public WebElement goWeiter (){return getElement("//a[@class='comparison-modal__link']");}
+    public List<WebElement> likeButtons (){return getElements("//section[@class='content content_type_catalog']//button[@class='wish-button js-wish-button']");}
 
 
 
