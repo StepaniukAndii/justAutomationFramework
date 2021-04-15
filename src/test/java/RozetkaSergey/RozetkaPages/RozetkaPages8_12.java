@@ -60,5 +60,13 @@ public class RozetkaPages8_12 extends BasePage {
     public List<WebElement> addMore (){ return getElements("//button[@class='button button_color_white button_size_medium cart-counter__button']");}
     public WebElement takePrice (){ return getElement("//div[@class='cart-receipt__sum-price']");}
     public WebElement takeSume (){ return getElement("//div[@class='cart-receipt__sum-price']");}
+    public WebElement clickTopMenu (){return getElement("//button[@id='fat-menu']");}
+    public WebElement clickOnLaptopAndComp () { return getElement("//div[@class='menu__hidden-column']//a[contains(text(),'Ноутбуки')]");}
+    public List<WebElement> addToCompare (){return  getElements("//button[@class='compare-button']");}
+    public List<WebElement> goToComparator (){return getElements("//button[@class='header__button' or contains(text(),'Списки сравнения')]  ");}
+    public WebElement goWeiter (){return getElement("//a[@class='comparison-modal__link']");}
+
+
+
 
 }
