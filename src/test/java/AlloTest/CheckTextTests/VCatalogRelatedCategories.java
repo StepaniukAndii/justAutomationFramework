@@ -1,4 +1,4 @@
-package AlloTest.TestClases;
+package AlloTest.CheckTextTests;
 
 import AlloTest.Pages.SmartAndTelefonsCheckBarLocators;
 import ClasesToAllUs.TestInit;
@@ -7,16 +7,16 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
-public class VCatalogPopular extends TestInit {
+public class VCatalogRelatedCategories extends TestInit {
 
     SmartAndTelefonsCheckBarLocators locators;
     List<String> myURLWords;
     List<String> getURLWords;
 
     @Test
-    public void vCatalogPopular(){
+    public void vCatalogRelatedCategories(){
         locators = new SmartAndTelefonsCheckBarLocators (driver);
-        driver.get ("https://allo.ua");
+        driver.get("https://allo.ua");
         locators.smartAndTell().click();
         getUrl();
         myURL();
@@ -29,23 +29,25 @@ public class VCatalogPopular extends TestInit {
         }
     }
     private void resultat() {
-        if(myURLWords.equals(getURLWords)){
+        if(myURLWords.equals (getURLWords)){
             System.out.println("усеее круто");
         }else {
             System.out.println("не круто");
         }
     }
     private void myURL() {
-        myURLWords = new LinkedList<>();
-        myURLWords.add ("Смартфони");
-        myURLWords.add ("Екран 120 Гц +");
-        myURLWords.add ("Підтримка eSIM");
-        myURLWords.add ("Волого і водозахищені");
-        myURLWords.add ("З бездротовою зарядкою");
-        myURLWords.add ("Аксесуари");
+        myURLWords = new LinkedList<> ();
+        myURLWords.add ("Планшети");
+        myURLWords.add ("Смарт-годинники");
+        myURLWords.add ("Фітнес-браслети");
+        myURLWords.add ("Екшн-камери");
+        myURLWords.add ("Розумний будинок");
+        myURLWords.add ("Електротранспорт");
+        myURLWords.add ("Life Style");
+        myURLWords.add ("Ігрова зона");
     }
     private void getUrl() {
-        List<WebElement> getUrl = locators.listURLPopular();
+        List<WebElement> getUrl = locators.listURLRelatedCategories();
         getURLWords = new LinkedList<>();
         for(WebElement token:getUrl){
             String word = token.getText();

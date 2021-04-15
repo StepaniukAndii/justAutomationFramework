@@ -98,6 +98,9 @@ public class PageHomeAllo extends BasePage{
     public List<WebElement> itemListInBasked(){
         return  getElements ("//ul[@class='products__list']/li");
     }
+    public List<WebElement> closeButtonListInBasked(){
+        return  getElements ("//div[@class='title']/*[name()='svg']");
+    }
 
     public WebElement citiesOpenFild() {return getElement ("//div[@class='geo-label js-geo-label']"); }
 
@@ -123,5 +126,24 @@ public class PageHomeAllo extends BasePage{
 
     public WebElement checkLanguage(){return getElement ("//div[@class='header-catalog-button']/p");}
 
+    public List<WebElement> blockPriceProduks(){
+        return getElements ("//ul[@class='menu__list js-menu__list']/li/a");
+    }
+    public WebElement buttonArrowMous(){
+        return getElement ("//div[@class='menu js-menu menu--level-1']");
+    }
+    public List<WebElement> clickScroll(){
+        return getElements ("//div[@class='home-banner__pagination']/button");
+    }
+    public WebElement nextButton(){
+        return getElement ("//button[@class='home-banner__nav-button home-banner__nav-button--next']");
+    }
+    public WebElement prevButton(){
+        return getElement ("//button[@class='home-banner__nav-button home-banner__nav-button--prev']");
+    }
+    public WebElement scrollArrowMous(){
+        return getElement ("//div[@id='tns1-iw']");
+    }
+    public WebElement mousToTwoItem(){return getElement ("" +
+            "//div[@class='products-layout__item without-options-1 without-options-3 without-options-4'][2]");}
 }
-
