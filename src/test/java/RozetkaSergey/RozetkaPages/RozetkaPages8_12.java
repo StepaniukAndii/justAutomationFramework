@@ -16,8 +16,8 @@ public class RozetkaPages8_12 extends BasePage {
         return getElement("//span[@class='exponea-close-cross']");
     }
 
-    public WebElement pickMainMenu() {
-        return getElement("//rz-mobile-user-menu[@class='header-menu']");
+    public WebElement clickCatalog() {
+        return getElement("//header[@class='header']//button[@aria-label='Каталог']");
     }
 
     public List<WebElement> goToMainMenu() {
@@ -25,7 +25,7 @@ public class RozetkaPages8_12 extends BasePage {
     }
 
     public List<WebElement> chooseComp() {
-        return getElements("//a[text()=' Компьютеры, неттопы, моноблоки ']");
+        return getElements("/html/body/app-root/div/div[1]/app-rz-main-page/div/aside/main-page-sidebar/sidebar-fat-menu/div/ul/li[1]/a");
     }
 
     public List<WebElement> addToCard() {
@@ -66,8 +66,9 @@ public class RozetkaPages8_12 extends BasePage {
     public List<WebElement> goToComparator (){return getElements("//button[@class='header__button' or contains(text(),'Списки сравнения')]  ");}
     public WebElement goWeiter (){return getElement("//a[@class='comparison-modal__link']");}
     public List<WebElement> likeButtons (){return getElements("//section[@class='content content_type_catalog']//button[@class='wish-button js-wish-button']");}
+    public WebElement closeAdvertisement (){return getElement("//span[@class='exponea-close-cross']");}
 
 
+    }
 
 
-}
