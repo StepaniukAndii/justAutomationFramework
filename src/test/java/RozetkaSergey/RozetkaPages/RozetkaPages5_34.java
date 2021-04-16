@@ -1,6 +1,7 @@
 package RozetkaSergey.RozetkaPages;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -68,9 +69,8 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement chooseCity (){return  getElement("//button[@class='city-toggle button button--small button--white']");}
     public List<WebElement> listOfCites (){return getElements("//a[@class='header-location__popular-link']");}
     public WebElement klickAsept (){return getElement("//button[@class='button button_size_medium button_color_green']");}
-
-
-
+    public WebElement changLanguageButton(){return getElement("//li[@class='lang__item __item']");}
+    public WebElement fiendButton   () {return getElement("/html/body/app-root/div/div[1]/rz-header/header/div/div/div/form/button");}
     public void checkingListOfCities(){
         List<WebElement> cities = listOfCites();
         for (int i = 0; i<5; i++){
@@ -80,8 +80,6 @@ public class RozetkaPages5_34 extends BasePage {
 
 
 }
-
-
     }
 
 
