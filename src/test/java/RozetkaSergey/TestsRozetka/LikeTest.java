@@ -14,7 +14,5 @@ public class LikeTest extends TestInit {
         sleep(1);
         rozetkaPages8_12.likeButtons().get(2).click();
         sleep(2);
-        rozetkaPages8_12.likeButtons().get(1).click();
-        sleep(2);
     }
 }
