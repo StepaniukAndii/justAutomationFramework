@@ -67,6 +67,10 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement clickOnThreeStrips (){return getElement("//button[@class='header__button'][contains(@aria-label, 'Открыть меню')]");}
     public WebElement chooseCity (){return  getElement("//button[@class='city-toggle button button--small button--white']");}
     public List<WebElement> listOfCites (){return getElements("//a[@class='header-location__popular-link']");}
+    public WebElement klickAsept (){return getElement("//button[@class='button button_size_medium button_color_green']");}
+
+
+
     public void checkingListOfCities(){
         List<WebElement> cities = listOfCites();
         for (int i = 0; i<5; i++){
