@@ -1,4 +1,4 @@
-package AlloTest.TestClases;
+package AlloTest.CheckTextTests;
 
 import AlloTest.Pages.FooterLocators;
 import ClasesToAllUs.TestInit;
