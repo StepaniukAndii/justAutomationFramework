@@ -71,6 +71,11 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement klickAsept (){return getElement("//button[@class='button button_size_medium button_color_green']");}
     public WebElement changLanguageButton(){return getElement("//li[@class='lang__item __item']");}
     public WebElement fiendButton   () {return getElement("/html/body/app-root/div/div[1]/rz-header/header/div/div/div/form/button");}
+    public WebElement contactButton (){ return getElement("//ul[@class='main-links__list']//a[@href='https://rozetka.com.ua/contacts/']");}
+    public List<WebElement> listOfTelefonNumbers (){return getElements("//section[@class='contacts-section']//div[@class='contacts-main__cell']//a[@class='contacts-main__number']");}
+
+
+
     public void checkingListOfCities(){
         List<WebElement> cities = listOfCites();
         for (int i = 0; i<5; i++){
