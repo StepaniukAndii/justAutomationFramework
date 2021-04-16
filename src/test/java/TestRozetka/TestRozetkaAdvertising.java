@@ -1,15 +1,16 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
-import TestRozetka.Pages.HomePageRozetka;
+import TestRozetka.Pages.HomePage;
 import org.testng.annotations.Test;
 import java.util.Iterator;
 import java.util.Set;
 
 public class TestRozetkaAdvertising extends TestInit {
+
     @Test
     public void testRozetkaAdvertising() {
-        HomePageRozetka homePage = new HomePageRozetka(driver);
+        HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
         homePage.advertisingOnHome().click();
         System.out.println(driver.getCurrentUrl());
