@@ -33,7 +33,7 @@ public class SwichLaunguage extends TestInit {
         }
     }
     public void closeForeverAd() {
-        if (myBooleon) {
+        if (myBooleon) { rozetkaPages5_34.closeAdvertisement().click();
 
         }
     }

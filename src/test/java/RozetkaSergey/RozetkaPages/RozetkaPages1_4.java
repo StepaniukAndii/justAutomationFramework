@@ -17,7 +17,7 @@ public class RozetkaPages1_4 extends BasePage {
         for (i=0; i < rozetkaPages1_4.itTaksPunkteFromMenu().size(); i++){
             Actions actions = new Actions(driver);
             actions.moveToElement(rozetkaPages1_4.itTaksPunkteFromMenu().get(i)).perform();
-            Thread.sleep(1000);
+            Thread.sleep(750);
         }
     }
     public WebElement findSearchField (){return getElement("//input[@class='search-form__input ng-untouched ng-pristine ng-valid']");}
