@@ -10,31 +10,17 @@ public class SwichLaunguage extends TestInit {
     String stringToComp = "Знайти";
     RozetkaPages5_34 rozetkaPages5_34;
     boolean myBooleon;
+
     @Test
     public void swichLaunquage (){
         rozetkaPages5_34 = new RozetkaPages5_34(driver);
         rozetkaPages5_34.enterToRozetka("https://rozetka.com.ua/");
-        isElementPresent();
-        closeForeverAd();
+        closeAdIfExist();
         rozetkaPages5_34.clickOnThreeStrips().click();
         rozetkaPages5_34.changLanguageButton().click();
         String textFromButton = rozetkaPages5_34.fiendButton().getText();
         Assert.assertEquals(textFromButton,stringToComp);
         sleep(1);
-        isElementPresent();
-        closeForeverAd();
-    }
-    public boolean isElementPresent(){
-        try {
-            rozetkaPages5_34.closeAdvertisement().isEnabled();
-            return myBooleon = true;
-        } catch (Exception e) {
-            return myBooleon = false;
-        }
-    }
-    public void closeForeverAd() {
-        if (myBooleon) {
-
-        }
+        closeAdIfExist();
     }
 }
