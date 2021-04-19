@@ -1,32 +1,29 @@
 package TestRozetka.Pages;
 
 import ClasesToAllUs.BasePage;
-import TestRozetka.Logators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.Arrays;
 import java.util.List;
 
-public class HomePageRozetka extends BasePage {
+public class HomePage extends BasePage {
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
     public String gools = "Холодильник";
 
-    public HomePageRozetka(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         super(driver);
     }
 
-    public WebElement searchFild() {
-        return getElement(Logators.SEARCHFIELD);
+    public WebElement searchField() {
+        return getElement("//input[@name='search']");
     }
 
     public WebElement getRefrigerator() {
-        return getElement(Logators.GETREFRIGERATOR);
+        return getElement("//span[@class='goods-tile__title']");
     }
 
     public WebElement addCart() {
@@ -45,9 +42,8 @@ public class HomePageRozetka extends BasePage {
                 elementToBeClickable(By.xpath("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']")));
     }
 
-    public WebElement getPhoneProductCatalog() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//a[text()='Смартфони, ТВ і електроніка']")));
+    public List<WebElement> getPhoneProductCatalog() {
+        return getElements("//a[@class='menu-categories__link']");
     }
 
     public WebElement getCheckBoxApple() {
@@ -56,7 +52,7 @@ public class HomePageRozetka extends BasePage {
     }
 
     public WebElement productCatalog() {
-       return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
     }
 
     public List<WebElement> getElementsRefrigerator() {
@@ -64,7 +60,7 @@ public class HomePageRozetka extends BasePage {
     }
 
     public List<WebElement> getElementsGoods() {
-        return getElements("//div[@class='goods-tile__inner']");
+        return getElements("//a[@class='goods-tile__picture']");
     }
 
     public WebElement contacts() {
@@ -77,7 +73,7 @@ public class HomePageRozetka extends BasePage {
                 (By.xpath("//a[@id='rz-banner']")));
     }
 
-    public List<WebElement> allGoolsCost() {
+    public List<WebElement> allGoodsCost() {
         return getElements("//span[@class='goods-tile__price-value']");
     }
 
@@ -95,5 +91,26 @@ public class HomePageRozetka extends BasePage {
 
     public List<WebElement> getTextOnPage() {
         return getElements("//h2[@class='main-goods__heading']");
+    }
+
+    public WebElement getHeaderButton() {
+        return getElement("//button[@aria-label='Открыть меню']");
+    }
+
+    public WebElement getHelpCentre() {
+        return getElement("//a[text()=' Справочный центр ']");
+    }
+
+    public WebElement getSearchFieldHelpCentre() {
+        return getElement("//input[@id='query']");
+    }
+
+    public List<WebElement> getTextOnPgeHelpCenter() {
+        return getElements("//ul[@class='search" +
+                "-results-list']/li/a");
+    }
+
+    public List<WebElement> getButtonProductFilter() {
+        return getElements("//ul[@class='tabs__list']/li/a");
     }
 }
