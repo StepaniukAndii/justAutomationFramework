@@ -72,9 +72,6 @@ public class RozetkaPages5_34 extends BasePage {
         for (int i = 0; i<5; i++){
             System.out.println(cities.get(i).getText());
         }
-
-
-
 }
 
 
