@@ -17,6 +17,5 @@ public class SwitchCity extends TestInit {
         rozetkaPages5_34.listOfCites().get(3).click();
         System.out.println(one+" one City of the list");
         Assert.assertEquals(one,"Запорожье");
-        sleep(1);
     }
 }
