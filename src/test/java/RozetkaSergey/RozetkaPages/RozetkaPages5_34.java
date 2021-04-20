@@ -97,7 +97,10 @@ public class RozetkaPages5_34 extends BasePage {
     public List<WebElement> digitHowMushGoodsAtPage (){return getElements("//li[@class='catalog-grid__cell  catalog-grid__cell_type_slim']");}
     public WebElement brauneButton (){return getElement("//div[@data-filter-name='producer']//a[@class='checkbox-filter__link']//label[@for='Braun']");}
     public List<WebElement> listOfBraungoods(){return getElements("//div[@class='goods-tile__inner']//a[@class='goods-tile__heading']");}
-
+    public List<WebElement> minMaxPrice (){ return getElements("//input[@class='slider-filter__input ng-untouched ng-pristine ng-valid']");}
+    public WebElement buttonMinMaxPriceConfirm (){return getElement("//button[@class='button button_color_gray button_size_small slider-filter__button']");}
+    public WebElement minArgu (){return getElement("//input[@formcontrolname='min']");}
+    public WebElement maxArgu (){return getElement("//input[@formcontrolname='max']");}
 }
 
 

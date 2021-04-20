@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestFilterByBrend extends TestInit {
+public class TestFilterByBrand extends TestInit {
     @Test
     public void filterByBrend() {
         RozetkaPages5_34 rozetkaPages5_34 = new RozetkaPages5_34(driver);
