@@ -131,4 +131,20 @@ public class HomePage extends BasePage {
     public List<WebElement> getButtonProductFilter() {
         return getElements("//ul[@class='tabs__list']/li/a");
     }
+
+    public WebElement getButtonCityToggle() {
+        return getElement("//button[@class='city-toggle button button--small button--white']");
+    }
+
+    public List<WebElement> getHeaderLocation() {
+        return getElements("//a[@class='header-location__popular-link']");
+    }
+
+    public WebElement getAutocompleteInput() {
+        return getElement("//input[@class='autocomplete__input ng-valid ng-dirty ng-touched']");
+    }
+
+    public WebElement getButtonApplyCity() {
+        return getElement("//button[@class='button button_size_medium button_color_green']");
+    }
 }
