@@ -36,7 +36,7 @@ public class HomePageRozetka extends BasePage {
                                 "'buy-button button button_with_icon button_color_green button_size_large']")));
     }
 
-    public WebElement getButtonFild() {
+    public WebElement getButtonField() {
         return getElement("//button[@class='button button_color_green button_size_medium search-form__submit']");
     }
 
@@ -95,5 +95,25 @@ public class HomePageRozetka extends BasePage {
 
     public List<WebElement> getTextOnPage() {
         return getElements("//h2[@class='main-goods__heading']");
+    }
+
+    public List<WebElement> getCompareButtons() {
+        return getElements("//button[@class='compare-button']");
+    }
+
+    public List<WebElement> getHeaderButton() {
+        return getElements("//button[@class='header__button']");
+    }
+
+    public WebElement getComparisonModalLink() {
+        return getElement("//a[@class='comparison-modal__link']");
+    }
+
+    public List<WebElement> getProductHeading() {
+        return getElements("//a[@class='product__heading']");
+    }
+
+    public List<WebElement> getGoodsTileHeading() {
+        return getElements("//a[@class='goods-tile__heading']");
     }
 }

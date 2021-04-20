@@ -17,7 +17,7 @@ public class TestRozetkaSearch extends TestInit {
         openUrl("https://rozetka.com.ua");
         homePageRozetka.searchFild().click();
         homePageRozetka.searchFild().sendKeys(homePageRozetka.gools);
-        homePageRozetka.getButtonFild().click();
+        homePageRozetka.getButtonField().click();
         List<String> elements = getAttributeCollection(homePageRozetka.getElementsRefrigerator(), "title");
         for (String element : elements) {
             if (!element.contains("Холодильник")) {
