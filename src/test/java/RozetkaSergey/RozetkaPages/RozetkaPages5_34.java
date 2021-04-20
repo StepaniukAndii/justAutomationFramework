@@ -95,7 +95,8 @@ public class RozetkaPages5_34 extends BasePage {
     public  List<WebElement> listOfPrices (){return getElements("//div[@class='goods-tile__inner']//span[@class='goods-tile__price-value']");}
     public  List<WebElement> digitHowMuchInRozetka (){return getElements("//div[@data-filter-name='seller']//li[@class='checkbox-filter__item']//span[@class='sidebar-block__quantity']");}
     public List<WebElement> digitHowMushGoodsAtPage (){return getElements("//li[@class='catalog-grid__cell  catalog-grid__cell_type_slim']");}
-
+    public WebElement brauneButton (){return getElement("//div[@data-filter-name='producer']//a[@class='checkbox-filter__link']//label[@for='Braun']");}
+    public List<WebElement> listOfBraungoods(){return getElements("//div[@class='goods-tile__inner']//a[@class='goods-tile__heading']");}
 
 }
 

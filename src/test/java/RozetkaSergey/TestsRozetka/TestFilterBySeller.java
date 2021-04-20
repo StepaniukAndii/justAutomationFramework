@@ -14,7 +14,7 @@ public class TestFilterBySeller extends TestInit   {
         rozetkaPages5_34.searchField().sendKeys("пароварка");
         enter();
         closeAdIfExist();
-        String sumInRozeka = rozetkaPages5_34.digitHowMuchInRozetka().get(0).getText().replaceAll("\\p{P}","");
+        String sumInRozeka = rozetkaPages5_34.digitHowMuchInRozetka().get(0).getText().replaceAll("\\p{P}",""); //this one removes all skobki
         int intValue = Integer.parseInt(sumInRozeka);
         rozetkaPages5_34.digitHowMuchInRozetka().get(0).click();
         int sizeOfGoodsAtPage = rozetkaPages5_34.digitHowMushGoodsAtPage().size();

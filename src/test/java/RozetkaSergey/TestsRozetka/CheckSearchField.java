@@ -14,10 +14,11 @@ public class CheckSearchField extends TestInit {
         rozetkaPages1_4.enterToRozetka("https://rozetka.com.ua/");
         rozetkaPages1_4.findSearchField().sendKeys("Телевизор");
         enter();
+        sleep(2);
         List<String> elements = getAttributeCollection(rozetkaPages1_4.getElementsConstructor(), "title");
         for (String elenent : elements) {
             String str = elenent.toLowerCase();
-            if (!str.contains("Телевизор")) {
+            if (!str.contains("телевизор")) {
                 Assert.fail();
                 sleep(1);
             }
