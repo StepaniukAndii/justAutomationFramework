@@ -79,7 +79,12 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement fiendButton   () {return getElement("/html/body/app-root/div/div[1]/rz-header/header/div/div/div/form/button");}
     public WebElement contactButton (){ return getElement("//ul[@class='main-links__list']//a[@href='https://rozetka.com.ua/contacts/']");}
     public List<WebElement> listOfTelefonNumbers (){return getElements("//section[@class='contacts-section']//div[@class='contacts-main__cell']//a[@class='contacts-main__number']");}
-
+    public WebElement supportButton (){return getElement("//div[@class='side-menu drawer-content drawer-content_state_visible']//button[@class='button button--large side-menu__button'][contains(text(),' Служба поддержки ')]");}
+    public WebElement itIsWorking (){return getElement("//div[@class='modal__holder modal__holder_show_animation modal__holder_size_small']");}
+    public WebElement enterIntoAccountButton(){return getElement("//rz-user[@class='header-actions__component']//button[@class='header__button']");}
+    public WebElement setLoginField (){return getElement("//input[@id='auth_email']");}
+    public WebElement setPasswordField (){return getElement("//input[@id='auth_pass']");}
+    public  WebElement clickEnter (){ return getElement("//button[@class='button button--large button--green auth-modal__submit']");}
 }
 
 
