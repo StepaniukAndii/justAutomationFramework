@@ -1,7 +1,7 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
-import TestRozetka.Pages.HomePageRozetka;
+import TestRozetka.Pages.HomePage;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,9 +10,9 @@ public class TestCompare extends TestInit {
 
     @Test
     public void testCompare() {
-        HomePageRozetka homePage = new HomePageRozetka(driver);
+        HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
-        homePage.searchFild().sendKeys("ноутбук\n");
+        homePage.searchField().sendKeys("ноутбук\n");
         StringBuilder textGoods = new StringBuilder();
 
         for (int i = 0; i < 5; i++) {

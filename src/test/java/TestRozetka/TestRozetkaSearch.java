@@ -1,7 +1,7 @@
 package TestRozetka;
 
 import ClasesToAllUs.TestInit;
-import TestRozetka.Pages.HomePageRozetka;
+import TestRozetka.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +13,10 @@ public class TestRozetkaSearch extends TestInit {
     @Test
     public void testRozetkaSearch() {
         HashMap<Integer, Boolean> hashMap = new HashMap<>();
-        HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
+        HomePage homePageRozetka = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
-        homePageRozetka.searchFild().click();
-        homePageRozetka.searchFild().sendKeys(homePageRozetka.gools);
+        homePageRozetka.searchField().click();
+        homePageRozetka.searchField().sendKeys(homePageRozetka.gools);
         homePageRozetka.getButtonField().click();
         List<String> elements = getAttributeCollection(homePageRozetka.getElementsRefrigerator(), "title");
         for (String element : elements) {

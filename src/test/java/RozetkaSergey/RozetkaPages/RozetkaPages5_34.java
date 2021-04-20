@@ -1,6 +1,7 @@
 package RozetkaSergey.RozetkaPages;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,6 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 
 public class RozetkaPages5_34 extends BasePage {
+    public String closeAdvertisementLocator = "//span[@class='exponea-close-cross']";
+
     public RozetkaPages5_34(WebDriver driver) {
         super(driver);
     }
@@ -26,6 +29,10 @@ public class RozetkaPages5_34 extends BasePage {
 
     public List<WebElement> chooseComp() {
         return getElements("/html/body/app-root/div/div[1]/app-rz-main-page/div/aside/main-page-sidebar/sidebar-fat-menu/div/ul/li[1]/a");
+    }
+
+    public WebElement name(){
+        return getElement("");
     }
 
     public List<WebElement> addToCard() {
@@ -61,11 +68,25 @@ public class RozetkaPages5_34 extends BasePage {
     public List<WebElement> goToComparator (){return getElements("//button[@class='header__button' or contains(text(),'Списки сравнения')]  ");}
     public WebElement goWeiter (){return getElement("//a[@class='comparison-modal__link']");}
     public List<WebElement> likeButtons (){return getElements("//section[@class='content content_type_catalog']//button[@class='wish-button js-wish-button']");}
-    public WebElement closeAdvertisement (){return getElement("//span[@class='exponea-close-cross']");}
+    public WebElement closeAdvertisement (){return getElement(closeAdvertisementLocator);}
     public WebElement listToleft (){return getElement("//button[@aria-label='Предыдущий слайд']");}
     public WebElement listToRight (){return getElement("//button[@aria-label='Следующий слайд']");}
+    public WebElement clickOnThreeStrips (){return getElement("//button[@class='header__button'][contains(@aria-label, 'Открыть меню')]");}
+    public WebElement chooseCity (){return  getElement("//button[@class='city-toggle button button--small button--white']");}
+    public List<WebElement> listOfCites (){return getElements("//a[@class='header-location__popular-link']");}
+    public WebElement klickAsept (){return getElement("//button[@class='button button_size_medium button_color_green']");}
+    public WebElement changLanguageButton(){return getElement("//li[@class='lang__item __item']");}
+    public WebElement fiendButton   () {return getElement("/html/body/app-root/div/div[1]/rz-header/header/div/div/div/form/button");}
+    public WebElement contactButton (){ return getElement("//ul[@class='main-links__list']//a[@href='https://rozetka.com.ua/contacts/']");}
+    public List<WebElement> listOfTelefonNumbers (){return getElements("//section[@class='contacts-section']//div[@class='contacts-main__cell']//a[@class='contacts-main__number']");}
+    public WebElement supportButton (){return getElement("//div[@class='side-menu drawer-content drawer-content_state_visible']//button[@class='button button--large side-menu__button'][contains(text(),' Служба поддержки ')]");}
+    public WebElement itIsWorking (){return getElement("//div[@class='modal__holder modal__holder_show_animation modal__holder_size_small']");}
+    public WebElement enterIntoAccountButton(){return getElement("//rz-user[@class='header-actions__component']//button[@class='header__button']");}
+    public WebElement setLoginField (){return getElement("//input[@id='auth_email']");}
+    public WebElement setPasswordField (){return getElement("//input[@id='auth_pass']");}
+    public  WebElement clickEnter (){ return getElement("//button[@class='button button--large button--green auth-modal__submit']");}
+}
 
-    }
 
 
 
