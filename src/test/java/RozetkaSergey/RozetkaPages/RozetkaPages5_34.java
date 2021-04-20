@@ -101,6 +101,11 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement buttonMinMaxPriceConfirm (){return getElement("//button[@class='button button_color_gray button_size_small slider-filter__button']");}
     public WebElement minArgu (){return getElement("//input[@formcontrolname='min']");}
     public WebElement maxArgu (){return getElement("//input[@formcontrolname='max']");}
+    public WebElement othersSealersButton (){return getElement("//label[@for='Другие продавцы']");}
+    public WebElement oneOfBrandButton (){return getElement("//label[@for='Clatronic']");}
+    public WebElement goToStahl(){return getElement("//label[@for='Металл']");}
+    public WebElement resetWhatWereChoose (){return getElement("//button[@class='catalog-selection__link catalog-selection__link_type_reset']");}
+
 }
 
 
