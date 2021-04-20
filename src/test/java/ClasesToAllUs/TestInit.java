@@ -5,7 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
@@ -72,10 +72,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-//    @AfterTest
-//    public void afterTest() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void afterTest() {
+        driver.quit();
+    }
 
     public void openUrl(String site) {
         driver.get(site);
