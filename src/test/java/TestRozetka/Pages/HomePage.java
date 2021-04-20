@@ -52,7 +52,7 @@ public class HomePage extends BasePage {
 
     }
 
-    public WebElement productCatalog() {
+    public WebElement getProductCatalog() {
         return wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='fat-menu']")));
     }
 
@@ -130,5 +130,9 @@ public class HomePage extends BasePage {
 
     public List<WebElement> getButtonProductFilter() {
         return getElements("//ul[@class='tabs__list']/li/a");
+    }
+
+    public List<WebElement> getMenuCategories() {
+        return getElements("//a[@class='menu-categories__link js-menu-categories__link']");
     }
 }
