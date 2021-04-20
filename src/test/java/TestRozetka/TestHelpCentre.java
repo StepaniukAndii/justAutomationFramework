@@ -11,7 +11,7 @@ public class TestHelpCentre extends TestInit {
     public void testHelpCentre() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://rozetka.com.ua");
-        homePage.getHeaderButton().click();
+        homePage.getHeaderButton().get(0).click();
         homePage.getHelpCentre().click();
         homePage.getSearchFieldHelpCentre().sendKeys("оплата\n");
         String firstLink = homePage.getTextOnPgeHelpCenter().get(0).getText();

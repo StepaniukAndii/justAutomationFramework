@@ -14,7 +14,7 @@ public class TestProductFilter extends TestInit {
         homePage.searchField().sendKeys(homePage.gools+"\n");
         System.out.println(homePage.getElementsGoods());
         homePage.getElementsGoods().get(0).click();
-        for (int i = 1; i < homePage.getButtonProductFilter().size(); i++) {
+        for (int i = 1; i < homePage.getProductHeading().size(); i++) {
             homePage.getButtonProductFilter().get(i).click();
         }
     }

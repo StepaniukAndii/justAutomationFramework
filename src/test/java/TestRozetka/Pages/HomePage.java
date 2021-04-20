@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -33,7 +34,7 @@ public class HomePage extends BasePage {
                                 "'buy-button button button_with_icon button_color_green button_size_large']")));
     }
 
-    public WebElement getButtonFild() {
+    public WebElement getButtonField() {
         return getElement("//button[@class='button button_color_green button_size_medium search-form__submit']");
     }
 
@@ -93,8 +94,25 @@ public class HomePage extends BasePage {
         return getElements("//h2[@class='main-goods__heading']");
     }
 
-    public WebElement getHeaderButton() {
-        return getElement("//button[@aria-label='Открыть меню']");
+
+    public List<WebElement> getCompareButtons() {
+        return getElements("//button[@class='compare-button']");
+    }
+
+    public List<WebElement> getHeaderButton() {
+        return getElements("//button[@class='header__button']");
+    }
+
+    public WebElement getComparisonModalLink() {
+        return getElement("//a[@class='comparison-modal__link']");
+    }
+
+    public List<WebElement> getProductHeading() {
+        return getElements("//a[@class='product__heading']");
+    }
+
+    public List<WebElement> getGoodsTileHeading() {
+        return getElements("//a[@class='goods-tile__heading']");
     }
 
     public WebElement getHelpCentre() {
