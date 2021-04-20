@@ -71,7 +71,7 @@ public class TestInit {
     private String getOSName() {
         return System.getProperty("os.name").toLowerCase();
     }
-//
+
 //    @AfterTest
 //    public void afterTest() {
 //        driver.quit();
