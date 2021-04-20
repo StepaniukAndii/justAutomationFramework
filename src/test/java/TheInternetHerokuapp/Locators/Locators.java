@@ -3,7 +3,6 @@ package TheInternetHerokuapp.Locators;
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class Locators extends BasePage {
@@ -30,6 +29,9 @@ public class Locators extends BasePage {
     public WebElement dropdownListSelect(){return getElement ("//select[@id='dropdown']");}
     public WebElement dropdownListOptoinOne(){return getElement ("//select[@id='dropdown']/*[text()[contains(.,'Option 1')]]");}
     public WebElement dropdownListOptoinTwo(){return getElement ("//select[@id='dropdown']/*[text()[contains(.,'Option 2')]]");}
+    public WebElement dynamicContent(){return getElement ("//a[text()='Dynamic Content']");}
+    public WebElement dynamicContentClickLink(){return getElement ("//a[text()='click here']");}
+    public WebElement dynamicContentGetText(){return getElement ("//div[@id='content']/div[@class='row'][3]");}
 }
 
 
