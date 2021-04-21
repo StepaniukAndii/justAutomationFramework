@@ -11,4 +11,6 @@ public class UkrNetPages extends BasePage {
     public void enterToUkrNet (String site) {driver.get(site);}
     public WebElement searchFieldWindow (){return getElement("//input[@id='search-input']");}
     public List<WebElement> listOfRequest () {return getElements("//a[@class='gs-title']");}
+    public WebElement buttonGoLogo (){return getElement("//a[@class='sLogo'] ");}
+    public WebElement buttonСhangeCity (){return getElement("//a[@class='otherCity']");}
 }
