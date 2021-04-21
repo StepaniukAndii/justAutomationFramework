@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestFilterPrice extends TestInit    {
+public class TestFilterPrice extends TestInit {
 
     @Test
-    public void testFilterPrice (){
+    public void testFilterPrice() {
 
         Actions actions = new Actions(driver);
         RozetkaPages5_34 rozetkaPages5_34 = new RozetkaPages5_34(driver);
