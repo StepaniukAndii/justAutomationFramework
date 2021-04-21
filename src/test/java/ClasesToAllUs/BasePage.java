@@ -16,7 +16,7 @@ public abstract class BasePage implements Expectations {
     @Override
     public List<WebElement> waitVisibilityOfAllElementsLocatedBy(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
-        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator)));
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(locator)));
     }
 
     @Override
