@@ -85,6 +85,12 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement setLoginField (){return getElement("//input[@id='auth_email']");}
     public WebElement setPasswordField (){return getElement("//input[@id='auth_pass']");}
     public  WebElement clickEnter (){ return getElement("//button[@class='button button--large button--green auth-modal__submit']");}
+    public WebElement buttonBytovajaTexnika (){ return getElement("/html/body/app-root/div/div[1]/app-rz-main-page/div/aside/main-page-sidebar/sidebar-fat-menu/div/ul/li[4]/a");}
+    public List<WebElement> listOfAllCatigorie (){return  getElements("//a[@class='menu-categories__link js-menu-categories__link']");}
+    public WebElement buttonBoilrs (){return getElement("//a[@title='Водонагреватели (Бойлеры)']");}
+    public List<WebElement> listOfBoilers (){return  getElements("//span[@class='goods-tile__title']");}
+    public WebElement buttonPhotoOfBoiler(){return getElement("//a[contains(text(),' Фото ')]");}
+    public WebElement isExistPhotoOfGood(){return getElement("//img[@class='product-photos__picture  ng-failed-lazyloaded ng-lazyloaded']");}
 }
 
 
