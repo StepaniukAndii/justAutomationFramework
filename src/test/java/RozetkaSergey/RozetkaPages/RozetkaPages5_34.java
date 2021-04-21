@@ -111,7 +111,13 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement buttonLargeArray(){return getElement("//button[@arial-label='Малая плитка']");}
     public WebElement buttonMore60Goods (){return getElement("//a[@class='show-more show-more--horizontal']");}
     public List<WebElement> listOfAllGoodsAfterAddNew60 (){return getElements("//li[@class='catalog-grid__cell  catalog-grid__cell_type_slim']");}
+    public WebElement selectButton (){return getElement("select-css ng-pristine ng-valid ng-touched");}
+    public WebElement selectorFromCheapToExpensive (){return getElement("//select[@class='select-css ng-pristine ng-valid ng-touched']//option[@value='1: cheap']");}
+    public WebElement selectorFromExpensiveToCheap (){return getElement("//select[@class='select-css ng-pristine ng-valid ng-touched']//option[@value='2: expensive']");}
 }
+
+
+
 
 
 
