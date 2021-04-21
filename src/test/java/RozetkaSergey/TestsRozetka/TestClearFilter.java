@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestClearFilter extends TestInit {
     @Test
+
     public void clearFilter() {
         RozetkaPages5_34 rozetkaPages5_34 = new RozetkaPages5_34(driver);
         Actions actions = new Actions(driver);
