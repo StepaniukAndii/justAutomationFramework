@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 public class TestFilterNewOrUsed extends TestInit  {
     @Test
+
     public void  newOrOld (){
         RozetkaPages5_34 rozetkaPages5_34 = new RozetkaPages5_34(driver);
         Actions actions = new Actions(driver);
