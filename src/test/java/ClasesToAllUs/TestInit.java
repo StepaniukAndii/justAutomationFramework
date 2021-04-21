@@ -114,7 +114,6 @@ public class TestInit {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
-
     public void enter() {
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.RETURN);
