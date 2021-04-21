@@ -92,9 +92,13 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement buttonPhotoOfBoiler(){return getElement("//a[contains(text(),' Фото ')]");}
     public WebElement isExistPhotoOfGood(){return getElement("//img[@class='product-photos__picture  ng-failed-lazyloaded ng-lazyloaded']");}
     public WebElement searchField(){return getElement("//input[@name='search']");}
+    public  List<WebElement> listOfPrices (){return getElements("//div[@class='goods-tile__inner']//span[@class='goods-tile__price-value']");}
+    public  List<WebElement> digitHowMuchInRozetka (){return getElements("//div[@data-filter-name='seller']//li[@class='checkbox-filter__item']//span[@class='sidebar-block__quantity']");}
+    public List<WebElement> digitHowMushGoodsAtPage (){return getElements("//li[@class='catalog-grid__cell  catalog-grid__cell_type_slim']");}
     public WebElement selectButton (){return getElement("select-css ng-pristine ng-valid ng-touched");}
     public WebElement selectorFromCheapToExpensive (){return getElement("//select[@class='select-css ng-pristine ng-valid ng-touched']//option[@value='1: cheap']");}
     public WebElement selectorFromExpensiveToCheap (){return getElement("//select[@class='select-css ng-pristine ng-valid ng-touched']//option[@value='2: expensive']");}
+
 
 
 
