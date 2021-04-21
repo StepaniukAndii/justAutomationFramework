@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestAllSuite">
-    <test name="Amazon tests">
-        <classes>
-            <class name="TestAmazon.AllTest.TestAmazonCart"/>
-            <class name="TestAmazon.AllTest.TestCategoryElectronics"/>
-            <class name="TestAmazon.AllTest.TestSearchField"/>
-        </classes>
-    </test>
-
-    <test name="Rozetka tests">
-        <classes>
-            <class name="TestRozetka.TestFilter"/>
-            <class name="TestRozetka.TestRozetkaCart"/>
-            <class name="TestRozetka.TestRozetkaSearch"/>
-        </classes>
-    </test>
-
-    <test name="Facebook tests">
-<!--        <classes>-->
-<!--            <class name="TestAmazon.AllTest.TestAmazonCart"/>-->
-<!--        </classes>-->
-    </test>
-
-    <test name="Allo tests">
-        <classes>
-            <class name="AlloTest.TestClases.TestHomeAllo"/>
-        </classes>
+<suite name="TestAllSuite" parallel="methods" thread-count="5">
+    <test name="Allo">
+        <packages>
+            <package name="TheInternetHerokuapp"/>
+        </packages>
     </test>
 </suite>
