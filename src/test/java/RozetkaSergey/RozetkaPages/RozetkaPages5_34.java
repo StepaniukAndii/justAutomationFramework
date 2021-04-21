@@ -105,7 +105,8 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement oneOfBrandButton (){return getElement("//label[@for='Clatronic']");}
     public WebElement goToStahl(){return getElement("//label[@for='Металл']");}
     public WebElement resetWhatWereChoose (){return getElement("//button[@class='catalog-selection__link catalog-selection__link_type_reset']");}
-
+    public WebElement buttonUsedGood (){return getElement("//label[@for='Б/у']");}
+    public  List<WebElement> listOfUsedWords (){return getElements("//span[@class='goods-tile__label promo-label promo-label_type_used']");}
 }
 
 
