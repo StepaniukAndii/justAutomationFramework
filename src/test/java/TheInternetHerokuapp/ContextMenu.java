@@ -19,7 +19,7 @@ public class ContextMenu extends TestInit {
         closeContextMenu();
     }
     private void closeContextMenu() {
-        action.contextClick ();
+        action.contextClick();
     }
     private void clickRightButtonMous() {
         action = new Actions (driver);

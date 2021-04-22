@@ -18,7 +18,6 @@ public class DragAndDrop extends TestInit {
          swapElementA();
 
     }
-
     private void swapElementA() {
         WebElement draggable = locators.elementA();
         WebElement target = locators.elementB();
