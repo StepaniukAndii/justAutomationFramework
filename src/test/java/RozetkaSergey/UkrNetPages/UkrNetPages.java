@@ -22,5 +22,4 @@ public class UkrNetPages extends BasePage {
     public WebElement toEndOfTheFirstPage (){return getElement("//span[@itemprop='name']");}
     public WebElement buttonFastToTop (){return getElement("//a[@id='go-top']");}
     public WebElement logo (){return getElement("//section[@class='header__logo']");}
-
 }
