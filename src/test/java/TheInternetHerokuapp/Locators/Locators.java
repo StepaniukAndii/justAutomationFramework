@@ -40,4 +40,9 @@ public class Locators extends BasePage {
     public WebElement exampleTwo(){return getElement ("//a[text()='Example 2: Element rendered after the fact']");}
     public WebElement exampleButton(){return getElement ("//div[@id='start']/button");}
     public WebElement exampleResultat(){return findElement ("//div[@id='finish']/h4");}
+    public WebElement entryAd(){return getElement ("//a[text()='Entry Ad']");}
+    public WebElement modalWindow(){return getElement ("//div[@id='modal']");}
+    public WebElement modalCloseWindow(){return getElement ("//div[@class='modal-footer']/p");}
+    public WebElement modalClickHere(){return getElement ("//a[@id='restart-ad']");}
+    public WebElement basicAuth (){return getElement ("//a[text()='Basic Auth']");}
 }
