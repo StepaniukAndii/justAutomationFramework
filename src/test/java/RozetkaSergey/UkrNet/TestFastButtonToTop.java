@@ -2,7 +2,6 @@ package RozetkaSergey.UkrNet;
 
 import ClasesToAllUs.TestInit;
 import RozetkaSergey.UkrNetPages.UkrNetPages;
-import jdk.internal.org.jline.utils.Display;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -13,7 +12,7 @@ public class TestFastButtonToTop extends TestInit {
         ukrNetPages.enterToUkrNet("https://www.ukr.net/ua");
         moveMouseToElement(ukrNetPages.toEndOfTheFirstPage());
         sleep(2);
-        ukrNetPages.buttonFastToTop().click();
+       // ukrNetPages.buttonFastToTop().click();
         sleep(2);
     }
 }
