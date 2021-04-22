@@ -45,7 +45,4 @@ public class Locators extends BasePage {
     public WebElement modalCloseWindow(){return getElement ("//div[@class='modal-footer']/p");}
     public WebElement modalClickHere(){return getElement ("//a[@id='restart-ad']");}
     public WebElement basicAuth (){return getElement ("//a[text()='Basic Auth']");}
-
 }
-
-
