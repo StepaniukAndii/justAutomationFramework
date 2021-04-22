@@ -17,4 +17,7 @@ public class UkrNetPages extends BasePage {
     public WebElement ukraineLanguageButton(){return getElement("//section[@class='top-bar']");}
     public WebElement postInUkraineOrRussian(){return getElement("//input[@value='Пошук']"); }
     public WebElement searchInRussian(){return getElement("//input[@value='Поиск']");}
+    public WebElement buttonCurrencyExchange(){return getElement("//ul[@class='right-tabs__nav d-clear']//li[2]");}
+    public List<WebElement> listOfMoney (){return getElements("//div[@class='right-tabs__tab-body right-tabs__currency']//div[@class='right-tabs__currency--courses d-clear']//td[@class='purchase']");}
+
 }
