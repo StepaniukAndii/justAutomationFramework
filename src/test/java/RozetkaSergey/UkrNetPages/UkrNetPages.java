@@ -23,4 +23,6 @@ public class UkrNetPages extends BasePage {
     public WebElement loginField (){return getElement("//input[@id='id-input-login']");}
     public WebElement passField (){return getElement("//input[@id='id-input-password']");}
     public WebElement enterToUkrNet(){return getElement("//button[@class='form__submit']");}
+    public WebElement buttonFastToTop (){return getElement("//a[@id='go-top']");}
+    public WebElement logo (){return getElement("//section[@class='header__logo']");}
 }
