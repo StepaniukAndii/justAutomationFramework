@@ -55,3 +55,4 @@ public class Locators extends BasePage {
     public WebElement fileDownloadInput(){return getElement ("//input[@id='file-upload']");}
     public WebElement fileDownloadSubmit(){return getElement ("//input[@id='file-submit']");}
 }
+
