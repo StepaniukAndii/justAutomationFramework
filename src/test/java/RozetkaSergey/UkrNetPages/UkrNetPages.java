@@ -32,7 +32,6 @@ public class UkrNetPages extends BasePage {
     public WebElement dateOfMonth (){return getElement("//input[@id='id-birth-day']");}
     public WebElement year (){return getElement("//input[@placeholder='рік']");}
     public List<WebElement> sexRadioButton (){return getElements("//label[@class='radio__imitator']");}
-
-
-
+    public WebElement buttonFastToTop (){return getElement("//a[@id='go-top']");}
+    public WebElement logo (){return getElement("//section[@class='header__logo']");}
 }
