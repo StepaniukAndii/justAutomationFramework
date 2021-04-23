@@ -27,7 +27,7 @@ public class TestInit {
         if (isOSMac()){
             setProperty("src/test/drivers/chromedriver_88_mac");
         }else if (isOSWindows()){
-            setProperty("src/test/drivers/chromedriver_88_windows.exe");
+            setProperty("src/test/drivers/chromedriver_90_windows.exe");
         }else {
             setProperty("src/test/drivers/chromedriver_88_linux");
         }

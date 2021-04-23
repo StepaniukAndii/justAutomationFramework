@@ -71,7 +71,7 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement closeAdvertisement (){return getElement(closeAdvertisementLocator);}
     public WebElement listToleft (){return getElement("//button[@aria-label='Предыдущий слайд']");}
     public WebElement listToRight (){return getElement("//button[@aria-label='Следующий слайд']");}
-    public WebElement clickOnThreeStrips (){return getElement("//button[@class='header__button'][contains(@aria-label, 'Открыть меню')]");}
+    public WebElement getBurgerMenuButton(){return getElement("//button[@class='header__button'][contains(@aria-label, 'Открыть меню')]");}
     public WebElement chooseCity (){return  getElement("//button[@class='city-toggle button button--small button--white']");}
     public List<WebElement> listOfCites (){return getElements("//a[@class='header-location__popular-link']");}
     public WebElement klickAsept (){return getElement("//button[@class='button button_size_medium button_color_green']");}
@@ -86,7 +86,6 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement setPasswordField (){return getElement("//input[@id='auth_pass']");}
     public  WebElement clickEnter (){ return getElement("//button[@class='button button--large button--green auth-modal__submit']");}
     public WebElement buttonBytovajaTexnika (){ return getElement("/html/body/app-root/div/div[1]/app-rz-main-page/div/aside/main-page-sidebar/sidebar-fat-menu/div/ul/li[4]/a");}
-    public List<WebElement> listOfAllCatigorie (){return  getElements("//a[@class='menu-categories__link js-menu-categories__link']");}
     public WebElement buttonBoilrs (){return getElement("//a[@title='Водонагреватели (Бойлеры)']");}
     public List<WebElement> listOfBoilers (){return  getElements("//span[@class='goods-tile__title']");}
     public WebElement buttonPhotoOfBoiler(){return getElement("//a[contains(text(),' Фото ')]");}
@@ -110,10 +109,6 @@ public class RozetkaPages5_34 extends BasePage {
     public WebElement buttonSmallArray (){return getElement("//button[@arial-label='Крупная плитка']");}
     public WebElement buttonLargeArray(){return getElement("//button[@arial-label='Малая плитка']");}
     public WebElement buttonMore60Goods (){return getElement("//a[@class='show-more show-more--horizontal']");}
-    public List<WebElement> listOfAllGoodsAfterAddNew60 (){return getElements("//li[@class='catalog-grid__cell  catalog-grid__cell_type_slim']");}
-    public WebElement selectButton (){return getElement("select-css ng-pristine ng-valid ng-touched");}
-    public WebElement selectorFromCheapToExpensive (){return getElement("//select[@class='select-css ng-pristine ng-valid ng-touched']//option[@value='1: cheap']");}
-    public WebElement selectorFromExpensiveToCheap (){return getElement("//select[@class='select-css ng-pristine ng-valid ng-touched']//option[@value='2: expensive']");}
 }
 
 
