@@ -23,6 +23,15 @@ public class UkrNetPages extends BasePage {
     public WebElement loginField (){return getElement("//input[@id='id-input-login']");}
     public WebElement passField (){return getElement("//input[@id='id-input-password']");}
     public WebElement enterToUkrNet(){return getElement("//button[@class='form__submit']");}
+    public WebElement makeNewAccount (){return getElement("//div[@class='form__navigation']//a[@class='form__link']");}
+    public WebElement newNameForAccountField (){return getElement("//input[@id='id-login']");}
+    public WebElement newPassField (){return getElement("//input[@id='id-password']");}
+    public WebElement repeatPassField (){return getElement("//input[@id='id-password-repeat']");}
+    public WebElement firstNameField (){return getElement("//input[@id='id-first-name']");}
+    public WebElement secondNameField (){return getElement("//input[@placeholder='Прізвище']");}
+    public WebElement dateOfMonth (){return getElement("//input[@id='id-birth-day']");}
+    public WebElement year (){return getElement("//input[@placeholder='рік']");}
+    public List<WebElement> sexRadioButton (){return getElements("//label[@class='radio__imitator']");}
     public WebElement buttonFastToTop (){return getElement("//a[@id='go-top']");}
     public WebElement logo (){return getElement("//section[@class='header__logo']");}
 }
