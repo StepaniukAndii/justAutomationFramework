@@ -11,7 +11,7 @@ public class SwitchCity extends TestInit {
         RozetkaPages5_34 rozetkaPages5_34 = new RozetkaPages5_34(driver);
         rozetkaPages5_34.enterToRozetka("https://rozetka.com.ua/");
         rozetkaPages5_34.closeAdvertisement().click();
-        rozetkaPages5_34.clickOnThreeStrips().click();
+        rozetkaPages5_34.getBurgerMenuButton().click();
         rozetkaPages5_34.chooseCity().click();
         String one = rozetkaPages5_34.listOfCites().get(3).getText();
         rozetkaPages5_34.listOfCites().get(3).click();
