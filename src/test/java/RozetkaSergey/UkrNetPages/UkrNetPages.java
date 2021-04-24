@@ -37,4 +37,6 @@ public class UkrNetPages extends BasePage {
     public WebElement fieldForSearchCity (){return getElement("//input[@id='searchInput']");}
     public WebElement supportCustomer(){return getElement("//a[text()='Підтримка користувачів']");}
     public WebElement ukrtelecomNumber(){return getElement("//li[@class='utel']");}
+    public WebElement buttonAdvertisementOnSite(){return getElement("//footer//a[@target='_blank']");}
+    public WebElement copyWriteSign(){return getElement("//span[@style ='padding-right:35px;']");}
 }
