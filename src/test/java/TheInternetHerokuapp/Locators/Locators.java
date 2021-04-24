@@ -63,5 +63,6 @@ public class Locators extends BasePage {
     public WebElement horizontalSlider(){return getElement ("//a[text()='Horizontal Slider']");}
     public WebElement horizontalLain(){return getElement ("//input[@type='range']");}
     public WebElement hoversTest(){return getElement ("//a[text()='Hovers']");}
-    public List<WebElement> hoversList(){return getElements ("//div[@class='figure']");}
+    public List<WebElement> hoversList(){return getElements ("//div[@class='figure']");
+    public WebElement horizontalSliderResultat(){return getElement ("//span[@id='range']");}
 }
