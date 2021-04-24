@@ -58,7 +58,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getElementsGoods() {
-        return getElements("//a[@class='goods-tile__picture']");
+        return getElements("//a[contains(@class,'goods-tile__picture')]");
     }
 
     public WebElement contacts() {
@@ -147,5 +147,9 @@ public class HomePage extends BasePage {
 
     public WebElement getSliderRangeButtonLeft() {
         return getElement("//button[@class='rz-slider__range-button rz-slider__range-button_type_left']");
+    }
+
+    public List<WebElement> getLiteTile() {
+        return getElements("//div[@class='lite-tile']/div/a[2]");
     }
 }
