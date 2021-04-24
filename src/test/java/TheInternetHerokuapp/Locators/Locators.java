@@ -54,5 +54,11 @@ public class Locators extends BasePage {
     public WebElement fileDownloadFild(){return findElement ("//div[@id='drag-drop-upload']");}
     public WebElement fileDownloadInput(){return getElement ("//input[@id='file-upload']");}
     public WebElement fileDownloadSubmit(){return getElement ("//input[@id='file-submit']");}
+    public WebElement formAuthentication(){return getElement ("//a[text()='Form Authentication']");}
+    public WebElement formAuthenticationUseName(){return getElement ("//input[@id='username']");}
+    public WebElement formAuthenticationUsePassword(){return getElement ("//input[@id='password']");}
+    public WebElement formAuthenticationButton(){return getElement ("//button[@class='radius']");}
+    public WebElement formAuthenticationCheck(){return getElement ("//div[@id='flash']");}
+    public WebElement formAuthenticationLogout(){return getElement ("//a[@class='button secondary radius']");}
 }
 
