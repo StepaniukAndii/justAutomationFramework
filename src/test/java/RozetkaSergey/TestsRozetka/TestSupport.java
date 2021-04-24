@@ -13,7 +13,7 @@ public class TestSupport extends TestInit {
         rozetkaPages5_34 = new RozetkaPages5_34(driver);
         rozetkaPages5_34.enterToRozetka("https://rozetka.com.ua/");
         closeAdIfExist();
-        rozetkaPages5_34.clickOnThreeStrips().click();
+        rozetkaPages5_34.getBurgerMenuButton().click();
         moveMouseToElement(rozetkaPages5_34.supportButton());
         rozetkaPages5_34.supportButton().click();
         boolean being = rozetkaPages5_34.itIsWorking().isDisplayed();

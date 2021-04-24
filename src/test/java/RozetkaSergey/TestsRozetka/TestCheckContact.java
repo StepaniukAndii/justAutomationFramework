@@ -12,7 +12,7 @@ import java.util.List;
 public class TestCheckContact extends TestInit {
     String stringToComp = "044 537 02 22";
     RozetkaPages5_34 rozetkaPages5_34;
-    boolean myBooleon;
+
     @Test
     public void checkContact () {
         rozetkaPages5_34 = new RozetkaPages5_34(driver);
@@ -23,6 +23,4 @@ public class TestCheckContact extends TestInit {
         String tel = rozetkaPages5_34.listOfTelefonNumbers().get(0).getText();
         Assert.assertEquals(stringToComp, tel);
     }
-
-
 }

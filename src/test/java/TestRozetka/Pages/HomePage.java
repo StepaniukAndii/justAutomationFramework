@@ -28,10 +28,8 @@ public class HomePage extends BasePage {
     }
 
     public WebElement addCart() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By
-                        .xpath("//button[@class=" +
-                                "'buy-button button button_with_icon button_color_green button_size_large']")));
+        return getElement("//button[@class=" +
+                                "'buy-button button button_with_icon button_color_green button_size_large']");
     }
 
     public WebElement getButtonField() {
@@ -39,8 +37,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getPhone() {
-        return wait.until(ExpectedConditions.
-                elementToBeClickable(By.xpath("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']")));
+        return getElement("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']");
     }
 
     public List<WebElement> getPhoneProductCatalog() {
@@ -146,5 +143,9 @@ public class HomePage extends BasePage {
 
     public WebElement getButtonApplyCity() {
         return getElement("//button[@class='button button_size_medium button_color_green']");
+    }
+
+    public WebElement getSliderRangeButtonLeft() {
+        return getElement("//button[@class='rz-slider__range-button rz-slider__range-button_type_left']");
     }
 }
