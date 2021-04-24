@@ -29,7 +29,7 @@ public class Hovers extends TestInit {
         }
     }
     private void getList() {
-        List<WebElement> list = locators.hoversList ();
+        List<WebElement> list = locators.hoversList();
         for(WebElement element:list){
             moveMouseToElement (element);
             info = element.getText();
