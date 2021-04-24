@@ -131,4 +131,8 @@ public class HomePage extends BasePage {
     public List<WebElement> getButtonProductFilter() {
         return getElements("//ul[@class='tabs__list']/li/a");
     }
+
+    public WebElement getLinkToTop() {
+        return getElement("//a[@class='link-to-top ng-star-inserted']");
+    }
 }
