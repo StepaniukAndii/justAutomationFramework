@@ -14,6 +14,6 @@ public class TestFilterSlider extends TestInit {
         homePage.searchField().sendKeys(homePage.gools);
         pushBtnReturn();
         Actions actions = new Actions(driver);
-        actions.dragAndDropBy(homePage.getSliderRangeButtonLeft(), -90, 0).perform();
+        actions.dragAndDropBy(homePage.getSliderRangeButtonLeft(), 90, 0).perform();
     }
 }
