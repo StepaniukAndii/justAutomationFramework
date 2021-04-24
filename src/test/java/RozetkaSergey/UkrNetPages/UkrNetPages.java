@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UkrNetPages extends BasePage {
     public UkrNetPages(WebDriver driver) {super(driver);}
-    public void enterToUkrNet (String site) {driver.get(site);}
+    public void enterToUkrNet (String site) {this.driver.get(site);}
     public WebElement searchFieldWindow (){return getElement("//input[@id='search-input']");}
     public List<WebElement> listOfRequest () {return getElements("//a[@class='gs-title']");}
     public WebElement buttonGoLogo (){return getElement("//a[@class='sLogo'] ");}
@@ -33,5 +33,7 @@ public class UkrNetPages extends BasePage {
     public WebElement year (){return getElement("//input[@placeholder='рік']");}
     public List<WebElement> sexRadioButton (){return getElements("//label[@class='radio__imitator']");}
     public WebElement buttonFastToTop (){return getElement("//a[@id='go-top']");}
-    public WebElement logo (){return getElement("//section[@class='header__logo']");}
+    public WebElement cityName(){return getElement("//div[@class='Name']");}
+    public WebElement fieldForSearchCity (){return getElement("//input[@id='searchInput']");}
+
 }
