@@ -33,6 +33,7 @@ public class Hovers extends TestInit {
         for(WebElement element:list){
             moveMouseToElement (element);
             info = element.getText();
+            getList.add (info);
         }
     }
 }
