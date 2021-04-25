@@ -23,4 +23,32 @@ public class JobPage extends BasePage {
     public List<WebElement> getVacancies() {
         return getElements("//a[@class='vt']");
     }
+
+    public WebElement getRatingFilterTotalScore() {
+        return getElement("//a[text()='Общий балл']");
+    }
+
+    public WebElement getRatingFilterLoyalty() {
+        return getElement("//a[text()='Лояльность']");
+    }
+
+    public WebElement getRatingFilterCompensation() {
+        return getElement("//a[text()='Компенсация']");
+    }
+
+    public WebElement getRatingFilterWorkingConditions() {
+        return getElement("//a[text()='Условия труда']");
+    }
+
+    public WebElement getRatingFilterCareer() {
+        return getElement("//a[text()='Карьера']");
+    }
+
+    public WebElement getRatingFilterProject() {
+        return getElement("//a[text()='Проект']");
+    }
+
+    public List<WebElement> getRatingFilterTotalScoreNumbers() {
+        return getElements("//div[@class='score all']");
+    }
 }
