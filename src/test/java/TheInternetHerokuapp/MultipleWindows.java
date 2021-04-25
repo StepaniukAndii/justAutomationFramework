@@ -16,7 +16,6 @@ public class MultipleWindows extends TestInit {
         locators.multipleWindows().click();
         clickOpenNewWindow();
         checkNewWindow();
-
     }
     private void checkNewWindow() {
         ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
