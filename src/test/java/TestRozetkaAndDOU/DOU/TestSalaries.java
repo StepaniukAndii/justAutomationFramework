@@ -2,8 +2,8 @@ package TestRozetkaAndDOU.DOU;
 
 import ClasesToAllUs.TestInit;
 import TestRozetkaAndDOU.BaseDate;
-import TestRozetkaAndDOU.DOU.Pages.HomePage;
-import TestRozetkaAndDOU.DOU.Pages.SalariesPage;
+import TestRozetkaAndDOU.DOU.PagesDOU.HomePage;
+import TestRozetkaAndDOU.DOU.PagesDOU.SalariesPage;
 import org.testng.annotations.Test;
 
 public class TestSalaries extends TestInit {
