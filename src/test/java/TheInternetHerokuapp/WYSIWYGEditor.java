@@ -20,7 +20,6 @@ public class WYSIWYGEditor extends TestInit {
         exitWithFrame();
         fattyText();
         sleep (3);
-
     }
     private void exitWithFrame() {
         driver.switchTo().defaultContent();
