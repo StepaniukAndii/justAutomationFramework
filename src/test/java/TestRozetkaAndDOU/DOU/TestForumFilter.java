@@ -2,8 +2,8 @@ package TestRozetkaAndDOU.DOU;
 
 import ClasesToAllUs.TestInit;
 import TestRozetkaAndDOU.BaseDate;
-import TestRozetkaAndDOU.DOU.Pages.ForumPage;
-import TestRozetkaAndDOU.DOU.Pages.MainPageDOU;
+import TestRozetkaAndDOU.DOU.PagesDOU.ForumPage;
+import TestRozetkaAndDOU.DOU.PagesDOU.MainPageDOU;
 import TestRozetkaAndDOU.DOU.PagesDOU.HomePage;
 import org.testng.annotations.Test;
 
