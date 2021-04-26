@@ -1,4 +1,4 @@
-package TestRozetkaAndDOU.DOU.Pages;
+package TestRozetkaAndDOU.DOU.PagesDOU;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;

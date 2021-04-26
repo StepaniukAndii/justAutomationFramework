@@ -3,8 +3,8 @@ package TestRozetkaAndDOU.DOU;
 import ClasesToAllUs.TestInit;
 import TestRozetkaAndDOU.BaseDate;
 import TestRozetkaAndDOU.DOU.Pages.ForumPage;
-import TestRozetkaAndDOU.DOU.Pages.HomePage;
 import TestRozetkaAndDOU.DOU.Pages.MainPageDOU;
+import TestRozetkaAndDOU.DOU.PagesDOU.HomePage;
 import org.testng.annotations.Test;
 
 public class TestForumFilter extends TestInit {
