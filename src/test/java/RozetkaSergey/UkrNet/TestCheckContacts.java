@@ -15,6 +15,5 @@ public class TestCheckContacts extends TestInit {
         ukrNetPages.supportCustomer().click();
         String ukrTelNumber = ukrNetPages.ukrtelecomNumber().getText().replaceAll("[^\\d.]", ""); //this part removes all characters except integers
         Assert.assertEquals(ukrTelNumber, numberUkrTelFromSite);
-        sleep(2);
     }
 }
