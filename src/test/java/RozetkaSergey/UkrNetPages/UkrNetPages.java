@@ -41,5 +41,7 @@ public class UkrNetPages extends BasePage {
     public WebElement copyWriteSign(){return getElement("//span[@style ='padding-right:35px;']");}
     public WebElement locatorOfCovidIframe (){return getElement("//iframe[@id='covidF']");}
     public List<WebElement> statisticInWorld (){return getElements("//div[@class='cov_tab_name translate_js']");}
+    public List<WebElement> listOfAllIframeAtPage(){return getElements("//iframe[@sandbox='allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation']");}
+
 
 }
