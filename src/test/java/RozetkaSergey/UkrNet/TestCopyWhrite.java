@@ -12,7 +12,7 @@ import java.util.List;
 
 public class TestCopyWhrite extends TestInit {
     @Test
-    public void copuWhrite() {
+    public void copyWrite() {
         UkrNetPages ukrNetPages = new UkrNetPages(driver);
         ukrNetPages.enterToUkrNet("https://www.ukr.net/ua");
         sleep(2);
@@ -31,5 +31,4 @@ public class TestCopyWhrite extends TestInit {
         driver.switchTo().window(windows.get(numb));
 
     }
-
 }

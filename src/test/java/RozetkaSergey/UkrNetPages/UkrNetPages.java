@@ -39,4 +39,7 @@ public class UkrNetPages extends BasePage {
     public WebElement ukrtelecomNumber(){return getElement("//li[@class='utel']");}
     public WebElement buttonAdvertisementOnSite(){return getElement("//footer//a[@target='_blank']");}
     public WebElement copyWriteSign(){return getElement("//span[@style ='padding-right:35px;']");}
+    public WebElement locatorOfCovidIframe (){return getElement("//iframe[@id='covidF']");}
+    public List<WebElement> statisticInWorld (){return getElements("//div[@class='cov_tab_name translate_js']");}
+
 }
