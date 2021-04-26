@@ -20,8 +20,6 @@ public class TestChangeOfWeatherRegion extends TestInit  {
         String secondCity = ukrNetPages.cityName().getText().replaceAll("\\p{P}", "").split(" ")[1];
         System.out.println(secondCity);
         Assert.assertEquals("Киев",secondCity);
-
-
         sleep(1);
     }
     public void switchToIframe (){
