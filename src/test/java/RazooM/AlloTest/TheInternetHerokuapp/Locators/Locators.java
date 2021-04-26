@@ -73,5 +73,4 @@ public class Locators extends BasePage {
     public WebElement wYSIWYGEditorNewDocument(){
         return getElement ("//div[@class='tox-collection__item-label']");
     }
-
 }
