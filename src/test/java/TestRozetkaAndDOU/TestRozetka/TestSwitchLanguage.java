@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TestLanguage extends TestInit {
+public class TestSwitchLanguage extends TestInit {
 
     @Test
     public void testLanguage() {
