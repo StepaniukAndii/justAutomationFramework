@@ -3,7 +3,7 @@
 <suite name="TestAllSuite" parallel="methods" thread-count="5">
     <test name="Allo">
         <packages>
-            <package name="TheInternetHerokuapp"/>
+            <package name="RazooM.AlloTest.TheInternetHerokuapp"/>
         </packages>
     </test>
 </suite>
