@@ -4,11 +4,14 @@ import ClasesToAllUs.TestInit;
 import TestRozetkaAndDOU.BaseDate;
 import TestRozetkaAndDOU.DOU.PagesDOU.HomePage;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.util.List;
 
-public class TestSearch extends TestInit {
+public class TestHomePage extends TestInit {
 
     String inputInSearch = "QA";
     String inputInSearchSecond = "qA";
@@ -21,8 +24,8 @@ public class TestSearch extends TestInit {
         pushBtnReturn();
         List<WebElement> listFilmsFirst = homePage.getLinkTitle();
         String str = listFilmsFirst.get(0).getText();
-        for (int i=0; i<listFilmsFirst.size()-3;i+=2) {
-            if(!listFilmsFirst.get(i).getText().contains(inputInSearch)) {
+        for (int i = 0; i < listFilmsFirst.size() - 3; i += 2) {
+            if (!listFilmsFirst.get(i).getText().contains(inputInSearch)) {
                 Assert.fail(listFilmsFirst.get(i).getText());
             }
         }
@@ -33,6 +36,19 @@ public class TestSearch extends TestInit {
         List<WebElement> listFilmsSecond = homePage.getLinkTitle();
         if (!listFilmsSecond.get(0).getText().contains(str)) {
             Assert.fail();
+        }
+    }
+
+    @Test
+    public void testIndexLinks() {
+        openUrl(BaseDate.BASE_URL_DOU);
+        HomePage homePage = new HomePage(driver);
+        for (int i = 0; i < 7; i++) {
+            homePage.getIndexLinks().get(i).isDisplayed();
+        }
+        for (int i = 0; i < 7; i++) {
+            homePage.getIndexLinks().get(i).click();
+            driver.navigate().back();
         }
     }
 }
