@@ -64,7 +64,7 @@ public class Locators extends BasePage {
     public WebElement horizontalLain(){return getElement ("//input[@type='range']");}
     public WebElement hoversTest(){return getElement ("//a[text()='Hovers']");}
     public List<WebElement> hoversList(){return getElements ("//div[@class='figure']");
-    public List<WebElement> hoversList(){return getElements ("//div[@class='figure']");}
+    public List<WebElement> hoversList () {return getElements ("//div[@class='figure']");}
     public WebElement multipleWindows(){return getElement ("//a[text()='Multiple Windows']");}
     public WebElement multipleWindowsButton(){return getElement ("//a[text()='Click Here']");}
     public WebElement horizontalSliderResultat(){return getElement ("//span[@id='range']");}
@@ -72,8 +72,7 @@ public class Locators extends BasePage {
     public WebElement wYSIWYGEditorIframe(){return getElement ("//iframe[@id='mce_0_ifr']");}
     public WebElement wYSIWYGEditorFildText(){return getElement ("//body[@id='tinymce']/p");}
     public WebElement wYSIWYGEditorNewFile(){return getElement ("//span[text()='File']");}
-    public WebElement wYSIWYGEditorNewDocument(){
-        return getElement ("//div[@class='tox-collection__item-label']");
-    }
+    public WebElement wYSIWYGEditorNewDocument(){return getElement ("//div[@class='tox-collection__item-label']");    }
 }
+
 
