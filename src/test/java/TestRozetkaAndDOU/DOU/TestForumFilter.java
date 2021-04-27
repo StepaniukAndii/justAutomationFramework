@@ -24,7 +24,5 @@ public class TestForumFilter extends TestInit {
             forumPage.getSelectTopic().click();
             forumPage.getSelectTopicChildren().get(i).click();
         }
-
-
     }
 }

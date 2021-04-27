@@ -51,4 +51,8 @@ public class JobPage extends BasePage {
     public List<WebElement> getRatingFilterTotalScoreNumbers() {
         return getElements("//div[@class='score all']");
     }
+
+    public List<WebElement> getFirstJobCities() {
+        return getElements("//div[contains(@class,'first-job-cities')]/a");
+    }
 }

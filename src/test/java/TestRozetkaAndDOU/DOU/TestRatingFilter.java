@@ -25,6 +25,5 @@ public class TestRatingFilter extends TestInit {
                 Assert.fail();
             }
         }
-        sleep(4);
     }
 }
