@@ -63,12 +63,8 @@ public class Locators extends BasePage {
     public WebElement dropdownListSelect() {
         return getElement ("//select[@id='dropdown']");
     }
-    public WebElement dropdownListOptoinOne() {
-        return getElement ("//select[@id='dropdown']/*[text()[contains(.,'Option 1')]]");
-    }
-    public WebElement dropdownListOptoinTwo() {
-        return getElement ("//select[@id='dropdown']/*[text()[contains(.,'Option 2')]]");
-    }
+    public WebElement dropdownListOptoinOne() {return getElement ("//select[@id='dropdown']/*[text()[contains(.,'Option 1')]]");}
+    public WebElement dropdownListOptoinTwo() {return getElement ("//select[@id='dropdown']/*[text()[contains(.,'Option 2')]]");}
     public WebElement dynamicContent() {
         return getElement ("//a[text()='Dynamic Content']");
     }
@@ -87,10 +83,7 @@ public class Locators extends BasePage {
     public WebElement dynamicLoading() {
         return getElement ("//a[text()='Dynamic Loading']");
     }
-    public WebElement exampleOne() {
-        return
-                getElement ("//a[text()='Example 1: Element on page that is hidden']");
-    }
+    public WebElement exampleOne() {return getElement ("//a[text()='Example 1: Element on page that is hidden']");}
     public WebElement exampleButton() {
         return getElement ("//div[@id='start']/button");
     }
@@ -181,4 +174,5 @@ public class Locators extends BasePage {
     public WebElement wYSIWYGEditorNewDocument () {
         return getElement ("//div[@class='tox-collection__item-label']");
     }
+
 }
