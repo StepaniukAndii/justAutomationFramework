@@ -44,4 +44,17 @@ public class TestCalendarPage extends TestInit {
             calendarPage.getSelectAllTagsChildren().get(i).click();
         }
     }
+
+    @Test
+    public void testFastPassage() {
+        openUrl(BaseDate.BASE_URL_DOU);
+        HomePage homePage = new HomePage(driver);
+        CalendarPage calendarPage = new CalendarPage(driver);
+        homePage.getHeaderButton().get(6).click();
+        Assert.assertEquals(calendarPage.getFastPassage().getText(), "Быстрый переход");
+        for (int i = 0; i < 17; i++) {
+            calendarPage.getFastPassageChildren().get(i).click();
+            driver.navigate().back();
+        }
+    }
 }

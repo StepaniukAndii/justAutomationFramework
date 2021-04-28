@@ -19,7 +19,7 @@ public class CalendarPage extends BasePage {
         return getElement("//div[@class='wrap ']");
     }
 
-    public WebElement getHeatText() {
+    public WebElement getHeatElement() {
         return getElement("//span[@class='m-hide']");
     }
 
@@ -37,5 +37,13 @@ public class CalendarPage extends BasePage {
 
     public List<WebElement> getSelectAllTagsChildren() {
         return getElements("//select[@name='tag']/option");
+    }
+
+    public WebElement getFastPassage() {
+        return getElement("//div[@class='b-similar']/h3");
+    }
+
+    public List<WebElement> getFastPassageChildren() {
+        return getElements("//div[@class='b-similar']//li/div/a");
     }
 }
