@@ -23,4 +23,12 @@ public class JobPage extends BasePage {
     public List<WebElement> getVacancies() {
         return getElements("//a[@class='vt']");
     }
+
+    public WebElement getButtonFind() {
+        return getElement("//input[@class='btn-search']");
+    }
+
+    public List<WebElement> getButtonsRegionFilter() {
+        return getElements("//div[@class='b-region-filter']/ul/li/a");
+    }
 }

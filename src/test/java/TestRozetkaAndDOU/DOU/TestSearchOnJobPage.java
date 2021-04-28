@@ -28,4 +28,18 @@ public class TestSearchOnJobPage extends TestInit {
             Assert.fail();
         }
     }
+
+    @Test
+    public void testRegionFilter() {
+        HomePage homePage = new HomePage(driver);
+        JobPage jobPage = new JobPage(driver);
+        openUrl(BaseDate.BASE_URL_DOU);
+        homePage.getHeaderButton().get(5).click();
+        jobPage.getSearch().sendKeys(inputInSearchFieldFirst);
+        jobPage.getButtonFind().click();
+        for (int i = 1; i < jobPage.getButtonsRegionFilter().size(); i++) {
+            jobPage.getButtonsRegionFilter().get(i).click();
+        }
+        jobPage.getButtonsRegionFilter().get(0).click();
+    }
 }
