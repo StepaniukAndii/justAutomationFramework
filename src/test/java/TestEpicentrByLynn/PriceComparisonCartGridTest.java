@@ -3,7 +3,6 @@ package TestEpicentrByLynn;
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 
 public class PriceComparisonCartGridTest extends TestInit {
@@ -14,12 +13,11 @@ public class PriceComparisonCartGridTest extends TestInit {
         driver.get("https://epicentrk.ua/");
         homePage.popupWindow().click();
         homePage.searchField().sendKeys("краска\n");
-        sleep(2);
 
         for (int i = 0; i < 5; i++) {
             js.executeScript("arguments[0].scrollIntoView();", homePage.buyBtns().get(i));
             homePage.buyBtns().get(i).click();
-            sleep(1);
+            sleep(2);
             js.executeScript("arguments[0].scrollIntoView();", homePage.continueShopping());
             homePage.continueShopping().click();
         }
