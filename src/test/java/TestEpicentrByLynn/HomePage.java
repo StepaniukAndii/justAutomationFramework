@@ -20,4 +20,11 @@ public HomePage(WebDriver driver) {super(driver);}
         return getElements("//p[@class='basket-product__price-main']");}
     public WebElement cartBtn() {
         return getElement("//span[@class='header__cart-icon']");}
+    //sale test
+    public List<WebElement> saleStickers() {return getElements("//section[@class='container productList" +
+            "Conteiner product-list-wrapper']//span[@class='sticker action']");}
+    public WebElement showMore() {
+        return getElement("//a[@class='card card--preload link link--big link--inverted link--blue']");}
+    public List<WebElement> pageNumber() {
+        return getElements("//a[@class='pagination__item']");}
 }
