@@ -3,7 +3,6 @@ package TestRozetkaAndDOU.DOU.PagesDOU;
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -30,5 +29,9 @@ public class HomePage extends BasePage {
     public List<WebElement> getHeaderButton() {
         //0 - DOU 1-главная  2 - форум 3 - лента 4 - зарплаты 5 - работа 6 - календарь 7 - youtube
         return getElements("//header/ul/li");
+    }
+
+    public List<WebElement> getLanguage() {
+        return getElements("//p[@class='footer-lang-switch']/a[@rel='nofollow']");
     }
 }
