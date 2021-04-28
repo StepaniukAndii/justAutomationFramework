@@ -1,7 +1,6 @@
+package RazooM.AlloTest.DemoqaCom;
 
 import ClasesToAllUs.TestInit;
-import RazooM.AlloTest.DemoqaCom.DemoqaLocators;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -21,14 +20,15 @@ public class DemoqaButtons extends TestInit {
         oneClick();
     }
     private void oneClick() {
-        locators.demoqaBoxDoubleClickBtn().click();
+          locators.demoqaBoxOneClickBtn ().click();
     }
     private void rightClick() {
-        locators.demoqaBoxRightClickBtn().sendKeys(Keys.RIGHT);
+        Actions action = new Actions(driver).contextClick(locators.demoqaBoxRightClickBtn());
+        action.build().perform();
     }
     private void dablClick() {
         WebElement element = locators.demoqaBoxDoubleClickBtn();
-        Actions actions =new Actions (driver);
+        Actions actions =  new Actions (driver);
         actions.doubleClick(element).build().perform();
     }
 }

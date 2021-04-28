@@ -37,6 +37,5 @@ public class DemoqaLocators extends BasePage {
     public WebElement demoqaBoxButtons(){return findElement ("//span[text()='Buttons']");}
     public WebElement demoqaBoxDoubleClickBtn(){return findElement ("//button[@id='doubleClickBtn']");}
     public WebElement demoqaBoxRightClickBtn(){return findElement ("//button[@id='rightClickBtn']");}
-    public WebElement demoqaBoxOneClickBtn(){return findElement ("//button[@id='i3vfA']");}
+    public WebElement demoqaBoxOneClickBtn(){return findElement ("//button[text()='Click Me']");}
 }
-
