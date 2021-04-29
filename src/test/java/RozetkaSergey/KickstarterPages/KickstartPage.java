@@ -19,5 +19,8 @@ public class KickstartPage extends BasePage {
     public List<WebElement> priceList (){return getElements("//div[@class='mb4-lg']//span");}
     public WebElement switchMoneyButton(){return getElement("//select[@name='currency']");}
     public WebElement continueButton(){return getElement("//div[@class='shadow-low bg-white p4 max-h70vh auto-scroll-y clip']//button");}
-    public List<WebElement> theSecondListOfPrice(){return getElements("//div[@class='mb4-lg']//span[@class='ksr-green-500']");}
+    public WebElement discoverButton(){return getElement("//button[@class='mr2 flex items-center type-14 keyboard-focusable soft-black hover-ksr-green-700 bg-white']");}
+    public WebElement designAndTechButton (){return getElement("//li//a[contains(@aria-controls, 'aria-design-tech')]");}
+    public List<WebElement> listOfh3 (){return getElements("//h3[@aria-level='3' ]");}
+
     }
