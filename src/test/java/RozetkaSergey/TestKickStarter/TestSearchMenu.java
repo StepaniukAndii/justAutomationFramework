@@ -19,7 +19,7 @@ public class TestSearchMenu extends TestInit {
         kickstartPage.searchButton().click();
         kickstartPage.searchField().sendKeys("bike");
         enter();
-        String vas = driver.findElement(By.tagName("body")).getText().toLowerCase();
+        String vas = driver.findElement(By.xpath("//section[@id='advanced_container']")).getText().toLowerCase();
         boolean bike = vas.contains("bike");
         Assert.assertEquals(bike, true);
     }
