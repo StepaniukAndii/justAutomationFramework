@@ -22,5 +22,10 @@ public class KickstartPage extends BasePage {
     public WebElement discoverButton(){return getElement("//button[@class='mr2 flex items-center type-14 keyboard-focusable soft-black hover-ksr-green-700 bg-white']");}
     public WebElement designAndTechButton (){return getElement("//li//a[contains(@aria-controls, 'aria-design-tech')]");}
     public List<WebElement> listOfh3 (){return getElements("//h3[@aria-level='3' ]");}
-
+    public WebElement startProjectButton(){return getElement("//a[@class='hide pr3 mr2 flex-sm items-center keyboard-focusable soft-black hover-ksr-green-700']");}
+    public WebElement startProjectButtomAnother (){return getElement("//a[@class='bttn bttn-primary theme--create bttn-large']");}
+    public WebElement chooseAProject(){return getElement("//div[@class='navy-700']");}
+    public WebElement designButton (){return getElement("//ul[@role='presentation']//li[5]");}
+    public WebElement nextButton (){return getElement("//button[@class='bttn keyboard-focusable bttn-medium bttn-primary theme--support fill-bttn-icon hover-fill-bttn-icon']");}
+    public WebElement describeTest(){return getElement("//h2[@class='type-28-sm black type-21 lh4 lh6-sm normal center mb2']");}
     }
