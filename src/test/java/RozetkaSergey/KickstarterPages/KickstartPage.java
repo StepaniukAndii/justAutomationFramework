@@ -29,5 +29,11 @@ public class KickstartPage extends BasePage {
     public WebElement nextButton (){return getElement("//button[@class='bttn keyboard-focusable bttn-medium bttn-primary theme--support fill-bttn-icon hover-fill-bttn-icon']");}
     public WebElement describeTest(){return getElement("//h2[@class='type-28-sm black type-21 lh4 lh6-sm normal center mb2']");}
     public List<WebElement> listOfBottomMenu (){return getElements("//div[@class='grid-container js-project-nav-scroll']//a");}
-
+    public WebElement loginButton(){return getElement("//a[@class='soft-black hover-ksr-green-700 ml3']");}
+    public WebElement loginField (){return getElement("//input[@class='full-width js-auto_focus email']");}
+    public WebElement passField (){return getElement("//input[@class='full-width js-auto_focus fs-hide password']");}
+    public WebElement logoImageButton(){return getElement(
+            "//img[@class='avatar inline-block align-middle radius100p w6 h6 ml2 bg-grey-100']");}
+    public List<WebElement> logoOut(){return getElements(
+            "//a[@class='hover-text-underline hover-cobalt-500 mr1 py1 mb1 mb0-sm link-soft-black']");}
     }
