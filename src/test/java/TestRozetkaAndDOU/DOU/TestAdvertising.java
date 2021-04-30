@@ -21,14 +21,10 @@ public class TestAdvertising extends TestInit {
         String tab1 = it.next();
         String tab2 = it.next();
         driver.switchTo().window(tab2);
-        if(!driver.getCurrentUrl().contains("https://jobs.dou.ua/companies/allst" +
-                "ars-it/vacancies/152257/?from=fp-header")) {
-            Assert.fail();
-        }
+        Assert.assertEquals(driver.getCurrentUrl(),"https://jobs.dou.ua/companies/allst" +
+                "ars-it/vacancies/152257/?from=fp-header");
         driver.switchTo().window(tab1);
         advertisingPage.getAdvertisingHeader().click();
-        if(!driver.getCurrentUrl().contains("/companies/levi9/vacancies/158120/?from=rs")) {
-            Assert.fail();
-        }
+        Assert.assertEquals(driver.getCurrentUrl(),"/companies/levi9/vacancies/158120/?from=rs");
     }
 }
