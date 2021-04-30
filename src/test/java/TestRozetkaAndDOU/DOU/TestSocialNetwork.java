@@ -2,7 +2,7 @@ package TestRozetkaAndDOU.DOU;
 
 import ClasesToAllUs.TestInit;
 import TestRozetkaAndDOU.BaseDate;
-import TestRozetkaAndDOU.DOU.Pages.HomePage;
+import TestRozetkaAndDOU.DOU.PagesDOU.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
