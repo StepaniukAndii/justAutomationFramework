@@ -38,4 +38,10 @@ public class DemoqaLocators extends BasePage {
     public WebElement demoqaBoxDoubleClickBtn(){return findElement ("//button[@id='doubleClickBtn']");}
     public WebElement demoqaBoxRightClickBtn(){return findElement ("//button[@id='rightClickBtn']");}
     public WebElement demoqaBoxOneClickBtn(){return findElement ("//button[text()='Click Me']");}
+    public WebElement demoqaWidgets(){return getElement ("//div[@class='card mt-4 top-card'][4]");}
+    public WebElement demoqaAccordian(){return findElement ("//span[text()='Accordian']");}
+    public WebElement demoqaAccordianOne(){return findElement ("//div[@id='section1Heading']");}
+    public WebElement demoqaAccordianTwo(){return findElement ("//div[@id='section2Heading']");}
+    public WebElement demoqaAccordianFry(){return findElement ("//div[@id='section3Heading']");}
+    public WebElement demoqaAccoriadShow(){return findElement ("//div[@class='collapse show']");}
 }
