@@ -14,6 +14,13 @@ public class KickstartPage extends BasePage {
     public WebElement searchField (){return getElement("//input[@class='border-box keyboard-focusable no-outline h13 h11-md medium z-dropdown-3 w100p relative radius0 pl4 pl7-md type-18 inline-block border-none shadow-none js-search-term-gs']");}
     public WebElement switchLanguageButton(){return getElement("//select[@aria-label='Change the language you browse Kickstarter with']");}
     public WebElement copyWriteAndYear (){return getElement("//div[@class='flex items-center mb3 mb0-lg']//span");}
-    //public WebElement listOfSocialNetworks1(){return getElement("//div[@class='border-bottom border2px py8']//a");}
     public List<WebElement> listOfSocialNetworks (){return getElements("//div[@class='border-bottom border2px py8']//a");}
-}
+    public WebElement someElementFromPage (){return getElement("//img[@class='w100p block']");}
+    public List<WebElement> priceList (){return getElements("//div[@class='mb4-lg']//span");}
+    public WebElement switchMoneyButton(){return getElement("//select[@name='currency']");}
+    public WebElement continueButton(){return getElement("//div[@class='shadow-low bg-white p4 max-h70vh auto-scroll-y clip']//button");}
+    public WebElement discoverButton(){return getElement("//button[@class='mr2 flex items-center type-14 keyboard-focusable soft-black hover-ksr-green-700 bg-white']");}
+    public WebElement designAndTechButton (){return getElement("//li//a[contains(@aria-controls, 'aria-design-tech')]");}
+    public List<WebElement> listOfh3 (){return getElements("//h3[@aria-level='3' ]");}
+
+    }
