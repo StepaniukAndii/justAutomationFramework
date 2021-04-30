@@ -28,4 +28,6 @@ public class KickstartPage extends BasePage {
     public WebElement designButton (){return getElement("//ul[@role='presentation']//li[5]");}
     public WebElement nextButton (){return getElement("//button[@class='bttn keyboard-focusable bttn-medium bttn-primary theme--support fill-bttn-icon hover-fill-bttn-icon']");}
     public WebElement describeTest(){return getElement("//h2[@class='type-28-sm black type-21 lh4 lh6-sm normal center mb2']");}
+    public List<WebElement> listOfBottomMenu (){return getElements("//div[@class='grid-container js-project-nav-scroll']//a");}
+
     }
