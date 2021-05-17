@@ -14,10 +14,10 @@ public class HomePageVijar extends BasePage {
         driver.get(site);
     }
     public WebElement closeAdverb() {
-        return getElement("//img[@src='/img/close_white-24px.svg']");
+        return findElementByXpath("//img[@src='/img/close_white-24px.svg']");
     }
-    public WebElement clickOnStatusOfOrder() {return getElement("//a[@class='ico-services']");}
-    public List<WebElement> getDigit () {return  getElements("//div[@class='work_day filial_location']");}
+    public WebElement clickOnStatusOfOrder() {return findElementByXpath("//a[@class='ico-services']");}
+    public List<WebElement> getDigit () {return  findElementsByXpath("//div[@class='work_day filial_location']");}
 }
 
 

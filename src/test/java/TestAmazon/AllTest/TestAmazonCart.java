@@ -24,7 +24,7 @@ public class TestAmazonCart extends TestInit {
         homePageAmazon.addItemToCard().click();
         homePageAmazon.openCard();
         sleep(2);
-        Assert.assertTrue(homePageAmazon.getElement(homePageAmazon.bigLocator).isDisplayed());
+        Assert.assertTrue(homePageAmazon.findElementByXpath(homePageAmazon.bigLocator).isDisplayed());
         System.out.println("If you see this text, it means that the test - Well Done!");
     }
 }

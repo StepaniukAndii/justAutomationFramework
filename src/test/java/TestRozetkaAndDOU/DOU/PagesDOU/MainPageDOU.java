@@ -12,6 +12,6 @@ public class MainPageDOU extends BasePage {
     }
 
     public List<WebElement> getContentMenu() {
-        return getElements("//ul[@class='b-content-menu']/li");
+        return findElementsByXpath("//ul[@class='b-content-menu']/li");
     }
 }

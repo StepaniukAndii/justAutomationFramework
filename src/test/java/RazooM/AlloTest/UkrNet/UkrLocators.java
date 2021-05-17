@@ -14,9 +14,9 @@ public class UkrLocators extends BasePage {
         return findElement ("//ul[@class='right-tabs__nav d-clear']/li[text()='Топливо']");
     }
     public List<WebElement> ukrPalevoListName(){
-        return getElements ("//ul[@class='fuels']/li/div[@class='name']");
+        return findElementsByXpath("//ul[@class='fuels']/li/div[@class='name']");
     }
     public List<WebElement> ukrPalevoListPrice(){
-        return getElements ("//ul[@class='fuels']/li/div[@class='price']");
+        return findElementsByXpath("//ul[@class='fuels']/li/div[@class='price']");
     }
 }

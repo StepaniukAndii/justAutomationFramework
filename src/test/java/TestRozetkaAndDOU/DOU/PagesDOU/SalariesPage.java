@@ -13,26 +13,26 @@ public class SalariesPage extends BasePage {
     }
 
     public WebElement getSelectCity() {
-        return getElement("//select[@name='city']");
+        return findElementByXpath("//select[@name='city']");
     }
 
     public List<WebElement> getSelectCityChildren() {
-        return getElements("//select[@name='city']/option");
+        return findElementsByXpath("//select[@name='city']/option");
     }
 
     public WebElement getSelectPosition() {
-        return getElement("//select[@class='salarydec-field-title']");
+        return findElementByXpath("//select[@class='salarydec-field-title']");
     }
 
     public List<WebElement> getSelectPositionChildren() {
-        return getElements("//select[@class='salarydec-field-title']/optgroup/option");
+        return findElementsByXpath("//select[@class='salarydec-field-title']/optgroup/option");
     }
 
     public WebElement getLanguage() {
-        return getElement("//select[@name='language']");
+        return findElementByXpath("//select[@name='language']");
     }
 
     public List<WebElement> getSelectLanguageChildren() {
-        return getElements("//select[@name='language']/option");
+        return findElementsByXpath("//select[@name='language']/option");
     }
 }
