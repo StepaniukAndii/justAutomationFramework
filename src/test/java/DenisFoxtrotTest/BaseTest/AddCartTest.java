@@ -19,7 +19,7 @@ public class AddCartTest extends TestInit {
         int p = rand.nextInt(upperbound);
         for (int i = 0; i < 3; i++) {
             for (int m = 0; m < 5; m++) {
-                homePageFoxtrot.findMerch().get(m).click();
+                homePageFoxtrot.findMerch().get(p).click();
                 homePageFoxtrot.addToCart().click();
                 driver.navigate().back();
                 p++;
