@@ -10,7 +10,7 @@ import java.util.Random;
 public class AddCartTest extends TestInit {
 
     @Test
-    public void AddFridgeToCart() throws AWTException {
+    public void AddFridgeToCart() {
         HomePageFoxtrot homePageFoxtrot = new HomePageFoxtrot(driver);
         openUrl("https://www.foxtrot.com.ua/");
         homePageFoxtrot.getSearch().sendKeys("Холодильники\n");
