@@ -12,7 +12,7 @@ public class TestFoxtrot extends TestInit {
         HomePageFoxtrot homePageFoxtrot = new HomePageFoxtrot(driver);
         openUrl("https://www.foxtrot.com.ua/");
         homePageFoxtrot.getSearch().sendKeys("Холодильник\n");
-        checkURLPositive();
+//        checkURLPositive();
         homePageFoxtrot.getSearch().sendKeys("ХоЛоДильНик\n");
         checkURLPositive();
         homePageFoxtrot.getSearch().sendKeys("Холодильник%\n");

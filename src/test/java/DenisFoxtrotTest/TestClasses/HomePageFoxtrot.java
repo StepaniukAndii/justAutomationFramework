@@ -27,4 +27,7 @@ public class HomePageFoxtrot extends BasePage {
     public WebElement nextPage() {
         return findElementByXpath("//i [@class='icon icon-chevron-right']");
     }
+    public WebElement checkCart() {
+        return findElementByXpath("//span [@id='cartItemsCount']");
+    }
 }

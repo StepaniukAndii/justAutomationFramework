@@ -28,6 +28,5 @@ public class AddCartTest extends TestInit {
             homePageFoxtrot.nextPage().click();
             sleep(2);
         }
-
     }
 }
