@@ -12,10 +12,10 @@ public class ForumPage extends BasePage {
     }
 
     public WebElement getSelectTopic() {
-        return getElement("//select[@name='topic']");
+        return findElementByXpath("//select[@name='topic']");
     }
 
     public List<WebElement> getSelectTopicChildren() {
-        return getElements("//select[@name='topic']/option");
+        return findElementsByXpath("//select[@name='topic']/option");
     }
 }
