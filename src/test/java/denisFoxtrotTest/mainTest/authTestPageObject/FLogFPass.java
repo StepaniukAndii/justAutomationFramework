@@ -13,8 +13,5 @@ public class FLogFPass extends TestInit {
         loginPage.getUserNameField().sendKeys("standard_use");
         loginPage.getPasswordField().sendKeys("password");
         loginPage.getLogin().click();
-        sleep(2);
     }
-
-
 }

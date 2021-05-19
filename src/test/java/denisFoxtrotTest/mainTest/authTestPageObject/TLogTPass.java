@@ -13,6 +13,5 @@ public class TLogTPass extends TestInit {
         loginPage.getUserNameField().sendKeys("standard_user");
         loginPage.getPasswordField().sendKeys("secret_sauce");
         loginPage.getLogin().click();
-        sleep(2);
     }
 }

@@ -13,6 +13,5 @@ public class TLogFPass extends TestInit {
         loginPage.getUserNameField().sendKeys("standard_user");
         loginPage.getPasswordField().sendKeys("password");
         loginPage.getLogin().click();
-        sleep(2);
     }
 }
