@@ -1,10 +1,9 @@
-package DenisFoxtrotTest.BaseTest;
+package denisFoxtrotTest.mainTest.cartTest;
 
 import ClasesToAllUs.TestInit;
-import DenisFoxtrotTest.TestClasses.HomePageFoxtrot;
+import denisFoxtrotTest.pages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
-import java.awt.*;
 import java.util.Random;
 
 public class AddCartTest extends TestInit {
@@ -20,6 +19,7 @@ public class AddCartTest extends TestInit {
         for (int i = 0; i < 3; i++) {
             for (int m = 0; m < 5; m++) {
                 homePageFoxtrot.findMerch().get(p).click();
+                sleep(1);
                 homePageFoxtrot.addToCart().click();
                 driver.navigate().back();
                 p++;
