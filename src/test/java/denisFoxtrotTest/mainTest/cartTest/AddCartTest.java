@@ -19,14 +19,11 @@ public class AddCartTest extends TestInit {
         for (int i = 0; i < 3; i++) {
             for (int m = 0; m < 5; m++) {
                 homePageFoxtrot.findMerch().get(p).click();
-                sleep(1);
                 homePageFoxtrot.addToCart().click();
                 driver.navigate().back();
                 p++;
-                sleep(2);
             }
             homePageFoxtrot.nextPage().click();
-            sleep(2);
         }
     }
 }

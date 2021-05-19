@@ -17,7 +17,6 @@ public class RemoveCartTest extends TestInit {
             homePageFoxtrot.addToCart().click();
             driver.navigate().back();
             p++;
-            sleep(2);
         }
         homePageFoxtrot.checkCart().click();
         homePageFoxtrot.displayCart().click();
@@ -25,7 +24,6 @@ public class RemoveCartTest extends TestInit {
         int size = 0;
         for (int i = 0; i < t; i++) {
             homePageFoxtrot.deleteFromCart().get(size).click();
-            sleep(1);
         }
     }
 }
