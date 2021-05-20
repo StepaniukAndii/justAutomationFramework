@@ -17,7 +17,7 @@ public class DemoqaLocators extends BasePage {
     public WebElement demoqaPermanentAddress(){return findElement ("//textarea[@id='permanentAddress']");}
     public WebElement demoqaButtonSubmit(){return findElement ("//button[@id='submit']");}
     public List<WebElement> demoqaListTextBox(){
-        return getElements ("//div[@class='border col-md-12 col-sm-12']/p");
+        return findElementsByXpath("//div[@class='border col-md-12 col-sm-12']/p");
     }
     public WebElement webTables(){return findElement ("//span[text()='Web Tables']");}
     public WebElement webTablesAdd(){return findElement ("//button[@id='addNewRecordButton']");}
@@ -29,7 +29,7 @@ public class DemoqaLocators extends BasePage {
     public WebElement webTablasDepartement(){return findElement ("//input[@id='department']");}
     public WebElement webTablasSubmit(){return findElement ("//button[@id='submit']");}
     public WebElement webTablasCheckName(){
-        return getElement ("//*[text()[contains(.,'Petya')]]");
+        return findElementByXpath("//*[text()[contains(.,'Petya')]]");
     }
     public WebElement webTablasSerchBox(){return findElement ("//input[@id='searchBox']");}
     public WebElement webTablasDeleteUser(){return findElement ("//span[@title='Delete']");}
@@ -38,7 +38,7 @@ public class DemoqaLocators extends BasePage {
     public WebElement demoqaBoxDoubleClickBtn(){return findElement ("//button[@id='doubleClickBtn']");}
     public WebElement demoqaBoxRightClickBtn(){return findElement ("//button[@id='rightClickBtn']");}
     public WebElement demoqaBoxOneClickBtn(){return findElement ("//button[text()='Click Me']");}
-    public WebElement demoqaWidgets(){return getElement ("//div[@class='card mt-4 top-card'][4]");}
+    public WebElement demoqaWidgets(){return findElementByXpath("//div[@class='card mt-4 top-card'][4]");}
     public WebElement demoqaAccordian(){return findElement ("//span[text()='Accordian']");}
     public WebElement demoqaAccordianOne(){return findElement ("//div[@id='section1Heading']");}
     public WebElement demoqaAccordianTwo(){return findElement ("//div[@id='section2Heading']");}

@@ -12,5 +12,5 @@ public class GooglePage extends BasePage {
     }
 
     public List<WebElement> serchLink(){return driver.findElements (By.xpath("//div[@class='yuRUbf']/a"));}
-    public WebElement nextList(){return getElement ("//td[@class='d6cvqb'][2]");}
+    public WebElement nextList(){return findElementByXpath("//td[@class='d6cvqb'][2]");}
 }
