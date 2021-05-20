@@ -10,6 +10,4 @@ public class FooterFoxtrot extends BasePage {
     public FooterFoxtrot(WebDriver driver) {
         super(driver);
     }
-
-
 }

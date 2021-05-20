@@ -8,11 +8,9 @@ import java.awt.*;
 
 public class FooterClickability extends TestInit {
 
-    @Test
     public void footerClickability() throws AWTException {
         FooterFoxtrot footerFoxtrot = new FooterFoxtrot(driver);
         openUrl("https://www.foxtrot.com.ua/");
         Robot robot = new Robot();
-
     }
 }
