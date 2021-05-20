@@ -1,6 +1,7 @@
 package denisFoxtrotTest.mainTest.headerTest;
 
 import ClasesToAllUs.TestInit;
+import denisFoxtrotTest.pages.HeaderFoxtrot;
 import denisFoxtrotTest.pages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
@@ -8,38 +9,39 @@ public class HeaderClickability extends TestInit {
 
     @Test
     public void headerClickability() {
+        HeaderFoxtrot headerFoxtrot = new HeaderFoxtrot(driver);
         HomePageFoxtrot homePageFoxtrot = new HomePageFoxtrot(driver);
         openUrl("https://www.foxtrot.com.ua/");
-        homePageFoxtrot.adClick().click();
-        homePageFoxtrot.headerDailyProduct().click();
+        headerFoxtrot.headerAdClick().click();
+        headerFoxtrot.headerDailyProduct().click();
         int size = 0;
         for (int i = 0; i < 3; i++) {
-            homePageFoxtrot.headerTOPPropSalesAdresses().get(size).click();
+            headerFoxtrot.headerTOPPropSalesAdresses().get(size).click();
             size++;
         }
-        homePageFoxtrot.headerForCustomers().click();
+        headerFoxtrot.headerForCustomers().click();
         driver.navigate().refresh();
-        homePageFoxtrot.headerContacts().click();
+        headerFoxtrot.headerContacts().click();
         driver.navigate().refresh();
-        if (homePageFoxtrot.headerLangUA().isSelected()) {
-            homePageFoxtrot.headerLangRU().click();
-            homePageFoxtrot.headerLangUA().click();
+        if (headerFoxtrot.headerLangUA().isSelected()) {
+            headerFoxtrot.headerLangRU().click();
+            headerFoxtrot.headerLangUA().click();
         } else {
-            homePageFoxtrot.headerLangUA().click();
-            homePageFoxtrot.headerLangRU().click();
+            headerFoxtrot.headerLangUA().click();
+            headerFoxtrot.headerLangRU().click();
         }
-        homePageFoxtrot.headerAuthPopUp().click();
-        homePageFoxtrot.popUpClose().get(0).click();
-        homePageFoxtrot.headerFoxtrot().click();
-        homePageFoxtrot.headerCompare().click();
+        headerFoxtrot.headerAuthPopUp().click();
+        headerFoxtrot.popUpClose().get(0).click();
+        headerFoxtrot.headerFoxtrot().click();
+        headerFoxtrot.headerCompare().click();
         driver.navigate().refresh();
-        homePageFoxtrot.headerFavorite().click();
+        headerFoxtrot.headerFavorite().click();
         driver.navigate().refresh();
-        homePageFoxtrot.headerRecieveBonus().click();
+        headerFoxtrot.headerRecieveBonus().click();
         driver.navigate().refresh();
         homePageFoxtrot.checkCart().click();
         driver.navigate().refresh();
-        homePageFoxtrot.headerBigSales().click();
-        homePageFoxtrot.headerAllSales().click();
+        headerFoxtrot.headerBigSales().click();
+        headerFoxtrot.headerAllSales().click();
     }
 }
