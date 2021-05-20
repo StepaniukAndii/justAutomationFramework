@@ -10,27 +10,27 @@ public class ExchangeProduksLokators extends BasePage {
         super (driver);
     }
     public WebElement exchangeButton(){
-        return getElement("//a[@class='allo-programs__link']/p[text()='Алло Обмен']");
+        return findElementByXpath("//a[@class='allo-programs__link']/p[text()='Алло Обмен']");
     }
     public WebElement choiceMyNewTellSamsung(){
-        return getElement("//div[@id='mCSB_1_container']/div[@class='inner']/a[text()='Samsung']");
+        return findElementByXpath("//div[@id='mCSB_1_container']/div[@class='inner']/a[text()='Samsung']");
     }
     public WebElement serchMyNewTell(){
-        return getElement("//article[@class='new-device']//input");
+        return findElementByXpath("//article[@class='new-device']//input");
     }
     public WebElement modelMyNewBlack(){
-        return getElement("//a[@data-id='112542']");
+        return findElementByXpath("//a[@data-id='112542']");
     }
     public WebElement choiceMyOldTellSamsung(){
-        return getElement("//div[@id='mCSB_3_container']/div[@class='inner']/a[text()='Apple']");
+        return findElementByXpath("//div[@id='mCSB_3_container']/div[@class='inner']/a[text()='Apple']");
     }
     public WebElement serchMyOldTell(){
-        return getElement("//article[@class='old-device']//input");
+        return findElementByXpath("//article[@class='old-device']//input");
     }
     public WebElement modelMyOldBlack(){
-        return getElement("//a[@data-id='15687']");
+        return findElementByXpath("//a[@data-id='15687']");
     }
-    public WebElement priceTell(){ return getElement("//div[@class='c-1']//span");}
-    public WebElement discountTell(){ return getElement("//div[@class='c-2']//span");}
-    public WebElement leftToPayTell(){ return getElement("//div[@class='c-3']//span");}
+    public WebElement priceTell(){ return findElementByXpath("//div[@class='c-1']//span");}
+    public WebElement discountTell(){ return findElementByXpath("//div[@class='c-2']//span");}
+    public WebElement leftToPayTell(){ return findElementByXpath("//div[@class='c-3']//span");}
 }
