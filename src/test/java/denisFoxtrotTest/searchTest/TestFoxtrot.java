@@ -1,7 +1,7 @@
-package DenisFoxtrotTest.BaseTest;
+package denisFoxtrotTest.searchTest;
 
 import ClasesToAllUs.TestInit;
-import DenisFoxtrotTest.TestClasses.HomePageFoxtrot;
+import denisFoxtrotTest.foxPages.HomePageFoxtrot;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
