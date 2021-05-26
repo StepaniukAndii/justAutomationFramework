@@ -3,7 +3,15 @@
 <suite name="TestAllSuite" parallel="methods" thread-count="5">
     <test name="Allo">
         <packages>
-            <package name="RazooM.AlloTest.TheInternetHerokuapp"/>
+            <package name="RozetkaSergey.TestKickStarter"/>
+            <package name="RozetkaSergey.TestsRozetka"/>
+            <package name="RozetkaSergey.TestsVijar"/>
+            <package name="RozetkaSergey.UkrNet"/>
+            <package name="TestAmazon.AllTest"/>
+            <package name="TestRozetkaAndDOU.DOU"/>
+            <package name="TestRozetkaAndDOU.TestAPI"/>
+            <package name="TestRozetkaAndDOU.TestCucumber"/>
+            <package name="TestRozetkaAndDOU.TestRozetka"/>
         </packages>
     </test>
 </suite>
