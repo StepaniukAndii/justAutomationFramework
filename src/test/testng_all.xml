@@ -9,7 +9,6 @@
             <package name="RozetkaSergey.UkrNet"/>
             <package name="TestAmazon.AllTest"/>
             <package name="TestRozetkaAndDOU.DOU"/>
-            <package name="TestRozetkaAndDOU.TestAPI"/>
             <package name="TestRozetkaAndDOU.TestRozetka"/>
         </packages>
     </test>
