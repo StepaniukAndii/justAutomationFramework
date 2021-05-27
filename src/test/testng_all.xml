@@ -10,6 +10,11 @@
             <package name="TestAmazon.AllTest"/>
             <package name="TestRozetkaAndDOU.DOU"/>
             <package name="TestRozetkaAndDOU.TestRozetka"/>
+            <package name="RazooM.AlloTest.TheInternetHerokuapp"/>
+            <package name="RazooM.AlloTest.CheckTextTests"/>
+            <package name="RazooM.AlloTest.DemoqaCom"/>
+            <package name="RazooM.AlloTest.FootersTests"/>
+            <package name="RazooM.AlloTest.TestURLClicabls"/>
         </packages>
     </test>
 </suite>
