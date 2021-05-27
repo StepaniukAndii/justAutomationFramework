@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestAllSuite" parallel="methods" thread-count="5">
+<suite name="TestAllSuite" parallel="methods" thread-count="4">
     <test name="Allo">
         <packages>
-            <package name="RazooM.AlloTest.TheInternetHerokuapp"/>
+            <package name="RazooM.AlloTest.CheckTextTests"/>
+            <package name="RazooM.AlloTest.DemoqaCom"/>
         </packages>
     </test>
 </suite>

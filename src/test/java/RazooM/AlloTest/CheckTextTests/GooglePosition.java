@@ -19,9 +19,10 @@ public class GooglePosition extends TestInit {
         openUrl ("https://www.google.com.ua/?hl=ru");
         locators.serchGoogle().sendKeys("skovorodka");
         enter();
-        myWord ="https://allo.ua";
+        myWord ="http://bento.com.ua/";
         booLeon = false;
         searchSite ();
+        sleep (10);
     }
     public void searchSite(){
         int numBer = locators.serchItems().size();
