@@ -9,5 +9,5 @@ public class CheckingProductCatalogLocators extends BasePage {
     public CheckingProductCatalogLocators(WebDriver driver) {
         super (driver);
     }
-    public List<WebElement> alloPrograms(){return getElements ("//ul[@class='allo-programs__list']/li");}
+    public List<WebElement> alloPrograms(){return findElementsByXpath("//ul[@class='allo-programs__list']/li");}
 }

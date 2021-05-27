@@ -19,55 +19,55 @@ public class VijarPages5_8 extends BasePage {
     }
 
     public WebElement closeAdverb() {
-        return getElement("//img[@src='/img/close_white-24px.svg']");
+        return findElementByXpath("//img[@src='/img/close_white-24px.svg']");
     }
 
     public WebElement findSearchFiel() {
-        return getElement("//input[@id='title-search-input']");
+        return findElementByXpath("//input[@id='title-search-input']");
     }
 
     public WebElement clickOnFind() {
-        return getElement("//input[@name='s' and @value='Найти' ]");
+        return findElementByXpath("//input[@name='s' and @value='Найти' ]");
     }
 
     public List<WebElement> getElementsEgger() {
-        return getElements("//div[@class='product_prewiew']/a");
+        return findElementsByXpath("//div[@class='product_prewiew']/a");
     }
 
     public WebElement clickToOpenFindPhonNumber() {
-        return getElement("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");
+        return findElementByXpath("//*[@id=\"site_panel\"]/header/nav[2]/ul/li[7]/a");
     }
 
     public WebElement chosePhone() {
-        return getElement("//p[@class='work_time']//a[@class='c-tel']");
+        return findElementByXpath("//p[@class='work_time']//a[@class='c-tel']");
     }
 
     public WebElement switchToUa() {
-        return getElement("//a[@href='/ua/']");
+        return findElementByXpath("//a[@href='/ua/']");
     }
 
     public WebElement scrollDown() {
-        return getElement("//button[@class='proezd']");
+        return findElementByXpath("//button[@class='proezd']");
     }
 
     public WebElement scrollFastUpButton() {
-        return getElement("//img[@src='/img/up.svg']");
+        return findElementByXpath("//img[@src='/img/up.svg']");
     }
 
     public WebElement goToEnter() {
-        return getElement("//div[@class='login-in']//a[@id='modal_ancor']");
+        return findElementByXpath("//div[@class='login-in']//a[@id='modal_ancor']");
     }
 
     public WebElement getLogin() {
-        return getElement("//input[@class='flat_input login']");
+        return findElementByXpath("//input[@class='flat_input login']");
     }
 
     public WebElement getPass() {
-        return getElement("//input[@class='flat_input password']");
+        return findElementByXpath("//input[@class='flat_input password']");
     }
 
     public WebElement clickEnter() {
-        return getElement("//input[@class='login_btn']");
+        return findElementByXpath("//input[@class='login_btn']");
     }
 
     public String getterLogin() {
@@ -79,15 +79,15 @@ public class VijarPages5_8 extends BasePage {
     }
 
     public WebElement goToProfil() {
-        return getElement("//div[@id='comp_3d516dd61c87243ff4c44464480b12fd']");
+        return findElementByXpath("//div[@id='comp_3d516dd61c87243ff4c44464480b12fd']");
     }
 
     public WebElement getSurname() {
-        return getElement("//input[@placeholder='Фамилия']");
+        return findElementByXpath("//input[@placeholder='Фамилия']");
     }
 
     public WebElement getName() {
-        return getElement("//input[@placeholder='Имя']");
+        return findElementByXpath("//input[@placeholder='Имя']");
     }
 
 }

@@ -5,6 +5,13 @@
         <packages>
             <package name="RazooM.AlloTest.CheckTextTests"/>
             <package name="RazooM.AlloTest.DemoqaCom"/>
+            <package name="RozetkaSergey.TestKickStarter"/>
+            <package name="RozetkaSergey.TestsRozetka"/>
+            <package name="RozetkaSergey.TestsVijar"/>
+            <package name="RozetkaSergey.UkrNet"/>
+            <package name="TestAmazon.AllTest"/>
+            <package name="TestRozetkaAndDOU.DOU"/>
+            <package name="TestRozetkaAndDOU.TestRozetka"/>
         </packages>
     </test>
 </suite>

@@ -17,6 +17,6 @@ public class TestRozetkaCart extends TestInit {
         homePage.searchField().sendKeys("холодильник\n");
         homePage.getRefrigerator().click();
         homePage.addCart().click();
-        Assert.assertTrue((homePage.getElement("//a[@class='cart-product__title']")).isDisplayed());
+        Assert.assertTrue((homePage.findElementByXpath("//a[@class='cart-product__title']")).isDisplayed());
     }
 }
