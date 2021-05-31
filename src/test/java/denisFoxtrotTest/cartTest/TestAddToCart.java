@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.util.Random;
 
-public class AddToCart extends TestInit {
+public class TestAddToCart extends TestInit {
 
     @Test
     public void addToCart() {

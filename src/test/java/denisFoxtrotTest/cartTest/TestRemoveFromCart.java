@@ -4,7 +4,7 @@ import ClasesToAllUs.TestInit;
 import denisFoxtrotTest.foxPages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
-public class RemoveFromCart extends TestInit {
+public class TestRemoveFromCart extends TestInit {
 
     @Test
     public void removeFromCart() {
