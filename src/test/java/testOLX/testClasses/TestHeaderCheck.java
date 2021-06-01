@@ -18,9 +18,9 @@ public class TestHeaderCheck extends TestInit {
             System.out.println("Language change buttons are displayed.");
             homePage.changeLang().click();
         }
-        if(homePage.favorite().isDisplayed()) {
+        if(homePage.favoriteInactive().isDisplayed()) {
             System.out.println("'Favorite products' button is displayed.");
-            homePage.favorite().click();
+            homePage.favoriteInactive().click();
         }
         if(homePage.olxLogin().isDisplayed()) {
             System.out.println("Login button is displayed.");

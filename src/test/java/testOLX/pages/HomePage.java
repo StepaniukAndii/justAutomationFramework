@@ -19,7 +19,7 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a [@id='changeLang']");
     }
 
-    public WebElement favorite() {
+    public WebElement favoriteInactive() {
         return findElementByXpath("//a [@id='observed-search-link']");
     }
 
@@ -50,19 +50,12 @@ public class HomePage extends BasePage {
     public WebElement searchHeader() {
         return findElementByXpath("//input [@id='headerSearch']");
     }
-    public WebElement searchInside() {
-        return findElementByXpath("//input [@id='search-text']");
+
+    public WebElement loginAuthClose() {
+        return findElementByXpath("//a [@data-cy='search_results_button_close_observed_search_info_message']");
     }
 
-    public List<WebElement> topOffers() {
-        return findElementsByXpath("//a [@data-cy='listing-ad-title']");
-    }
-
-    public WebElement path() {
-        return findElementByXpath("//ol [@data-testid='breadcrumbs']");
-    }
-
-    public WebElement clearSearch() {
-        return findElementByXpath("//a [@id='clearQ']");
+    public WebElement favoriteActive() {
+        return findElementByXpath("//a [@id='observed-ads-link']");
     }
 }
