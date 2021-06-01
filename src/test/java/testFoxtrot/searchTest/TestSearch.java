@@ -1,11 +1,11 @@
-package denisFoxtrotTest.searchTest;
+package testFoxtrot.searchTest;
 
 import ClasesToAllUs.TestInit;
-import denisFoxtrotTest.foxPages.HomePageFoxtrot;
+import testFoxtrot.foxPages.HomePageFoxtrot;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-public class TestFoxtrot extends TestInit {
+public class TestSearch extends TestInit {
 
     @Test
     public void testSearch() {

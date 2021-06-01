@@ -1,4 +1,4 @@
-package denisFoxtrotTest.foxPages;
+package testFoxtrot.foxPages;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;

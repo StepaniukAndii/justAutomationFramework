@@ -1,8 +1,8 @@
-package denisFoxtrotTest.headerTest;
+package testFoxtrot.headerTest;
 
 import ClasesToAllUs.TestInit;
-import denisFoxtrotTest.foxPages.HeaderPage;
-import denisFoxtrotTest.foxPages.HomePageFoxtrot;
+import testFoxtrot.foxPages.HeaderPage;
+import testFoxtrot.foxPages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
 public class TestHeader extends TestInit {

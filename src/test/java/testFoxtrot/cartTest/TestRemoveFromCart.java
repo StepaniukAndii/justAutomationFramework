@@ -1,7 +1,7 @@
-package denisFoxtrotTest.cartTest;
+package testFoxtrot.cartTest;
 
 import ClasesToAllUs.TestInit;
-import denisFoxtrotTest.foxPages.HomePageFoxtrot;
+import testFoxtrot.foxPages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
 public class TestRemoveFromCart extends TestInit {

@@ -1,7 +1,7 @@
-package denisFoxtrotTest.footerTest;
+package testFoxtrot.footerTest;
 
 import ClasesToAllUs.TestInit;
-import denisFoxtrotTest.foxPages.FooterPage;
+import testFoxtrot.foxPages.FooterPage;
 import org.testng.annotations.Test;
 
 public class TestFooter extends TestInit {

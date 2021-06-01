@@ -1,10 +1,9 @@
-package denisFoxtrotTest.cartTest;
+package testFoxtrot.cartTest;
 
 import ClasesToAllUs.TestInit;
-import denisFoxtrotTest.foxPages.HomePageFoxtrot;
+import testFoxtrot.foxPages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
-import java.awt.*;
 import java.util.Random;
 
 public class TestAddToCart extends TestInit {

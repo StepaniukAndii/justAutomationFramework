@@ -1,8 +1,8 @@
-package denisFoxtrotTest.sortingTest;
+package testFoxtrot.sortingTest;
 
 import ClasesToAllUs.TestInit;
-import denisFoxtrotTest.foxPages.FilterPage;
-import denisFoxtrotTest.foxPages.HomePageFoxtrot;
+import testFoxtrot.foxPages.FilterPage;
+import testFoxtrot.foxPages.HomePageFoxtrot;
 import org.testng.annotations.Test;
 
 public class TestSorting extends TestInit {
