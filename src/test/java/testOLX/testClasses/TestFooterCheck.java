@@ -1,4 +1,4 @@
-package testOLX.tests;
+package testOLX.testClasses;
 
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.Keys;

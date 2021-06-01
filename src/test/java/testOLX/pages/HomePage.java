@@ -46,4 +46,23 @@ public class HomePage extends BasePage {
     public WebElement closeCookies() {
         return findElementByXpath("//button [@class='cookie-close abs cookiesBarClose']");
     }
+
+    public WebElement searchHeader() {
+        return findElementByXpath("//input [@id='headerSearch']");
+    }
+    public WebElement searchInside() {
+        return findElementByXpath("//input [@id='search-text']");
+    }
+
+    public List<WebElement> topOffers() {
+        return findElementsByXpath("//a [@data-cy='listing-ad-title']");
+    }
+
+    public WebElement path() {
+        return findElementByXpath("//ol [@data-testid='breadcrumbs']");
+    }
+
+    public WebElement clearSearch() {
+        return findElementByXpath("//a [@id='clearQ']");
+    }
 }
