@@ -4,6 +4,8 @@
     <test name="AllTests">
         <packages>
             <package name="TestAmazon.AllTest"/>
+            <package name="TestRozetkaAndDOU.DOU"/>
+            <package name="TestRozetkaAndDOU.TestRozetka"/>
         </packages>
     </test>
 </suite>
