@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
@@ -27,5 +29,21 @@ public class HomePage extends BasePage {
 
     public WebElement newPost() {
         return findElementByXpath("//a [@id='postNewAdLink']");
+    }
+
+    public List<WebElement> footerButtons() {
+        return findElementsByXpath("//a [@class='link gray']");
+    }
+
+    public List<WebElement> footerPolicyButtons() {
+        return findElementsByXpath("//a [@class='link gray inlblk rel']");
+    }
+
+    public WebElement partners() {
+        return findElementByXpath("//span [@class='inlblk']");
+    }
+
+    public WebElement closeCookies() {
+        return findElementByXpath("//button [@class='cookie-close abs cookiesBarClose']");
     }
 }
