@@ -38,4 +38,46 @@ public class ProductPage extends BasePage {
     public WebElement favoritesInside() {
         return findElementByXpath("//span [@data-testid='observed-counter']");
     }
+
+    public WebElement openSorting() {
+        return findElementByXpath("//dl [@id='targetorder-select-gallery']");
+    }
+
+    public WebElement cheapestSort() {
+        return findElementByXpath("//a [contains(text(), 'Самые дешевые')]");
+    }
+
+    public WebElement expensiveSort() {
+        return findElementByXpath("//a [contains(text(), 'Самые дорогие')]");
+    }
+
+    public WebElement sortingList() {
+        return findElementByXpath("//a [@class='topTabView link view__icon view__icon--list']");
+    }
+
+    public WebElement sortingWide() {
+        return findElementByXpath("//a [@class='topTabView link view__icon view__icon--galleryWide']");
+    }
+
+    public List<WebElement> currency() {
+        return findElementsByXpath("//a [@class='currency-link link']");
+    }
+
+    public WebElement searchInProduct() {
+        return findElementByXpath("//label [@relname='search[description]']");
+    }
+
+    public WebElement searchWithPhotos() {
+        return findElementByXpath("//label [@relname='search[photos]']");
+    }
+
+    public WebElement withDelivery() {
+        return findElementByXpath("//label [@relname='search[courier]']");
+    }
+
+    public WebElement heading() {
+        return findElementByXpath("//a [@id='choosecat']");
+    }
+
+
 }
