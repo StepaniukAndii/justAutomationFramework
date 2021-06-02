@@ -19,10 +19,6 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a [@id='changeLang']");
     }
 
-    public WebElement favoriteInactive() {
-        return findElementByXpath("//a [@id='observed-search-link']");
-    }
-
     public WebElement olxLogin() {
         return findElementByXpath("//a [@id='topLoginLink']");
     }
@@ -55,7 +51,7 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a [@data-cy='search_results_button_close_observed_search_info_message']");
     }
 
-    public WebElement favoriteActive() {
-        return findElementByXpath("//a [@id='observed-ads-link']");
+    public WebElement favorite() {
+        return findElementByXpath("//i [@data-icon='star']");
     }
 }

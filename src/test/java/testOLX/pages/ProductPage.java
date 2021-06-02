@@ -27,7 +27,15 @@ public class ProductPage extends BasePage {
         return findElementByXpath("//a [@id='clearQ']");
     }
 
-    public WebElement addToFavorite() {
-        return findElementByXpath("//span [@data-icon='star']");
+    public List<WebElement> addToFavorite() {
+        return findElementsByXpath("//span [@data-icon='star']");
+    }
+
+    public WebElement addToFavoriteInside() {
+        return findElementByXpath("//div [@class='css-1lx5q7o']");
+    }
+
+    public WebElement favoritesInside() {
+        return findElementByXpath("//span [@data-testid='observed-counter']");
     }
 }
