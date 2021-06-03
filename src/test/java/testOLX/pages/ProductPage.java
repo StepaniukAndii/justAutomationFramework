@@ -79,5 +79,15 @@ public class ProductPage extends BasePage {
         return findElementByXpath("//a [@id='choosecat']");
     }
 
+    public List<WebElement> filters() {
+        return findElementsByXpath("//i [@data-icon='raquo']");
+    }
 
+    public List<WebElement> filterBlocks() {
+        return findElementsByXpath("//span [@class='header block']");
+    }
+
+    public List<WebElement> productStatus() {
+        return findElementsByXpath("//span [@class='multichbox__icon']");
+    }
 }

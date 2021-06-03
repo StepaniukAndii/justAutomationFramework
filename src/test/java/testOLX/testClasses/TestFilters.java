@@ -13,9 +13,18 @@ public class TestFilters extends TestInit {
         ProductPage productPage = new ProductPage(driver);
         openUrl("https://www.olx.ua/");
         homePage.closeCookies().click();
-        homePage.searchHeader().sendKeys("Телефоны\n");
-        productPage.searchInProduct().click();
-        productPage.searchWithPhotos().click();
-        productPage.withDelivery().click();
+        homePage.searchHeader().sendKeys("Товар\n");
+        for (int i = 0; i < 2; i++) {
+            productPage.searchInProduct().click();
+            productPage.searchWithPhotos().click();
+            productPage.withDelivery().click();
+        }
+        productPage.heading().click();
+        productPage.filters().get(0).click();
+        productPage.filterBlocks().get(0).click();
+        int size = productPage.productStatus().size();
+        for (int i = 0; i < size; i++) {
+            productPage.productStatus().get(i).click();
+        }
     }
 }
