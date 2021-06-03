@@ -17,7 +17,7 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
 //    put false here if you want to see browser)
-    boolean headless = true;
+    boolean headless = false;
 
     @BeforeMethod
     public void setUp() {
@@ -25,7 +25,7 @@ public class TestInit {
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
-            setProperty("src/test/drivers/chromedriver_88_mac");
+            setProperty("src/test/drivers/chromedriver_91_mac");
         }else if (isOSWindows()){
             setProperty("src/test/drivers/chromedriver_90_windows.exe");
         }else {
@@ -38,7 +38,6 @@ public class TestInit {
         } else {
             driver.manage().window().maximize();
         }
-
     }
 
     public boolean isElementPresent(String locator){
