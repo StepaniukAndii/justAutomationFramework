@@ -18,7 +18,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>./src/test/${suite}</suiteXmlFile>
+                        <suiteXmlFile>src/test/testng_all.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
