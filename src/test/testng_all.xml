@@ -3,9 +3,9 @@
 <suite name="TestAllSuite" parallel="methods" thread-count="1">
     <test name="AllTests">
         <packages>
-<!--            <package name="TestAmazon.AllTest"/>-->
-<!--            <package name="TestRozetkaAndDOU.DOU"/>-->
-<!--            <package name="TestRozetkaAndDOU.TestRozetka"/>-->
+            <package name="TestAmazon.AllTest"/>
+            <package name="TestRozetkaAndDOU.DOU"/>
+            <package name="TestRozetkaAndDOU.TestRozetka"/>
             <package name="testOLX.testClasses"/>
         </packages>
     </test>
