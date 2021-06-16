@@ -13,43 +13,43 @@ public class HomePageAmazon extends BasePage {
     }
 
     public WebElement tapToSearchField() {
-        return getElement("//input[@id='twotabsearchtextbox']");
+        return findElementByXpath("//input[@id='twotabsearchtextbox']");
     }
 
     public WebElement addItemToCard() {
-        return getElement("//input[@id='add-to-cart-button']");
+        return findElementByXpath("//input[@id='add-to-cart-button']");
     }
 
     public WebElement chooseSize() {
-        return getElement("//span[@id='dropdown_selected_size_name']");
+        return findElementByXpath("//span[@id='dropdown_selected_size_name']");
     }
 
     public WebElement chooseSizeLargeX() {
-        return getElement("//a[@id='native_dropdown_selected_size_name_4']");
+        return findElementByXpath("//a[@id='native_dropdown_selected_size_name_4']");
     }
 
     public List<WebElement> chooseItem() {
-        return getElements("//div[@class='a-section aok-relative s-image-square-aspect']");
+        return findElementsByXpath("//div[@class='a-section aok-relative s-image-square-aspect']");
     }
 
     public WebElement openCard() {
-        return getElement("//a[@class='nav-a nav-a-2 nav-progressive-attribute']");
+        return findElementByXpath("//a[@class='nav-a nav-a-2 nav-progressive-attribute']");
     }
 
     public WebElement itemsInCard() {
-        return getElement("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
+        return findElementByXpath("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
     }
 
     public WebElement openCart() {
-        return getElement("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
+        return findElementByXpath("//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']");
     }
     public String bigLocator = "//div[@class='a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical']//div[@data-cart-type='Retail_Cart']";
 
     public WebElement sortByPrice() {
-        return getElement("//div[@class='a-carousel-col a-carousel-center']//*[contains(text(),'$25 to $50')]");
+        return findElementByXpath("//div[@class='a-carousel-col a-carousel-center']//*[contains(text(),'$25 to $50')]");
     }
 
     public WebElement clickToPageNumb3() {
-        return getElement("//li[@class='a-normal']//*[contains(text(),'3')]");
+        return findElementByXpath("//li[@class='a-normal']//*[contains(text(),'3')]");
     }
 }

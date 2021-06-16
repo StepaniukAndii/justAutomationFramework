@@ -45,11 +45,11 @@ public abstract class BasePage implements Expectations {
         return path;
     }
 
-    public WebElement getElement(String locator) {
+    public WebElement findElementByXpath(String locator) {
         return waitElementToBeClickable(locator);
     }
     public WebElement findElement(String locator){ return driver.findElement (By.xpath (locator));}
-    public List<WebElement> getElements(String locator) {
+    public List<WebElement> findElementsByXpath(String locator) {
         return waitVisibilityOfAllElementsLocatedBy(locator);
     }
 }

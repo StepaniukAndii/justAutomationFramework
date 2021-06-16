@@ -20,28 +20,28 @@ public class HomePage extends BasePage {
     }
 
     public WebElement searchField() {
-        return getElement("//input[@name='search']");
+        return findElementByXpath("//input[@name='search']");
     }
 
     public WebElement getRefrigerator() {
-        return getElement("//span[@class='goods-tile__title']");
+        return findElementByXpath("//span[@class='goods-tile__title']");
     }
 
     public WebElement addCart() {
-        return getElement("//button[@class=" +
+        return findElementByXpath("//button[@class=" +
                                 "'buy-button button button_with_icon button_color_green button_size_large']");
     }
 
     public WebElement getButtonField() {
-        return getElement("//button[@class='button button_color_green button_size_medium search-form__submit']");
+        return findElementByXpath("//button[@class='button button_color_green button_size_medium search-form__submit']");
     }
 
     public WebElement getPhone() {
-        return getElement("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']");
+        return findElementByXpath("//a[@href='https://rozetka.com.ua/ua/mobile-phones/c80003/preset=smartfon/']");
     }
 
     public List<WebElement> getPhoneProductCatalog() {
-        return getElements("//a[@class='menu-categories__link']");
+        return findElementsByXpath("//a[@class='menu-categories__link']");
     }
 
     public WebElement getCheckBoxApple() {
@@ -54,11 +54,11 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getElementsRefrigerator() {
-        return getElements("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
+        return findElementsByXpath("//div[@class='goods-tile__inner']/a[contains(@title,'Холодильник')]");
     }
 
     public List<WebElement> getElementsGoods() {
-        return getElements("//a[@class='goods-tile__picture']");
+        return findElementsByXpath("//a[@class='goods-tile__picture']");
     }
 
     public WebElement contacts() {
@@ -72,80 +72,80 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> allGoodsCost() {
-        return getElements("//span[@class='goods-tile__price-value']");
+        return findElementsByXpath("//span[@class='goods-tile__price-value']");
     }
 
     public WebElement catalogSettingzSorting() {
-        return getElement("//select[contains(@class,'select-css')]");
+        return findElementByXpath("//select[contains(@class,'select-css')]");
     }
 
     public List<WebElement> catalogSettingzSortingChildren() {
-        return getElements("//select[contains(@class,'select-css')]/child::option");
+        return findElementsByXpath("//select[contains(@class,'select-css')]/child::option");
     }
 
     public WebElement getLanguageRU() {
-        return getElement("//a[@class='lang__link']");
+        return findElementByXpath("//a[@class='lang__link']");
     }
 
     public List<WebElement> getTextOnPage() {
-        return getElements("//h2[@class='main-goods__heading']");
+        return findElementsByXpath("//h2[@class='main-goods__heading']");
     }
 
 
     public List<WebElement> getCompareButtons() {
-        return getElements("//button[@class='compare-button']");
+        return findElementsByXpath("//button[@class='compare-button']");
     }
 
     public List<WebElement> getHeaderButton() {
-        return getElements("//button[@class='header__button']");
+        return findElementsByXpath("//button[@class='header__button']");
     }
 
     public WebElement getComparisonModalLink() {
-        return getElement("//a[@class='comparison-modal__link']");
+        return findElementByXpath("//a[@class='comparison-modal__link']");
     }
 
     public List<WebElement> getProductHeading() {
-        return getElements("//a[@class='product__heading']");
+        return findElementsByXpath("//a[@class='product__heading']");
     }
 
     public List<WebElement> getGoodsTileHeading() {
-        return getElements("//a[@class='goods-tile__heading']");
+        return findElementsByXpath("//a[@class='goods-tile__heading']");
     }
 
     public WebElement getHelpCentre() {
-        return getElement("//a[text()=' Справочный центр ']");
+        return findElementByXpath("//a[text()=' Справочный центр ']");
     }
 
     public WebElement getSearchFieldHelpCentre() {
-        return getElement("//input[@id='query']");
+        return findElementByXpath("//input[@id='query']");
     }
 
     public List<WebElement> getTextOnPgeHelpCenter() {
-        return getElements("//ul[@class='search" +
+        return findElementsByXpath("//ul[@class='search" +
                 "-results-list']/li/a");
     }
 
     public List<WebElement> getButtonProductFilter() {
-        return getElements("//ul[@class='tabs__list']/li/a");
+        return findElementsByXpath("//ul[@class='tabs__list']/li/a");
     }
 
     public WebElement getButtonCityToggle() {
-        return getElement("//button[@class='city-toggle button button--small button--white']");
+        return findElementByXpath("//button[@class='city-toggle button button--small button--white']");
     }
 
     public List<WebElement> getHeaderLocation() {
-        return getElements("//a[@class='header-location__popular-link']");
+        return findElementsByXpath("//a[@class='header-location__popular-link']");
     }
 
     public WebElement getAutocompleteInput() {
-        return getElement("//input[@class='autocomplete__input ng-valid ng-dirty ng-touched']");
+        return findElementByXpath("//input[@class='autocomplete__input ng-valid ng-dirty ng-touched']");
     }
 
     public WebElement getButtonApplyCity() {
-        return getElement("//button[@class='button button_size_medium button_color_green']");
+        return findElementByXpath("//button[@class='button button_size_medium button_color_green']");
     }
 
     public WebElement getSliderRangeButtonLeft() {
-        return getElement("//button[@class='rz-slider__range-button rz-slider__range-button_type_left']");
+        return findElementByXpath("//button[@class='rz-slider__range-button rz-slider__range-button_type_left']");
     }
 }

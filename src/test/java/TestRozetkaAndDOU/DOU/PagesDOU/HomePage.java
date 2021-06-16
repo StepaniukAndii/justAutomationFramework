@@ -12,23 +12,23 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getSearchField() {
-        return getElement("//input[@id='txtGlobalSearch']");
+        return findElementByXpath("//input[@id='txtGlobalSearch']");
     }
 
     public WebElement getSearchBox() {
-        return getElement("//input[@id='gsc-i-id1']");
+        return findElementByXpath("//input[@id='gsc-i-id1']");
     }
 
     public List<WebElement> getLinkTitle() {
-        return getElements("//a[@class='gs-title']");
+        return findElementsByXpath("//a[@class='gs-title']");
     }
 
     public List<WebElement> getFilters() {
-        return getElements("//div[@class='xsort-selected']");
+        return findElementsByXpath("//div[@class='xsort-selected']");
     }
 
     public List<WebElement> getHeaderButton() {
         //0 - DOU 1-главная  2 - форум 3 - лента 4 - зарплаты 5 - работа 6 - календарь 7 - youtube
-        return getElements("//header/ul/li");
+        return findElementsByXpath("//header/ul/li");
     }
 }

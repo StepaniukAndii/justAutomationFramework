@@ -3,6 +3,8 @@ package RazooM.AlloTest.UkrNet;
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
+import java.awt.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,10 +15,12 @@ public class IframePalne extends TestInit {
     List<String> listPrice;
 
     @Test
-    public void iframePalne(){
+    public void iframePalne() throws AWTException {
         locators = new UkrLocators(driver);
         driver.get("https://www.ukr.net/ru");
         locators.toplivo().click();
+        Robot robot = new Robot();
+        robot.mouseWheel(60);
         getListName();
         getListPrice();
         showInfi();
