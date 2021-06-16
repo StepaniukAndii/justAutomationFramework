@@ -18,6 +18,7 @@ public class TestFilterBrand extends TestInit {
             selectedProducts.add(homePage.itemsSocks().get(i).getText());
             boolean checkBrand = selectedProducts.get(i).contains(selectedBrand);
             System.out.println(checkBrand);
+            System.out.println(checkBrand);
         }
     }
 }
