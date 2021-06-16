@@ -1,6 +1,7 @@
 package TestAsosByLynn;
 
 import ClasesToAllUs.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 
@@ -17,8 +18,7 @@ public class TestFilterBrand extends TestInit {
         for (int i = 0; i < homePage.itemsSocks().size(); i++) {
             selectedProducts.add(homePage.itemsSocks().get(i).getText());
             boolean checkBrand = selectedProducts.get(i).contains(selectedBrand);
-            System.out.print(checkBrand);
-            System.out.println("My name" + checkBrand);
+            Assert.assertTrue(checkBrand);
         }
     }
 }
