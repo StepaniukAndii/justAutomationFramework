@@ -32,7 +32,7 @@ public class TestCart extends TestInit {
         Assert.assertEquals(amountOfGoodsInCart, 3);
         //remove goods from cart. Check amount of them
         for (int i = 0; i < amountOfGoodsInCart; i++) {
-            sleep(2);
+            sleep(2); //for proper cart elements update
             pp.amountOfGoodsInsideCart().get(0).click();
             pp.deleteElementIsnideCart().click();
         }
@@ -42,7 +42,7 @@ public class TestCart extends TestInit {
         //add several goods inside cart, remove one, and then add more elements. Check amount of them
         addInsideCartFast();
         hp.cartWithGoods().click();
-        sleep(1);
+        sleep(1); //for proper loading of modal window
         pp.amountOfGoodsInsideCart().get(0).click();
         pp.deleteElementIsnideCart().click();
         pp.modalWindowClose().click();
