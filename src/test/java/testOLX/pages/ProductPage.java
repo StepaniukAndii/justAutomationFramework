@@ -24,7 +24,7 @@ public class ProductPage extends BasePage {
     }
 
     public WebElement clearSearch() {
-        return findElementByXpath("//a [@id='clearQ']");
+        return findElementByXpath("//a [@class='clear-input-button']");
     }
 
     public List<WebElement> addToFavorite() {
@@ -52,11 +52,11 @@ public class ProductPage extends BasePage {
     }
 
     public WebElement sortingList() {
-        return findElementByXpath("//a [@class='topTabView link view__icon view__icon--list']");
+        return findElementByXpath("//a [@data-type='list']");
     }
 
     public WebElement sortingWide() {
-        return findElementByXpath("//a [@class='topTabView link view__icon view__icon--galleryWide']");
+        return findElementByXpath("//a [@data-type='galleryWide']");
     }
 
     public List<WebElement> currency() {
