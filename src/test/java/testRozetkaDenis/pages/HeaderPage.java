@@ -51,7 +51,11 @@ public class HeaderPage extends BasePage {
         return findElementByXpath("//div [@class='premium-button']");
     }
 
-    public List<WebElement>     authAndCart() {
+    public List<WebElement> authAndCart() {
         return findElementsByXpath("//button [@class='header__button ng-star-inserted']");
+    }
+
+    public WebElement cartWithGoods() {
+        return findElementByXpath("//button [@class='header__button ng-star-inserted header__button--active']");
     }
 }
