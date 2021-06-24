@@ -19,7 +19,7 @@ public class ProductPage extends BasePage {
 
 
     public List<WebElement> addToCart() {
-        return findElementsByXpath("//button [@class='buy-button goods-tile__buy-button ng-star-inserted']");
+        return findElementsByXpath("//app-buy-button");
     }
 
     public WebElement modalWindowClose() {
@@ -34,11 +34,11 @@ public class ProductPage extends BasePage {
         return findElementByXpath("//button [@class='button button--medium button--with-icon button--link context-menu-actions__button']");
     }
 
-    public WebElement removeAd() {
-        return findElementByXpath("//span [@class='exponea-close-cross']");
-    }
-
     public WebElement nextPage() {
         return findElementByXpath("//a [@class='button button_color_gray button_size_medium pagination__direction pagination__direction_type_forward ng-star-inserted']");
+    }
+
+    public HeaderPage headerPageFunctions() {
+        return new HeaderPage(driver);
     }
 }
