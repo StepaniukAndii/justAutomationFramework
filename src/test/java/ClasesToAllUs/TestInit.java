@@ -4,6 +4,7 @@ import RozetkaSergey.RozetkaPages.RozetkaPages5_34;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.support.ui.ExpectedConditions;

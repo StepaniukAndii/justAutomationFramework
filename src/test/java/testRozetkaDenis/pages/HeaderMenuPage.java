@@ -51,10 +51,6 @@ public class HeaderMenuPage extends BasePage {
         return findElementsByXpath("//a [@class='side-stores__button']");
     }
 
-    public List<WebElement> social() { //use listing from 6 to 11/7 to 12 if you want to choose them from menu
-        return findElementsByXpath("//li [@class='socials__list-item ng-star-inserted']");
-    }
-
     public WebElement menuCloseMenu() {
         return findElementByXpath("//button [@class='side-menu__close']");
     }
