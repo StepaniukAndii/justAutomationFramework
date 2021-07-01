@@ -6,7 +6,8 @@
 <!--            <package name="TestAmazon.AllTest"/>-->
 <!--            <package name="TestRozetkaAndDOU.DOU"/>-->
 <!--            <package name="TestRozetkaAndDOU.TestRozetka"/>-->
-            <package name="testOLX.testClasses"/>
+<!--            <package name="testOLX.testClasses"/>-->
+            <package name="testRozetkaDenis.testClasses"/>
         </packages>
     </test>
 </suite>

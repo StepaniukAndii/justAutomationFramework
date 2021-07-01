@@ -10,6 +10,9 @@ import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
+import testRozetkaDenis.pages.FooterPage;
+import testRozetkaDenis.pages.ProductPage;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -133,5 +136,11 @@ public class TestInit {
             listElements.add(element.getText());
         }
         return listElements;
+    }
+
+    public void disableAdInRozetka(ProductPage productPage) {
+        if (headless = false) {
+            productPage.disableAd().click();
+        }
     }
 }

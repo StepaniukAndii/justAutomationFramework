@@ -14,9 +14,9 @@ public class TestFooter extends TestInit {
         openUrl("https://rozetka.com.ua/");
         footerPage.headerPageFunctions().searchRozetka().sendKeys("Xiaomi redmi\n");
         sleep(1); //for proper ad load
-        footerPage.productPageFunctions().removeAd().click(); //disable if using headless. Enable if opposite
+        disableAdInRozetka(footerPage.productPageFunctions());
         jse.executeScript("scroll(0, 11100);");
-        footerPage.callCenterGraphics().sendKeys(footerPage.openNewTab());
+        footerPage.callCenterGraphics().sendKeys(footerPage.productPageFunctions().openNewTab());
         footerInfoOpen(footerPage);
         footerAppsOpen(footerPage);
         footerPaymentsOpen(footerPage);
@@ -39,13 +39,13 @@ public class TestFooter extends TestInit {
 
     private void footerAppsOpen(FooterPage footerPage) {
         for (int i = 0; i < footerPage.footerApps().size(); i++) {
-            footerPage.footerApps().get(i).sendKeys(footerPage.openNewTab());
+            footerPage.footerApps().get(i).sendKeys(footerPage.productPageFunctions().openNewTab());
         }
     }
 
     private void footerInfoOpen(FooterPage footerPage) {
         for (int i = 0; i < footerPage.footerInfo().size(); i++) {
-            footerPage.footerInfo().get(i).sendKeys(footerPage.openNewTab());
+            footerPage.footerInfo().get(i).sendKeys(footerPage.productPageFunctions().openNewTab());
         }
     }
 }
