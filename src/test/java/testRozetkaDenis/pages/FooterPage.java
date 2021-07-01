@@ -1,7 +1,6 @@
 package testRozetkaDenis.pages;
 
 import ClasesToAllUs.BasePage;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -38,10 +37,5 @@ public class FooterPage extends BasePage {
 
     public List<WebElement> footerPayments() {
         return findElementsByXpath("//button [@class='payments-buttons__button']");
-    }
-
-    public CharSequence openNewTab() {
-        String openTab;
-        return openTab = Keys.chord(Keys.CONTROL, Keys.RETURN);
     }
 }

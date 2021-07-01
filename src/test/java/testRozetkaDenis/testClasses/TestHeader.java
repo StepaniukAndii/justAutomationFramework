@@ -8,23 +8,36 @@ public class TestHeader extends TestInit {
 
     @Test
     public void header() {
-        HeaderPage hp = new HeaderPage(driver);
+        HeaderPage headerPage = new HeaderPage(driver);
         openUrl("https://rozetka.com.ua/");
-        hp.logo().click();
-        hp.ad().click();
-        hp.catalogue().click();
-        hp.searchRozetka().sendKeys("Search is good.");
-        hp.microphone().click();
-        hp.findButton().click();
-        for (int i = 0; i < 2; i++) {
-            hp.langChange().click();
-        }
-        hp.premium().click();
+        headerPage.logo().click();
+        headerPage.ad().click();
+        headerPage.catalogue().click();
+        headerPage.searchRozetka().sendKeys("Search is good.");
+        headerPage.microphone().click();
+        headerPage.findButton().click();
+        changeLanguage(headerPage);
+        premiumCheck(headerPage);
+        openAuthAndCart(headerPage);
+    }
+
+    private void openAuthAndCart(HeaderPage headerPage) {
         for (int i = 0; i < 2; i++) {
             sleep(1); //for elements presence
-            hp.authAndCart().get(i).click();
-            hp.modalMenuClose().click();
-            sleep(1); //for modal window
+            headerPage.authAndCart().get(i).click();
+            sleep(1); //for modal window presence
+            headerPage.modalMenuClose().click();
+        }
+    }
+
+    private void premiumCheck(HeaderPage headerPage) {
+        headerPage.premium().click();
+        driver.navigate().refresh();
+    }
+
+    private void changeLanguage(HeaderPage headerPage) {
+        for (int i = 0; i < 2; i++) {
+            headerPage.langChange().click();
         }
     }
 }

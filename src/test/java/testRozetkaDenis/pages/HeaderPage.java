@@ -58,4 +58,8 @@ public class HeaderPage extends BasePage {
     public WebElement cartWithGoods() {
         return findElementByXpath("//button [@class='header__button ng-star-inserted header__button--active']");
     }
+
+    public ProductPage productPageFunctions() {
+        return new ProductPage(driver);
+    }
 }

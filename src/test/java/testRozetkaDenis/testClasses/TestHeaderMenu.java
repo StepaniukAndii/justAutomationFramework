@@ -1,69 +1,85 @@
 package testRozetkaDenis.testClasses;
 
 import ClasesToAllUs.TestInit;
-import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import testRozetkaDenis.pages.HeaderMenuPage;
-import testRozetkaDenis.pages.HeaderPage;
-
-import java.awt.*;
 
 public class TestHeaderMenu extends TestInit {
 
     @Test
-    public void checkHeaderMenu() throws AWTException {
-        HeaderMenuPage hmp = new HeaderMenuPage(driver);
-        HeaderPage hp = new HeaderPage(driver);
+    public void checkHeaderMenu() {
+        HeaderMenuPage headerMenuPage = new HeaderMenuPage(driver);
         openUrl("https://rozetka.com.ua/");
-        Robot robot = new Robot();
-        String openNewTab = Keys.chord(Keys.CONTROL,Keys.RETURN);
-        for (int i = 0; i < 2; i++) {
-            openMenu();
-            hmp.authMenu().get(i).click();
-            modalMenu();
-        }
-        openMenu();
-        hmp.premiumMenu().click();
+        authentication(headerMenuPage);
+        openMenu(headerMenuPage);
+        headerMenuPage.premiumMenu().click();
         sleep(1); //for proper menu button load
-        for (int i = 0; i < 2; i++) {
-            openMenu();
-            hmp.catalogueAndCartMenu().get(i).click();
-        }
-        modalMenu();
-        openMenu();
-        hmp.helpCenterMenu().sendKeys(openNewTab);
-        hmp.phoneNumberMenu().sendKeys(openNewTab);
-        for (int i = 0; i < 2; i++) {
-            hmp.languageMenu().click();
-            sleep(1); //for proper menu button load
-            openMenu();
-        }
-        hmp.cityMenu().click();
-        modalMenu();
-        openMenu();
-        for (int i = 0; i < 2; i++) {
-            hmp.chevronsMenu().click();
-        }
-        int size = hmp.infoMenu().size();
-        for (int i = 0; i < size; i++) {
-           hmp.infoMenu().get(i).sendKeys(openNewTab);
-        }
-        for (int i = 0; i < 2; i++) {
-            hmp.appStoresMenu().get(0).sendKeys(openNewTab);
-        }
-
-        hmp.menuCloseMenu().click();
+        catalogueAndCart(headerMenuPage);
+        closeModalMenu(headerMenuPage);
+        openMenu(headerMenuPage);
+        headerMenuPage.helpCenterMenu().sendKeys(headerMenuPage.productPageFunctions().openNewTab());
+        headerMenuPage.phoneNumberMenu().sendKeys(headerMenuPage.productPageFunctions().openNewTab());
+        languageChange(headerMenuPage);
+        headerMenuPage.cityMenu().click();
+        closeModalMenu(headerMenuPage);
+        openMenu(headerMenuPage);
+        partnersAndServicesOpen(headerMenuPage);
+        sleep(1); //time for finding elements
+        partnersAndServicesInfo(headerMenuPage);
+        appStoreLinks(headerMenuPage);
+        headerMenuPage.menuCloseMenu().click();
     }
 
-    private void openMenu() {
-        HeaderPage hp = new HeaderPage(driver);
-        hp.openMenu().click();
+    private void appStoreLinks(HeaderMenuPage headerMenuPage) {
+        for (int i = 0; i < 2; i++) {
+            headerMenuPage.appStoresMenu().get(0).sendKeys(headerMenuPage.productPageFunctions().openNewTab());
+        }
+    }
+
+    private void partnersAndServicesInfo(HeaderMenuPage headerMenuPage) {
+        for (int i = 0; i < headerMenuPage.infoMenu().size(); i++) {
+            headerMenuPage.infoMenu().get(i).sendKeys(headerMenuPage.productPageFunctions().openNewTab());
+        }
+    }
+
+    private void partnersAndServicesOpen(HeaderMenuPage headerMenuPage) {
+        for (int i = 0; i < 2; i++) {
+            headerMenuPage.chevronsMenu().click();
+        }
+
+    }
+
+    private void languageChange(HeaderMenuPage headerMenuPage) {
+        for (int i = 0; i < 2; i++) {
+            headerMenuPage.languageMenu().click();
+            sleep(1); //for proper menu button load
+            openMenu(headerMenuPage);
+        }
+    }
+
+    private void catalogueAndCart(HeaderMenuPage headerMenuPage) {
+        for (int i = 0; i < 2; i++) {
+            openMenu(headerMenuPage);
+            headerMenuPage.catalogueAndCartMenu().get(i).click();
+        }
+    }
+
+    private void authentication(HeaderMenuPage headerMenuPage) {
+        for (int i = 0; i < 2; i++) {
+            openMenu(headerMenuPage);
+            headerMenuPage.authMenu().get(i).click();
+            closeModalMenu(headerMenuPage);
+        }
+    }
+
+    private void openMenu(HeaderMenuPage headerMenuPage) {
+        headerMenuPage.headerPageFunctions().openMenu().click();
         sleep(1); //for proper element appearance
     }
 
-    private void modalMenu() {
-        HeaderPage hp = new HeaderPage(driver);
+
+    private void closeModalMenu(HeaderMenuPage headerMenuPage) {
         sleep(1); //proper modal work
-        hp.modalMenuClose().click();
+        headerMenuPage.headerPageFunctions().modalMenuClose().click();
     }
 }

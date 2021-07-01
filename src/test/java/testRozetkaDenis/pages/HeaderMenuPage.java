@@ -15,6 +15,10 @@ public class HeaderMenuPage extends BasePage {
         return findElementsByXpath("//button [@class='button button--link side-menu__auth-button ng-tns-c5-0 ng-star-inserted']");
     }
 
+    public HeaderPage headerPageFunctions() {
+        return new HeaderPage(driver);
+    }
+
     public WebElement premiumMenu() {
         return findElementByXpath("//a [@class='premium-side ng-star-inserted']");
     }
@@ -44,7 +48,7 @@ public class HeaderMenuPage extends BasePage {
     }
 
     public List<WebElement> infoMenu() {
-        return findElementsByXpath("//a [@class='ng-tns-c19-2']");
+        return findElementsByXpath("//a [@class='ng-tns-c20-2']");
     }
 
     public List<WebElement> appStoresMenu() {
@@ -53,5 +57,9 @@ public class HeaderMenuPage extends BasePage {
 
     public WebElement menuCloseMenu() {
         return findElementByXpath("//button [@class='side-menu__close']");
+    }
+
+    public ProductPage productPageFunctions() {
+        return new ProductPage(driver);
     }
 }

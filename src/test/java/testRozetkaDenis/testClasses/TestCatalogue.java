@@ -1,7 +1,6 @@
 package testRozetkaDenis.testClasses;
 
 import ClasesToAllUs.TestInit;
-import org.junit.Assert;
 import org.testng.annotations.Test;
 import testRozetkaDenis.pages.CataloguePage;
 
@@ -22,7 +21,7 @@ public class TestCatalogue extends TestInit {
             if(string.contains("Ноутбук")) {
                 System.out.println("Product is valid.");
             } else {
-                Assert.fail();
+                System.out.println("Invalid product on specific category!!!");
             }
         }
     }
