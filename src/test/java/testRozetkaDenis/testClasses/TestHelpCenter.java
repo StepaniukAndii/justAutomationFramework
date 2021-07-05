@@ -1,7 +1,6 @@
 package testRozetkaDenis.testClasses;
 
 import ClasesToAllUs.TestInit;
-import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import testRozetkaDenis.pages.HelpCenterPage;
 
