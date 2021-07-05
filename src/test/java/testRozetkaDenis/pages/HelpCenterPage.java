@@ -26,4 +26,12 @@ public class HelpCenterPage extends BasePage {
     public List<WebElement> supportInfo() {
         return findElementsByXpath("//a [@class='link']");
     }
+
+    public List<WebElement> paymentThemes() {
+        return findElementsByXpath("//a [@class='section-list-link']");
+    }
+
+    public List<WebElement> paymentSubThemes() {
+        return findElementsByXpath("//a [@class='article-list-link']");
+    }
 }

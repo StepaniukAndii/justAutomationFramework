@@ -13,6 +13,22 @@ public class TestHelpCenter extends TestInit {
         helpCenterPage.openHelpCenter().click();
         openFAQ(helpCenterPage);
         openSupportInfo(helpCenterPage);
+        helpCenterPage.supportInfo().get(0).click();
+        paymentMainThemesOpen(helpCenterPage);
+        paymentSubThemesOpen(helpCenterPage);
+    }
+
+    private void paymentSubThemesOpen(HelpCenterPage helpCenterPage) {
+        for (int i = 0; i < helpCenterPage.paymentSubThemes().size(); i++) {
+            helpCenterPage.paymentSubThemes().get(i).sendKeys(helpCenterPage.productPageFunctions().openNewTab());
+
+        }
+    }
+
+    private void paymentMainThemesOpen(HelpCenterPage helpCenterPage) {
+        for (int i = 0; i < helpCenterPage.paymentThemes().size(); i++) {
+            helpCenterPage.paymentThemes().get(i).sendKeys(helpCenterPage.productPageFunctions().openNewTab());
+        }
     }
 
     private void openSupportInfo(HelpCenterPage helpCenterPage) {
