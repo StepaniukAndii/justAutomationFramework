@@ -15,7 +15,6 @@ public class TestCart extends TestInit {
         productPage.headerPageFunctions().searchRozetka().sendKeys("Xiaomi redmi\n");
         //add goods inside cart. Check amount of them
         addFirstThreeElementsInsideCart(productPage);
-        sleep(1); //for proper page load
         productPage.headerPageFunctions().cartWithGoods().click();
 
         Assert.assertEquals(productPage.amountOfGoodsInsideCart().size(), 3);

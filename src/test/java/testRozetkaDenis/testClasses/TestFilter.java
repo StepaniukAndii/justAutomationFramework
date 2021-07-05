@@ -23,7 +23,6 @@ public class TestFilter extends TestInit {
         for (int i = 0; i < filterPage.sortingOption().size(); i++) {
             filterPage.selectSorting().click();
             filterPage.sortingOption().get(i).click();
-            sleep(1);
             driver.navigate().refresh();
         }
     }
@@ -31,7 +30,6 @@ public class TestFilter extends TestInit {
     private void checklistsCheck(FilterPage filterPage) {
         for (int i = 0; i < 5; i++) {
             filterPage.checklistsFilters().get(i).click();
-            sleep(1); //for proper work
         }
     }
 
@@ -42,7 +40,6 @@ public class TestFilter extends TestInit {
     private void checkFilters(FilterPage filterPage) {
         for (int i = 0; i < 5; i++) {
             filterPage.filters().get(i).click();
-            sleep(1); //for proper page load
         }
     }
 

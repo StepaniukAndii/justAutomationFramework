@@ -13,7 +13,6 @@ public class TestHeaderMenu extends TestInit {
         authentication(headerMenuPage);
         openMenu(headerMenuPage);
         headerMenuPage.premiumMenu().click();
-        sleep(1); //for proper menu button load
         catalogueAndCart(headerMenuPage);
         closeModalMenu(headerMenuPage);
         openMenu(headerMenuPage);
@@ -24,7 +23,6 @@ public class TestHeaderMenu extends TestInit {
         closeModalMenu(headerMenuPage);
         openMenu(headerMenuPage);
         partnersAndServicesOpen(headerMenuPage);
-        sleep(1); //time for finding elements
         partnersAndServicesInfo(headerMenuPage);
         appStoreLinks(headerMenuPage);
         headerMenuPage.menuCloseMenu().click();
@@ -52,7 +50,6 @@ public class TestHeaderMenu extends TestInit {
     private void languageChange(HeaderMenuPage headerMenuPage) {
         for (int i = 0; i < 2; i++) {
             headerMenuPage.languageMenu().click();
-            sleep(1); //for proper menu button load
             openMenu(headerMenuPage);
         }
     }
@@ -79,7 +76,7 @@ public class TestHeaderMenu extends TestInit {
 
 
     private void closeModalMenu(HeaderMenuPage headerMenuPage) {
-        sleep(1); //proper modal work
+        sleep(1); //for proper modal menu closing
         headerMenuPage.headerPageFunctions().modalMenuClose().click();
     }
 }

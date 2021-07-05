@@ -13,7 +13,6 @@ public class TestFooter extends TestInit {
         FooterPage footerPage = new FooterPage(driver);
         openUrl("https://rozetka.com.ua/");
         footerPage.headerPageFunctions().searchRozetka().sendKeys("Xiaomi redmi\n");
-        sleep(1); //for proper ad load
         disableAdInRozetka(footerPage.productPageFunctions());
         jse.executeScript("scroll(0, 11100);");
         footerPage.callCenterGraphics().sendKeys(footerPage.productPageFunctions().openNewTab());
