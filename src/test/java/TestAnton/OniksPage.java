@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class OniksPage extends BasePage {
     public OniksPage(WebDriver driver) {super(driver);}
 
@@ -19,4 +21,12 @@ public class OniksPage extends BasePage {
             "ювелирных изделий']");}
     public WebElement textSubscribeToOurInstagram() {return findElementByXpath("//span[text()='Подписывайтесь на " +
             "наш Instagram:']");}
+    public List<WebElement> itemsRings() {return findElementsByXpath("//div[@id='bx_3966226736_216669']" +
+            "//div[@class='ware_item_holder']");}
+    public WebElement addToFavoriteBtn() {return findElementByXpath("//span[@class='favorites " +
+            "add-to-favourite']");}
+    public WebElement goToFavoriteBtn() {return findElementByXpath("//a[contains(text(),'Перейти в список " +
+            "избранных')]");}
+    public WebElement deleteFromFavoriteBtn() {return findElementByXpath("//a[@class='delete']");}
+    public WebElement textListEmpty() {return findElementByXpath("//font[@class='notetext']");}
 }
