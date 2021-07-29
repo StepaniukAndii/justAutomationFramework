@@ -1,4 +1,4 @@
-package testEatStreetDenis.pages;
+package testEatStreetDenis.pages.header;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -10,8 +10,8 @@ public class AuthPage extends BasePage {
         super(driver);
     }
 
-    public HomePage homePage() {
-        return new HomePage(driver);
+    public HeaderPage headerPage() {
+        return new HeaderPage(driver);
     }
 
     public WebElement signInWithFacebook() {

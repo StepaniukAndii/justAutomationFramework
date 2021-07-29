@@ -1,8 +1,8 @@
-package testEatStreetDenis.tests.authTest;
+package testEatStreetDenis.tests.header.authTest;
 
 import ClasesToAllUs.TestInit;
 import org.testng.annotations.Test;
-import testEatStreetDenis.pages.AuthPage;
+import testEatStreetDenis.pages.header.AuthPage;
 
 public class AuthTest extends TestInit {
 
@@ -12,7 +12,7 @@ public class AuthTest extends TestInit {
     public void auth() {
         authPage = new AuthPage(driver);
         openUrl("https://qa2.eatstreet.com/");
-        authPage.homePage().signIn().click();
+        authPage.headerPage().signIn().click();
         //checking SignIn
         signIn("fellowastronomer@gmail.com", "echo0059");
         authPage.signUp().click();

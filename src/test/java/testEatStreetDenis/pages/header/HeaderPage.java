@@ -1,12 +1,12 @@
-package testEatStreetDenis.pages;
+package testEatStreetDenis.pages.header;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePage extends BasePage {
+public class HeaderPage extends BasePage {
     
-    public HomePage(WebDriver driver) {
+    public HeaderPage(WebDriver driver) {
         super(driver);
     }
 
