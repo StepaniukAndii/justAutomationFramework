@@ -3,7 +3,6 @@ package testEatStreetDenis.pages;
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import testEatStreetDenis.pages.HomePage;
 
 public class AuthPage extends BasePage {
 
@@ -49,10 +48,6 @@ public class AuthPage extends BasePage {
 
     public WebElement cancelModalWindow() {
         return findElementByXpath("//a [@id='cancel-modal-btn']");
-    }
-
-    public WebElement confirmModalButton() {
-        return findElementByXpath("//input [@id='confirm-modal-btn']");
     }
 
     public WebElement authConfirm() {
