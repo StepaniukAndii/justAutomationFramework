@@ -13,4 +13,10 @@ public class OniksPage extends BasePage {
     public WebElement aboutUsBtnHeader() {return findElementByXpath("//ul[@class='nav navbar-nav']" +
             "//a[@href='/about/']");}
     public WebElement homePageLogoBtn() {return findElementByXpath("//img[@width='250']");}
+    public WebElement textBlog() {return findElementByXpath("//h3[contains(text(),'Блог ')]");}
+    public WebElement textReviews() {return findElementByXpath("//h3[text()='Отзывы']");}
+    public WebElement textOnlineJewelryStore() {return findElementByXpath("//h1[text()='Интернет-магазин " +
+            "ювелирных изделий']");}
+    public WebElement textSubscribeToOurInstagram() {return findElementByXpath("//span[text()='Подписывайтесь на " +
+            "наш Instagram:']");}
 }
