@@ -10,8 +10,8 @@ public class AuthPage extends BasePage {
         super(driver);
     }
 
-    public HomePage homePage() {
-        return new HomePage(driver);
+    public HeaderPage headerPage() {
+        return new HeaderPage(driver);
     }
 
     public WebElement signInWithFacebook() {
