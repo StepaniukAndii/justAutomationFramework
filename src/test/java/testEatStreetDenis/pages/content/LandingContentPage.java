@@ -15,14 +15,6 @@ public class LandingContentPage extends BasePage {
         return new RestaurantsPage(driver);
     }
 
-    public WebElement deliveryCheckbox() {
-        return findElementByXpath("//label [@for='home-checkbox-delivery']");
-    }
-
-    public WebElement takeoutCheckbox() {
-        return findElementByXpath("//label [@for='home-checkbox-delivery']");
-    }
-
     public WebElement searchEatStreet() {
         return findElementByXpath("//input [@id='input-food-search']");
     }

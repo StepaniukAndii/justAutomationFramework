@@ -13,10 +13,14 @@ public class SearchAreaTest extends TestInit {
     public void searchEatStreet() {
         landingContentPage = new LandingContentPage(driver);
         openUrl("https://qa2.eatstreet.com/");
-        landingContentPage.takeoutCheckbox().click();
-        landingContentPage.deliveryCheckbox().click();
         landingContentPage.getFed().click();
         landingContentPage.enterAddressModalWindowButton().click();
+        landingContentPage.searchEatStreet().sendKeys("Phoenix, US\n");
+        landingContentPage.enterAddressModalWindowButton().click(); //for closing modal window
+        landingContentPage.getFed().click();
+        Assert.assertEquals("Phoenix Restaurants That Deliver & Takeout",
+                landingContentPage.restaurantsPage().restaurantsLabel().getText());
+        driver.navigate().back();
         landingContentPage.getFed().click();
         landingContentPage.locateMeModalWindowButton().click();
         landingContentPage.closeModalWindow().click();
@@ -25,11 +29,5 @@ public class SearchAreaTest extends TestInit {
         landingContentPage.useMyLocation().click();
         landingContentPage.closeModalWindow().click();
         driver.navigate().back();
-        landingContentPage.searchEatStreet().sendKeys("Phoenix, US");
-        sleep(1); //if you input this without sleep it'll show you an error that it can't find your location
-        // Perhaps the reason is because it send request too fast for system
-        landingContentPage.getFed().click();
-        Assert.assertEquals("Phoenix Restaurants That Deliver & Takeout",
-                landingContentPage.restaurantsPage().restaurantsLabel().getText());
     }
 }

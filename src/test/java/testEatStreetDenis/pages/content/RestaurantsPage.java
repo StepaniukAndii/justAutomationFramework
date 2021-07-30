@@ -10,6 +10,6 @@ public class RestaurantsPage extends BasePage {
     }
 
     public WebElement restaurantsLabel() {
-        return findElementByXpath("//h1 [@class='restaurants-list_header ng-binding ng-scope']");
+        return findElementByXpath("//h1 [contains(@class, 'restaurants-list_header')]");
     }
 }
