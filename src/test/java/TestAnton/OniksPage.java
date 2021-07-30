@@ -9,7 +9,7 @@ import java.util.List;
 public class OniksPage extends BasePage {
     public OniksPage(WebDriver driver) {super(driver);}
 
-    public WebElement searchField() {return findElementByXpath("//ul//div[@class='search-wrap']");}
+    public WebElement searchField() {return findElementByXpath("//ul//div[@class='search-wrap']"); }
     public WebElement searchFieldLong() {return findElementByXpath("//ul//input[@id='title-search-input']");}
     public WebElement backOnHomePageButton() {return findElementByXpath("//span[@itemprop='name']");}
     public WebElement aboutUsBtnHeader() {return findElementByXpath("//ul[@class='nav navbar-nav']" +
@@ -29,4 +29,10 @@ public class OniksPage extends BasePage {
             "избранных')]");}
     public WebElement deleteFromFavoriteBtn() {return findElementByXpath("//a[@class='delete']");}
     public WebElement textListEmpty() {return findElementByXpath("//font[@class='notetext']");}
+    public WebElement languageWindow() {return findElementByXpath("//a[@style='background-color: transparent;" +
+            "font-weight: bold;']");}
+    public WebElement textRULanguage() {return findElementByXpath("//a[contains(text(),'RU')]");}
+    public WebElement textUALanguage() {return findElementByXpath("//a[contains(text(),'UA')]");}
+    public WebElement wordCartOnUA() {return findElementByXpath("//a[contains(text(),'Кошик')]");}
+    public WebElement wordCartOnRU() {return findElementByXpath("//a[contains(text(),'Корзина')]");}
 }
