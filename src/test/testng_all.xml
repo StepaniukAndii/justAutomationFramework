@@ -7,6 +7,7 @@
 <!--            <package name="TestRozetkaAndDOU.DOU"/>-->
 <!--            <package name="TestRozetkaAndDOU.TestRozetka"/>-->
 <!--            <package name="testOLX.testClasses"/>-->
+<!--            <package name="TestAnton"></package>-->
             <package name="testRozetkaDenis.testClasses"/>
         </packages>
     </test>
