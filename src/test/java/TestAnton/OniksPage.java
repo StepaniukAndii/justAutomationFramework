@@ -35,4 +35,11 @@ public class OniksPage extends BasePage {
     public WebElement textUALanguage() {return findElementByXpath("//a[contains(text(),'UA')]");}
     public WebElement wordCartOnUA() {return findElementByXpath("//a[contains(text(),'Кошик')]");}
     public WebElement wordCartOnRU() {return findElementByXpath("//a[contains(text(),'Корзина')]");}
+    public List<WebElement> contextMenuOnHomePage() {return findElementsByXpath("//span[@class=" +
+            "'dropdown-toggle']");}
+    public List<WebElement> collectionItems() {return findElementsByXpath("//span[contains(text(),'Украшения') " +
+            "or contains(text(),'Коллекция') or contains(text(),'Распродажа')]");}
+    public List<WebElement> itemsWithAmethyst() {return findElementsByXpath("//div[@class='col-md-4 col-xs-6 " +
+            "cat-item card-mod']");}
+    public WebElement plusSomeItemsBtn() {return findElementByXpath("//div[@id='pagenav-button']");}
 }
