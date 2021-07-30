@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestChangeLanguage extends TestInit {
+    
     @Test
     public void testChangeLanguage(){
         OniksPage homePage = new OniksPage(driver);
@@ -16,5 +17,4 @@ public class TestChangeLanguage extends TestInit {
         homePage.textRULanguage().click();
         Assert.assertTrue(homePage.wordCartOnRU().getText().contains("Корзина"));
     }
-
 }
