@@ -2,7 +2,6 @@ package testEatStreetDenis.tests.footer.support;
 
 import ClasesToAllUs.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import testEatStreetDenis.pages.footer.SupportPage;
 
