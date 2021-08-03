@@ -16,7 +16,7 @@ public class LandingContentPage extends BasePage {
         return new RestaurantsPage(driver);
     }
 
-    public WebElement searchEatStreet() {
+    public WebElement searchFieldEatStreet() {
         return findElementByXpath("//input [@id='input-food-search']");
     }
 
@@ -32,7 +32,7 @@ public class LandingContentPage extends BasePage {
         return findElementByXpath("//a [@id='enter-address-btn']");
     }
 
-    public WebElement getFed() {
+    public WebElement getFedBtn() {
         return findElementByXpath("//a [@id='find-restaurants']");
     }
 
@@ -45,14 +45,14 @@ public class LandingContentPage extends BasePage {
     }
 
     public List<WebElement> howItWorks() {
-        return findElementsByXpath("//a [@class='how-it-works_link']");
+        return findElementsByXpath("//a [contains(@class, 'how-it-works_link')]");
     }
 
-    public WebElement emailField() {
+    public WebElement emailFieldInput() {
         return findElementByXpath("//input [@id='new-email']");
     }
 
-    public WebElement submit() {
+    public WebElement submitBtn() {
         return findElementByXpath("//button [@type='submit']");
     }
 
@@ -61,11 +61,11 @@ public class LandingContentPage extends BasePage {
     }
 
     public WebElement modalWindowHeader() {
-        return findElementByXpath("//div [@ng-class='::headerClass']");
+        return findElementByXpath("//div [contains(@ng-class,'::headerClass')]");
     }
 
     public List<WebElement> countries() {
-        return findElementsByXpath("//div [@class='cities-list']//a");
+        return findElementsByXpath("//div [contains(@class,'cities-list')]//a");
     }
 
     public CharSequence openNewTab() {
