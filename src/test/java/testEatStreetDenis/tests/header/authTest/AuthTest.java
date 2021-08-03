@@ -9,14 +9,15 @@ public class AuthTest extends TestInit {
     AuthPage authPage;
 
     @Test
-    public void auth() {
+    public void checkAuthElements() {
         authPage = new AuthPage(driver);
         openUrl("https://qa2.eatstreet.com/");
-        authPage.headerPage().signIn().click();
+        authPage.headerPage().openSignIn().click();
         //checking SignIn
+
         signIn("fellowastronomer@gmail.com", "echo0059");
-        authPage.signUp().click();
-        authPage.signIn().click();
+        authPage.signUpTransfer().click();
+        authPage.signInTransfer().click();
         driver.navigate().back();
         //checking SignUp
         signUp("testingaccount@gmail.com", "@lpha1082.br!vo");
@@ -24,8 +25,8 @@ public class AuthTest extends TestInit {
 
     private void signUp(String email, String pass) {
         sideServicesSignUp();
-        authPage.email().sendKeys(email);
-        authPage.pass().sendKeys(pass);
+        authPage.inputEmail().sendKeys(email);
+        authPage.inputPass().sendKeys(pass);
         authPage.passConfirm().sendKeys(pass);
         authPage.showPass().click();
         authPage.authConfirm().click();
@@ -33,8 +34,8 @@ public class AuthTest extends TestInit {
 
     private void signIn(String email, String pass) {
         sideServicesSignIn();
-        authPage.email().sendKeys(email);
-        authPage.pass().sendKeys(pass);
+        authPage.inputEmail().sendKeys(email);
+        authPage.inputPass().sendKeys(pass);
         authPage.showPass().click();
         authPage.resetPassword().click();
         authPage.cancelModalWindow().click();
