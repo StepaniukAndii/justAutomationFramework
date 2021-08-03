@@ -19,18 +19,20 @@ public class MainContentArea extends TestInit {
             landingContentPage.howItWorks().get(i).sendKeys(landingContentPage.openNewTab());
         }
         //checking positive scenario for email
-        checkEmailField("dj1jfj1@gmail.com", "Thank You");
+        emailScenarioCheckByEmailAndResult("dj1jfj1@gmail.com", "Thank You");
         //checking negative scenario
-        checkEmailField("sdsdwesdfw@gmail", "Whoops");
+        emailScenarioCheckByEmailAndResult("sdsdwesdfw@gmail", "Whoops");
         for (int i = 0; i < 3; i++) {
             landingContentPage.countries().get(i).sendKeys(landingContentPage.openNewTab());
         }
     }
 
-    private void checkEmailField(String email, String headerResult) {
-        landingContentPage.emailField().sendKeys(email);
-        landingContentPage.submit().click();
+    private void emailScenarioCheckByEmailAndResult(String email, String headerResult) {
+        landingContentPage.emailFieldInput().sendKeys(email);
+        landingContentPage.submitBtn().click();
+
         Assert.assertEquals(headerResult, landingContentPage.modalWindowHeader().getText());
+
         landingContentPage.closeModalWindow().click();
     }
 }
