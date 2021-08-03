@@ -15,7 +15,7 @@ public class FooterTest extends TestInit {
         openUrl("https://qa2.eatstreet.com/");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,250)", "");
+        js.executeScript("window.scrollBy(0,250)", ""); //for scrolling to footer elements
 
         for (int i = 0; i < footerPage.getFooterSocials().size(); i++) {
             footerPage.getFooterSocials().get(i).sendKeys(footerPage.openNewTab());
