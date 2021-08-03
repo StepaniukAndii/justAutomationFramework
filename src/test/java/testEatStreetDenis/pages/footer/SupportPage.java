@@ -20,6 +20,8 @@ public class SupportPage extends BasePage {
         return new LandingContentPage(driver);
     }
 
+    //Get Help section
+
     public WebElement getHelpFirstName() {
         return findElementByXpath("//input [@id='firstName']");
     }
@@ -60,11 +62,33 @@ public class SupportPage extends BasePage {
         return findElementByXpath("//input [@id='chargeName']");
     }
 
-    public WebElement getHelpOrderSelect() {            //for future assertion test
-        return findElementByXpath("//select [@id='order']");
-    }
-
     public WebElement submit() {
         return findElementByXpath("//button [@id='submit']");
+    }
+
+    //For Customers section
+
+    public WebElement forCustomersLogo() {
+        return findElementByXpath("//div [@class='logoImage']");
+    }
+
+    public WebElement forCustomersGetFed() {
+        return findElementByXpath("//a [@id='1']");
+    }
+
+    public WebElement forCustomersFindAnswers() {
+        return findElementByXpath("//button [@aria-expanded]");
+    }
+
+    public List<WebElement> forCustomersQuestions() {
+        return findElementsByXpath("//a [@role='menuitem']");
+    }
+
+    public WebElement forCustomersContactUs() {
+        return findElementByXpath("//button [contains(@class, 'contact')]");
+    }
+
+    public List<WebElement> forCustomersTopics() {
+        return findElementsByXpath("//div [@class='topicContent']");
     }
 }
