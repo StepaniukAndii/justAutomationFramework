@@ -42,4 +42,8 @@ public class OniksPage extends BasePage {
     public List<WebElement> itemsWithAmethyst() {return findElementsByXpath("//div[@class='col-md-4 col-xs-6 " +
             "cat-item card-mod']");}
     public WebElement plusSomeItemsBtn() {return findElementByXpath("//div[@id='pagenav-button']");}
+    public List<WebElement> ringsNewPrice(){return findElementsByXpath("//div[@class='price']" +
+            "//descendant::span[2]");}
+    public WebElement priceBaseTo1000() {return findElementByXpath("//button[text()[normalize-space()='до " +
+            "1 000 грн']]");}
 }
