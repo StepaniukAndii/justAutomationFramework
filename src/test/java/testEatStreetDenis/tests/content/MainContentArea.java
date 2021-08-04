@@ -23,7 +23,7 @@ public class MainContentArea extends TestInit {
         //checking negative scenario
         checkEmailField("sdsdwesdfw@gmail", "Whoops");
         for (int i = 0; i < 3; i++) {
-            landingContentPage.countries().get(i).sendKeys(landingContentPage.openNewTab());
+            landingContentPage.countriesList().get(i).sendKeys(landingContentPage.openNewTab());
         }
     }
 
