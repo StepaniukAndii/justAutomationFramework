@@ -42,6 +42,15 @@ public class OniksPage extends BasePage {
     public List<WebElement> itemsWithAmethyst() {return findElementsByXpath("//div[@class='col-md-4 col-xs-6 " +
             "cat-item card-mod']");}
     public WebElement plusSomeItemsBtn() {return findElementByXpath("//div[@id='pagenav-button']");}
+
+    public WebElement allCollectionBtn() {return findElementByXpath("//a[contains(text(),'ВСЕ Коллекции')]");}
+    public WebElement filterKindOfDecorationBtn() {return findElementByXpath("//div[text()[normalize-space()=" +
+            "'Вид украшения']]");}
+    public WebElement filterBraceletesInCollections() {return findElementByXpath("//span[@title='Браслеты ']");}
+    public WebElement showBtn() {return findElementByXpath("//div[@id='modef']//child::a");}
+    public List<WebElement> itemsBracelets() {return findElementsByXpath("//a[@class='js_save-element' and " +
+            "contains(text(),'браслет') or @class='js_save-element' and contains(text(),'Браслет')]");}
+  
     public WebElement addToCartBtn() {return findElementByXpath("//button[@class='buy buy-button']");}
     public WebElement closeCartAddedModal() {return findElementByXpath("//div[@id='basket_added_modal']" +
             "//child::div//child::div//child::div//child::span");}
