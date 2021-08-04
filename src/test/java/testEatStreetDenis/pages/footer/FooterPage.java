@@ -21,7 +21,6 @@ public class FooterPage extends BasePage {
     }
 
     public CharSequence openNewTab() {
-        String openTab;
         return Keys.chord(Keys.CONTROL, Keys.RETURN);
     }
 }

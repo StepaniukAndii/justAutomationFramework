@@ -1,6 +1,7 @@
 package testEatStreetDenis.pages.content;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -51,11 +52,23 @@ public class LandingContentPage extends BasePage {
         return findElementByXpath("//input [@id='new-email']");
     }
 
+    public WebElement submit() {
+        return findElementByXpath("//button [@type='submit']");
+    }
+
     public WebElement closeModalWindow() {
         return findElementByXpath("//a [@id='confirm-modal-btn']");
     }
 
+    public WebElement modalWindowHeader() {
+        return findElementByXpath("//div [@ng-class='::headerClass']");
+    }
+
     public List<WebElement> countries() {
         return findElementsByXpath("//div [@class='cities-list']//a");
+    }
+
+    public CharSequence openNewTab() {
+        return Keys.chord(Keys.CONTROL, Keys.RETURN);
     }
 }
