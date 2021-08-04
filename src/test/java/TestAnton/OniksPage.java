@@ -21,8 +21,8 @@ public class OniksPage extends BasePage {
             "ювелирных изделий']");}
     public WebElement textSubscribeToOurInstagram() {return findElementByXpath("//span[text()='Подписывайтесь на " +
             "наш Instagram:']");}
-    public List<WebElement> itemsRings() {return findElementsByXpath("//div[@id='bx_3966226736_216669']" +
-            "//div[@class='ware_item_holder']");}
+    public List<WebElement> itemsRings() {return findElementsByXpath("//div[@class='col-md-3 col-xs-6 cat-item " +
+            "search_item_block card-mod']");}
     public WebElement addToFavoriteBtn() {return findElementByXpath("//span[@class='favorites " +
             "add-to-favourite']");}
     public WebElement goToFavoriteBtn() {return findElementByXpath("//a[contains(text(),'Перейти в список " +
@@ -42,4 +42,13 @@ public class OniksPage extends BasePage {
     public List<WebElement> itemsWithAmethyst() {return findElementsByXpath("//div[@class='col-md-4 col-xs-6 " +
             "cat-item card-mod']");}
     public WebElement plusSomeItemsBtn() {return findElementByXpath("//div[@id='pagenav-button']");}
+    public WebElement addToCartBtn() {return findElementByXpath("//button[@class='buy buy-button']");}
+    public WebElement closeCartAddedModal() {return findElementByXpath("//div[@id='basket_added_modal']" +
+            "//child::div//child::div//child::div//child::span");}
+    public WebElement cartBtn() {return findElementByXpath("//div[@id='blockcart-mobile']//child::div//child::ul" +
+            "//child::li//child::a");}
+    public WebElement nameOfTheChosenProduct() {return findElementByXpath("//h1[contains(text(),'Серебряное " +
+            "кольцо с жемчугом и фианитами 1801/1р-PWT')]");}
+    public WebElement nameOfTheChosenProductInCart() {return findElementByXpath("//a[contains(text()," +
+            "'Серебряное кольцо с жемчугом и фианитами 1801/1р-PWT')]");}
 }
