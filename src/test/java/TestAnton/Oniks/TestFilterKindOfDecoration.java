@@ -1,4 +1,4 @@
-package TestAnton;
+package TestAnton.Oniks;
 
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
