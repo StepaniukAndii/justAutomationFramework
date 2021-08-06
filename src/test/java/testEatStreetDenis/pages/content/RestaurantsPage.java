@@ -16,8 +16,14 @@ public class RestaurantsPage extends BasePage {
     }
 
     public List<WebElement> filtersCheckboxes() {
-        return findElementsByXpath("//div [contains(@class, 'checkbox checkbox_blue')]");
+        return findElementsByXpath("//label [contains(@class,'checkbox-sidelabel')]");
     }
+
+    public List<WebElement> activeFilters() {
+        return findElementsByXpath("//span [@ng-repeat='filter in activeFilters']");
+    }
+
+
 
 
 }
