@@ -13,4 +13,8 @@ public class PromPage extends BasePage {
     public WebElement enterPasswordFirstField() {return findElementByXpath("//input[contains(@name,'vertical-password')]");}
     public WebElement clickSubmitFirstBtn() {return findElementByXpath("//button[contains(@class,'theme_blue')]");}
     public WebElement deleteProfileBtn() {return findElementByXpath("//span[contains(text(),'ида')]");}
+    public WebElement signInBtn() {return findElementByXpath("//a[contains(@data-qaid,'sign-in')]");}
+    public WebElement signInCustomerBtn() {return findElementByXpath("//a[contains(@data-qaid,'customer')]");}
+    public WebElement signInInputField() {return findElementByXpath("//input[contains(@data-qaid,'input_field')]");}
+    public WebElement confirmSignInBtn() {return findElementByXpath("//button[contains(text(),'ві')]");}
 }
