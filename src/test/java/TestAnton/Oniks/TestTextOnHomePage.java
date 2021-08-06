@@ -1,9 +1,8 @@
-package TestAnton;
+package TestAnton.Oniks;
 
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import testOLX.pages.HomePage;
 
 public class TestTextOnHomePage extends TestInit {
     @Test
