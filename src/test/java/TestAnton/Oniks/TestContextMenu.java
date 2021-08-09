@@ -1,4 +1,4 @@
-package TestAnton;
+package TestAnton.Oniks;
 
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -14,7 +14,7 @@ public class TestContextMenu extends TestInit {
         homePage.collectionItems().get(0).click();
         Assert.assertEquals(homePage.itemsWithAmethyst().size(), 30);
         homePage.plusSomeItemsBtn().click();
-        sleep(1);
+        sleep(2);//The page may not have time to load
         Assert.assertEquals(homePage.itemsWithAmethyst().size(), 60);
     }
 }

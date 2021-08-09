@@ -64,11 +64,15 @@ public class LandingContentPage extends BasePage {
         return findElementByXpath("//div [@ng-class='::headerClass']");
     }
 
-    public List<WebElement> countries() {
-        return findElementsByXpath("//div [@class='cities-list']//a");
+    public List<WebElement> countriesList() {
+        return findElementsByXpath("//a [@class='ng-binding']");
     }
 
     public CharSequence openNewTab() {
         return Keys.chord(Keys.CONTROL, Keys.RETURN);
+    }
+
+    public List<WebElement> cuisinesList() {
+        return findElementsByXpath("//div [contains(@class, 'item__body')]");
     }
 }

@@ -34,4 +34,9 @@ public class RestaurantsPage extends BasePage {
     public List<WebElement> comparingByDistance() {
         return findElementsByXpath("//span [contains(@class, 'delivery-item-info ng-binding')]");
     }
+
+    public List<WebElement> filtersCheckboxes() {
+        return findElementsByXpath("//div [contains(@class, 'checkbox checkbox_blue')]");
+    }
+
 }
