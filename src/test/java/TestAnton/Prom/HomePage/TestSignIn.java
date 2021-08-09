@@ -1,6 +1,7 @@
-package TestAnton.Prom;
+package TestAnton.Prom.HomePage;
 
 import ClasesToAllUs.TestInit;
+import TestAnton.Prom.PromPage;
 import org.testng.annotations.Test;
 
 public class TestSignIn extends TestInit {
