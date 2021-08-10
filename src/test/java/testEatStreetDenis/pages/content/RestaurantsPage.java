@@ -38,5 +38,4 @@ public class RestaurantsPage extends BasePage {
     public List<WebElement> filtersCheckboxes() {
         return findElementsByXpath("//div [contains(@class, 'checkbox checkbox_blue')]");
     }
-
 }
