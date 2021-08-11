@@ -26,6 +26,8 @@ public class PromPage extends BasePage {
     public WebElement getSearchHomePage() {return findElementByXpath("//input[contains(@class,'earch')]");}
     public WebElement getSearchBtn() {return findElementByXpath("//button[contains(text(),'найти')]");}
     public WebElement getNameGoods() {return findElementByXpath("//span[contains(text(),'«неокуб»')]");}
-
-
+    public WebElement getChangeRuLangBtn() {return findElementByXpath("//span[@data-qaid='ru_lang']");}
+    public WebElement getSignInRuText() {return findElementByXpath("//a[contains(text(),'ойти')]");}
+    public WebElement getChangeUaLangBtn() {return findElementByXpath("//span[@data-qaid='ua_lang']");}
+    public WebElement getSignInUaText() {return findElementByXpath("//a[contains(text(),'вій')]");}
 }
