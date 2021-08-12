@@ -22,14 +22,18 @@ public class DeliveryMinimumTest extends TestInit {
         landingContentPage.restaurantOrderSelectPage().ordersSelectByPrice().get(0).click();
         landingContentPage.restaurantOrderSelectPage().addToCartBtn().click();
         compareDeliveryMinimumAndPrice("is minimum bigger");
+
         Assert.assertTrue(landingContentPage.restaurantOrderSelectPage().orderBtnIsClosed().isDisplayed());
+
         //check positive result
         landingContentPage.restaurantOrderSelectPage().ordersSelectByPrice().get(0).click();
         for (int i = 0; i < 7; i++) {
             landingContentPage.restaurantOrderSelectPage().increaseQuantity().click();
         }
         landingContentPage.restaurantOrderSelectPage().addToCartBtn().click();
+
         Assert.assertTrue(landingContentPage.restaurantOrderSelectPage().orderBtnAvailable().isDisplayed());
+
         compareDeliveryMinimumAndPrice("price bigger");
 
     }

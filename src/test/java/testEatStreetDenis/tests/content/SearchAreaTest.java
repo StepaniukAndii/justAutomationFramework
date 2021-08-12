@@ -18,8 +18,10 @@ public class SearchAreaTest extends TestInit {
         landingContentPage.searchEatStreet().sendKeys("Phoenix, US\n");
         landingContentPage.enterAddressModalWindowButton().click(); //for closing modal window
         landingContentPage.getFed().click();
+
         Assert.assertEquals("Phoenix Restaurants That Deliver & Takeout",
                 landingContentPage.restaurantsPage().restaurantsLabel().getText());
+
         driver.navigate().back();
         landingContentPage.getFed().click();
         landingContentPage.locateMeModalWindowButton().click();

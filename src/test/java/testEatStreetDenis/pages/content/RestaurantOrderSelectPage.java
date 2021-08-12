@@ -23,6 +23,22 @@ public class RestaurantOrderSelectPage extends BasePage {
         return findElementsByXpath("//a [contains(@class, 'food-price')]");
     }
 
+    public List<WebElement> ordersSelectByName() {
+        return findElementsByXpath("//span [contains(@class, 'menu-item-name')]");
+    }
+
+    public WebElement getQuantityNumber() {
+        return findElementByXpath("//div [contains(@class,'quantity-selector--number')]");
+    }
+
+    public List<WebElement> orderNameInCart() {
+        return findElementsByXpath("//td[@ng-if-start='!product.removed']//a [@tabindex='0']");
+    }
+
+    public List<WebElement> removeOrderBtn() {
+        return findElementsByXpath("//a [@id='remove-item']");
+    }
+
     public WebElement checkDeliveryMinimum() {
         return findElementByXpath("//li [@ng-if='$order.isDelivery()']//span[contains(text(), '$')]");
     }
