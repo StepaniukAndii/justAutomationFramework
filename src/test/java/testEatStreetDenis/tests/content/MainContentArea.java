@@ -30,7 +30,9 @@ public class MainContentArea extends TestInit {
     private void checkEmailField(String email, String headerResult) {
         landingContentPage.emailField().sendKeys(email);
         landingContentPage.submit().click();
+
         Assert.assertEquals(headerResult, landingContentPage.modalWindowHeader().getText());
+
         landingContentPage.closeModalWindow().click();
     }
 }
