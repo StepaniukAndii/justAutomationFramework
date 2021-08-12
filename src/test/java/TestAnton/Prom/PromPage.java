@@ -18,4 +18,5 @@ public class PromPage extends BasePage {
     public WebElement signInInputField() {return findElementByXpath("//input[contains(@data-qaid,'input_field')]");}
     public WebElement confirmSignInBtn() {return findElementByXpath("//button[contains(text(),'ві')]");}
     public WebElement signInEnterPasswordField() {return findElementByXpath("//input[@id='enterPassword']");}
+    public WebElement getCartBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='shopping_cart']");}
 }
