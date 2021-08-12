@@ -39,4 +39,5 @@ public class PromPage extends BasePage {
     public WebElement getFavouriteBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='favorite_cabinet_button']");}
     public WebElement getMessageBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='messages']");}
     public WebElement getCartBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='shopping_cart']");}
+    public WebElement getSignInEnterPasswordField() {return findElementByXpath("//input[@id='enterPassword']");}
 }
