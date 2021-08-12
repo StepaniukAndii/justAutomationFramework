@@ -16,6 +16,10 @@ public class LandingContentPage extends BasePage {
         return new RestaurantsPage(driver);
     }
 
+    public RestaurantOrderSelectPage restaurantOrderSelectPage() {
+        return new RestaurantOrderSelectPage(driver);
+    }
+
     public WebElement searchEatStreet() {
         return findElementByXpath("//input [@id='input-food-search']");
     }
