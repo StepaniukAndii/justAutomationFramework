@@ -30,4 +30,13 @@ public class PromPage extends BasePage {
     public WebElement getSignInRuText() {return findElementByXpath("//a[contains(text(),'ойти')]");}
     public WebElement getChangeUaLangBtn() {return findElementByXpath("//span[@data-qaid='ua_lang']");}
     public WebElement getSignInUaText() {return findElementByXpath("//a[contains(text(),'вій')]");}
+    public WebElement getSpecialForYouBtn() {return findElementByXpath("//a[@data-qaid='special_for_you']");}
+    public WebElement getHelpBtnOnHomePage() {return findElementByXpath("//a[contains(text(),'опо')]");}
+    public WebElement getMobileAppBtn() {return findElementByXpath("//a[contains(text(),'обільний')]");}
+    public WebElement getCreateCompanyBtn() {return findElementByXpath("//a[@data-qaid='create_company']");}
+    public WebElement getVoiceSearch() {return findElementByXpath("//button[contains(@class,'earch')]");}
+    public WebElement getChangeRegions() {return findElementByXpath("//button[@data-qaid='qa_regions_dd']");}
+    public WebElement getFavouriteBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='favorite_cabinet_button']");}
+    public WebElement getMessageBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='messages']");}
+    public WebElement getCartBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='shopping_cart']");}
 }
