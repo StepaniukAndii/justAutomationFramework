@@ -15,8 +15,8 @@ public class TestSignIn extends TestInit {
         homePage.signInInputField().click();
         homePage.signInInputField().sendKeys("anton.4uvirov@gmail.com");
         homePage.confirmSignInBtn().click();
-        homePage.signInInputField().click();
-        homePage.signInInputField().sendKeys("123456789");
+        homePage.getSignInEnterPasswordField().click();
+        homePage.getSignInEnterPasswordField().sendKeys("123456789");
         homePage.confirmSignInBtn().click();
     }
 }
