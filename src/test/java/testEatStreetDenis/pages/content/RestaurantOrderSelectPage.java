@@ -15,7 +15,7 @@ public class RestaurantOrderSelectPage extends BasePage {
         return findElementByXpath("//a [contains(@class,'btn-checkout--is-disabled')]");
     }
 
-    public WebElement orderBtnAvailable() {
+    public WebElement orderBtnClick() {
         return findElementByXpath("//a [@class='btn btn--orange btn-checkout full-width ng-binding']");
     }
 
@@ -37,5 +37,9 @@ public class RestaurantOrderSelectPage extends BasePage {
 
     public WebElement addToCartBtn() {
         return findElementByXpath("//a [@id='confirm-options']");
+    }
+
+    public WebElement signInPage() {
+        return findElementByXpath("//div [contains(@class,'widget__user-flow--sign-in')]");
     }
 }
