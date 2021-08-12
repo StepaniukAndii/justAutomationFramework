@@ -27,7 +27,10 @@ public class OrdersAddedToCartTest extends TestInit {
                 getQuantityNumber().getText());
         landingContentPage.restaurantOrderSelectPage().addToCartBtn().click();
 
-        Assert.assertEquals(yourOrderName, landingContentPage.restaurantOrderSelectPage().orderNameInCart().getText());
+        for (int i = 0; i < landingContentPage.restaurantOrderSelectPage().orderNameInCart().size(); i++) {
+            Assert.assertEquals(yourOrderName, landingContentPage.restaurantOrderSelectPage().
+                    orderNameInCart().get(i).getText());
+        }
 
         Assert.assertEquals(chosenQuantity, landingContentPage.restaurantOrderSelectPage().removeOrderBtn().size());
     }

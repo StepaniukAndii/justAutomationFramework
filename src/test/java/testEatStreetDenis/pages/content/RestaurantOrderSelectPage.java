@@ -31,8 +31,8 @@ public class RestaurantOrderSelectPage extends BasePage {
         return findElementByXpath("//div [contains(@class,'quantity-selector--number')]");
     }
 
-    public WebElement orderNameInCart() {
-        return findElementByXpath("//td[@ng-if-start='!product.removed']//a [@tabindex='0']");
+    public List<WebElement> orderNameInCart() {
+        return findElementsByXpath("//td[@ng-if-start='!product.removed']//a [@tabindex='0']");
     }
 
     public List<WebElement> removeOrderBtn() {
