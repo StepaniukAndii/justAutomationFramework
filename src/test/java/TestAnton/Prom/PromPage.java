@@ -40,4 +40,7 @@ public class PromPage extends BasePage {
     public WebElement getMessageBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='messages']");}
     public WebElement getCartBtnOnHomePage() {return findElementByXpath("//button[@data-qaid='shopping_cart']");}
     public WebElement getSignInEnterPasswordField() {return findElementByXpath("//input[@id='enterPassword']");}
+    public WebElement getNowPopularText() {return findElementByXpath("//span[contains(text(),'араз')]");}
+    public WebElement getSpecialForYouText() {return findElementByXpath("//span[contains(text(),'пеці')]");}
+    public WebElement getWhatLookingText() {return findElementByXpath("//h3[contains(text(),'шук')]");}
 }
