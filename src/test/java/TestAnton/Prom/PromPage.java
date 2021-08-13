@@ -43,4 +43,31 @@ public class PromPage extends BasePage {
     public WebElement getNowPopularText() {return findElementByXpath("//span[contains(text(),'араз')]");}
     public WebElement getSpecialForYouText() {return findElementByXpath("//span[contains(text(),'пеці')]");}
     public WebElement getWhatLookingText() {return findElementByXpath("//h3[contains(text(),'шук')]");}
+    public WebElement getBuyersText() {
+        return findElementByXpath("//span[contains(text(),'окупцям')]");
+    }
+    public WebElement getSellersText() {
+        return findElementByXpath("//span[contains(text(),'одавцям')]");
+    }
+    public WebElement getAboutUsText() {
+        return findElementByXpath("//span[contains(text(),'ро нас')]");
+    }
+    public WebElement getPartnersText() {
+        return findElementByXpath("//span[contains(text(),'артнери')]");
+    }
+    public WebElement getAndroidAppFooterHomePage() {
+        return findElementByXpath("//a[@data-qaid='android_app']");
+    }
+    public WebElement getAppleAppFooterHomePage() {
+        return findElementByXpath("//a[@data-qaid='apple_app']");
+    }
+    public WebElement getHuaweiAppFooterHomePage() {
+        return findElementByXpath("//a[@data-qaid='huawei_app']");
+    }
+    public WebElement getYoutubeFooterHomePage() {
+        return findElementByXpath("//a[@data-qaid='youtube']");
+    }
+    public WebElement getFacebookFooterHomePage() {
+        return findElementByXpath("//a[@data-qaid='facebook']");
+    }
 }
