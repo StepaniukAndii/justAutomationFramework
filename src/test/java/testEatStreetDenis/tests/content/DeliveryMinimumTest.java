@@ -30,7 +30,7 @@ public class DeliveryMinimumTest extends TestInit {
         }
         landingContentPage.restaurantOrderSelectPage().addToCartBtn().click();
         Assert.assertTrue(landingContentPage.restaurantOrderSelectPage().orderBtnAvailable().isDisplayed());
-        compareDeliveryMinimumAndPrice("price bigger");
+        compareDeliveryMinimumAndPrice("is price bigger");
 
     }
 
