@@ -19,7 +19,7 @@ public class HeaderPage extends BasePage {
     }
 
     public WebElement signIn() {
-        return findElementByXpath("//div [@class='is-clickable']");
+        return findElementByXpath("//div [contains(@class, 'is-clickable')]");
     }
 
     public WebElement cart() {
