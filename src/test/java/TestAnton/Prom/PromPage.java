@@ -70,4 +70,23 @@ public class PromPage extends BasePage {
     public WebElement getFacebookFooterHomePage() {
         return findElementByXpath("//a[@data-qaid='facebook']");
     }
+    public List<WebElement> getBuyButtons(){
+        return findElementsByXpath("//*[contains(@class,'ek-button_padding-left_none')]");
+    }
+
+    public WebElement getDeleteFromCartBtn(){
+        return findElementByXpath("//*[@data-qaid,'delete_icon']");
+    }
+
+    public WebElement getOpenCartBtn(){
+        return findElementByXpath("//*[contains(@data-qaid,'shopping_cart')]");
+    }
+
+    public WebElement getCartIsEmptyText(){
+        return findElementByXpath("//*[contains(text(),'емає')]");
+    }
+
+    public WebElement getCloseCartBtn(){
+        return findElementByXpath("//*[contains(@data-qaid,'close')]");
+    }
 }
