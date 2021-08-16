@@ -73,20 +73,28 @@ public class PromPage extends BasePage {
     public List<WebElement> getBuyButtons(){
         return findElementsByXpath("//*[contains(@class,'ek-button_padding-left_none')]");
     }
-
     public WebElement getDeleteFromCartBtn(){
         return findElementByXpath("//*[@data-qaid,'delete_icon']");
     }
-
     public WebElement getOpenCartBtn(){
         return findElementByXpath("//*[contains(@data-qaid,'shopping_cart')]");
     }
-
     public WebElement getCartIsEmptyText(){
         return findElementByXpath("//*[contains(text(),'емає')]");
     }
-
     public WebElement getCloseCartBtn(){
         return findElementByXpath("//*[contains(@data-qaid,'close')]");
+    }
+    public WebElement getPriceRangeFirstBlock(){
+        return findElementByXpath("//input[@data-qaid='price_local__gte']");
+    }
+    public WebElement getPriceRangeSecondBlock(){
+        return findElementByXpath("//input[@data-qaid='price_local__lte']");
+    }
+    public WebElement getPriceRangeOkBtn(){
+        return findElementByXpath("//div[contains(@class,'ek-box_margin-top_xs ek-box_margin-bottom_xs')]//descendant::button");
+    }
+    public List<WebElement> getGoodsPrices(){
+        return findElementsByXpath("//span[@data-qaid='product_price']");
     }
 }
