@@ -14,7 +14,7 @@ public class HeaderTesElementFunctionality extends TestInit {
     Robot robot;
 
     @Test
-    public void testHeaderNonRegistered() throws AWTException {
+    public void testHeaderFunctionality() throws AWTException {
         headerPage = new HeaderPage(driver);
         String openNewTab = Keys.chord(Keys.CONTROL,Keys.RETURN);
         openUrl("https://preply.com/");
