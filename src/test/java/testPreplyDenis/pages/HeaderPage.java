@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class LandingPage extends BasePage {
-    public LandingPage(WebDriver driver) {
+public class HeaderPage extends BasePage {
+    public HeaderPage(WebDriver driver) {
         super(driver);
     }
 
