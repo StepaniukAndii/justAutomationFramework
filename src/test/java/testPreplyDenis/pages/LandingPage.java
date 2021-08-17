@@ -15,6 +15,10 @@ public class LandingPage extends BasePage {
         return findElementByXpath("//input [@data-qa-id='full-text-search-no-subject-input']");
     }
 
+    public WebElement closeCookies() {
+        return findElementByXpath("//*[local-name()='svg' and @data-qa-id='close-cookie-popup']");
+    }
+
     public WebElement submitBtn() {
         return findElementByXpath("//button [@data-qa-id='full-text-submit-btn']");
     }
