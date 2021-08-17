@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import testPreplyDenis.pages.FooterPage;
 
-public class FooterTestFunctionality extends TestInit {
+public class FooterTestElementsFunctionality extends TestInit {
     FooterPage footerPage;
 
     @Test
