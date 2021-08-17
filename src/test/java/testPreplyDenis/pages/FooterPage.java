@@ -36,5 +36,3 @@ public class FooterPage extends BasePage {
         return findElementsByXpath("//a [contains(@class,'LinkPolicy___bEm-f')]");
     }
 }
-package testPreplyDenis.pages;public class FooterPage {
-}
