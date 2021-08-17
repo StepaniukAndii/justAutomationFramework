@@ -1,4 +1,3 @@
-
 package testPreplyDenis.pages;
 
 import ClasesToAllUs.BasePage;
@@ -35,6 +34,4 @@ public class FooterPage extends BasePage {
     public List<WebElement> terms() {
         return findElementsByXpath("//a [contains(@class,'LinkPolicy___bEm-f')]");
     }
-}
-package testPreplyDenis.pages;public class FooterPage {
 }

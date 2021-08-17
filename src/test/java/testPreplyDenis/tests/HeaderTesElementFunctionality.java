@@ -1,7 +1,6 @@
 package testPreplyDenis.tests;
 
 import ClasesToAllUs.TestInit;
-import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import testPreplyDenis.pages.HeaderPage;
