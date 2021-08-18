@@ -17,8 +17,8 @@ public class PromPage extends BasePage {
     public WebElement deleteProfileBtn() {return findElementByXpath("//span[contains(text(),'ида')]");}
     public WebElement signInBtn() {return findElementByXpath("//a[contains(@data-qaid,'sign-in')]");}
     public WebElement signInCustomerBtn() {return findElementByXpath("//a[contains(@data-qaid,'customer')]");}
-    public WebElement signInInputField() {return findElementByXpath("//input[contains(@data-qaid,'input_field')]");}
-    public WebElement confirmSignInBtn() {return findElementByXpath("//button[contains(text(),'ві')]");}
+    public WebElement signInInputField() {return findElementByXpath("//*[@id='phone_email']");}
+    public WebElement confirmSignInBtn() {return findElementByXpath("//*[@data-qaid='submit_btn']");}
     public List<WebElement> nowPopularList() {return findElementsByXpath("//li[contains(@class,'season')]");}
     public WebElement backOnHomePageLogoBtn() {return findElementByXpath("//div[contains(@class,'e ek-grid_indent-x_xxs ')]");}
     public WebElement behindTheRatingBtn() {return findElementByXpath("//button[contains(@class,'1pPUv')]");}
@@ -96,5 +96,25 @@ public class PromPage extends BasePage {
     }
     public List<WebElement> getGoodsPrices(){
         return findElementsByXpath("//span[@data-qaid='product_price']");
+    }
+
+    public List<WebElement> getAddToFavourite(){
+        return findElementsByXpath("//*[@data-qaid='add_favorite']");
+    }
+
+    public WebElement getFavouriteCabinetBtn(){
+        return findElementByXpath("//*[@data-qaid='favorite_cabinet_button']");
+    }
+
+    public WebElement getBuyBtnInFavourite(){
+        return findElementByXpath("//button[@data-qaid='shopping_cart_btn']");
+    }
+
+    public WebElement getDeleteItemFromFavourite(){
+        return findElementByXpath("//*[@data-qaid='delete_icon']");
+    }
+
+    public WebElement getShoppingBtnInFavourite(){
+        return findElementByXpath("//*[contains(@class,'blue')]");
     }
 }
