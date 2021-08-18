@@ -121,4 +121,8 @@ public class PromPage extends BasePage {
     public WebElement getTextIntoSpecialForYouPage(){
         return findElementByXpath("//*[contains(text(),'зібрали')]");
     }
+
+    public WebElement getTextOnHelpPage(){
+        return findElementByXpath("//*[contains(text(),'им ми')]");
+    }
 }
