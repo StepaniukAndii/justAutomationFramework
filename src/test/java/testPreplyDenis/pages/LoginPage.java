@@ -48,6 +48,6 @@ public class LoginPage extends BasePage {
     }
 
     public WebElement tutorSignUpTransfer() {
-        return findElementByXpath("//a [@data-ga-label='Sign_up_as_tutor']");
+        return findElementByXpath("//a [@data-dwh-action='become_a_tutor_sign_up_page']");
     }
 }

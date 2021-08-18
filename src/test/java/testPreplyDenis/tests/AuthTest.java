@@ -25,15 +25,15 @@ public class AuthTest extends TestInit {
         sleep(5); //waiting for header appearance
         headerPage.headerButtons().get(5).click();
         //testing login page. There's a captcha, so it's just simple functional testing
-//        for (int i = 0; i < loginPage.logInWithFacebookOrGoogle().size(); i++) {
-//            loginPage.logInWithFacebookOrGoogle().get(i).click();
-//            driver.navigate().back();
-//        }
-//        loginPage.emailField().sendKeys("testemail@gmail.com");
-//        loginPage.passwordField().sendKeys("12345678");
-//        loginPage.forgotPasswordLink().sendKeys(openNewTab);
-//        loginPage.rememberMeCheckBox().click();
-//        loginPage.loginButton().click();
+        for (int i = 0; i < loginPage.logInWithFacebookOrGoogle().size(); i++) {
+            loginPage.logInWithFacebookOrGoogle().get(i).click();
+            driver.navigate().back();
+        }
+        loginPage.emailField().sendKeys("testemail@gmail.com");
+        loginPage.passwordField().sendKeys("12345678");
+        loginPage.forgotPasswordLink().sendKeys(openNewTab);
+        loginPage.rememberMeCheckBox().click();
+        loginPage.loginButton().click();
         //testing student sign up page
         loginPage.studentSignUpTransfer().click();
         for (int i = 0; i < loginPage.signUpStudentPage().signUpWithFacebookOrGoogle().size(); i++) {
