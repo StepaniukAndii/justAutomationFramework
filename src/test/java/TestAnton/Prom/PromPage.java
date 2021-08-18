@@ -117,4 +117,8 @@ public class PromPage extends BasePage {
     public WebElement getShoppingBtnInFavourite(){
         return findElementByXpath("//*[contains(@class,'blue')]");
     }
+
+    public WebElement getTextIntoSpecialForYouPage(){
+        return findElementByXpath("//*[contains(text(),'зібрали')]");
+    }
 }
