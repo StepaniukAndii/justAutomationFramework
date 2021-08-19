@@ -11,6 +11,10 @@ public class HeaderPage extends BasePage {
         super(driver);
     }
 
+    public LoginPage loginPage() {
+        return new LoginPage(driver);
+    }
+
     public WebElement headerLogo() {
         return findElementByXpath("//div [contains(@class, 'header_logoImg__2j7b6')]");
     }
@@ -33,5 +37,13 @@ public class HeaderPage extends BasePage {
 
     public List<WebElement> selectCurrency() {
         return findElementsByXpath("//select [@data-qa-id='currency-dropdown']//option[@value]");
+    }
+
+    public WebElement openProfile() {
+        return findElementByXpath("//img [@data-qa-id='profile-avatar-img']");
+    }
+
+    public WebElement settings() {
+        return findElementByXpath("//a [@id='settings']");
     }
 }
