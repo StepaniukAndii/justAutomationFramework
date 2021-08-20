@@ -125,4 +125,12 @@ public class PromPage extends BasePage {
     public WebElement getTextOnHelpPage(){
         return findElementByXpath("//*[contains(text(),'им ми')]");
     }
+
+    public WebElement getGoogleAppBtn(){
+        return findElementByXpath("//div[contains(@class,'main__intro--1De7h')]//a[1]");
+    }
+
+    public WebElement getAppleAppBtn(){
+        return findElementByXpath("//div[contains(@class,'main__intro--1De7h')]//a[2]");
+    }
 }
