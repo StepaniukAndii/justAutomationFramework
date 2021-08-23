@@ -22,4 +22,12 @@ public class ProductPage extends BasePage {
     public WebElement switchToCart() {
         return findElementByXpath("//span [@id='attach-sidesheet-view-cart-button']");
     }
+
+    public List<WebElement> filterCheckboxes() {
+        return findElementsByXpath("//div [contains(@class,'a-checkbox a-checkbox-fancy')]");
+    }
+
+    public List<WebElement> filterByCustomerReview() {
+        return findElementsByXpath("//section [contains(@aria-label,'Up')]");
+    }
 }
