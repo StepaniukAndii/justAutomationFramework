@@ -125,4 +125,32 @@ public class PromPage extends BasePage {
     public WebElement getTextOnHelpPage(){
         return findElementByXpath("//*[contains(text(),'им ми')]");
     }
+
+    public WebElement getGoogleAppBtn(){
+        return findElementByXpath("//div[contains(@class,'main__intro--1De7h')]//a[1]");
+    }
+
+    public WebElement getAppleAppBtn(){
+        return findElementByXpath("//div[contains(@class,'main__intro--1De7h')]//a[2]");
+    }
+
+    public WebElement getMessagePopUp(){
+        return findElementByXpath("//div[contains(@class,'besida-dropdown__root--p4uAJ')]");
+    }
+
+    public WebElement getActiveChatsBtn(){
+        return findElementByXpath("//div[contains(text(),'Активні чати')]");
+    }
+
+    public WebElement getChatArchiveBtn(){
+        return findElementByXpath("//div[contains(text(),'Архів чатів')]");
+    }
+
+    public WebElement getBlockedChatsBtn(){
+        return findElementByXpath("//div[contains(text(),'Заблоковані чати')]");
+    }
+
+    public WebElement getCloseMessageWindowBtn(){
+        return findElementByXpath("//span[@data-qaid='close_chat_btn']");
+    }
 }
