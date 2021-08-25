@@ -1,6 +1,7 @@
 package TestAnton.Oniks;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -46,5 +47,13 @@ public class OniksPage extends BasePage {
     public List<WebElement> ringsNewPrice(){return findElementsByXpath("//div[contains(@id,'price')]//descendant::span[2]");}
     public WebElement getTextOnAboutUsPage(){
         return findElementByXpath("//span[contains(text(),'ннос')]");
+    }
+
+    public WebElement getDeliveryAndPaymentBtn(){
+        return driver.findElement(By.xpath("//ul[contains(@class,'nav navbar-nav')]/descendant::a[2]"));
+    }
+
+    public WebElement getTextOnDeliveryAndPaymentPage(){
+        return findElementByXpath("//div[contains(@class,'container content-wrapper')]/descendant::span[2]");
     }
 }
