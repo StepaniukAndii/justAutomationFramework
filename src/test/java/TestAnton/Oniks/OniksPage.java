@@ -55,6 +55,7 @@ public class OniksPage extends BasePage {
 
     public WebElement getQuestionsAndAnswersText(){
         return findElementByXpath("//div[contains(@class,'container')]//descendant::h1");
+    }
 
     public WebElement getDeliveryAndPaymentBtn(){
         return driver.findElement(By.xpath("//ul[contains(@class,'nav navbar-nav')]/descendant::a[2]"));
@@ -62,5 +63,13 @@ public class OniksPage extends BasePage {
 
     public WebElement getTextOnDeliveryAndPaymentPage(){
         return findElementByXpath("//div[contains(@class,'container content-wrapper')]/descendant::span[2]");
+    }
+
+    public WebElement getBlogBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[4]");
+    }
+
+    public WebElement getAboutShopText(){
+        return findElementByXpath("//h1[contains(@class,'blog-list-header')]");
     }
 }
