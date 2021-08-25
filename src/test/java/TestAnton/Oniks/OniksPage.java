@@ -44,5 +44,7 @@ public class OniksPage extends BasePage {
     public WebElement nameOfTheChosenProductInCart() {return findElementByXpath("//td[@class='item_name-wrapper']//a[contains(text(),'ольцо')]");}
     public WebElement priceBaseTo1000() {return findElementByXpath("//button[text()[normalize-space()='до 1 000 грн']]");}
     public List<WebElement> ringsNewPrice(){return findElementsByXpath("//div[contains(@id,'price')]//descendant::span[2]");}
-
+    public WebElement getTextOnAboutUsPage(){
+        return findElementByXpath("//span[contains(text(),'ннос')]");
+    }
 }
