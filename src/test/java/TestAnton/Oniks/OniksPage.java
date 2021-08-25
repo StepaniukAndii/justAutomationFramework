@@ -47,4 +47,12 @@ public class OniksPage extends BasePage {
     public WebElement getTextOnAboutUsPage(){
         return findElementByXpath("//span[contains(text(),'ннос')]");
     }
+
+    public WebElement getQuestionsAndAnswersBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[3]");
+    }
+
+    public WebElement getQuestionsAndAnswersText(){
+        return findElementByXpath("//div[contains(@class,'container')]//descendant::h1");
+    }
 }
