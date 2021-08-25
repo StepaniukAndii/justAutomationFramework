@@ -72,4 +72,12 @@ public class OniksPage extends BasePage {
     public WebElement getAboutShopText(){
         return findElementByXpath("//h1[contains(@class,'blog-list-header')]");
     }
+
+    public WebElement getFeedbacksBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[5]");
+    }
+
+    public WebElement getFeedbacksText(){
+        return findElementByXpath("//span[contains(text(),'тзывы')]");
+    }
 }
