@@ -80,4 +80,12 @@ public class OniksPage extends BasePage {
     public WebElement getFeedbacksText(){
         return findElementByXpath("//span[contains(text(),'тзывы')]");
     }
+
+    public WebElement getContactsBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[6]");
+    }
+
+    public WebElement getContactsText(){
+        return findElementByXpath("//span[contains(text(),'онтакты')]");
+    }
 }
