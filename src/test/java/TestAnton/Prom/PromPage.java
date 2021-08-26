@@ -17,8 +17,8 @@ public class PromPage extends BasePage {
     public WebElement deleteProfileBtn() {return findElementByXpath("//span[contains(text(),'ида')]");}
     public WebElement signInBtn() {return findElementByXpath("//a[contains(@data-qaid,'sign-in')]");}
     public WebElement signInCustomerBtn() {return findElementByXpath("//a[contains(@data-qaid,'customer')]");}
-    public WebElement signInInputField() {return findElementByXpath("//input[contains(@data-qaid,'input_field')]");}
-    public WebElement confirmSignInBtn() {return findElementByXpath("//button[contains(text(),'ві')]");}
+    public WebElement signInInputField() {return findElementByXpath("//*[@id='phone_email']");}
+    public WebElement confirmSignInBtn() {return findElementByXpath("//*[@data-qaid='submit_btn']");}
     public List<WebElement> nowPopularList() {return findElementsByXpath("//li[contains(@class,'season')]");}
     public WebElement backOnHomePageLogoBtn() {return findElementByXpath("//div[contains(@class,'e ek-grid_indent-x_xxs ')]");}
     public WebElement behindTheRatingBtn() {return findElementByXpath("//button[contains(@class,'1pPUv')]");}
@@ -69,5 +69,88 @@ public class PromPage extends BasePage {
     }
     public WebElement getFacebookFooterHomePage() {
         return findElementByXpath("//a[@data-qaid='facebook']");
+    }
+    public List<WebElement> getBuyButtons(){
+        return findElementsByXpath("//*[contains(@class,'ek-button_padding-left_none')]");
+    }
+    public WebElement getDeleteFromCartBtn(){
+        return findElementByXpath("//*[@data-qaid,'delete_icon']");
+    }
+    public WebElement getOpenCartBtn(){
+        return findElementByXpath("//*[contains(@data-qaid,'shopping_cart')]");
+    }
+    public WebElement getCartIsEmptyText(){
+        return findElementByXpath("//*[contains(text(),'емає')]");
+    }
+    public WebElement getCloseCartBtn(){
+        return findElementByXpath("//*[contains(@data-qaid,'close')]");
+    }
+    public WebElement getPriceRangeFirstBlock(){
+        return findElementByXpath("//input[@data-qaid='price_local__gte']");
+    }
+    public WebElement getPriceRangeSecondBlock(){
+        return findElementByXpath("//input[@data-qaid='price_local__lte']");
+    }
+    public WebElement getPriceRangeOkBtn(){
+        return findElementByXpath("//div[contains(@class,'ek-box_margin-top_xs ek-box_margin-bottom_xs')]//descendant::button");
+    }
+    public List<WebElement> getGoodsPrices(){
+        return findElementsByXpath("//span[@data-qaid='product_price']");
+    }
+
+    public List<WebElement> getAddToFavourite(){
+        return findElementsByXpath("//*[@data-qaid='add_favorite']");
+    }
+
+    public WebElement getFavouriteCabinetBtn(){
+        return findElementByXpath("//*[@data-qaid='favorite_cabinet_button']");
+    }
+
+    public WebElement getBuyBtnInFavourite(){
+        return findElementByXpath("//button[@data-qaid='shopping_cart_btn']");
+    }
+
+    public WebElement getDeleteItemFromFavourite(){
+        return findElementByXpath("//*[@data-qaid='delete_icon']");
+    }
+
+    public WebElement getShoppingBtnInFavourite(){
+        return findElementByXpath("//*[contains(@class,'blue')]");
+    }
+
+    public WebElement getTextIntoSpecialForYouPage(){
+        return findElementByXpath("//*[contains(text(),'зібрали')]");
+    }
+
+    public WebElement getTextOnHelpPage(){
+        return findElementByXpath("//*[contains(text(),'им ми')]");
+    }
+
+    public WebElement getGoogleAppBtn(){
+        return findElementByXpath("//div[contains(@class,'main__intro--1De7h')]//a[1]");
+    }
+
+    public WebElement getAppleAppBtn(){
+        return findElementByXpath("//div[contains(@class,'main__intro--1De7h')]//a[2]");
+    }
+
+    public WebElement getMessagePopUp(){
+        return findElementByXpath("//div[contains(@class,'besida-dropdown__root--p4uAJ')]");
+    }
+
+    public WebElement getActiveChatsBtn(){
+        return findElementByXpath("//div[contains(text(),'Активні чати')]");
+    }
+
+    public WebElement getChatArchiveBtn(){
+        return findElementByXpath("//div[contains(text(),'Архів чатів')]");
+    }
+
+    public WebElement getBlockedChatsBtn(){
+        return findElementByXpath("//div[contains(text(),'Заблоковані чати')]");
+    }
+
+    public WebElement getCloseMessageWindowBtn(){
+        return findElementByXpath("//span[@data-qaid='close_chat_btn']");
     }
 }

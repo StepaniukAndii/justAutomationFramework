@@ -1,6 +1,7 @@
 package TestAnton.Oniks;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -44,5 +45,47 @@ public class OniksPage extends BasePage {
     public WebElement nameOfTheChosenProductInCart() {return findElementByXpath("//td[@class='item_name-wrapper']//a[contains(text(),'ольцо')]");}
     public WebElement priceBaseTo1000() {return findElementByXpath("//button[text()[normalize-space()='до 1 000 грн']]");}
     public List<WebElement> ringsNewPrice(){return findElementsByXpath("//div[contains(@id,'price')]//descendant::span[2]");}
+    public WebElement getTextOnAboutUsPage(){
+        return findElementByXpath("//span[contains(text(),'ннос')]");
+    }
 
+    public WebElement getQuestionsAndAnswersBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[3]");
+    }
+
+    public WebElement getQuestionsAndAnswersText(){
+        return findElementByXpath("//div[contains(@class,'container')]//descendant::h1");
+    }
+
+    public WebElement getDeliveryAndPaymentBtn(){
+        return driver.findElement(By.xpath("//ul[contains(@class,'nav navbar-nav')]/descendant::a[2]"));
+    }
+
+    public WebElement getTextOnDeliveryAndPaymentPage(){
+        return findElementByXpath("//div[contains(@class,'container content-wrapper')]/descendant::span[2]");
+    }
+
+    public WebElement getBlogBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[4]");
+    }
+
+    public WebElement getAboutShopText(){
+        return findElementByXpath("//h1[contains(@class,'blog-list-header')]");
+    }
+
+    public WebElement getFeedbacksBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[5]");
+    }
+
+    public WebElement getFeedbacksText(){
+        return findElementByXpath("//span[contains(text(),'тзывы')]");
+    }
+
+    public WebElement getContactsBtn(){
+        return findElementByXpath("//div[@id='top_nav']//descendant::a[6]");
+    }
+
+    public WebElement getContactsText(){
+        return findElementByXpath("//span[contains(text(),'онтакты')]");
+    }
 }
