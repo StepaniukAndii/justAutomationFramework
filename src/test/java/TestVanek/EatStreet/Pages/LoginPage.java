@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
         return findElementByXpath("//input[@name='password']");
     }
 
-    public WebElement singInBtn(){
+    public WebElement signInBtn(){
         return findElementByXpath("//button[@class='btn btn-action btn--orange btn-sign-in-hcn ng-scope']");
     }
 
