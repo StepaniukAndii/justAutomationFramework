@@ -17,7 +17,7 @@ public class TestLogIn extends TestInit {
 
         openUrl("https://mychords.net");
 
-        startPage.LogInBtn().click();
+        startPage.logInBtn().click();
         logInPage.logInInput().sendKeys("testing@gmail.com");
         logInPage.passInput().sendKeys("testing");
         logInPage.logInBtn().click();
