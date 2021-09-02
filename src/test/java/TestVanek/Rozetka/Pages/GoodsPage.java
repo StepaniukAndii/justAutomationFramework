@@ -12,7 +12,13 @@ public class GoodsPage extends BasePage {
     public List<WebElement> goods(){
         return findElementsByXpath("//a[contains(@class,'goods')]/img[contains(@alt,'Glenturret')]");
     }
+    public List<WebElement> compareButtons(){
+        return findElementsByXpath("//button[contains(@class,'compare')]");
+    }
     public WebElement ageAssertBtn(){
         return findElementByXpath("//a[contains(@class,'ex')]");
+    }
+    public List<WebElement> goodsTitles(){
+        return findElementsByXpath("//span[contains(@class,'goods-tile__title')]");
     }
 }
