@@ -13,4 +13,7 @@ public class StartPage extends BasePage {
     public WebElement searchBtn(){
         return findElementByXpath("//button[contains(@class,'button_color_green')]");
     }
+    public WebElement comparePageBtn(){
+        return findElementByXpath("//button[contains(@aria-label,'сравнения')]");
+    }
 }
