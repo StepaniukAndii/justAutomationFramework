@@ -38,4 +38,8 @@ public class RestaurantOrderSelectPage extends BasePage {
     public WebElement addToCartBtn() {
         return findElementByXpath("//a [@id='confirm-options']");
     }
+
+    public WebElement cardInfo() {
+        return findElementByXpath("//div [contains(@class, 'col-9 content-container')]");
+    }
 }
