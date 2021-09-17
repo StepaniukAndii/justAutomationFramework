@@ -12,11 +12,11 @@ public class FooterPage extends BasePage {
         super(driver);
     }
 
-    public List<WebElement> footerElements() {
+    public List<WebElement> getFooterElements() {
         return findElementsByXpath("//div [@class='es-footer__top']//a");
     }
 
-    public List<WebElement> footerSocials() {
+    public List<WebElement> getFooterSocials() {
         return findElementsByXpath("//ul [@aria-label='Social media links']//a");
     }
 

@@ -20,31 +20,31 @@ public class SupportPage extends BasePage {
         return new LandingContentPage(driver);
     }
 
-    public WebElement getHelpFirstName() {
+    public WebElement getHelpFirstNameInput() {
         return findElementByXpath("//input [@id='firstName']");
     }
 
-    public WebElement getHelpLastName() {
+    public WebElement getHelpLastNameInput() {
         return findElementByXpath("//input [@id='lastName']");
     }
 
-    public WebElement getHelpEmail() {
+    public WebElement getHelpEmailInput() {
         return findElementByXpath("//input [@id='email']");
     }
 
-    public WebElement getHelpPhone() {
+    public WebElement getHelpPhoneInput() {
         return findElementByXpath("//input [@id='phone']");
     }
 
-    public WebElement getHelpSubject() {
+    public WebElement getHelpSubjectSelect() {
         return findElementByXpath("//select [@id='subject']");
     }
 
     public List<WebElement> getHelpSubjectList() {
-        return findElementsByXpath("//option [@ng-repeat='option in subjectOptions']");
+        return findElementsByXpath("//option [contains(@ng-repeat, 'subjectOptions')]");
     }
 
-    public WebElement getHelpMessage() {
+    public WebElement getHelpMessageInput() {
         return findElementByXpath("//textarea [@name='message']");
     }
 
@@ -64,7 +64,7 @@ public class SupportPage extends BasePage {
         return findElementByXpath("//select [@id='order']");
     }
 
-    public WebElement submit() {
+    public WebElement submitBtn() {
         return findElementByXpath("//button [@id='submit']");
     }
 }
