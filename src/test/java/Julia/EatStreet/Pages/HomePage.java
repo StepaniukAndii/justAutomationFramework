@@ -40,4 +40,8 @@ public class HomePage extends BasePage {
 
         return driver.findElements(By.xpath("//a[@id='enter-address-btn']"));
     }
+
+    public WebElement restName(){
+        return  findElement("//h1[contains(@class,'name')]");
+    }
 }

@@ -30,11 +30,11 @@ public class TestAdressInput extends TestInit {
         homePage.getGoItBtn().click();
         homePage.getAdressInput().sendKeys("new york");
         homePage.getFedBtn().click();
-        homePage.getFedBtn().click();
         sleep(5);
         driver.manage().window().fullscreen();
         getSelectPageRest();
         sleep(3);
         getSelect70Rest();
+        Assert.assertEquals(homePage.restName(), "Real Kung Fu Little Steamed Buns Ramen - 8th Ave.");
     }
 }
