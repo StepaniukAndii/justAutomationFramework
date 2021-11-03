@@ -19,7 +19,7 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
 //    put false here if you want to see browser)
-    boolean headless = true;
+    boolean headless = false;
 
     @BeforeMethod
     public void setUp() {
@@ -29,7 +29,7 @@ public class TestInit {
         if (isOSMac()){
             setProperty("src/test/drivers/chromedriver_91_mac");
         }else if (isOSWindows()){
-            setProperty("src/test/drivers/chromedriver_92_windows.exe");
+            setProperty("src/test/drivers/chromedriver_95.exe");
         }else {
             setProperty("src/test/drivers/chromedriver_90_linux");
         }
