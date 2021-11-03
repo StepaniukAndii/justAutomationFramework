@@ -18,4 +18,8 @@ public class HomePage extends BasePage {
     public WebElement getPressFedBtn(){
         return driver.findElement(By.xpath("//a[contains(@id, 'find-restaurants')]"));
     }
+
+    public WebElement getH1() {
+        return findElementByXpath("//h1");
+    }
 }
