@@ -28,6 +28,13 @@ public class HomePage extends BasePage {
         return driver.findElement((By.xpath("//a[@id='find-restaurants']")));
     }
 
+    public List<WebElement> getPageNumberList() {
+        return driver.findElements(By.xpath("//ul[@class='pagination__pages']//a"));
+    }
+    public List<WebElement> getAllRest() {
+        return driver.findElements(By.xpath("//ul[@id='all-rests']/li"));
+    }
+
     //закриває спливаюче вікно, якщо воно є
     public List<WebElement> getSearchAttempt() {
 
