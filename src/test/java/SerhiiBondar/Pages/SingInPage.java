@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class SingInPage extends BasePage {
 
     public SingInPage(WebDriver driver) {
@@ -24,4 +26,5 @@ public class SingInPage extends BasePage {
     public WebElement invalidLogInMessage(){
         return driver.findElement(By.xpath("//div[@class='validation-summary-errors']"));
     }
+    public List<WebElement> getLogOutBtn(){return driver.findElements(By.xpath("//a[@href='/logout']"));}
 }
