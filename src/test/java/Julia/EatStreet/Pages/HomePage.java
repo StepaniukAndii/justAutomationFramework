@@ -34,6 +34,9 @@ public class HomePage extends BasePage {
     public WebElement clickSingInWithGoogle() { return  driver.findElement(By.xpath("//div[@id='uniqueid']")); }
     public List<WebElement> selectAccountWithGoogle() { return driver.findElements(By.xpath("//div[@class='WBW9sf']")); }
     public WebElement myAccountText() { return driver.findElement(By.xpath("//a[contains(text(), 'My Account')]")); }
+    public WebElement clickSingInWithFacebook() { return driver.findElement(By.xpath("//a[@class='btn btn-facebook btn-facebook__sign-in full-width ng-scope']")); }
+    public WebElement enterEmailWithFacebook() { return driver.findElement(By.xpath("//input[@name='email']")); }
+    public WebElement enterPassWithFacebook() { return driver.findElement(By.xpath("////input[@id='pass']")); }
 
 
 
