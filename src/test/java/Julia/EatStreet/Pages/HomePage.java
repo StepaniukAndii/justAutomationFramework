@@ -12,36 +12,30 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    private void novigateEatStreet() {
-        driver.get("https://eatstreet.com/");
-    }
-
     public WebElement getAdressInput() {
         return driver.findElement(By.xpath("//input[@ng-model='searchParam']"));
     }
-
     public WebElement getGoItBtn(){
         return driver.findElement(By.xpath("//button[@class='btn']"));
     }
-
     public WebElement getFedBtn() {
         return driver.findElement((By.xpath("//a[@id='find-restaurants']")));
     }
-
-    public List<WebElement> getPageNumberList() {
-        return driver.findElements(By.xpath("//ul[@class='pagination__pages']//a"));
-    }
+    public List<WebElement> getPageNumberList() { return driver.findElements(By.xpath("//ul[@class='pagination__pages']//a")); }
     public List<WebElement> getAllRest() {
         return driver.findElements(By.xpath("//ul[@id='all-rests']/li"));
     }
-
-    //закриває спливаюче вікно, якщо воно є
-    public List<WebElement> getSearchAttempt() {
-
-        return driver.findElements(By.xpath("//a[@id='enter-address-btn']"));
-    }
-
+    public List<WebElement> getSearchAttempt() { return driver.findElements(By.xpath("//a[@id='enter-address-btn']")); }
     public WebElement restName(){
         return  findElement("//h1[contains(@class,'name')]");
     }
+
+    public WebElement clickSignInBtn() { return driver.findElement(By.xpath("//a[@id='menu-signin']")); }
+    public WebElement clickSingInWithGoogle() { return  driver.findElement(By.xpath("//div[@id='uniqueid']")); }
+    public List<WebElement> selectAccountWithGoogle() { return driver.findElements(By.xpath("//div[@class='WBW9sf']")); }
+    public WebElement myAccountText() { return driver.findElement(By.xpath("//a[contains(text(), 'My Account')]")); }
+
+
+
+
 }

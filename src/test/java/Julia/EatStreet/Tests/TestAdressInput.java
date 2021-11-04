@@ -7,12 +7,14 @@ import org.testng.annotations.Test;
 
 public class TestAdressInput extends TestInit {
     HomePage homePage = new HomePage(driver);
-    public void getSelectPageRest(){
-        if (homePage.getPageNumberList().size()>0) {
+
+    public void getSelectPageRest() {
+        if (homePage.getPageNumberList().size() > 0) {
             sleep(5);
             homePage.getPageNumberList().get(homePage.getPageNumberList().size() - 1).click();
         }
     }
+
     private void novigateEatStreet() {
         driver.get("https://eatstreet.com/");
     }
@@ -21,9 +23,11 @@ public class TestAdressInput extends TestInit {
         if (homePage.getPageNumberList().size() > 0) {
             homePage.getPageNumberList().get(1).click();
             homePage.getAllRest().get(19).click();
-        } else {homePage.getAllRest().get(homePage.getAllRest().size() - 1).click();
+        } else {
+            homePage.getAllRest().get(homePage.getAllRest().size() - 1).click();
         }
     }
+
     @Test
     public void testEatStreet1() {
         novigateEatStreet();
