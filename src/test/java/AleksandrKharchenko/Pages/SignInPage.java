@@ -33,4 +33,8 @@ public class SignInPage extends BasePage {
     public void closeModal() {
         driver.findElement(By.xpath("//button[contains(text(),'Got it')]")).click();
     }
+
+    public WebElement getSignUpLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Sign Up')]"));
+    }
 }
