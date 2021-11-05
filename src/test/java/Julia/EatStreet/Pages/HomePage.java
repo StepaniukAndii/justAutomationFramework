@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import javax.swing.*;
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -38,7 +39,20 @@ public class HomePage extends BasePage {
     public WebElement enterEmailWithFacebook() { return driver.findElement(By.xpath("//input[@name='email']")); }
     public WebElement enterPassWithFacebook() { return driver.findElement(By.xpath("////input[@id='pass']")); }
 
+    /*public void  checkAndClousePopUpWindow() {
+        if (getSearchAttempt().size() > 0) {
+            sleep(2);
+            getSearchAttempt().get(0).click();
+        }
+    }*/
 
 
 
+    public WebElement selectCityMuncie() { return driver.findElement(By.xpath("//a[contains(text(), 'Muncie, IN').scrollIntoView(false)]")); }
+    public WebElement selectCategoryLateNightFood() { return driver.findElement(By.xpath("//li[@class='cuisine-types__item']")); }
+
+    public  WebElement selectRestInCity() { return driver.findElement(By.xpath("//button[@class='cuisine-types__item__button ng-binding']")); }
+    public WebElement clickSearchMenu() { return driver.findElement(By.xpath("//input[@placeholder='Search Menu']")); }
+
+    public WebElement checkTextDeluxPizza() { return driver.findElement(By.xpath("//span[contains(text(), 'Deluxe Pizza')]"));   }
 }
