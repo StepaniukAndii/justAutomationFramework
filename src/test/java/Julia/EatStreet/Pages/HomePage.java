@@ -46,6 +46,7 @@ public class HomePage extends BasePage {
         }
     }*/
 
+<<<<<<< HEAD
 
 
     public WebElement selectCityMuncie() { return driver.findElement(By.xpath("//a[contains(text(), 'Muncie, IN').scrollIntoView(false)]")); }
@@ -55,4 +56,6 @@ public class HomePage extends BasePage {
     public WebElement clickSearchMenu() { return driver.findElement(By.xpath("//input[@placeholder='Search Menu']")); }
 
     public WebElement checkTextDeluxPizza() { return driver.findElement(By.xpath("//span[contains(text(), 'Deluxe Pizza')]"));   }
+=======
+>>>>>>> master
 }
