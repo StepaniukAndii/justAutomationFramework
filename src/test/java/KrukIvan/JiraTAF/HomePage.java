@@ -1,11 +1,18 @@
 package KrukIvan.JiraTAF;
 
 import ClasesToAllUs.BasePage;
+import jdk.internal.access.JavaIOFileDescriptorAccess;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
+    public List<WebElement> addFood(){
+        return findElementsByXpath("//div[@class='is-clickable product-container']");
+    }
+
     public HomePage(WebDriver driver){
         super(driver);
     }
