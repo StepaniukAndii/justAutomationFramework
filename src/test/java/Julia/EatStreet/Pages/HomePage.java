@@ -38,24 +38,15 @@ public class HomePage extends BasePage {
     public WebElement clickSingInWithFacebook() { return driver.findElement(By.xpath("//a[@class='btn btn-facebook btn-facebook__sign-in full-width ng-scope']")); }
     public WebElement enterEmailWithFacebook() { return driver.findElement(By.xpath("//input[@name='email']")); }
     public WebElement enterPassWithFacebook() { return driver.findElement(By.xpath("////input[@id='pass']")); }
-
-    /*public void  checkAndClousePopUpWindow() {
-        if (getSearchAttempt().size() > 0) {
-            sleep(2);
-            getSearchAttempt().get(0).click();
-        }
-    }*/
-
-<<<<<<< HEAD
-
-
     public WebElement selectCityMuncie() { return driver.findElement(By.xpath("//a[contains(text(), 'Muncie, IN').scrollIntoView(false)]")); }
     public WebElement selectCategoryLateNightFood() { return driver.findElement(By.xpath("//li[@class='cuisine-types__item']")); }
-
     public  WebElement selectRestInCity() { return driver.findElement(By.xpath("//button[@class='cuisine-types__item__button ng-binding']")); }
     public WebElement clickSearchMenu() { return driver.findElement(By.xpath("//input[@placeholder='Search Menu']")); }
-
     public WebElement checkTextDeluxPizza() { return driver.findElement(By.xpath("//span[contains(text(), 'Deluxe Pizza')]"));   }
-=======
->>>>>>> master
+    public WebElement clickSignUpLink() { return driver.findElement(By.xpath("//a[contains(text(), 'Sign Up')]")); }
+    public WebElement enterEmailField() { return driver.findElement(By.xpath("//input[@name='email']")); }
+    public WebElement enterPassField() { return driver.findElement(By.xpath("//input[@name='password']")); }
+    public WebElement enterPassAgainField() { return driver.findElement(By.xpath("//input[@name='passwordAgain']")); }
+    public WebElement clickSignUpBtn() { return driver.findElement(By.xpath("//button[@id='signup']")); }
+
 }
