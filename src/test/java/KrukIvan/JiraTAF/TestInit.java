@@ -15,6 +15,7 @@ public class TestInit {
         driver = new ChromeDriver();
         driver.get("https://qa2.eatstreet.com/signin");
     }
+
     public void sleep(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
@@ -22,6 +23,7 @@ public class TestInit {
             e.printStackTrace();
         }
     }
+
     @AfterMethod
     public void quit() {
         driver.quit();
