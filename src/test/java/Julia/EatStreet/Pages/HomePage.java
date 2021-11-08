@@ -39,6 +39,4 @@ public class HomePage extends BasePage {
     public WebElement enterPassWithFacebook() { return driver.findElement(By.xpath("////input[@id='pass']")); }
 
 
-
-
 }
