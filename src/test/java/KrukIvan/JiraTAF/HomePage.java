@@ -1,18 +1,16 @@
 package KrukIvan.JiraTAF;
 
+import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.w3c.dom.html.HTMLInputElement;
 
-public class HomePage {
-    WebDriver driver;
+public class HomePage extends BasePage {
     public HomePage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
     }
-
     public WebElement clickButtonGotIt() {
-        return driver.findElement(By.xpath("//button[@class='btn']"));
+       return findElement("//button[@class='btn']");
     }
 
     public WebElement inputEmail() {
@@ -28,5 +26,9 @@ public class HomePage {
     }
     public WebElement getErrorMSG(){
         return driver.findElement(By.xpath("//span[contains(text(),'is incorrect.')]"));
+    }
+
+    public WebElement clickBTNSignInWithFacebook() {
+        return driver.findElement(By.xpath("//a[@class='btn btn-facebook btn-facebook__sign-in full-width ng-scope']"));
     }
 }
