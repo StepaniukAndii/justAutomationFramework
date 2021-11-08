@@ -38,5 +38,13 @@ public class HomePage extends BasePage {
     public WebElement enterEmailWithFacebook() { return driver.findElement(By.xpath("//input[@name='email']")); }
     public WebElement enterPassWithFacebook() { return driver.findElement(By.xpath("////input[@id='pass']")); }
 
+    public WebElement clickSignUpLink() { return driver.findElement(By.xpath("//a[contains(text(), 'Sign Up')]")); }
 
+    public WebElement enterEmailField() { return driver.findElement(By.xpath("//input[@name='email']")); }
+
+    public WebElement enterPassField() { return driver.findElement(By.xpath("//input[@name='password']")); }
+
+    public WebElement enterPassAgainField() { return driver.findElement(By.xpath("//input[@name='passwordAgain']")); }
+
+    public WebElement clickSignUpBtn() { return driver.findElement(By.xpath("//button[@id='signup']")); }
 }
