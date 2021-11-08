@@ -16,12 +16,6 @@ public class SearchRestInCity extends TestInit {
         homePage.selectRestInCity().click();
         homePage.clickSearchMenu().sendKeys("Deluxe Pizza");
         Assert.assertEquals(homePage.checkTextDeluxPizza().getText(),"Delux Pizza");
-
-
-
-        
-
-
-    }
+        }
 
 }
