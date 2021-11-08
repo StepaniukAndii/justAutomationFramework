@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class TestSignUp extends TestInit {
 
     @Test
-    public void testSignUpFieldValidationScript(){
+    public void testSignUpFieldValidationScript() {
         HomePage homePage = new HomePage(driver);
         SignInPage signInPage = new SignInPage(driver);
         SignUpPage signUpPage = new SignUpPage(driver);

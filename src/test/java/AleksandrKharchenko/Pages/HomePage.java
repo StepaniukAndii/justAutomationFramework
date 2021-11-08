@@ -17,4 +17,12 @@ public class HomePage extends BasePage {
     public WebElement getSignInLink() {
         return driver.findElement(By.xpath("//a[@id='menu-signin']"));
     }
+
+    public WebElement getCityLosAngeles() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Los Angeles, CA')]"));
+    }
+
+    public void closeModal() {
+        driver.findElement(By.xpath("//button[contains(text(),'Got it')]")).click();
+    }
 }
