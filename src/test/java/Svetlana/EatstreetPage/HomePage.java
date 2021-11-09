@@ -34,10 +34,17 @@ public class HomePage extends BasePage {
     public WebElement getFedBtn() {
         return findElement("//a[contains(@class,'btn-action')]");
     }
+    public WebElement getSignIn(){
+        return findElementByXpath("//a[@id='menu-signin']");
+    }
 
     public List<WebElement> getSearchAttempt() {
         return findElementsByXpath("//div[contains(@class,'modal-footer')]/a");
     }
+    public WebElement CheckHomePage(){
+        return findElementByXpath("//a[@id='menu-my-account']");
+    }
+
 
     public void checkPopup() {
         if (getSearchAttempt().size() > 0) {
