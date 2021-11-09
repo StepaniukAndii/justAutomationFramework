@@ -1,6 +1,7 @@
 package KrukIvan.JiraTAF;
 
 import ClasesToAllUs.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestSearchField extends TestInit {
@@ -15,6 +16,6 @@ public class TestSearchField extends TestInit {
         sleep(5);
         homepage.searchField().sendKeys("abdawku \n");
         sleep(3);
-        homepage.bTNLoadMoreRestaurants().click();
+        Assert.assertTrue(homepage.bTNLoadMoreRestaurants().isDisplayed());
     }
 }
