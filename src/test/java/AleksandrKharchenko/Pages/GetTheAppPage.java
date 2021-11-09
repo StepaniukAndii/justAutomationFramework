@@ -29,4 +29,8 @@ public class GetTheAppPage extends BasePage {
     public WebElement getReceiveSmsNotifications() {
         return driver.findElement(By.xpath("//label[@class='checkbox-input']"));
     }
+
+    public WebElement getIPhoneRadioBtn() {
+        return driver.findElement(By.xpath("//div[contains(@class,'svg-app--ios')]"));
+    }
 }
