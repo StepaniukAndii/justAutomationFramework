@@ -55,4 +55,22 @@ public class HomePage extends BasePage {
     public WebElement assertBTNAddress(){
         return findElement("//a[@id='confirm-modal-btn']");
     }
+    public WebElement clickBTNSignInOnHomePage(){
+        return findElement("//a[@id='menu-signin']");
+    }
+    public WebElement clickTextSignUp(){
+        return findElement("//a[@ng-click='signinCtrl.recordCreateAccount()']");
+    }
+    public WebElement enterEmailInSignUp(){
+        return  findElement("//input[@id='email']");
+    }
+    public WebElement enterPasswordInSignUp(){
+        return  findElement("//input[@id='password']");
+    }
+    public WebElement enterPasswordAgain(){
+        return findElement("//input[@id='passwordAgain']");
+    }
+    public WebElement wrongEmailMSG(){
+        return findElement("//div[@id='email-validation-tag']");
+    }
 }
