@@ -37,4 +37,19 @@ public class HomePage extends BasePage {
     public WebElement clickBTNSignInWithFacebook() {
         return driver.findElement(By.xpath("//a[@class='btn btn-facebook btn-facebook__sign-in full-width ng-scope']"));
     }
+    public WebElement writeAddress(){
+        return driver.findElement(By.xpath("//input[@class='enter-address__input input-default border-none ng-valid ng-valid-required']"));
+    }
+    public WebElement searchField(){
+        return driver.findElement(By.xpath("//input[@id='search-autocomplete']"));
+    }
+    public WebElement bTNLoadMoreRestaurants(){
+        return driver.findElement(By.xpath("//button[@class='btn btn--orange']"));
+    }
+    public WebElement bTNEnterAddress(){
+      return  findElement("//a[@id='enter-address-btn']");
+    }
+    public WebElement bTNGetFed(){
+        return findElement("//a[@id='find-restaurants']");
+    }
 }
