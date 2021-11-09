@@ -15,6 +15,7 @@ public class TestErrorMessenger extends TestInit {
         signInPage.closeModal();
         signInPage.getSignInBtn().click();
         sleep(2);
+
         Assert.assertTrue(signInPage.getErrorMSG().isDisplayed());
     }
 }
