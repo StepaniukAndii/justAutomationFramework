@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class TestLoginEatstreet extends TestInit {
     @Test
-    public void TestLogInWithIncorrectCreds(){
+    public void testLogInWithIncorrectCreds(){
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -19,9 +19,18 @@ public class TestLoginEatstreet extends TestInit {
         sleep(5);
 
         Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
+    }
+    @Test
+    public void testEmailField(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("blablabla");
+        singInEatstreetPage.getPasswordField().click();
 
-
-
+        Assert.assertEquals(singInEatstreetPage.enterValidEmailAddressText().getText(),
+                "Please enter a valid email address");
 
     }
 

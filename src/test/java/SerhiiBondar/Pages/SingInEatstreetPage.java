@@ -21,7 +21,9 @@ public class SingInEatstreetPage extends BasePage {
     }
     public WebElement incorrectLogInInformation(){
         return driver.findElement(By.xpath("//span[contains(@class,'alert')]"));
-
+    }
+    public WebElement enterValidEmailAddressText(){
+        return driver.findElement(By.xpath("//span[contains(text(), 'valid')]"));
     }
 
 
