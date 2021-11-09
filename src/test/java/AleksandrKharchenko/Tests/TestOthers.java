@@ -41,4 +41,21 @@ public class TestOthers extends TestInit {
 
         Assert.assertTrue(getTheAppPage.getPopupSmsSent().isDisplayed());
     }
+
+    @Test
+    public void testCheckDownloadAppForIPhoneDevices(){
+        HomePage homePage = new HomePage(driver);
+        GetTheAppPage getTheAppPage = new GetTheAppPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getGetTheAppLink().click();
+        sleep(1);
+        getTheAppPage.getIPhoneRadioBtn().click();
+        getTheAppPage.getMobileNumberField().sendKeys("(302) 689-4251");
+        getTheAppPage.getReceiveSmsNotifications().click();
+        getTheAppPage.getTextAndroidLinkBtn().click();
+        sleep(1);
+
+        Assert.assertTrue(getTheAppPage.getPopupSmsSent().isDisplayed());
+    }
 }
