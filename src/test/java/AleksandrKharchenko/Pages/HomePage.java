@@ -25,4 +25,12 @@ public class HomePage extends BasePage {
     public void closeModal() {
         driver.findElement(By.xpath("//button[contains(text(),'Got it')]")).click();
     }
+
+    public void navigateHomeQa2() {
+        driver.get("https://qa2.eatstreet.com/");
+    }
+
+    public WebElement getMyAccountLink() {
+        return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+    }
 }

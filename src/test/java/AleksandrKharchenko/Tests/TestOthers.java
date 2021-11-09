@@ -20,6 +20,7 @@ public class TestOthers extends TestInit {
         sleep(1);
         cityPage.getCoffeeTeaInLosAngeles().click();
         sleep(1);
+
         Assert.assertTrue(restPage.getRestNearYou().isDisplayed());
     }
 }
