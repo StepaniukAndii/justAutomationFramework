@@ -1,6 +1,7 @@
 package AleksandrKharchenko.Tests;
 
 import AleksandrKharchenko.Pages.CityPage;
+import AleksandrKharchenko.Pages.GetTheAppPage;
 import AleksandrKharchenko.Pages.HomePage;
 import AleksandrKharchenko.Pages.RestPage;
 import ClasesToAllUs.TestInit;
@@ -22,5 +23,22 @@ public class TestOthers extends TestInit {
         sleep(1);
 
         Assert.assertTrue(restPage.getRestNearYou().isDisplayed());
+    }
+
+    @Test
+    public void testCheckDownloadAppForAndroidDevices(){
+        HomePage homePage = new HomePage(driver);
+        GetTheAppPage getTheAppPage = new GetTheAppPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getGetTheAppLink().click();
+        sleep(1);
+        getTheAppPage.getAndroidRadioBtn().click();
+        getTheAppPage.getReceiveSmsNotifications().click();
+        getTheAppPage.getMobileNumberField().sendKeys("(302) 689-1524");
+        getTheAppPage.getTextAndroidLinkBtn().click();
+        sleep(1);
+
+        Assert.assertTrue(getTheAppPage.getPopupSmsSent().isDisplayed());
     }
 }

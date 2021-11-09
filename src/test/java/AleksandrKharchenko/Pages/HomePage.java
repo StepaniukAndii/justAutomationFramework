@@ -33,4 +33,8 @@ public class HomePage extends BasePage {
     public WebElement getMyAccountLink() {
         return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
     }
+
+    public WebElement getGetTheAppLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Get The App')]"));
+    }
 }
