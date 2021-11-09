@@ -156,4 +156,11 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//div[contains(text(), 'EatStreet Bot')]"));
     }
 
+    public WebElement clickContactUs() {
+        return driver.findElement(By.xpath("//a[@ui-sref='contact']"));
+    }
+
+    public WebElement getEmailFromContactUs() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'customer.service@eatstreet.com')]"));
+    }
 }
