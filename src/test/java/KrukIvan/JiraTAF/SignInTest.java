@@ -20,6 +20,7 @@ public class SignInTest extends TestInit {
     @Test
     public void testSignInWithFacebook(){
         HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/signin");
         homePage.clickButtonGotIt().click();
         homePage.clickBTNSignInWithFacebook().click();
     }
