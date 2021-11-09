@@ -52,4 +52,7 @@ public class HomePage extends BasePage {
     public WebElement bTNGetFed(){
         return findElement("//a[@id='find-restaurants']");
     }
+    public WebElement assertBTNAddress(){
+        return findElement("//a[@id='confirm-modal-btn']");
+    }
 }
