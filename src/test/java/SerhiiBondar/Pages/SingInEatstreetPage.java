@@ -25,6 +25,9 @@ public class SingInEatstreetPage extends BasePage {
     public WebElement enterValidEmailAddressText(){
         return driver.findElement(By.xpath("//span[contains(text(), 'valid')]"));
     }
+    public WebElement getSignUpLine(){
+        return driver.findElement(By.xpath("//a[@ng-click='signinCtrl.recordCreateAccount()']"));
+    }
 
 
 

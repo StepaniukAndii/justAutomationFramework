@@ -3,6 +3,7 @@ package SerhiiBondar.Tests;
 import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.SingInEatstreetPage;
+import SerhiiBondar.Pages.SingUpEatstreetPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -31,6 +32,25 @@ public class TestLoginEatstreet extends TestInit {
 
         Assert.assertEquals(singInEatstreetPage.enterValidEmailAddressText().getText(),
                 "Please enter a valid email address");
+
+    }
+    @Test
+    public void testNewUserRegistration(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignUpLine().click();
+        SingUpEatstreetPage singUpEatstreetPage = new SingUpEatstreetPage(driver);
+        singUpEatstreetPage.getSingUpEmailField().sendKeys("serhiibondar2@gmail.com");
+        singUpEatstreetPage.getPasswordForSignUpField().sendKeys("club2021");
+        singUpEatstreetPage.getPasswordAgainField().sendKeys("club2021");
+        singUpEatstreetPage.getSignUpBtn().click();
+        sleep(5);
+
+        Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size()>0);
+
+
 
     }
 
