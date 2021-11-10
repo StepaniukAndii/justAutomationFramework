@@ -163,4 +163,12 @@ public class HomePage extends BasePage {
     public WebElement getEmailFromContactUs() {
         return driver.findElement(By.xpath("//a[contains(text(), 'customer.service@eatstreet.com')]"));
     }
+
+    public WebElement googleAppLink() {
+        return driver.findElement(By.xpath("//a[@class='app-btn-android']"));
+    }
+
+    public WebElement getAppGooglePlay() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'EatStreet')]"));
+    }
 }
