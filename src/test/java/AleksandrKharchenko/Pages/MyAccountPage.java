@@ -37,4 +37,28 @@ public class MyAccountPage extends BasePage {
     public WebElement getHeadingName() {
         return driver.findElement(By.xpath("//h1[contains(text(),'Jack Daniels')]"));
     }
+
+    public WebElement getChangePasswordBtn() {
+        return driver.findElement(By.xpath("//a[@id='change-password']"));
+    }
+
+    public WebElement getCurrentPasswordLink() {
+        return driver.findElement(By.xpath("//input[@id='currentPassword']"));
+    }
+
+    public WebElement getNewPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='newPassword']"));
+    }
+
+    public WebElement getConfirmNewPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='newPasswordConfirm']"));
+    }
+
+    public WebElement getUpdatePasswordBtn() {
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement getSignOutBtn() {
+        return driver.findElement(By.xpath("//a[@id='signout']"));
+    }
 }
