@@ -44,6 +44,9 @@ public class HomePage extends BasePage {
     public WebElement CheckHomePage(){
         return findElementByXpath("//a[@id='menu-my-account']");
     }
+    public WebElement checkWebSite(){
+        return findElementByXpath("//img[@class='logo-alternate']");
+    }
 
 
     public void checkPopup() {
