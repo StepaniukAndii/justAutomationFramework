@@ -24,6 +24,9 @@ public class SignInPage extends BasePage {
     public WebElement pressSignUpLink(){
         return findElementByXpath("//a[contains(@ui-sref,'sign')]");
     }
+    public WebElement checkValidationPassword(){
+        return findElementByXpath("//span[@class='alert text-red ng-scope']");
+    }
 
 
 }
