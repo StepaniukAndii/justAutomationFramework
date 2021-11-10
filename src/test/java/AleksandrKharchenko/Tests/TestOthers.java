@@ -1,9 +1,6 @@
 package AleksandrKharchenko.Tests;
 
-import AleksandrKharchenko.Pages.CityPage;
-import AleksandrKharchenko.Pages.GetTheAppPage;
-import AleksandrKharchenko.Pages.HomePage;
-import AleksandrKharchenko.Pages.RestPage;
+import AleksandrKharchenko.Pages.*;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,7 +23,7 @@ public class TestOthers extends TestInit {
     }
 
     @Test
-    public void testCheckDownloadAppForAndroidDevices(){
+    public void testCheckDownloadAppForAndroidDevices() {
         HomePage homePage = new HomePage(driver);
         GetTheAppPage getTheAppPage = new GetTheAppPage(driver);
         homePage.navigateHomeQa2();
@@ -43,7 +40,7 @@ public class TestOthers extends TestInit {
     }
 
     @Test
-    public void testCheckDownloadAppForIPhoneDevices(){
+    public void testCheckDownloadAppForIPhoneDevices() {
         HomePage homePage = new HomePage(driver);
         GetTheAppPage getTheAppPage = new GetTheAppPage(driver);
         homePage.navigateHomeQa2();
@@ -57,5 +54,24 @@ public class TestOthers extends TestInit {
         sleep(1);
 
         Assert.assertTrue(getTheAppPage.getPopupSmsSent().isDisplayed());
+    }
+
+    @Test
+    public void testThirdRestaurantFromTheLastPage() {
+        HomePage homePage = new HomePage(driver);
+        RestPage restPage = new RestPage(driver);
+        FoodPage foodPage = new FoodPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.getAddressField().sendKeys("Los Angeles");
+        homePage.closeModal();
+        homePage.getFedBtn().click();
+        homePage.checkAndClosePopUpWindow();
+        homePage.getFedBtn().click();
+        sleep(1);
+        restPage.getLastPageRest();
+        restPage.getThirdFromTheEndRest();
+        sleep(1);
+
+        Assert.assertTrue(foodPage.getAddAnyFood().isDisplayed());
     }
 }
