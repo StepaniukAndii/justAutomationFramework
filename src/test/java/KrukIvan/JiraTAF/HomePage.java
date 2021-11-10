@@ -91,4 +91,10 @@ public class HomePage extends BasePage {
     public List <WebElement> clickAdditionalInformationABTSize(){
         return findElementsByXpath("//option[@value='8377587']");
     }
+    public WebElement clickOnMainPageOnDetroitCity(){
+        return findElement("//a[@href='/detroit-mi/home']");
+    }
+    public WebElement getInformationAboutDetroitRestaurants(){
+        return findElement("//h1[contains(text(),'Order Food Delivery & Takeout in Detroit, MI')]");
+    }
 }
