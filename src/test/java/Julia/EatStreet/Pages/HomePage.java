@@ -144,8 +144,16 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'Apply Now')]"));
     }
 
+    public WebElement applyCity() {
+        return driver.findElement(By.xpath("//option[contains(text(), 'Apply in Your City')]"));
+    }
+
     public WebElement fieldApplyInYourCity() {
         return driver.findElement(By.xpath("//option[contains(text(), 'Madison, WI.')]"));
+    }
+
+    public WebElement getDeliveryDriver() {
+        return driver.findElement(By.xpath("//span[contains(text(), 'Delivery Driver - Madison, WI.')]"));
     }
 
     public WebElement btnGetHelp() {
@@ -171,4 +179,7 @@ public class HomePage extends BasePage {
     public WebElement getAppGooglePlay() {
         return driver.findElement(By.xpath("//a[contains(text(), 'EatStreet')]"));
     }
+
+
+
 }

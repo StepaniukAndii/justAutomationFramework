@@ -52,4 +52,6 @@ public abstract class BasePage implements Expectations {
     public List<WebElement> findElementsByXpath(String locator) {
         return waitVisibilityOfAllElementsLocatedBy(locator);
     }
+
+
 }
