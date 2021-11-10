@@ -61,4 +61,16 @@ public class MyAccountPage extends BasePage {
     public WebElement getSignOutBtn() {
         return driver.findElement(By.xpath("//a[@id='signout']"));
     }
+
+    public WebElement getDeactivateAccountBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Deactivate Account')]"));
+    }
+
+    public WebElement getAccountDeactivationYesBtn() {
+        return driver.findElement(By.xpath("//a[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement getInfoAboutDeactivation() {
+        return driver.findElement(By.xpath("//div[contains(text(),'has been deactivated.')]"));
+    }
 }
