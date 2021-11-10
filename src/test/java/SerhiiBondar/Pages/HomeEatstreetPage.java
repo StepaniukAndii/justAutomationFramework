@@ -19,4 +19,8 @@ public class HomeEatstreetPage extends BasePage {
     public List<WebElement> getMyAccountBtn(){
         return driver.findElements(By.xpath("//a[@id='menu-my-account']"));
     }
+    public WebElement myAccountBtn(){
+        return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+    }
+
 }
