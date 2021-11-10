@@ -77,11 +77,19 @@ public class TestLoginEatstreet extends TestInit {
         sleep(3);
 
         Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
+    }
+    @Test
+    public void testNegativSignUP(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignUpLine().click();
+        SingUpEatstreetPage singUpEatstreetPage = new SingUpEatstreetPage(driver);
+        singUpEatstreetPage.getSingUpEmailField().sendKeys("blablabla");
+        singUpEatstreetPage.getPasswordForSignUpField().click();
 
-
-
-
-
+        Assert.assertTrue(singUpEatstreetPage.wrongEnteredEmail().isDisplayed());
 
     }
 
