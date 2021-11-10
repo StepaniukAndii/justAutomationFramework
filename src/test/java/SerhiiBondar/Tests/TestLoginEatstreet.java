@@ -2,6 +2,7 @@ package SerhiiBondar.Tests;
 
 import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
+import SerhiiBondar.Pages.MyAccountPageEatstreet;
 import SerhiiBondar.Pages.SingInEatstreetPage;
 import SerhiiBondar.Pages.SingUpEatstreetPage;
 import org.testng.Assert;
@@ -49,8 +50,46 @@ public class TestLoginEatstreet extends TestInit {
         sleep(5);
 
         Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size()>0);
+    }
+    @Test
+    public void  testAccountDeactivation(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignUpLine().click();
+        SingUpEatstreetPage singUpEatstreetPage = new SingUpEatstreetPage(driver);
+        singUpEatstreetPage.getSingUpEmailField().sendKeys("serhiibondar2@gmail.com");
+        singUpEatstreetPage.getPasswordForSignUpField().sendKeys("club2021");
+        singUpEatstreetPage.getPasswordAgainField().sendKeys("club2021");
+        singUpEatstreetPage.getSignUpBtn().click();
+        sleep(5);
+        homeEatstreetPage.myAccountBtn().click();
+        MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
+        myAccountPageEatstreet.getDeactivateAccountBtn().click();
+        myAccountPageEatstreet.getDeactivationAccountBtnYes().click();
+        sleep(1);
+        myAccountPageEatstreet.getOkayBtn().click();
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(3);
 
+        Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
+    }
+    @Test
+    public void testNegativSignUP(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignUpLine().click();
+        SingUpEatstreetPage singUpEatstreetPage = new SingUpEatstreetPage(driver);
+        singUpEatstreetPage.getSingUpEmailField().sendKeys("blablabla");
+        singUpEatstreetPage.getPasswordForSignUpField().click();
 
+        Assert.assertTrue(singUpEatstreetPage.wrongEnteredEmail().isDisplayed());
 
     }
 

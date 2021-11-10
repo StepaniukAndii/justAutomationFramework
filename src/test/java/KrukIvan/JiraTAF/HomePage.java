@@ -73,4 +73,22 @@ public class HomePage extends BasePage {
     public WebElement wrongEmailMSG(){
         return findElement("//div[@id='email-validation-tag']");
     }
+    public List <WebElement> getRestaurant(){
+        return findElementsByXpath("//li[@class='li li--rest-list border-bottom-last-1 ng-scope ng-isolate-scope']");
+    }
+    public List <WebElement> getFoodInRestaurant(){
+        return findElementsByXpath("//div[@class='is-clickable product-container']");
+    }
+    public WebElement addToCart(){
+        return findElement("//a[@id='confirm-options']");
+    }
+    public List<WebElement> clickAdditionalInformation(){
+        return findElementsByXpath("//div[@class='options-radio-buttons-items radio ng-scope']");
+    }
+    public WebElement bTNCheckout(){
+        return findElement("//a[@id='click-checkout']");
+    }
+    public List <WebElement> clickAdditionalInformationABTSize(){
+        return findElementsByXpath("//option[@value='8377587']");
+    }
 }

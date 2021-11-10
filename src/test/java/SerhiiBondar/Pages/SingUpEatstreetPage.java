@@ -10,6 +10,7 @@ public class SingUpEatstreetPage extends BasePage {
     public SingUpEatstreetPage(WebDriver driver) {
         super(driver);
     }
+
     public WebElement getSingUpEmailField(){
         return driver.findElement(By.xpath("//input[@id='email']"));
     }
@@ -22,4 +23,8 @@ public class SingUpEatstreetPage extends BasePage {
     public WebElement getSignUpBtn(){
         return driver.findElement(By.xpath("//button[@id='signup']"));
     }
+    public WebElement wrongEnteredEmail(){
+        return driver.findElement(By.xpath("//div[@id='email-validation-tag']"));
+    }
+
 }
