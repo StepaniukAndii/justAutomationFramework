@@ -12,7 +12,7 @@ public class MedisonTests extends TestInit {
         driver.get("https://eatstreet.com");
         HomePage homePage=new HomePage(driver);
         homePage.getAddressInput().sendKeys("Medison");
-        homePage.getPressFedBtn().click();
+        homePage.getPressFedBtn().click();пш
         Assert.assertTrue(homePage.getH1().getText().contains("Medison"));
     }
     @Test
