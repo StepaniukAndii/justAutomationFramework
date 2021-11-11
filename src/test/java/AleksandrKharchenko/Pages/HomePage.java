@@ -65,4 +65,8 @@ public class HomePage extends BasePage {
     public WebElement getAboutUsLink() {
         return driver.findElement(By.xpath("//a[@ui-sref='about-us']"));
     }
+
+    public WebElement getCareersLink() {
+        return driver.findElement(By.xpath("//a[@ui-sref='careers']"));
+    }
 }
