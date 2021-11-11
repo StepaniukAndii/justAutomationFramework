@@ -57,4 +57,8 @@ public class HomePage extends BasePage {
             getSearchAttempt().get(1).click();
         }
     }
+
+    public WebElement getApplyNowLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Apply Now')]"));
+    }
 }
