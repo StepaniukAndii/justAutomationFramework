@@ -33,4 +33,18 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(aboutUsPage.getTextLeadership().isDisplayed());
     }
+
+    @Test
+    public void testCheckLinkInTheNews(){
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getInTheNewsBtn().click();
+        aboutUsPage.getInTheNewsShowMoreBtn().click();
+
+        Assert.assertTrue(aboutUsPage.getTextInNewsBtn().isDisplayed());
+    }
 }
