@@ -5,7 +5,6 @@ import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.MyAccountPageEatstreet;
 import SerhiiBondar.Pages.SingInEatstreetPage;
 import SerhiiBondar.Pages.SingUpEatstreetPage;
-import io.cucumber.java.bs.A;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -82,13 +81,41 @@ public class TestMyAccountEatstreet extends TestInit {
         MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
         sleep(3);
         myAccountPageEatstreet.getAddAddressBtn().click();
-        myAccountPageEatstreet.getStreetAddressField().sendKeys("25 Mill Rd");
+        myAccountPageEatstreet.getStreetAddressField().sendKeys("25 Emery Mill Drive");
         myAccountPageEatstreet.getCityField().sendKeys("Tampa");
         myAccountPageEatstreet.getStateField().sendKeys("Florida");
         myAccountPageEatstreet.getZipField().sendKeys("33620");
         myAccountPageEatstreet.getSaveBtn().click();
 
         Assert.assertEquals(myAccountPageEatstreet.getCityAndStateString().getText(),"Tampa, FL");
+    }
+    @Test
+    public void testChangeAddress(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2022");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(5);
+        homeEatstreetPage.myAccountBtn().click();
+        sleep(2);
+        MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
+        myAccountPageEatstreet.getEditAddressBtn().click();
+        myAccountPageEatstreet.getStreetAddressField().clear();
+        myAccountPageEatstreet.getCityField().clear();
+        myAccountPageEatstreet.getStateField().clear();
+        myAccountPageEatstreet.getZipField().clear();
+        myAccountPageEatstreet.getStreetAddressField().sendKeys("3 Terry Mill Rd SE");
+        myAccountPageEatstreet.getCityField().sendKeys("Atlanta");
+        myAccountPageEatstreet.getStateField().sendKeys("Georgia");
+        myAccountPageEatstreet.getZipField().sendKeys("30317");
+        myAccountPageEatstreet.getSaveBtn().click();
+
+        Assert.assertEquals(myAccountPageEatstreet.getCityAndStateString().getText(),"Atlanta, GA");
+        Assert.assertEquals(myAccountPageEatstreet.getFullStreetAddressString().getText(),"3 Terry Mill Rd SE");
     }
 
 }
