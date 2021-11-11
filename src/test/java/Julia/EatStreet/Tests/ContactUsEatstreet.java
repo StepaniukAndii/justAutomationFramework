@@ -13,7 +13,7 @@ public class ContactUsEatstreet  extends TestInit {
         openUrl("https://qa2.eatstreet.com/");
         homePage.checkAndClousePopUpWindow();
         homePage.clickContactUs().click();
-        Assert.assertEquals(homePage.getEmailFromContactUs().getText(),"customer.service@eatstreet.com");
+        Assert.assertTrue(homePage.getEmailFromContactUs().isDisplayed());
 
     }
 }
