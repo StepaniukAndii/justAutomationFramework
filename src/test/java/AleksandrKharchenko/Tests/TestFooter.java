@@ -20,4 +20,17 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(aboutUsPage.getTextAboutUs().isDisplayed());
     }
+
+    @Test
+    public void testCheckLinkLeadership(){
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getLeadershipBtn().click();
+
+        Assert.assertTrue(aboutUsPage.getTextLeadership().isDisplayed());
+    }
 }
