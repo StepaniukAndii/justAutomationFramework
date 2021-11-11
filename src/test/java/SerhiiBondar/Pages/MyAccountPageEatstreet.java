@@ -144,11 +144,9 @@ public class MyAccountPageEatstreet extends BasePage {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
 
     }
+    public WebElement getStreetAddressString(){
+        return driver.findElement(By.xpath("//span[@id='address-display']"));
 
-
-
-
-
-
+    }
 
 }

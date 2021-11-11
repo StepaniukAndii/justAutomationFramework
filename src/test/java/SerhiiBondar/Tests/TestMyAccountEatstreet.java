@@ -86,8 +86,10 @@ public class TestMyAccountEatstreet extends TestInit {
         myAccountPageEatstreet.getStateField().sendKeys("Florida");
         myAccountPageEatstreet.getZipField().sendKeys("33620");
         myAccountPageEatstreet.getSaveBtn().click();
+        sleep(2);
 
         Assert.assertEquals(myAccountPageEatstreet.getCityAndStateString().getText(),"Tampa, FL");
+        Assert.assertEquals(myAccountPageEatstreet.getStreetAddressString().getText(),"25 Emery Mill Drive");
     }
     @Test
     public void testChangeAddress(){
@@ -101,7 +103,7 @@ public class TestMyAccountEatstreet extends TestInit {
         singInEatstreetPage.getSignInBtn().click();
         sleep(5);
         homeEatstreetPage.myAccountBtn().click();
-        sleep(2);
+        sleep(3);
         MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
         myAccountPageEatstreet.getEditAddressBtn().click();
         myAccountPageEatstreet.getStreetAddressField().clear();
@@ -113,12 +115,13 @@ public class TestMyAccountEatstreet extends TestInit {
         myAccountPageEatstreet.getStateField().sendKeys("Georgia");
         myAccountPageEatstreet.getZipField().sendKeys("30317");
         myAccountPageEatstreet.getSaveBtn().click();
+        sleep(1);
 
         Assert.assertEquals(myAccountPageEatstreet.getCityAndStateString().getText(),"Atlanta, GA");
         Assert.assertEquals(myAccountPageEatstreet.getFullStreetAddressString().getText(),"3 Terry Mill Rd SE");
     }
     @Test
-    public void testAddCard(){
+    public void testAddWrongCard(){
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
