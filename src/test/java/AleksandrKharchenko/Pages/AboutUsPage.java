@@ -37,4 +37,12 @@ public class AboutUsPage extends BasePage {
     public WebElement getTextInNewsBtn() {
         return driver.findElement(By.xpath("//button[contains(text(),'Show Less')]"));
     }
+
+    public WebElement getPressReleasesBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(),'Press Releases')]"));
+    }
+
+    public WebElement getShowMoreBtnPressReleases(){
+        return driver.findElements(By.xpath("//button[contains(text(),'Show More')]")).get(1);
+    }
 }
