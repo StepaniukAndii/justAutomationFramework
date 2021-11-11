@@ -5,6 +5,7 @@ import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.MyAccountPageEatstreet;
 import SerhiiBondar.Pages.SingInEatstreetPage;
 import SerhiiBondar.Pages.SingUpEatstreetPage;
+import io.cucumber.java.bs.A;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -41,6 +42,30 @@ public class TestMyAccountEatstreet extends TestInit {
         sleep(5);
 
         Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size()>0);
-
     }
+    @Test
+    public void testEditYourInfo(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2022");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(5);
+        homeEatstreetPage.myAccountBtn().click();
+        MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
+        sleep(3);
+        myAccountPageEatstreet.getEditInfoBtn().click();
+        myAccountPageEatstreet.getFirstNameField().clear();
+        myAccountPageEatstreet.getLastNameField().clear();
+        myAccountPageEatstreet.getPhoneNumberField().clear();
+        myAccountPageEatstreet.getFirstNameField().sendKeys("John");
+        myAccountPageEatstreet.getLastNameField().sendKeys("Smith");
+        myAccountPageEatstreet.getPhoneNumberField().sendKeys("+380674099999");
+        myAccountPageEatstreet.getSaveBtn().click();
+
+        Assert.assertEquals(myAccountPageEatstreet.getUserNameDisplayed().getText(),"John Smith");
+    }
+
 }

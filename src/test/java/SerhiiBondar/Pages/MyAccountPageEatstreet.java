@@ -48,8 +48,28 @@ public class MyAccountPageEatstreet extends BasePage {
         return driver.findElement(By.xpath("//a[@id='signout']"));
 
     }
+    public WebElement getEditInfoBtn(){
+        return driver.findElement(By.xpath("//a[@id='edit-info']"));
 
+    }
+    public WebElement getFirstNameField(){
+        return driver.findElement(By.xpath("//input[@name='firstName']"));
 
+    }
+    public WebElement getLastNameField(){
+        return driver.findElement(By.xpath("//input[@name='lastName']"));
 
+    }
+    public WebElement getPhoneNumberField(){
+        return driver.findElement(By.xpath("//input[@name='phoneNumber']"));
 
+    }
+    public WebElement getSaveBtn(){
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+
+    }
+    public WebElement getUserNameDisplayed(){
+        return driver.findElement(By.xpath("//h1[@id='user-name-displayed']"));
+
+    }
 }
