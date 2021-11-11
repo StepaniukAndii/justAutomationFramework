@@ -1,6 +1,7 @@
 package AleksandrKharchenko.Tests;
 
 import AleksandrKharchenko.Pages.AboutUsPage;
+import AleksandrKharchenko.Pages.CareersPage;
 import AleksandrKharchenko.Pages.HomePage;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -73,5 +74,19 @@ public class TestFooter extends TestInit {
         aboutUsPage.getConnectBtn().click();
 
         Assert.assertTrue(aboutUsPage.getTextConnect().isDisplayed());
+    }
+
+    @Test
+    public void testCheckLinkLearnMore() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getLinkLearnMore().click();
+        sleep(1);
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/about-us"));
     }
 }
