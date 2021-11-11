@@ -16,6 +16,10 @@ public class AllRestsPage extends BasePage {
         public WebElement getTacoRoyale(){
             return findElementByXpath("//a[contains(text(),'Taco Royale - Wausau')]");
         }
+        public WebElement getRoyalDeli (){
+            return findElementByXpath("//a[contains(text(),'Royal Deli')]");
+        }
+
 
 
     }
