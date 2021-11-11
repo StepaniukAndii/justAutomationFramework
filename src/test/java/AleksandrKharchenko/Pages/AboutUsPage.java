@@ -25,4 +25,16 @@ public class AboutUsPage extends BasePage {
     public WebElement getTextLeadership() {
         return driver.findElement(By.xpath("//h4[contains(text(),'Matt Howard')]"));
     }
+
+    public WebElement getInTheNewsBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(),'In the news')]"));
+    }
+
+    public WebElement getInTheNewsShowMoreBtn() {
+        return driver.findElement(By.xpath("//button[contains(@class,'visible_focus')]"));
+    }
+
+    public WebElement getTextInNewsBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(),'Show Less')]"));
+    }
 }
