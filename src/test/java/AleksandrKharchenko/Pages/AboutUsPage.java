@@ -42,7 +42,15 @@ public class AboutUsPage extends BasePage {
         return driver.findElement(By.xpath("//button[contains(text(),'Press Releases')]"));
     }
 
-    public WebElement getShowMoreBtnPressReleases(){
+    public WebElement getShowMoreBtnPressReleases() {
         return driver.findElements(By.xpath("//button[contains(text(),'Show More')]")).get(1);
+    }
+
+    public WebElement getConnectBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(),'Connect')]"));
+    }
+
+    public WebElement getTextConnect() {
+        return driver.findElement(By.xpath("//h2[contains(text(),'Connect')]"));
     }
 }
