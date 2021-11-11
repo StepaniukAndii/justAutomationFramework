@@ -41,7 +41,7 @@ public class CartNegTestCuponIsIncorrect extends TestInit {
         menuPage.selectMenuList().get(0).click();
         menuPage.selectADishRoyalDaly().get(0).click();
         CartPage cartPage = new CartPage(driver);
-        cartPage.pressAddToCartRoyalDaly().click();
+        cartPage.pressAddToCart().click();
         Assert.assertTrue(cartPage.checkValidationOrderDetails().isDisplayed());
 
     }
