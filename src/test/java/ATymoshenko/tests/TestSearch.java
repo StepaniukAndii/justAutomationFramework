@@ -13,7 +13,6 @@ public class TestSearch extends TestInit {
         openUrl("https://eatstreet.com/");
         homePage.enterYourAddressField().sendKeys("NY");
         homePage.getGoItBtn().click();
-        sleep(1);
         homePage.closeModalIfExist();
         homePage.getGetFedBtn().click();
         sleep(5);

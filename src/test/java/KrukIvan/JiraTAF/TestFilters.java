@@ -1,6 +1,7 @@
 package KrukIvan.JiraTAF;
 
 import ClasesToAllUs.TestInit;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,12 +17,22 @@ public class TestFilters extends TestInit {
         homePage.addFilters().get(1).click();
         homePage.addFilters().get(2).click();
         homePage.addFilters().get(3).click();
-        sleep(3);
-        int actualResult = homePage.getList().size() + 1;
+        wailTillElementsAppear("//ul[contains(@class, 'filters-section_checkoxes')]//input[contains(@class, 'ng-not-empty')]", 30, 3);
+        int actualResult = homePage.getList().size();
         int actualResultFiltersAreVisible = homePage.filtersAreVisible().size();
-
         Assert.assertEquals(actualResult,3);
         Assert.assertEquals(actualResultFiltersAreVisible,3);
         Assert.assertEquals(actualResult, actualResultFiltersAreVisible);
+    }
+
+    private void wailTillElementsAppear(String locator, int secondsToWait, int elementsNumToWait) {
+        for (int i = 0; i < 50; i++) {
+            if (driver.findElements(By.xpath(locator))
+                    .size() >= elementsNumToWait){
+                break;
+            }else {
+                sleep(1);
+            }
+        }
     }
 }

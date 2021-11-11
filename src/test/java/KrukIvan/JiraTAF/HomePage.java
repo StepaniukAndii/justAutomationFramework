@@ -105,6 +105,6 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getList() {
-        return findElementsByXpath("//input[contains(@class,'not-visible ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched')]");
+        return findElementsByXpath("//ul[contains(@class, 'filters-section_checkoxes')]//input[contains(@class, 'ng-not-empty')]");
     }
 }

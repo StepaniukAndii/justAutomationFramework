@@ -9,7 +9,7 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
-    public WebElement addSignInBtn(){
+    public WebElement addSignInBtnOnHeader() {
         return driver.findElement(By.xpath("//a[@id='menu-signin']"));
     }
 
@@ -43,5 +43,33 @@ public class HomePage extends BasePage {
 
     public WebElement getGetFedBtn() {
         return driver.findElement(By.xpath("//a[contains(text(),'Get Fed')]"));
+    }
+
+    public WebElement addSignUpLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Sign Up')]"));
+    }
+
+    public WebElement addEmailField() {
+        return driver.findElement(By.xpath("//input[@id='email']"));
+    }
+
+    public WebElement addPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='password']"));
+    }
+
+    public WebElement addPasswordAgainField() {
+        return driver.findElement(By.xpath("//input[@id='passwordAgain']"));
+    }
+
+    public WebElement addSignUpBtn() {
+        return driver.findElement(By.xpath("//button[@id='signup']"));
+    }
+
+    public WebElement myAccountIcon() {
+        return driver.findElement(By.xpath("//a[contains(text(),'My Account')]"));
+    }
+
+    public WebElement addSignUpBtnOnPopUpWindow() {
+        return driver.findElement(By.xpath("//button[@id='signin']"));
     }
 }

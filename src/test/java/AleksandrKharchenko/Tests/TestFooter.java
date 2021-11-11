@@ -1,6 +1,7 @@
 package AleksandrKharchenko.Tests;
 
 import AleksandrKharchenko.Pages.AboutUsPage;
+import AleksandrKharchenko.Pages.CareersPage;
 import AleksandrKharchenko.Pages.HomePage;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 public class TestFooter extends TestInit {
 
     @Test
-    public void testCheckLinkAboutUs(){
+    public void testCheckLinkAboutUs() {
         HomePage homePage = new HomePage(driver);
         AboutUsPage aboutUsPage = new AboutUsPage(driver);
         homePage.navigateHomeQa2();
@@ -22,7 +23,7 @@ public class TestFooter extends TestInit {
     }
 
     @Test
-    public void testCheckLinkLeadership(){
+    public void testCheckLinkLeadership() {
         HomePage homePage = new HomePage(driver);
         AboutUsPage aboutUsPage = new AboutUsPage(driver);
         homePage.navigateHomeQa2();
@@ -35,7 +36,7 @@ public class TestFooter extends TestInit {
     }
 
     @Test
-    public void testCheckLinkInTheNews(){
+    public void testCheckLinkInTheNews() {
         HomePage homePage = new HomePage(driver);
         AboutUsPage aboutUsPage = new AboutUsPage(driver);
         homePage.navigateHomeQa2();
@@ -46,5 +47,46 @@ public class TestFooter extends TestInit {
         aboutUsPage.getInTheNewsShowMoreBtn().click();
 
         Assert.assertTrue(aboutUsPage.getTextInNewsBtn().isDisplayed());
+    }
+
+    @Test
+    public void testCheckLinkPressReleases() {
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getPressReleasesBtn().click();
+        aboutUsPage.getShowMoreBtnPressReleases().click();
+
+        Assert.assertTrue(aboutUsPage.getTextInNewsBtn().isDisplayed());
+    }
+
+    @Test
+    public void testCheckLinkConnect() {
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getConnectBtn().click();
+
+        Assert.assertTrue(aboutUsPage.getTextConnect().isDisplayed());
+    }
+
+    @Test
+    public void testCheckLinkLearnMore() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getLinkLearnMore().click();
+        sleep(1);
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/about-us"));
     }
 }
