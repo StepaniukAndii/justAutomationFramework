@@ -7,11 +7,9 @@ public class CartPage extends BasePage {
     public CartPage(WebDriver driver) {
         super(driver);
     }
-
     public WebElement pressAddToCart() {
-        return findElement("//span[contains(text(), 'Add to Cart')]");
+        return findElement("//div[@class='widget-footer']//a[@class='btn btn--orange float-right']");
     }
-
     public WebElement clickChekout() {
         return findElement("//a[@id='click-checkout']");
     }
@@ -19,9 +17,7 @@ public class CartPage extends BasePage {
     public WebElement checkValidationOrderDetails() {
         return findElement("//div[@class='widget-header widget-header--checkout']");
     }
-
-    public WebElement pressAddToCartRoyalDaly() {
-        return findElement("//div[@class='widget-footer']//a[@class='btn btn--orange float-right']");
-
+    public WebElement checkCart (){
+        return findElementByXpath("//span[@class='navbar__cart-count ng-binding ng-scope']");
     }
 }

@@ -23,4 +23,7 @@ public class MenuPage extends BasePage {
      public WebElement checkVegetarianBtn(){
          return findElementByXpath("//span[@class='active_filter ng-binding ng-scope']");
      }
+     public List<WebElement> selectDishAllAboutIndianFood(){
+         return findElementsByXpath("//span[@class='restaurant-description ng-binding']");
+     }
 }
