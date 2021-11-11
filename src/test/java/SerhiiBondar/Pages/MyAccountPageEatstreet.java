@@ -148,5 +148,10 @@ public class MyAccountPageEatstreet extends BasePage {
         return driver.findElement(By.xpath("//span[@id='address-display']"));
 
     }
+    public WebElement getExpDateErrorModalWindow(){
+        return driver.findElement(By.xpath("//div[contains(text(),'credit card is expired')]"));
+
+    }
+
 
 }
