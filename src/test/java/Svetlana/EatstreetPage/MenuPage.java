@@ -17,4 +17,7 @@ public class MenuPage extends BasePage {
      public List<WebElement> selectADishRoyalDaly(){
          return findElementsByXpath("//div[@class='is-clickable product-container']");
      }
+     public WebElement checkMenubtn(){
+         return findElementByXpath("//label[@for='menu']");
+     }
 }
