@@ -1,5 +1,4 @@
 package Julia.EatStreet.Pages;
-
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
@@ -10,6 +9,7 @@ import javax.swing.*;
 import java.util.List;
 
 public class HomePage extends BasePage {
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -190,6 +190,6 @@ public class HomePage extends BasePage {
 
 
     public WebElement enterYourName() {
-        return driver.findElement(By.xpath(""))
+        return driver.findElement(By.xpath(""));
     }
 }
