@@ -12,15 +12,23 @@ public class HomeEatstreetPage extends BasePage {
 
     public HomeEatstreetPage(WebDriver driver) {
         super(driver);
+
     }
     public WebElement getSignInBtn(){
         return driver.findElement(By.xpath("//a[@id='menu-signin']"));
+
     }
     public List<WebElement> getMyAccountBtn(){
         return driver.findElements(By.xpath("//a[@id='menu-my-account']"));
+
     }
     public WebElement myAccountBtn(){
         return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+
+    }
+    public WebElement getGoItBtn(){
+        return  driver.findElement(By.xpath("//button[@class='btn']"));
+
     }
 
 }

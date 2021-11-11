@@ -67,5 +67,28 @@ public class TestMyAccountEatstreet extends TestInit {
 
         Assert.assertEquals(myAccountPageEatstreet.getUserNameDisplayed().getText(),"John Smith");
     }
+    @Test
+    public void testAddAddress(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2022");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(5);
+        homeEatstreetPage.myAccountBtn().click();
+        MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
+        sleep(3);
+        myAccountPageEatstreet.getAddAddressBtn().click();
+        myAccountPageEatstreet.getStreetAddressField().sendKeys("25 Mill Rd");
+        myAccountPageEatstreet.getCityField().sendKeys("Tampa");
+        myAccountPageEatstreet.getStateField().sendKeys("Florida");
+        myAccountPageEatstreet.getZipField().sendKeys("33620");
+        myAccountPageEatstreet.getSaveBtn().click();
+
+        Assert.assertEquals(myAccountPageEatstreet.getCityAndStateString().getText(),"Tampa, FL");
+    }
 
 }
