@@ -61,4 +61,8 @@ public class HomePage extends BasePage {
     public WebElement getApplyNowLink() {
         return driver.findElement(By.xpath("//a[contains(text(),'Apply Now')]"));
     }
+
+    public WebElement getAboutUsLink() {
+        return driver.findElement(By.xpath("//a[@ui-sref='about-us']"));
+    }
 }
