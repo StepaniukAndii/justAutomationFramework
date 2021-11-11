@@ -74,4 +74,18 @@ public class TestOthers extends TestInit {
 
         Assert.assertTrue(foodPage.getAddAnyFood().isDisplayed());
     }
+
+    @Test
+    public void testDeliveryDriverMadisonFieldValidationScript() {
+        HomePage homePage = new HomePage(driver);
+        DriverPage driverPage = new DriverPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getApplyNowLink().click();
+        sleep(1);
+        driverPage.getApplyInYourCityBtn().click();
+        driverPage.getMadisonInCity().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/careers/delivery-driver-madison"));
+    }
 }

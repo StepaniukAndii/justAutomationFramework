@@ -28,6 +28,18 @@ public class SingInEatstreetPage extends BasePage {
     public WebElement getSignUpLine(){
         return driver.findElement(By.xpath("//a[@ng-click='signinCtrl.recordCreateAccount()']"));
     }
+    public WebElement getResetPassword(){
+        return driver.findElement(By.xpath("//span[@id='forgot-password']"));
+    }
+    public WebElement getEmailResetPassword(){
+        return driver.findElement(By.xpath("//div[@class='modal-content']//input[@name='email']"));
+    }
+    public WebElement getResetPasswordBtn(){
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+    public WebElement getTextOnModalResetPasswordWindow(){
+        return driver.findElement(By.xpath("//div[contains(text(), 'have been sent')]"));
+    }
 
 
 

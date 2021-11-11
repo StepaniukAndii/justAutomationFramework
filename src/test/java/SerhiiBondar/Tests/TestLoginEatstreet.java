@@ -92,5 +92,24 @@ public class TestLoginEatstreet extends TestInit {
         Assert.assertTrue(singUpEatstreetPage.wrongEnteredEmail().isDisplayed());
 
     }
+    @Test
+    public void testResetPassword(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("1234567");
+        singInEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getResetPassword().click();
+        sleep(3);
+        singInEatstreetPage.getEmailResetPassword().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getResetPasswordBtn().click();
+        sleep(2);
+
+        Assert.assertEquals(singInEatstreetPage.getTextOnModalResetPasswordWindow().getText(),
+                "Instructions have been sent to your email address.");
+
+    }
 
 }
