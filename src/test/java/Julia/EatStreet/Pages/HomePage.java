@@ -190,6 +190,6 @@ public class HomePage extends BasePage {
 
 
     public WebElement enterYourName() {
-        return driver.findElement(By.xpath(""))
+        return driver.findElement(By.xpath(""));
     }
 }
