@@ -22,6 +22,6 @@ public class SelectTheLastPageAndLastRest extends TestInit {
         allRestsPage.getAllPageRests().get(allRestsPage.getAllPageRests().size()-1).click();
         allRestsPage.getAllRests().get(allRestsPage.getAllRests().size()-1).click();
         MenuPage menuPage=new MenuPage(driver);
-        Assert.assertTrue(menuPage.checkMenubtn().isDisplayed();
+        Assert.assertTrue(menuPage.checkMenubtn().isDisplayed());
     }
 }
