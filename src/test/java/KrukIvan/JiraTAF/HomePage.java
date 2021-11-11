@@ -95,6 +95,16 @@ public class HomePage extends BasePage {
         return findElement("//a[@href='/detroit-mi/home']");
     }
     public WebElement getInformationAboutDetroitRestaurants(){
-        return findElement("//h1[contains(text(),'Order Food Delivery & Takeout in Detroit, MI')]");
+        return findElementByXpath("//h1[contains(text(),'Order Food Delivery & Takeout in Detroit, MI')]");
+    }
+    public List<WebElement> addFilters(){
+        return findElementsByXpath("//div[@class='checkbox checkbox_blue']");
+    }
+    public List<WebElement> filtersAreVisible(){
+        return findElementsByXpath("//span[@class='active_filter ng-binding ng-scope']");
+    }
+
+    public List<WebElement> getList() {
+        return findElementsByXpath("//input[contains(@class,'not-visible ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched')]");
     }
 }
