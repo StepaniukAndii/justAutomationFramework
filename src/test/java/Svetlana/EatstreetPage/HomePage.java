@@ -44,6 +44,12 @@ public class HomePage extends BasePage {
     public WebElement CheckHomePage(){
         return findElementByXpath("//a[@id='menu-my-account']");
     }
+    public WebElement checkWebSite(){
+        return findElementByXpath("//img[@class='logo-alternate']");
+    }
+    public WebElement pressRestBtn(){
+        return findElementByXpath("//a[contains(text(),'Wausau')]");
+    }
 
 
     public void checkPopup() {

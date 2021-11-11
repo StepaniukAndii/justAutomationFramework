@@ -13,6 +13,9 @@ public class AllRestsPage extends BasePage {
         public List<WebElement> getAllRests() {
             return findElementsByXpath("//li[@ng-repeat='restaurant in $page']");
         }
+        public WebElement getTacoRoyale(){
+            return findElementByXpath("//a[contains(text(),'Taco Royale - Wausau')]");
+        }
 
 
     }
