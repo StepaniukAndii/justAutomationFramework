@@ -20,6 +20,9 @@ public class AllRestsPage extends BasePage {
         public WebElement pressLoadMoreBtn(){
             return findElementByXpath("//button[@class='btn btn--orange']");
         }
+        public List<WebElement> selectCategoryVegetarian(){
+            return findElementsByXpath("//label[@for='filter-cuisine-Vegetarian']");
+        }
 
 
 
