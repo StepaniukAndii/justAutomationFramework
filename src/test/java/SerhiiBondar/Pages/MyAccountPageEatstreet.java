@@ -72,4 +72,30 @@ public class MyAccountPageEatstreet extends BasePage {
         return driver.findElement(By.xpath("//h1[@id='user-name-displayed']"));
 
     }
+    public WebElement getAddAddressBtn(){
+        return driver.findElement(By.xpath("//a[@id='add-new-address']"));
+
+    }
+    public WebElement getStreetAddressField(){
+        return driver.findElement(By.xpath("//input[@id='streetAddress']"));
+
+    }
+    public WebElement getCityField(){
+        return driver.findElement(By.xpath("//input[@id='city']"));
+
+    }
+    public WebElement getStateField(){
+        return driver.findElement(By.xpath("//input[@id='state']"));
+
+    }
+    public WebElement getZipField(){
+        return driver.findElement(By.xpath("//input[@id='zip']"));
+
+    }
+    public WebElement getCityAndStateString(){
+        return  driver.findElement(By.xpath("//span[@name='cityAndState']"));
+
+    }
+
+
 }
