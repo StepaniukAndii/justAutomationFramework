@@ -180,6 +180,16 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'EatStreet')]"));
     }
 
+    public WebElement btnAPI() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'API')]"));
+    }
+
+    public WebElement getApiUpdates() {
+        return driver.findElement(By.xpath("//iframe"));
+    }
 
 
+    public WebElement enterYourName() {
+        return driver.findElement(By.xpath(""))
+    }
 }
