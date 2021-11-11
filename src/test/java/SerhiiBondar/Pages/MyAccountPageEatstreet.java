@@ -96,6 +96,19 @@ public class MyAccountPageEatstreet extends BasePage {
         return  driver.findElement(By.xpath("//span[@name='cityAndState']"));
 
     }
+    public WebElement getDeleteAddressBtn(){
+        return driver.findElement(By.xpath("//a[@id='delete-address']"));
+
+    }
+    public WebElement getEditAddressBtn(){
+        return  driver.findElement(By.xpath("//a[@id='edit-address']"));
+
+    }
+    public WebElement getFullStreetAddressString(){
+        return  driver.findElement(By.xpath("//span[@id='address-display']"));
+
+    }
+
 
 
 }

@@ -2,7 +2,6 @@ package ATymoshenko.tests;
 
 import ATymoshenko.pages.HomePage;
 import ClasesToAllUs.TestInit;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +10,7 @@ public class TestSignIn extends TestInit {
     public void testSignIn(){
         HomePage homePage = new HomePage(driver);
         openUrl("https://eatstreet.com/");
-        homePage.addSignInBtn().click();
+        homePage.addSignInBtnOnHeader().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
     }
     @Test
@@ -23,6 +22,20 @@ public class TestSignIn extends TestInit {
         homePage.addPasswordField().sendKeys("hihihioijohj89h");
         homePage.addPasswordAgainField().sendKeys(" hihihioijohj89h");
         homePage.addSignUpBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
+    }
+
+    @Test
+    public void testSignInEnterLogin(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("hihihioijohj89h");
+        homePage.addSignUpBtnOnPopUpWindow().click();
         sleep(2);
 
         Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
