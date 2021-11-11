@@ -47,4 +47,18 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(aboutUsPage.getTextInNewsBtn().isDisplayed());
     }
+
+    @Test
+    public void testCheckLinkPressReleases(){
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getPressReleasesBtn().click();
+        aboutUsPage.getShowMoreBtnPressReleases().click();
+
+        Assert.assertTrue(aboutUsPage.getTextInNewsBtn().isDisplayed());
+    }
 }
