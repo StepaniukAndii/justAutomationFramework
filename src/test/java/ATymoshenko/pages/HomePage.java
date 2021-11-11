@@ -9,7 +9,7 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
-    public WebElement addSignInBtn(){
+    public WebElement addSignInBtnOnHeader() {
         return driver.findElement(By.xpath("//a[@id='menu-signin']"));
     }
 
@@ -67,5 +67,9 @@ public class HomePage extends BasePage {
 
     public WebElement myAccountIcon() {
         return driver.findElement(By.xpath("//a[contains(text(),'My Account')]"));
+    }
+
+    public WebElement addSignUpBtnOnPopUpWindow() {
+        return driver.findElement(By.xpath("//button[@id='signin']"));
     }
 }
