@@ -117,5 +117,32 @@ public class TestMyAccountEatstreet extends TestInit {
         Assert.assertEquals(myAccountPageEatstreet.getCityAndStateString().getText(),"Atlanta, GA");
         Assert.assertEquals(myAccountPageEatstreet.getFullStreetAddressString().getText(),"3 Terry Mill Rd SE");
     }
+    @Test
+    public void testAddCard(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2022");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(5);
+        homeEatstreetPage.myAccountBtn().click();
+        sleep(2);
+        MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
+        myAccountPageEatstreet.getAddNewCardBtn().click();
+        myAccountPageEatstreet.getNameOfCardholderField().sendKeys("John Smith");
+        myAccountPageEatstreet.getCreditCardNumberField().sendKeys("1234123412341234");
+        myAccountPageEatstreet.getCvvField().sendKeys("123");
+        myAccountPageEatstreet.getExpDateField().sendKeys("09/2022");
+        myAccountPageEatstreet.getZipField().sendKeys("30317");
+        myAccountPageEatstreet.getAddressOnCardField().sendKeys("25 Emery Mill Drive");
+        myAccountPageEatstreet.getCardNickNameField().sendKeys("Johny");
+        myAccountPageEatstreet.getOkayGreenBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(myAccountPageEatstreet.getCardErrorModalWindow().isDisplayed());
+    }
 
 }

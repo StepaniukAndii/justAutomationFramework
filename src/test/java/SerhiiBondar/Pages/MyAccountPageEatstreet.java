@@ -108,6 +108,46 @@ public class MyAccountPageEatstreet extends BasePage {
         return  driver.findElement(By.xpath("//span[@id='address-display']"));
 
     }
+    public WebElement getAddNewCardBtn(){
+        return driver.findElement(By.xpath("//a[@id='add-credit-card']"));
+
+    }
+    public WebElement getCardErrorModalWindow(){
+        return driver.findElement(By.xpath("//div[contains(text(),'Card Error')]"));
+
+    }
+    public WebElement getNameOfCardholderField(){
+        return driver.findElement(By.xpath("//input[@id='customerName']"));
+
+    }
+    public WebElement getCreditCardNumberField(){
+        return driver.findElement(By.xpath("//input[@id='cardNum']"));
+
+    }
+    public WebElement getCvvField(){
+        return driver.findElement(By.xpath("//input[@id='cvv']"));
+
+    }
+    public WebElement getExpDateField(){
+        return driver.findElement(By.xpath("//input[@id='expiry']"));
+
+    }
+    public WebElement getAddressOnCardField(){
+        return driver.findElement(By.xpath("//input[@id='address']"));
+
+    }
+    public WebElement getCardNickNameField(){
+        return driver.findElement(By.xpath("//input[@id='name']"));
+
+    }
+    public WebElement getOkayGreenBtn(){
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+
+    }
+
+
+
+
 
 
 
