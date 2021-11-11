@@ -27,7 +27,6 @@ public class HomePage extends BasePage {
         return findElement("//button[@class='btn']");
     }
 
-
     public WebElement getAddressInput() {
         return findElement("//input[contains(@class,'enter')]");
     }
