@@ -104,4 +104,19 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(careersPage.getTextInSectionAllJobs().isDisplayed());
     }
+
+    @Test
+    public void testCheckBtnCulinaryCareers() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getCulinaryBtn().click();
+        careersPage.getAllLocationsLink().click();
+        careersPage.getMadisonCity().click();
+
+        Assert.assertTrue(careersPage.getCurdNerd().isDisplayed());
+    }
 }
