@@ -186,10 +186,12 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//iframe"));
     }
 
-
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
-//    public WebElement enterYourName() {
-//        return driver.findElement(By.xpath(""));
+    }
+    public WebElement enterYourName() {
+        return driver.findElement(By.xpath(""));
+
+
     }
 }

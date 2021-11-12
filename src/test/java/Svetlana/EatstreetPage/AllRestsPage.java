@@ -34,6 +34,9 @@ public class AllRestsPage extends BasePage {
     public List<WebElement> getTypeOfPurchase(){
         return findElementsByXpath("//label[@class='filters_radio_container_label']");
     }
+    public WebElement checkAllRests(){
+        return findElementByXpath("//p[@class='ng-binding ng-scope']");
+    }
 
 
 }
