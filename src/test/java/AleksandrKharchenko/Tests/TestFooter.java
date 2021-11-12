@@ -133,4 +133,17 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(careersPage.getTextInSectionAllJobs().isDisplayed());
     }
+
+    @Test
+    public void testCheckLinkBlog() {
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getLinkBlog().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("blog.eatstreet.com/"));
+    }
 }
