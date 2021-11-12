@@ -53,4 +53,8 @@ public class AboutUsPage extends BasePage {
     public WebElement getTextConnect() {
         return driver.findElement(By.xpath("//h2[contains(text(),'Connect')]"));
     }
+
+    public WebElement getLinkBlog() {
+        return driver.findElement(By.xpath("//a[@class='press__nav__anchor']"));
+    }
 }
