@@ -187,12 +187,9 @@ public class HomePage extends BasePage {
     }
 
 
-<<<<<<< HEAD
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
-=======
-    public WebElement enterYourName() {
-        return driver.findElement(By.xpath(""));
->>>>>>> master
+//    public WebElement enterYourName() {
+//        return driver.findElement(By.xpath(""));
     }
 }
