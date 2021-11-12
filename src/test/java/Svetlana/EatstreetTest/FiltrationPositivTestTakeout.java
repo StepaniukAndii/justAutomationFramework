@@ -1,12 +1,17 @@
 package Svetlana.EatstreetTest;
+
 import ClasesToAllUs.TestInit;
-import Svetlana.EatstreetPage.*;
+import Svetlana.EatstreetPage.AllRestsPage;
+import Svetlana.EatstreetPage.HomePage;
+import Svetlana.EatstreetPage.MenuPage;
+import Svetlana.EatstreetPage.SignInPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-public class CartPositivTestSelectOfDishes extends TestInit {
+
+public class FiltrationPositivTestTakeout extends TestInit {
 
     @Test
-    public void cartPositivTestSelectOfDishes(){
+    public void FiltrationPositivTestTakeout(){
         driver.get("https://eatstreet.com");
         HomePage homePage=new HomePage(driver);
         homePage.getFedBtn().click();
@@ -16,12 +21,9 @@ public class CartPositivTestSelectOfDishes extends TestInit {
         SignInPage signInPage = new SignInPage(driver);
         signInPage.pressGoItBtn().click();
         AllRestsPage allRestsPage=new AllRestsPage(driver);
-        allRestsPage.getAllRests().get(0).click();
-        sleep(3);
+        allRestsPage.getTypeOfPurchase().get(1).click();
+        allRestsPage.selectCategoryVegetarian().get(0).click();
         MenuPage menuPage=new MenuPage(driver);
-        menuPage.selectDishAllAboutIndianFood().get(27).click();
-        CartPage cartPage=new CartPage(driver);
-        cartPage.pressAddToCart().click();
-        Assert.assertTrue(cartPage.checkCart().isDisplayed());
+        Assert.assertTrue(menuPage.checkVegetarianBtn().isDisplayed());
     }
 }

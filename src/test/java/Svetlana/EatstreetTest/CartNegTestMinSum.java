@@ -3,10 +3,10 @@ import ClasesToAllUs.TestInit;
 import Svetlana.EatstreetPage.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-public class CartPositivTestSelectOfDishes extends TestInit {
 
+public class CartNegTestMinSum extends TestInit {
     @Test
-    public void cartPositivTestSelectOfDishes(){
+    public void cartNegTestMinSum(){
         driver.get("https://eatstreet.com");
         HomePage homePage=new HomePage(driver);
         homePage.getFedBtn().click();
@@ -22,6 +22,6 @@ public class CartPositivTestSelectOfDishes extends TestInit {
         menuPage.selectDishAllAboutIndianFood().get(27).click();
         CartPage cartPage=new CartPage(driver);
         cartPage.pressAddToCart().click();
-        Assert.assertTrue(cartPage.checkCart().isDisplayed());
+        Assert.assertTrue(cartPage.checkOrderAmount().isDisplayed());
     }
 }

@@ -189,6 +189,7 @@ public class HomePage extends BasePage {
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
     }
+<<<<<<< HEAD
 
 
     public WebElement btnBlog() {
@@ -204,5 +205,11 @@ public class HomePage extends BasePage {
         public WebElement tabBetterbin() {
             return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
 
+=======
+    public WebElement enterYourName() {
+        return driver.findElement(By.xpath(""));
+
+
+>>>>>>> master
     }
 }
