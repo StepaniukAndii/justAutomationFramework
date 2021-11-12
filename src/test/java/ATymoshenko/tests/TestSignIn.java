@@ -9,14 +9,14 @@ public class TestSignIn extends TestInit {
     @Test
     public void testSignIn(){
         HomePage homePage = new HomePage(driver);
-        openUrl("https://eatstreet.com/");
+        openUrl("https://qa2.eatstreet.com/");
         homePage.addSignInBtnOnHeader().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
     }
     @Test
     public void testSignUp(){
         HomePage homePage = new HomePage(driver);
-        openUrl("https://eatstreet.com/" + "/create-account?next=~2F");
+        openUrl("https://qa2.eatstreet.com/" + "/create-account?next=~2F");
         homePage.getGoItBtn().click();
         homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
         homePage.addPasswordField().sendKeys("hihihioijohj89h");
@@ -30,7 +30,7 @@ public class TestSignIn extends TestInit {
     @Test
     public void testSignInEnterAccount(){
         HomePage homePage = new HomePage(driver);
-        openUrl("https://eatstreet.com/");
+        openUrl("https://qa2.eatstreet.com/");
         homePage.getGoItBtn().click();
         homePage.addSignInBtnOnHeader().click();
         homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
@@ -44,7 +44,7 @@ public class TestSignIn extends TestInit {
     @Test
     public  void testSignOutBtnOnAccountPage(){
         HomePage homePage = new HomePage(driver);
-        openUrl("https://eatstreet.com/");
+        openUrl("https://qa2.eatstreet.com/");
         homePage.getGoItBtn().click();
         homePage.addSignInBtnOnHeader().click();
         homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
@@ -57,5 +57,30 @@ public class TestSignIn extends TestInit {
         sleep(2);
 
         Assert.assertTrue(homePage.addSignInBtnOnHeader().isDisplayed());
+    }
+    @Test
+    public void testChangePassword(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("hihihioijohj89h");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addChangePasswordBtnOnMyAccountPage().click();
+        homePage.addCurrentPasswordField().sendKeys("hihihioijohj89h");
+        homePage.addNewPasswordField().sendKeys("rterterteywyw");
+        homePage.addConfirmNewPasswordField().sendKeys("rterterteywyw");
+        homePage.addUpdatePasswordBtn().click();
+        homePage.addSignOutBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+
+        Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
     }
 }

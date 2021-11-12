@@ -9,7 +9,13 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
-    public WebElement addSignOutBtn(){
+    public WebElement addCurrentPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='currentPassword']"));
+    }
+
+    ;
+
+    public WebElement addSignOutBtn() {
         return driver.findElement(By.xpath("//a[@id='signout']"));
     }
 
@@ -24,6 +30,7 @@ public class HomePage extends BasePage {
     public List<WebElement> getSearchAttempt() {
         return driver.findElements(By.xpath("//button[@class='btn']"));
     }
+
     public WebElement getGoItBtn() {
         return driver.findElement(By.xpath("//button[contains(text(),'Got it')]"));
     }
@@ -35,7 +42,7 @@ public class HomePage extends BasePage {
         }
     }
 
-    public WebElement enterYourAddressField(){
+    public WebElement enterYourAddressField() {
         return driver.findElement(By.xpath("//input[@id='input-food-search']"));
     }
 
@@ -75,5 +82,21 @@ public class HomePage extends BasePage {
 
     public WebElement addSignInBtnOnPopUpWindow() {
         return driver.findElement(By.xpath("//button[@id='signin']"));
+    }
+
+    public WebElement addChangePasswordBtnOnMyAccountPage() {
+        return driver.findElement(By.xpath("//a[@id='change-password']"));
+    }
+
+    public WebElement addNewPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='newPassword']"));
+    }
+
+    public WebElement addConfirmNewPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='newPasswordConfirm']"));
+    }
+
+    public WebElement addUpdatePasswordBtn() {
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
     }
 }
