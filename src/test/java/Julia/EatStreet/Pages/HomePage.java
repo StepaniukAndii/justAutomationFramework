@@ -189,9 +189,16 @@ public class HomePage extends BasePage {
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
     }
-    public WebElement enterYourName() {
-        return driver.findElement(By.xpath(""));
 
+    public WebElement selectCityDetroyd() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
+    }
 
+    public WebElement selectAsianCousin() {
+        return driver.findElement(By.xpath("//button[contains(text(),'Asian')]"));
+    }
+
+    public WebElement getAsianFood() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Bangladeshi')]"));
     }
 }
