@@ -89,4 +89,19 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("/about-us"));
     }
+
+    @Test
+    public void testCheckBtnTech() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getTechBtn().click();
+        careersPage.getAllLocationsLink().click();
+        careersPage.getAmesCity().click();
+
+        Assert.assertTrue(careersPage.getTextInSectionAllJobs().isDisplayed());
+    }
 }
