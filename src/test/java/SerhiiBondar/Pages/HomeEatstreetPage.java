@@ -30,5 +30,25 @@ public class HomeEatstreetPage extends BasePage {
         return  driver.findElement(By.xpath("//button[@class='btn']"));
 
     }
+    public WebElement getPartnerWithUsBtn(){
+        return driver.findElement(By.className("partners-link"));
+
+    }
+    public WebElement getApplyNowString(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Apply Now')]"));
+
+    }
+    public WebElement getCityAppleton(){
+        return driver.findElement(By.xpath("//option[contains(text(),'Appleton')]"));
+
+    }
+    public WebElement getApplyInYourCityField(){
+        return driver.findElement(By.xpath("//select[contains(@onchange, 'location')]"));
+
+    }
+    public WebElement getDriverAppletonString(){
+        return driver.findElement(By.xpath("//span[contains(@class,'page-title')]"));
+
+    }
 
 }
