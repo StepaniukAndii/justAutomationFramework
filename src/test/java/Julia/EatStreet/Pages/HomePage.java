@@ -187,7 +187,12 @@ public class HomePage extends BasePage {
     }
 
 
+
+    public WebElement getRestInNY() {
+        return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
+    }
     public WebElement enterYourName() {
         return driver.findElement(By.xpath(""));
+
     }
 }
