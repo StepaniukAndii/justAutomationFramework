@@ -104,4 +104,46 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(careersPage.getTextInSectionAllJobs().isDisplayed());
     }
+
+    @Test
+    public void testCheckBtnCulinaryCareers() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getCulinaryBtn().click();
+        careersPage.getAllLocationsLink().click();
+        careersPage.getMadisonCity().click();
+
+        Assert.assertTrue(careersPage.getCurdNerd().isDisplayed());
+    }
+
+    @Test
+    public void testCheckFieldSearchJobs() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getAmesCity().click();
+        careersPage.getSearchJobsField().sendKeys("Product Analyst\n");
+
+        Assert.assertTrue(careersPage.getTextInSectionAllJobs().isDisplayed());
+    }
+
+    @Test
+    public void testCheckLinkBlog() {
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getLinkBlog().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("blog.eatstreet.com/"));
+    }
 }

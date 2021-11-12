@@ -107,4 +107,10 @@ public class HomePage extends BasePage {
     public List<WebElement> getList() {
         return findElementsByXpath("//ul[contains(@class, 'filters-section_checkoxes')]//input[contains(@class, 'ng-not-empty')]");
     }
+    public WebElement bTNTakeout(){
+        return findElementByXpath("//input[@id='filters-checkbox-takeout']");
+    }
+    public WebElement bTNTakeoutIsOn(){
+        return findElementByXpath("//input[contains(@class, 'ng-valid-parse')]");
+    }
 }

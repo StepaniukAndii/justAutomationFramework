@@ -31,7 +31,14 @@ public class AllRestsPage extends BasePage {
     public List<WebElement> getAllPageRests() {
         return findElementsByXpath("//ul[@class='pagination__pages']//a");
     }
-
-
+    public List<WebElement> getTypeOfPurchase(){
+        return findElementsByXpath("//label[@class='filters_radio_container_label']");
+    }
+    public WebElement checkAllRests(){
+        return findElementByXpath("//p[@class='ng-binding ng-scope']");
+    }
+    public WebElement getRaiting4(){
+        return findElementByXpath("//label[@class='ng-binding']");
+    }
 }
 
