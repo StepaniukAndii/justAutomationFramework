@@ -37,7 +37,8 @@ public class AllRestsPage extends BasePage {
     public WebElement checkAllRests(){
         return findElementByXpath("//p[@class='ng-binding ng-scope']");
     }
-
-
+    public WebElement getRaiting4(){
+        return findElementByXpath("//label[@class='ng-binding']");
+    }
 }
 
