@@ -21,23 +21,41 @@ public class TestSignIn extends TestInit {
         homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
         homePage.addPasswordField().sendKeys("hihihioijohj89h");
         homePage.addPasswordAgainField().sendKeys(" hihihioijohj89h");
-        homePage.addSignUpBtn().click();
+        homePage.addSignUpBtnOnPopUpWindow().click();
         sleep(2);
 
         Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
     }
 
     @Test
-    public void testSignInEnterLogin(){
+    public void testSignInEnterAccount(){
         HomePage homePage = new HomePage(driver);
         openUrl("https://eatstreet.com/");
         homePage.getGoItBtn().click();
         homePage.addSignInBtnOnHeader().click();
         homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
         homePage.addPasswordField().sendKeys("hihihioijohj89h");
-        homePage.addSignUpBtnOnPopUpWindow().click();
+        homePage.addSignInBtnOnPopUpWindow().click();
         sleep(2);
 
         Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
+    }
+
+    @Test
+    public  void testSignOutBtnOnAccountPage(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("hihihioijohj89h");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addSignOutBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(homePage.addSignInBtnOnHeader().isDisplayed());
     }
 }
