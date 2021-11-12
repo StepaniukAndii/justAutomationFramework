@@ -9,6 +9,14 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
+    public WebElement addSignOutBtn(){
+        return driver.findElement(By.xpath("//a[@id='signout']"));
+    }
+
+    public WebElement addSignInBtnOnHeader() {
+        return driver.findElement(By.xpath("//a[@id='menu-signin']"));
+    }
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -39,5 +47,33 @@ public class HomePage extends BasePage {
 
     public WebElement getGetFedBtn() {
         return driver.findElement(By.xpath("//a[contains(text(),'Get Fed')]"));
+    }
+
+    public WebElement addSignUpLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Sign Up')]"));
+    }
+
+    public WebElement addEmailField() {
+        return driver.findElement(By.xpath("//input[@id='email']"));
+    }
+
+    public WebElement addPasswordField() {
+        return driver.findElement(By.xpath("//input[@id='password']"));
+    }
+
+    public WebElement addPasswordAgainField() {
+        return driver.findElement(By.xpath("//input[@id='passwordAgain']"));
+    }
+
+    public WebElement addSignUpBtnOnPopUpWindow() {
+        return driver.findElement(By.xpath("//button[@id='signup']"));
+    }
+
+    public WebElement myAccountIcon() {
+        return driver.findElement(By.xpath("//a[contains(text(),'My Account')]"));
+    }
+
+    public WebElement addSignInBtnOnPopUpWindow() {
+        return driver.findElement(By.xpath("//button[@id='signin']"));
     }
 }
