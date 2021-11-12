@@ -41,4 +41,8 @@ public class CareersPage extends BasePage {
     public WebElement getCurdNerd() {
         return driver.findElement(By.xpath("//span[contains(@class,'record-title')]"));
     }
+
+    public WebElement getSearchJobsField() {
+        return driver.findElement(By.xpath("//input[@placeholder='Search Jobs']"));
+    }
 }
