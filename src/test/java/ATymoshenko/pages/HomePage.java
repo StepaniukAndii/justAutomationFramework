@@ -1,6 +1,7 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
+import com.fasterxml.jackson.core.JsonParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -119,5 +120,37 @@ public class HomePage extends BasePage {
 
     public WebElement addSaveBtnInChangeAccountInfoWindow() {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement addAboutUsBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
+    }
+
+    public WebElement addContactUsBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
+    }
+
+    public WebElement addCareersBtn() {
+        return  driver.findElement(By.xpath("//a[contains(text(),'Careers')]"));
+    }
+
+    public WebElement addBecomeADriverBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Become a Driver!')]"));
+    }
+
+    public WebElement addforCustomersBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'For Customers')]"));
+    }
+
+    public WebElement addAccessibilityStatementBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Accessibility Statement')]"));
+    }
+
+    public WebElement addPrivacyPolicyBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Privacy Policy')]"));
+    }
+
+    public WebElement addTermsOfUseBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
     }
 }

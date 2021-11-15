@@ -35,4 +35,8 @@ public class RestPage extends BasePage {
             getAllRest().get(getAllRest().size() - 3).click();
         }
     }
+
+    public WebElement getJapaneseMsg() {
+        return driver.findElement(By.xpath("//h1[contains(text(),'Japanese Food Delivery & Takeout in Las Vegas')]"));
+    }
 }

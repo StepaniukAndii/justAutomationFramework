@@ -88,4 +88,19 @@ public class TestOthers extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("/careers/delivery-driver-madison"));
     }
+
+    @Test
+    public void testCheckLinkLasVegasInSection() {
+        HomePage homePage = new HomePage(driver);
+        FoodPage foodPage = new FoodPage(driver);
+        RestPage restPage = new RestPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getVegasCityLink().click();
+        sleep(1);
+        foodPage.getJapaneseFoodVegasBtn().click();
+        sleep(1);
+
+        Assert.assertTrue(restPage.getJapaneseMsg().isDisplayed());
+    }
 }

@@ -159,4 +159,16 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("geteatstreet.com/"));
     }
+
+    @Test
+    public void testCheckLinkReportAnOrderIssue() {
+        HomePage homePage = new HomePage(driver);
+        ContactUsPage contactUsPage = new ContactUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getContactUsLink().click();
+        contactUsPage.getReportAnOrderLink().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/signin?next=~2Faccount~2Finfo"));
+    }
 }
