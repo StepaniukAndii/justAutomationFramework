@@ -2,6 +2,7 @@ package AleksandrKharchenko.Tests;
 
 import AleksandrKharchenko.Pages.AboutUsPage;
 import AleksandrKharchenko.Pages.CareersPage;
+import AleksandrKharchenko.Pages.ContactUsPage;
 import AleksandrKharchenko.Pages.HomePage;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -145,5 +146,17 @@ public class TestFooter extends TestInit {
         aboutUsPage.getLinkBlog().click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("blog.eatstreet.com/"));
+    }
+
+    @Test
+    public void testCheckEmailLinkCustomerService() {
+        HomePage homePage = new HomePage(driver);
+        ContactUsPage contactUsPage = new ContactUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getContactUsLink().click();
+        contactUsPage.getEatStreetCom().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("geteatstreet.com/"));
     }
 }
