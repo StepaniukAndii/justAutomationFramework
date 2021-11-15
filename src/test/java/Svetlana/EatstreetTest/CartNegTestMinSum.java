@@ -19,7 +19,7 @@ public class CartNegTestMinSum extends TestInit {
         allRestsPage.getAllRests().get(0).click();
         sleep(3);
         MenuPage menuPage=new MenuPage(driver);
-        menuPage.selectDishAllAboutIndianFood().get(27).click();
+        menuPage.selectDishAllAboutIndianFood().get(0).click();
         CartPage cartPage=new CartPage(driver);
         cartPage.pressAddToCart().click();
         Assert.assertTrue(cartPage.checkOrderAmount().isDisplayed());
