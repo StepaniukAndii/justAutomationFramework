@@ -129,4 +129,8 @@ public class HomePage extends BasePage {
     public WebElement addContactUsBtn() {
         return driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
     }
+
+    public WebElement addCareersBtn() {
+        return  driver.findElement(By.xpath("//a[contains(text(),'Careers')]"));
+    }
 }
