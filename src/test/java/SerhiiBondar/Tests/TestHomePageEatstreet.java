@@ -19,13 +19,15 @@ public class TestHomePageEatstreet extends TestInit {
         homeEatstreetPage.getCityAppleton().click();
 
         Assert.assertEquals(homeEatstreetPage.getDriverAppletonString().getText(),"Delivery Driver - Appleton, WI.");
+    }
+    @Test
+    public void testGetCareers(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getCareersBtn().click();
+        sleep(2);
 
-
-
-
-
-
-
-
+        Assert.assertTrue(homeEatstreetPage.getAllJobsTable().isDisplayed());
     }
 }
