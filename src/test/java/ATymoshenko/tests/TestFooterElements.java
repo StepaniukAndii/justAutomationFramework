@@ -5,6 +5,8 @@ import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+
 public class TestFooterElements extends TestInit {
     @Test
     public void aboutUsBtn (){
@@ -33,5 +35,14 @@ public class TestFooterElements extends TestInit {
         sleep(2);
 
         Assert.assertTrue(driver.getCurrentUrl().contains("careers"));
+    }
+    @Test
+    public void becomeADriver(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addBecomeADriverBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("driver-careers"));
     }
 }
