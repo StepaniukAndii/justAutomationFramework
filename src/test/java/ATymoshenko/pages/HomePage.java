@@ -99,4 +99,25 @@ public class HomePage extends BasePage {
     public WebElement addUpdatePasswordBtn() {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
     }
+
+    public WebElement addEditYourInfoBtn() {
+        return driver.findElement(By.xpath("//a[@id='edit-info']"));
+    }
+
+    public WebElement addFirstNameFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='firstName']"));
+    }
+
+    public WebElement addLastNameFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='lastName']"));
+
+    }
+
+    public WebElement addPhoneNumberFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='phoneNumber']"));
+    }
+
+    public WebElement addSaveBtnInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
 }
