@@ -1,6 +1,7 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
+import com.fasterxml.jackson.core.JsonParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -98,5 +99,38 @@ public class HomePage extends BasePage {
 
     public WebElement addUpdatePasswordBtn() {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement addEditYourInfoBtn() {
+        return driver.findElement(By.xpath("//a[@id='edit-info']"));
+    }
+
+    public WebElement addFirstNameFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='firstName']"));
+    }
+
+    public WebElement addLastNameFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='lastName']"));
+
+    }
+
+    public WebElement addPhoneNumberFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='phoneNumber']"));
+    }
+
+    public WebElement addSaveBtnInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement addAboutUsBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
+    }
+
+    public WebElement addContactUsBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
+    }
+
+    public WebElement addCareersBtn() {
+        return  driver.findElement(By.xpath("//a[contains(text(),'Careers')]"));
     }
 }

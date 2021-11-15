@@ -2,6 +2,7 @@ package AleksandrKharchenko.Tests;
 
 import AleksandrKharchenko.Pages.AboutUsPage;
 import AleksandrKharchenko.Pages.CareersPage;
+import AleksandrKharchenko.Pages.ContactUsPage;
 import AleksandrKharchenko.Pages.HomePage;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -132,5 +133,42 @@ public class TestFooter extends TestInit {
         careersPage.getSearchJobsField().sendKeys("Product Analyst\n");
 
         Assert.assertTrue(careersPage.getTextInSectionAllJobs().isDisplayed());
+    }
+
+    @Test
+    public void testCheckLinkBlog() {
+        HomePage homePage = new HomePage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getAboutUsLink().click();
+        sleep(1);
+        aboutUsPage.getLinkBlog().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("blog.eatstreet.com/"));
+    }
+
+    @Test
+    public void testCheckEmailLinkCustomerService() {
+        HomePage homePage = new HomePage(driver);
+        ContactUsPage contactUsPage = new ContactUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getContactUsLink().click();
+        contactUsPage.getEatStreetCom().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("geteatstreet.com/"));
+    }
+
+    @Test
+    public void testCheckLinkReportAnOrderIssue() {
+        HomePage homePage = new HomePage(driver);
+        ContactUsPage contactUsPage = new ContactUsPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getContactUsLink().click();
+        contactUsPage.getReportAnOrderLink().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/signin?next=~2Faccount~2Finfo"));
     }
 }

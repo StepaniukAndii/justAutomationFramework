@@ -113,4 +113,10 @@ public class HomePage extends BasePage {
     public WebElement bTNTakeoutIsOn(){
         return findElementByXpath("//input[contains(@class, 'ng-valid-parse')]");
     }
+    public List<WebElement> typesOfCuisine(){
+        return findElementsByXpath("//li[@class='cuisine-types__item']");
+    }
+    public WebElement getInformationABTAsianFood(){
+        return findElementByXpath("//h1[contains(text(), 'Asian Food')]");
+    }
 }
