@@ -17,6 +17,7 @@ public class SelectionOfAsianFood extends TestInit {
         homePage.selectAsianCousin().click();
         sleep(3);
         homePage.getAllRest().get(0).click();
-        Assert.assertEquals(homePage.getAsianFood().getText(), "Bangladeshi");
+        sleep(5);
+        Assert.assertTrue(homePage.getAsianFood().getText().contains("Bangladeshi"));
     }
 }

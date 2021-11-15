@@ -209,15 +209,6 @@ public class HomePage extends BasePage {
 
     public WebElement tabBetterbin() {
             return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
-        }
-
-
-    public WebElement selectCityDetroyd() {
-        return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
-    }
-
-    public WebElement selectAsianCousin() {
-        return driver.findElement(By.xpath("//button[contains(text(),'Asian')]"));
     }
 
     public WebElement getAsianFood() {
