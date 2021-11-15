@@ -26,4 +26,7 @@ public class CartPage extends BasePage {
     public WebElement pressOrderAheadBtn(){
         return findElementByXpath("//a[@id='click-checkout']");
     }
+    public WebElement openCart(){
+        return findElementByXpath("//span[@class='navbar__cart-count ng-binding ng-scope']");
+    }
 }
