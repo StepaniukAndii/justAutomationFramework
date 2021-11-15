@@ -15,4 +15,23 @@ public class TestFooterElements extends TestInit {
         sleep(2);
         Assert.assertTrue(driver.getCurrentUrl().contains("about-us"));
     }
+    @Test
+    public void contactUsBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addContactUsBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("contact"));
+    }
+    @Test
+    public  void careersBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addCareersBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("careers"));
+    }
 }
