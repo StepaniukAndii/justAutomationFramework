@@ -29,4 +29,12 @@ public class SignUpPage extends BasePage {
     public WebElement getMyAccountLink() {
         return driver.findElement(By.xpath("//a[contains(text(),'My Account')]"));
     }
+
+    public WebElement getErrorPasswordAgainMSG() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Must match')]"));
+    }
+
+    public WebElement getErrorPasswordMSG() {
+        return driver.findElement(By.xpath("//div[contains(text(),' Required')]"));
+    }
 }

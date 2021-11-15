@@ -45,4 +45,31 @@ public class TestFooterElements extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("driver-careers"));
     }
+    @Test
+    public  void forCustomersBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addforCustomersBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("customers/s/"));
+    }
+    @Test
+    public void accessibilityStatementBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addAccessibilityStatementBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("accessibility"));
+    }
+    @Test
+    public void privacyPolicyBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addPrivacyPolicyBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("privacy"));
+    }
 }
