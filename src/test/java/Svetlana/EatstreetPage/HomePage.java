@@ -49,6 +49,9 @@ public class HomePage extends BasePage {
     public WebElement pressRestBtn(){
         return findElementByXpath("//a[contains(text(),'Wausau')]");
     }
+    public WebElement returnToHomePage(){
+        return findElementByXpath("//img[@class='logo-alternate']");
+    }
 
 
     public void checkPopup() {
