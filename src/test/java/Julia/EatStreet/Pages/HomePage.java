@@ -189,9 +189,6 @@ public class HomePage extends BasePage {
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 
     public WebElement btnBlog() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
@@ -201,9 +198,6 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//section[@id='recent-posts']/article[@id='post-11918']"));
 
     }
-=======
->>>>>>> master
-
     public WebElement selectCityDetroyd() {
         return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
     }
@@ -212,13 +206,11 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//button[contains(text(),'Asian')]"));
     }
 
-<<<<<<< HEAD
-        public WebElement tabBetterbin() {
+
+    public WebElement tabBetterbin() {
             return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
         }
 
-=======
->>>>>>> master
 
     public WebElement selectCityDetroyd() {
         return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
@@ -228,8 +220,6 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//button[contains(text(),'Asian')]"));
     }
 
-=======
->>>>>>> master
     public WebElement getAsianFood() {
         return driver.findElement(By.xpath("//span[contains(text(),'Bangladeshi')]"));
     }
