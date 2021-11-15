@@ -98,12 +98,12 @@ public class TestSignIn extends TestInit {
         sleep(2);
         homePage.myAccountIcon().click();
         sleep(2);
-//        homePage.addEditYourInfoBtn().click();
-//        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
-//        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
-//        sleep(2);
-//        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
-//        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        sleep(2);
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
         homePage.addEditYourInfoBtn().click();
 
         Assert.assertEquals(homePage.addFirstNameFieldInChangeAccountInfoWindow().getText(), "Clint");
