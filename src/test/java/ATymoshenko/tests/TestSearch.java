@@ -18,4 +18,5 @@ public class TestSearch extends TestInit {
         sleep(5);
         Assert.assertTrue(driver.getCurrentUrl().contains("restaurants"));
     }
+
 }
