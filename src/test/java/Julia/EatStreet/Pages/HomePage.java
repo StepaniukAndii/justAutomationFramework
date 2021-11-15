@@ -122,13 +122,13 @@ public class HomePage extends BasePage {
     public WebElement answerBotLiveChat() {
         return driver.findElement(By.xpath("//span[contains(text(), 'inquiring about')]"));
     }
+
     public void  checkAndClousePopUpWindow() {
         if (getSearchAttempt().size() > 0) {
             sleep(2);
             getSearchAttempt().get(0).click();
         }
     }
-
 
     public void sleep(int seconds) {
         try {
@@ -190,12 +190,25 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
     }
 
+    public WebElement btnBlog() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
+    }
+
+    public WebElement clickResentPost() {
+        return driver.findElement(By.xpath("//section[@id='recent-posts']/article[@id='post-11918']"));
+
+    }
     public WebElement selectCityDetroyd() {
         return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
     }
 
     public WebElement selectAsianCousin() {
         return driver.findElement(By.xpath("//button[contains(text(),'Asian')]"));
+    }
+
+
+    public WebElement tabBetterbin() {
+            return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
     }
 
     public WebElement getAsianFood() {

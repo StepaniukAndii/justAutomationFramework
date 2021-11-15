@@ -19,6 +19,5 @@ public class NYRestEatstreet extends TestInit {
         sleep(5);
         homePage.getAllRest().get(0).click();
         Assert.assertTrue(homePage.getRestInNY().isDisplayed());
-
     }
 }
