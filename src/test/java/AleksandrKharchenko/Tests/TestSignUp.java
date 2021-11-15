@@ -132,4 +132,20 @@ public class TestSignUp extends TestInit {
 
         Assert.assertTrue(signUpPage.getErrorPasswordMSG().isDisplayed());
     }
+
+    @Test
+    public void testSignUpEmail() {
+        HomePage homePage = new HomePage(driver);
+        SignInPage signInPage = new SignInPage(driver);
+        SignUpPage signUpPage = new SignUpPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.getSignInLink().click();
+        signInPage.getSignUpLink().click();
+        signUpPage.getEmailFieldSignUp().sendKeys("blablabla");
+        signUpPage.getPasswordFieldSignUp().sendKeys("qwer1234");
+        signUpPage.getPasswordAgainFieldSignUp().sendKeys("qwer1234");
+        sleep(1);
+
+        Assert.assertTrue(signUpPage.getErrorEmailMSG().isDisplayed());
+    }
 }

@@ -37,4 +37,8 @@ public class SignUpPage extends BasePage {
     public WebElement getErrorPasswordMSG() {
         return driver.findElement(By.xpath("//div[contains(text(),' Required')]"));
     }
+
+    public WebElement getErrorEmailMSG() {
+        return driver.findElement(By.xpath("//div[contains(text(),'the entered email')]"));
+    }
 }
