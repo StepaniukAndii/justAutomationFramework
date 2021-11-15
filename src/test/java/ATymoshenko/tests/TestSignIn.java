@@ -83,4 +83,25 @@ public class TestSignIn extends TestInit {
 
         Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
     }
+    @Test
+    public  void testEditYourInfoBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        sleep(2);
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+
+    }
 }
