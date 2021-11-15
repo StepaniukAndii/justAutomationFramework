@@ -27,6 +27,9 @@ public class SignInPage extends BasePage {
     public WebElement checkValidationPassword(){
         return findElementByXpath("//span[@class='alert text-red ng-scope']");
     }
+    public WebElement loginUsingGoogl(){
+        return findElementByXpath("//div[@id='uniqueid']");
+    }
 
 
 }
