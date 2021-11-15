@@ -13,4 +13,8 @@ public class ContactUsPage extends BasePage {
     public WebElement getEatStreetCom() {
         return driver.findElement(By.xpath("//a[contains(text(),'geteatstreet.com')]"));
     }
+
+    public WebElement getReportAnOrderLink() {
+        return driver.findElement(By.xpath("//a[@ui-sref='account']"));
+    }
 }

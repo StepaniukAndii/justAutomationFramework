@@ -1,6 +1,7 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
+import com.fasterxml.jackson.core.JsonParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -119,5 +120,13 @@ public class HomePage extends BasePage {
 
     public WebElement addSaveBtnInChangeAccountInfoWindow() {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement addAboutUsBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
+    }
+
+    public WebElement addContactUsBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
     }
 }
