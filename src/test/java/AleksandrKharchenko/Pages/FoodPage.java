@@ -13,4 +13,8 @@ public class FoodPage extends BasePage {
     public WebElement getAddAnyFood() {
         return driver.findElement(By.xpath("//section[@class=\"li li--menu ng-scope\"]"));
     }
+
+    public WebElement getJapaneseFoodVegasBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(),'Japanese Food')]"));
+    }
 }
