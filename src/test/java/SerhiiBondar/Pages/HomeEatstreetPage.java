@@ -58,5 +58,13 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//div[@class='careers-listing-container']"));
 
     }
+    public WebElement getBurgers(){
+        return driver.findElement(By.xpath("//button[contains(text(),'View all Burger options')]"));
+
+    }
+    public WebElement getAtlanta(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Atlanta')]"));
+
+    }
 
 }
