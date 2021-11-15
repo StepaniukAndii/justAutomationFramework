@@ -63,4 +63,13 @@ public class TestFooterElements extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("accessibility"));
     }
+    @Test
+    public void privacyPolicyBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addPrivacyPolicyBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("privacy"));
+    }
 }
