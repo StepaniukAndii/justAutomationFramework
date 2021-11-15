@@ -10,12 +10,16 @@ public class OrderOptionsPage extends BasePage {
     public OrderOptionsPage(WebDriver driver) {
         super(driver);
     }
-
     public WebElement addItemBtn(){
         return findElement("//button[contains(@id,'quantity')]");
     }
-
     public List<WebElement> addToCartBtnText(){
         return findElementsByXpath("//span[contains(@class,'ng-scope')]");
+    }
+    public WebElement addToCartBtn(){
+        return findElement("//a[contains(@id,'confirm')]");
+    }
+    public WebElement orderAlert(){
+        return findElement("//div[contains(@class,'alert')]");
     }
 }
