@@ -137,4 +137,8 @@ public class HomePage extends BasePage {
     public WebElement addBecomeADriverBtn() {
         return driver.findElement(By.xpath("//a[contains(text(),'Become a Driver!')]"));
     }
+
+    public WebElement addforCustomersBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'For Customers')]"));
+    }
 }
