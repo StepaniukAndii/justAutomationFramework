@@ -23,4 +23,10 @@ public class CartPage extends BasePage {
     public WebElement checkOrderAmount(){
         return findElementByXpath("//div[@class='alert alert-error margin-bottom-10 ng-binding ng-scope']");
     }
+    public WebElement pressOrderAheadBtn(){
+        return findElementByXpath("//a[@id='click-checkout']");
+    }
+    public WebElement openCart(){
+        return findElementByXpath("//span[@class='navbar__cart-count ng-binding ng-scope']");
+    }
 }

@@ -2,6 +2,7 @@ package ATymoshenko.tests;
 
 import ATymoshenko.pages.HomePage;
 import ClasesToAllUs.TestInit;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -75,6 +76,7 @@ public class TestSignIn extends TestInit {
         homePage.addNewPasswordField().sendKeys("rterterteywyw");
         homePage.addConfirmNewPasswordField().sendKeys("rterterteywyw");
         homePage.addUpdatePasswordBtn().click();
+        sleep(1);
         homePage.addSignOutBtn().click();
         homePage.addSignInBtnOnHeader().click();
         homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
@@ -82,5 +84,30 @@ public class TestSignIn extends TestInit {
         homePage.addSignInBtnOnPopUpWindow().click();
 
         Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
+    }
+    @Test
+    public  void testEditYourInfoBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        sleep(2);
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        homePage.addEditYourInfoBtn().click();
+
+        Assert.assertEquals(homePage.addFirstNameFieldInChangeAccountInfoWindow().getText(), "Clint");
+        Assert.assertTrue(homePage.addLastNameFieldInChangeAccountInfoWindow().getText().contains("Eastwood"));
+        Assert.assertTrue(homePage.addPhoneNumberFieldInChangeAccountInfoWindow().getText().contains("+1 202 679 45 01"));
     }
 }

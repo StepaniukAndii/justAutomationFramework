@@ -69,4 +69,12 @@ public class HomePage extends BasePage {
     public WebElement getCareersLink() {
         return driver.findElement(By.xpath("//a[@ui-sref='careers']"));
     }
+
+    public WebElement getContactUsLink() {
+        return driver.findElement(By.xpath("//a[@ui-sref='contact']"));
+    }
+
+    public WebElement getVegasCityLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Las Vegas, NV')]"));
+    }
 }
