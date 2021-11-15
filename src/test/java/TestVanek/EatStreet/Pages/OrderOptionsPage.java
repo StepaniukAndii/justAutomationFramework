@@ -22,4 +22,7 @@ public class OrderOptionsPage extends BasePage {
     public WebElement orderAlert(){
         return findElement("//div[contains(@class,'alert')]");
     }
+    public WebElement orderAheadBtn(){
+        return findElement("//a[contains(@class,'checkout')]");
+    }
 }
