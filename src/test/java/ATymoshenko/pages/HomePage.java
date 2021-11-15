@@ -145,4 +145,12 @@ public class HomePage extends BasePage {
     public WebElement addAccessibilityStatementBtn() {
         return driver.findElement(By.xpath("//a[contains(text(),'Accessibility Statement')]"));
     }
+
+    public WebElement addPrivacyPolicyBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Privacy Policy')]"));
+    }
+
+    public WebElement addTermsOfUseBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
+    }
 }
