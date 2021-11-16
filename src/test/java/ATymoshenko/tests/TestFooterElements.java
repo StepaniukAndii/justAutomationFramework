@@ -89,6 +89,6 @@ public class TestFooterElements extends TestInit {
         homePage.addRestaurantTermsBtnInFooter().click();
         sleep(3);
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("terms"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("restaurant-terms-of-service"));
     }
 }
