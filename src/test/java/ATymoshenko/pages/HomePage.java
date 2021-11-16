@@ -153,4 +153,8 @@ public class HomePage extends BasePage {
     public WebElement addTermsOfUseBtn() {
         return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
     }
+
+    public WebElement addRestaurantTermsBtnInFooter() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
+    }
 }
