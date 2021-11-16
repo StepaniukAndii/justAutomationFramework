@@ -55,4 +55,12 @@ public class RestPage extends BasePage {
     public WebElement getDeliveryMsg() {
         return driver.findElement(By.xpath("//p[contains(text(),'offering delivery only')]"));
     }
+
+    public WebElement getIndianFoodLabel() {
+        return driver.findElement(By.xpath("//label[@for='filter-cuisine-Indian Food' and @class='checkbox-input']"));
+    }
+
+    public WebElement getSpanIndianFood() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Indian Food')]"));
+    }
 }
