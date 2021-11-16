@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
 public class HomePage extends BasePage {
 
@@ -197,10 +198,6 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'API')]"));
     }
 
-    public WebElement getApiUpdates() {
-        return driver.findElement(By.xpath("//iframe"));
-    }
-
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
     }
@@ -230,7 +227,49 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(),'Bangladeshi')]"));
     }
 
+    public List<WebElement> getAdressSearchAttempt() {
+        return driver.findElements(By.xpath("//div[@class='modal-footer']"));
+    }
+
+    public void  checkAndClouseAdressSearchAttempt() {
+        if (getAdressSearchAttempt().size() > 0) {
+            sleep(2);
+            getAdressSearchAttempt().get(1).click();
+        }
+    }
+
+    public List<WebElement> getItalianFoodLabel() {
+        return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
+    }
+
+    public WebElement getItalianFood() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Italian Food')]"));
+    }
+
     public WebElement getForCustomers() {
         return driver.findElement(By.xpath("//a[contains(text(), 'For Customers')]"));
+    }
+
+    public WebElement btnAssebilityStatement() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Accessibility Statement')]"));
+    }
+
+    public WebElement btnPrivasyPolicy() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Privacy Policy')]"));
+    }
+
+    public void goToTheSecondWindowTab(WebDriver driver, Integer seconds) {
+        waitForNewTabOpened(seconds);
+        ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+
+    public void waitForNewTabOpened(Integer seconds) {
+        for (int a = 0; a < seconds * 2; a++) {
+            ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
+            if (tabs2.size() > 1) {
+                break;
+            }
+        }
     }
 }
