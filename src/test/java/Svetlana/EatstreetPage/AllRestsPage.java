@@ -46,5 +46,12 @@ public class AllRestsPage extends BasePage {
     public WebElement checkOpenNow(){
         return findElementByXpath("//span[@class='active_filter ng-binding ng-scope']");
     }
+    public List<WebElement> getOpenCoffeeAndTea(){
+        return findElementsByXpath("//div[@class='cuisine-types__item__image-container']");
+    }
+    public WebElement checkCoffeeTea(){
+        return findElementByXpath("//h1[contains(text(),'Coffee & Tea' )]");
+    }
+
 }
 
