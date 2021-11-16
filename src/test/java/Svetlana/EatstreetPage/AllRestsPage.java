@@ -40,5 +40,11 @@ public class AllRestsPage extends BasePage {
     public WebElement getRaiting4(){
         return findElementByXpath("//label[@class='ng-binding']");
     }
+    public WebElement getOpenNow(){
+        return findElementByXpath("//label[@for='filter-Open Now']");
+    }
+    public WebElement checkOpenNow(){
+        return findElementByXpath("//span[@class='active_filter ng-binding ng-scope']");
+    }
 }
 
