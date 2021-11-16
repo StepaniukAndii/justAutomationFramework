@@ -81,4 +81,14 @@ public class TestFooterElements extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("terms"));
     }
+    @Test
+    public void restaurantTermsBtnInFooter(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addRestaurantTermsBtnInFooter().click();
+        sleep(3);
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("terms"));
+    }
 }

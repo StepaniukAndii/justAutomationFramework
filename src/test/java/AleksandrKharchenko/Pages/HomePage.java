@@ -77,4 +77,8 @@ public class HomePage extends BasePage {
     public WebElement getVegasCityLink() {
         return driver.findElement(By.xpath("//a[contains(text(),'Las Vegas, NV')]"));
     }
+
+    public WebElement getTakeoutBtn() {
+        return driver.findElement(By.xpath("//label[@for='home-checkbox-takeout']"));
+    }
 }
