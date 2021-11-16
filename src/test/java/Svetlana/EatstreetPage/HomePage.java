@@ -52,6 +52,9 @@ public class HomePage extends BasePage {
     public WebElement returnToHomePage(){
         return findElementByXpath("//img[@class='logo-alternate']");
     }
+    public List<WebElement> getCity(){
+        return findElementsByXpath("//li[@class='top-cities__item ng-scope']");
+    }
 
 
     public void checkPopup() {
