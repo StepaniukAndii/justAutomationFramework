@@ -103,4 +103,22 @@ public class TestOthers extends TestInit {
 
         Assert.assertTrue(restPage.getJapaneseMsg().isDisplayed());
     }
+
+    @Test
+    public void testTakeoutOfItalianFoodInTheCityOfNewark() {
+        HomePage homePage = new HomePage(driver);
+        RestPage restPage = new RestPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.getAddressField().sendKeys("Newark");
+        homePage.getFedBtn().click();
+        homePage.checkAndClosePopUpWindow();
+        homePage.getFedBtn().click();
+        sleep(1);
+        restPage.getTakeoutRadioBtn().click();
+        homePage.closeModal();
+        restPage.getItalianFoodLabel().click();
+
+        Assert.assertTrue(restPage.getSpanItalianFood().isDisplayed());
+        Assert.assertTrue(restPage.getDeliveryMsg().isDisplayed());
+    }
 }

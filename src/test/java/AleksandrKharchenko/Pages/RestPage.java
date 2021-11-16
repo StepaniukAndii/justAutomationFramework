@@ -39,4 +39,20 @@ public class RestPage extends BasePage {
     public WebElement getJapaneseMsg() {
         return driver.findElement(By.xpath("//h1[contains(text(),'Japanese Food Delivery & Takeout in Las Vegas')]"));
     }
+
+    public WebElement getTakeoutRadioBtn() {
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+    }
+
+    public WebElement getItalianFoodLabel() {
+        return driver.findElements(By.xpath("//label[@for='filter-cuisine-Italian Food']")).get(0);
+    }
+
+    public WebElement getSpanItalianFood() {
+        return driver.findElement(By.xpath("//span[contains(@class,'active_filter')]"));
+    }
+
+    public WebElement getDeliveryMsg() {
+        return driver.findElement(By.xpath("//p[contains(text(),'offering delivery only')]"));
+    }
 }
