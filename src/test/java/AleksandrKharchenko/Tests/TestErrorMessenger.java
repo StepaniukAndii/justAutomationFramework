@@ -22,7 +22,7 @@ public class TestErrorMessenger extends TestInit {
     }
 
     @Test
-    public void testToShortPasswordOnSignIn(){
+    public void testToShortPasswordOnSignIn() {
         HomePage homePage = new HomePage(driver);
         SignInPage signInPage = new SignInPage(driver);
         homePage.navigateHomeQa2();
@@ -34,5 +34,19 @@ public class TestErrorMessenger extends TestInit {
         sleep(3);
 
         Assert.assertTrue(signInPage.getErrorMSG().isDisplayed());
+    }
+
+    @Test
+    public void testToIncorrectEmailOnSignIn() {
+        HomePage homePage = new HomePage(driver);
+        SignInPage signInPage = new SignInPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.getSignInLink().click();
+        signInPage.closeModal();
+        signInPage.getPasswordField().sendKeys("qwer1234");
+        signInPage.getSignInBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(signInPage.getEmailRequiredMSG().isDisplayed());
     }
 }
