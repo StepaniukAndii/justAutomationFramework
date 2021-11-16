@@ -230,7 +230,6 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(),'Bangladeshi')]"));
     }
 
-<<<<<<< HEAD
     public List<WebElement> getAdressSearchAttempt() {
         return driver.findElements(By.xpath("//div[@class='modal-footer']"));
     }
@@ -242,16 +241,15 @@ public class HomePage extends BasePage {
         }
     }
 
-
     public List<WebElement> getItalianFoodLabel() {
         return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
     }
 
     public WebElement getItalianFood() {
         return driver.findElement(By.xpath("//span[contains(text(),'Italian Food')]"));
-=======
+    }
+
     public WebElement getForCustomers() {
         return driver.findElement(By.xpath("//a[contains(text(), 'For Customers')]"));
->>>>>>> master
     }
 }
