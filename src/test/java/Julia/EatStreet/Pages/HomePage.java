@@ -197,10 +197,6 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'API')]"));
     }
 
-    public WebElement getApiUpdates() {
-        return driver.findElement(By.xpath("//iframe"));
-    }
-
     public WebElement getRestInNY() {
         return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
     }
@@ -251,5 +247,9 @@ public class HomePage extends BasePage {
 
     public WebElement getForCustomers() {
         return driver.findElement(By.xpath("//a[contains(text(), 'For Customers')]"));
+    }
+
+    public WebElement btnAssebilityStatement() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Accessibility Statement')]"));
     }
 }
