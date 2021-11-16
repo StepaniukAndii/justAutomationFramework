@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
 public class HomePage extends BasePage {
 
@@ -251,5 +252,24 @@ public class HomePage extends BasePage {
 
     public WebElement btnAssebilityStatement() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Accessibility Statement')]"));
+    }
+
+    public WebElement btnPrivasyPolicy() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Privacy Policy')]"));
+    }
+
+    public void goToTheSecondWindowTab(WebDriver driver, Integer seconds) {
+        waitForNewTabOpened(seconds);
+        ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+
+    public void waitForNewTabOpened(Integer seconds) {
+        for (int a = 0; a < seconds * 2; a++) {
+            ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
+            if (tabs2.size() > 1) {
+                break;
+            }
+        }
     }
 }
