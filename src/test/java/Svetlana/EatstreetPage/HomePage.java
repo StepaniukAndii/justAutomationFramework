@@ -61,6 +61,12 @@ public class HomePage extends BasePage {
     public WebElement checkLiveChat(){
         return findElementByXpath("//span[@class='messageText']");
     }
+    public WebElement clickAbouAs(){
+        return findElementByXpath("//a[@ui-sref='about-us']");
+    }
+    public WebElement checkAboutAs(){
+       return findElementByXpath("//h1[@class='press__section-title text-center']");
+    }
 
 
     public void checkPopup() {
