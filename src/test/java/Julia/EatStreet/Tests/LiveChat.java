@@ -14,6 +14,7 @@ public class LiveChat extends TestInit {
         homePage.checkAndClousePopUpWindow();
         homePage.clickBtnLiveChat().click();
         sleep(5);
+        homePage.goToTheSecondWindowTab(driver,10);
         homePage.enterMessageLiveChat().sendKeys("Hello!");
         homePage.clickBtnSend();
         Assert.assertEquals(homePage.answerBotLiveChat().getText(),"inquiring about");
