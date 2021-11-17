@@ -197,4 +197,8 @@ public class HomePage extends BasePage {
     public WebElement addZipField() {
         return driver.findElement(By.xpath("//input[@id='zip']"));
     }
+
+    public WebElement addRestAnyCity() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Phoenix, AZ')]"));
+    }
 }
