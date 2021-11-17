@@ -13,6 +13,7 @@ public class ApiTabCheck extends TestInit {
         openUrl("https://qa2.eatstreet.com/");
         homePage.checkAndClousePopUpWindow();
         homePage.btnAPI().click();
-        Assert.assertEquals(homePage.getApiUpdates().getText(),"Eatstreet");
+        Assert.assertTrue(driver.getCurrentUrl().contains("developers"));
+
     }
 }
