@@ -45,4 +45,12 @@ public class CareersPage extends BasePage {
     public WebElement getSearchJobsField() {
         return driver.findElement(By.xpath("//input[@placeholder='Search Jobs']"));
     }
+
+    public WebElement getDeliveryBtn() {
+        return driver.findElement(By.xpath("//label[@for='Delivery']"));
+    }
+
+    public WebElement getDriverDeliveryLine() {
+        return driver.findElement(By.xpath("//div[@class='record']"));
+    }
 }

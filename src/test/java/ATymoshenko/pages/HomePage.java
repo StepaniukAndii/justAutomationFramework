@@ -10,6 +10,14 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
+    public List<WebElement> addANewAddressWindow(){
+        return driver.findElements(By.xpath("//div[@class='modal-body ng-scope']"));
+    }
+
+    public WebElement addNewAddressBtn(){
+        return driver.findElement(By.xpath("//a[contains(text(),'+ Add New Address')]"));
+    }
+
     public WebElement addCurrentPasswordField() {
         return driver.findElement(By.xpath("//input[@id='currentPassword']"));
     }
@@ -156,5 +164,41 @@ public class HomePage extends BasePage {
 
     public WebElement addRestaurantTermsBtnInFooter() {
         return driver.findElement(By.xpath("//a[contains(text(),'Restaurant Terms')]"));
+    }
+
+    public WebElement addStreetAddressField() {
+        return driver.findElement(By.xpath("//input[@id='streetAddress']"));
+    }
+
+    public WebElement addAptSuiteField() {
+        return driver.findElement(By.xpath("//input[@id='aptNumber']"));
+    }
+
+    public WebElement addBuildingNameField() {
+        return driver.findElement(By.xpath("//input[@id='buildingName']"));
+    }
+
+    public WebElement addCityField() {
+        return driver.findElement(By.xpath("//input[@id='city']"));
+    }
+
+    public WebElement addAddressLabelField() {
+        return driver.findElement(By.xpath("//input[@id='name']"));
+    }
+
+    public WebElement addSaveBtnInAddANewAddressWindow() {
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement addStateField() {
+        return driver.findElement(By.xpath("//input[@id='state']"));
+    }
+
+    public WebElement addZipField() {
+        return driver.findElement(By.xpath("//input[@id='zip']"));
+    }
+
+    public WebElement addRestAnyCity() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Phoenix, AZ')]"));
     }
 }

@@ -55,6 +55,18 @@ public class HomePage extends BasePage {
     public List<WebElement> getCity(){
         return findElementsByXpath("//li[@class='top-cities__item ng-scope']");
     }
+    public WebElement getLiveChat(){
+        return findElementByXpath("//div[@class='livechat hidden-tablet']");
+    }
+    public WebElement checkLiveChat(){
+        return findElementByXpath("//span[@class='messageText']");
+    }
+    public WebElement clickAbouAs(){
+        return findElementByXpath("//a[@ui-sref='about-us']");
+    }
+    public WebElement checkAboutAs(){
+       return findElementByXpath("//h1[@class='press__section-title text-center']");
+    }
 
 
     public void checkPopup() {
