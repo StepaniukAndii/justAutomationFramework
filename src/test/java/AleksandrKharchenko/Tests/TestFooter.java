@@ -196,4 +196,19 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(restaurantDashboardPage.getDashboardRequiredMSG().isDisplayed());
     }
+
+    @Test
+    public void testFieldPasswordRestaurantDashboardInFooter() {
+        HomePage homePage = new HomePage(driver);
+        RestaurantDashboardPage restaurantDashboardPage = new RestaurantDashboardPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getRestaurantDashboardLink().click();
+        sleep(1);
+        restaurantDashboardPage.getEmailDashboardField().sendKeys("x-o-m@ukr.net");
+        restaurantDashboardPage.getSignInDashboardBtn().click();
+        sleep(1);
+
+        Assert.assertTrue(restaurantDashboardPage.getPasswordDashboardRequiredMSG().isDisplayed());
+    }
 }
