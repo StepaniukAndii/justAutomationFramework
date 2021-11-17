@@ -5,12 +5,13 @@ import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.MyAccountPageEatstreet;
 import SerhiiBondar.Pages.SingInEatstreetPage;
 import SerhiiBondar.Pages.SingUpEatstreetPage;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestLoginEatstreet extends TestInit {
     @Test
-    public void testLogInWithIncorrectCreds(){
+    public void testLogInWithIncorrectCreds() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -22,8 +23,9 @@ public class TestLoginEatstreet extends TestInit {
 
         Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
     }
+
     @Test
-    public void testEmailField(){
+    public void testEmailField() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -35,8 +37,9 @@ public class TestLoginEatstreet extends TestInit {
                 "Please enter a valid email address");
 
     }
+
     @Test
-    public void testNewUserRegistration(){
+    public void testNewUserRegistration() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -49,11 +52,11 @@ public class TestLoginEatstreet extends TestInit {
         singUpEatstreetPage.getSignUpBtn().click();
         sleep(5);
 
-        Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size()>0);
+        Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size() > 0);
     }
 
     @Test
-    public void testNegativSignUP(){
+    public void testNegativSignUP() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -66,8 +69,9 @@ public class TestLoginEatstreet extends TestInit {
         Assert.assertTrue(singUpEatstreetPage.wrongEnteredEmail().isDisplayed());
 
     }
+
     @Test
-    public void testResetPassword(){
+    public void testResetPassword() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -84,8 +88,9 @@ public class TestLoginEatstreet extends TestInit {
         Assert.assertEquals(singInEatstreetPage.getTextOnModalResetPasswordWindow().getText(),
                 "Instructions have been sent to your email address.");
     }
+
     @Test
-    public void testLoginWithCorrectCreds(){
+    public void testLoginWithCorrectCreds() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
@@ -95,8 +100,9 @@ public class TestLoginEatstreet extends TestInit {
         singInEatstreetPage.getSignInBtn().click();
         sleep(5);
 
-        Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size()>0);
+        Assert.assertTrue(homeEatstreetPage.getMyAccountBtn().size() > 0);
     }
+
     @Test
     public void testLoginWithIncorrectPassword() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
@@ -110,6 +116,7 @@ public class TestLoginEatstreet extends TestInit {
 
         Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
     }
+
     @Test
     public void testLoginWithIncorrectEmail() {
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
@@ -123,4 +130,22 @@ public class TestLoginEatstreet extends TestInit {
 
         Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
     }
+
+    @Test
+    public void testConfirmationPassword() {
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignUpLine().click();
+        SingUpEatstreetPage singUpEatstreetPage = new SingUpEatstreetPage(driver);
+        singUpEatstreetPage.getSingUpEmailField().sendKeys("serhiibondar2@gmail.com");
+        singUpEatstreetPage.getPasswordForSignUpField().sendKeys("club2021");
+        singUpEatstreetPage.getPasswordAgainField().sendKeys("club0000");
+        singUpEatstreetPage.getSignUpBtn().click();
+
+        Assert.assertTrue(singUpEatstreetPage.getMustMachString().isDisplayed());
+    }
+
+
 }

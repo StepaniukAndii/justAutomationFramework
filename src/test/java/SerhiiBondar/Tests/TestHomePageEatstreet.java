@@ -6,7 +6,10 @@ import SerhiiBondar.Pages.RestaurantEatstreetPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestHomePageEatstreet extends TestInit {
+
 
     @Test
     public void testBecomeADriverInSelectedCity(){
@@ -33,16 +36,29 @@ public class TestHomePageEatstreet extends TestInit {
     }
     @Test
     public void testAcrossTheNation(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
         HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
         openUrl("https://eatstreet.com/");
         homeEatstreetPage.getGoItBtn().click();
         homeEatstreetPage.getAtlanta().click();
-        sleep(2);
         homeEatstreetPage.getBurgers().click();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         sleep(2);
 
         Assert.assertEquals(restaurantEatstreetPage.burgersInAtlanta().getText(),
                 "Burger Delivery & Takeout in Atlanta, GA");
+    }
+    @Test
+    public void testCustomerSupport() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getForCustomersLink().click();
+        homeEatstreetPage.getFAQsLink().click();
+        homeEatstreetPage.getGiftCardQuestionLink().click();
+
+        Assert.assertEquals(homeEatstreetPage.getGiftCardQuestion().getText(),"Can I buy a gift card?");
+        Assert.assertEquals(homeEatstreetPage.getAnswer().getText(),"Answer");
     }
 }
