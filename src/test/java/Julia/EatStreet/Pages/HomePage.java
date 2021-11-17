@@ -128,7 +128,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement enterMessageLiveChat() {
-        return driver.findElement(By.xpath("//textarea[@id='liveAgentChatTextArea']"));
+        return driver.findElement(By.xpath("//div[@id='liveAgentChatInput']/textarea"));
     }
 
     public WebElement clickBtnSend() {
@@ -136,7 +136,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement answerBotLiveChat() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'inquiring about')]"));
+        return driver.findElement(By.xpath("//div[contains(text(), 'EatStreet Bot')]"));
     }
 
     public void  checkAndClousePopUpWindow() {
