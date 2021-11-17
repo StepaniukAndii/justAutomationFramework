@@ -1,9 +1,6 @@
 package AleksandrKharchenko.Tests;
 
-import AleksandrKharchenko.Pages.AboutUsPage;
-import AleksandrKharchenko.Pages.CareersPage;
-import AleksandrKharchenko.Pages.ContactUsPage;
-import AleksandrKharchenko.Pages.HomePage;
+import AleksandrKharchenko.Pages.*;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -183,5 +180,20 @@ public class TestFooter extends TestInit {
         careersPage.getDeliveryBtn().click();
 
         Assert.assertTrue(careersPage.getDriverDeliveryLine().isDisplayed());
+    }
+
+    @Test
+    public void testFieldEmailRestaurantDashboardInFooter() {
+        HomePage homePage = new HomePage(driver);
+        RestaurantDashboardPage restaurantDashboardPage = new RestaurantDashboardPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getRestaurantDashboardLink().click();
+        sleep(1);
+        restaurantDashboardPage.getPasswordDashboardField().sendKeys("qwer1234");
+        restaurantDashboardPage.getSignInDashboardBtn().click();
+        sleep(1);
+
+        Assert.assertTrue(restaurantDashboardPage.getDashboardRequiredMSG().isDisplayed());
     }
 }

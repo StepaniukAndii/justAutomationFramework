@@ -81,4 +81,8 @@ public class HomePage extends BasePage {
     public WebElement getTakeoutBtn() {
         return driver.findElement(By.xpath("//label[@for='home-checkbox-takeout']"));
     }
+
+    public WebElement getRestaurantDashboardLink() {
+        return driver.findElement(By.xpath("//a[@ng-click='linkToDashboardSupport()']"));
+    }
 }
