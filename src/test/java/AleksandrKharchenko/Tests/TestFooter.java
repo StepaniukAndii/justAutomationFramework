@@ -171,4 +171,17 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("/signin?next=~2Faccount~2Finfo"));
     }
+
+    @Test
+    public void testCheckBtnDeliveryCareersInFooter() {
+        HomePage homePage = new HomePage(driver);
+        CareersPage careersPage = new CareersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getCareersLink().click();
+        sleep(1);
+        careersPage.getDeliveryBtn().click();
+
+        Assert.assertTrue(careersPage.getDriverDeliveryLine().isDisplayed());
+    }
 }
