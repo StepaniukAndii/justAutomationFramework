@@ -66,5 +66,25 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'Atlanta')]"));
 
     }
+    public WebElement getForCustomersLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'For Customers')]"));
+
+    }
+    public WebElement getFAQsLink(){
+        return driver.findElement(By.xpath("//div[contains(text(),'FAQs')]"));
+
+    }
+    public WebElement getGiftCardQuestionLink(){
+        return driver.findElement(By.xpath("//h2[contains(text(),'gift card')]"));
+
+    }
+    public WebElement getGiftCardQuestion(){
+        return driver.findElement(By.xpath("//h1[contains(text(),'gift card')]"));
+
+    }
+    public WebElement getAnswer(){
+        return driver.findElement(By.xpath("//span[contains(text(),'Answer')]"));
+
+    }
 
 }
