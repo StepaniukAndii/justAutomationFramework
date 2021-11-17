@@ -32,8 +32,8 @@ public class HomePage extends BasePage {
 
     public WebElement clickSignInBtn() { return driver.findElement(By.xpath("//a[@id='menu-signin']")); }
     public WebElement clickSingInWithGoogle() { return  driver.findElement(By.xpath("//div[@id='uniqueid']")); }
-    public List<WebElement> selectAccountWithGoogle() { return driver.findElements(By.xpath("//div[@class='WBW9sf']")); }
-    public WebElement myAccountText() { return driver.findElement(By.xpath("//a[contains(text(), 'My Account')]")); }
+    public WebElement selectAccountWithGoogle() { return driver.findElement(By.xpath("//span[contains(text(), 'Вход')]")); }
+
 
 
 

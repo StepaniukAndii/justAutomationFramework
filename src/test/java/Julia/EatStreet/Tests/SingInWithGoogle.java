@@ -13,9 +13,6 @@ public class SingInWithGoogle extends TestInit {
         openUrl("https://eatstreet.com/");
         homePage.clickSignInBtn().click();
         homePage.clickSingInWithGoogle().click();
-        homePage.selectAccountWithGoogle().get(0).click();
-        Assert.assertEquals(homePage.myAccountText().getText(),"My Account");
+        Assert.assertEquals(homePage.selectAccountWithGoogle().getText(),"Вход");
     }
-
-
 }
