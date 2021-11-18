@@ -97,4 +97,10 @@ public class HomePage extends BasePage {
     public WebElement getInformationAboutDetroitRestaurants(){
         return findElement("//h1[contains(text(),'Order Food Delivery & Takeout in Detroit, MI')]");
     }
+    public WebElement viewAllDetroitRests(){
+        return findElementByXpath("//a[@class='btn btn-primary margin-top-25 ng-binding']");
+    }
+    public WebElement detroitRestsAreOn(){
+        return findElementByXpath("//h1[@class='restaurants-list_header ng-binding ng-scope']");
+    }
 }
