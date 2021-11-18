@@ -1,6 +1,7 @@
 package AleksandrKharchenko.Pages;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -106,7 +107,19 @@ public class MyAccountPage extends BasePage {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
     }
 
-    public WebElement getAptNumberRequiredMSG() {
+    public WebElement getStreetAddressRequiredMSG() {
         return driver.findElement(By.xpath("//div[@id='streetAddress-validation-tag']"));
+    }
+
+    public WebElement getStreetAddressField() {
+        return driver.findElement(By.xpath("//input[@id='streetAddress']"));
+    }
+
+    public WebElement getCityRequiredMSG() {
+        return driver.findElement(By.xpath("//div[@id='city-validation-tag']"));
+    }
+
+    public WebElement getStateRequiredMSG() {
+        return driver.findElement(By.xpath("//div[@id='state-validation-tag']"));
     }
 }
