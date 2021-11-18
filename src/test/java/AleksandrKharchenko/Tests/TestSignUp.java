@@ -227,4 +227,29 @@ public class TestSignUp extends TestInit {
 
         Assert.assertTrue(myAccountPage.getStateRequiredMSG().isDisplayed());
     }
+
+    @Test
+    public void testZipFieldInAddressesSectionMyAccount() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomePage homePage = new HomePage(driver);
+        SignInPage signInPage = new SignInPage(driver);
+        MyAccountPage myAccountPage = new MyAccountPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getSignInLink().click();
+        signInPage.getEmailField().sendKeys("x-o-m@ukr.net");
+        signInPage.getPasswordField().sendKeys("qwer1526js");
+        signInPage.getSignInBtn().click();
+        homePage.getMyAccountLink().click();
+        myAccountPage.getAddNewAddressBtn().click();
+        myAccountPage.getStreetAddressField().sendKeys("368 9th Ave");
+        myAccountPage.getAptNumberField().sendKeys("blablabla");
+        myAccountPage.getBuildingNameField().sendKeys("blablabla");
+        myAccountPage.getCityField().sendKeys("New York");
+        myAccountPage.getStateField().sendKeys("NY");
+        myAccountPage.getAddressLabelField().sendKeys("blablabla");
+        myAccountPage.getSaveBtnAddress().click();
+
+        Assert.assertTrue(myAccountPage.getZipRequiredMSG().isDisplayed());
+    }
 }
