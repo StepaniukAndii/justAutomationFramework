@@ -38,4 +38,18 @@ public class TestRestaurants extends TestInit {
         Assert.assertEquals(restaurantEatstreetPage.getRestListHeader().getText(),
                 "Chicago Restaurants That Deliver & Takeout");
     }
+    @Test
+    public void testRestCategories(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getAsianFoodBtn().click();
+
+        Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),
+                "Asian Food");
+    }
 }
