@@ -12,11 +12,17 @@ public class LiveChat extends TestInit {
         HomePage homePage = new HomePage(driver);
         openUrl("https://qa2.eatstreet.com/");
         homePage.checkAndClousePopUpWindow();
-        homePage.clickBtnLiveChat().click();
         sleep(5);
+        homePage.clickBtnLiveChat().click();
         homePage.goToTheSecondWindowTab(driver,10);
+        sleep(5);
+        homePage.enterMessageLiveChat().isDisplayed();
+        sleep(5);
         homePage.enterMessageLiveChat().sendKeys("Hello!");
-        homePage.clickBtnSend();
-        Assert.assertEquals(homePage.answerBotLiveChat().getText(),"inquiring about");
+        sleep(5);
+        homePage.clickBtnSend().click();
+        Assert.assertEquals(homePage.answerBotLiveChat().getText(),"EatStreet Bot");
     }
 }
+//sendKeys("Hello!");
+//Assert.assertEquals(homePage.answerBotLiveChat().getText(),"EatStreet Bot");
