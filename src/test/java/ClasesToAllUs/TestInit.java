@@ -27,7 +27,7 @@ public class TestInit {
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
-            setProperty("src/test/drivers/chromedriver_91_mac");
+            setProperty("src/test/drivers/chromedriver_96_mac");
         }else if (isOSWindows()){
             setProperty("src/test/drivers/chromedriver_95.exe");
         }else {
@@ -73,10 +73,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-    @AfterMethod
-    public void afterTest() {
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void afterTest() {
+//        driver.quit();
+//    }
 
     public void openUrl(String site) {
         driver.get(site);
@@ -87,6 +87,12 @@ public class TestInit {
         action.sendKeys(Keys.RETURN);
         action.perform();
     }
+    public void pushEnter() {
+        Actions action = new Actions(driver);
+        action.sendKeys(Keys.ENTER);
+        action.perform();
+    }
+
 
     public void sleep(int seconds) {
         try {

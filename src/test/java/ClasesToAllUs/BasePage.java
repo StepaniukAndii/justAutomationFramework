@@ -52,4 +52,12 @@ public abstract class BasePage implements Expectations {
     public List<WebElement> findElementsByXpath(String locator) {
         return waitVisibilityOfAllElementsLocatedBy(locator);
     }
+
+    public void sleep(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

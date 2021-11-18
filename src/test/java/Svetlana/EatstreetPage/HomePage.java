@@ -27,17 +27,47 @@ public class HomePage extends BasePage {
         return findElement("//button[@class='btn']");
     }
 
-
     public WebElement getAddressInput() {
         return findElement("//input[contains(@class,'enter')]");
     }
     public WebElement getFedBtn() {
         return findElement("//a[contains(@class,'btn-action')]");
     }
+    public WebElement getSignIn(){
+        return findElementByXpath("//a[@id='menu-signin']");
+    }
 
     public List<WebElement> getSearchAttempt() {
         return findElementsByXpath("//div[contains(@class,'modal-footer')]/a");
     }
+    public WebElement CheckHomePage(){
+        return findElementByXpath("//a[@id='menu-my-account']");
+    }
+    public WebElement checkWebSite(){
+        return findElementByXpath("//img[@class='logo-alternate']");
+    }
+    public WebElement pressRestBtn(){
+        return findElementByXpath("//a[contains(text(),'Wausau')]");
+    }
+    public WebElement returnToHomePage(){
+        return findElementByXpath("//img[@class='logo-alternate']");
+    }
+    public List<WebElement> getCity(){
+        return findElementsByXpath("//li[@class='top-cities__item ng-scope']");
+    }
+    public WebElement getLiveChat(){
+        return findElementByXpath("//div[@class='livechat hidden-tablet']");
+    }
+    public WebElement checkLiveChat(){
+        return findElementByXpath("//span[@class='messageText']");
+    }
+    public WebElement clickAbouAs(){
+        return findElementByXpath("//a[@ui-sref='about-us']");
+    }
+    public WebElement checkAboutAs(){
+       return findElementByXpath("//h1[@class='press__section-title text-center']");
+    }
+
 
     public void checkPopup() {
         if (getSearchAttempt().size() > 0) {
