@@ -211,4 +211,16 @@ public class TestFooter extends TestInit {
 
         Assert.assertTrue(restaurantDashboardPage.getPasswordDashboardRequiredMSG().isDisplayed());
     }
+
+    @Test
+    public void testLinkTermsOfUseInFooter() {
+        HomePage homePage = new HomePage(driver);
+        TermsOfUsePage termsOfUsePage = new TermsOfUsePage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getTermsOfUse().click();
+        termsOfUsePage.getPrivacyLink().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/privacy"));
+    }
 }
