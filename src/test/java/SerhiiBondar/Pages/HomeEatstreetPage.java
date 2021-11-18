@@ -102,5 +102,9 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
 
     }
-
+    public void passModalWindow(){
+        if (addressSearchAttempModalWindow().size()>0){
+            getEnterAddressBtn().click();}
+        else{getFedBtn().click();}
+    }
 }
