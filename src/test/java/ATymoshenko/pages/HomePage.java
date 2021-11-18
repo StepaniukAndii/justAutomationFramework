@@ -201,4 +201,8 @@ public class HomePage extends BasePage {
     public WebElement addRestAnyCity() {
         return driver.findElement(By.xpath("//a[contains(text(),'Phoenix, AZ')]"));
     }
+
+    public List<WebElement> addAnyFoodInAnyCity() {
+        return driver.findElements(By.xpath("//div[@class='cuisine-types__item__image-container']"));
+    }
 }

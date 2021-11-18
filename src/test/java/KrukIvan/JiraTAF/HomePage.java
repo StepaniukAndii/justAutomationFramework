@@ -107,16 +107,28 @@ public class HomePage extends BasePage {
     public List<WebElement> getList() {
         return findElementsByXpath("//ul[contains(@class, 'filters-section_checkoxes')]//input[contains(@class, 'ng-not-empty')]");
     }
-    public WebElement bTNTakeout(){
+    public WebElement filterTakeout(){
         return findElementByXpath("//input[@id='filters-checkbox-takeout']");
     }
-    public WebElement bTNTakeoutIsOn(){
-        return findElementByXpath("//input[contains(@class, 'ng-valid-parse')]");
+    public WebElement filterTakeoutIsOn(){
+        return driver.findElement(By.xpath("//input[contains(@value, 'free')]"));
     }
     public List<WebElement> typesOfCuisine(){
         return findElementsByXpath("//li[@class='cuisine-types__item']");
     }
     public WebElement getInformationABTAsianFood(){
         return findElementByXpath("//h1[contains(text(), 'Asian Food')]");
+    }
+    public WebElement bTNTakeOut(){
+        return findElementByXpath("//label[@for='home-checkbox-takeout']");
+    }
+    public WebElement bTNTakeOutIsOn(){
+        return findElementByXpath("//input[@id='home-checkbox-takeout']");
+    }
+    public WebElement viewAllDetroitRests(){
+        return findElementByXpath("//a[@class='btn btn-primary margin-top-25 ng-binding']");
+    }
+    public WebElement detroitRestsAreOn(){
+        return findElementByXpath("//h1[@class='restaurants-list_header ng-binding ng-scope']");
     }
 }
