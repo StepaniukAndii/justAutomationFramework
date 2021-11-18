@@ -1,15 +1,13 @@
 package Julia.EatStreet.Pages;
-
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import javax.swing.*;
+import java.util.ArrayList;
 import java.util.List;
-
 public class HomePage extends BasePage {
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -31,6 +29,22 @@ public class HomePage extends BasePage {
 
     public List<WebElement> getAllRest() {
         return driver.findElements(By.xpath("//ul[@id='all-rests']/li"));
+            }
+
+    public void getSelectPageRest() {
+        if (getPageNumberList().size() > 0) {
+            sleep(5);
+            getPageNumberList().get(getPageNumberList().size() - 1).click();
+        }
+    }
+
+    public void getSelect70Rest() {
+        if (getPageNumberList().size() > 0) {
+            getPageNumberList().get(1).click();
+            getAllRest().get(19).click();
+        } else {
+            getAllRest().get(getAllRest().size() - 1).click();
+        }
     }
 
     public List<WebElement> getSearchAttempt() {
@@ -38,7 +52,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement restName(){
-        return  findElement("//h1[contains(@class,'name')]");
+        return  findElement("//a[contains(text(), 'York City')]");
     }
 
     public WebElement clickSignInBtn() {
@@ -124,13 +138,13 @@ public class HomePage extends BasePage {
     public WebElement answerBotLiveChat() {
         return driver.findElement(By.xpath("//span[contains(text(), 'inquiring about')]"));
     }
+
     public void  checkAndClousePopUpWindow() {
         if (getSearchAttempt().size() > 0) {
             sleep(2);
             getSearchAttempt().get(0).click();
         }
     }
-
 
     public void sleep(int seconds) {
         try {
@@ -180,6 +194,82 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'EatStreet')]"));
     }
 
+    public WebElement btnAPI() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'API')]"));
+    }
+
+    public WebElement getRestInNY() {
+        return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
+    }
+
+    public WebElement btnBlog() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
+    }
+
+    public WebElement clickResentPost() {
+        return driver.findElement(By.xpath("//section[@id='recent-posts']/article[@id='post-11918']"));
+
+    }
+    public WebElement selectCityDetroyd() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
+    }
+
+    public WebElement selectAsianCousin() {
+        return driver.findElement(By.xpath("//button[contains(text(),'Asian')]"));
+    }
 
 
+    public WebElement tabBetterbin() {
+            return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
+    }
+
+    public WebElement getAsianFood() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Bangladeshi')]"));
+    }
+
+    public List<WebElement> getAdressSearchAttempt() {
+        return driver.findElements(By.xpath("//div[@class='modal-footer']"));
+    }
+
+    public void  checkAndClouseAdressSearchAttempt() {
+        if (getAdressSearchAttempt().size() > 0) {
+            sleep(2);
+            getAdressSearchAttempt().get(1).click();
+        }
+    }
+
+    public List<WebElement> getItalianFoodLabel() {
+        return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
+    }
+
+    public WebElement getItalianFood() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Italian Food')]"));
+    }
+
+    public WebElement getForCustomers() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'For Customers')]"));
+    }
+
+    public WebElement btnAssebilityStatement() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Accessibility Statement')]"));
+    }
+
+    public WebElement btnPrivasyPolicy() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Privacy Policy')]"));
+    }
+
+    public void goToTheSecondWindowTab(WebDriver driver, Integer seconds) {
+        waitForNewTabOpened(seconds);
+        ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+
+    public void waitForNewTabOpened(Integer seconds) {
+        for (int a = 0; a < seconds * 2; a++) {
+            ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
+            if (tabs2.size() > 1) {
+                break;
+            }
+        }
+    }
 }

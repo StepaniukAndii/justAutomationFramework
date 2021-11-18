@@ -95,7 +95,35 @@ public class HomePage extends BasePage {
         return findElement("//a[@href='/detroit-mi/home']");
     }
     public WebElement getInformationAboutDetroitRestaurants(){
-        return findElement("//h1[contains(text(),'Order Food Delivery & Takeout in Detroit, MI')]");
+        return findElementByXpath("//h1[contains(text(),'Order Food Delivery & Takeout in Detroit, MI')]");
+    }
+    public List<WebElement> addFilters(){
+        return findElementsByXpath("//div[@class='checkbox checkbox_blue']");
+    }
+    public List<WebElement> filtersAreVisible(){
+        return findElementsByXpath("//span[@class='active_filter ng-binding ng-scope']");
+    }
+
+    public List<WebElement> getList() {
+        return findElementsByXpath("//ul[contains(@class, 'filters-section_checkoxes')]//input[contains(@class, 'ng-not-empty')]");
+    }
+    public WebElement filterTakeout(){
+        return findElementByXpath("//input[@id='filters-checkbox-takeout']");
+    }
+    public WebElement filterTakeoutIsOn(){
+        return driver.findElement(By.xpath("//input[contains(@value, 'free')]"));
+    }
+    public List<WebElement> typesOfCuisine(){
+        return findElementsByXpath("//li[@class='cuisine-types__item']");
+    }
+    public WebElement getInformationABTAsianFood(){
+        return findElementByXpath("//h1[contains(text(), 'Asian Food')]");
+    }
+    public WebElement bTNTakeOut(){
+        return findElementByXpath("//label[@for='home-checkbox-takeout']");
+    }
+    public WebElement bTNTakeOutIsOn(){
+        return findElementByXpath("//input[@id='home-checkbox-takeout']");
     }
     public WebElement viewAllDetroitRests(){
         return findElementByXpath("//a[@class='btn btn-primary margin-top-25 ng-binding']");

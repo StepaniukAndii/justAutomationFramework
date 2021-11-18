@@ -37,4 +37,8 @@ public class SignInPage extends BasePage {
     public WebElement getSignUpLink() {
         return driver.findElement(By.xpath("//a[contains(text(),'Sign Up')]"));
     }
+
+    public WebElement getEmailRequiredMSG() {
+        return driver.findElement(By.xpath("//div[@id='email-validation-tag']"));
+    }
 }
