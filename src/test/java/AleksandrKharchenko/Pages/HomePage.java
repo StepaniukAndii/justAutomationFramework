@@ -85,4 +85,8 @@ public class HomePage extends BasePage {
     public WebElement getRestaurantDashboardLink() {
         return driver.findElement(By.xpath("//a[@ng-click='linkToDashboardSupport()']"));
     }
+
+    public WebElement getTermsOfUse() {
+        return driver.findElement(By.xpath("//a[@ui-sref='terms']"));
+    }
 }
