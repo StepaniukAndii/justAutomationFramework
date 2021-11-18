@@ -118,4 +118,8 @@ public class MyAccountPage extends BasePage {
     public WebElement getCityRequiredMSG() {
         return driver.findElement(By.xpath("//div[@id='city-validation-tag']"));
     }
+
+    public WebElement getStateRequiredMSG() {
+        return driver.findElement(By.xpath("//div[@id='state-validation-tag']"));
+    }
 }
