@@ -15,4 +15,16 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//h1[contains(text(),'in Atlanta')]"));
 
     }
+    public WebElement getSortOptions(){
+        return driver.findElement(By.xpath("//span[contains(text(),'Sort by')]"));
+
+    }
+    public WebElement getSortByDeliveryFee(){
+        return driver.findElement(By.xpath("//button[contains(text(),'Delivery Fee')]"));
+
+    }
+    public WebElement getDeliveryFeeBtn(){
+        return driver.findElement(By.xpath("//button[@aria-label='delivery_fee']"));
+
+    }
 }
