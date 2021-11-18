@@ -4,16 +4,19 @@ import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestTakeoutFiltr extends TestInit {
+import java.util.concurrent.TimeUnit;
+
+public class TestMenu extends TestInit {
     @Test
-    public void testTakeoutFiltr(){
+    public void testMenu(){
         HomePage homePage = new HomePage(driver);
         openUrl("https://qa2.eatstreet.com/");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         homePage.clickButtonGotIt().click();
         homePage.writeAddress().sendKeys("new york \n");
         homePage.bTNEnterAddress().click();
         homePage.bTNGetFed().click();
-        homePage.filterTakeout().click();
-        Assert.assertTrue(homePage.filterTakeoutIsOn().isDisplayed());
+        homePage.getRestaurant().get(0).click();
+        Assert.assertTrue(homePage.addFood().size() > 1);
     }
 }

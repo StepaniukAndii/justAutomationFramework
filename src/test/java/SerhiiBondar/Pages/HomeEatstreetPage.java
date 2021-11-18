@@ -86,5 +86,25 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(),'Answer')]"));
 
     }
+    public WebElement getEnterYourAddressLink(){
+        return driver.findElement(By.xpath("//input[@id='input-food-search']"));
 
+    }
+    public WebElement getFedBtn(){
+        return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
+
+    }
+    public List<WebElement> addressSearchAttempModalWindow(){
+        return driver.findElements(By.xpath("//div[@class='modal-content']"));
+
+    }
+    public WebElement getEnterAddressBtn(){
+        return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
+
+    }
+    public void passModalWindow(){
+        if (addressSearchAttempModalWindow().size()>0){
+            getEnterAddressBtn().click();}
+        else{getFedBtn().click();}
+    }
 }
