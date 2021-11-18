@@ -91,6 +91,15 @@ public class HomePage extends BasePage {
     public WebElement checkAnswerBotLiveChat() {
         return findElementByXpath("//span[contains(text(), 'inquiring about')]");
     }
+    public WebElement sendRequestLiveChat(){
+        return  findElementByXpath("//div[contains(text(),'order issue')]");
+    }
+    public WebElement clickEndChatBtn(){
+        return findElementByXpath("//button[@title='End Chat']");
+    }
+    public WebElement checkEndChatBtn(){
+        return findElementByXpath("//span[contains(@class,'system')]");
+    }
 
     public void goToTheSecondWindowTab(WebDriver driver, Integer seconds) {
         waitForNewTabOpened(seconds);
