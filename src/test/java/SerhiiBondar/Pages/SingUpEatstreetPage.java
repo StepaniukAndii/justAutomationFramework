@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class SingUpEatstreetPage extends BasePage {
 
     public SingUpEatstreetPage(WebDriver driver) {
@@ -34,6 +36,10 @@ public class SingUpEatstreetPage extends BasePage {
     }
     public WebElement getMustMachString(){
         return driver.findElement(By.xpath("//div[contains(@class,'validation-tag')]"));
+
+    }
+    public List<WebElement> getShowPasswordBtn(){
+        return driver.findElements(By.xpath("//div[@ng-if='displayPasswordToggler']"));
 
     }
 

@@ -73,4 +73,40 @@ public class MyAccountPage extends BasePage {
     public WebElement getInfoAboutDeactivation() {
         return driver.findElement(By.xpath("//div[contains(text(),'has been deactivated.')]"));
     }
+
+    public WebElement getAddNewAddressBtn() {
+        return driver.findElement(By.xpath("//a[@id='add-new-address']"));
+    }
+
+    public WebElement getAptNumberField() {
+        return driver.findElement(By.xpath("//input[@id='aptNumber']"));
+    }
+
+    public WebElement getBuildingNameField() {
+        return driver.findElement(By.xpath("//input[@id='buildingName']"));
+    }
+
+    public WebElement getCityField() {
+        return driver.findElement(By.xpath("//input[@id='city']"));
+    }
+
+    public WebElement getStateField() {
+        return driver.findElement(By.xpath("//input[@id='state']"));
+    }
+
+    public WebElement getZipField() {
+        return driver.findElement(By.xpath("//input[@id='zip']"));
+    }
+
+    public WebElement getAddressLabelField() {
+        return driver.findElement(By.xpath("//input[@id='name']"));
+    }
+
+    public WebElement getSaveBtnAddress() {
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+    }
+
+    public WebElement getAptNumberRequiredMSG() {
+        return driver.findElement(By.xpath("//div[@id='streetAddress-validation-tag']"));
+    }
 }
