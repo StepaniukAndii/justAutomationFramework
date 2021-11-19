@@ -280,4 +280,16 @@ public class HomePage extends BasePage {
     public WebElement btnRestTerms() {
         return driver.findElement(By.xpath("//a[contains(text(),'Restaurant Terms')]"));
     }
+
+    public WebElement btnRestDashboard() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Restaurant Dashboard')]"));
+    }
+
+    public WebElement btnCreateFreeAccount() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Create a free account')]"));
+    }
+
+    public WebElement getSignUpDashboard() {
+        return driver.findElement(By.xpath("//h1[contains(text(), 'Sign Up')]"));
+    }
 }
