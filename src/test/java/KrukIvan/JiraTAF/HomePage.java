@@ -131,4 +131,10 @@ public class HomePage extends BasePage {
     public WebElement detroitRestsAreOn(){
         return findElementByXpath("//h1[@class='restaurants-list_header ng-binding ng-scope']");
     }
+    public WebElement signUpWithFacebook(){
+        return findElementByXpath("//a[@class='btn btn-facebook full-width margin-bottom-10']");
+    }
+    public WebElement signUpWithGoogle(){
+        return findElementByXpath("//div[@class='btn btn-google btn-google--sign-in full-width ng-binding']");
+    }
 }
