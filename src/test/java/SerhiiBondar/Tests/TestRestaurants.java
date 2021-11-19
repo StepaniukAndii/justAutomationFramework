@@ -52,4 +52,17 @@ public class TestRestaurants extends TestInit {
         Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),
                 "Asian Food");
     }
+    @Test
+    public void testRestFilters(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getFilterRating4PlusBtn().click();
+
+        Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),"Rating 4+");
+    }
 }
