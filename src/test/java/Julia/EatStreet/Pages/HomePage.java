@@ -312,4 +312,28 @@ public class HomePage extends BasePage {
     public WebElement btnCareers() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Careers')]"));
     }
+
+    public WebElement btnTech() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Tech')]"));
+    }
+
+    public WebElement btnCreative() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Creative')]"));
+    }
+
+    public WebElement btnCulinary() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Culinary')]"));
+    }
+
+    public WebElement btnBusiness() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Business')]"));
+    }
+
+    public WebElement btnDelivery() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Delivery')]"));
+    }
+
+    public WebElement allJobs() {
+        return driver.findElement(By.xpath("//h2[contains(text(),'All Jobs')]"));
+    }
 }
