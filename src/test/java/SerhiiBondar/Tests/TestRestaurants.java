@@ -65,4 +65,23 @@ public class TestRestaurants extends TestInit {
 
         Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),"Rating 4+");
     }
+    @Test
+    public void testRestRating(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        if (restaurantEatstreetPage.restRatings().isDisplayed()) {
+            restaurantEatstreetPage.restRatings().click();
+        } else {
+            restaurantEatstreetPage.getRestList().get(1).click();
+            restaurantEatstreetPage.restRatings().click();
+        }
+
+        Assert.assertTrue(restaurantEatstreetPage.reviewQuantity().getText().contains("Review"));
+    }
 }
