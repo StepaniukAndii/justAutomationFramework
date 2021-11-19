@@ -45,4 +45,8 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//label[contains(text(),'BBQ')]"));
 
     }
+    public WebElement getFilterRating4PlusBtn(){
+        return driver.findElement(By.xpath("//label[@for='filter-Rating 4+']"));
+
+    }
 }
