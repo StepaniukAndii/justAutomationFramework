@@ -5,6 +5,8 @@ import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestFooter extends TestInit {
 
     @Test
@@ -222,5 +224,17 @@ public class TestFooter extends TestInit {
         termsOfUsePage.getPrivacyLink().click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("/privacy"));
+    }
+
+    @Test
+    public void testLinkGetFedForCustomersInFooter() {
+       HomePage homePage = new HomePage(driver);
+       ForCustomersPage forCustomersPage = new ForCustomersPage(driver);
+       homePage.navigateHomeQa2();
+       homePage.closeModal();
+       homePage.getForCustomersLink().click();
+       forCustomersPage.getGetFedLinkForCustomers().click();
+
+       Assert.assertTrue(driver.getCurrentUrl().contains("eatstreet.com"));
     }
 }
