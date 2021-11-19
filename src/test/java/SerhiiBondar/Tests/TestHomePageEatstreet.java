@@ -85,4 +85,29 @@ public class TestHomePageEatstreet extends TestInit {
         Assert.assertEquals(theAppPageEatstreet.SmsActionInformation().getText(),
                 "Please enter a valid phone number.");
     }
+
+    @Test
+    public void testAppLinkWithCorrectedPhoneNumber() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getTheAppLink().click();
+        TheAppPageEatstreet theAppPageEatstreet = new TheAppPageEatstreet(driver);
+        theAppPageEatstreet.getAndroidBtn().click();
+        theAppPageEatstreet.getCheckBoxReceiveSms().click();
+        theAppPageEatstreet.getMobileNumberField().sendKeys("2344567897");
+        theAppPageEatstreet.getTextLinkOrangeBtn().click();
+        sleep(2);
+        if (theAppPageEatstreet.SmsNotification().getText().equals("SMS Not Sent")) {
+            theAppPageEatstreet.getOkayBtn().click();
+            theAppPageEatstreet.getMobileNumberField().clear();
+            theAppPageEatstreet.getMobileNumberField().sendKeys("(234) 456-7897");
+            theAppPageEatstreet.getTextLinkOrangeBtn().click();
+        }
+        sleep(2);
+
+        Assert.assertEquals(theAppPageEatstreet.SmsNotification().getText(), "SMS Sent!");
+    }
+
 }
