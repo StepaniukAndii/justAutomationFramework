@@ -146,6 +146,24 @@ public class TestLoginEatstreet extends TestInit {
 
         Assert.assertTrue(singUpEatstreetPage.getMustMachString().isDisplayed());
     }
+    @Test
+    public void testSignInWithGoogle(){
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignInWithGoogleLink().click();
 
+        Assert.assertTrue(driver.getPageSource().contains("accounts.google.com"));
+    }
+    @Test
+    public void testSignInWithFacebook() {
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignInWithFacebookLink().click();
 
+        Assert.assertTrue(driver.getPageSource().contains("facebook.com"));
+    }
 }

@@ -50,7 +50,12 @@ public class SingInEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//div[contains(text(), 'have been sent')]"));
 
     }
+    public WebElement getSignInWithGoogleLink(){
+        return driver.findElement(By.xpath("//div[contains(@class,'btn-google')]"));
 
+    }
+    public WebElement getSignInWithFacebookLink(){
+        return driver.findElement(By.xpath("//a[contains(@class,'btn-facebook')]"));
 
-
+    }
 }

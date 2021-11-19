@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class RestaurantEatstreetPage extends BasePage {
 
     public RestaurantEatstreetPage(WebDriver driver) {
@@ -29,6 +31,18 @@ public class RestaurantEatstreetPage extends BasePage {
     }
     public WebElement getRestListHeader(){
         return driver.findElement(By.xpath("//h1[contains(@class,'restaurants-list_header')]"));
+
+    }
+    public List<WebElement> getRestListContainer(){
+        return driver.findElements(By.xpath("//div[@id='container']"));
+
+    }
+    public WebElement getAsianFoodBtn(){
+        return driver.findElement(By.xpath("//label[contains(text(),'Asian Food')]"));
+
+    }
+    public WebElement getBBQFoodBtn(){
+        return driver.findElement(By.xpath("//label[contains(text(),'BBQ')]"));
 
     }
 }

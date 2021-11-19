@@ -4,6 +4,8 @@ import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+
 public class SignUpTest extends TestInit {
     @Test
     public void testSignUp(){
@@ -18,5 +20,27 @@ public class SignUpTest extends TestInit {
         homePage.enterPasswordAgain().sendKeys("11111111");
         sleep(1);
         Assert.assertTrue(homePage.wrongEmailMSG().isDisplayed());
+    }
+    @Test
+    public void testSignUpWithFacebook(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com");
+        homePage.clickButtonGotIt().click();
+        homePage.clickBTNSignInOnHomePage().click();
+        homePage.clickTextSignUp().click();
+        homePage.signUpWithFacebook().click();
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+        Assert.assertEquals(2,tabs.size());
+    }
+    @Test
+    public void testSignUpWithGoogle(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com");
+        homePage.clickButtonGotIt().click();
+        homePage.clickBTNSignInOnHomePage().click();
+        homePage.clickTextSignUp().click();
+        homePage.signUpWithGoogle().click();
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+        Assert.assertEquals(2,tabs.size());
     }
 }

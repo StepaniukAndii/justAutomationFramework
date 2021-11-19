@@ -63,8 +63,8 @@ public class HomePage extends BasePage {
         return  driver.findElement(By.xpath("//div[@id='uniqueid']"));
     }
 
-    public List<WebElement> selectAccountWithGoogle() {
-        return driver.findElements(By.xpath("//div[@class='WBW9sf']"));
+    public WebElement selectAccountWithGoogle() {
+        return driver.findElement(By.xpath("//span[contains(text(), 'Вход')]"));
     }
 
     public WebElement myAccountText() {
@@ -128,7 +128,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement enterMessageLiveChat() {
-        return driver.findElement(By.xpath("//textarea[@id='liveAgentChatTextArea']"));
+        return driver.findElement(By.xpath("//div[@id='liveAgentChatInput']/textarea"));
     }
 
     public WebElement clickBtnSend() {
@@ -136,7 +136,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement answerBotLiveChat() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'inquiring about')]"));
+        return driver.findElement(By.xpath("//div[contains(text(), 'EatStreet Bot')]"));
     }
 
     public void  checkAndClousePopUpWindow() {
@@ -228,7 +228,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getAdressSearchAttempt() {
-        return driver.findElements(By.xpath("//div[@class='modal-footer']"));
+        return driver.findElements(By.xpath("//div[@class='modal-footer']/a"));
     }
 
     public void  checkAndClouseAdressSearchAttempt() {
@@ -271,5 +271,29 @@ public class HomePage extends BasePage {
                 break;
             }
         }
+    }
+
+    public WebElement clickBtnTermsUse() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
+    }
+
+    public WebElement btnRestTerms() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Restaurant Terms')]"));
+    }
+
+    public WebElement btnRestDashboard() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Restaurant Dashboard')]"));
+    }
+
+    public WebElement btnCreateFreeAccount() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Create a free account')]"));
+    }
+
+    public WebElement getSignUpDashboard() {
+        return driver.findElement(By.xpath("//h1[contains(text(), 'Sign Up')]"));
+    }
+
+    public WebElement getBackToOrlando() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Back to Orlando, FL Restaurants')]"));
     }
 }

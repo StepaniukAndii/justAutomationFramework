@@ -122,4 +122,8 @@ public class MyAccountPage extends BasePage {
     public WebElement getStateRequiredMSG() {
         return driver.findElement(By.xpath("//div[@id='state-validation-tag']"));
     }
+
+    public WebElement getZipRequiredMSG() {
+        return driver.findElement(By.xpath("//div[@id='zip-validation-tag']"));
+    }
 }
