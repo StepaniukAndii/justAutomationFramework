@@ -336,4 +336,12 @@ public class HomePage extends BasePage {
     public WebElement allJobs() {
         return driver.findElement(By.xpath("//h2[contains(text(),'All Jobs')]"));
     }
+
+    public WebElement clickDeliveryBtn() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Delivery')]"));
+    }
+
+    public WebElement clickTakeOutBtn() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Takeout')]"));
+    }
 }
