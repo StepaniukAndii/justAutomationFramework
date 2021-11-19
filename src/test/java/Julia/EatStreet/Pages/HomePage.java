@@ -300,4 +300,8 @@ public class HomePage extends BasePage {
     public WebElement getBackToCorvallis() {
         return driver.findElement(By.xpath("//a[contains(text(),'Back to Corvallis, OR Restaurants')]"));
     }
+
+    public WebElement getBackBeverlyHills() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Back to Los Angeles, CA Restaurants')]"));
+    }
 }
