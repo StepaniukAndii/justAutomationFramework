@@ -237,4 +237,16 @@ public class TestFooter extends TestInit {
 
        Assert.assertTrue(driver.getCurrentUrl().contains("eatstreet.com"));
     }
+
+    @Test
+    public void testLinkContactUsForCustomersInFooter(){
+        HomePage homePage = new HomePage(driver);
+        ForCustomersPage forCustomersPage = new ForCustomersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getForCustomersLink().click();
+        forCustomersPage.getContactUsLinkForCustomers().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("customers/s/contactsupport"));
+    }
 }
