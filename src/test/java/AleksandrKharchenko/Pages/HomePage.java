@@ -89,4 +89,8 @@ public class HomePage extends BasePage {
     public WebElement getTermsOfUse() {
         return driver.findElement(By.xpath("//a[@ui-sref='terms']"));
     }
+
+    public WebElement getForCustomersLink(){
+        return findElementByXpath("//a[contains(text(),'For Customers')]");
+    }
 }
