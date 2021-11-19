@@ -31,7 +31,7 @@ public class TestInit {
         }else if (isOSWindows()){
             setProperty("src/test/drivers/chromedriver_95.exe");
         }else {
-            setProperty("src/test/drivers/chromedriver_90_linux");
+            setProperty("src/test/drivers/chromedriver_96_linux");
         }
 
         driver = new ChromeDriver(options);
