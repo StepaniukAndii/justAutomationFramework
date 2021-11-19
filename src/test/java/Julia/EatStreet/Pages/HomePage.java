@@ -308,4 +308,8 @@ public class HomePage extends BasePage {
     public WebElement getBackToLakewood() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Back to Lakewood, CO Restaurants')]"));
     }
+
+    public WebElement btnCareers() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Careers')]"));
+    }
 }
