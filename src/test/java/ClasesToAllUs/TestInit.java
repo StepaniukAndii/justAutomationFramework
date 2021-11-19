@@ -87,6 +87,12 @@ public class TestInit {
         action.sendKeys(Keys.RETURN);
         action.perform();
     }
+    public void pushEnter() {
+        Actions action = new Actions(driver);
+        action.sendKeys(Keys.ENTER);
+        action.perform();
+    }
+
 
     public void sleep(int seconds) {
         try {

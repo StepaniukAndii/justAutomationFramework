@@ -5,6 +5,8 @@ import ClasesToAllUs.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestFooter extends TestInit {
 
     @Test
@@ -210,5 +212,41 @@ public class TestFooter extends TestInit {
         sleep(1);
 
         Assert.assertTrue(restaurantDashboardPage.getPasswordDashboardRequiredMSG().isDisplayed());
+    }
+
+    @Test
+    public void testLinkTermsOfUseInFooter() {
+        HomePage homePage = new HomePage(driver);
+        TermsOfUsePage termsOfUsePage = new TermsOfUsePage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getTermsOfUse().click();
+        termsOfUsePage.getPrivacyLink().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/privacy"));
+    }
+
+    @Test
+    public void testLinkGetFedForCustomersInFooter() {
+       HomePage homePage = new HomePage(driver);
+       ForCustomersPage forCustomersPage = new ForCustomersPage(driver);
+       homePage.navigateHomeQa2();
+       homePage.closeModal();
+       homePage.getForCustomersLink().click();
+       forCustomersPage.getGetFedLinkForCustomers().click();
+
+       Assert.assertTrue(driver.getCurrentUrl().contains("eatstreet.com"));
+    }
+
+    @Test
+    public void testLinkContactUsForCustomersInFooter(){
+        HomePage homePage = new HomePage(driver);
+        ForCustomersPage forCustomersPage = new ForCustomersPage(driver);
+        homePage.navigateHomeQa2();
+        homePage.closeModal();
+        homePage.getForCustomersLink().click();
+        forCustomersPage.getContactUsLinkForCustomers().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("customers/s/contactsupport"));
     }
 }
