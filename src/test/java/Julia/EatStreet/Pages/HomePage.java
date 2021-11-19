@@ -228,7 +228,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getAdressSearchAttempt() {
-        return driver.findElements(By.xpath("//div[@class='modal-footer']"));
+        return driver.findElements(By.xpath("//div[@class='modal-footer']/a"));
     }
 
     public void  checkAndClouseAdressSearchAttempt() {
@@ -291,5 +291,13 @@ public class HomePage extends BasePage {
 
     public WebElement getSignUpDashboard() {
         return driver.findElement(By.xpath("//h1[contains(text(), 'Sign Up')]"));
+    }
+
+    public WebElement getBackToOrlando() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Back to Orlando, FL Restaurants')]"));
+    }
+
+    public WebElement getBackToCorvallis() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Back to Corvallis, OR Restaurants')]"));
     }
 }
