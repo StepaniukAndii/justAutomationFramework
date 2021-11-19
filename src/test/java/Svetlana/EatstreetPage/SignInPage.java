@@ -33,6 +33,10 @@ public class SignInPage extends BasePage {
     public WebElement getWithFC(){
         return findElementByXpath("//a[contains(@class,'btn-facebook')]");
     }
+    public WebElement getWithGoogl(){
+        return findElementByXpath("//div[contains(@class,'btn-google')]");
+    }
+
 
 
 }
