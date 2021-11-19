@@ -107,4 +107,9 @@ public class HomeEatstreetPage extends BasePage {
             getEnterAddressBtn().click();}
         else{getFedBtn().click();}
     }
+    public WebElement getTheAppLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Get The App')]"));
+
+    }
+
 }

@@ -166,4 +166,5 @@ public class TestLoginEatstreet extends TestInit {
 
         Assert.assertTrue(driver.getPageSource().contains("facebook.com"));
     }
+
 }
