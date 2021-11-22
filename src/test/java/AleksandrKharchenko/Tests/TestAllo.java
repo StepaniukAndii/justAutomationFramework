@@ -31,4 +31,15 @@ public class TestAllo extends TestInit {
 
         Assert.assertTrue(homePage.getErrorSignUpMSG().size() == 2);
     }
+
+    @Test
+    public void testRegistrationFieldsNamePhoneAndPassword() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://allo.ua/");
+        homePage.getLinkSignUp().click();
+        homePage.getEmailField().sendKeys("dijosa2551@hobsun.com");
+        homePage.getSignUpBtn().click();
+
+        Assert.assertTrue(homePage.getErrorSignUpMSG().size() == 3);
+    }
 }
