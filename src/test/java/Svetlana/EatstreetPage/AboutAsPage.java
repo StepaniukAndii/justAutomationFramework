@@ -13,4 +13,7 @@ public class AboutAsPage extends BasePage {
     public List<WebElement> checkOpenUrl(){
         return findElementsByXpath("//a[contains(text(),'customer')]");
     }
+    public WebElement checkOpenReportLink(){
+        return findElementByXpath("//a[@ui-sref='account']");
+    }
 }
