@@ -13,4 +13,5 @@ public class AboutAs extends TestInit {
         homePage.clickAbouAs().click();
         Assert.assertEquals(homePage.checkAboutAs().getText(),"About Us");
     }
+
 }
