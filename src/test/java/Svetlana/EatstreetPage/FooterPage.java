@@ -21,7 +21,10 @@ public class FooterPage extends BasePage {
         return findElementByXpath("//a[@ui-sref='careers']");
     }
     public WebElement inputSerchField(){
-        return findElementByXpath("//input[@class='text-filter ng-pristine ng-valid ng-touched']");
+        return findElementByXpath("//input[@type='text']");
+    }
+    public WebElement checkSerchField(){
+        return findElementByXpath("//span[contains(text(),'Director')]");
     }
 
 }
