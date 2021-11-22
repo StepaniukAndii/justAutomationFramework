@@ -16,6 +16,8 @@ public class Careers extends TestInit {
         homePage.getClickGoItBtn().click();
         FooterPage footerPage=new FooterPage(driver);
         footerPage.clickCareers().click();
+        footerPage.inputSerchField().sendKeys("director");
+
 
 
 
