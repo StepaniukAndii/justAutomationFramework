@@ -42,4 +42,16 @@ public class TestAllo extends TestInit {
 
         Assert.assertTrue(homePage.getErrorSignUpMSG().size() == 3);
     }
+
+    @Test
+    public void testSignInFieldsToTheUsersAccountAlloUa() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://allo.ua/");
+        homePage.getSignInAlloLink().click();
+        homePage.getLoginFieldSignInAllo().sendKeys("aleksandr.kharchenko35@gmail.com");
+        homePage.getPasswordFieldSignInAllo().sendKeys("Qwer1234");
+        homePage.getEnterBtnSignInAllo().click();
+
+        Assert.assertTrue(homePage.getUserName().isDisplayed());
+    }
 }
