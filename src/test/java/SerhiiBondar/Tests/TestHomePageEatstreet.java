@@ -96,7 +96,7 @@ public class TestHomePageEatstreet extends TestInit {
         TheAppPageEatstreet theAppPageEatstreet = new TheAppPageEatstreet(driver);
         theAppPageEatstreet.getAndroidBtn().click();
         theAppPageEatstreet.getCheckBoxReceiveSms().click();
-        theAppPageEatstreet.getMobileNumberField().sendKeys("2344567897");
+        theAppPageEatstreet.getMobileNumberField().sendKeys("12344567897");
         theAppPageEatstreet.getTextLinkOrangeBtn().click();
         sleep(2);
         if (theAppPageEatstreet.SmsNotification().getText().equals("SMS Not Sent")) {

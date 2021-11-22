@@ -14,6 +14,10 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div[@class='modal-body ng-scope']"));
     }
 
+    public List<WebElement> getListRequired() {
+        return driver.findElements(By.xpath("//div[@ng-if='validationErrors[name]']"));
+    }
+
     public WebElement addNewAddressBtn(){
         return driver.findElement(By.xpath("//a[contains(text(),'+ Add New Address')]"));
     }
@@ -204,5 +208,9 @@ public class HomePage extends BasePage {
 
     public List<WebElement> addAnyFoodInAnyCity() {
         return driver.findElements(By.xpath("//div[@class='cuisine-types__item__image-container']"));
+    }
+
+    public WebElement addOpenNowBtnInRestMenu() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Open Now')]"));
     }
 }
