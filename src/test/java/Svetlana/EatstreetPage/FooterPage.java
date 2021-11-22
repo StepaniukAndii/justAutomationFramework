@@ -17,5 +17,9 @@ public class FooterPage extends BasePage {
     public WebElement checkOpenContactAs(){
         return findElementByXpath("//h1[@class='page-title page-title--dashed']");
     }
+    public WebElement clickCareers(){
+        return findElementByXpath("//a[@ui-sref='careers']");
+    }
+    public WebElement
 
 }
