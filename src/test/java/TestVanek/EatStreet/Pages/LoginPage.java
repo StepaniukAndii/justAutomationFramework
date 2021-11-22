@@ -19,6 +19,10 @@ public class LoginPage extends BasePage {
         return findElementByXpath("//button[@class='btn btn-action btn--orange btn-sign-in-hcn ng-scope']");
     }
 
+    public WebElement signInFacebookBtn(){
+        return findElementByXpath("//a[contains(@class,'facebook_')]");
+    }
+
     public WebElement modalError(){
         return findElementByXpath("//span[@class='alert text-red ng-scope']");
     }
