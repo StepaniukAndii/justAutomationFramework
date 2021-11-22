@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class FooterPage extends BasePage {
 
     public FooterPage(WebDriver driver){
@@ -15,4 +17,5 @@ public class FooterPage extends BasePage {
     public WebElement checkOpenContactAs(){
         return findElementByXpath("//h1[@class='page-title page-title--dashed']");
     }
+
 }
