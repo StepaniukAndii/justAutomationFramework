@@ -49,4 +49,17 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//label[@for='filter-Rating 4+']"));
 
     }
+    public List<WebElement> getRestList(){
+        return driver.findElements(By.xpath("//li[@class='li li--rest-list border-bottom-last-1 ng-scope ng-isolate-scope']"));
+
+    }
+    public List<WebElement> restRatings(){
+        return driver.findElements(By.xpath("//span[contains(@class,'ratings-has-reviews')]"));
+
+    }
+    public WebElement reviewQuantity(){
+        return driver.findElement(By.xpath("//div[contains(text(),'Review')]"));
+
+    }
+
 }

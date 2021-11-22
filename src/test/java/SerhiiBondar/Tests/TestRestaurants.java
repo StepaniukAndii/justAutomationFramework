@@ -3,6 +3,7 @@ package SerhiiBondar.Tests;
 import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
+import com.sun.xml.bind.v2.runtime.reflect.Accessor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -64,5 +65,27 @@ public class TestRestaurants extends TestInit {
         restaurantEatstreetPage.getFilterRating4PlusBtn().click();
 
         Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),"Rating 4+");
+    }
+    @Test
+    public void testRestRating(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        for (int i = 0; i < 50; i++) {
+            restaurantEatstreetPage.getRestList().get(i).click();
+            sleep(2);
+            if (restaurantEatstreetPage.restRatings().size()==1) {
+                restaurantEatstreetPage.restRatings().get(0);
+                break;
+            } else {
+                driver.navigate().back();
+            }   
+        }
+
+        Assert.assertTrue(restaurantEatstreetPage.reviewQuantity().getText().contains("Review"));
     }
 }
