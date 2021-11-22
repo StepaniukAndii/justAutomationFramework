@@ -213,4 +213,24 @@ public class HomePage extends BasePage {
     public WebElement addOpenNowBtnInRestMenu() {
         return driver.findElement(By.xpath("//label[contains(text(),'Open Now')]"));
     }
+
+    public WebElement addNewCardBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'+ Add New Card')]"));
+    }
+
+    public WebElement addNameOfCardholderField() {
+        return driver.findElement(By.xpath("//input[@id='customerName']"));
+    }
+
+    public WebElement addOkayBtnInAddNewCard() {
+        return driver.findElement(By.xpath("//input[@ng-value='confirmText']"));
+    }
+
+    public WebElement creditCardNumberIsRequiredMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Credit card number is required.')]"));
+    }
+
+    public WebElement nameOnCreditCardIsRequiredMessege() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Name on credit card is required.')]"));
+    }
 }
