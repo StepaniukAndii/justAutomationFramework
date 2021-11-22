@@ -241,4 +241,12 @@ public class HomePage extends BasePage {
     public WebElement creditCardCVVIsRequiredMessage() {
         return driver.findElement(By.xpath("//div[contains(text(),'CVV is required.')]"));
     }
+
+    public WebElement addCVVField() {
+        return driver.findElement(By.xpath("//input[@id='cvv']"));
+    }
+
+    public WebElement cardExpirationDateIsRequiredMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Card expiration date is required.')]"));
+    }
 }
