@@ -1,7 +1,6 @@
 package AleksandrKharchenko.Pages;
 
 import ClasesToAllUs.BasePage;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -125,5 +124,25 @@ public class HomePage extends BasePage {
 
     public List<WebElement> getErrorSignUpMSG() {
         return findElementsByXpath("//span[contains(text(),'для заповнення.')]");
+    }
+
+    public WebElement getSignInAlloLink() {
+        return findElementByXpath("//button[@class='authentication__button--login']");
+    }
+
+    public WebElement getLoginFieldSignInAllo() {
+        return findElementByXpath("//input[@id='auth']");
+    }
+
+    public WebElement getPasswordFieldSignInAllo() {
+        return findElementByXpath("//input[@id='v-login-password']");
+    }
+
+    public WebElement getEnterBtnSignInAllo() {
+        return findElementByXpath("//button[@type='button' and contains(text(),'Вхід')]");
+    }
+
+    public WebElement getUserName() {
+        return findElementByXpath("//div[@id='account-top-name']");
     }
 }
