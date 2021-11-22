@@ -1,6 +1,7 @@
 package AleksandrKharchenko.Pages;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -116,5 +117,13 @@ public class HomePage extends BasePage {
 
     public WebElement getErrorPhoneMSG() {
         return findElementByXpath("//span[contains(text(),'для заповнення.')]");
+    }
+
+    public WebElement getFieldPhone() {
+        return findElementByXpath("//input[@id='v-register_telephone_number']");
+    }
+
+    public List<WebElement> getErrorSignUpMSG() {
+        return findElementsByXpath("//span[contains(text(),'для заповнення.')]");
     }
 }

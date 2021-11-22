@@ -23,4 +23,17 @@ public class ContactAsCheckEmail extends TestInit {
         ArrayList<String> countTabs =new ArrayList<String>(driver.getWindowHandles());
         Assert.assertEquals(countTabs.size(),1);
     }
+    @Test
+    public void contactAsCheckReport(){
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage=new FooterPage(driver);
+        footerPage.openContactUs().click();
+        AboutAsPage aboutAsPage=new AboutAsPage(driver);
+        aboutAsPage.checkOpenReportLink().click();
+        ArrayList<String> countTabs =new ArrayList<String>(driver.getWindowHandles());
+        Assert.assertEquals(countTabs.size(),1);
+    }
 }
