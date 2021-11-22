@@ -129,4 +129,22 @@ public class testMyAccount extends TestInit {
         Assert.assertTrue(homePage.nameOnCreditCardIsRequiredMessege().isDisplayed());
         //Assert.assertTrue(homePage.creditCardNumberIsRequiredMessage().isDisplayed());
     }
+    @Test
+    public void testRequiredMessageAboutCardNumberInAddANewCard(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addNewCardBtn().click();
+        homePage.addNameOfCardholderField().sendKeys("Симбочка-пимбочка");
+        homePage.addOkayBtnInAddNewCard().click();
+        sleep(2);
+        Assert.assertTrue(homePage.creditCardNumberIsRequiredMessage().isDisplayed());
+    }
 }
