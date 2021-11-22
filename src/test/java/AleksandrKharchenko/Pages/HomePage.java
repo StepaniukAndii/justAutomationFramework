@@ -90,7 +90,31 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[@ui-sref='terms']"));
     }
 
-    public WebElement getForCustomersLink(){
+    public WebElement getForCustomersLink() {
         return findElementByXpath("//a[contains(text(),'For Customers')]");
+    }
+
+    public WebElement getLinkSignUp() {
+        return findElementByXpath("//button[contains(@class,'authentication__button--register')]");
+    }
+
+    public WebElement getNameField() {
+        return findElementByXpath("//input[@id='v-register-name']");
+    }
+
+    public WebElement getSignUpBtn() {
+        return findElementByXpath("//button[@name='send']");
+    }
+
+    public WebElement getEmailField() {
+        return findElementByXpath("//input[@id='v-register-email']");
+    }
+
+    public WebElement getPasswordField() {
+        return findElementByXpath("//input[@id='vregister-password']");
+    }
+
+    public WebElement getErrorPhoneMSG() {
+        return findElementByXpath("//span[contains(text(),'для заповнення.')]");
     }
 }
