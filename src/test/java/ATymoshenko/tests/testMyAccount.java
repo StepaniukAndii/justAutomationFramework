@@ -51,4 +51,64 @@ public class testMyAccount extends TestInit {
         sleep(2);
         Assert.assertTrue(homePage.getListRequired().size()==1);
     }
+    @Test
+    public void test2RequiredField1Pieces(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addNewAddressBtn().click();
+        homePage.addAptSuiteField().sendKeys("123");
+        homePage.addBuildingNameField().sendKeys("321");
+        homePage.addStateField().sendKeys("New York");
+        homePage.addZipField().sendKeys("333");
+        homePage.addSaveBtnInAddANewAddressWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.getListRequired().size()==2);
+    }
+    @Test
+    public void testRequiredField3Pieces(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addNewAddressBtn().click();
+        homePage.addAptSuiteField().sendKeys("123");
+        homePage.addBuildingNameField().sendKeys("321");
+        homePage.addZipField().sendKeys("333");
+        homePage.addSaveBtnInAddANewAddressWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.getListRequired().size()==3);
+    }
+    @Test
+    public void testRequiredField4Pieces(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addNewAddressBtn().click();
+        homePage.addAptSuiteField().sendKeys("123");
+        homePage.addBuildingNameField().sendKeys("321");
+        homePage.addSaveBtnInAddANewAddressWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.getListRequired().size()==4);
+    }
 }
