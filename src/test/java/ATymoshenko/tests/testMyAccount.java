@@ -92,4 +92,23 @@ public class testMyAccount extends TestInit {
         sleep(2);
         Assert.assertTrue(homePage.getListRequired().size()==3);
     }
+    @Test
+    public void testRequiredField4Pieces(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addNewAddressBtn().click();
+        homePage.addAptSuiteField().sendKeys("123");
+        homePage.addBuildingNameField().sendKeys("321");
+        homePage.addSaveBtnInAddANewAddressWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.getListRequired().size()==4);
+    }
 }
