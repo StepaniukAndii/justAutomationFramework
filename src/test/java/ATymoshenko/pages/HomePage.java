@@ -233,4 +233,12 @@ public class HomePage extends BasePage {
     public WebElement nameOnCreditCardIsRequiredMessege() {
         return driver.findElement(By.xpath("//div[contains(text(),'Name on credit card is required.')]"));
     }
+
+    public WebElement addCardNumberField() {
+        return driver.findElement(By.xpath("//input[@id='cardNum']"));
+    }
+
+    public WebElement creditCardCVVIsRequiredMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'CVV is required.')]"));
+    }
 }
