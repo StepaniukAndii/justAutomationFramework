@@ -50,11 +50,11 @@ public class RestaurantEatstreetPage extends BasePage {
 
     }
     public List<WebElement> getRestList(){
-        return driver.findElements(By.xpath("//ul[@id='all-rests']"));
+        return driver.findElements(By.xpath("//li[@class='li li--rest-list border-bottom-last-1 ng-scope ng-isolate-scope']"));
 
     }
-    public WebElement restRatings(){
-        return driver.findElement(By.xpath("//span[contains(@class,'ratings-has-reviews')]"));
+    public List<WebElement> restRatings(){
+        return driver.findElements(By.xpath("//span[contains(@class,'ratings-has-reviews')]"));
 
     }
     public WebElement reviewQuantity(){

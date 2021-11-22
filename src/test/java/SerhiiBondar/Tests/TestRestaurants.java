@@ -3,6 +3,7 @@ package SerhiiBondar.Tests;
 import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
+import com.sun.xml.bind.v2.runtime.reflect.Accessor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -74,12 +75,15 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
-        restaurantEatstreetPage.getRestList().get(0).click();
-        if (restaurantEatstreetPage.restRatings().isDisplayed()) {
-            restaurantEatstreetPage.restRatings().click();
-        } else {
-            restaurantEatstreetPage.getRestList().get(1).click();
-            restaurantEatstreetPage.restRatings().click();
+        for (int i = 0; i < 50; i++) {
+            restaurantEatstreetPage.getRestList().get(i).click();
+            sleep(2);
+            if (restaurantEatstreetPage.restRatings().size()==1) {
+                restaurantEatstreetPage.restRatings().get(0);
+                break;
+            } else {
+                driver.navigate().back();
+            }   
         }
 
         Assert.assertTrue(restaurantEatstreetPage.reviewQuantity().getText().contains("Review"));
