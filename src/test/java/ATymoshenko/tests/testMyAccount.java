@@ -166,4 +166,24 @@ public class testMyAccount extends TestInit {
         sleep(2);
         Assert.assertTrue(homePage.creditCardCVVIsRequiredMessage().isDisplayed());
     }
+    @Test
+    public void testRequiredMessageAboutCardExpirationDateInAddANewCard() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addNewCardBtn().click();
+        homePage.addNameOfCardholderField().sendKeys("Симбочка-пимбочка");
+        homePage.addCardNumberField().sendKeys("1234123412341234");
+        homePage.addCVVField().sendKeys("7777");
+        homePage.addOkayBtnInAddNewCard().click();
+        sleep(2);
+        Assert.assertTrue(homePage.cardExpirationDateIsRequiredMessage().isDisplayed());
+    }
 }
