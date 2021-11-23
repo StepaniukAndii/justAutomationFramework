@@ -34,7 +34,7 @@ public class RestaurantEatstreetPage extends BasePage {
 
     }
     public List<WebElement> getRestListContainer(){
-        return driver.findElements(By.xpath("//div[@id='container']"));
+        return driver.findElements(By.xpath("//span[contains(@class,'active_filter')]"));
 
     }
     public WebElement getAsianFoodBtn(){
@@ -59,6 +59,14 @@ public class RestaurantEatstreetPage extends BasePage {
     }
     public WebElement reviewQuantity(){
         return driver.findElement(By.xpath("//div[contains(text(),'Review')]"));
+
+    }
+    public WebElement getHoursLink(){
+        return driver.findElement(By.xpath("//label[@for='info']"));
+
+    }
+    public WebElement workingHoursTable(){
+        return driver.findElement(By.xpath("//table[contains(@class,'table--hours')]"));
 
     }
 
