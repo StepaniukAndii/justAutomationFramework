@@ -1,5 +1,4 @@
 package Svetlana.EatstreetTest;
-
 import ClasesToAllUs.TestInit;
 import Svetlana.EatstreetPage.FooterPage;
 import Svetlana.EatstreetPage.HomePage;
@@ -36,6 +35,7 @@ public class Careers extends TestInit {
             sleep(2);
         }
         footerPage.getClickDelivery().click();
+        sleep(2);
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/driver-careers"));
     }
 }
