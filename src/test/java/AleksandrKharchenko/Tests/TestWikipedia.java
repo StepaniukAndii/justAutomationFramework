@@ -51,4 +51,13 @@ public class TestWikipedia extends TestInit {
 
         Assert.assertTrue(masterWikiPage.getSoItGoesMSG().isDisplayed());
     }
+
+    @Test
+    public void testCheckingTheChoiceOfAnotherLanguage() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getUkraineLanguageLink().click();
+
+        Assert.assertTrue(homePage.getTextOnUkraineMSG().isDisplayed());
+    }
 }
