@@ -49,10 +49,13 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         restaurantEatstreetPage.getAsianFoodBtn().click();
+        restaurantEatstreetPage.getBBQFoodBtn().click();
 
         Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),
                 "Asian Food");
+        Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(1).getText(),"BBQ");
     }
+
     @Test
     public void testRestFilters(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
@@ -79,7 +82,7 @@ public class TestRestaurants extends TestInit {
             restaurantEatstreetPage.getRestList().get(i).click();
             sleep(2);
             if (restaurantEatstreetPage.restRatings().size()==1) {
-                restaurantEatstreetPage.restRatings().get(0);
+                restaurantEatstreetPage.restRatings().get(0).click();
                 break;
             } else {
                 driver.navigate().back();
@@ -87,5 +90,19 @@ public class TestRestaurants extends TestInit {
         }
 
         Assert.assertTrue(restaurantEatstreetPage.reviewQuantity().getText().contains("Review"));
+    }
+    @Test
+    public void testWorkingHoursLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(3).click();
+        restaurantEatstreetPage.getHoursLink().click();
+
+        Assert.assertTrue(restaurantEatstreetPage.workingHoursTable().isDisplayed());
     }
 }
