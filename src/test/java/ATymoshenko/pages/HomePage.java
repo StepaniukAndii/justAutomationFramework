@@ -249,4 +249,12 @@ public class HomePage extends BasePage {
     public WebElement cardExpirationDateIsRequiredMessage() {
         return driver.findElement(By.xpath("//div[contains(text(),'Card expiration date is required.')]"));
     }
+
+    public WebElement addAddressOnCardField() {
+        return driver.findElement(By.xpath("//input[@id='expiry']"));
+    }
+
+    public WebElement anAddressIsRequiredForThisCreditCardMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'An address is required for this credit card.')]"));
+    }
 }
