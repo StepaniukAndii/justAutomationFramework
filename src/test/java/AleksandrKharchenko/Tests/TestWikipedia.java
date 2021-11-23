@@ -2,6 +2,7 @@ package AleksandrKharchenko.Tests;
 
 import AleksandrKharchenko.Pages.ArticlePage;
 import AleksandrKharchenko.Pages.HomePage;
+import AleksandrKharchenko.Pages.MasterWikiPage;
 import AleksandrKharchenko.Pages.SignInPage;
 import ClasesToAllUs.TestInit;
 import io.cucumber.java.bs.A;
@@ -32,5 +33,22 @@ public class TestWikipedia extends TestInit {
         articlePage.getLinkBackToTheFuture2().click();
 
         Assert.assertTrue(articlePage.getTextOnFuture2().isDisplayed());
+    }
+
+    @Test
+    public void testCreateAnArticle() {
+        HomePage homePage = new HomePage(driver);
+        SignInPage signInPage = new SignInPage(driver);
+        MasterWikiPage masterWikiPage = new MasterWikiPage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getLinkSignInWikipedia().click();
+        signInPage.getNameFieldSignInWikipedia().sendKeys("Alex8xela");
+        signInPage.getPasswordFieldSignInWikipedia().sendKeys("qwsz1234");
+        signInPage.getSignInBtnWikipedia().click();
+        homePage.getCreateArticleBtn().click();
+        masterWikiPage.getStartWizardBtn().click();
+        masterWikiPage.getAboutMyselfBtn().click();
+
+        Assert.assertTrue(masterWikiPage.getSoItGoesMSG().isDisplayed());
     }
 }
