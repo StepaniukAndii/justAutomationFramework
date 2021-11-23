@@ -3,7 +3,6 @@ package SerhiiBondar.Tests;
 import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
-import com.sun.xml.bind.v2.runtime.reflect.Accessor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -49,10 +48,13 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         restaurantEatstreetPage.getAsianFoodBtn().click();
+        restaurantEatstreetPage.getBBQFoodBtn().click();
 
         Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(0).getText(),
                 "Asian Food");
+        Assert.assertEquals(restaurantEatstreetPage.getRestListContainer().get(1).getText(),"BBQ");
     }
+
     @Test
     public void testRestFilters(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
@@ -79,7 +81,7 @@ public class TestRestaurants extends TestInit {
             restaurantEatstreetPage.getRestList().get(i).click();
             sleep(2);
             if (restaurantEatstreetPage.restRatings().size()==1) {
-                restaurantEatstreetPage.restRatings().get(0);
+                restaurantEatstreetPage.restRatings().get(0).click();
                 break;
             } else {
                 driver.navigate().back();
@@ -87,5 +89,51 @@ public class TestRestaurants extends TestInit {
         }
 
         Assert.assertTrue(restaurantEatstreetPage.reviewQuantity().getText().contains("Review"));
+    }
+    @Test
+    public void testWorkingHoursLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(3).click();
+        restaurantEatstreetPage.getHoursLink().click();
+
+        Assert.assertTrue(restaurantEatstreetPage.workingHoursTable().isDisplayed());
+    }
+    @Test
+    public void testRestTakeoutInfo(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getTakeOutBtn().click();
+
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(1).getText().contains("Est. Pickup Time"));
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(2).getText().contains("Takeout Minimum"));
+    }
+    @Test
+    public void testRestDeliveryInfo() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getTakeoutRadioBtn().click();
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getDeliveryBtn().click();
+
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(1).getText().contains("ETA"));
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(2).getText().contains("Delivery Minimum"));
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(3).getText().contains("Delivery Cost"));
     }
 }

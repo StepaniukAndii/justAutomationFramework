@@ -145,4 +145,20 @@ public class HomePage extends BasePage {
     public WebElement getUserName() {
         return findElementByXpath("//div[@id='account-top-name']");
     }
+
+    public WebElement getLinkSignInWikipedia() {
+        return findElementByXpath("//li[@id='pt-login']");
+    }
+
+    public WebElement getNameOfUser() {
+        return findElementByXpath("//span[contains(text(),'Alex8xela')]");
+    }
+
+    public WebElement getSearchFieldWikipedia() {
+        return findElementByXpath("//input[@id='searchInput']");
+    }
+
+    public WebElement getCreateArticleBtn() {
+        return findElementByXpath("//span[contains(text(),'Создать статью')]");
+    }
 }
