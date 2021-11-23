@@ -26,5 +26,11 @@ public class FooterPage extends BasePage {
     public WebElement checkSerchField(){
         return findElementByXpath("//span[contains(text(),'Director')]");
     }
+    public List<WebElement> getClickCategories(){
+        return findElementsByXpath("//div[@class='checkbox-filters-container filter-control']//label");
+    }
+    public WebElement getClickDelivery(){
+        return findElementByXpath("//span[contains(text(),'Delivery')]");
+    }
 
 }
