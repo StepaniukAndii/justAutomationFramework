@@ -1,6 +1,7 @@
 package AleksandrKharchenko.Pages;
 
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -152,5 +153,9 @@ public class HomePage extends BasePage {
 
     public WebElement getNameOfUser() {
         return findElementByXpath("//span[contains(text(),'Alex8xela')]");
+    }
+
+    public WebElement getSearchFieldWikipedia() {
+        return findElementByXpath("//input[@id='searchInput']");
     }
 }
