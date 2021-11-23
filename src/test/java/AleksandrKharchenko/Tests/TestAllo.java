@@ -54,4 +54,14 @@ public class TestAllo extends TestInit {
 
         Assert.assertTrue(homePage.getUserName().isDisplayed());
     }
+
+    @Test
+    public void testSignInFieldsOnErrors() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://allo.ua/");
+        homePage.getSignInAlloLink().click();
+        homePage.getEnterBtnSignInAllo().click();
+
+        Assert.assertTrue(homePage.getErrorSignUpMSG().size() == 2);
+    }
 }
