@@ -161,4 +161,12 @@ public class HomePage extends BasePage {
     public WebElement getCreateArticleBtn() {
         return findElementByXpath("//span[contains(text(),'Создать статью')]");
     }
+
+    public WebElement getUkraineLanguageLink() {
+        return findElementByXpath("//a[@lang='uk']");
+    }
+
+    public WebElement getTextOnUkraineMSG() {
+        return findElementByXpath("//span[@id='Ласкаво_просимо_до_Вікіпедії,']");
+    }
 }
