@@ -264,4 +264,8 @@ public class HomePage extends BasePage {
     public WebElement aZipCodeIsRequiredForThisCreditCardMessage() {
         return driver.findElement(By.xpath("//div[contains(text(),'A Zip Code is required for this credit card.')]"));
     }
+
+    public WebElement theCardThatWasEnteredIsInvalidMessage() {
+        return driver.findElement(By.xpath("//div[@class='modal-body ng-binding']"));
+    }
 }
