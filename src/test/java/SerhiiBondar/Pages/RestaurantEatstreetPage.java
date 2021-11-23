@@ -69,5 +69,25 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//table[contains(@class,'table--hours')]"));
 
     }
+    public WebElement getDeliveryBtn(){
+        return driver.findElement(By.xpath("//label[@id='delivery-checkbox']"));
+
+    }
+    public WebElement getTakeOutBtn(){
+        return driver.findElement(By.xpath("//label[@id='takeout-checkbox']"));
+
+    }
+    public WebElement getDeliveryRadioBtn(){
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-delivery']"));
+
+    }
+    public WebElement getTakeoutRadioBtn(){
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+
+    }
+    public List<WebElement> RestInfoList(){
+        return driver.findElements(By.xpath("//li[contains(@class,'restaurant__info__list__item')]"));
+
+    }
 
 }

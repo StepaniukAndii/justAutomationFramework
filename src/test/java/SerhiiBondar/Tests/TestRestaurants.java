@@ -105,4 +105,19 @@ public class TestRestaurants extends TestInit {
 
         Assert.assertTrue(restaurantEatstreetPage.workingHoursTable().isDisplayed());
     }
+    @Test
+    public void testRestTakeoutInfo(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getTakeOutBtn().click();
+
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(1).getText().contains("Est. Pickup Time"));
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(2).getText().contains("Takeout Minimum"));
+    }
 }
