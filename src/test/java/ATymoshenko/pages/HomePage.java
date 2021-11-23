@@ -1,7 +1,6 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
-import com.fasterxml.jackson.core.JsonParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -250,11 +249,19 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//div[contains(text(),'Card expiration date is required.')]"));
     }
 
-    public WebElement addAddressOnCardField() {
+    public WebElement addExpDateOnCardField() {
         return driver.findElement(By.xpath("//input[@id='expiry']"));
     }
 
     public WebElement anAddressIsRequiredForThisCreditCardMessage() {
         return driver.findElement(By.xpath("//div[contains(text(),'An address is required for this credit card.')]"));
+    }
+
+    public WebElement addAddressOnCardField() {
+        return driver.findElement(By.xpath("//input[@id='address']"));
+    }
+
+    public WebElement aZipCodeIsRequiredForThisCreditCardMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'A Zip Code is required for this credit card.')]"));
     }
 }
