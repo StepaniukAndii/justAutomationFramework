@@ -169,4 +169,8 @@ public class HomePage extends BasePage {
     public WebElement getTextOnUkraineMSG() {
         return findElementByXpath("//span[@id='Ласкаво_просимо_до_Вікіпедії,']");
     }
+
+    public WebElement getSettingsLink() {
+        return findElementByXpath("//span[contains(text(),'Настройки')]");
+    }
 }
