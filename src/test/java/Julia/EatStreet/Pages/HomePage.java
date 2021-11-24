@@ -1,4 +1,5 @@
 package Julia.EatStreet.Pages;
+
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,16 +7,18 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super(driver);
     }
+
     public WebElement getAdressInput() {
         return driver.findElement(By.xpath("//input[@ng-model='searchParam']"));
     }
 
-    public WebElement getGoItBtn(){
+    public WebElement getGoItBtn() {
         return driver.findElement(By.xpath("//button[@class='btn']"));
     }
 
@@ -29,7 +32,7 @@ public class HomePage extends BasePage {
 
     public List<WebElement> getAllRest() {
         return driver.findElements(By.xpath("//ul[@id='all-rests']/li"));
-            }
+    }
 
     public void getSelectPageRest() {
         if (getPageNumberList().size() > 0) {
@@ -51,8 +54,8 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//button[@class='btn']"));
     }
 
-    public WebElement restName(){
-        return  findElement("//a[contains(text(), 'York City')]");
+    public WebElement restName() {
+        return findElement("//a[contains(text(), 'York City')]");
     }
 
     public WebElement clickSignInBtn() {
@@ -60,7 +63,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement clickSingInWithGoogle() {
-        return  driver.findElement(By.xpath("//div[@id='uniqueid']"));
+        return driver.findElement(By.xpath("//div[@id='uniqueid']"));
     }
 
     public WebElement selectAccountWithGoogle() {
@@ -91,7 +94,7 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//li[@class='cuisine-types__item']"));
     }
 
-    public  WebElement selectRestInCity() {
+    public WebElement selectRestInCity() {
         return driver.findElement(By.xpath("//button[@class='cuisine-types__item__button ng-binding']"));
     }
 
@@ -139,7 +142,7 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//div[contains(text(), 'EatStreet Bot')]"));
     }
 
-    public void  checkAndClousePopUpWindow() {
+    public void checkAndClousePopUpWindow() {
         if (getSearchAttempt().size() > 0) {
             sleep(2);
             getSearchAttempt().get(0).click();
@@ -210,6 +213,7 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//section[@id='recent-posts']/article[@id='post-11918']"));
 
     }
+
     public WebElement selectCityDetroyd() {
         return driver.findElement(By.xpath("//a[contains(text(),'Detroit')]"));
     }
@@ -220,7 +224,7 @@ public class HomePage extends BasePage {
 
 
     public WebElement tabBetterbin() {
-            return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
+        return driver.findElement(By.xpath("//a[contains(text(),'Betterbin')]"));
     }
 
     public WebElement getAsianFood() {
@@ -231,7 +235,7 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div[@class='modal-footer']/a"));
     }
 
-    public void  checkAndClouseAdressSearchAttempt() {
+    public void checkAndClouseAdressSearchAttempt() {
         if (getAdressSearchAttempt().size() > 0) {
             sleep(2);
             getAdressSearchAttempt().get(1).click();
@@ -335,5 +339,21 @@ public class HomePage extends BasePage {
 
     public WebElement allJobs() {
         return driver.findElement(By.xpath("//h2[contains(text(),'All Jobs')]"));
+    }
+
+    public WebElement clickDeliveryBtn() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Delivery')]"));
+    }
+
+    public WebElement clickTakeOutBtn() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Takeout')]"));
+    }
+
+    public List<WebElement> getDesertLabel() {
+        return driver.findElements(By.xpath("//ul[@class='cuisine-types__list']//li"));
+    }
+
+    public WebElement getBaltimoreCity() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Baltimore, MD')]"));
     }
 }

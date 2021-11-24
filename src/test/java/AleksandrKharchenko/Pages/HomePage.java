@@ -1,7 +1,6 @@
 package AleksandrKharchenko.Pages;
 
 import ClasesToAllUs.BasePage;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -157,5 +156,45 @@ public class HomePage extends BasePage {
 
     public WebElement getSearchFieldWikipedia() {
         return findElementByXpath("//input[@id='searchInput']");
+    }
+
+    public WebElement getCreateArticleBtn() {
+        return findElementByXpath("//span[contains(text(),'Создать статью')]");
+    }
+
+    public WebElement getUkraineLanguageLink() {
+        return findElementByXpath("//a[@lang='uk']");
+    }
+
+    public WebElement getTextOnUkraineMSG() {
+        return findElementByXpath("//span[@id='Ласкаво_просимо_до_Вікіпедії,']");
+    }
+
+    public WebElement getSettingsLink() {
+        return findElementByXpath("//span[contains(text(),'Настройки')]");
+    }
+
+    public WebElement getHomePageLink() {
+        return findElementByXpath("//span[contains(text(),'Заглавная страница')]");
+    }
+
+    public WebElement getRubricationLink() {
+        return findElementByXpath("//span[contains(text(),'Рубрикация')]");
+    }
+
+    public WebElement getIndexLink() {
+        return findElementByXpath("//span[contains(text(),'Указатель А — Я')]");
+    }
+
+    public WebElement getFeaturedArticlesLink() {
+        return findElementByXpath("//span[contains(text(),'Избранные статьи')]");
+    }
+
+    public WebElement getRandomPageLink() {
+        return findElementByXpath("//span[contains(text(),'Случайная страница')]");
+    }
+
+    public WebElement getCurrentEventsLink() {
+        return findElementByXpath("//a[@title='Статьи о текущих событиях в мире']");
     }
 }

@@ -268,4 +268,24 @@ public class HomePage extends BasePage {
     public WebElement theCardThatWasEnteredIsInvalidMessage() {
         return driver.findElement(By.xpath("//div[@class='modal-body ng-binding']"));
     }
+
+    public WebElement addDeactevateAccountBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Deactivate Account')]"));
+    }
+
+    public WebElement addNoBtnInDeactivateAccountWindow() {
+        return driver.findElement(By.xpath("//a[@id='cancel-modal-btn']"));
+    }
+
+    public WebElement addYesBtnInDeactivateAccountWindow(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Yes')]"));
+    }
+
+    public WebElement addOkayBtnInDeactivatedAccountWindjw() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Okay')]"));
+    }
+
+    public List<WebElement> addRequiredMessegeInChangeAccountInfoWindow() {
+        return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
+    }
 }
