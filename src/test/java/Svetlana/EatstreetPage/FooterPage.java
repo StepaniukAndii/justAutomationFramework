@@ -32,5 +32,11 @@ public class FooterPage extends BasePage {
     public WebElement getClickDelivery(){
         return findElementByXpath("//span[contains(text(),'Delivery')]");
     }
+    public WebElement clickBlog(){
+        return findElementByXpath("//a[contains(text(),'Blog')]");
+    }
+    public List<WebElement> clickMenuPage(){
+        return findElementsByXpath("//ul[@id='menu-default-1']//li");
+    }
 
 }
