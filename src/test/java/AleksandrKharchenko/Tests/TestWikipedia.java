@@ -74,4 +74,17 @@ public class TestWikipedia extends TestInit {
 
         Assert.assertTrue(settingsPage.getGreySaveBtn().isDisplayed());
     }
+
+    @Test
+    public void testNavigationSectionInTheLeftMenu() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getHomePageLink().getText(), "Заглавная страница");
+        Assert.assertEquals(homePage.getRubricationLink().getText(), "Рубрикация");
+        Assert.assertEquals(homePage.getIndexLink().getText(), "Указатель А — Я");
+        Assert.assertEquals(homePage.getFeaturedArticlesLink().getText(), "Избранные статьи");
+        Assert.assertEquals(homePage.getRandomPageLink().getText(), "Случайная страница");
+        Assert.assertEquals(homePage.getCurrentEventsLink().getText(), "Текущие события");
+    }
 }
