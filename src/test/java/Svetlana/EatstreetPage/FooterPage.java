@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class FooterPage extends BasePage {
 
     public FooterPage(WebDriver driver){
@@ -15,4 +17,20 @@ public class FooterPage extends BasePage {
     public WebElement checkOpenContactAs(){
         return findElementByXpath("//h1[@class='page-title page-title--dashed']");
     }
+    public WebElement clickCareers(){
+        return findElementByXpath("//a[@ui-sref='careers']");
+    }
+    public WebElement inputSerchField(){
+        return findElementByXpath("//input[@type='text']");
+    }
+    public WebElement checkSerchField(){
+        return findElementByXpath("//span[contains(text(),'Director')]");
+    }
+    public List<WebElement> getClickCategories(){
+        return findElementsByXpath("//div[@class='checkbox-filters-container filter-control']//label");
+    }
+    public WebElement getClickDelivery(){
+        return findElementByXpath("//span[contains(text(),'Delivery')]");
+    }
+
 }
