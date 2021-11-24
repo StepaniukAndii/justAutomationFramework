@@ -1,7 +1,6 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
-import com.fasterxml.jackson.core.JsonParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -212,5 +211,77 @@ public class HomePage extends BasePage {
 
     public WebElement addOpenNowBtnInRestMenu() {
         return driver.findElement(By.xpath("//label[contains(text(),'Open Now')]"));
+    }
+
+    public WebElement addNewCardBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'+ Add New Card')]"));
+    }
+
+    public WebElement addNameOfCardholderField() {
+        return driver.findElement(By.xpath("//input[@id='customerName']"));
+    }
+
+    public WebElement addOkayBtnInAddNewCard() {
+        return driver.findElement(By.xpath("//input[@ng-value='confirmText']"));
+    }
+
+    public WebElement creditCardNumberIsRequiredMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Credit card number is required.')]"));
+    }
+
+    public WebElement nameOnCreditCardIsRequiredMessege() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Name on credit card is required.')]"));
+    }
+
+    public WebElement addCardNumberField() {
+        return driver.findElement(By.xpath("//input[@id='cardNum']"));
+    }
+
+    public WebElement creditCardCVVIsRequiredMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'CVV is required.')]"));
+    }
+
+    public WebElement addCVVField() {
+        return driver.findElement(By.xpath("//input[@id='cvv']"));
+    }
+
+    public WebElement cardExpirationDateIsRequiredMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Card expiration date is required.')]"));
+    }
+
+    public WebElement addExpDateOnCardField() {
+        return driver.findElement(By.xpath("//input[@id='expiry']"));
+    }
+
+    public WebElement anAddressIsRequiredForThisCreditCardMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'An address is required for this credit card.')]"));
+    }
+
+    public WebElement addAddressOnCardField() {
+        return driver.findElement(By.xpath("//input[@id='address']"));
+    }
+
+    public WebElement aZipCodeIsRequiredForThisCreditCardMessage() {
+        return driver.findElement(By.xpath("//div[contains(text(),'A Zip Code is required for this credit card.')]"));
+    }
+
+    public WebElement theCardThatWasEnteredIsInvalidMessage() {
+        return driver.findElement(By.xpath("//div[@class='modal-body ng-binding']"));
+    }
+
+    public WebElement addDeactevateAccountBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Deactivate Account')]"));
+    }
+
+    public WebElement addNoBtnInDeactivateAccountWindow() {
+        return driver.findElement(By.xpath("//a[@id='cancel-modal-btn']"));
+    }
+
+    public WebElement addYesBtnInDeactivateAccountWindow(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Yes')]"));
+    }
+
+    public WebElement addOkayBtnInDeactivatedAccountWindjw() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Okay')]"));
     }
 }
