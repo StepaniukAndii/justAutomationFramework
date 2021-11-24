@@ -14,10 +14,21 @@ public class FiltringItalianFoodRestEatstreet extends TestInit {
         homePage.checkAndClousePopUpWindow();
         homePage.getAdressInput().sendKeys("San Francisco, CA");
         homePage.getFedBtn().click();
-        homePage.checkAndClousePopUpWindow();
-        sleep(5);
         homePage.getItalianFoodLabel().get(57).click();
         sleep(5);
         Assert.assertTrue(homePage.getItalianFood().getText().contains("Italian Food"));
     }
+
+    @Test
+    public void filtrTakeOutEatstreet() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.getBaltimoreCity().click();
+        sleep(5);
+        homePage.getDesertLabel().get(4).click();
+        sleep(5);
+        Assert.assertTrue(homePage.getAllRest().get(2).isDisplayed());
+    }
+
 }
