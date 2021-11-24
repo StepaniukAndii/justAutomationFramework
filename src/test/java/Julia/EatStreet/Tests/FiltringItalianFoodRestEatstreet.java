@@ -31,4 +31,18 @@ public class FiltringItalianFoodRestEatstreet extends TestInit {
         Assert.assertTrue(homePage.getAllRest().get(2).isDisplayed());
     }
 
+    @Test
+    public void filtrDeKalbRest() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.getDeKalb().click();
+        sleep(5);
+        homePage.getViewAllRestDeKalb().click();
+        sleep(5);
+        Assert.assertTrue(homePage.btnSpecialist().isDisplayed());
+        Assert.assertTrue(homePage.btnOpenNow().isDisplayed());
+        Assert.assertTrue(homePage.btnOrderAhead().isDisplayed());
+    }
+
 }
