@@ -276,4 +276,12 @@ public class HomePage extends BasePage {
     public WebElement addNoBtnInDeactivateAccountWindow() {
         return driver.findElement(By.xpath("//a[@id='cancel-modal-btn']"));
     }
+
+    public WebElement addYesBtnInDeactivateAccountWindow(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Yes')]"));
+    }
+
+    public WebElement addOkayBtnInDeactivatedAccountWindjw() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Okay')]"));
+    }
 }
