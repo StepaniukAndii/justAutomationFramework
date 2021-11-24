@@ -20,4 +20,6 @@ public class Driver extends TestInit {
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/careers/delivery-driver-ames-ia"));
 
     }
+
+
 }
