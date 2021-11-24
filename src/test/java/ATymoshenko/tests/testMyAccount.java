@@ -252,4 +252,21 @@ public class testMyAccount extends TestInit {
         sleep(2);
         Assert.assertTrue(homePage.theCardThatWasEnteredIsInvalidMessage().isDisplayed());
     }
+    @Test
+    public void testDeactivateAccountBtnNoVariant(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addDeactevateAccountBtn().click();
+        homePage.addNoBtnInDeactivateAccountWindow().click();
+
+        Assert.assertTrue(homePage.myAccountIcon().isDisplayed());
+    }
 }
