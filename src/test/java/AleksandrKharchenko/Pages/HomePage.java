@@ -197,4 +197,32 @@ public class HomePage extends BasePage {
     public WebElement getCurrentEventsLink() {
         return findElementByXpath("//a[@title='Статьи о текущих событиях в мире']");
     }
+
+    public WebElement getReportABugLink() {
+        return findElementByXpath("//a[@title='Сообщить об ошибке в этой статье']");
+    }
+
+    public WebElement getCommunityLink() {
+        return findElementByXpath("//a[@title='О проекте, о том, чем здесь можно заниматься, а также — где что находится']");
+    }
+
+    public WebElement getForumLink() {
+        return findElementByXpath("//a[@title='Форум участников Википедии']");
+    }
+
+    public WebElement getRecentEditsLink() {
+        return findElementByXpath("//a[@title='Список последних изменений [alt-shift-r]']");
+    }
+
+    public WebElement getNewPagesLink() {
+        return findElementByXpath("//a[@title='Список недавно созданных страниц']");
+    }
+
+    public WebElement getReferenceLink() {
+        return findElementByXpath("//a[@title='Место расположения Справки']");
+    }
+
+    public WebElement getDonateLink() {
+        return findElementByXpath("//a[@title='Поддержите нас']");
+    }
 }
