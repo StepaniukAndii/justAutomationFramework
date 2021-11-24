@@ -169,4 +169,80 @@ public class HomePage extends BasePage {
     public WebElement getTextOnUkraineMSG() {
         return findElementByXpath("//span[@id='Ласкаво_просимо_до_Вікіпедії,']");
     }
+
+    public WebElement getSettingsLink() {
+        return findElementByXpath("//span[contains(text(),'Настройки')]");
+    }
+
+    public WebElement getHomePageLink() {
+        return findElementByXpath("//span[contains(text(),'Заглавная страница')]");
+    }
+
+    public WebElement getRubricationLink() {
+        return findElementByXpath("//span[contains(text(),'Рубрикация')]");
+    }
+
+    public WebElement getIndexLink() {
+        return findElementByXpath("//span[contains(text(),'Указатель А — Я')]");
+    }
+
+    public WebElement getFeaturedArticlesLink() {
+        return findElementByXpath("//span[contains(text(),'Избранные статьи')]");
+    }
+
+    public WebElement getRandomPageLink() {
+        return findElementByXpath("//span[contains(text(),'Случайная страница')]");
+    }
+
+    public WebElement getCurrentEventsLink() {
+        return findElementByXpath("//a[@title='Статьи о текущих событиях в мире']");
+    }
+
+    public WebElement getReportABugLink() {
+        return findElementByXpath("//a[@title='Сообщить об ошибке в этой статье']");
+    }
+
+    public WebElement getCommunityLink() {
+        return findElementByXpath("//a[@title='О проекте, о том, чем здесь можно заниматься, а также — где что находится']");
+    }
+
+    public WebElement getForumLink() {
+        return findElementByXpath("//a[@title='Форум участников Википедии']");
+    }
+
+    public WebElement getRecentEditsLink() {
+        return findElementByXpath("//a[@title='Список последних изменений [alt-shift-r]']");
+    }
+
+    public WebElement getNewPagesLink() {
+        return findElementByXpath("//a[@title='Список недавно созданных страниц']");
+    }
+
+    public WebElement getReferenceLink() {
+        return findElementByXpath("//a[@title='Место расположения Справки']");
+    }
+
+    public WebElement getDonateLink() {
+        return findElementByXpath("//a[@title='Поддержите нас']");
+    }
+
+    public WebElement getLinksHereLink() {
+        return findElementByXpath("//span[contains(text(),'Ссылки сюда')]");
+    }
+
+    public WebElement getRelatedEditsLink() {
+        return findElementByXpath("//span[contains(text(),'Связанные правки')]");
+    }
+
+    public WebElement getServicePagesLink() {
+        return findElementByXpath("//span[contains(text(),'Служебные страницы')]");
+    }
+
+    public WebElement getPermalinkLink() {
+        return findElementByXpath("//span[contains(text(),'Постоянная ссылка')]");
+    }
+
+    public WebElement getPageDetailsLink() {
+        return findElementByXpath("//a[@title='Подробнее об этой странице']");
+    }
 }
