@@ -41,4 +41,16 @@ public class SignInPage extends BasePage {
     public WebElement getEmailRequiredMSG() {
         return driver.findElement(By.xpath("//div[@id='email-validation-tag']"));
     }
+
+    public WebElement getNameFieldSignInWikipedia() {
+        return findElementByXpath("//input[@id='wpName1']");
+    }
+
+    public WebElement getPasswordFieldSignInWikipedia() {
+        return findElementByXpath("//input[@id='wpPassword1']");
+    }
+
+    public WebElement getSignInBtnWikipedia() {
+        return findElementByXpath("//button[@id='wpLoginAttempt']");
+    }
 }
