@@ -225,4 +225,24 @@ public class HomePage extends BasePage {
     public WebElement getDonateLink() {
         return findElementByXpath("//a[@title='Поддержите нас']");
     }
+
+    public WebElement getLinksHereLink() {
+        return findElementByXpath("//span[contains(text(),'Ссылки сюда')]");
+    }
+
+    public WebElement getRelatedEditsLink() {
+        return findElementByXpath("//span[contains(text(),'Связанные правки')]");
+    }
+
+    public WebElement getServicePagesLink() {
+        return findElementByXpath("//span[contains(text(),'Служебные страницы')]");
+    }
+
+    public WebElement getPermalinkLink() {
+        return findElementByXpath("//span[contains(text(),'Постоянная ссылка')]");
+    }
+
+    public WebElement getPageDetailsLink() {
+        return findElementByXpath("//a[@title='Подробнее об этой странице']");
+    }
 }

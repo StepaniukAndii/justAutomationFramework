@@ -101,4 +101,16 @@ public class TestWikipedia extends TestInit {
         Assert.assertTrue(homePage.getReferenceLink().isDisplayed());
         Assert.assertTrue(homePage.getDonateLink().isDisplayed());
     }
+
+    @Test
+    public void testInstrumentsSectionInTheLeftMenu() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertTrue(homePage.getLinksHereLink().isDisplayed());
+        Assert.assertTrue(homePage.getRelatedEditsLink().isDisplayed());
+        Assert.assertTrue(homePage.getServicePagesLink().isDisplayed());
+        Assert.assertTrue(homePage.getPermalinkLink().isDisplayed());
+        Assert.assertTrue(homePage.getPageDetailsLink().isDisplayed());
+    }
 }
