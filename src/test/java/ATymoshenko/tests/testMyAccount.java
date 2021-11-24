@@ -310,4 +310,27 @@ public class testMyAccount extends TestInit {
 
         Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size()==3);
     }
+    @Test
+    public  void test2MessegeAboutRequiredInfoInEditYourInfoBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+//        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+//        sleep(2);
+//        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        sleep(2);
+
+        Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size()==2);
+    }
 }
