@@ -387,4 +387,12 @@ public class HomePage extends BasePage {
     public WebElement getSectionFiltrAllRestInCity() {
         return driver.findElement(By.xpath("//div[@id='filters']"));
     }
+
+    public WebElement fieldSearchMenu() {
+        return driver.findElement(By.xpath("//input[@placeholder='Search Menu']"));
+    }
+
+    public WebElement h2YourOrder() {
+        return driver.findElement(By.xpath("//div[@class='widget-header--menu__cart__header']/h2"));
+    }
 }
