@@ -382,7 +382,7 @@ public class testMyAccount extends TestInit {
         Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size() == 0);
     }
     @Test
-    public  void testMessegeAboutRequiredEmailInfoInEditYourInfoBtn() {
+    public  void testMessegeRequiredAboutEMailInfoInEditYourInfoBtn() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://eatstreet.com/");
         homePage.getGoItBtn().click();
@@ -407,5 +407,4 @@ public class testMyAccount extends TestInit {
 
         Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size() == 1);
     }
-
 }
