@@ -405,6 +405,6 @@ public class testMyAccount extends TestInit {
         homePage.addSaveBtnInChangeAccountInfoWindow().click();
         sleep(2);
 
-        Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size() == 1);
+        Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size()==1);
     }
 }
