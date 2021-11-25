@@ -81,4 +81,7 @@ public class FooterPage extends BasePage {
     public WebElement clickSubmit(){
         return findElementByXpath("//button[contains(text(),'Submit')]");
     }
+    public WebElement checkFhoneValidation(){
+        return findElementByXpath("//small[contains(text(),'The phone number is not valid')]");
+    }
 }

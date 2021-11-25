@@ -1,5 +1,4 @@
 package Svetlana.EatstreetTest;
-
 import ClasesToAllUs.TestInit;
 import Svetlana.EatstreetPage.FooterPage;
 import Svetlana.EatstreetPage.HomePage;
@@ -29,11 +28,8 @@ public class DriverApplyHere extends TestInit {
         footerPage.inputEmail().sendKeys("putas@gmail.com");
         footerPage.inputNumber().sendKeys("+152236552656");
         sleep(5);
-//        footerPage.clickSubmit().click();
+        footerPage.clickSubmit().click();
 
-
-//        Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/careers/delivery-driver-ames-ia"));
-
-
+        Assert.assertTrue(footerPage.checkFhoneValidation().isDisplayed());
     }
 }
