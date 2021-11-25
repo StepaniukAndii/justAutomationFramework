@@ -5,6 +5,10 @@ import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
 import SerhiiBondar.Pages.SingInEatstreetPage;
 import SerhiiBondar.Pages.SingInPage;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -169,5 +173,28 @@ public class TestRestaurants extends TestInit {
         singInEatstreetPage.getSignInBtn().click();
 
         Assert.assertTrue(restaurantEatstreetPage.groupOrderModalWindow().isDisplayed());
+    }
+    @Test
+    public void testGroupOrderOnOutOfRangeDistance() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(2);
+        Actions action = new Actions(driver);
+        action.moveToElement(restaurantEatstreetPage.getDropDownAddressBtn(),10,10).click().perform();
+        restaurantEatstreetPage.getInputtedAddress().click();
+        restaurantEatstreetPage.getContinueBtn().click();
+
+        Assert.assertEquals(restaurantEatstreetPage.deliveryAddressValidationInfo().getText(),"Out of range");
     }
 }
