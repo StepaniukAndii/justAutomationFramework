@@ -97,5 +97,36 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//form[contains(@name,'form')]"));
 
     }
+    public WebElement getDropDownAddressBtn(){
+        return driver.findElement(By.xpath("//div[@class='dropdown ng-scope']"));
 
+    }
+    public WebElement getInputtedAddress(){
+       return driver.findElement(By.xpath("//ul[@class='dropdown-menu']"));
+
+    }
+    public WebElement getGroupOrderField(){
+        return  driver.findElement(By.xpath("//input[@id='groupOrderName']"));
+
+    }
+    public WebElement chooseDeliveryBtn(){
+        return driver.findElement(By.xpath("//label[@for='example-checkbox-1']"));
+
+    }
+    public WebElement chooseTakeOutBtn(){
+        return driver.findElement(By.xpath("//label[@for='example-checkbox-2']"));
+
+    }
+    public WebElement getCancelBtn(){
+        return driver.findElement(By.xpath("//a[@id='cancel-modal-btn']"));
+
+    }
+    public WebElement getContinueBtn(){
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+
+    }
+    public WebElement deliveryAddressValidationInfo(){
+        return driver.findElement(By.xpath("//div[@id='streetAddress-validation-tag']"));
+
+    }
 }
