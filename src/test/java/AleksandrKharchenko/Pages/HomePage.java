@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import javax.swing.*;
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -196,5 +197,109 @@ public class HomePage extends BasePage {
 
     public WebElement getCurrentEventsLink() {
         return findElementByXpath("//a[@title='Статьи о текущих событиях в мире']");
+    }
+
+    public WebElement getReportABugLink() {
+        return findElementByXpath("//a[@title='Сообщить об ошибке в этой статье']");
+    }
+
+    public WebElement getCommunityLink() {
+        return findElementByXpath("//a[@title='О проекте, о том, чем здесь можно заниматься, а также — где что находится']");
+    }
+
+    public WebElement getForumLink() {
+        return findElementByXpath("//a[@title='Форум участников Википедии']");
+    }
+
+    public WebElement getRecentEditsLink() {
+        return findElementByXpath("//a[@title='Список последних изменений [alt-shift-r]']");
+    }
+
+    public WebElement getNewPagesLink() {
+        return findElementByXpath("//a[@title='Список недавно созданных страниц']");
+    }
+
+    public WebElement getReferenceLink() {
+        return findElementByXpath("//a[@title='Место расположения Справки']");
+    }
+
+    public WebElement getDonateLink() {
+        return findElementByXpath("//a[@title='Поддержите нас']");
+    }
+
+    public WebElement getLinksHereLink() {
+        return findElementByXpath("//span[contains(text(),'Ссылки сюда')]");
+    }
+
+    public WebElement getRelatedEditsLink() {
+        return findElementByXpath("//span[contains(text(),'Связанные правки')]");
+    }
+
+    public WebElement getServicePagesLink() {
+        return findElementByXpath("//span[contains(text(),'Служебные страницы')]");
+    }
+
+    public WebElement getPermalinkLink() {
+        return findElementByXpath("//span[contains(text(),'Постоянная ссылка')]");
+    }
+
+    public WebElement getPageDetailsLink() {
+        return findElementByXpath("//a[@title='Подробнее об этой странице']");
+    }
+
+    public WebElement getCreateABookLink() {
+        return findElementByXpath("//span[contains(text(),'Создать книгу')]");
+    }
+
+    public WebElement getDownloadAsPDFLink() {
+        return findElementByXpath("//span[contains(text(),'Скачать как PDF')]");
+    }
+
+    public WebElement getPrintVersionLink() {
+        return findElementByXpath("//span[contains(text(),'Версия для печати')]");
+    }
+
+    public WebElement getNotIntroducedYourselfMSG() {
+        return findElementByXpath("//li[@id='pt-anonuserpage']");
+    }
+
+    public WebElement getDiscussionLink() {
+        return findElementByXpath("//a[@accesskey='n']");
+    }
+
+    public WebElement getContributionLink() {
+        return findElementByXpath("//a[@accesskey='y']");
+    }
+
+    public WebElement getCreateAnAccountLink() {
+        return findElementByXpath("//a[@title='Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно.']");
+    }
+
+    public WebElement getTitleLink() {
+        return findElementByXpath("//a[@accesskey='c']//span");
+    }
+
+    public WebElement getDiscussionCenterLink() {
+        return findElementByXpath("//a[@accesskey='t']/span");
+    }
+
+    public WebElement getReadLink() {
+        return findElementByXpath("//li[@id='ca-view']//span");
+    }
+
+    public WebElement getViewCodeLink() {
+        return findElement("//a[@accesskey='e']/span");
+    }
+
+    public WebElement getHistoryLink() {
+        return findElementByXpath("//a[@accesskey='h']/span");
+    }
+
+    public WebElement getSearchInput() {
+        return findElementByXpath("//input[@id='searchInput']");
+    }
+
+    public WebElement getSearchButton() {
+        return findElementByXpath("//input[@id='searchButton']");
     }
 }

@@ -87,4 +87,66 @@ public class TestWikipedia extends TestInit {
         Assert.assertEquals(homePage.getRandomPageLink().getText(), "Случайная страница");
         Assert.assertEquals(homePage.getCurrentEventsLink().getText(), "Текущие события");
     }
+
+    @Test
+    public void testParticipationSectionInTheLeftMenu() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertTrue(homePage.getReportABugLink().isDisplayed());
+        Assert.assertTrue(homePage.getCommunityLink().isDisplayed());
+        Assert.assertTrue(homePage.getForumLink().isDisplayed());
+        Assert.assertTrue(homePage.getRecentEditsLink().isDisplayed());
+        Assert.assertTrue(homePage.getNewPagesLink().isDisplayed());
+        Assert.assertTrue(homePage.getReferenceLink().isDisplayed());
+        Assert.assertTrue(homePage.getDonateLink().isDisplayed());
+    }
+
+    @Test
+    public void testInstrumentsSectionInTheLeftMenu() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertTrue(homePage.getLinksHereLink().isDisplayed());
+        Assert.assertTrue(homePage.getRelatedEditsLink().isDisplayed());
+        Assert.assertTrue(homePage.getServicePagesLink().isDisplayed());
+        Assert.assertTrue(homePage.getPermalinkLink().isDisplayed());
+        Assert.assertTrue(homePage.getPageDetailsLink().isDisplayed());
+    }
+
+    @Test
+    public void testPrintExportSectionInTheLeftMenu() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getCreateABookLink().getText(), "Создать книгу");
+        Assert.assertEquals(homePage.getDownloadAsPDFLink().getText(), "Скачать как PDF");
+        Assert.assertEquals(homePage.getPrintVersionLink().getText(), "Версия для печати");
+    }
+
+    @Test
+    public void testVectorMenuAtTheTopRight() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertTrue(homePage.getNotIntroducedYourselfMSG().isDisplayed());
+        Assert.assertTrue(homePage.getDiscussionLink().isDisplayed());
+        Assert.assertTrue(homePage.getContributionLink().isDisplayed());
+        Assert.assertTrue(homePage.getCreateAnAccountLink().isDisplayed());
+        Assert.assertTrue(homePage.getLinkSignInWikipedia().isDisplayed());
+    }
+
+    @Test
+    public void testNamespacesAtTheInUpCenter() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getTitleLink().getText(), "Заглавная");
+        Assert.assertEquals(homePage.getDiscussionCenterLink().getText(), "Обсуждение");
+        Assert.assertEquals(homePage.getReadLink().getText(), "Читать");
+        Assert.assertEquals(homePage.getViewCodeLink().getText(), "Просмотр кода");
+        Assert.assertEquals(homePage.getHistoryLink().getText(), "История");
+        Assert.assertTrue(homePage.getSearchInput().isDisplayed());
+        Assert.assertTrue(homePage.getSearchButton().isDisplayed());
+    }
 }
