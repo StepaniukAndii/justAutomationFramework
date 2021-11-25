@@ -113,4 +113,14 @@ public class TestWikipedia extends TestInit {
         Assert.assertTrue(homePage.getPermalinkLink().isDisplayed());
         Assert.assertTrue(homePage.getPageDetailsLink().isDisplayed());
     }
+
+    @Test
+    public void testPrintExportSectionInTheLeftMenu() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getCreateABookLink().getText(), "Создать книгу");
+        Assert.assertEquals(homePage.getDownloadAsPDFLink().getText(), "Скачать как PDF");
+        Assert.assertEquals(homePage.getPrintVersionLink().getText(), "Версия для печати");
+    }
 }

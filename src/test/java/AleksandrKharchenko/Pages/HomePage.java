@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import javax.swing.*;
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -244,5 +245,17 @@ public class HomePage extends BasePage {
 
     public WebElement getPageDetailsLink() {
         return findElementByXpath("//a[@title='Подробнее об этой странице']");
+    }
+
+    public WebElement getCreateABookLink() {
+        return findElementByXpath("//span[contains(text(),'Создать книгу')]");
+    }
+
+    public WebElement getDownloadAsPDFLink() {
+        return findElementByXpath("//span[contains(text(),'Скачать как PDF')]");
+    }
+
+    public WebElement getPrintVersionLink() {
+        return findElementByXpath("//span[contains(text(),'Версия для печати')]");
     }
 }
