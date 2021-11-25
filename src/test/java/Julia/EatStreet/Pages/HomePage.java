@@ -1,4 +1,5 @@
 package Julia.EatStreet.Pages;
+
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
@@ -353,5 +355,25 @@ public class HomePage extends BasePage {
 
     public WebElement getBaltimoreCity() {
         return driver.findElement(By.xpath("//a[contains(text(),'Baltimore, MD')]"));
+    }
+
+    public WebElement getDeKalb() {
+        return driver.findElement(By.xpath("//a[contains(text(),'DeKalb, IL')]"));
+    }
+
+    public WebElement getViewAllRestDeKalb() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'View All DeKalb Restaurants')]"));
+    }
+
+    public WebElement btnSpecialist() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Specials')]"));
+    }
+
+    public WebElement btnOpenNow() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Open Now')]"));
+    }
+
+    public WebElement btnOrderAhead() {
+        return driver.findElement(By.xpath("//label[contains(text(),'Order Ahead')]"));
     }
 }

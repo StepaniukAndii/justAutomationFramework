@@ -3,6 +3,8 @@ package SerhiiBondar.Tests;
 import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
+import SerhiiBondar.Pages.SingInEatstreetPage;
+import SerhiiBondar.Pages.SingInPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -135,5 +137,37 @@ public class TestRestaurants extends TestInit {
         Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(1).getText().contains("ETA"));
         Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(2).getText().contains("Delivery Minimum"));
         Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(3).getText().contains("Delivery Cost"));
+    }
+    @Test
+    public void testSignInWhenGroupOrder() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/signin"));
+    }
+    @Test
+    public void testGroupOrderModalWindow() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+
+        Assert.assertTrue(restaurantEatstreetPage.groupOrderModalWindow().isDisplayed());
     }
 }

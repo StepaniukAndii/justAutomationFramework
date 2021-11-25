@@ -14,6 +14,5 @@ public class ApiTabCheck extends TestInit {
         homePage.checkAndClousePopUpWindow();
         homePage.btnAPI().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("developers"));
-
     }
 }

@@ -89,5 +89,13 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElements(By.xpath("//li[contains(@class,'restaurant__info__list__item')]"));
 
     }
+    public WebElement getStartGroupOrderBtn(){
+        return driver.findElement(By.xpath("//a[contains(@class,'btn--group-order')]"));
+
+    }
+    public WebElement groupOrderModalWindow(){
+        return driver.findElement(By.xpath("//form[contains(@name,'form')]"));
+
+    }
 
 }
