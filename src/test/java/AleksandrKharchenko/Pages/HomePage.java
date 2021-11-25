@@ -258,4 +258,20 @@ public class HomePage extends BasePage {
     public WebElement getPrintVersionLink() {
         return findElementByXpath("//span[contains(text(),'Версия для печати')]");
     }
+
+    public WebElement getNotIntroducedYourselfMSG() {
+        return findElementByXpath("//li[@id='pt-anonuserpage']");
+    }
+
+    public WebElement getDiscussionLink() {
+        return findElementByXpath("//a[@accesskey='n']");
+    }
+
+    public WebElement getContributionLink() {
+        return findElementByXpath("//a[@accesskey='y']");
+    }
+
+    public WebElement getCreateAnAccountLink() {
+        return findElementByXpath("//a[@title='Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно.']");
+    }
 }
