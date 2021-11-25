@@ -87,5 +87,11 @@ public class FooterPage extends BasePage {
     public WebElement clickForCostumers(){
         return findElementByXpath("//a[contains(text(),'For Customers')]");
     }
+    public WebElement clickCouponQuestions(){
+        return findElementByXpath("//div[contains(text(),'Coupon Questions')]");
+    }
+    public WebElement checkCouponQuestions(){
+        return findElementByXpath("//h2[contains(text(),'How do I add a coupon to my order')]");
+    }
 
 }
