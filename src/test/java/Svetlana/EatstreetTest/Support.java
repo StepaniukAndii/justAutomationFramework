@@ -20,4 +20,16 @@ public class Support extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatst.force.com/customers/s/"));
     }
+    @Test
+    public void ForCostumersCouponQuestions(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage=new FooterPage(driver);
+        footerPage.clickForCostumers().click();
+        footerPage.clickCouponQuestions().click();
+
+        Assert.assertTrue(footerPage.checkCouponQuestions().isDisplayed());
+    }
 }
