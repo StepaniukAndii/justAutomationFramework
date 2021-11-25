@@ -288,4 +288,8 @@ public class HomePage extends BasePage {
     public List<WebElement> addRequiredMessegeInChangeAccountInfoWindow() {
         return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
     }
+
+    public WebElement addEMailFieldInChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='emailAddress']"));
+    }
 }
