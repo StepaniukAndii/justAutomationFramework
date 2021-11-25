@@ -376,4 +376,15 @@ public class HomePage extends BasePage {
     public WebElement btnOrderAhead() {
         return driver.findElement(By.xpath("//label[contains(text(),'Order Ahead')]"));
     }
+    public List<WebElement> enterFieldMyAnswer() {
+        return driver.findElements(By.xpath("//div[@jsname='LwH6nd']"));
+    }
+
+    public List<WebElement> getbtnFiltrSection() {
+        return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
+    }
+
+    public WebElement getSectionFiltrAllRestInCity() {
+        return driver.findElement(By.xpath("//div[@id='filters']"));
+    }
 }
