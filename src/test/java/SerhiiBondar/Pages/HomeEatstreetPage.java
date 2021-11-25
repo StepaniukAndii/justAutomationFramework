@@ -34,7 +34,7 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.className("partners-link"));
 
     }
-    public WebElement getApplyNowString(){
+    public WebElement getApplyNowLink(){
         return driver.findElement(By.xpath("//a[contains(text(),'Apply Now')]"));
 
     }
@@ -46,7 +46,7 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//select[contains(@onchange, 'location')]"));
 
     }
-    public WebElement getDriverAppletonString(){
+    public WebElement getDriverInCityString(){
         return driver.findElement(By.xpath("//span[contains(@class,'page-title')]"));
 
     }
@@ -111,5 +111,4 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'Get The App')]"));
 
     }
-
 }
