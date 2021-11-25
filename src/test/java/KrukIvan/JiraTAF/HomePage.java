@@ -137,4 +137,7 @@ public class HomePage extends BasePage {
     public WebElement signUpWithGoogle(){
         return findElementByXpath("//div[@class='btn btn-google btn-google--sign-in full-width ng-binding']");
     }
+    public List<WebElement> bTNGetHelp(){
+        return findElementsByXpath("//a[@ng-click=\"getHelp()\"]");
+    }
 }

@@ -57,19 +57,6 @@ public class FooterPage extends BasePage {
         return findElementsByXpath("//option[contains(text(),Ames )]");
     }
 
-
-    public WebElement clickDriver() {
-        return findElementByXpath("//a[contains(text(),'Become a Driver!')]");
-    }
-
-    public WebElement getClickAddress() {
-        return findElementByXpath("//div[@id='referral'\n]");
-    }
-
-    public List<WebElement> getClickCity() {
-        return findElementsByXpath("//option[contains(text(),Ames )]");
-    }
-
     public List<WebElement> clickApplyHere() {
         return findElementsByXpath("//button[contains(text(),'Apply Here')]");
     }
