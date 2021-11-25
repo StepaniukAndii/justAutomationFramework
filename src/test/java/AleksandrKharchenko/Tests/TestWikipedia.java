@@ -135,4 +135,18 @@ public class TestWikipedia extends TestInit {
         Assert.assertTrue(homePage.getCreateAnAccountLink().isDisplayed());
         Assert.assertTrue(homePage.getLinkSignInWikipedia().isDisplayed());
     }
+
+    @Test
+    public void testNamespacesAtTheInUpCenter() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getTitleLink().getText(), "Заглавная");
+        Assert.assertEquals(homePage.getDiscussionCenterLink().getText(), "Обсуждение");
+        Assert.assertEquals(homePage.getReadLink().getText(), "Читать");
+        Assert.assertEquals(homePage.getViewCodeLink().getText(), "Просмотр кода");
+        Assert.assertEquals(homePage.getHistoryLink().getText(), "История");
+        Assert.assertTrue(homePage.getSearchInput().isDisplayed());
+        Assert.assertTrue(homePage.getSearchButton().isDisplayed());
+    }
 }

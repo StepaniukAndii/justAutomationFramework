@@ -274,4 +274,32 @@ public class HomePage extends BasePage {
     public WebElement getCreateAnAccountLink() {
         return findElementByXpath("//a[@title='Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно.']");
     }
+
+    public WebElement getTitleLink() {
+        return findElementByXpath("//a[@accesskey='c']//span");
+    }
+
+    public WebElement getDiscussionCenterLink() {
+        return findElementByXpath("//a[@accesskey='t']/span");
+    }
+
+    public WebElement getReadLink() {
+        return findElementByXpath("//li[@id='ca-view']//span");
+    }
+
+    public WebElement getViewCodeLink() {
+        return findElement("//a[@accesskey='e']/span");
+    }
+
+    public WebElement getHistoryLink() {
+        return findElementByXpath("//a[@accesskey='h']/span");
+    }
+
+    public WebElement getSearchInput() {
+        return findElementByXpath("//input[@id='searchInput']");
+    }
+
+    public WebElement getSearchButton() {
+        return findElementByXpath("//input[@id='searchButton']");
+    }
 }
