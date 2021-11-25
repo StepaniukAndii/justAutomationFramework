@@ -1,6 +1,7 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
+import io.cucumber.messages.internal.com.google.protobuf.MessageLite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -287,5 +288,9 @@ public class HomePage extends BasePage {
 
     public List<WebElement> addRequiredMessegeInChangeAccountInfoWindow() {
         return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
+    }
+
+    public WebElement addEmailAddressFieldChangeAccountInfoWindow() {
+        return driver.findElement(By.xpath("//input[@id='emailAddress']"));
     }
 }
