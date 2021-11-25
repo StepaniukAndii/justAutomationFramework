@@ -370,9 +370,11 @@ public class testMyAccount extends TestInit {
         homePage.myAccountIcon().click();
         sleep(2);
         homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
         homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
         homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
-        sleep(2);
         homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
         homePage.addSaveBtnInChangeAccountInfoWindow().click();
         sleep(2);
