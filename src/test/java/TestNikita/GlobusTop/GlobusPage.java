@@ -23,4 +23,11 @@ public class GlobusPage extends BasePage {
     public WebElement clickLogoToReturn(){
         return findElementByXpath("//div[@class=\"wrapper\"]/a[@class='logo']");
     }
+    public WebElement searchField(){
+        return findElementByXpath("//input[@name='search']");
+    }
+    public WebElement wrongSearchMessageGetText(){
+        return findElementByXpath("//div[@class='empty-entity']");
+    }
+
 }
