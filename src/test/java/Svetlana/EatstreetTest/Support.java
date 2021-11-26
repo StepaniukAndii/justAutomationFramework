@@ -32,4 +32,16 @@ public class Support extends TestInit {
 
         Assert.assertTrue(footerPage.checkCouponQuestions().isDisplayed());
     }
+    @Test
+    public void ForCostumersPaymentQuestions(){
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage=new FooterPage(driver);
+        footerPage.clickForCostumers().click();
+        footerPage.clickPaymentQuestions().click();
+
+        Assert.assertTrue(footerPage.checkPaymentQuestions().isDisplayed());
+    }
 }
