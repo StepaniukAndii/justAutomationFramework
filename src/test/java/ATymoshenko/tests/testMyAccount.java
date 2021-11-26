@@ -398,13 +398,12 @@ public class testMyAccount extends TestInit {
         homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
         homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
         homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
-        homePage.addEmailAddressFieldChangeAccountInfoWindow().clear();
+        homePage.addEMailFieldInChangeAccountInfoWindow().clear();
         homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
         homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
         homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
         homePage.addSaveBtnInChangeAccountInfoWindow().click();
         sleep(2);
-
         Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size() == 1);
+        }
     }
-}
