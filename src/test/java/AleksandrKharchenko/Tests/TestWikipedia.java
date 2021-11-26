@@ -149,4 +149,19 @@ public class TestWikipedia extends TestInit {
         Assert.assertTrue(homePage.getSearchInput().isDisplayed());
         Assert.assertTrue(homePage.getSearchButton().isDisplayed());
     }
+
+    @Test
+    public void testWelcomeMainTopSectionAtTheInUpCenter() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getWikipediaLink().getText(), "Википедию");
+        Assert.assertEquals(homePage.getFreeEncyclopediaLink().getText(), "свободную энциклопедию");
+        Assert.assertEquals(homePage.getAnyoneCanEditLink().getText(), "может редактировать каждый");
+        Assert.assertTrue(homePage.getStatisticsLink().isDisplayed());
+        Assert.assertTrue(homePage.getInRussianLink().isDisplayed());
+        Assert.assertEquals(homePage.getPortalsLink().getText(), "Порталы");
+        Assert.assertEquals(homePage.getReferenceBtnLink().getText(), "Справка");
+        Assert.assertTrue(homePage.getCreateArticleBtn().isDisplayed());
+    }
 }
