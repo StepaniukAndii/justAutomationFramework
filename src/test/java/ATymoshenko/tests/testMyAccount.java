@@ -458,4 +458,22 @@ public class testMyAccount extends TestInit {
         sleep(2);
         Assert.assertTrue(homePage.addInvalidMessegeInChangeAccountInfoWindow().size() == 1);
     }
+    @Test
+    public void test3RequiredMessageInChangePasswordWind(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addChangePasswordBtnOnMyAccountPage().click();
+        homePage.addUpdatePasswordBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 3);
+    }
 }
