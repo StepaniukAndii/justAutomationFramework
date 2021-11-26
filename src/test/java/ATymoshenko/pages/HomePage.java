@@ -1,14 +1,13 @@
 package ATymoshenko.pages;
 
 import ClasesToAllUs.BasePage;
-import io.cucumber.messages.internal.com.google.protobuf.MessageLite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class HomePage extends BasePage {
+
 
     public List<WebElement> addANewAddressWindow(){
         return driver.findElements(By.xpath("//div[@class='modal-body ng-scope']"));
@@ -290,8 +289,11 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
     }
 
-
     public WebElement addEMailFieldInChangeAccountInfoWindow() {
         return driver.findElement(By.xpath("//input[@id='emailAddress']"));
+    }
+
+    public List<WebElement> addInvalidMessegeInChangeAccountInfoWindow() {
+        return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
     }
 }
