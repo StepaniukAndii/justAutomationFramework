@@ -129,4 +129,16 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//div[@id='streetAddress-validation-tag']"));
 
     }
+    public WebElement splitOrderBtnNo(){
+        return driver.findElement(By.xpath("//label[contains(text(),'No')]"));
+
+    }
+    public WebElement splitOrderBtnYes(){
+        return driver.findElement(By.xpath("//label[contains(text(),'Yes')]"));
+
+    }
+    public WebElement membersModalHeader(){
+        return driver.findElement(By.xpath("//div[contains(@class,'modal-header')]"));
+
+    }
 }
