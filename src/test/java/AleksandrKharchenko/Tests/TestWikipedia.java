@@ -177,4 +177,20 @@ public class TestWikipedia extends TestInit {
         Assert.assertTrue(viewCodePage.getAdministratorsLink().isDisplayed());
         Assert.assertTrue(viewCodePage.getEngineersLink().isDisplayed());
     }
+
+    @Test
+    public void testSectionWhyDidItHappenInViewCodePage() {
+        HomePage homePage = new HomePage(driver);
+        ViewCodePage viewCodePage = new ViewCodePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getViewCodeLink().click();
+
+        Assert.assertEquals(viewCodePage.getTemplatesLink().getText(), "шаблоны");
+        Assert.assertEquals(viewCodePage.getEditWarsLink().getText(), "войны правок");
+        Assert.assertEquals(viewCodePage.getProtectionLogLink().getText(), "журнале защиты");
+        Assert.assertEquals(viewCodePage.getDiscussThisPageLink().getText(), "обсудить эту страницу");
+        Assert.assertEquals(viewCodePage.getAddLinkViewCode().getText(), "добавить");
+        Assert.assertEquals(viewCodePage.getOfferToRemoveProtectionLink().getText(), "предложить снять защиту");
+        Assert.assertEquals(viewCodePage.getEditprotectedLink().getText(), "editprotected");
+    }
 }
