@@ -20,4 +20,38 @@ public class NYRestEatstreet extends TestInit {
         homePage.getAllRest().get(0).click();
         Assert.assertTrue(homePage.getRestInNY().isDisplayed());
     }
+
+    @Test
+    public void filtrRestNY() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getAdressInput().sendKeys("NYC,USA");
+        homePage.getFedBtn().click();
+        homePage.checkAndClouseAdressSearchAttempt();
+        homePage.getFedBtn().click();
+        sleep(5);
+        homePage.checkAndClousePopUpWindow();
+        sleep(5);
+        homePage.getbtnFiltrSection().get(45).click();
+        homePage.getbtnFiltrSection().get(23).click();
+        homePage.getbtnFiltrSection().get(67).click();
+        Assert.assertTrue(homePage.getSectionFiltrAllRestInCity().isDisplayed());
+    }
+
+    @Test
+    public void checkFirstRestInNY() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.getAdressInput().sendKeys("NYC,USA");
+        homePage.getFedBtn().click();
+        homePage.checkAndClouseAdressSearchAttempt();
+        homePage.getFedBtn().click();
+        sleep(5);
+        homePage.getAllRest().get(0).click();
+        sleep(5);
+        Assert.assertTrue(homePage.fieldSearchMenu().isDisplayed());
+        Assert.assertTrue(homePage.h2YourOrder().isDisplayed());
+
+    }
 }

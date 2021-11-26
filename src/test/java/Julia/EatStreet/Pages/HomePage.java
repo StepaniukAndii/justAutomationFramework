@@ -376,4 +376,39 @@ public class HomePage extends BasePage {
     public WebElement btnOrderAhead() {
         return driver.findElement(By.xpath("//label[contains(text(),'Order Ahead')]"));
     }
+    public List<WebElement> enterFieldMyAnswer() {
+        return driver.findElements(By.xpath("//div[@jsname='LwH6nd']"));
+    }
+
+    public List<WebElement> getbtnFiltrSection() {
+        return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
+    }
+
+    public WebElement getSectionFiltrAllRestInCity() {
+        return driver.findElement(By.xpath("//div[@id='filters']"));
+    }
+
+    public WebElement fieldSearchMenu() {
+        return driver.findElement(By.xpath("//input[@placeholder='Search Menu']"));
+    }
+
+    public WebElement h2YourOrder() {
+        return driver.findElement(By.xpath("//div[@class='widget-header--menu__cart__header']/h2"));
+    }
+
+    public List<WebElement> sectionMenu() {
+        return driver.findElements(By.xpath("//div[@class='list list--menu list--menu--scale']/section"));
+    }
+
+    public WebElement addThisItem() {
+        return driver.findElement(By.xpath("//button[@id='quantity--adds']"));
+    }
+
+    public WebElement btnAddToCard() {
+        return driver.findElement(By.xpath("//a[@id='confirm-options']"));
+    }
+
+    public WebElement ecqualsCard() {
+        return driver.findElement(By.xpath("//span[@class='navbar__cart-count ng-binding ng-scope']"));
+    }
 }
