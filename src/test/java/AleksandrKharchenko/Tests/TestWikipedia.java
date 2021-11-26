@@ -164,4 +164,17 @@ public class TestWikipedia extends TestInit {
         Assert.assertEquals(homePage.getReferenceBtnLink().getText(), "Справка");
         Assert.assertTrue(homePage.getCreateArticleBtn().isDisplayed());
     }
+
+    @Test
+    public void testSectionAboutProtectionInViewCodepage() {
+        HomePage homePage = new HomePage(driver);
+        ViewCodePage viewCodePage = new ViewCodePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getViewCodeLink().click();
+
+        Assert.assertTrue(viewCodePage.getLockImages().isDisplayed());
+        Assert.assertTrue(viewCodePage.getProtectedLink().isDisplayed());
+        Assert.assertTrue(viewCodePage.getAdministratorsLink().isDisplayed());
+        Assert.assertTrue(viewCodePage.getEngineersLink().isDisplayed());
+    }
 }
