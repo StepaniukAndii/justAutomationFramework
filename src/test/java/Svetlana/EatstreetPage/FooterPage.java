@@ -93,5 +93,11 @@ public class FooterPage extends BasePage {
     public WebElement checkCouponQuestions(){
         return findElementByXpath("//h2[contains(text(),'How do I add a coupon to my order')]");
     }
+    public WebElement clickPaymentQuestions(){
+        return findElementByXpath("//div[contains(text(),'Payment Questions')]");
+    }
+    public WebElement checkPaymentQuestions(){
+        return findElementByXpath("//h2[contains(text(),'How do I u')]");
+    }
 
 }
