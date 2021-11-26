@@ -290,11 +290,7 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
     }
 
-<<<<<<< HEAD
     public WebElement addEMailFieldInChangeAccountInfoWindow() {
-=======
-    public WebElement addEmailAddressFieldChangeAccountInfoWindow() {
->>>>>>> 95e9672874016f020c49c60a3fea6b730954101e
         return driver.findElement(By.xpath("//input[@id='emailAddress']"));
     }
 }
