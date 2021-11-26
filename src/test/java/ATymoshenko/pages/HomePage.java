@@ -296,4 +296,9 @@ public class HomePage extends BasePage {
     public List<WebElement> addInvalidMessegeInChangeAccountInfoWindow() {
         return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
     }
+
+    public List<WebElement> addRequiredMessageInChangePasswordWindInMyAccount() {
+        return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
+
+    }
 }
