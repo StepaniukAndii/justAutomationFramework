@@ -99,5 +99,13 @@ public class FooterPage extends BasePage {
     public WebElement checkPaymentQuestions(){
         return findElementByXpath("//h2[contains(text(),'How do I u')]");
     }
+    public WebElement clickAccessibilityStatement(){
+        return findElementByXpath("//a[contains(text(),'Accessibility Statement')]");
+    }
+    public WebElement clickLinknternetAccessibility(){
+        return findElementByXpath("/html/body/div[4]/div/div/div[1]/main/div/div/div/div[2]/p[3]/a");
+    }
+
+
 
 }
