@@ -510,9 +510,10 @@ public class testMyAccount extends TestInit {
         homePage.addChangePasswordBtnOnMyAccountPage().click();
         homePage.addCurrentPasswordField().sendKeys("rterterteywyw");
         homePage.addNewPasswordField().sendKeys("rterterteywyw");
+        homePage.addConfirmNewPasswordField().sendKeys("rterterteywyw");
         homePage.addUpdatePasswordBtn().click();
         sleep(3);
 
-        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 1);
+        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 0);
     }
 }
