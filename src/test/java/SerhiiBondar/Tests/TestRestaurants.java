@@ -197,4 +197,30 @@ public class TestRestaurants extends TestInit {
 
         Assert.assertEquals(restaurantEatstreetPage.deliveryAddressValidationInfo().getText(),"Out of range");
     }
+    @Test
+    public void testInviteMembersModalWindowOpening(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+        restaurantEatstreetPage.getGroupOrderField().clear();
+        restaurantEatstreetPage.getGroupOrderField().sendKeys("Weekend Party");
+        restaurantEatstreetPage.chooseTakeOutBtn().click();
+        restaurantEatstreetPage.splitOrderBtnNo().click();
+        restaurantEatstreetPage.getContinueBtn().click();
+        sleep(1);
+
+        Assert.assertEquals(restaurantEatstreetPage.membersModalHeader().getText(),"Invite Members");
+
+
+    }
 }
