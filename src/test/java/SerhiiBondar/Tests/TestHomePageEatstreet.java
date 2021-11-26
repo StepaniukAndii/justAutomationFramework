@@ -4,7 +4,7 @@ import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
 import SerhiiBondar.Pages.TheAppPageEatstreet;
-import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,12 +19,12 @@ public class TestHomePageEatstreet extends TestInit {
         openUrl("https://eatstreet.com/");
         homeEatstreetPage.getGoItBtn().click();
         homeEatstreetPage.getPartnerWithUsBtn().click();
-        homeEatstreetPage.getApplyNowString().click();
+        homeEatstreetPage.getApplyNowLink().click();
         sleep(2);
-        homeEatstreetPage.getApplyInYourCityField().click();
-        homeEatstreetPage.getCityAppleton().click();
+        Select dropCity = new Select(homeEatstreetPage.getApplyInYourCityField());
+        dropCity.selectByVisibleText("Delivery Driver - Appleton, WI.");
 
-        Assert.assertEquals(homeEatstreetPage.getDriverAppletonString().getText(), "Delivery Driver - Appleton, WI.");
+        Assert.assertTrue(homeEatstreetPage.getDriverInCityString().getText().contains("Appleton"));
     }
 
     @Test
