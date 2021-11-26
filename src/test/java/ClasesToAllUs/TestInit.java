@@ -31,7 +31,7 @@ public class TestInit {
         }else if (isOSWindows()){
             setProperty("src/test/drivers/chromedriver_95.exe");
         }else {
-            setProperty("src/test/drivers/chromedriver_90_linux");
+            setProperty("src/test/drivers/chromedriver_96_linux");
         }
 
         driver = new ChromeDriver(options);
@@ -73,10 +73,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-//    @AfterMethod
-//    public void afterTest() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void afterTest() {
+        driver.quit();
+    }
 
     public void openUrl(String site) {
         driver.get(site);
@@ -146,5 +146,9 @@ public class TestInit {
         if (headless = false) {
             productPage.disableAd().click();
         }
+    }
+
+    public String getTextFromXpath(WebElement element) {
+        return element.getText();
     }
 }
