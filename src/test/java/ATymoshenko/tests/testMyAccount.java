@@ -406,4 +406,56 @@ public class testMyAccount extends TestInit {
         sleep(2);
         Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size() == 1);
         }
+    @Test
+    public void testMessegeInvalidAboutEMailInfoInEditYourInfoBtn() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
+        homePage.addEMailFieldInChangeAccountInfoWindow().clear();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
+        homePage.addEMailFieldInChangeAccountInfoWindow().sendKeys("11111111111111111111111111111111");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.addInvalidMessegeInChangeAccountInfoWindow().size() == 1);
     }
+    @Test
+    public void testMessegeInvalidAboutPhoneNumberInfoInEditYourInfoBtn() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
+        homePage.addEMailFieldInChangeAccountInfoWindow().clear();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("111111111111111111111111");
+        homePage.addEMailFieldInChangeAccountInfoWindow().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.addInvalidMessegeInChangeAccountInfoWindow().size() == 1);
+    }
+}
