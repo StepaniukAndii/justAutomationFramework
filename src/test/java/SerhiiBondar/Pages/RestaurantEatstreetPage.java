@@ -4,6 +4,7 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
@@ -137,8 +138,30 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//label[contains(text(),'Yes')]"));
 
     }
-    public WebElement membersModalHeader(){
+    public WebElement modalHeaderTitle(){
         return driver.findElement(By.xpath("//div[contains(@class,'modal-header')]"));
 
     }
+    public WebElement modalWindowOpened(){
+        return driver.findElement(By.xpath("//div[@class='modal-content']"));
+
+    }
+    public WebElement addEmailField(){
+        return driver.findElement(By.xpath("//div[@class='tags']"));
+
+
+    }
+    public WebElement inputEmail(){
+        return driver.findElement(By.xpath("//div[contains(@class, 'modal')]//input[contains(@placeholder, 'email')]"));
+
+    }
+    public WebElement getSkipThisStepBtn(){
+        return driver.findElement(By.xpath("//a[@id='cancel-modal-btn']"));
+
+    }
+    public WebElement getSendInvitesBtn(){
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+
+    }
+
 }
