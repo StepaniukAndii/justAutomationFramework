@@ -424,4 +424,8 @@ public class HomePage extends BasePage {
     public List<WebElement> activeFiltr() {
         return driver.findElements(By.xpath("//div/span[@class='active_filter ng-binding ng-scope']"));
     }
+
+    public WebElement getTheApp() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Get The App')]"));
+    }
 }
