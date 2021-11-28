@@ -302,4 +302,32 @@ public class HomePage extends BasePage {
     public WebElement getSearchButton() {
         return findElementByXpath("//input[@id='searchButton']");
     }
+
+    public WebElement getWikipediaLink() {
+        return findElementByXpath("//a[@title='Википедия']");
+    }
+
+    public WebElement getFreeEncyclopediaLink() {
+        return findElementByXpath("//a[@title='Свободный контент']");
+    }
+
+    public WebElement getAnyoneCanEditLink() {
+        return findElementByXpath("//a[@title='Справка:Введение в Википедию']");
+    }
+
+    public WebElement getStatisticsLink() {
+        return findElementByXpath("//a[@title='Служебная:Статистика']");
+    }
+
+    public WebElement getInRussianLink() {
+        return findElementByXpath("//a[@title='Русский язык']");
+    }
+
+    public WebElement getPortalsLink() {
+        return findElementByXpath("//a[@title='Портал:Обзор']");
+    }
+
+    public WebElement getReferenceBtnLink() {
+        return findElementByXpath("//a[@title='Википедия:Справка']");
+    }
 }

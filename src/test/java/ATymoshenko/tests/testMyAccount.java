@@ -398,13 +398,142 @@ public class testMyAccount extends TestInit {
         homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
         homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
         homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
-        homePage.addEmailAddressFieldChangeAccountInfoWindow().clear();
+        homePage.addEMailFieldInChangeAccountInfoWindow().clear();
         homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
         homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
         homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
         homePage.addSaveBtnInChangeAccountInfoWindow().click();
         sleep(2);
-
         Assert.assertTrue(homePage.addRequiredMessegeInChangeAccountInfoWindow().size() == 1);
+        }
+    @Test
+    public void testMessegeInvalidAboutEMailInfoInEditYourInfoBtn() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
+        homePage.addEMailFieldInChangeAccountInfoWindow().clear();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("+1 202 679 45 01");
+        homePage.addEMailFieldInChangeAccountInfoWindow().sendKeys("11111111111111111111111111111111");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.addInvalidMessegeInChangeAccountInfoWindow().size() == 1);
+    }
+    @Test
+    public void testMessegeInvalidAboutPhoneNumberInfoInEditYourInfoBtn() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        sleep(2);
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(2);
+        homePage.addEditYourInfoBtn().click();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addLastNameFieldInChangeAccountInfoWindow().clear();
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().clear();
+        homePage.addEMailFieldInChangeAccountInfoWindow().clear();
+        homePage.addFirstNameFieldInChangeAccountInfoWindow().sendKeys("Clint");
+        homePage.addLastNameFieldInChangeAccountInfoWindow().sendKeys("Eastwood");
+        homePage.addPhoneNumberFieldInChangeAccountInfoWindow().sendKeys("111111111111111111111111");
+        homePage.addEMailFieldInChangeAccountInfoWindow().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addSaveBtnInChangeAccountInfoWindow().click();
+        sleep(2);
+        Assert.assertTrue(homePage.addInvalidMessegeInChangeAccountInfoWindow().size() == 1);
+    }
+    @Test
+    public void test3RequiredMessageInChangePasswordWind(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addChangePasswordBtnOnMyAccountPage().click();
+        homePage.addUpdatePasswordBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 3);
+    }
+    @Test
+    public void test2RequiredMessageInChangePasswordWind(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addChangePasswordBtnOnMyAccountPage().click();
+        homePage.addCurrentPasswordField().sendKeys("rterterteywyw");
+        homePage.addUpdatePasswordBtn().click();
+        sleep(3);
+
+        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 2);
+    }
+    @Test
+    public void test1RequiredMessageInChangePasswordWind(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addChangePasswordBtnOnMyAccountPage().click();
+        homePage.addCurrentPasswordField().sendKeys("rterterteywyw");
+        homePage.addNewPasswordField().sendKeys("rterterteywyw");
+        homePage.addUpdatePasswordBtn().click();
+        sleep(3);
+
+        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 1);
+    }
+    @Test
+    public void testAbcentRequiredMessageInChangePasswordWind(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addSignInBtnOnHeader().click();
+        homePage.addEmailField().sendKeys("alextymoshenko81@gmail.com");
+        homePage.addPasswordField().sendKeys("rterterteywyw");
+        homePage.addSignInBtnOnPopUpWindow().click();
+        sleep(2);
+        homePage.myAccountIcon().click();
+        sleep(3);
+        homePage.addChangePasswordBtnOnMyAccountPage().click();
+        homePage.addCurrentPasswordField().sendKeys("rterterteywyw");
+        homePage.addNewPasswordField().sendKeys("rterterteywyw");
+        homePage.addConfirmNewPasswordField().sendKeys("rterterteywyw");
+        homePage.addUpdatePasswordBtn().click();
+        sleep(3);
+
+        Assert.assertTrue(homePage.addRequiredMessageInChangePasswordWindInMyAccount().size() == 0);
     }
 }

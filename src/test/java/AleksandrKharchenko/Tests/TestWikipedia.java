@@ -149,4 +149,48 @@ public class TestWikipedia extends TestInit {
         Assert.assertTrue(homePage.getSearchInput().isDisplayed());
         Assert.assertTrue(homePage.getSearchButton().isDisplayed());
     }
+
+    @Test
+    public void testWelcomeMainTopSectionAtTheInUpCenter() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+
+        Assert.assertEquals(homePage.getWikipediaLink().getText(), "Википедию");
+        Assert.assertEquals(homePage.getFreeEncyclopediaLink().getText(), "свободную энциклопедию");
+        Assert.assertEquals(homePage.getAnyoneCanEditLink().getText(), "может редактировать каждый");
+        Assert.assertTrue(homePage.getStatisticsLink().isDisplayed());
+        Assert.assertTrue(homePage.getInRussianLink().isDisplayed());
+        Assert.assertEquals(homePage.getPortalsLink().getText(), "Порталы");
+        Assert.assertEquals(homePage.getReferenceBtnLink().getText(), "Справка");
+        Assert.assertTrue(homePage.getCreateArticleBtn().isDisplayed());
+    }
+
+    @Test
+    public void testSectionAboutProtectionInViewCodepage() {
+        HomePage homePage = new HomePage(driver);
+        ViewCodePage viewCodePage = new ViewCodePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getViewCodeLink().click();
+
+        Assert.assertTrue(viewCodePage.getLockImages().isDisplayed());
+        Assert.assertTrue(viewCodePage.getProtectedLink().isDisplayed());
+        Assert.assertTrue(viewCodePage.getAdministratorsLink().isDisplayed());
+        Assert.assertTrue(viewCodePage.getEngineersLink().isDisplayed());
+    }
+
+    @Test
+    public void testSectionWhyDidItHappenInViewCodePage() {
+        HomePage homePage = new HomePage(driver);
+        ViewCodePage viewCodePage = new ViewCodePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getViewCodeLink().click();
+
+        Assert.assertEquals(viewCodePage.getTemplatesLink().getText(), "шаблоны");
+        Assert.assertEquals(viewCodePage.getEditWarsLink().getText(), "войны правок");
+        Assert.assertEquals(viewCodePage.getProtectionLogLink().getText(), "журнале защиты");
+        Assert.assertEquals(viewCodePage.getDiscussThisPageLink().getText(), "обсудить эту страницу");
+        Assert.assertEquals(viewCodePage.getAddLinkViewCode().getText(), "добавить");
+        Assert.assertEquals(viewCodePage.getOfferToRemoveProtectionLink().getText(), "предложить снять защиту");
+        Assert.assertEquals(viewCodePage.getEditprotectedLink().getText(), "editprotected");
+    }
 }
