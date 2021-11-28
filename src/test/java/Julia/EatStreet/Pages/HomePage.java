@@ -425,6 +425,9 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div/span[@class='active_filter ng-binding ng-scope']"));
     }
 
+    public List<WebElement> closeActiveFiltr() {
+        return driver.findElements(By.xpath("//span/button[@class='active_filter_remove']"));
+    }
     public WebElement getTheApp() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Get The App')]"));
     }
