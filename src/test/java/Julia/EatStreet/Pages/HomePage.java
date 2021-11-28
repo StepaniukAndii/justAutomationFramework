@@ -431,4 +431,8 @@ public class HomePage extends BasePage {
     public WebElement getTheApp() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Get The App')]"));
     }
+
+    public List<WebElement> clickSortByBtn() {
+        return driver.findElements(By.xpath("//button[@class='custom_dropdown_button']/span"));
+    }
 }

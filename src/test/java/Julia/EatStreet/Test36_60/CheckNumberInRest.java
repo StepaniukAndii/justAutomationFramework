@@ -53,4 +53,18 @@ public class CheckNumberInRest extends TestInit {
         sleep(5);
         Assert.assertTrue(homePage.clickFiltrSection().get(0).isDisplayed());
     }
+
+    @Test
+    public void filtrRestInDallas() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getAdressInput().sendKeys("Dallas, TX");
+        sleep(2);
+        homePage.getFedBtn().click();
+        sleep(5);
+        homePage.checkAndClousePopUpWindow();
+        homePage.clickSortByBtn().get(0).click();
+        Assert.assertTrue(homePage.clickSortByBtn().get(0).isDisplayed());
+    }
+
 }
