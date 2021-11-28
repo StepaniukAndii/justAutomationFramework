@@ -411,4 +411,9 @@ public class HomePage extends BasePage {
     public WebElement ecqualsCard() {
         return driver.findElement(By.xpath("//span[@class='navbar__cart-count ng-binding ng-scope']"));
     }
+
+    public List<WebElement> deleteItemInYourOrder() {
+        return driver.findElements(By.xpath("//div//table//a[@id='remove-item']"));
+
+    }
 }
