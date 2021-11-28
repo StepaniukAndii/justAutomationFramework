@@ -416,4 +416,12 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div//table//a[@id='remove-item']"));
 
     }
+
+    public List<WebElement> clickFiltrSection() {
+        return driver.findElements(By.xpath("//div[@class='row filters-section ng-scope']//label"));
+    }
+
+    public List<WebElement> activeFiltr() {
+        return driver.findElements(By.xpath("//div/span[@class='active_filter ng-binding ng-scope']"));
+    }
 }
