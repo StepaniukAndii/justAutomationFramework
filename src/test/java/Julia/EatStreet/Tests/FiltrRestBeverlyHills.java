@@ -45,40 +45,22 @@ public class FiltrRestBeverlyHills extends TestInit {
     @Test
     public void deleteYourOrder(){
         HomePage homePage = new  HomePage(driver);
-        openUrl("https://qa2.eatstreet.com/");
-        homePage.checkAndClousePopUpWindow();
-        homePage.getAdressInput().sendKeys("Beverly Hills");
-        sleep(5);
-        homePage.getFedBtn().click();
-        sleep(5);
-        homePage.getAllRest().get(3).click();
-        sleep(5);
+        openUrl("https://qa2.eatstreet.com/los-angeles-ca/restaurants/asakuma-sushi-los-angeles");
+        homePage.getGoItBtn().click();
         homePage.sectionMenu().get(7).click();
+        sleep(5);
+        homePage.addThisItem().click();
+        homePage.btnAddToCard().click();
         sleep(3);
-        homePage.addThisItem().click();
-        sleep(5);
-        homePage.btnAddToCard().click();
-        sleep(5);
-        homePage.sectionMenu().get(9).click();
+        homePage.sectionMenu().get(162).click();
         sleep(5);
         homePage.addThisItem().click();
-        sleep(5);
         homePage.btnAddToCard().click();
-        sleep(7);
-        homePage.sectionMenu().get(24).click();
-        sleep(5);
-        homePage.addThisItem().click();
-        sleep(5);
-        homePage.btnAddToCard().click();
-        homePage.deleteItemInYourOrder().get(4).click();
+        homePage.deleteItemInYourOrder().get(0).click();
         sleep(10);
-        homePage.deleteItemInYourOrder().get(6).click();
+        homePage.deleteItemInYourOrder().get(2).click();
         sleep(10);
-        homePage.deleteItemInYourOrder().get(10).click();
-        sleep(10);
-        //homePage.deleteItemInYourOrder().get(14).click();
-       // sleep(7);
-        Assert.assertTrue(homePage.ecqualsCard().getText().contains("4"));
+        Assert.assertTrue(homePage.ecqualsCard().getText().contains("2"));
     }
 }
 

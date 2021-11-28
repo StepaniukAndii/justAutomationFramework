@@ -413,7 +413,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> deleteItemInYourOrder() {
-        return driver.findElements(By.xpath("//div[@class='widget-body widget-body--cart border-top-none']//a"));
+        return driver.findElements(By.xpath("//div//table//a[@id='remove-item']"));
 
     }
 }
