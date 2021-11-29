@@ -435,4 +435,17 @@ public class HomePage extends BasePage {
     public List<WebElement> clickSortByBtn() {
         return driver.findElements(By.xpath("//button[@class='custom_dropdown_button']/span"));
     }
+
+    public WebElement clickSortByIMGBtn() {
+        return driver.findElement(By.xpath("//button[@class='custom_dropdown_button']/img"));
+    }
+
+    public WebElement clickSortByETABtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'ETA')]"));
+    }
+
+    public WebElement clickSortByDistanceBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'Distance')]"));
+
+    }
 }
