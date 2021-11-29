@@ -149,8 +149,8 @@ public class HomePage extends BasePage {
     public WebElement sortByBTN(){
         return findElementByXpath("//button[@class=\"custom_dropdown_button\"]");
     }
-    public WebElement sortByRating(){
-        return findElementByXpath("//button[@aria-label=\"rating\"]");
+    public List <WebElement> sortByARAndOther(){
+        return findElementsByXpath("//button[@class=\"custom_dropdown_content_option\"]");
     }
     public WebElement getReviews(){
         return findElementByXpath("//label[@for=\"reviews\"]");
