@@ -140,4 +140,11 @@ public class HomePage extends BasePage {
     public List<WebElement> bTNGetHelp(){
         return findElementsByXpath("//a[@ng-click=\"getHelp()\"]");
     }
+    public WebElement partnerWithUsBTN(){
+        return findElementByXpath("//a[@class=\"partners-link ng-scope\"]");
+    }
+    public WebElement assertBTNPartnerWithUs(){
+        return findElementByXpath("//div[@id=\"partners\"]");
+    }
 }
+
