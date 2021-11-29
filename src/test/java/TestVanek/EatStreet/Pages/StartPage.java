@@ -22,4 +22,10 @@ public class StartPage extends BasePage {
     public  WebElement myAccounBtn(){
         return findElementByXpath("//a[contains(@id,'menu')]");
     }
+    public  WebElement learnMoreBtn(){
+        return findElementByXpath("//a[contains(text(),'Learn')]");
+    }
+    public  WebElement gotItBtn(){
+        return findElementByXpath("//button[contains(text(),'Got')]");
+    }
 }
