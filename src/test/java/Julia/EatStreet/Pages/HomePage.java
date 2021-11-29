@@ -452,4 +452,8 @@ public class HomePage extends BasePage {
     public WebElement clickSortByRatingBtn() {
         return driver.findElement(By.xpath("//button[contains(text(), 'Rating')]"));
     }
+
+    public WebElement clickSortDeliveryFreeBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'Delivery Fee')]"));
+    }
 }
