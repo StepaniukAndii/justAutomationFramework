@@ -80,6 +80,6 @@ public class CheckNumberInRest extends TestInit {
         homePage.clickSortByETABtn().click();
         homePage.clickSortByIMGBtn().click();
         homePage.clickSortByDistanceBtn().click();
-        Assert.assertTrue(homePage.clickSortByETABtn().isDisplayed());
+        Assert.assertTrue(homePage.clickSortByDistanceBtn().isDisplayed());
     }
 }
