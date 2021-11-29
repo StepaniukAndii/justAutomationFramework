@@ -19,4 +19,7 @@ public class StartPage extends BasePage {
     public WebElement addressSearchAttemptEnter(){
         return findElementByXpath("//a[@class='btn btn-primary float-right']");
     }
+    public  WebElement myAccounBtn(){
+        return findElementByXpath("//a[contains(@id,'menu')]");
+    }
 }
