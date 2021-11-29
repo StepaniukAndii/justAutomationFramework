@@ -9,7 +9,7 @@ public class FilterTest extends TestInit {
     public void testFilter() {
         GlobusPage homePage = new GlobusPage(driver);
         openUrl("https://globus.top/uk");
-        homePage.closedFilter().click();
+        homePage.catalogOnMainPage().click();
         homePage.insideFilterElemComp().click();
         Assert.assertEquals(getTextFromXpath(homePage.getElemTextOnPage()), "Комп’ютери та периферія");
         homePage.clickLogoToReturn().click();

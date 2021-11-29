@@ -4,30 +4,43 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class GlobusPage extends BasePage {
 
-    public GlobusPage(WebDriver driver) {super(driver);}
+    public GlobusPage(WebDriver driver) {
+        super(driver);
+    }
 
-    public WebElement closedFilter(){
+    public WebElement catalogOnMainPage() {
         return findElementByXpath("//button[@class='btn btn-light btn-lg gt-catalog-btn']");
-    }
-    public WebElement openedFilter(){
+    } // catalog on the main page
+
+    public WebElement openCatalogBtn() {
         return findElementByXpath("//button[@class='btn btn-light btn-lg gt-catalog-btn']");
-    }
-    public WebElement insideFilterElemComp(){
+    } // btn witch opens detailed catalog
+
+    public WebElement insideFilterElemComp() {
         return findElementByXpath("//div//a[@data-category='900']");
     }
-    public WebElement getElemTextOnPage(){
+
+    public WebElement getElemTextOnPage() {
         return findElementByXpath("//div//h1[@id='page-title']");
     }
-    public WebElement clickLogoToReturn(){
+
+    public WebElement clickLogoToReturn() {
         return findElementByXpath("//div[@class=\"wrapper\"]/a[@class='logo']");
     }
-    public WebElement searchField(){
+
+    public WebElement searchField() {
         return findElementByXpath("//input[@name='search']");
     }
-    public WebElement wrongSearchMessageGetText(){
+
+    public WebElement wrongSearchMessageGetText() {
         return findElementByXpath("//div[@class='empty-entity']");
     }
 
+    public List<WebElement> listOfMainFilterElements() {
+        return findElementsByXpath("//div[@class='sticky-wrapper']//div[@class='categories-list']/a");
+    }
 }
