@@ -129,5 +129,19 @@ public class FooterPage extends BasePage {
     public WebElement checkResetPassword(){
         return findElementByXpath("//*[@id=\"exp-confirm-modal\"]/div[2]/div[2]");
     }
-
+    public WebElement clickSignUp(){
+        return findElementByXpath("/html/body/div[2]/div/div/div/div/div[1]/a[2]");
+    }
+    public WebElement inputAddress(){
+        return findElementByXpath("/html/body/div[2]/div/div/div/div/div[3]/div[1]/div/input");
+    }
+    public WebElement selectAddress(){
+        return findElementByXpath("/html/body/div[2]/div/div/div/div/div[3]/div[1]/ul/li");
+    }
+    public WebElement clickConfirmRestuar(){
+        return findElementByXpath("//button[contains(text(),'Confirm Restaurant')]");
+    }
+    public WebElement checkPopup(){
+        return findElementByXpath("//*[@id=\"exp-confirm-modal\"]/div[2]/div[2]");
+    }
 }
