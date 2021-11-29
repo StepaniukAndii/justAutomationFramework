@@ -183,5 +183,20 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'Cancel This Order')]"));
 
     }
+    public WebElement getRatingBtn() {
+        return driver.findElement(By.xpath("//button[@aria-label='rating']"));
 
+    }
+    public WebElement getDistanceBtn() {
+        return driver.findElement(By.xpath("//button[@aria-label='distance']"));
+    }
+
+    public WebElement getETABtn() {
+        return driver.findElement(By.xpath("//button[@aria-label='eta']"));
+
+    }
+    public WebElement getAZBtn(){
+        return driver.findElement(By.xpath("//button[@aria-label='alphabetical']"));
+
+    }
 }
