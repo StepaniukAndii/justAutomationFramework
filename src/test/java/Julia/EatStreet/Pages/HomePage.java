@@ -411,4 +411,41 @@ public class HomePage extends BasePage {
     public WebElement ecqualsCard() {
         return driver.findElement(By.xpath("//span[@class='navbar__cart-count ng-binding ng-scope']"));
     }
+
+    public List<WebElement> deleteItemInYourOrder() {
+        return driver.findElements(By.xpath("//div//table//a[@id='remove-item']"));
+
+    }
+
+    public List<WebElement> clickFiltrSection() {
+        return driver.findElements(By.xpath("//div[@class='row filters-section ng-scope']//label"));
+    }
+
+    public List<WebElement> activeFiltr() {
+        return driver.findElements(By.xpath("//div/span[@class='active_filter ng-binding ng-scope']"));
+    }
+
+    public List<WebElement> closeActiveFiltr() {
+        return driver.findElements(By.xpath("//span/button[@class='active_filter_remove']"));
+    }
+    public WebElement getTheApp() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Get The App')]"));
+    }
+
+    public List<WebElement> clickSortByBtn() {
+        return driver.findElements(By.xpath("//button[@class='custom_dropdown_button']/span"));
+    }
+
+    public WebElement clickSortByIMGBtn() {
+        return driver.findElement(By.xpath("//button[@class='custom_dropdown_button']/img"));
+    }
+
+    public WebElement clickSortByETABtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'ETA')]"));
+    }
+
+    public WebElement clickSortByDistanceBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'Distance')]"));
+
+    }
 }
