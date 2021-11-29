@@ -448,4 +448,8 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//button[contains(text(), 'Distance')]"));
 
     }
+
+    public WebElement clickSortByRatingBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'Rating')]"));
+    }
 }
