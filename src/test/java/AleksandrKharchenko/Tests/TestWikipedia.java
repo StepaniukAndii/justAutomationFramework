@@ -193,4 +193,23 @@ public class TestWikipedia extends TestInit {
         Assert.assertEquals(viewCodePage.getOfferToRemoveProtectionLink().getText(), "предложить снять защиту");
         Assert.assertEquals(viewCodePage.getEditprotectedLink().getText(), "editprotected");
     }
+
+    @Test
+    public void testSectionSourceCodeOfThisPageInViewCodePage() {
+        HomePage homePage = new HomePage(driver);
+        ViewCodePage viewCodePage = new ViewCodePage(driver);
+        openUrl("https://ru.wikipedia.org/");
+        homePage.getViewCodeLink().click();
+
+        Assert.assertTrue(viewCodePage.getVerifierWikiBtn().isDisplayed());
+        Assert.assertTrue(viewCodePage.getBoldWikiBtn().isDisplayed());
+        Assert.assertTrue(viewCodePage.getItalicsWikiBtn().isDisplayed());
+        Assert.assertTrue(viewCodePage.getLinkWikiBtn().isDisplayed());
+        Assert.assertTrue(viewCodePage.getImagesAndMediaWikiBtn().isDisplayed());
+        Assert.assertTrue(viewCodePage.getFootnoteWikiBtn().isDisplayed());
+        Assert.assertTrue(viewCodePage.getSyntaxHighlightingWikiBtn().isDisplayed());
+        Assert.assertEquals(viewCodePage.getAdditionallyWikiLink().getText(), "Дополнительно");
+        Assert.assertEquals(viewCodePage.getSpecialCharactersWikiLink().getText(), "Спецсимволы");
+        Assert.assertEquals(viewCodePage.getReferenceWikiLink().getText(), "Справка");
+    }
 }
