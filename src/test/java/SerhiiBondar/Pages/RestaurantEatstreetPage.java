@@ -171,12 +171,16 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(@ng-if,'$groupOrdering.isViewerActive()')]"));
 
     }
-    public WebElement getUpdateGroupOrderBtn(){
+    public WebElement getConfirmationGroupOrderGreenBtn(){
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
 
     }
     public WebElement groupOrderTitle(){
         return driver.findElement(By.xpath("//h2[contains(@class,'menu__cart__title')]"));
+
+    }
+    public WebElement getCancelGroupOrderBtn(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Cancel This Order')]"));
 
     }
 
