@@ -456,4 +456,12 @@ public class HomePage extends BasePage {
     public WebElement clickSortDeliveryFreeBtn() {
         return driver.findElement(By.xpath("//button[contains(text(), 'Delivery Fee')]"));
     }
+
+    public List<WebElement> selectOneDropDownWindow() {
+        return driver.findElements(By.xpath("//select[@id='main-option']/option"));
+    }
+
+    public WebElement clickBtnProcesedToCheckout() {
+        return driver.findElement(By.xpath("//a[@id='click-checkout']"));
+    }
 }
