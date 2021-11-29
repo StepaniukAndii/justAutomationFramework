@@ -82,4 +82,20 @@ public class CheckNumberInRest extends TestInit {
         homePage.clickSortByDistanceBtn().click();
         Assert.assertTrue(homePage.clickSortByDistanceBtn().isDisplayed());
     }
+
+    @Test
+    public void sortByRatingRestInDallas() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.getAdressInput().sendKeys("Dallas, TX");
+        sleep(2);
+        homePage.getFedBtn().click();
+        sleep(5);
+        homePage.checkAndClousePopUpWindow();
+        homePage.clickSortByIMGBtn().click();
+        homePage.clickSortByRatingBtn().click();
+        homePage.clickSortByIMGBtn().click();
+        homePage.clickSortDeliveryFreeBtn().click();
+        Assert.assertTrue(homePage.clickSortDeliveryFreeBtn().isDisplayed());
+    }
 }
