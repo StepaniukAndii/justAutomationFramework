@@ -78,7 +78,8 @@ public class CheckNumberInRest extends TestInit {
         homePage.checkAndClousePopUpWindow();
         homePage.clickSortByIMGBtn().click();
         homePage.clickSortByETABtn().click();
+        homePage.clickSortByIMGBtn().click();
+        homePage.clickSortByDistanceBtn().click();
         Assert.assertTrue(homePage.clickSortByETABtn().isDisplayed());
     }
-
 }

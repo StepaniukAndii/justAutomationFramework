@@ -443,4 +443,9 @@ public class HomePage extends BasePage {
     public WebElement clickSortByETABtn() {
         return driver.findElement(By.xpath("//button[contains(text(), 'ETA')]"));
     }
+
+    public WebElement clickSortByDistanceBtn() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'Distance')]"));
+
+    }
 }
