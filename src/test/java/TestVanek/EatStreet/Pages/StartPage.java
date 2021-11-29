@@ -25,7 +25,16 @@ public class StartPage extends BasePage {
     public  WebElement learnMoreBtn(){
         return findElementByXpath("//a[contains(text(),'Learn')]");
     }
+    public  WebElement getTheAppBtn(){
+        return findElementByXpath("//a[contains(text(),'Get The')]");
+    }
+    public  WebElement applyNowBtn(){
+        return findElementByXpath("//a[contains(text(),'Apply Now')]");
+    }
     public  WebElement gotItBtn(){
         return findElementByXpath("//button[contains(text(),'Got')]");
+    }
+    public  WebElement phoenixRestaurantsPageBtn(){
+        return findElementByXpath("//a[contains(text(),'Phoenix')]");
     }
 }

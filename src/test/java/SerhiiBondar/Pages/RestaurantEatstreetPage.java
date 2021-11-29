@@ -90,7 +90,7 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElements(By.xpath("//li[contains(@class,'restaurant__info__list__item')]"));
 
     }
-    public WebElement getStartGroupOrderBtn(){
+    public WebElement getGroupOrderBtn(){
         return driver.findElement(By.xpath("//a[contains(@class,'btn--group-order')]"));
 
     }
@@ -163,5 +163,40 @@ public class RestaurantEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
 
     }
+    public WebElement getOkayBtn(){
+        return driver.findElement(By.xpath("//a[@id='confirm-modal-btn']"));
 
+    }
+    public WebElement getGroupSettingBtn(){
+        return driver.findElement(By.xpath("//a[contains(@ng-if,'$groupOrdering.isViewerActive()')]"));
+
+    }
+    public WebElement getConfirmationGroupOrderGreenBtn(){
+        return driver.findElement(By.xpath("//input[@id='confirm-modal-btn']"));
+
+    }
+    public WebElement groupOrderTitle(){
+        return driver.findElement(By.xpath("//h2[contains(@class,'menu__cart__title')]"));
+
+    }
+    public WebElement getCancelGroupOrderBtn(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Cancel This Order')]"));
+
+    }
+    public WebElement getRatingBtn() {
+        return driver.findElement(By.xpath("//button[@aria-label='rating']"));
+
+    }
+    public WebElement getDistanceBtn() {
+        return driver.findElement(By.xpath("//button[@aria-label='distance']"));
+    }
+
+    public WebElement getETABtn() {
+        return driver.findElement(By.xpath("//button[@aria-label='eta']"));
+
+    }
+    public WebElement getAZBtn(){
+        return driver.findElement(By.xpath("//button[@aria-label='alphabetical']"));
+
+    }
 }
