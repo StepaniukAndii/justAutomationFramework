@@ -123,4 +123,12 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
 
     }
+    public WebElement getConnectLink(){
+        return waitElementToBeClickable("//button[contains(text(),'Connect')]");
+
+    }
+    public List<WebElement> connectionMethods(){
+        return driver.findElements(By.xpath("//li[@class='connect__item']"));
+
+    }
 }
