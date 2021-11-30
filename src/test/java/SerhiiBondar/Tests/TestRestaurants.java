@@ -4,11 +4,7 @@ import ClasesToAllUs.TestInit;
 import SerhiiBondar.Pages.HomeEatstreetPage;
 import SerhiiBondar.Pages.RestaurantEatstreetPage;
 import SerhiiBondar.Pages.SingInEatstreetPage;
-import SerhiiBondar.Pages.SingInPage;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -152,7 +148,7 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         restaurantEatstreetPage.getRestList().get(0).click();
-        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/signin"));
     }
@@ -166,7 +162,7 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         restaurantEatstreetPage.getRestList().get(0).click();
-        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
         singInEatstreetPage.getPasswordField().sendKeys("club2021");
@@ -184,7 +180,7 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         restaurantEatstreetPage.getRestList().get(0).click();
-        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
         singInEatstreetPage.getPasswordField().sendKeys("club2021");
@@ -207,7 +203,7 @@ public class TestRestaurants extends TestInit {
         homeEatstreetPage.passModalWindow();
         RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
         restaurantEatstreetPage.getRestList().get(0).click();
-        restaurantEatstreetPage.getStartGroupOrderBtn().click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
         SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
         singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
         singInEatstreetPage.getPasswordField().sendKeys("club2021");
@@ -219,8 +215,114 @@ public class TestRestaurants extends TestInit {
         restaurantEatstreetPage.getContinueBtn().click();
         sleep(1);
 
-        Assert.assertEquals(restaurantEatstreetPage.membersModalHeader().getText(),"Invite Members");
+        Assert.assertEquals(restaurantEatstreetPage.modalHeaderTitle().getText(),"Invite Members");
+    }
+    @Test
+    public void testGroupOrderInvitationConfirmed(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+        restaurantEatstreetPage.getGroupOrderField().clear();
+        restaurantEatstreetPage.getGroupOrderField().sendKeys("Weekend Party");
+        restaurantEatstreetPage.chooseTakeOutBtn().click();
+        restaurantEatstreetPage.splitOrderBtnNo().click();
+        restaurantEatstreetPage.getContinueBtn().click();
+        restaurantEatstreetPage.inputEmail().sendKeys("blablabla@gmail.com");
+        restaurantEatstreetPage.getSendInvitesBtn().click();
+        sleep(2);
 
+        Assert.assertEquals(restaurantEatstreetPage.modalHeaderTitle().getText(),"Invites Sent!");
+    }
+    @Test
+    public void testUpdatingGroupOrder(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+        restaurantEatstreetPage.getGroupOrderField().clear();
+        restaurantEatstreetPage.getGroupOrderField().sendKeys("Weekend Party");
+        restaurantEatstreetPage.chooseTakeOutBtn().click();
+        restaurantEatstreetPage.splitOrderBtnNo().click();
+        restaurantEatstreetPage.getContinueBtn().click();
+        restaurantEatstreetPage.inputEmail().sendKeys("blablabla@gmail.com");
+        restaurantEatstreetPage.getSendInvitesBtn().click();
+        restaurantEatstreetPage.getOkayBtn().click();
+        sleep(2);
+        restaurantEatstreetPage.getGroupSettingBtn().click();
+        restaurantEatstreetPage.getGroupOrderField().clear();
+        restaurantEatstreetPage.getGroupOrderField().sendKeys("Birthday order");
+        restaurantEatstreetPage.getConfirmationGroupOrderGreenBtn().click();
+        sleep(2);
 
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.groupOrderTitle()),"Birthday order");
+    }
+    @Test
+    public void testGroupOrderDeleting(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getRestList().get(0).click();
+        restaurantEatstreetPage.getGroupOrderBtn().click();
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2021");
+        singInEatstreetPage.getSignInBtn().click();
+        restaurantEatstreetPage.getGroupOrderField().clear();
+        restaurantEatstreetPage.getGroupOrderField().sendKeys("Weekend Party");
+        restaurantEatstreetPage.chooseTakeOutBtn().click();
+        restaurantEatstreetPage.splitOrderBtnNo().click();
+        restaurantEatstreetPage.getContinueBtn().click();
+        restaurantEatstreetPage.inputEmail().sendKeys("blablabla@gmail.com");
+        restaurantEatstreetPage.getSendInvitesBtn().click();
+        restaurantEatstreetPage.getOkayBtn().click();
+        sleep(2);
+        restaurantEatstreetPage.getGroupSettingBtn().click();
+        restaurantEatstreetPage.getCancelGroupOrderBtn().click();
+        getElement("//input[@id='confirm-modal-btn']");
+        restaurantEatstreetPage.getConfirmationGroupOrderGreenBtn().click();
+        sleep(2);
+
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getGroupOrderBtn()),"Start Group Order");
+    }
+    @Test
+    public void testSortOtionMenu(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getSortOptions().click();
+        sleep(2);
+
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getAZBtn()),"A-Z");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getETABtn()),"ETA");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getDistanceBtn()),"Distance");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getRatingBtn()),"Rating");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getDeliveryFeeBtn()),"Delivery Fee");
     }
 }
