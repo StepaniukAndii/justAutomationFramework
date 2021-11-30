@@ -46,4 +46,7 @@ public class StartPage extends BasePage {
     public WebElement privacyBtn(){
         return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
     }
+    public WebElement playMarketBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-android')]");
+    }
 }
