@@ -36,8 +36,8 @@ public class AccessSpotifyTests extends TestInit {
         SignUpInPage signUpAndInPages = new SignUpInPage(driver);
         driver.manage().window().maximize();
         openUrl("https://www.spotify.com/us/");
-        signUpAndInPages.logIn().click();
         sleep(1);
+        signUpAndInPages.logIn().click();
         signUpAndInPages.ligInWithGoogle().click();
         signUpAndInPages.logInWithGoogleEmail().sendKeys("svetlana.taran629@gmail.com");
     }
