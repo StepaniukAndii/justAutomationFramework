@@ -472,4 +472,12 @@ public class HomePage extends BasePage {
     public WebElement getAdressHeaderInput() {
         return driver.findElement((By.xpath("//input[@id='address-input']")));
     }
+
+    public List<WebElement> btnShowMore() {
+        return findElementsByXpath("//button[contains(text(), 'Show More')]");
+    }
+
+    public List<WebElement> getMenuLink() {
+        return driver.findElements(By.xpath("//ul[@class='press__nav__list']//button"));
+    }
 }
