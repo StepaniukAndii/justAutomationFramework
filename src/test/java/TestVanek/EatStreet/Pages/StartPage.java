@@ -40,4 +40,7 @@ public class StartPage extends BasePage {
     public WebElement aboutUsBtn(){
         return findElementByXpath("//a[contains(text(),'About Us')]");
     }
+    public WebElement forCustomerBtn(){
+        return findElementByXpath("//a[contains(text(),'For Customers')]");
+    }
 }
