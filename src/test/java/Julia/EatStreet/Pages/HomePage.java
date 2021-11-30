@@ -464,4 +464,8 @@ public class HomePage extends BasePage {
     public WebElement clickBtnProcesedToCheckout() {
         return driver.findElement(By.xpath("//a[@id='click-checkout']"));
     }
+
+    public WebElement btnAboutUs() {
+        return driver.findElement((By.xpath("//a[contains(text(), 'About Us')]")));
+    }
 }
