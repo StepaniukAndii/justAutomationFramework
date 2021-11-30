@@ -17,4 +17,10 @@ public class ContactSupportPage extends BasePage {
     public List<WebElement> helpTextAlert(){
         return findElementsByXpath("//div[contains(@id,'help')]");
     }
+    public WebElement answers(){
+        return findElementByXpath("//a[contains(@class,'slds') and contains(@href,'I-cancel')]/parent::*");
+    }
+    public WebElement answerHeaderText(){
+        return findElementByXpath("//h1[contains(@class,'article-head')]");
+    }
 }
