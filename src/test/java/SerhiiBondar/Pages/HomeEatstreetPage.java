@@ -135,4 +135,8 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[@aria-label='facebook']"));
 
     }
+    public WebElement getTwitterConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='twitter']"));
+
+    }
 }
