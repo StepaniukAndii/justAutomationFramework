@@ -109,5 +109,17 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertEquals(theAppPageEatstreet.SmsNotification().getText(), "SMS Sent!");
     }
+    @Test
+    public void testLogoLinkBackToHome(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        homeEatstreetPage.getLogoBtn().click();
+        sleep(1);
 
+        Assert.assertEquals(driver.getCurrentUrl(),"https://eatstreet.com/");
+    }
 }

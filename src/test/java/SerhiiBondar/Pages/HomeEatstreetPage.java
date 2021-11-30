@@ -111,4 +111,8 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'Get The App')]"));
 
     }
+    public WebElement getLogoBtn(){
+        return driver.findElement(By.xpath("//img[@class='logo-alternate']"));
+
+    }
 }
