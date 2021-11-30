@@ -182,4 +182,16 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://twitter.com/eatstreet");
     }
+    @Test
+    public void testConnectWithInstagram(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getInstaConnectBtn().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.instagram.com/eatstreethq/");
+    }
 }
