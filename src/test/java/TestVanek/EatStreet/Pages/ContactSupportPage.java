@@ -35,4 +35,10 @@ public class ContactSupportPage extends BasePage {
     public WebElement headerMoreSubFind(){
         return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Get')]");
     }
+    public WebElement headerHome(){
+        return findElementByXpath("//a[contains(text(),'Home')]");
+    }
+    public WebElement contentTitle(){
+        return findElementByXpath("//h2[contains(@class,'content')]");
+    }
 }
