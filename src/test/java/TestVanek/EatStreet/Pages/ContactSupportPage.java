@@ -23,4 +23,10 @@ public class ContactSupportPage extends BasePage {
     public WebElement answerHeaderText(){
         return findElementByXpath("//h1[contains(@class,'article-head')]");
     }
+    public WebElement headerMore(){
+        return findElementByXpath("//button[contains(text(),'More')]");
+    }
+    public WebElement headerMoreSubMenu(){
+        return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Contact Us')]");
+    }
 }
