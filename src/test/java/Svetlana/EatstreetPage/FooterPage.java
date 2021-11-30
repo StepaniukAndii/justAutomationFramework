@@ -159,4 +159,7 @@ public class FooterPage extends BasePage {
     public WebElement checkPrivacyPolicySendForm(){
         return findElementByXpath("/html/body/div[4]/div/div/div[1]/secure-action-tracker/main/div/div/div/div[1]");
     }
+    public WebElement clickTermsOfUs(){
+        return findElementByXpath("//a[contains(text(),'Terms of')]");
+    }
 }

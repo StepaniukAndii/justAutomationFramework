@@ -484,4 +484,8 @@ public class HomePage extends BasePage {
     public List<WebElement> connectMenu() {
         return findElementsByXpath("//ul[@class='connect__list']/li");
     }
+
+    public List<WebElement> getMenuLinkBlog() {
+        return driver.findElements(By.xpath("//ul[@class='press__nav__list']//li"));
+    }
 }

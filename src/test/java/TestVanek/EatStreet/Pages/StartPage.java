@@ -40,4 +40,16 @@ public class StartPage extends BasePage {
     public WebElement aboutUsBtn(){
         return findElementByXpath("//a[contains(text(),'About Us')]");
     }
+    public WebElement forCustomerBtn(){
+        return findElementByXpath("//a[contains(text(),'For Customers')]");
+    }
+    public WebElement privacyBtn(){
+        return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
+    }
+    public WebElement playMarketBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-android')]");
+    }
+    public WebElement appStoreBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-iphone')]");
+    }
 }
