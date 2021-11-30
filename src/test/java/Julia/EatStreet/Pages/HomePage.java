@@ -482,6 +482,6 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> connectMenu() {
-        return findElementsByXpath("//ul[@class='connect__list']");
+        return findElementsByXpath("//ul[@class='connect__list']/li");
     }
 }
