@@ -43,4 +43,7 @@ public class StartPage extends BasePage {
     public WebElement forCustomerBtn(){
         return findElementByXpath("//a[contains(text(),'For Customers')]");
     }
+    public WebElement privacyBtn(){
+        return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
+    }
 }

@@ -7,16 +7,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestAboutUs extends TestInit {
+public class TestOnPrivacy extends TestInit{
     StartPage startPage;
-
     @Test
-    public void testAboutUs(){
+    public void testOnPrivacy(){
         startPage = new StartPage(driver);
-        openUrl("https://eatstreet.com/");
+        openUrl("https://eatstreet.com");
         startPage.gotItBtn().click();
-        startPage.aboutUsBtn().click();
-        Boolean wait = new WebDriverWait(driver,10).until(ExpectedConditions.urlContains("/about-us"));
-        Assert.assertEquals(driver.getCurrentUrl(), "https://eatstreet.com/about-us");
+        startPage.privacyBtn().click();
+        Boolean wait = new WebDriverWait(driver,10).until(ExpectedConditions.urlContains("/privacy"));
+        Assert.assertEquals(driver.getCurrentUrl(), "https://eatstreet.com/privacy");
     }
 }
