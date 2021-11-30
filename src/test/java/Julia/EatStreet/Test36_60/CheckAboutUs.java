@@ -16,4 +16,16 @@ public class CheckAboutUs extends TestInit {
         sleep(3);
         Assert.assertTrue(driver.getCurrentUrl().contains("about-us"));
     }
+
+    @Test
+    public void checkElementsAboutUs() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.btnAboutUs().click();
+        sleep(3);
+        Assert.assertTrue(homePage.getAdressInput().isDisplayed());
+        Assert.assertTrue(homePage.getAdressHeaderInput().isDisplayed());
+    }
+
 }

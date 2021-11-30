@@ -468,4 +468,8 @@ public class HomePage extends BasePage {
     public WebElement btnAboutUs() {
         return driver.findElement((By.xpath("//a[contains(text(), 'About Us')]")));
     }
+
+    public WebElement getAdressHeaderInput() {
+        return driver.findElement((By.xpath("//input[@id='address-input']")));
+    }
 }
