@@ -32,4 +32,14 @@ public class AccessSpotifyTests extends TestInit {
         signUpAndInPages.logInPassword().sendKeys("fjskjdowfowkfow");
         signUpAndInPages.logInButton().click();
     }
+    @Test
+    public void signInWithGoogle(){
+        SignUpInPage signUpAndInPages = new SignUpInPage(driver);
+        driver.manage().window().maximize();
+        openUrl("https://www.spotify.com/us/");
+        sleep(1);
+        signUpAndInPages.logIn().click();
+        signUpAndInPages.ligInWithGoogle().click();
+        signUpAndInPages.logInWithGoogleEmail().sendKeys("svetlana.taran629@gmail.com");
+    }
 }
