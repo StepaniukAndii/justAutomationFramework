@@ -162,4 +162,7 @@ public class FooterPage extends BasePage {
     public WebElement clickTermsOfUs(){
         return findElementByXpath("//a[contains(text(),'Terms of')]");
     }
+    public WebElement clickLinkPP(){
+        return findElementByXpath("//*[@id=\"main_content\"]/div/div/div/div[2]/p[64]/a");
+    }
 }
