@@ -307,4 +307,22 @@ public class TestRestaurants extends TestInit {
 
         Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getGroupOrderBtn()),"Start Group Order");
     }
+    @Test
+    public void testSortOtionMenu(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getSortOptions().click();
+        sleep(2);
+
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getAZBtn()),"A-Z");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getETABtn()),"ETA");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getDistanceBtn()),"Distance");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getRatingBtn()),"Rating");
+        Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getDeliveryFeeBtn()),"Delivery Fee");
+    }
 }

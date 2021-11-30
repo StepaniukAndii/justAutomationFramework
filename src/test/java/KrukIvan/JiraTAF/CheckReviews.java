@@ -14,7 +14,7 @@ public class CheckReviews extends TestInit {
         homePage.bTNEnterAddress().click();
         homePage.bTNGetFed().click();
         homePage.sortByBTN().click();
-        homePage.sortByRating().click();
+        homePage.sortByARAndOther().get(3).click();
         homePage.getRestaurant().get(0).click();
         homePage.getReviews().click();
         Assert.assertTrue(homePage.assertReviews().isEnabled());

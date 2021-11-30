@@ -456,4 +456,32 @@ public class HomePage extends BasePage {
     public WebElement clickSortDeliveryFreeBtn() {
         return driver.findElement(By.xpath("//button[contains(text(), 'Delivery Fee')]"));
     }
+
+    public List<WebElement> selectOneDropDownWindow() {
+        return driver.findElements(By.xpath("//select[@id='main-option']/option"));
+    }
+
+    public WebElement clickBtnProcesedToCheckout() {
+        return driver.findElement(By.xpath("//a[@id='click-checkout']"));
+    }
+
+    public WebElement btnAboutUs() {
+        return driver.findElement((By.xpath("//a[contains(text(), 'About Us')]")));
+    }
+
+    public WebElement getAdressHeaderInput() {
+        return driver.findElement((By.xpath("//input[@id='address-input']")));
+    }
+
+    public List<WebElement> btnShowMore() {
+        return findElementsByXpath("//button[contains(text(), 'Show More')]");
+    }
+
+    public List<WebElement> getMenuLink() {
+        return driver.findElements(By.xpath("//ul[@class='press__nav__list']//button"));
+    }
+
+    public List<WebElement> connectMenu() {
+        return findElementsByXpath("//ul[@class='connect__list']/li");
+    }
 }

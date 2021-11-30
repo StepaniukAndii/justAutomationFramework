@@ -26,10 +26,24 @@ public class RestaurantDashboard extends TestInit {
         footerPage.clickResetPassword().click();
 
         Assert.assertTrue(footerPage.checkResetPassword().isDisplayed());
+    }
 
+    @Test
+    public void restaurantDashboardSignUp(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage=new FooterPage(driver);
+        footerPage.clickRestaurantDashboard().click();
+        footerPage.clickSignUp().click();
+        footerPage.inputAddress().sendKeys("New Asia");
+        footerPage.selectAddress().click();
+        sleep(5);
+        footerPage.selectAddress().click();
+        sleep(3);
+        footerPage.clickConfirmRestuar().click();
 
-
-
-
+        Assert.assertTrue(footerPage.checkPopup().isDisplayed());
     }
 }

@@ -54,4 +54,44 @@ public class ViewCodePage extends BasePage {
     public WebElement getEditprotectedLink() {
         return findElementByXpath("//a[@title='Шаблон:Editprotected']");
     }
+
+    public WebElement getVerifierWikiBtn() {
+        return findElementByXpath("//a[@rel='wikificator']");
+    }
+
+    public WebElement getBoldWikiBtn() {
+        return findElementByXpath("//a[@title='Полужирный']");
+    }
+
+    public WebElement getItalicsWikiBtn() {
+        return findElementByXpath("//a[@title='Курсив']");
+    }
+
+    public WebElement getLinkWikiBtn() {
+        return findElementByXpath("//a[@title='Ссылка']");
+    }
+
+    public WebElement getImagesAndMediaWikiBtn() {
+        return findElementByXpath("//a[@title='Изображения и медиафайлы']");
+    }
+
+    public WebElement getFootnoteWikiBtn() {
+        return findElementByXpath("//a[@title='Сноска']");
+    }
+
+    public WebElement getSyntaxHighlightingWikiBtn() {
+        return findElementByXpath("//a[@title='Подсветка синтаксиса']");
+    }
+
+    public WebElement getAdditionallyWikiLink() {
+        return findElementByXpath("//a[@aria-controls='wikiEditor-section-advanced']");
+    }
+
+    public WebElement getSpecialCharactersWikiLink() {
+        return findElementByXpath("//a[@aria-controls='wikiEditor-section-characters']");
+    }
+
+    public WebElement getReferenceWikiLink() {
+        return findElementByXpath("//a[@aria-controls='wikiEditor-section-help']");
+    }
 }
