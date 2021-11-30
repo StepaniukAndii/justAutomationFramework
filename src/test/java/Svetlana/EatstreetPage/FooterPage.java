@@ -144,4 +144,16 @@ public class FooterPage extends BasePage {
     public WebElement checkPopup(){
         return findElementByXpath("//*[@id=\"exp-confirm-modal\"]/div[2]/div[2]");
     }
+    public WebElement clickPrivacyPolicy(){
+        return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
+    }
+    public WebElement inputEmailPrivacyPolicy(){
+        return findElementByXpath("//*[@id=\"email\"]");
+    }
+    public WebElement selectRemove(){
+        return findElementByXpath("//*[@id=\"REQUEST_DELETION\"]");
+    }
+    public WebElement checkPrivacyPolicyOpened(){
+        return findElementByXpath("//h2[contains(text(),'Privacy Policy')]");
+    }
 }
