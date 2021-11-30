@@ -20,4 +20,17 @@ public class TermsOfUsOpened extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/terms"));
     }
+    @Test
+    public void termsOfUsReturnPP(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage=new FooterPage(driver);
+        footerPage.clickTermsOfUs().click();
+        sleep(3);
+        footerPage.clickLinkPP().click();
+
+        Assert.assertTrue(footerPage.checkPrivacyPolicyOpened().isDisplayed());
+    }
 }
