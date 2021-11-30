@@ -158,4 +158,16 @@ public class TestHomePageEatstreet extends TestInit {
         Assert.assertTrue(homeEatstreetPage.connectionMethods().get(3).isDisplayed());
         Assert.assertTrue(homeEatstreetPage.connectionMethods().get(4).isDisplayed());
     }
+    @Test
+    public void testConnectWithFacebook(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getFacebookConnectBtn().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.facebook.com/eatstreetHQ/");
+    }
 }
