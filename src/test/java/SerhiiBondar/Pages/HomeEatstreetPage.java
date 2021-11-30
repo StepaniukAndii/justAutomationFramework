@@ -147,4 +147,8 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[@aria-label='google plus']"));
 
     }
+    public WebElement getLinkedInConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='linkedin']"));
+
+    }
 }
