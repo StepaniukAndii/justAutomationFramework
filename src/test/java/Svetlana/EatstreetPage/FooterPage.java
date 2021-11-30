@@ -156,4 +156,7 @@ public class FooterPage extends BasePage {
     public WebElement checkPrivacyPolicyOpened(){
         return findElementByXpath("//h2[contains(text(),'Privacy Policy')]");
     }
+    public WebElement checkPrivacyPolicySendForm(){
+        return findElementByXpath("/html/body/div[4]/div/div/div[1]/secure-action-tracker/main/div/div/div/div[1]");
+    }
 }

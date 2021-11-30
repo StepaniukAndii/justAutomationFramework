@@ -39,4 +39,16 @@ public class CheckAboutUs extends TestInit {
         sleep(3);
         Assert.assertEquals(homePage.btnShowMore().size(), 2);
     }
+
+    @Test
+    public void checkConnectAboutUs() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.btnAboutUs().click();
+        sleep(3);
+        homePage.getMenuLink().get(5).click();
+        sleep(3);
+        Assert.assertTrue(homePage.connectMenu().get(2).isDisplayed();
+    }
 }
