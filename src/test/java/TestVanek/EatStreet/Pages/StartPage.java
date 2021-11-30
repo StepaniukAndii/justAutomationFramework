@@ -49,4 +49,7 @@ public class StartPage extends BasePage {
     public WebElement playMarketBtn(){
         return findElementByXpath("//a[contains(@class,'app-btn-android')]");
     }
+    public WebElement appStoreBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-iphone')]");
+    }
 }
