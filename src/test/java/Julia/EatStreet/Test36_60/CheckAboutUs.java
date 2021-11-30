@@ -47,8 +47,8 @@ public class CheckAboutUs extends TestInit {
         homePage.checkAndClousePopUpWindow();
         homePage.btnAboutUs().click();
         sleep(3);
-        homePage.getMenuLink().get(5).click();
+        homePage.getMenuLink().get(4).click();
         sleep(3);
-        Assert.assertTrue(homePage.connectMenu().get(2).isDisplayed();
+        Assert.assertTrue(homePage.connectMenu().get(2).isDisplayed());
     }
 }
