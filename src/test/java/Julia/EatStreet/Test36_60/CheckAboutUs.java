@@ -28,4 +28,15 @@ public class CheckAboutUs extends TestInit {
         Assert.assertTrue(homePage.getAdressHeaderInput().isDisplayed());
     }
 
+    @Test
+    public void checkElementsMenuAboutUs() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.btnAboutUs().click();
+        sleep(3);
+        homePage.getMenuLink().get(2).click();
+        sleep(3);
+        Assert.assertEquals(homePage.btnShowMore().size(), 2);
+    }
 }
