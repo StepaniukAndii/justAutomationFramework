@@ -19,4 +19,49 @@ public class StartPage extends BasePage {
     public WebElement addressSearchAttemptEnter(){
         return findElementByXpath("//a[@class='btn btn-primary float-right']");
     }
+    public WebElement myAccounBtn(){
+        return findElementByXpath("//a[contains(@id,'menu')]");
+    }
+    public WebElement learnMoreBtn(){
+        return findElementByXpath("//a[contains(text(),'Learn')]");
+    }
+    public WebElement getTheAppBtn(){
+        return findElementByXpath("//a[contains(text(),'Get The')]");
+    }
+    public WebElement applyNowBtn(){
+        return findElementByXpath("//a[contains(text(),'Apply Now')]");
+    }
+    public WebElement gotItBtn(){
+        return findElementByXpath("//button[contains(text(),'Got')]");
+    }
+    public WebElement phoenixRestaurantsPageBtn(){
+        return findElementByXpath("//a[contains(text(),'Phoenix')]");
+    }
+    public WebElement aboutUsBtn(){
+        return findElementByXpath("//a[contains(text(),'About Us')]");
+    }
+    public WebElement forCustomerBtn(){
+        return findElementByXpath("//a[contains(text(),'For Customers')]");
+    }
+    public WebElement privacyBtn(){
+        return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
+    }
+    public WebElement playMarketBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-android')]");
+    }
+    public WebElement appStoreBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-iphone')]");
+    }
+    public WebElement emailInput(){
+        return findElementByXpath("//input[contains(@id,'new-email')]");
+    }
+    public WebElement emailSignInBtn(){
+        return findElementByXpath("//button[contains(text(),'Sign Up')]");
+    }
+    public WebElement whoopsModalBodyText(){
+        return findElementByXpath("//div[contains(@class,'modal-body')]");
+    }
+    public WebElement whoopsModalOkayBtn(){
+        return findElementByXpath("//a[contains(@id,'confirm')]");
+    }
 }
