@@ -301,4 +301,12 @@ public class HomePage extends BasePage {
         return driver.findElements(By.xpath("//div[@class='validation-tag validation-tag-invalid ng-binding ng-scope']"));
 
     }
+
+    public List<WebElement> addAnyStation() {
+        return driver.findElements(By.xpath("//div[@class='cities-list']/ul"));
+    }
+
+    public List<WebElement> addAnyCity() {
+        return driver.findElements(By.xpath("//ul[@class='section-subheader--home ng-scope']//a"));
+    }
 }
