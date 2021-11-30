@@ -143,4 +143,19 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("about-us"));
     }
+    @Test
+    public void testConnectMethods(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(0).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(1).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(2).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(3).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(4).isDisplayed());
+    }
 }
