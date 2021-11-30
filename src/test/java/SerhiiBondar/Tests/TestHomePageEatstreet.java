@@ -122,4 +122,25 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://eatstreet.com/");
     }
+    @Test
+    public void testContactUsLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getContactUsLink().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("contact"));
+    }
+    @Test
+    public void testAboutUsLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        sleep(1);
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("about-us"));
+    }
 }

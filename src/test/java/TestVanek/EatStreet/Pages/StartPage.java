@@ -46,4 +46,22 @@ public class StartPage extends BasePage {
     public WebElement privacyBtn(){
         return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
     }
+    public WebElement playMarketBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-android')]");
+    }
+    public WebElement appStoreBtn(){
+        return findElementByXpath("//a[contains(@class,'app-btn-iphone')]");
+    }
+    public WebElement emailInput(){
+        return findElementByXpath("//input[contains(@id,'new-email')]");
+    }
+    public WebElement emailSignInBtn(){
+        return findElementByXpath("//button[contains(text(),'Sign Up')]");
+    }
+    public WebElement whoopsModalBodyText(){
+        return findElementByXpath("//div[contains(@class,'modal-body')]");
+    }
+    public WebElement whoopsModalOkayBtn(){
+        return findElementByXpath("//a[contains(@id,'confirm')]");
+    }
 }

@@ -115,4 +115,12 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//img[@class='logo-alternate']"));
 
     }
+    public WebElement getContactUsLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Contact Us')]"));
+
+    }
+    public WebElement getAboutUsLink() {
+        return driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
+
+    }
 }
