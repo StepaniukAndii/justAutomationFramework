@@ -504,4 +504,8 @@ public class HomePage extends BasePage {
     public WebElement btnViewAllJobListings() {
         return findElementByXpath("//a[contains(text(), 'View All Job Listings')]");
     }
+
+    public WebElement linkStripeServiceAgreement() {
+        return findElementByXpath("//a[contains(text(),'Stripe Services Agreement')]");
+    }
 }
