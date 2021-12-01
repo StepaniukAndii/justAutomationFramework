@@ -508,4 +508,12 @@ public class HomePage extends BasePage {
     public WebElement linkStripeServiceAgreement() {
         return findElementByXpath("//a[contains(text(),'Stripe Services Agreement')]");
     }
+
+    public WebElement linkPageContactUs() {
+        return findElementByXpath("//div[@class='col-6']/p/a");
+    }
+
+    public WebElement singIn() {
+        return findElementByXpath("//div[@class='user-flow__content']/span");
+    }
 }
