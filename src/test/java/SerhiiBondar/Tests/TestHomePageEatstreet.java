@@ -238,4 +238,14 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://eatstreet.com/terms");
     }
+    @Test
+    public void testRestaurantsTermsLink() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getRestaurantsTermsLink().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(), "https://eatstreet.com/restaurant-terms-of-service");
+    }
 }

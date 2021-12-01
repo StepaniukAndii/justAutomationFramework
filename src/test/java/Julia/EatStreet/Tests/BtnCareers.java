@@ -35,4 +35,17 @@ public class BtnCareers extends TestInit {
         homePage.btnDelivery().click();
         Assert.assertTrue(homePage.allJobs().isDisplayed());
     }
+
+    @Test
+    public void careersCreativeJob() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.btnCareers().click();
+        sleep(5);
+        homePage.btnCreative().click();
+        sleep(3);
+        homePage.btnMoreInfo().click();
+        Assert.assertTrue(homePage.btnViewAllJobListings().isDisplayed());
+    }
 }
