@@ -492,4 +492,8 @@ public class HomePage extends BasePage {
     public WebElement getLinkInTextAssebilityStatement() {
         return driver.findElement(By.xpath("//a[@ng-click='trackLinkClick($event)']"));
     }
+
+    public WebElement openRestHoney() {
+        return driver.findElement(By.xpath("//h1[contains(text(),'Honey Baked Ham Company')]"));
+    }
 }
