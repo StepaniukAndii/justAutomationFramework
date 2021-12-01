@@ -41,4 +41,7 @@ public class ContactSupportPage extends BasePage {
     public WebElement contentTitle(){
         return findElementByXpath("//h2[contains(@class,'content')]");
     }
+    public WebElement headerGetFed(){
+        return findElementByXpath("//a[contains(text(),'Get Fed')]");
+    }
 }
