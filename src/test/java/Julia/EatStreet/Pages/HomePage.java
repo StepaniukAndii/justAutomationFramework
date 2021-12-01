@@ -497,8 +497,8 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//h1[contains(text(),'Honey Baked Ham Company')]"));
     }
 
-    public WebElement btnMoreInfo() {
-        return findElementByXpath("//a[contains(text(), 'More Info')]");
+    public List<WebElement> btnMoreInfo() {
+        return findElementsByXpath("//a[contains(text(), 'More Info')]");
     }
 
     public WebElement btnViewAllJobListings() {
