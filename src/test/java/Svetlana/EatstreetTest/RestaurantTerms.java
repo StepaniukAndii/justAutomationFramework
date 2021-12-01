@@ -20,4 +20,16 @@ public class RestaurantTerms extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/restaurant-terms-of-service"));
     }
+    @Test
+    public void RestaurantTermsCheckLink() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage = new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage = new FooterPage(driver);
+        footerPage.clickRestaurantTerms().click();
+        footerPage.clickLinkRestaurantTerms().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://www.adr.org/"));
+    }
 }
