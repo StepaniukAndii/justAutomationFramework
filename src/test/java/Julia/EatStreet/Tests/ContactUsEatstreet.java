@@ -14,6 +14,15 @@ public class ContactUsEatstreet  extends TestInit {
         homePage.checkAndClousePopUpWindow();
         homePage.clickContactUs().click();
         Assert.assertTrue(homePage.getEmailFromContactUs().isDisplayed());
+    }
 
+    @Test
+    public void contactUsSingIn() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.clickContactUs().click();
+        homePage.linkPageContactUs().click();
+        Assert.assertTrue(homePage.singIn().isDisplayed());
     }
 }
