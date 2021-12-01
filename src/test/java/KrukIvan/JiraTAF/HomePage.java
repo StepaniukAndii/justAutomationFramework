@@ -161,5 +161,8 @@ public class HomePage extends BasePage {
     public WebElement getTheAppAndroid(){
         return findElementByXpath("//a[@class=\"app-btn-android\"]");
     }
+    public WebElement getTheAppIOS(){
+        return findElementByXpath("//a[@class=\"app-btn-iphone\"]");
+    }
 }
 
