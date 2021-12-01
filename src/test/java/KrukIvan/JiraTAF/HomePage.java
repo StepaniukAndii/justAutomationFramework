@@ -164,5 +164,8 @@ public class HomePage extends BasePage {
     public WebElement getTheAppIOS(){
         return findElementByXpath("//a[@class=\"app-btn-iphone\"]");
     }
+    public  List<WebElement> becomeADriverLink(){
+        return findElementsByXpath("//a[@class=\"how-it-works_link\"]");
+    }
 }
 
