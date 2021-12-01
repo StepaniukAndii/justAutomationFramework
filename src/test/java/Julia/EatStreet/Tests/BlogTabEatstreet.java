@@ -1,6 +1,7 @@
 package Julia.EatStreet.Tests;
 
 import ClasesToAllUs.TestInit;
+import Julia.EatStreet.Pages.BlogEatStreetPage;
 import Julia.EatStreet.Pages.HomePage;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -18,5 +19,17 @@ public class BlogTabEatstreet extends TestInit {
         homePage.clickResentPost().click();
         homePage.tabBetterbin().click();
         Assert.assertTrue(homePage.tabBetterbin().isDisplayed());
+    }
+
+    @Test
+    public void checkBlogPage() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.btnBlog().click();
+        homePage.goToTheSecondWindowTab(driver, 10);
+        BlogEatStreetPage blogEatStreetPage = new BlogEatStreetPage(driver);
+        blogEatStreetPage.clickLGBTO().get(0).click();
+        Assert.assertTrue(blogEatStreetPage.listRestLGBTO().get(0).isDisplayed());
     }
 }
