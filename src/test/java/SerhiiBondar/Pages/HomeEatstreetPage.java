@@ -175,4 +175,12 @@ public class HomeEatstreetPage extends BasePage {
         return findElementByXpath("//h1[contains(@class,'article-head')]");
 
     }
+    public WebElement getAccessibilityLink(){
+        return findElementByXpath("//a[contains(text(),'Accessibility')]");
+
+    }
+    public WebElement getAPILink(){
+        return findElementByXpath("//a[contains(text(),'API')]");
+
+    }
 }
