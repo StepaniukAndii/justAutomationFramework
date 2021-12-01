@@ -170,5 +170,8 @@ public class HomePage extends BasePage {
     public WebElement bTNOrderAhead(){
         return findElementByXpath("//label[@for=\"filter-Order Ahead\"]");
     }
+    public WebElement termsOfUse(){
+        return findElementByXpath("//a[@ui-sref=\"terms\"]");
+    }
 }
 
