@@ -5,13 +5,14 @@ import TestVanek.EatStreet.Pages.ContactSupportPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCustomersHeaderFindAnswer extends TestInit {
+public class TestCustomersHeaderFindGet extends TestInit {
     ContactSupportPage contactSupportPage;
     @Test
-    public void testCustomersHeaderFindAnswer(){
+    public void testCustomersHeaderFindGet(){
         contactSupportPage = new ContactSupportPage(driver);
-        openUrl("https://eatst.force.com/customers/s/contactsupport");
+        openUrl("https://eatst.force.com/customers/s");
         contactSupportPage.headerFind().click();
-        Assert.assertTrue(contactSupportPage.headerMoreSubFindGet().isDisplayed());
+        contactSupportPage.headerMoreSubFindGet().click();
+        Assert.assertEquals(driver.getCurrentUrl(), "https://eatst.force.com/customers/s/topic/0TO2K000000fyBMWAY/get-to-know-us");
     }
 }
