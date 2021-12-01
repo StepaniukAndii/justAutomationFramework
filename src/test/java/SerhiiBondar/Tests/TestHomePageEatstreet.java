@@ -261,4 +261,14 @@ public class TestHomePageEatstreet extends TestInit {
         Assert.assertTrue(homeEatstreetPage.questionsTitle().getText().contains("?"));
         Assert.assertEquals(homeEatstreetPage.getAnswer().getText(), "Answer");
     }
+    @Test
+    public void testAccessibilityLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAccessibilityLink().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(), "https://eatstreet.com/accessibility");
+    }
 }
