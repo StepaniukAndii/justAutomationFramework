@@ -218,4 +218,14 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("linkedin.com"));
     }
+    @Test
+    public void testPrivacyLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getPrivacyLink().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://eatstreet.com/privacy");
+    }
 }
