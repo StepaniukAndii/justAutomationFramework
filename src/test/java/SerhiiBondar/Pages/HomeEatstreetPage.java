@@ -159,5 +159,8 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
 
     }
+    public WebElement getRestaurantsTermsLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Restaurant Terms')]"));
 
+    }
 }
