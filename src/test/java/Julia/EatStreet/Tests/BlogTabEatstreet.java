@@ -44,4 +44,16 @@ public class BlogTabEatstreet extends TestInit {
         blogEatStreetPage.clickLGBTO().get(2).click();
         Assert.assertTrue(blogEatStreetPage.listRestLGBTO().get(5).isDisplayed());
     }
+
+    @Test
+    public void selectRestBlog() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.checkAndClousePopUpWindow();
+        homePage.btnBlog().click();
+        homePage.goToTheSecondWindowTab(driver, 10);
+        BlogEatStreetPage blogEatStreetPage = new BlogEatStreetPage(driver);
+        blogEatStreetPage.clickLGBTO().get(6).click();
+        Assert.assertTrue(blogEatStreetPage.listRestLGBTO().get(4).isDisplayed());
+    }
 }
