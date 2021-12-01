@@ -35,5 +35,12 @@ public class StripePage extends BasePage {
         }
     }
 
+    public List<WebElement> btnGetStarted() {
+        return findElementsByXpath("//div[@class='PressableCore-base Box-root']/a/div");
+    }
+
+    public WebElement stringPayment() {
+        return findElementByXpath("//div[@class='Box-root Padding-bottom--24']/h1");
+    }
 }
 
