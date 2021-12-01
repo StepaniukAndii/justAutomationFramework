@@ -158,5 +158,8 @@ public class HomePage extends BasePage {
     public WebElement assertReviews(){
         return findElementByXpath("//h2[@class=\"widget-header widget-header--menu-more-info widget-header--reviews-header margin-bottom-20 ng-binding\"]");
     }
+    public WebElement getTheAppAndroid(){
+        return findElementByXpath("//a[@class=\"app-btn-android\"]");
+    }
 }
 
