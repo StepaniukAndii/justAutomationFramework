@@ -151,4 +151,9 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[@aria-label='linkedin']"));
 
     }
+    public WebElement getPrivacyLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Privacy')]"));
+
+    }
+
 }
