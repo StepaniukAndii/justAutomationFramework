@@ -168,4 +168,7 @@ public class FooterPage extends BasePage {
     public WebElement clickRestaurantTerms(){
         return findElementByXpath("//a[contains(text(),'Restaurant Terms')]");
     }
+    public WebElement clickLinkRestaurantTerms(){
+        return findElementByXpath("//a[contains(text(),'www.adr.org')]");
+    }
 }
