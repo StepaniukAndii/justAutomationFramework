@@ -167,5 +167,8 @@ public class HomePage extends BasePage {
     public  List<WebElement> becomeADriverLink(){
         return findElementsByXpath("//a[@class=\"how-it-works_link\"]");
     }
+    public WebElement bTNOrderAhead(){
+        return findElementByXpath("//label[@for=\"filter-Order Ahead\"]");
+    }
 }
 
