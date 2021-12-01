@@ -206,4 +206,16 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("accounts.google.com"));
     }
+    @Test
+    public void testConnectWithLinkedIn(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getLinkedInConnectBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("linkedin.com"));
+    }
 }
