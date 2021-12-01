@@ -143,4 +143,79 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("about-us"));
     }
+    @Test
+    public void testConnectMethods(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(0).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(1).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(2).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(3).isDisplayed());
+        Assert.assertTrue(homeEatstreetPage.connectionMethods().get(4).isDisplayed());
+    }
+    @Test
+    public void testConnectWithFacebook(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getFacebookConnectBtn().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.facebook.com/eatstreetHQ/");
+    }
+    @Test
+    public void testConnectWithTwitter(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getTwitterConnectBtn().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://twitter.com/eatstreet");
+    }
+    @Test
+    public void testConnectWithInstagram(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getInstaConnectBtn().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.instagram.com/eatstreethq/");
+    }
+    @Test
+    public void testConnectWithGoogle(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getGoogleConnectBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("accounts.google.com"));
+    }
+    @Test
+    public void testConnectWithLinkedIn(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAboutUsLink().click();
+        homeEatstreetPage.getConnectLink().click();
+        homeEatstreetPage.getLinkedInConnectBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("linkedin.com"));
+    }
 }

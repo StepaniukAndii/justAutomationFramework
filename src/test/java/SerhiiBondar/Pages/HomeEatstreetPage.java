@@ -123,4 +123,32 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
 
     }
+    public WebElement getConnectLink(){
+        return waitElementToBeClickable("//button[contains(text(),'Connect')]");
+
+    }
+    public List<WebElement> connectionMethods(){
+        return driver.findElements(By.xpath("//li[@class='connect__item']"));
+
+    }
+    public WebElement getFacebookConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='facebook']"));
+
+    }
+    public WebElement getTwitterConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='twitter']"));
+
+    }
+    public WebElement getInstaConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='instagram']"));
+
+    }
+    public WebElement getGoogleConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='google plus']"));
+
+    }
+    public WebElement getLinkedInConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='linkedin']"));
+
+    }
 }

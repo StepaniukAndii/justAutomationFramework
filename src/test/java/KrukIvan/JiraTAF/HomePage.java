@@ -158,5 +158,17 @@ public class HomePage extends BasePage {
     public WebElement assertReviews(){
         return findElementByXpath("//h2[@class=\"widget-header widget-header--menu-more-info widget-header--reviews-header margin-bottom-20 ng-binding\"]");
     }
+    public WebElement getTheAppAndroid(){
+        return findElementByXpath("//a[@class=\"app-btn-android\"]");
+    }
+    public WebElement getTheAppIOS(){
+        return findElementByXpath("//a[@class=\"app-btn-iphone\"]");
+    }
+    public  List<WebElement> becomeADriverLink(){
+        return findElementsByXpath("//a[@class=\"how-it-works_link\"]");
+    }
+    public WebElement bTNOrderAhead(){
+        return findElementByXpath("//label[@for=\"filter-Order Ahead\"]");
+    }
 }
 
