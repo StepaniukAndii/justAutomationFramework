@@ -18,6 +18,8 @@ public class WebPlayerPage extends BasePage{
         return (findElementByXpath("//div[@class='h4HgbO_Uu1JYg5UGANeQ wTUruPetkKdWAR1dd6w4']"));}
     public WebElement album(){
         return (findElementByXpath("//div[@class='tsv7E_RBBw6v0XTQlcRo']"));}
+    public WebElement searchButton(){
+        return (findElementByXpath("//a[contains(@href, '/search')]"));}
 
 
 

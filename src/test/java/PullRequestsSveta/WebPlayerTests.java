@@ -17,4 +17,15 @@ public class WebPlayerTests extends TestInit{
         webPlayer.webPlayerButton().click();
         webPlayer.album();
     }
+    @Test
+    public void findArtist(){
+        WebPlayerPage webPlayer = new WebPlayerPage(driver);
+        openUrl("https://www.spotify.com/us/");
+        webPlayer.webPlayerButton().click();
+        webPlayer.searchButton().click();
+        webPlayer.searchField().click();
+        webPlayer.searchField().sendKeys("Videoclub");
+        webPlayer.searchField().click();
+        webPlayer.artist().click();
+    }
 }
