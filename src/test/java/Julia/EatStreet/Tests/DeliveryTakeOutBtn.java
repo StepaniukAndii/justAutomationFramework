@@ -26,7 +26,7 @@ public class DeliveryTakeOutBtn extends TestInit {
         homePage.getAdressInput().sendKeys("San Francisco, CA");
         homePage.clickTakeOutBtn().click();
         homePage.getFedBtn().click();
-        homePage.checkAndClousePopUpWindow();
+        homePage.checkAndClouseAdressSearchAttempt();
         homePage.getFedBtn().click();
         sleep(5);
         Assert.assertTrue(homePage.getRadioBtnTakeOut().isDisplayed());
