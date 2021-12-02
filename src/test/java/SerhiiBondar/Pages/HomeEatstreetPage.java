@@ -15,7 +15,7 @@ public class HomeEatstreetPage extends BasePage {
 
     }
     public WebElement getSignInBtn(){
-        return driver.findElement(By.xpath("//a[@id='menu-signin']"));
+        return findElementByXpath("//a[@id='menu-signin']");
 
     }
     public List<WebElement> getMyAccountBtn(){
@@ -23,7 +23,7 @@ public class HomeEatstreetPage extends BasePage {
 
     }
     public WebElement myAccountBtn(){
-        return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+        return findElementByXpath("//a[@id='menu-my-account']");
 
     }
     public WebElement getGoItBtn(){

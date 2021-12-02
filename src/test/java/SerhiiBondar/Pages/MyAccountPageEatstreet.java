@@ -25,7 +25,7 @@ public class MyAccountPageEatstreet extends BasePage {
 
     }
     public WebElement getChangePasswordBtn(){
-        return driver.findElement(By.xpath("//a[@id='change-password']"));
+        return findElementByXpath("//a[@id='change-password']");
 
     }
     public WebElement getCurrentPasswordField(){
@@ -45,7 +45,7 @@ public class MyAccountPageEatstreet extends BasePage {
 
     }
     public WebElement getSignOutBtn(){
-        return driver.findElement(By.xpath("//a[@id='signout']"));
+        return findElementByXpath("//a[@id='signout']");
 
     }
     public WebElement getEditInfoBtn(){
