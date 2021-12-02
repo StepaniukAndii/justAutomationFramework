@@ -17,4 +17,7 @@ public class CustomersPage extends BasePage {
     public WebElement accountImg(){
         return findElementByXpath("//div[contains(text(),'Account')]");
     }
+    public WebElement paymentImg(){
+        return findElementByXpath("//div[contains(text(),'Payment')]");
+    }
 }
