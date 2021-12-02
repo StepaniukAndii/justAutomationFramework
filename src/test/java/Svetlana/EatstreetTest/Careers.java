@@ -5,6 +5,7 @@ import Svetlana.EatstreetPage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class Careers extends TestInit {
@@ -37,6 +38,22 @@ public class Careers extends TestInit {
         footerPage.getClickDelivery().click();
         sleep(2);
         Assert.assertTrue(driver.getCurrentUrl().contains("https://eatstreet.com/driver-careers"));
+    }
+
+    @Test
+    public void faceboockOpened(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage = new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        FooterPage footerPage = new FooterPage(driver);
+        footerPage.clickFaceboock().click();
+        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
+        footerPage.selectFoto().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://www.facebook.com/eatstreetHQ/"));
+
     }
 }
 

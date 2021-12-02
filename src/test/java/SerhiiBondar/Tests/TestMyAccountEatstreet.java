@@ -22,9 +22,7 @@ public class TestMyAccountEatstreet extends TestInit {
         singUpEatstreetPage.getPasswordForSignUpField().sendKeys("club2021");
         singUpEatstreetPage.getPasswordAgainField().sendKeys("club2021");
         singUpEatstreetPage.getSignUpBtn().click();
-        sleep(6);
         homeEatstreetPage.myAccountBtn().click();
-        sleep(5);
         MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
         myAccountPageEatstreet.getChangePasswordBtn().click();
         myAccountPageEatstreet.getCurrentPasswordField().sendKeys("club2021");
@@ -33,7 +31,6 @@ public class TestMyAccountEatstreet extends TestInit {
         myAccountPageEatstreet.getUpdatePasswordBtn().click();
         sleep(5);
         myAccountPageEatstreet.getSignOutBtn().click();
-        sleep(5);
         homeEatstreetPage.getSignInBtn().click();
         singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
         singInEatstreetPage.getPasswordField().sendKeys("club2022");
@@ -201,5 +198,33 @@ public class TestMyAccountEatstreet extends TestInit {
 
         Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
     }
+    @Test
+    public void testLogInWithOldPassword() {
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        SingInEatstreetPage singInEatstreetPage = new SingInEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getSignUpLine().click();
+        SingUpEatstreetPage singUpEatstreetPage = new SingUpEatstreetPage(driver);
+        singUpEatstreetPage.getSingUpEmailField().sendKeys("serhiibondar2@gmail.com");
+        singUpEatstreetPage.getPasswordForSignUpField().sendKeys("club2022");
+        singUpEatstreetPage.getPasswordAgainField().sendKeys("club2022");
+        singUpEatstreetPage.getSignUpBtn().click();
+        homeEatstreetPage.myAccountBtn().click();
+        MyAccountPageEatstreet myAccountPageEatstreet = new MyAccountPageEatstreet(driver);
+        myAccountPageEatstreet.getChangePasswordBtn().click();
+        myAccountPageEatstreet.getCurrentPasswordField().sendKeys("club2022");
+        myAccountPageEatstreet.getNewPasswordField().sendKeys("club2021");
+        myAccountPageEatstreet.getConfirmNewPasswordField().sendKeys("club2021");
+        myAccountPageEatstreet.getUpdatePasswordBtn().click();
+        sleep(5);
+        myAccountPageEatstreet.getSignOutBtn().click();
+        homeEatstreetPage.getSignInBtn().click();
+        singInEatstreetPage.getEmailField().sendKeys("serhiibondar2@gmail.com");
+        singInEatstreetPage.getPasswordField().sendKeys("club2022");
+        singInEatstreetPage.getSignInBtn().click();
+        sleep(5);
 
+        Assert.assertTrue(singInEatstreetPage.incorrectLogInInformation().isDisplayed());
+    }
 }

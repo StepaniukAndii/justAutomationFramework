@@ -35,4 +35,15 @@ public class TestFilters extends TestInit {
             }
         }
     }
+    @Test
+    public void bTNOrderAhead(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.clickButtonGotIt().click();
+        homePage.writeAddress().sendKeys("new york \n");
+        homePage.bTNEnterAddress().click();
+        homePage.bTNGetFed().click();
+        homePage.bTNOrderAhead().click();
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@class=\"active-filters\"]")).isDisplayed());
+    }
 }

@@ -15,7 +15,7 @@ public class HomeEatstreetPage extends BasePage {
 
     }
     public WebElement getSignInBtn(){
-        return driver.findElement(By.xpath("//a[@id='menu-signin']"));
+        return findElementByXpath("//a[@id='menu-signin']");
 
     }
     public List<WebElement> getMyAccountBtn(){
@@ -23,7 +23,7 @@ public class HomeEatstreetPage extends BasePage {
 
     }
     public WebElement myAccountBtn(){
-        return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+        return findElementByXpath("//a[@id='menu-my-account']");
 
     }
     public WebElement getGoItBtn(){
@@ -83,7 +83,7 @@ public class HomeEatstreetPage extends BasePage {
 
     }
     public WebElement getAnswer(){
-        return driver.findElement(By.xpath("//span[contains(text(),'Answer')]"));
+        return findElementByXpath("//span[contains(text(),'Answer')]");
 
     }
     public WebElement getEnterYourAddressLink(){
@@ -129,6 +129,66 @@ public class HomeEatstreetPage extends BasePage {
     }
     public List<WebElement> connectionMethods(){
         return driver.findElements(By.xpath("//li[@class='connect__item']"));
+
+    }
+    public WebElement getFacebookConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='facebook']"));
+
+    }
+    public WebElement getTwitterConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='twitter']"));
+
+    }
+    public WebElement getInstaConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='instagram']"));
+
+    }
+    public WebElement getGoogleConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='google plus']"));
+
+    }
+    public WebElement getLinkedInConnectBtn() {
+        return driver.findElement(By.xpath("//a[@aria-label='linkedin']"));
+
+    }
+    public WebElement getPrivacyLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Privacy')]"));
+
+    }
+    public WebElement getTermsOfUseLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
+
+    }
+    public WebElement getRestaurantsTermsLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Restaurant Terms')]"));
+
+    }
+    public WebElement getAccountQuestionsSection(){
+        return driver.findElement(By.xpath("//div[contains(text(),'Account Questions')]"));
+
+    }
+    public List<WebElement> listOfQuestions(){
+        return driver.findElements(By.xpath("//h2[@class='article-head']"));
+
+    }
+    public WebElement questionsTitle(){
+        return findElementByXpath("//h1[contains(@class,'article-head')]");
+
+    }
+    public WebElement getAccessibilityLink(){
+        return findElementByXpath("//a[contains(text(),'Accessibility')]");
+
+    }
+    public WebElement getAPILink(){
+        return findElementByXpath("//a[contains(text(),'API')]");
+
+    }
+    public WebElement getAppStoreLink(){
+        return findElementByXpath("//a[@class='app-btn-iphone']");
+
+    }
+    public WebElement getGooglePlayLink(){
+        return findElementByXpath("//a[@class='app-btn-android']");
 
     }
 }

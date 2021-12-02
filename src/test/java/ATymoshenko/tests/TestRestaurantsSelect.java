@@ -37,4 +37,17 @@ public class TestRestaurantsSelect extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("phoenix-az"));
     }
+    @Test
+    public void testSelectAnyFoodInAnyCityInTakingHungryHeadOnAcrossTheNationList() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        sleep(2);
+        homePage.addAnyStation().get(0);//AZ
+        homePage.addAnyCity().get(0).click();//Phoenix
+        sleep(2);
+        homePage.addAnyFood().get(0).click();//american food
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("american-food-delivery"));
+    }
 }

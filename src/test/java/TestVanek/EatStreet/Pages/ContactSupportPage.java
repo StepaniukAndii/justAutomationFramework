@@ -32,7 +32,31 @@ public class ContactSupportPage extends BasePage {
     public WebElement headerMoreSubMenu(){
         return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Contact Us')]");
     }
-    public WebElement headerMoreSubFind(){
+    public WebElement headerMoreSubFindGet(){
         return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Get')]");
+    }
+    public WebElement headerMoreSubFindFAQs(){
+        return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'FAQ')]");
+    }
+    public WebElement headerMoreSubFindAccount(){
+        return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Account')]");
+    }
+    public WebElement headerMoreSubFindOrder(){
+        return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Order')]");
+    }
+    public WebElement headerMoreSubFindPayment(){
+        return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Payment')]");
+    }
+    public WebElement headerMoreSubFindCoupon(){
+        return findElementByXpath("//div[contains(@class,'subMenu')]/div[contains(@class,'top-left')]/ul/li/a[contains(text(),'Coupon')]");
+    }
+    public WebElement headerHome(){
+        return findElementByXpath("//a[contains(text(),'Home')]");
+    }
+    public WebElement contentTitle(){
+        return findElementByXpath("//h2[contains(@class,'content')]");
+    }
+    public WebElement headerGetFed(){
+        return findElementByXpath("//a[contains(text(),'Get Fed')]");
     }
 }

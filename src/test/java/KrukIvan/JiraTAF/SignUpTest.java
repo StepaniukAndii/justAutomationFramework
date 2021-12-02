@@ -43,4 +43,13 @@ public class SignUpTest extends TestInit {
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         Assert.assertEquals(2,tabs.size());
     }
+    @Test
+    public void testSignUpOnMainPage(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com");
+        homePage.clickButtonGotIt().click();
+        homePage.emailFieldOnMainPage().sendKeys("13awd5@gmaiil.com");
+        homePage.signUpBTNOnMainPage().click();
+        Assert.assertTrue(homePage.assertSignUpOnMainPage().isDisplayed());
+    }
 }
