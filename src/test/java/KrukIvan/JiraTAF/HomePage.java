@@ -182,5 +182,8 @@ public class HomePage extends BasePage {
     public WebElement socialMediaInst(){
         return findElementByXpath("//a[@aria-label=\"Instagram\"]");
     }
+    public WebElement socialMediaFacebook(){
+        return  findElementByXpath("//a[@aria-label=\"Facebook\"]");
+    }
 }
 
