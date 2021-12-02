@@ -28,4 +28,16 @@ public class WebPlayerTests extends TestInit{
         webPlayer.searchField().click();
         webPlayer.artist().click();
     }
+    @Test
+    public void playTheSong(){
+        WebPlayerPage webPlayer = new WebPlayerPage(driver);
+        openUrl("https://www.spotify.com/us/");
+        webPlayer.webPlayerButton().click();
+        webPlayer.searchButton().click();
+        webPlayer.searchField().click();
+        webPlayer.searchField().sendKeys("Videoclub");
+        webPlayer.searchField().click();
+        webPlayer.artist().click();
+        webPlayer.songVideoClub().click();
+    }
 }
