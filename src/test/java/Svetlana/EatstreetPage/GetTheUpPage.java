@@ -25,5 +25,14 @@ public class GetTheUpPage extends BasePage {
     public WebElement checkInputEmail(){
         return findElementByXpath("//*[@id=\"headingText\"]/span");
     }
+    public WebElement clickGames(){
+        return findElementByXpath("//*[@id=\"fcxH9b\"]/div[1]/c-wiz[1]/ul/li[1]/ul/li[4]/a");
+    }
+    public WebElement selectGameTom(){
+        return findElementByXpath("//*[@id=\"fcxH9b\"]/div[4]/c-wiz[2]/div/div[2]/c-wiz/div/c-wiz/c-wiz[2]/c-wiz/div/div[2]/c-wiz[2]/div/div[2]/div/div[1]/a/div");
+    }
+    public WebElement checkGameOpened(){
+        return findElementByXpath("//span[contains(text(),'Talking Tom Gold Run')]");
+    }
 
 }
