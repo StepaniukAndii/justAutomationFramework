@@ -496,4 +496,28 @@ public class HomePage extends BasePage {
     public WebElement openRestHoney() {
         return driver.findElement(By.xpath("//h1[contains(text(),'Honey Baked Ham Company')]"));
     }
+
+    public List<WebElement> btnMoreInfo() {
+        return findElementsByXpath("//a[contains(text(), 'More Info')]");
+    }
+
+    public WebElement btnViewAllJobListings() {
+        return findElementByXpath("//a[contains(text(), 'View All Job Listings')]");
+    }
+
+    public WebElement linkStripeServiceAgreement() {
+        return findElementByXpath("//a[contains(text(),'Stripe Services Agreement')]");
+    }
+
+    public WebElement linkPageContactUs() {
+        return findElementByXpath("//div[@class='col-6']/p/a");
+    }
+
+    public WebElement singIn() {
+        return findElementByXpath("//div[@class='user-flow__content']/span");
+    }
+
+    public WebElement getRadioBtnTakeOut() {
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+    }
 }

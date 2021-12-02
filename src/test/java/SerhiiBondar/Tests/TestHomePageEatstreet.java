@@ -238,4 +238,47 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://eatstreet.com/terms");
     }
+    @Test
+    public void testRestaurantsTermsLink() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getRestaurantsTermsLink().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(), "https://eatstreet.com/restaurant-terms-of-service");
+    }
+    @Test
+    public void testAccountQuestions(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getForCustomersLink().click();
+        homeEatstreetPage.getAccountQuestionsSection().click();
+        homeEatstreetPage.listOfQuestions().get(3).click();
+
+        Assert.assertTrue(homeEatstreetPage.questionsTitle().getText().contains("?"));
+        Assert.assertEquals(homeEatstreetPage.getAnswer().getText(), "Answer");
+    }
+    @Test
+    public void testAccessibilityLink(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAccessibilityLink().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(), "https://eatstreet.com/accessibility");
+    }
+    @Test
+    public void testAPILink() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAPILink().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(), "https://developers.eatstreet.com/");
+    }
 }

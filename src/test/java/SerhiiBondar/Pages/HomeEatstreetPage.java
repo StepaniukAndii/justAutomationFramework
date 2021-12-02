@@ -83,7 +83,7 @@ public class HomeEatstreetPage extends BasePage {
 
     }
     public WebElement getAnswer(){
-        return driver.findElement(By.xpath("//span[contains(text(),'Answer')]"));
+        return findElementByXpath("//span[contains(text(),'Answer')]");
 
     }
     public WebElement getEnterYourAddressLink(){
@@ -159,5 +159,28 @@ public class HomeEatstreetPage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(),'Terms of Use')]"));
 
     }
+    public WebElement getRestaurantsTermsLink(){
+        return driver.findElement(By.xpath("//a[contains(text(),'Restaurant Terms')]"));
 
+    }
+    public WebElement getAccountQuestionsSection(){
+        return driver.findElement(By.xpath("//div[contains(text(),'Account Questions')]"));
+
+    }
+    public List<WebElement> listOfQuestions(){
+        return driver.findElements(By.xpath("//h2[@class='article-head']"));
+
+    }
+    public WebElement questionsTitle(){
+        return findElementByXpath("//h1[contains(@class,'article-head')]");
+
+    }
+    public WebElement getAccessibilityLink(){
+        return findElementByXpath("//a[contains(text(),'Accessibility')]");
+
+    }
+    public WebElement getAPILink(){
+        return findElementByXpath("//a[contains(text(),'API')]");
+
+    }
 }
