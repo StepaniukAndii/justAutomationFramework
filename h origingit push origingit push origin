@@ -1,0 +1,5374 @@
+[33mcommit c2e1e8eae1e4363aa894828dc59a8f113a25ba26[m[33m ([m[1;36mHEAD -> [m[1;32mSearchRestInCity[m[33m)[m
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Fri Nov 5 19:13:57 2021 +0200
+
+    Search Rest In City
+
+[33mcommit 86633b56eee93cfd768726475c1087cd8e2c9115[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: b16004b 4f03cc9
+Author: ylitimoshenko <34159218+ylitimoshenko@users.noreply.github.com>
+Date:   Thu Nov 4 19:56:10 2021 +0200
+
+    Merge pull request #332 from StepaniukAndii/SingInWithFacebook
+    
+    SingInWithFacebook
+
+[33mcommit 4f03cc95728f86efc9a9b281e750dee84051e701[m[33m ([m[1;31morigin/SingInWithFacebook[m[33m, [m[1;32mSingInWithFacebook[m[33m)[m
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Thu Nov 4 19:39:11 2021 +0200
+
+    SingInWithFacebook
+
+[33mcommit b16004b9674bb8ecc470ee306301e54e2b87630a[m
+Merge: 6166019 7329a3a
+Author: SerghiiBondar <92439366+SerghiiBondar@users.noreply.github.com>
+Date:   Thu Nov 4 18:58:00 2021 +0200
+
+    Merge pull request #330 from StepaniukAndii/SignInTest
+    
+    Sign in test automated
+
+[33mcommit 6166019c281218c4ccdcdd7b30b9d6b24dde1192[m
+Merge: 31bd593 cb1278e
+Author: ylitimoshenko <34159218+ylitimoshenko@users.noreply.github.com>
+Date:   Thu Nov 4 18:43:17 2021 +0200
+
+    Merge pull request #331 from StepaniukAndii/CheckSingInWithGoogle
+    
+    Check sing in with google
+
+[33mcommit cb1278eac5f2bfd4497bbf9dcc75aa1a66a07280[m[33m ([m[1;31morigin/CheckSingInWithGoogle[m[33m, [m[1;32mCheckSingInWithGoogle[m[33m)[m
+Merge: f0b848c 31bd593
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Thu Nov 4 18:32:41 2021 +0200
+
+    Merge branch 'master' into CheckSingInWithGoogle
+
+[33mcommit f0b848cc0852b02e550f6248078d4289ea3c2ca4[m
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Thu Nov 4 18:28:05 2021 +0200
+
+     Check Sing In With Google
+
+[33mcommit 7329a3a837c6da889c789e19cf541255ecd06f91[m[33m ([m[1;31morigin/SignInTest[m[33m)[m
+Merge: ddefd02 159c630
+Author: Serghiy <serg17@ukr.net>
+Date:   Thu Nov 4 17:50:38 2021 +0200
+
+    Merge branch 'master' into SignInTest
+
+[33mcommit 159c630893a9f9d7667e6d01f788cfa79f858aa4[m
+Merge: ee36718 31bd593
+Author: Serghiy <serg17@ukr.net>
+Date:   Thu Nov 4 17:47:07 2021 +0200
+
+    Merge branch 'master' of github.com:StepaniukAndii/justAutomationFramework
+
+[33mcommit ddefd02457d2285586cd6c90068d286a0f1e1c86[m
+Author: Serghiy <serg17@ukr.net>
+Date:   Thu Nov 4 17:41:47 2021 +0200
+
+    Sign In Test
+
+[33mcommit 31bd593f31484517ca2229e16fb54db5af588f6e[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Nov 4 15:48:37 2021 +0200
+
+    delete Method
+
+[33mcommit e963cd23240dd01bb6ff386b9d62f5f32d63ee32[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Nov 4 15:41:07 2021 +0200
+
+    Add method
+
+[33mcommit 9bd001900a83ed760d64222ae1033abf72c3f82f[m
+Merge: 4a535cf fb50155
+Author: Svetlana123411 <89917218+Svetlana123411@users.noreply.github.com>
+Date:   Thu Nov 4 13:51:07 2021 +0200
+
+    Merge pull request #328 from StepaniukAndii/Centik
+    
+    ChekOpenMedisonRests
+
+[33mcommit fb50155127db482a9d92a577eb08aba1763eef88[m[33m ([m[1;31morigin/Centik[m[33m)[m
+Author: Svetlana123411 <prutasveta@gmail.com>
+Date:   Thu Nov 4 13:29:38 2021 +0200
+
+    ChekOpenMedisonRests
+
+[33mcommit 4a535cfc8d4edb07d3442f4d2fc3a8ef6fd20b31[m
+Merge: de3ca8b b89ba0d
+Author: aleksandrKharchenko <93383582+aleksandrKharchenko@users.noreply.github.com>
+Date:   Thu Nov 4 10:57:02 2021 +0200
+
+    Merge pull request #327 from StepaniukAndii/SignUpFieldValidationScript
+    
+    Sign up field validation script
+
+[33mcommit b89ba0dd768c00f9e720867b2f01d4bba6f1a649[m[33m ([m[1;31morigin/SignUpFieldValidationScript[m[33m)[m
+Author: aleksandr <aleksandr.kharchenko35@gmail.com>
+Date:   Thu Nov 4 10:46:21 2021 +0200
+
+    Sign Up field validation script
+
+[33mcommit 507470e4c91b983a5bbc0e7d3350ea6585975271[m[33m ([m[1;31morigin/indev[m[33m)[m
+Author: aleksandr <aleksandr.kharchenko35@gmail.com>
+Date:   Wed Nov 3 17:27:58 2021 +0200
+
+    checking error notification on Sign In page
+
+[33mcommit 8fed551ebeb2650a31accebc6d7d02cc52bdb98f[m
+Merge: d8c7f0b ee36718
+Author: Serghiy <serg17@ukr.net>
+Date:   Wed Nov 3 17:07:03 2021 +0200
+
+    Merge branch 'master' into SerhiiBranch
+
+[33mcommit ee3671873c2ad7c359532a33a1c229ed6d5f6c67[m
+Merge: 2c4f28d de3ca8b
+Author: Serghiy <serg17@ukr.net>
+Date:   Wed Nov 3 17:05:02 2021 +0200
+
+    Merge branch 'master' of github.com:StepaniukAndii/justAutomationFramework
+
+[33mcommit d8c7f0b413606c45cc4b7c8fddfa8c910bc19a67[m[33m ([m[1;31morigin/SignInNegativeTest[m[33m)[m
+Author: Serghiy <serg17@ukr.net>
+Date:   Wed Nov 3 16:58:01 2021 +0200
+
+    TAF-244
+
+[33mcommit de3ca8b8f70c1ddd946d3bf6dc25b2e7049c9297[m[33m ([m[1;32mEatStreet[m[33m)[m
+Merge: 453cea8 747f1f8
+Author: Svetlana123411 <89917218+Svetlana123411@users.noreply.github.com>
+Date:   Wed Nov 3 16:17:37 2021 +0200
+
+    Merge pull request #321 from StepaniukAndii/Centik
+    
+    Hello from Sveta
+
+[33mcommit 453cea86cde40de11c590e94fe805aa9d2cd6f0f[m
+Merge: dbfccb8 5931e99
+Author: ylitimoshenko <34159218+ylitimoshenko@users.noreply.github.com>
+Date:   Wed Nov 3 16:13:08 2021 +0200
+
+    Merge pull request #324 from StepaniukAndii/TestSignInEatStreet
+    
+    Create new test on search field
+
+[33mcommit 747f1f8e856dc3409a302b47cefe4105648ab383[m
+Author: Svetlana123411 <prutasveta@gmail.com>
+Date:   Wed Nov 3 16:11:27 2021 +0200
+
+    Test address input
+
+[33mcommit 5931e994a1e8b849482bd11c195c4f24930fde3e[m[33m ([m[1;31morigin/TestSignInEatStreet[m[33m, [m[1;32mTestSignInEatStreet[m[33m)[m
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Wed Nov 3 16:09:24 2021 +0200
+
+    Fix
+
+[33mcommit d713988675732bec4b697f5b78046838af7f6167[m
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Wed Nov 3 16:00:53 2021 +0200
+
+    Fix
+
+[33mcommit 7a01a8e9e09900a2b4b476ef34857a2e67048f09[m
+Author: Yli Timoshenko <timoshkayli@gmail.com>
+Date:   Wed Nov 3 15:32:03 2021 +0200
+
+    Create new test on search field
+
+[33mcommit a29bfe4ec87714f82474c81e04f588c536706b6b[m
+Author: Svetlana123411 <prutasveta@gmail.com>
+Date:   Mon Nov 1 15:19:50 2021 +0200
+
+    fixes
+
+[33mcommit 119ffb5b7aee8d44bf3884b55f0af4992894e5d6[m
+Author: Svetlana123411 <prutasveta@gmail.com>
+Date:   Sun Oct 31 15:56:52 2021 +0200
+
+    openCityMedison
+
+[33mcommit 41826e014eadb977ec2baeb57bce6d428d2217b4[m
+Merge: b33662f fe5e753
+Author: Svetlana123411 <prutasveta@gmail.com>
+Date:   Fri Oct 29 16:29:37 2021 +0300
+
+    Merge branch 'indev' of github.com:StepaniukAndii/justAutomationFramework into Centik
+
+[33mcommit fe5e7532b2be38b859dcd59aa41308ee008186c7[m
+Author: aleksandr <aleksandr.kharchenko35@gmail.com>
+Date:   Fri Oct 29 16:24:57 2021 +0300
+
+    New CromeDriver_95 and Assert from tittle EatStreet
+
+[33mcommit 7cab2bac5d10601cdf5e480d69bad99c755f1d83[m
+Author: aleksandr <aleksandr.kharchenko35@gmail.com>
+Date:   Fri Oct 29 15:39:18 2021 +0300
+
+    Add New Packege
+
+[33mcommit b33662f0e840c22c7bf255cf87cd3620076b366e[m
+Author: Svetlana123411 <prutasveta@gmail.com>
+Date:   Fri Oct 29 15:38:00 2021 +0300
+
+    Hello from Sveta
+
+[33mcommit 2c4f28da443ebac0b2606b98aca08ca5cce4df75[m[33m ([m[1;31morigin/SerhiiBranch[m[33m)[m
+Author: Serghiy <serg17@ukr.net>
+Date:   Fri Oct 29 15:33:20 2021 +0300
+
+    addPackageSerhiiBondar
+
+[33mcommit dbfccb848bd0bd27a0c1197a3487726f21eb0415[m
+Merge: 102061c a03dd06
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Sep 3 16:03:10 2021 +0300
+
+    Merge pull request #319 from Znamm9/testRozetkaCompare
+    
+    Create new compare test for Rozetka
+
+[33mcommit a03dd06ad3f3493fcc7dfd8888b5c26e47b21236[m[33m ([m[1;31morigin/testRozetkaCompare[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Thu Sep 2 17:38:25 2021 +0300
+
+    Create new compare test for Rozetka
+
+[33mcommit 102061c06e7b7908d1881d14047a485209dc5372[m
+Merge: 2b94390 ebbdf3c
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Thu Sep 2 16:11:24 2021 +0300
+
+    Merge pull request #318 from Znamm9/TestRozetkaBasket
+    
+    Create new package Rozetka and testAddToBasket
+
+[33mcommit ebbdf3ca7c43c709d581d1a02699e2542742f4a5[m[33m ([m[1;31morigin/TestRozetkaBasket[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Tue Aug 31 14:02:02 2021 +0300
+
+    Create new package Rozetka and testAddToBasket
+
+[33mcommit 2b943901e0e8596a909a13d6544e69b15317fb36[m
+Merge: 39f6ed8 a642d8d
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Mon Aug 30 17:19:51 2021 +0300
+
+    Merge pull request #317 from Znamm9/testMychordsComment
+    
+    Create new class SongPage and test comment
+
+[33mcommit 39f6ed88002dd0fcfede4e704f3241f18f5e8865[m
+Merge: 906b023 d379743
+Author: NikitaShushevich <88892456+NikitaShushevich@users.noreply.github.com>
+Date:   Mon Aug 30 17:03:59 2021 +0300
+
+    Merge pull request #316 from Znamm9/RolexTest
+    
+    added new package
+
+[33mcommit a642d8df3b2dc2f85e923642915b500ee14c9f2c[m[33m ([m[1;31morigin/testMychordsComment[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Mon Aug 30 17:02:45 2021 +0300
+
+    Create new class SongPage and test comment
+
+[33mcommit d379743b90c3488f4159fd091f85bd1d88a13317[m[33m ([m[1;31morigin/RolexTest[m[33m)[m
+Author: NikitaShushevich <nikita.shushevich@gmail.com>
+Date:   Mon Aug 30 17:01:10 2021 +0300
+
+    added new package
+
+[33mcommit 906b0239e2de2b288244b7c5fc10d5f288ededf5[m
+Merge: 0a90033 7797623
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Mon Aug 30 16:10:30 2021 +0300
+
+    Merge pull request #315 from Znamm9/testMychordsLogIn
+    
+    Create new package Mychords and new test log in
+
+[33mcommit 77976239b8fbe8363224a6066c00ecdfe76d55b5[m[33m ([m[1;31morigin/testMychordsLogIn[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Mon Aug 30 16:07:21 2021 +0300
+
+    Create new package Mychords and new test log in
+
+[33mcommit 0a90033d3f599aaa9973de5d77e96e71651ee71f[m
+Merge: 4a25bf9 b702446
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 17:50:36 2021 +0300
+
+    Merge pull request #314 from Znamm9/testSortingRest
+    
+    Create new test sorting rest
+
+[33mcommit b7024465fe7d32b27747d2ead5820a7d4c7acddd[m[33m ([m[1;31morigin/testSortingRest[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 17:48:30 2021 +0300
+
+    Create new test sorting rest
+
+[33mcommit 4a25bf92588beed42b7edd22848e5d88f44e54e6[m
+Merge: 154154e 9f275e2
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 16:50:09 2021 +0300
+
+    Merge pull request #313 from Znamm9/testSearchAddress
+    
+    create class RestaurantsPage and TestSearchAddress
+
+[33mcommit 9f275e2ebb41d6ff6918d05e5b69d4fdfa327552[m[33m ([m[1;31morigin/testSearchAddress[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 16:47:50 2021 +0300
+
+    create class RestaurantsPage and TestSearchAddress
+
+[33mcommit 154154e318f43c0d0a6d45c4e3ab66c73bc2daab[m
+Merge: 65d7247 5271e78
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 13:53:10 2021 +0300
+
+    Merge pull request #312 from Znamm9/testSignInVanya
+    
+    Test sign in vanya
+
+[33mcommit 65d7247401548de9568e9ec11f139518d0aef8e0[m
+Merge: c9819fc 0da21bc
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 13:47:11 2021 +0300
+
+    Merge pull request #311 from Znamm9/EatStreet
+    
+    Eat street
+
+[33mcommit 5271e788c6c886b3a7f2e98326976376f26d3bca[m[33m ([m[1;31morigin/testSignInVanya[m[33m)[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 13:43:32 2021 +0300
+
+    Rename class and methods
+
+[33mcommit d92e05a1c370aadcd2acee93d7df88ad089b13c2[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Fri Aug 27 13:30:38 2021 +0300
+
+    Create new package with my tests and write first test
+
+[33mcommit 0da21bca2394e8b52f9df3df5161824fbab228ef[m[33m ([m[1;31morigin/EatStreet[m[33m)[m
+Merge: fc7feef c9819fc
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Thu Aug 26 12:44:50 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into EatStreet
+
+[33mcommit fc7feefa041d556ba125eb35ba1f299780f01e2d[m
+Author: Vanecheek <74904746+Vanecheek@users.noreply.github.com>
+Date:   Thu Aug 26 12:44:13 2021 +0300
+
+    MOdif Text
+
+[33mcommit c9819fcb3ad04db4c4d2036cdafa4a5fb8330aa9[m
+Merge: d98d2f2 dd567ae
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Thu Aug 26 11:52:49 2021 +0300
+
+    Merge pull request #310 from Znamm9/testContacts
+    
+    done check contacts on home page
+
+[33mcommit dd567ae2cb9d8cd76cd5af1ae040b6e37886170d[m[33m ([m[1;31morigin/testContacts[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 25 19:49:07 2021 +0300
+
+    done check contacts on home page
+
+[33mcommit d98d2f2f2727500e9511177c216ae336eda172c8[m
+Merge: 2f4b818 a26601c
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 25 19:42:49 2021 +0300
+
+    Merge pull request #309 from Znamm9/testFeedbacks
+    
+    done check reviews on home page
+
+[33mcommit a26601cac4ca645c8e46d418026e901b4e33b9d3[m[33m ([m[1;31morigin/testFeedbacks[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 25 19:40:14 2021 +0300
+
+    done check reviews on home page
+
+[33mcommit 2f4b8180c41664e50d7d26c69c34195c0bb41054[m
+Merge: 99b72bd 28f58ac
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 25 19:26:42 2021 +0300
+
+    Merge pull request #308 from Znamm9/testBlogOnHomePage
+    
+    done check Blog on home page
+
+[33mcommit 28f58acd5a011ec7ee902db8ecd725ef71a27a64[m[33m ([m[1;31morigin/testBlogOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 25 19:24:02 2021 +0300
+
+    done check Blog on home page
+
+[33mcommit 99b72bd5306ad00c19025fb288acbc3376b26cde[m
+Merge: 0307a22 1f38beb
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 25 19:06:36 2021 +0300
+
+    Merge pull request #307 from Znamm9/testQuestionsAndAnswers
+    
+    done check Questions and Answers on home page
+
+[33mcommit 1f38bebc9a76a9c404741ca1c520d66fc6b99263[m[33m ([m[1;31morigin/testQuestionsAndAnswers[m[33m)[m
+Merge: 5754601 0307a22
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 25 19:05:49 2021 +0300
+
+    Merge branch 'master' into testQuestionsAndAnswers
+
+[33mcommit 575460101d49d87a4fdc173021244c88744bdc8f[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 25 19:04:56 2021 +0300
+
+    done check Questions and Answers on home page
+
+[33mcommit 0307a22c780751132d9ddb993891d7529c6a7c88[m
+Merge: b8c85bf aaa79e2
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 25 16:48:41 2021 +0300
+
+    Merge pull request #306 from Znamm9/testDeliveryAndPayment
+    
+    done check delivery and payment on home page
+
+[33mcommit aaa79e27875b4f89781d851d3643be8f9836058b[m[33m ([m[1;31morigin/testDeliveryAndPayment[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 25 16:21:23 2021 +0300
+
+    done check delivery and payment on home page
+
+[33mcommit b8c85bfea67d3bf871b54c85413b1fd1e1e406de[m
+Merge: 41c272d e713b2e
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 25 11:20:55 2021 +0300
+
+    Merge pull request #305 from Znamm9/testAboutUsOnHomePage
+    
+    done check About Us on Home page
+
+[33mcommit e713b2eb8967580e059da35e13bf6dd42c4be57a[m[33m ([m[1;31morigin/testAboutUsOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 25 10:22:25 2021 +0300
+
+    done check About Us on Home page
+
+[33mcommit 41c272d100a4e0c12f62d5431f3129e7588840f7[m
+Merge: 166385c 8dc5997
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 23 15:54:36 2021 +0300
+
+    Merge pull request #303 from Znamm9/amazonCart
+    
+    [AMAZON] Testing of cart functionality: product is added to cart
+
+[33mcommit 8dc5997ecfee071c1627ffed4a2a16c9f1ed4fff[m[33m ([m[1;31morigin/amazonCart[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Aug 23 14:46:51 2021 +0300
+
+    [AMAZON] Testing of cart functionality: product is added to cart
+
+[33mcommit 166385ca09c7a9379fe72004e88c9ac0c836cadb[m
+Merge: ec8011e 7e7642a
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 23 14:18:39 2021 +0300
+
+    Merge pull request #299 from Znamm9/amazonHeader
+    
+    [AMAZON] Testing header for elements presence
+
+[33mcommit ec8011e7c13a7ca1f4fadbe16afcdc00ce1e0a25[m
+Merge: e24c8be d239e42
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 23 14:18:12 2021 +0300
+
+    Merge pull request #301 from Znamm9/amazonFooter
+    
+    [AMAZON] Testing footer for elements presence
+
+[33mcommit d239e4248fd1c23a4131709a98a633a6032868b9[m[33m ([m[1;31morigin/amazonFooter[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Aug 23 11:36:39 2021 +0300
+
+    [AMAZON] Testing footer for elements presence
+
+[33mcommit 7e7642a6b271768711508150e3a222c1c5b57e9f[m[33m ([m[1;31morigin/amazonHeader[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Aug 23 11:05:05 2021 +0300
+
+    [AMAZON] Testing header for elements presence
+
+[33mcommit eb226af637fcee4acec0da962b46ac895bc3d1e9[m
+Merge: a213717 e24c8be
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Aug 23 10:42:51 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework
+
+[33mcommit e24c8bef903cb9d1abc2971f233d974691f22a90[m
+Merge: 4cce849 8260ad8
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Aug 20 15:01:12 2021 +0300
+
+    Merge pull request #297 from Znamm9/testMessages
+    
+    done check message window in my account and repair sign in test
+
+[33mcommit 8260ad8b71a11ffc98b54d66e51ea2633b4c0092[m[33m ([m[1;31morigin/testMessages[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Aug 20 13:31:55 2021 +0300
+
+    done check message window in my account and repair sign in test
+
+[33mcommit 4cce8497a7861ac4c6cf27f2215a5a765b647ec0[m
+Merge: 92e9994 bf20810
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Aug 20 10:03:14 2021 +0300
+
+    Merge pull request #296 from Znamm9/testMobileAppsOnHomePage
+    
+    done check mobile apps btn on home page
+
+[33mcommit bf2081000943b6d0bff795cc5e266112e3b1efab[m[33m ([m[1;31morigin/testMobileAppsOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Aug 20 08:42:49 2021 +0300
+
+    done check mobile apps btn on home page
+
+[33mcommit a2137171cf25708c491d9458f9189957549414c6[m[33m ([m[1;31morigin/preplySettings[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Aug 19 17:44:59 2021 +0300
+
+    [PREPLY] Testing of elements visibility on profile settings
+
+[33mcommit 92e99946c1be3cd2ec946ee6523a2ec2ec4e309b[m
+Merge: efd9b56 76b8ca4
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed Aug 18 15:04:38 2021 +0300
+
+    Merge pull request #291 from Znamm9/preplyAuthorisation
+    
+    [PREPLY] Testing of login and signing up as a student
+
+[33mcommit 76b8ca4a14e2fbfe43142cfa8efa161c3176e6bc[m[33m ([m[1;31morigin/preplyAuthorisation[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Aug 18 14:57:50 2021 +0300
+
+    [PREPLY] Testing of login and signing up as a student
+
+[33mcommit efd9b56e10dd1cc6cc16852ce3e97f2a33334f3b[m
+Merge: 691fc39 156cf53
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 18 14:34:00 2021 +0300
+
+    Merge pull request #290 from Znamm9/testHelpBtnOnHomePage
+    
+    done check Help btn on home page
+
+[33mcommit 156cf53c6849b52f20b76ca594adcadd7d42d51e[m[33m ([m[1;31morigin/testHelpBtnOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 18 14:28:34 2021 +0300
+
+    done check Help btn on home page
+
+[33mcommit 691fc396df9eddd84e741f225792789bf508a595[m
+Merge: 44eba02 8f73c87
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 18 14:15:52 2021 +0300
+
+    Merge pull request #289 from Znamm9/testSpecialForYou
+    
+    done check Special For You on HomePage
+
+[33mcommit 8f73c87085e616bf70106005ad924fa4c8d54c22[m[33m ([m[1;31morigin/testSpecialForYou[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 18 14:14:39 2021 +0300
+
+    done check Special For You on HomePage
+
+[33mcommit 44eba02e1ba266afcc76e63db1f4c99b98c1f82c[m
+Merge: 3ada7e7 284e6a6
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 18 14:07:24 2021 +0300
+
+    Merge pull request #288 from Znamm9/testAddItemsToFavourite
+    
+    done check Favourite
+
+[33mcommit 284e6a69964e965c036942c28a3423e11973e9df[m[33m ([m[1;31morigin/testAddItemsToFavourite[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 18 13:50:03 2021 +0300
+
+    done check Favourite
+
+[33mcommit 3ada7e72702ba30bd4abeca6ec337c6aa930e430[m
+Merge: d1b78d0 089ad63
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed Aug 18 12:27:45 2021 +0300
+
+    Merge pull request #287 from Znamm9/preplyLandingFunctionality
+    
+    [PREPLY] testing of content functionality on landing page
+
+[33mcommit 089ad63dab61fb1937ce8b51fbb20969bd26b738[m[33m ([m[1;31morigin/preplyLandingFunctionality[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 16:35:25 2021 +0300
+
+    [PREPLY] testing of content functionality on landing page
+
+[33mcommit d1b78d0af266035c01f55ac67c46ceaa78b0ce67[m
+Merge: d09c61a d4ae092
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 16:08:37 2021 +0300
+
+    Merge pull request #286 from Znamm9/preplyLandingPresence
+    
+    [PREPLY] Testing of content presence on landing page
+
+[33mcommit d4ae09274e53d2a29991679fb8f631f592e2a72f[m[33m ([m[1;31morigin/preplyLandingPresence[m[33m)[m
+Merge: 56f851d d09c61a
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 16:07:54 2021 +0300
+
+    Merge branch 'master' into preplyLandingPresence
+
+[33mcommit d09c61a0c46c9b07fa954321832954ecd6f94db9[m
+Merge: af8f7bd d4e0d47
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 16:06:02 2021 +0300
+
+    Merge pull request #285 from Znamm9/preplyFooterFunctionality
+    
+    [PREPLY] footer functionality testing
+
+[33mcommit 56f851d9860c86bd053cf281a19b0610d9bb4cbc[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 16:03:08 2021 +0300
+
+    [PREPLY] Testing of content presence on landing page
+
+[33mcommit d4e0d47d5df0e2866bf56c2608083296aa90f1eb[m[33m ([m[1;31morigin/preplyFooterFunctionality[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 13:17:38 2021 +0300
+
+    Renamed calss
+
+[33mcommit 31a35591ee11e1a0712ac8b920f29ff50fcf54b2[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 13:15:16 2021 +0300
+
+    [PREPLY] footer functionality testing
+
+[33mcommit c7a6921bd8a36c7872c89822df9044ab6632d579[m
+Merge: 57d4407 af8f7bd
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 12:41:39 2021 +0300
+
+    deleted
+
+[33mcommit 57d4407f7db28cfd327ef0dcea65fe058c1fbedc[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 12:41:12 2021 +0300
+
+    deleted
+
+[33mcommit af8f7bd76757fc2c1584a9380d0bacf00b15bfb2[m
+Merge: 55e4275 f2564d4
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 12:40:02 2021 +0300
+
+    Merge pull request #281 from Znamm9/preplyFooterElementsAppearance
+    
+    [PREPLY] testing of elements appearance on footer
+
+[33mcommit f2564d4e2be7d904907e4f3af525e91eec3174ad[m[33m ([m[1;31morigin/preplyFooterElementsAppearance[m[33m)[m
+Merge: 742aadd 55e4275
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 12:39:14 2021 +0300
+
+    Merge branch 'master' into preplyFooterElementsAppearance
+
+[33mcommit 55e4275af89910d48961454769d8219ba6a0b4ac[m
+Merge: 27cfd24 38fb89e
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 12:29:24 2021 +0300
+
+    Merge pull request #279 from Znamm9/preplyTestSeparating
+    
+    [+preply] separated one test on two different: are element displayed and are elements are clickable
+
+[33mcommit 742aadd1a2207bf5fc078360bbcf71913efd64e0[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 12:27:30 2021 +0300
+
+    [PREPLY] testing of elements appearance on footer
+
+[33mcommit 38fb89e16cca185e831628b14cbddddcab6879c8[m[33m ([m[1;31morigin/preplyTestSeparating[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 12:12:41 2021 +0300
+
+    [+preply] separated one test on two different
+
+[33mcommit 27cfd24f5d534123ebd81e41d53ac26488c1c8a9[m
+Merge: 65a2c95 82356f1
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Tue Aug 17 11:29:05 2021 +0300
+
+    Merge pull request #277 from Znamm9/testPriceRange
+    
+    done check price range on good`s page
+
+[33mcommit 65a2c95a81ab7593aaf9c37e8424b84bf25b17f4[m
+Merge: 6e93360 9f170df
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue Aug 17 11:28:04 2021 +0300
+
+    Merge pull request #278 from Znamm9/preplyLandingHeader
+    
+    [PREPLY] Testing of header
+
+[33mcommit 9f170df9cf2fb5e3c0fcbb624a7d1f9769056b76[m[33m ([m[1;31morigin/preplyLandingHeader[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 17 11:16:36 2021 +0300
+
+    [PREPLY] Testing of header
+
+[33mcommit 82356f19ec59d2fc868ce9a6912b7ba2d96880a2[m[33m ([m[1;31morigin/testPriceRange[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 16 15:30:19 2021 +0300
+
+    done check price range on good`s page
+
+[33mcommit 6e93360e3f7a04d5eeee121c9bda7eae7d2b3010[m
+Merge: 1dedd8c 9adf9a6
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Sat Aug 14 16:13:25 2021 +0300
+
+    Merge pull request #276 from Znamm9/testAddItemsToCart
+    
+    done check add item to cart
+
+[33mcommit 9adf9a6e113c81f1fdf051ea740ca077897b320d[m[33m ([m[1;31morigin/testAddItemsToCart[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Sat Aug 14 13:34:42 2021 +0300
+
+    done check add item to cart
+
+[33mcommit 1dedd8c2c2267627adae77ef4c8476baba0499d6[m
+Merge: 59e9a7b 8a5f0a0
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Aug 13 16:00:00 2021 +0300
+
+    Merge pull request #274 from Znamm9/testFooterOnHomePage
+    
+    done check footer on home page
+
+[33mcommit 8a5f0a0849d2ef1c028ebf5a3d5f349216d6ba88[m[33m ([m[1;31morigin/testFooterOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Aug 13 13:19:33 2021 +0300
+
+    done check footer on home page
+
+[33mcommit 59e9a7b1607dae5232de2a15b47cd63f6ad2b2d7[m
+Merge: 6d5ce06 cf59ab0
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Aug 13 12:55:21 2021 +0300
+
+    Merge pull request #271 from Znamm9/testContentOnHomePage
+    
+    check content on home page
+
+[33mcommit cf59ab0208086b0949c012a53209caa366dca8e8[m[33m ([m[1;31morigin/testContentOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Aug 13 10:38:39 2021 +0300
+
+    check content on home page
+
+[33mcommit 6d5ce060a1ee741abf1d7b3f173af68716a7c037[m
+Merge: b1b1be8 7437eb6
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Thu Aug 12 12:59:40 2021 +0300
+
+    Merge pull request #269 from Znamm9/repairSignIn
+    
+    repair broken test sign in on prom
+
+[33mcommit 7437eb6136921b9275fa0aaeab2d6d1b4263fe52[m[33m ([m[1;31morigin/repairSignIn[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Thu Aug 12 12:58:28 2021 +0300
+
+    repair broken test sign in on prom
+
+[33mcommit b1b1be80d2beb8f12ad87e0bcc38bcfb5611eadf[m
+Merge: de896bc a998e1b
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Thu Aug 12 11:01:29 2021 +0300
+
+    Merge pull request #266 from Znamm9/testHeaderOnHomePage
+    
+    Test header on home page
+
+[33mcommit de896bc793ae54c7080645aa8f268e4c98e125f1[m
+Merge: f0d643f 5ed0b35
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Aug 12 10:57:28 2021 +0300
+
+    Merge pull request #264 from Znamm9/eatStreetDeliveryMinimum
+    
+    [EATSTREET] Added delivery minimum test
+
+[33mcommit a998e1b29af59b9ec0f521a69b2472b1e01c3b83[m[33m ([m[1;31morigin/testHeaderOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 11 17:06:08 2021 +0300
+
+    Test header on home page
+
+[33mcommit f0d643feed0ce25202735e2df6b77086226fdefd[m
+Merge: 64cb9c7 8810a3c
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 11 12:16:52 2021 +0300
+
+    Merge pull request #265 from Znamm9/testChangeSiteLanguage
+    
+    New test TestChangeSiteLanguage and delete clone
+
+[33mcommit 8810a3c7b9ead8a90ac2afa2cb5052630e7076bc[m[33m ([m[1;31morigin/testChangeSiteLanguage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 11 12:13:29 2021 +0300
+
+    New test TestChangeSiteLanguage and delete TestSignIn because I accidentally made a copy in previous commit
+
+[33mcommit 5ed0b35c6d221b4b5b1223aed7c88215072c09b7[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Aug 10 11:47:32 2021 +0300
+
+    Added delivery minimum test
+
+[33mcommit 64cb9c737d31a89e70991f7dc299226954ff5b95[m
+Merge: 946704f 3e550de
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Mon Aug 9 16:39:46 2021 +0300
+
+    Merge pull request #263 from Znamm9/testSearch
+    
+    Test search
+
+[33mcommit 946704fa4bcabaab2f5ad486bbb17ce3078cc164[m
+Merge: cd1a173 a583867
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 9 16:39:07 2021 +0300
+
+    Merge pull request #259 from Znamm9/eatStreetSorting
+    
+    [EATSTREET] Added test of sorting by name, distance and rating
+
+[33mcommit 3e550ded44ab22954e90c7afa28aabe86fe36e1c[m[33m ([m[1;31morigin/testSearch[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 9 16:37:08 2021 +0300
+
+    TestSearchHomePage
+
+[33mcommit a5838675fe9ba33f6094d6dcfd25555beb8151a2[m[33m ([m[1;31morigin/eatStreetSorting[m[33m)[m
+Merge: c4c2822 cd1a173
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Mon Aug 9 16:35:14 2021 +0300
+
+    Merge branch 'master' into eatStreetSorting
+
+[33mcommit dde6a35cd1f82874ac37f122ada0a1256377966c[m
+Merge: 983f854 cd1a173
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 9 15:58:44 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework
+
+[33mcommit cd1a1732774729c10fe8b351372977cccf0c38ca[m
+Merge: e2fd455 7cd5262
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Mon Aug 9 15:58:35 2021 +0300
+
+    Merge pull request #262 from Znamm9/testPromLogoBtn
+    
+    Test prom logo btn
+
+[33mcommit 7cd5262fd5ff2f949f4b7f1a18a6788bcd379a63[m[33m ([m[1;31morigin/testPromLogoBtn[m[33m)[m
+Merge: 6222ef1 e2fd455
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Mon Aug 9 15:58:27 2021 +0300
+
+    Merge branch 'master' into testPromLogoBtn
+
+[33mcommit 983f854e31d5cfa8d5f3ffccfd0862e0510a965a[m
+Merge: 239559e e2fd455
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 9 15:57:24 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework
+
+[33mcommit e2fd455fd28061187dca7bd5dc5b4f68f53fc633[m
+Merge: 745d114 41e6f05
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Mon Aug 9 15:56:41 2021 +0300
+
+    Merge pull request #260 from Znamm9/testSignIn
+    
+    Test Sign In
+
+[33mcommit 6222ef1e59e085e11544fef40a8180273022ef95[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 9 14:22:19 2021 +0300
+
+    Test logo button on prom homepage
+
+[33mcommit 239559e2e457d13b34e4ca53be97f1f27ca62423[m
+Merge: 41e6f05 745d114
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 9 12:52:48 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework
+
+[33mcommit 745d114ee67ff0a3d738db22649442aeca4e664f[m
+Merge: eff8914 20fa5fa
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Fri Aug 6 15:57:44 2021 +0300
+
+    Merge pull request #256 from Znamm9/eatStreetFiltersHomePage
+    
+    [EATSTREET] Added test of restaurants filtering by choosing cuisine from countries select on Landing page
+
+[33mcommit 41e6f05b910e6234c42fffcecefb46f577c8c818[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Aug 6 15:51:30 2021 +0300
+
+    Test Sign In
+
+[33mcommit c4c2822c185f06c6f9720f3e8153cfd02fa185cf[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri Aug 6 15:25:24 2021 +0300
+
+    [EATSTREET] Added test of sorting by name, distance and rating
+
+[33mcommit eff89143c8c1b147a6f832e652c9cbc5984e2f3a[m
+Merge: 96849ea 2d67b25
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Aug 6 15:13:21 2021 +0300
+
+    Merge pull request #258 from Znamm9/testSignUp
+    
+    Test sign up
+
+[33mcommit 2d67b25ee0f71e80032ae674898f8f092c658d2e[m[33m ([m[1;31morigin/testSignUp[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Aug 6 15:07:28 2021 +0300
+
+    New project for testing Prom and add packages for different projects
+
+[33mcommit 5181e0dccc23c12a22c8612cd43f4f2fd8edc61a[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 4 19:56:25 2021 +0300
+
+    OniksPage xpath locators
+
+[33mcommit 2da4e51933ac1ed9452d71f972136237d141375e[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 4 19:46:30 2021 +0300
+
+    Repair xpath locators
+
+[33mcommit 96849ea2f4f904f125b8849fcbf684dd59059d37[m
+Merge: 805ff84 31e1815
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 19:29:26 2021 +0300
+
+    Merge pull request #257 from Znamm9/testAddItemToCart
+    
+    Refactoring xpath locators, add comment to sleep in test and delete all enters in OniksPage
+
+[33mcommit 31e181585e461dc1312439beff6d9f444b803cef[m[33m ([m[1;31morigin/testAddItemToCart[m[33m)[m
+Merge: 193e2ac 805ff84
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 19:29:18 2021 +0300
+
+    Merge branch 'master' into testAddItemToCart
+
+[33mcommit 805ff849b48a20e8bf61eb1ca503b109292f7e2e[m
+Merge: 0f89989 5769458
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 19:28:46 2021 +0300
+
+    Merge pull request #255 from Znamm9/testFilterByPrice
+    
+    TestFilterByPrice
+
+[33mcommit 5769458316cef5b25bc06db0bde63f1e2979d050[m[33m ([m[1;31morigin/testFilterByPrice[m[33m)[m
+Merge: 75a8103 0f89989
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 19:27:50 2021 +0300
+
+    Merge branch 'master' into testFilterByPrice
+
+[33mcommit 193e2acfdcf5f23679f30a802a1fc7834b07cd97[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 4 18:09:43 2021 +0300
+
+    Refactor all xpath locators
+
+[33mcommit 77cd466eeb7298ad198c1309a8239af8a2e232e8[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 4 16:43:51 2021 +0300
+
+    Refactoring xpath locators and add comment to sleep in test
+
+[33mcommit 20fa5faa593bb946c53c746710fe87992584d346[m[33m ([m[1;31morigin/eatStreetFiltersHomePage[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Aug 4 14:16:47 2021 +0300
+
+    [EATSTREET] Added test of restaurants filtering by choosing cuisine from countries select on Landing page
+
+[33mcommit 0f89989033e11242b5c3a1c54f9f1c59113e6832[m
+Merge: 8f38d97 5c5a605
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 13:01:28 2021 +0300
+
+    Merge pull request #250 from Znamm9/testFilterKindOfDecoration
+    
+    TestFilterKindOfDecoration
+
+[33mcommit 5c5a6054324d69d2fe297d9baa8e36f76ca57e9c[m[33m ([m[1;31morigin/testFilterKindOfDecoration[m[33m)[m
+Merge: 8ce18db 8f38d97
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 13:01:19 2021 +0300
+
+    Merge branch 'master' into testFilterKindOfDecoration
+
+[33mcommit 8f38d97cbb590507084930e6d037dbf7da9e9fa5[m
+Merge: e14a23b c983c95
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Aug 4 12:58:24 2021 +0300
+
+    Merge pull request #248 from Znamm9/testAddItemToCart
+    
+    TestAddItemToCart
+
+[33mcommit 75a8103c8ebcfe840fa31e26225eead73fba9aee[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Aug 4 12:54:13 2021 +0300
+
+    TestFilterByPrice
+
+[33mcommit 8ce18db38ff36fb21236838adf69c27f15cc1b70[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 2 18:27:18 2021 +0300
+
+    TestFilterKindOfDecoration
+
+[33mcommit e14a23b0573c0dd799c689f3dc0c5546802ab7a1[m
+Merge: 351ea88 fa4f95f
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 2 16:02:37 2021 +0300
+
+    Merge pull request #249 from Znamm9/eatStreetGetHelp
+    
+    [EATSTREET] Added 'Get Help' test from Support section
+
+[33mcommit fa4f95fdc08a8e450541b42acc3f095c21a76d24[m[33m ([m[1;31morigin/eatStreetGetHelp[m[33m)[m
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 2 16:00:37 2021 +0300
+
+    Update GetHelpTest.java
+
+[33mcommit 5e28b129758757b6e755554034b5e72298b4978e[m
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 2 16:00:22 2021 +0300
+
+    Update GetHelpTest.java
+
+[33mcommit 351ea88c2cb5eea1ef0cbff053515ea65cbe31a3[m
+Merge: 28cf130 bcda3f8
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Aug 2 15:57:41 2021 +0300
+
+    Merge pull request #246 from Znamm9/eatStreetMiddleContent
+    
+    [EATSTREET] Added whole content test on Landing page. Minor improvement of 'OpenNewTab' method on FooterPage(just removed one line)
+
+[33mcommit c983c9588f6471560a0c7845902b20965558f9e9[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Aug 2 13:32:54 2021 +0300
+
+    TestAddItemToCart
+
+[33mcommit 3b2985afff525032b792f77cafcbdee0a96360cb[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Aug 2 12:59:35 2021 +0300
+
+    [EATSTREET] Added 'Get Help' test from Support section
+
+[33mcommit bcda3f81c076167d85332cc966b8b267a3500161[m[33m ([m[1;31morigin/eatStreetMiddleContent[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri Jul 30 14:19:26 2021 +0300
+
+    [EATSTREET] Added whole content test on Landing page. Minor improvement of 'OpenNewTab' method on FooterPage(just removed one line)
+
+[33mcommit 28cf1304783eea398558323148547f11609b6cec[m
+Merge: 715b1d1 09c634a
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Jul 30 13:24:53 2021 +0300
+
+    Merge pull request #245 from Znamm9/testContextMenu
+    
+    TestContextMenu and add package TestAnton in testng_all.xml
+
+[33mcommit 09c634a06574f6aea002aaf3e572e75f911802e9[m[33m ([m[1;31morigin/testContextMenu[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Jul 30 13:16:59 2021 +0300
+
+    TestContextMenu and add package TestAnton in testng_all.xml
+
+[33mcommit 715b1d1952e5c9610cc026ae19b408f034ae838c[m
+Merge: c74bcb9 8b89979
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Fri Jul 30 12:29:31 2021 +0300
+
+    Merge pull request #242 from Znamm9/eatStreetSearch
+    
+    [EATSTREET] Added 'Search zone' Test. Added page that includes all content on Landing page besides header and footer.
+
+[33mcommit 8b89979763938e284f5f74223ff6be31f6888631[m[33m ([m[1;31morigin/eatStreetSearch[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri Jul 30 12:22:34 2021 +0300
+
+    fixed some issues in search test
+
+[33mcommit c74bcb9a9475a16714c2925004956bf037e540cd[m
+Merge: a4f1988 61d2efd
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Jul 30 11:44:51 2021 +0300
+
+    Merge pull request #243 from Znamm9/testChangeLanguage
+    
+    TestChangeLanguage
+
+[33mcommit 61d2efd12ffb224fdf6d807db6163d733ae83617[m[33m ([m[1;31morigin/testChangeLanguage[m[33m)[m
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Jul 30 11:42:22 2021 +0300
+
+    Update TestChangeLanguage.java
+
+[33mcommit 71b0841a818b1039306c41e441e6350edff2bfe9[m
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Fri Jul 30 11:41:43 2021 +0300
+
+    Update OniksPage.java
+
+[33mcommit 6d86e15a31124945e758aedbd29ec72267416237[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Fri Jul 30 10:18:58 2021 +0300
+
+    TestChangeLanguage
+
+[33mcommit f52ba9f3c62a7ef0097f6645f5e0e9ff40ee716b[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jul 29 16:59:29 2021 +0300
+
+    [EATSTREET] Added 'Search zone' Test
+
+[33mcommit a4f19889a81f0e6abcbd20a8faa442f7a2220eab[m
+Merge: 6777108 c821c84
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jul 29 15:42:13 2021 +0300
+
+    Merge pull request #241 from Znamm9/eatStreetFooter
+    
+    [EATSTREET] Sorted tests and pages by packages. Added Footer Test
+
+[33mcommit c821c84f98062bebe7ddd90c9ae10b71d1f38cef[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jul 29 14:44:39 2021 +0300
+
+    Sorted tests and pages to by packages. Added Footer test
+
+[33mcommit 677710815896351aa8fe293d2937c4a3a274db02[m
+Merge: 9ce606d b57aced
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Thu Jul 29 13:19:18 2021 +0300
+
+    Merge pull request #240 from Znamm9/testFavorites
+    
+    TestFavorites
+
+[33mcommit b57acede03b6cfd4699e056561f6ad927f48d92d[m[33m ([m[1;31morigin/testFavorites[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Thu Jul 29 13:11:22 2021 +0300
+
+    TestFavorites
+
+[33mcommit 9ce606dee5ab04f94af0961ab8456e9dd3e80a6b[m
+Merge: 14c0afb 1fc9f1c
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jul 29 12:19:45 2021 +0300
+
+    Merge pull request #238 from Znamm9/eatStreetAuth
+    
+    Added EatStreet Auth Test
+
+[33mcommit 14c0afbe5f930fa0daf0c853d63dccdf834bdcc2[m
+Merge: 741b96c cdfac87
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Thu Jul 29 12:16:22 2021 +0300
+
+    Merge pull request #239 from Znamm9/testTextOnHomePage
+    
+    TestTextOnHomePage
+
+[33mcommit cdfac876abd37c213cfe36a5cd548f93992b2376[m[33m ([m[1;31morigin/testTextOnHomePage[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Thu Jul 29 12:05:37 2021 +0300
+
+    TestTextOnHomePage
+
+[33mcommit 1fc9f1c7752d836417678e07f964d0eb6bedd1a6[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jul 29 11:53:10 2021 +0300
+
+    Refactoring auth
+
+[33mcommit d51d6ba3c944590a790349ca1b585424ad1219a4[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Jul 28 17:46:21 2021 +0300
+
+    Added EatStreet Auth Test
+
+[33mcommit 741b96cd0dbe40827cf3fe9e93b2bd43a19c73e7[m
+Merge: d2a77b9 1823bb0
+Author: AntonyChuvirov <87984965+AntonyChuvirov@users.noreply.github.com>
+Date:   Wed Jul 28 17:00:30 2021 +0300
+
+    Merge pull request #237 from Znamm9/testLogoBtn
+    
+    TestLogoBtn
+
+[33mcommit 1823bb0a97c98cb25dc015b41e92763e4f1bf87b[m[33m ([m[1;31morigin/testLogoBtn[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Jul 28 16:55:22 2021 +0300
+
+    TestLogoBtn
+
+[33mcommit d2a77b9b198ad445b0f23a7979aa4c4e5e014dae[m
+Merge: bcd0310 724df03
+Author: Lina <82877220+angelinailchuk@users.noreply.github.com>
+Date:   Wed Jul 28 16:25:58 2021 +0300
+
+    Merge pull request #235 from Znamm9/TestAnton
+    
+    Add package TestAnton
+
+[33mcommit 724df03489eb99a8dd3c8ebb6f7d6382bc2aa037[m[33m ([m[1;31morigin/TestAnton[m[33m)[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Wed Jul 28 16:18:14 2021 +0300
+
+    New ChromeDriver_92 and one new test
+
+[33mcommit bcd0310d9c01d2a14266a032adf8b00ddb0e7661[m
+Merge: b7acf9d e17d40a
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed Jul 28 16:05:23 2021 +0300
+
+    Merge pull request #236 from Znamm9/eatStreetHeader
+    
+    Added EatStreet header
+
+[33mcommit e17d40aa64281afb2377865ad2015252ad2c4122[m[33m ([m[1;31morigin/eatStreetHeader[m[33m)[m
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed Jul 28 16:03:05 2021 +0300
+
+    Update HomePage.java
+
+[33mcommit 9fb00e53b0a1982a07b47813190ddc9877f129ff[m
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed Jul 28 15:54:42 2021 +0300
+
+    Delete HelpCenterPage.java
+
+[33mcommit e48b1e09292765b35ff648f3046d259bdb4432fc[m
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed Jul 28 15:54:27 2021 +0300
+
+    Delete TestHelpCenter.java
+
+[33mcommit 1757f25434c1eb9cdcddedeb70c5bbd61a813957[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Jul 28 15:51:27 2021 +0300
+
+    Added header test
+
+[33mcommit 4b9fd74c786f48cfc3b8bc8dab7ac0717fef39f9[m
+Author: Anton Chuvirov <anton.4uvirov@gmail.com>
+Date:   Mon Jul 26 17:09:29 2021 +0300
+
+    Add package TestAnton
+
+[33mcommit b7acf9d62bfc54a1d4c4eee8fab1a986dad85c79[m
+Merge: 0f43907 24dbd3d
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Tue Jul 6 12:51:22 2021 +0300
+
+    Merge pull request #234 from Znamm9/docker
+    
+    Added Dockerfile
+
+[33mcommit 24dbd3d0a532897076d9d128485bb087628b9cc9[m[33m ([m[1;31morigin/docker[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Jul 6 12:50:39 2021 +0300
+
+    changed headless
+
+[33mcommit 16504843a04d500283c3bac43d5c7c22819b341f[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Jul 6 12:47:30 2021 +0300
+
+    added dockerfile
+
+[33mcommit 862bfc54e332a38862aed36acc143114a73f5bca[m[33m ([m[1;31morigin/rozetkaHelpCenter[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Jul 5 16:44:37 2021 +0300
+
+    Expanded help center test
+
+[33mcommit 3fe34136da6e1b85bf9649a29155e8f4381a756b[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Jul 5 16:03:15 2021 +0300
+
+    Fixed import
+
+[33mcommit a5006257037cd39d7b9ae2e3584812b46d73c1d9[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Jul 5 15:00:18 2021 +0300
+
+    Added simple help center test for Rozetka test\
+
+[33mcommit 0f43907e4c62c154ccbcd40c4809597b05bb360b[m
+Merge: 565f15d 1fc27ae
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jul 1 13:09:17 2021 +0300
+
+    Merge pull request #231 from Znamm9/fixTestsBranch
+    
+    Big fix of Rozetka test
+
+[33mcommit 1fc27aec4281228bc04c0dc0602bf64627cef008[m[33m ([m[1;31morigin/fixTestsBranch[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jul 1 12:02:27 2021 +0300
+
+    Big fix of Rozetka test
+
+[33mcommit 77a1fa8bb8fc5fac8337d89f0f89aec336c3f5e7[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jul 1 12:00:42 2021 +0300
+
+    Big fix of Rozetka test
+
+[33mcommit 565f15d2423a87726d41ffcb0a8ca01cfc04c530[m
+Merge: 212469a b47ed1f
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jul 1 10:17:26 2021 +0300
+
+    Merge pull request #230 from Znamm9/rozetkaCatalogueTest
+    
+    Added simple catalogue test for Rozetka test
+
+[33mcommit 212469a257e98b6f93cc09552e2492f5e3143535[m
+Merge: 0a64026 5f93476
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jul 1 10:15:49 2021 +0300
+
+    Merge pull request #229 from Znamm9/rozetkaFiltersTest
+    
+    Added filter and sorting test to Rozetka test
+
+[33mcommit 0a64026fd5ca287783bc469a80c3bb4681212b02[m
+Merge: 31941cb f441521
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jul 1 10:14:01 2021 +0300
+
+    Merge pull request #228 from Znamm9/rozetkaFooterTest
+    
+    Added footer test. Trying to add allure reports plugin
+
+[33mcommit 31941cba4c5ed380487798086330a0e59e6d449f[m
+Merge: cfbace1 d91e717
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Jul 1 10:12:57 2021 +0300
+
+    Merge pull request #227 from Znamm9/rozetkaFixCartTest
+    
+    Fixed cart test for Rozetka test
+
+[33mcommit b47ed1f617e50d55fb315e5676316ff32221be8b[m[33m ([m[1;31morigin/rozetkaCatalogueTest[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Jun 30 14:05:39 2021 +0300
+
+    Added simple catalogue test for Rozetka test
+
+[33mcommit 5f9347644a55843005ad92a07b6b327931927c1c[m[33m ([m[1;31morigin/rozetkaFiltersTest[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Jun 30 12:22:49 2021 +0300
+
+    Added filter and sorting test to Rozetka test
+
+[33mcommit f441521de4f87845f70af35f1f77ca8d1102d598[m[33m ([m[1;31morigin/rozetkaFooterTest[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 29 13:39:07 2021 +0300
+
+    Added footer test
+
+[33mcommit d91e71761f5691a3f71981382619c81640aedf99[m[33m ([m[1;31morigin/rozetkaFixCartTest[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jun 24 15:07:30 2021 +0300
+
+    Fixed cart test:
+
+[33mcommit cfbace1b0caf9f3c107e9dd250aefc8f1e03ab31[m
+Merge: 588452e 04a9906
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Thu Jun 24 14:52:00 2021 +0300
+
+    Merge pull request #226 from Znamm9/rozetkaCartTest
+    
+    Reworked cart test for Rozetka test. Test includes: adding elements inside cart, removing them, adding-removing-adding elements
+
+[33mcommit 04a990619c3a4641102619733ac6dbab50f1bc54[m[33m ([m[1;31morigin/rozetkaCartTest[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jun 24 14:16:31 2021 +0300
+
+    Added comments near sleeps
+
+[33mcommit 148218c6cdec48dd8b9feaef13e75c3393bdfa09[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jun 24 14:09:12 2021 +0300
+
+    Reworked cart test
+
+[33mcommit 74523deed246554c374cf3d6c46d337d0298f664[m[33m ([m[1;31morigin/rozetkaAddToCart[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 22 14:53:52 2021 +0300
+
+    Added add to cart test for Rozetka test
+
+[33mcommit 02d24f9e0d31c7793bf10b43bfc9549ad93f1f31[m[33m ([m[1;31morigin/rozetkaSearchTest[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 22 13:07:47 2021 +0300
+
+    Added search test for Rozetka test
+
+[33mcommit df43d44e4c82e7aca9302a502a9ce1c19706d0c9[m[33m ([m[1;31morigin/rozetkaHeaderTest[m[33m)[m
+Merge: 19754ab 588452e
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri Jun 18 12:49:02 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into rozetkaHeaderTest
+
+[33mcommit 19754ab255c56b911bcbc30abb6d5a9aaac35a18[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri Jun 18 12:48:34 2021 +0300
+
+    Created new Rozetka test. Added header test, including header menu.
+
+[33mcommit 588452e783ebad8de24e1c33006c60b181f5d822[m
+Merge: f2548fe b4b42cc
+Author: Lina <82877220+angelinailchuk@users.noreply.github.com>
+Date:   Wed Jun 16 16:24:34 2021 +0300
+
+    Merge pull request #221 from Znamm9/breakCode
+    
+    brack
+
+[33mcommit b4b42cc622824de7a7aa7edd281124f4e2359aff[m[33m ([m[1;31morigin/breakCode[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed Jun 16 16:22:39 2021 +0300
+
+    brack
+
+[33mcommit f2548fe56cebb634fc2c117f4df5e22947ab0536[m
+Merge: 7af0569 a05ffc3
+Author: Lina <82877220+angelinailchuk@users.noreply.github.com>
+Date:   Wed Jun 16 16:19:44 2021 +0300
+
+    Merge pull request #189 from Znamm9/LynnBranch
+    
+    Add Lina's branch with 1st test
+
+[33mcommit a05ffc3202354ad015b3e8555e534b9606d4ed4b[m[33m ([m[1;31morigin/LynnBranch[m[33m)[m
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Jun 16 16:18:44 2021 +0300
+
+    reload 5 tests of Asos
+
+[33mcommit f8aa14ac845591e74850110c1a368216410e3414[m
+Merge: 2909c6f 7af0569
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Jun 16 16:00:10 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into LynnBranch
+
+[33mcommit 2909c6f4c90e725b360acb2770efb963d8c63494[m
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Jun 16 15:42:20 2021 +0300
+
+    5 tests of Asos by Lynn
+
+[33mcommit 56ca58d04e820d409a47a66276573554dd15e93c[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri Jun 11 14:17:33 2021 +0300
+
+    message
+
+[33mcommit 7af05691c0e36107816c84eb070bccfc7a712875[m
+Merge: e088fc4 8a4aec5
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon Jun 7 13:26:09 2021 +0300
+
+    Merge pull request #220 from Znamm9/newChromedriver
+    
+    Added updated chromedriver.
+
+[33mcommit 8a4aec50157f0e8518d7aedd88bff62e79cac9ea[m[33m ([m[1;31morigin/newChromedriver[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Jun 7 13:23:48 2021 +0300
+
+    redacted
+
+[33mcommit 628c7a0ba30cfed9dd6a18938fb72aaa895b50d6[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon Jun 7 13:17:27 2021 +0300
+
+    Updated ChromeDriver
+
+[33mcommit 580c470dd36139191c2133cdec0bbda90ddd76b1[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jun 3 15:02:51 2021 +0300
+
+    Fixed olx tests for proper work.:
+
+[33mcommit e088fc44f919ac672972cabb6f9d397b5095f664[m
+Merge: de897c7 ed47742
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Thu Jun 3 14:23:33 2021 +0300
+
+    Merge pull request #218 from Znamm9/ChromdriverForMac_91
+    
+    ChromdriverForMac
+
+[33mcommit 0788b9af4453cf18c15e45a31830742b8679eecb[m[33m ([m[1;31morigin/olxSortingFiltering[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Thu Jun 3 14:19:52 2021 +0300
+
+    Added filter test.
+
+[33mcommit ed47742dd93e3592f79541d6ab5c7b89390c1e55[m[33m ([m[1;31morigin/ChromdriverForMac_91[m[33m)[m
+Author: rAzooM <razoom@MacBook-Pro.local>
+Date:   Thu Jun 3 14:18:24 2021 +0300
+
+    ChromdriverForMac
+
+[33mcommit 73fd9c53d10a9511007b5407ad0b84882f6f368f[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Jun 2 16:15:50 2021 +0300
+
+    Added sorting test.
+
+[33mcommit b4955b82ff015595729366d4135c85cdc73c0230[m[33m ([m[1;31morigin/olxAddToFavorites[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed Jun 2 14:04:38 2021 +0300
+
+    Added 'Add to favorites' test.
+
+[33mcommit 3d87efa24acf25aa545f247f158e8f4343ec027a[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 1 16:36:30 2021 +0300
+
+    Added 'Add-to-favorite' test
+
+[33mcommit 26251fe5838a847e0761ff597448b0d2efabaf28[m[33m ([m[1;31morigin/olxSearch[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 1 15:46:34 2021 +0300
+
+    Added search test.
+
+[33mcommit fc64c5a8e9a6134a4a000df8fe75b218e83d3103[m[33m ([m[1;31morigin/olxHeaderFooter[m[33m)[m
+Merge: 4f8f4a2 de897c7
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 1 13:12:31 2021 +0300
+
+    added footer and header tests for elements presence and clickability.
+
+[33mcommit 4f8f4a2a3d07232346cc192e3ba16d6e32ef869f[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 1 13:05:46 2021 +0300
+
+    Added footer and header tests for elements presence and check if elements are clickable.
+
+[33mcommit 95b7da3b75b16ff93bd67e4f98e37a7185624d22[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue Jun 1 12:09:58 2021 +0300
+
+    created new olx test.
+
+[33mcommit b71ad8b4255e91dd5f63b22748991042742a94e9[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon May 31 14:54:42 2021 +0300
+
+    restored and improved Foxtrot test.
+
+[33mcommit ef39300a3873cf9c0c2b34739a9464eea05ab5f8[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Fri May 28 14:10:20 2021 +0300
+
+    Restored cartTests
+
+[33mcommit de897c7866b9cc627318b100ac151436cf64c4c4[m
+Merge: a8db25d 0ff1903
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed May 26 16:01:14 2021 +0300
+
+    Merge pull request #211 from Znamm9/SUITE
+    
+    delete some test from suite
+
+[33mcommit 0ff1903b8dc4954f536081e19c25204be9a921cf[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed May 26 15:59:42 2021 +0300
+
+    delete some test from suite
+
+[33mcommit c5702b2d8f5f7d54ae40a83f88d803a739e16fb2[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed May 26 15:56:18 2021 +0300
+
+    some fixes in pom.
+
+[33mcommit a8db25df62769f32ab185d75aab384b6c9ff8ff6[m
+Merge: abfec22 e5c487b
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Wed May 26 15:42:26 2021 +0300
+
+    Merge pull request #210 from Znamm9/SUITE
+    
+    Fix suite
+
+[33mcommit e5c487bf0abf2d1d69906ea675ff2177814ccf4c[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed May 26 15:40:31 2021 +0300
+
+    fix suite
+
+[33mcommit abfec2288b830ba82c2ef4ae946afa09aafc1865[m
+Merge: b0e28c1 088b336
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Wed May 26 12:43:12 2021 +0300
+
+    Merge pull request #209 from Znamm9/suitSetup
+    
+    Suit setup
+
+[33mcommit 088b336b41f5985191773e0614dad9e0b06a9696[m[33m ([m[1;31morigin/suitSetup[m[33m)[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Wed May 26 12:41:59 2021 +0300
+
+    Added test packages to testng_all file.
+
+[33mcommit b0e28c1c9e462ff0743c36749e173c763649df4a[m
+Merge: 66f73f7 893a23a
+Author: Lina <82877220+angelinailchuk@users.noreply.github.com>
+Date:   Tue May 25 16:56:51 2021 +0300
+
+    Merge pull request #208 from Znamm9/refactoringDrivers
+    
+    Refactoring drivers
+
+[33mcommit 893a23a87b9089bed19387d1fb15059528528de9[m[33m ([m[1;31morigin/refactoringDrivers[m[33m, [m[1;31morigin/addNewDriver[m[33m)[m
+Merge: f751194 66f73f7
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue May 25 16:51:34 2021 +0300
+
+    fix
+
+[33mcommit f75119423598799b6b982d8630ad1afbb53be0e6[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue May 25 16:49:07 2021 +0300
+
+    fix
+
+[33mcommit 66f73f7ea4ebb1d0d79e2c50fad5534a9185bf6d[m
+Merge: c4691cc e6a912c
+Author: Lina <82877220+angelinailchuk@users.noreply.github.com>
+Date:   Tue May 25 16:30:57 2021 +0300
+
+    Merge pull request #207 from Znamm9/refactoringTestInit
+    
+    changed headless
+
+[33mcommit e6a912c45a8652cd5bbbbf962473889a205e8041[m[33m ([m[1;31morigin/refactoringTestInit[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue May 25 16:28:22 2021 +0300
+
+    chanched headless
+
+[33mcommit 2b5b6061534cfeefe35b87c014d4f9e8430bae6c[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Tue May 25 16:10:07 2021 +0300
+
+    renamed packages.
+
+[33mcommit c4691cc8e9eefb3bb915e32a69efd98d47a33e47[m
+Merge: 43ae829 bc7fe42
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Tue May 25 15:53:56 2021 +0300
+
+    Merge pull request #206 from Znamm9/refactoringDrivers
+    
+    Refactoring drivers
+
+[33mcommit bc7fe42889aeb3cff5d19b1534d8fd5f4f442fa0[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue May 25 15:51:56 2021 +0300
+
+    refactoring drivers
+
+[33mcommit 43ae82972faa3e474fa0f68e613a75ac48686802[m
+Merge: 5b1cc2f 76d3a07
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Fri May 21 14:15:31 2021 +0300
+
+    Merge pull request #200 from Znamm9/testBranch
+    
+    Refactoring TestInit. Creating New Package. Creating new test of Foxtrot
+
+[33mcommit 76d3a0730d48a13f14ceb3287e0a7801ba518c8e[m[33m ([m[1;31morigin/testBranch[m[33m)[m
+Author: DenisShevchun <83283956+DenisShevchun@users.noreply.github.com>
+Date:   Mon May 17 18:24:38 2021 +0300
+
+    Delete AddCartTest.java
+
+[33mcommit 23a07ca39bd7979ef9d79497efebb6d11fe621e5[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon May 17 18:15:39 2021 +0300
+
+    Added AddToCart function in Foxtrot test.
+
+[33mcommit dbbeb3afadc64bc586186b70d2c4a62d709363f4[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon May 17 18:14:35 2021 +0300
+
+    Added AddToCart function in Foxtrot test.
+
+[33mcommit 5f4cb0e431c0afac501dd490d2ea0370e3d2a9fb[m
+Author: Shevchun Denis <fellowastronomer14@gmail.com>
+Date:   Mon May 17 14:02:09 2021 +0300
+
+    Refactoring TestInit. Creating New Package. Creating new test of Foxtrot
+
+[33mcommit 5b1cc2f9ea109514d3dab86b7de464cf93c04629[m
+Merge: 47a0e8d e0a5c81
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 30 11:45:21 2021 +0300
+
+    Merge pull request #199 from Znamm9/TestKickstarters#10
+    
+    Test kickstarters#10 Login Test the last one
+
+[33mcommit 47a0e8d56b28a853dc5e7358af01ee236b95dbda[m
+Merge: 3f1994c 25b9116
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 30 11:45:12 2021 +0300
+
+    Merge pull request #198 from Znamm9/TestKickstarter#9
+    
+    Test kickstarter#9 goods Test
+
+[33mcommit 3f1994cf994532a719c4c9f44872c1fad7c50d80[m
+Merge: b98d3e3 7ba36a2
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 30 11:45:03 2021 +0300
+
+    Merge pull request #197 from Znamm9/TestKickstarter#8
+    
+    Test kickstarter#8 Test new Project
+
+[33mcommit b98d3e33c3ecbfdc13349f4b1a30d7106f0a77bc[m
+Merge: 9aa4306 98e89e4
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 30 11:44:54 2021 +0300
+
+    Merge pull request #196 from Znamm9/TestKickstarter#7
+    
+    Test kickstarter#7 Discover Menu
+
+[33mcommit 9aa43066c7769546c230b84d6ea67e93da52fa19[m
+Merge: 2c3c697 c2d43a4
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 30 11:44:42 2021 +0300
+
+    Merge pull request #194 from Znamm9/TestKickstarter#5
+    
+    Test kickstarter#5 Test Links of Social Nets
+
+[33mcommit 2c3c6970e255f7e27d8117fd089f017337fddcd5[m
+Merge: e458881 aca93b6
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 30 10:39:33 2021 +0200
+
+    Merge pull request #193 from Znamm9/DemoqaAccordian
+    
+    Demoqa accordian
+
+[33mcommit e458881def8ceca5b076e40f9aba8919c2c8abb5[m
+Merge: 61b542a 6159359
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 30 10:39:10 2021 +0200
+
+    Merge pull request #186 from Znamm9/DemoqaButtonss
+    
+    Demoqa buttonss
+
+[33mcommit e0a5c8187ae9cc68b111589418ad096aa2cdb73c[m[33m ([m[1;31morigin/TestKickstarters#10[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 29 16:32:05 2021 +0300
+
+    The lastone
+
+[33mcommit 25b911694974b163c9882fe797188a099326dbf0[m[33m ([m[1;31morigin/TestKickstarter#9[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 29 16:03:36 2021 +0300
+
+    Test goods menu
+
+[33mcommit 7ba36a2f4ec87c31dd2b64cd7a6e6b72f7f4930d[m[33m ([m[1;31morigin/TestKickstarter#8[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 29 15:26:55 2021 +0300
+
+    Test New Project
+
+[33mcommit 98e89e43717e411dcb41a2cd16320858170cade5[m[33m ([m[1;31morigin/TestKickstarter#7[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 29 14:19:00 2021 +0300
+
+    Test of Discover Menu
+
+[33mcommit 16809985def65f28386dd1416a0cb5f377f4650e[m[33m ([m[1;31morigin/TestKickstarter#6[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 29 13:47:21 2021 +0300
+
+    Test changes Money Value
+
+[33mcommit 61b542a236da7c8e17d413ab0f9524bb1ce32434[m
+Merge: d2bd125 fc5fa5a
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 29 12:49:03 2021 +0300
+
+    Merge pull request #180 from Znamm9/TestKickstarter#4
+    
+    Test kickstarter#4 copywrite test
+
+[33mcommit d2bd125c9e61c47cc1b9a7f23b48c0dd8b80d5f5[m
+Merge: 823cee6 59887f5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 29 12:48:35 2021 +0300
+
+    Merge pull request #178 from Znamm9/TestKickstarter#2
+    
+    Test kickstarter#2 Test checks Searchfield
+
+[33mcommit 823cee6e4e178d3bd92abad6125e6b14e9a41082[m
+Merge: 9edcfca d014539
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 29 12:48:20 2021 +0300
+
+    Merge pull request #175 from Znamm9/TestKickstarter#1
+    
+    KickStarter#1 Top Menu Test
+
+[33mcommit c2d43a4ca640c427684efdf3bde542ca2fddde0f[m[33m ([m[1;31morigin/TestKickstarter#5[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 29 12:46:41 2021 +0300
+
+    Test Lins of social Nets
+
+[33mcommit aca93b69bfefe4a557df153a0a0e4d02d022e6bc[m[33m ([m[1;31morigin/DemoqaAccordian[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 29 10:42:57 2021 +0200
+
+    DemoqaAccordian
+
+[33mcommit 2fa3265cdc6ccf5de3e09689857bc89ad7d44b38[m
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Apr 28 16:35:03 2021 +0300
+
+    New test. Sale label Test
+
+[33mcommit 0be9ed95da3f8acace27db3727e9c2b73ae1e22f[m
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Apr 28 15:22:18 2021 +0300
+
+    removed empty lines
+
+[33mcommit cd502790d9c89b9a0e0f0acf0388ae8fa1e5aaf1[m
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Apr 28 15:11:30 2021 +0300
+
+    Andrey's comments were taken into account
+
+[33mcommit abf6f07feca845a8c935f70bb8f24baa0f6833de[m
+Author: Angelina Ilchuk <ilchukangelina@gmail.com>
+Date:   Wed Apr 28 14:55:34 2021 +0300
+
+    Add Lina's branch with 1st test
+
+[33mcommit 615935918786a0642742af8953544230f7a820cd[m[33m ([m[1;31morigin/DemoqaButtonss[m[33m)[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Wed Apr 28 11:37:37 2021 +0200
+
+    Update TestInit.java
+
+[33mcommit a0b3a5a5092fcf39ca828ae7c795dc3aead329a2[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 28 11:32:35 2021 +0200
+
+    DemoqaButtons
+
+[33mcommit 5a0eb03f2e98f52be1fd16ec0669ab8548c9af41[m[33m ([m[1;31morigin/WebTables[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 28 10:38:58 2021 +0200
+
+    WebTables
+
+[33mcommit fc5fa5a9a28e41215cf78981db6b136df5608bae[m[33m ([m[1;31morigin/TestKickstarter#4[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 27 14:31:26 2021 +0300
+
+    Kickstarter copywrite Test
+
+[33mcommit 7439dea17239886874b71cd81458f2946f410345[m[33m ([m[1;31morigin/TestKickstarter#3[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 27 14:12:41 2021 +0300
+
+    Switch between two Languages
+
+[33mcommit 59887f54b611ef1442540335b1180a139b40b3b3[m[33m ([m[1;31morigin/TestKickstarter#2[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 27 13:40:03 2021 +0300
+
+    Test checks Searchfield
+
+[33mcommit d014539ffb2efe9f6ce89fcd7d62c72cfcb2849a[m[33m ([m[1;31morigin/TestKickstarter#1[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 27 12:56:53 2021 +0300
+
+    KickStarter#1 Top Menu Test
+
+[33mcommit 9edcfcaf3def21368e47a3003e8342ce3a8dbe94[m
+Merge: 4b4c394 34b9436
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Tue Apr 27 12:03:00 2021 +0300
+
+    Merge pull request #174 from Znamm9/fixBranch
+    
+    Fix branch
+
+[33mcommit 34b9436496f78e7694b7760dbbc3a6558ba6d161[m
+Merge: b9e2515 4b4c394
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 27 12:00:34 2021 +0300
+
+    fix
+
+[33mcommit b9e2515901fdfea2a587071b50706107967a307e[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 27 11:55:08 2021 +0300
+
+    fdsfsd
+
+[33mcommit 4b4c394be8444e3c2e6585b6d940db3bc35e8391[m
+Merge: 94aeea8 258e810
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 27 10:51:56 2021 +0200
+
+    Merge pull request #172 from Znamm9/DemoqaTextBox
+    
+    Demoqa text box
+
+[33mcommit 1abb00e4d7c365a5a045f21f490bf87fc7d15f91[m
+Merge: 6a932b7 94aeea8
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 26 20:53:06 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into TestUkrNet#12
+
+[33mcommit 6a932b7bcf5f36f28b7e3139b64c3de4d8e348ce[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 26 20:52:53 2021 +0300
+
+    TestUkrNet#12
+
+[33mcommit 258e810e811636845b5b3041743b15e662c07fe9[m[33m ([m[1;31morigin/IframePalne[m[33m, [m[1;31morigin/DemoqaTextBox[m[33m)[m
+Merge: a055602 94aeea8
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 26 19:37:49 2021 +0200
+
+    DemoqaTextBox
+
+[33mcommit a055602b03594c509897f9180e9b2e2126bdb6a0[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 26 19:29:17 2021 +0200
+
+    DemoqaTextBox
+
+[33mcommit 94aeea8bdfbb129066f222eb913d0305b3049c3b[m
+Merge: 42b5419 b6ef75d
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:26:43 2021 +0200
+
+    Merge pull request #169 from Znamm9/TestUkrNet#11
+    
+    Test UkrNet#11 Checks first Iframe
+
+[33mcommit 42b5419b9622f8cac67d0b669e8213911c9dfec8[m
+Merge: 1b6e3ed bc1d17a
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:26:18 2021 +0200
+
+    Merge pull request #161 from Znamm9/TestUkrNet#9
+    
+    Test UkrNet#9 Check Contact
+
+[33mcommit bc1d17a3c5a69f8aa275de208e519e78acba2bb3[m[33m ([m[1;31morigin/TestUkrNet#9[m[33m)[m
+Merge: 3f9ede7 1b6e3ed
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:26:11 2021 +0200
+
+    Merge branch 'master' into TestUkrNet#9
+
+[33mcommit 1b6e3ed441c948c4d384657ab0a17ee0d5ab1308[m
+Merge: f554d8b bc8f9f9
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:25:10 2021 +0200
+
+    Merge pull request #162 from Znamm9/TestUkrNet#10
+    
+    Test UkrNet#10 This test checks of freshness of copywrite
+
+[33mcommit bc8f9f9e1ba48ecc98faf67c84577efea371e853[m[33m ([m[1;31morigin/TestUkrNet#10[m[33m)[m
+Merge: 2c98cb7 f554d8b
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:24:57 2021 +0200
+
+    Merge branch 'master' into TestUkrNet#10
+
+[33mcommit 3f9ede7100e2fe83fae92f1f391b9880ec1eb7d9[m
+Merge: 821e6c3 f554d8b
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:22:12 2021 +0200
+
+    Merge branch 'master' into TestUkrNet#9
+
+[33mcommit f554d8bc0537349c0b3757444c178820eae6256b[m
+Merge: 92f4089 79d20c5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 26 20:19:52 2021 +0300
+
+    Merge pull request #157 from Znamm9/MultipleWindows
+    
+    Multiple windows
+
+[33mcommit 79d20c5318cda9345927531fda5fb301a1c905ab[m[33m ([m[1;31morigin/MultipleWindows[m[33m)[m
+Merge: 12f2b9e 92f4089
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:16:31 2021 +0200
+
+    Merge branch 'master' into MultipleWindows
+
+[33mcommit 92f4089e851adea0ee44c6826e51b2605d8af36f[m
+Merge: 3f2dc6e a3c8c72
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 26 19:14:31 2021 +0200
+
+    Merge pull request #168 from Znamm9/WYSIWYGEditor
+    
+    Wysiwyg editor
+
+[33mcommit 3f2dc6ed225d51792f7c011a257e1cf4fce23cf6[m
+Merge: ad2f348 3bce7ed
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Mon Apr 26 14:06:25 2021 +0300
+
+    Merge pull request #170 from Znamm9/TestFix
+    
+    FIX
+
+[33mcommit 3bce7edc030fa8c7b2b6e9a92351f455b84211b7[m[33m ([m[1;31morigin/TestFix[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 26 14:03:16 2021 +0300
+
+    FIXgit add -A!
+
+[33mcommit ad2f34891a36d701279f69a489374a3ef857abe9[m
+Merge: 9169385 e7362b3
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Mon Apr 26 14:01:24 2021 +0300
+
+    Merge pull request #165 from Znamm9/testRatingFilter
+    
+    Test rating filter №17
+
+[33mcommit e7362b352d659702962ce16ccdfae88543364248[m
+Merge: 20402de 9169385
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 26 14:00:30 2021 +0300
+
+    fixs
+
+[33mcommit 9169385bda1d8d4090e2c7f96762602f6ad3a286[m
+Merge: b69ee79 1c469b8
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Mon Apr 26 13:53:00 2021 +0300
+
+    Merge pull request #166 from Znamm9/testSocialNetwork
+    
+    Test social network №18
+
+[33mcommit 1c469b8f2b4c8bffc14dbb3a820a9a434e8fc9a0[m[33m ([m[1;31morigin/testSocialNetwork[m[33m)[m
+Merge: 3783099 b69ee79
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 26 13:52:34 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testSocialNetwork
+
+[33mcommit b69ee7986ab4ba415c508e797914a0e53e06201b[m
+Merge: 16c794c 369a8cd
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Mon Apr 26 13:51:33 2021 +0300
+
+    Merge pull request #167 from Znamm9/testForumFilter
+    
+    Test forum filter №19
+
+[33mcommit b6ef75d0b4b5be8ab663790f3d1ae1da289aa8e9[m[33m ([m[1;31morigin/TestUkrNet#11[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 26 12:49:57 2021 +0300
+
+    TestUkrNet#11
+
+[33mcommit 821e6c3ea1e64dc4e41b7dfa3099709448231991[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 26 11:58:11 2021 +0300
+
+    Update TestCheckContacts.java
+
+[33mcommit 80023e4bfb2ebf3a212ac7e777752c11c855cc8f[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 26 08:59:51 2021 +0200
+
+    Pakedg
+
+[33mcommit a3c8c72b3ed9040549edb936c8c4bfddd1bdefe0[m[33m ([m[1;31morigin/WYSIWYGEditor[m[33m)[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sun Apr 25 23:53:28 2021 +0200
+
+    Update MultipleWindows.java
+
+[33mcommit 95e2c9b754af494bbf30811a27f5ae4b8c6635cd[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sun Apr 25 23:52:52 2021 +0200
+
+    Update WYSIWYGEditor.java
+
+[33mcommit a5131d04f69191e0d42c6087722bfcc3b673f77c[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sun Apr 25 23:49:42 2021 +0200
+
+    WYSIWYGEditor
+
+[33mcommit 4259cb4d0cc1e61cde275d6bcafd8c8531345159[m
+Merge: 49bb7b7 16c794c
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sun Apr 25 23:16:46 2021 +0200
+
+    qwerty
+
+[33mcommit 12f2b9e2907a97f5d520244c335b5ad828358f3e[m
+Merge: 49bb7b7 16c794c
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sun Apr 25 23:09:02 2021 +0200
+
+    Merge branch 'master' into MultipleWindows
+
+[33mcommit 369a8cda7eee52ce95708ca337822222312822b1[m[33m ([m[1;31morigin/testForumFilter[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sun Apr 25 21:59:10 2021 +0300
+
+    added test forum filters
+
+[33mcommit 37830994335d82169481b3be7cdf3b7451708f2d[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sun Apr 25 21:39:09 2021 +0300
+
+    added test social network
+
+[33mcommit 20402de1933a1e39bfb0bdb1ba283954f28ef76c[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sun Apr 25 21:28:31 2021 +0300
+
+    added test filter on job page
+
+[33mcommit 0e4962143d4978ef8b67e3ad7f6b981a68868c1c[m[33m ([m[1;31morigin/testPageJob[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sun Apr 25 16:02:16 2021 +0300
+
+    added test search field on job page
+
+[33mcommit 89c23d9dc1f6234953c152347d4b8484a63245a9[m[33m ([m[1;31morigin/testSearchAndSalaryDOU[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 24 20:43:55 2021 +0300
+
+    added 2 tests for DOU
+
+[33mcommit 2c98cb7bcf9b05930ec62946aa8432b51cbca67f[m
+Author: Sam <grinred69@gmail.com>
+Date:   Sat Apr 24 20:27:12 2021 +0300
+
+    This Test cheks
+
+[33mcommit 6d44f9ab4df8929f3970589046097327ffa30f99[m
+Merge: 4a8bd0c 16c794c
+Author: Sam <grinred69@gmail.com>
+Date:   Sat Apr 24 19:37:15 2021 +0300
+
+    TestUkrNet#9 Check Contact Number
+
+[33mcommit 4a8bd0cf3e32aa043ecd61aa707bc89cbaf82d7e[m
+Author: Sam <grinred69@gmail.com>
+Date:   Sat Apr 24 19:32:20 2021 +0300
+
+    TestUkrNet#9 Check Contact Number
+
+[33mcommit fffd1573df1fe272288ef979f893fbd6f04a1e97[m[33m ([m[1;31morigin/testKinoGo[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 24 17:22:25 2021 +0300
+
+    Added test search  KINOGO and modified package
+
+[33mcommit 16c794cbebf361d7a30229e5beb3bda763b3e64b[m
+Merge: 37fc949 fbb4c07
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Sat Apr 24 15:39:09 2021 +0300
+
+    Merge pull request #130 from Znamm9/testCity
+    
+    Test city in rozetka №10
+
+[33mcommit fbb4c07be09443ee84bfd4b3d687124c459444b1[m[33m ([m[1;31morigin/testCity[m[33m)[m
+Merge: e476878 37fc949
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 24 15:38:15 2021 +0300
+
+    fix conflict in HomePage - rozetka and Locators - TheInternetHerokuapp
+
+[33mcommit 37fc949a365c68d38e3ac7d3e7680b64256235a5[m
+Merge: 0d8ff1a 64029a6
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Sat Apr 24 15:30:05 2021 +0300
+
+    Merge pull request #152 from Znamm9/testFilterSlider
+    
+    Test filter slider
+
+[33mcommit 64029a63dfa53e45bf299ed5014c584c23ec4bef[m[33m ([m[1;31morigin/testFilterSlider[m[33m)[m
+Merge: 583de2f 0d8ff1a
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 24 15:29:31 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testFilterSlider
+
+[33mcommit 583de2fdd7045e83d88e06924744ba5ab8dc671d[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 24 15:03:55 2021 +0300
+
+    fix
+
+[33mcommit 49bb7b7eeeef1c106097a3faee090e6d30a8917f[m
+Merge: d744014 0d8ff1a
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sat Apr 24 10:32:31 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into MultipleWindows
+
+[33mcommit d744014a53a06c751622244d841e8ffcf815586e[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sat Apr 24 10:31:59 2021 +0200
+
+    MultipleWindows
+
+[33mcommit 251375d9a70c5d7ce61bcfdc9dbe96f973633ee5[m
+Merge: d11504e 0d8ff1a
+Author: Sam <grinred69@gmail.com>
+Date:   Sat Apr 24 11:20:37 2021 +0300
+
+    Solved conflict pages5_34
+
+[33mcommit d11504e62382733408412a04cb26faba6fbd30b4[m
+Merge: 9a47dc0 53a0319
+Author: Sam <grinred69@gmail.com>
+Date:   Sat Apr 24 11:19:54 2021 +0300
+
+    Solved conflict pages5_34
+
+[33mcommit 0d8ff1a6d6f9c7aaf62cebd1c001559bc6b488cc[m
+Merge: 53a0319 b5fa894
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Sat Apr 24 11:17:43 2021 +0300
+
+    Merge pull request #156 from Znamm9/TestUkrNet#8
+    
+    Test UkrNet#8 Change Weather Region
+
+[33mcommit b5fa89475307cca0002f43467ea39f11b171c037[m[33m ([m[1;31morigin/TestUkrNet#8[m[33m)[m
+Merge: 9a47dc0 53a0319
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Sat Apr 24 11:17:34 2021 +0300
+
+    Merge branch 'master' into TestUkrNet#8
+
+[33mcommit a6f0fe379e0099812b8c299574501c19b009dbdb[m
+Merge: 9e4bd85 53a0319
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sat Apr 24 10:06:20 2021 +0200
+
+    24.04.UP
+
+[33mcommit 9e4bd850b0e87cda247260acb7b881b5b3e648d6[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sat Apr 24 09:48:38 2021 +0200
+
+    24.04.UP
+
+[33mcommit b7281b5fc1f100134f66a0ee0d612a40f02a7e68[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sat Apr 24 09:47:59 2021 +0200
+
+    24.04.UP
+
+[33mcommit 53a0319162c2a19114e9e1dcec32938d0d2dd3b4[m
+Merge: a0f1e16 2e42918
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sat Apr 24 09:38:48 2021 +0200
+
+    Merge pull request #155 from Znamm9/Hovers
+    
+    Hovers
+
+[33mcommit 2e429184b29b343ea25fde0eac39641cea205911[m[33m ([m[1;31morigin/Hovers[m[33m)[m
+Merge: 3010531 a0f1e16
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sat Apr 24 09:38:40 2021 +0200
+
+    Merge branch 'master' into Hovers
+
+[33mcommit a0f1e16f7ed8948c50e814c44ce68dfe307c0305[m
+Merge: 8e5adb9 544e3d2
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sat Apr 24 09:37:23 2021 +0200
+
+    Merge pull request #153 from Znamm9/HorizontalSlider
+    
+    Horizontal slider
+
+[33mcommit 8e5adb9a1eb3384a0c5d13ca80e6122590e67aac[m
+Merge: d5c9b68 3b30831
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sat Apr 24 09:37:11 2021 +0200
+
+    Merge pull request #150 from Znamm9/LoginPage
+    
+    23.04.Up LoginPage
+
+[33mcommit d5c9b68547e750abe9f266dfc2ee93eb740101ed[m
+Merge: 1929d73 8cfaadd
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sat Apr 24 09:36:57 2021 +0200
+
+    Merge pull request #149 from Znamm9/FileDownloaderTwo
+    
+    File downloader two
+
+[33mcommit 9a47dc07636a379829d3ece91e86680fbb207d8b[m
+Author: Sam <grinred69@gmail.com>
+Date:   Sat Apr 24 10:14:54 2021 +0300
+
+    TestUkrNet#8
+
+[33mcommit 4255817e1513a3b46203f6e946da3a1aa9d14106[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 23 20:37:17 2021 +0300
+
+    #8
+
+[33mcommit d68c8345edb97cdf2e3969298d0da09e86025597[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 23 20:23:07 2021 +0300
+
+    UkrNet#8
+
+[33mcommit 301053117c280d54d3b4d78a47c9a3437a0a8d76[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 23 18:06:51 2021 +0200
+
+    hovers
+
+[33mcommit 73fa883d2cdefa0442e37fe811b69c78c32b13f2[m
+Merge: 62ce8bb 1929d73
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 23 18:05:14 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into HorizontalSlider
+
+[33mcommit 62ce8bb9c54b683e1b0021a732a9f9fdff79d4e7[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 23 18:04:45 2021 +0200
+
+    hovers
+
+[33mcommit 87517e8a04873586d6595607eba8f6dc5778f866[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 23 18:04:24 2021 +0200
+
+    hovers
+
+[33mcommit 1929d73e4583d4d085f8ddfaa92eef4aae91cad1[m
+Merge: 9842e9e 364d6ab
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 23 18:03:16 2021 +0200
+
+    Merge pull request #154 from Znamm9/TestUkrNet#7
+    
+    Test UkrNet#7 Test of Registration
+
+[33mcommit 364d6ab707181a3f36f5d372a52cca4f4045fe1f[m[33m ([m[1;31morigin/TestUkrNet#7[m[33m)[m
+Merge: db72e03 9842e9e
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 23 16:25:52 2021 +0300
+
+    Test UkrNet #7 Test of Registration
+
+[33mcommit db72e03618b08baa8b3af7bf73a1817be6a51079[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 23 16:24:10 2021 +0300
+
+    Test UkrNet #7 Test of Registration
+
+[33mcommit 544e3d2de9d898d8c3938a3e4314962c4e5e720b[m[33m ([m[1;31morigin/HorizontalSlider[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 23 13:39:42 2021 +0200
+
+    HorizontalSlider
+
+[33mcommit 85deef8201b529851006192458c00ad85211216f[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Apr 23 14:37:18 2021 +0300
+
+    added test slider
+
+[33mcommit 3b30831000275f54f306e4408f16360717d62ab6[m[33m ([m[1;31morigin/LoginPage[m[33m, [m[1;31morigin/GettersAndSetors[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 23 11:43:41 2021 +0200
+
+    23.04.Up LoginPage
+
+[33mcommit 8cfaadd0ddcec2623ebcfb57a3cbe39bfdaa02fd[m[33m ([m[1;31morigin/FileDownloaderTwo[m[33m)[m
+Merge: 615e4b1 9842e9e
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:42:47 2021 +0200
+
+    Merge branch 'master' into FileDownloaderTwo
+
+[33mcommit 9842e9e399db9c6a43a7a727f91bd99e55e8950a[m
+Merge: 2188517 cd372f0
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:41:53 2021 +0200
+
+    Merge pull request #146 from Znamm9/ContextMenu
+    
+    Context menu
+
+[33mcommit cd372f05f28d25799f7a17fe4a51da740e09b172[m[33m ([m[1;31morigin/ContextMenu[m[33m)[m
+Merge: bcdd9f1 2188517
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:41:46 2021 +0200
+
+    Merge branch 'master' into ContextMenu
+
+[33mcommit 2188517a218b147709dfffe53206d5fe1c7f984e[m
+Merge: c985b4b 4062194
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:40:50 2021 +0200
+
+    Merge pull request #145 from Znamm9/DragAndDrop
+    
+    Drag and drop
+
+[33mcommit 4062194855af0718c41561f032a492a810cab820[m[33m ([m[1;31morigin/DragAndDrop[m[33m)[m
+Merge: 8baf8dd c985b4b
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:40:44 2021 +0200
+
+    Merge branch 'master' into DragAndDrop
+
+[33mcommit 615e4b1ccf80055f2b1da29d0364cb734f3750d4[m
+Merge: 8baf8dd c985b4b
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:39:30 2021 +0200
+
+    Merge branch 'master' into FileDownloaderTwo
+
+[33mcommit c985b4bab052e047d5fe3bb1dd6a89167b786049[m
+Merge: 366374e 62ebf5f
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 22 17:36:35 2021 +0200
+
+    Merge pull request #139 from Znamm9/BasicAuth
+    
+    Basic auth
+
+[33mcommit 366374e58eeee7fa308f29e86100bc70ef4dc569[m
+Merge: d692e2a 24db36e
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:25:49 2021 +0300
+
+    Merge pull request #144 from Znamm9/TestUkrNet#6
+    
+    Test UkrNet#6 Login Test
+
+[33mcommit 24db36e1d739c57ddf8aceeb7b0832f9e288f4da[m[33m ([m[1;31morigin/TestUkrNet#6[m[33m)[m
+Merge: ac3996e d692e2a
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:25:40 2021 +0300
+
+    Merge branch 'master' into TestUkrNet#6
+
+[33mcommit d692e2a505c553463afed2074338584e7b2e084a[m
+Merge: 3115c02 7cf6ea1
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:24:40 2021 +0300
+
+    Merge pull request #143 from Znamm9/TestUkrNet#5
+    
+    Test UkrNet#5 Test fast to Top Button
+
+[33mcommit 7cf6ea196ac5389007f213e5990e35a61f3bca9f[m[33m ([m[1;31morigin/TestUkrNet#5[m[33m)[m
+Merge: 0a5d042 3115c02
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:24:33 2021 +0300
+
+    Merge branch 'master' into TestUkrNet#5
+
+[33mcommit 3115c02f5898067c833179ab4e6dff0f9fd903ce[m
+Merge: 1d16026 57f168f
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:23:51 2021 +0300
+
+    Merge pull request #142 from Znamm9/TestUkrNet#4
+    
+    Test UkrNet#4 Test checks current rate
+
+[33mcommit 1d160263507968c6e076ee35dc7415de570d0ed0[m
+Merge: d63ca05 71e1ef0
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:23:36 2021 +0300
+
+    Merge pull request #141 from Znamm9/TestUkrNet#3
+    
+    Test Ukrnet#3 Switch between two Languages
+
+[33mcommit bcdd9f13b32ffe7756ab98a2f2ab1d3b2ccd6647[m
+Merge: 0fe4802 d63ca05
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:21:46 2021 +0300
+
+    Merge branch 'master' into ContextMenu
+
+[33mcommit 62ebf5fd12d77ea4d060a61a23500663bf0c6e2f[m[33m ([m[1;31morigin/BasicAuth[m[33m)[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 17:11:50 2021 +0300
+
+    Update Locators.java
+
+[33mcommit 8baf8dda5420759142dac4689e449cc7ead0ed78[m[33m ([m[1;31morigin/FileDownloader[m[33m, [m[1;31morigin/ExitIntent[m[33m)[m
+Merge: 0fe4802 d63ca05
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 22 15:57:50 2021 +0200
+
+    qwewt
+
+[33mcommit 0fe48022cef3efa27e6ed6ed54ed483ee3094db3[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 22 15:45:31 2021 +0200
+
+    22.04.UP ContextMenu
+
+[33mcommit ac3996e57c737374bf305d0d2b13867f7d49ad27[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 22 15:57:43 2021 +0300
+
+    Login Test
+
+[33mcommit 0a5d0423bcd484c873fdbe5afa86662b41a04c3c[m
+Merge: c3a72b2 d63ca05
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 22 14:57:09 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into TestUkrNet#5
+
+[33mcommit c3a72b2f8c7dd9393b0734116f2c99a91c2772f2[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 22 14:56:54 2021 +0300
+
+    Test Fast to Top
+
+[33mcommit d63ca0534e6e60be45bb92d2f5aaba19ffc1f177[m
+Merge: 578fbb4 35f63da
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 14:22:16 2021 +0300
+
+    Merge pull request #138 from Znamm9/TestUkrNet#2
+    
+    TestUkrNet#2  Test switch into Iframe
+
+[33mcommit 578fbb49b6bfde09a11d88cf2e9f7f63b0f6b9f7[m
+Merge: 9f2a90e 54c1ab5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 14:21:55 2021 +0300
+
+    Merge pull request #137 from Znamm9/TestUkrNet#1
+    
+    Test ukr net#1 Test of Search Field
+
+[33mcommit 54c1ab52fb676ec19407ba8a83c10f172c457634[m[33m ([m[1;31morigin/TestUkrNet#1[m[33m)[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 22 14:21:28 2021 +0300
+
+    Update TestSearchField.java
+
+[33mcommit 57f168f7f039eeab5098bcaffa4f6aa975903579[m[33m ([m[1;31morigin/TestUkrNet#4[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 22 14:17:39 2021 +0300
+
+    TestUkrNet#4
+
+[33mcommit 71e1ef0005b23fc028ed415db3233b7992102abf[m[33m ([m[1;31morigin/TestUkrNet#3[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 22 13:34:39 2021 +0300
+
+    Test UkrNet Switch between two Languages
+
+[33mcommit 1bf92284f5bd2221e9ebb1ecf10a9709585bd0bd[m[33m ([m[1;31morigin/EntryAd[m[33m)[m
+Merge: f775cb4 9f2a90e
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 21 15:25:17 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into EntryAd
+
+[33mcommit 35f63da4c9f71b8105ebfadbc946bd909906716d[m[33m ([m[1;31morigin/TestUkrNet#2[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 16:24:19 2021 +0300
+
+    UkrNet Test switch into Iframe
+
+[33mcommit f775cb49c8e4d1f77df3930e4ffce225755e39f7[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 21 15:23:21 2021 +0200
+
+    21.04.Up EntryAd
+
+[33mcommit 3b1665c3a874ca8577413549b27455cd5d94e67a[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 16:08:42 2021 +0300
+
+    TestUkrNet#1 Test of Search Field
+
+[33mcommit 1e1776e3e6bc98a6f2bda84eb53ea53f8bb38061[m
+Merge: 46d1a0e bf00dc0
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 15:17:19 2021 +0300
+
+    Work Bitch!
+
+[33mcommit 46d1a0ec6a4aa30ad6e17551f7c15c13d692a048[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 14:50:37 2021 +0300
+
+    befor new UkrNet Test
+
+[33mcommit bf00dc006c4c1f95c34620293271fb9b11292808[m[33m ([m[1;31morigin/TestRozetka#23[m[33m)[m
+Merge: 113e6d5 9f2a90e
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 14:47:32 2021 +0300
+
+    TestRozetka#23/3
+
+[33mcommit 113e6d51e0e376a4c79256c787987e918882b032[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 14:44:46 2021 +0300
+
+    TestRozetka#23/2'
+
+[33mcommit 9f2a90e1f821d7392a9811b72974d46cdec97f3a[m
+Merge: d072889 4351c4c
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:38:21 2021 +0300
+
+    Merge pull request #134 from Znamm9/TestRozetka#23
+    
+    Test rozetka#23 Switch between small and big Array
+
+[33mcommit 4351c4cec8f055b18b924d3a5724e79138435895[m
+Merge: e7aa859 d072889
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:38:13 2021 +0300
+
+    Merge branch 'master' into TestRozetka#23
+
+[33mcommit d07288908f4368c75665cbd513d3b4ec01cb16e9[m
+Merge: 2ef31b8 5372167
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:37:41 2021 +0300
+
+    Merge pull request #133 from Znamm9/TestRozetka#22
+    
+    Test rozetka#22 This Test checks Work of Filter new or used
+
+[33mcommit 53721676e84b750e92680b80acd6c4b9ce48b86d[m[33m ([m[1;31morigin/TestRozetka#22[m[33m)[m
+Merge: 46e49c2 2ef31b8
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:37:34 2021 +0300
+
+    Merge branch 'master' into TestRozetka#22
+
+[33mcommit 2ef31b8efbc6a29aea81567dd5580b4e28446d57[m
+Merge: 9cf1e86 7d5e151
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:37:04 2021 +0300
+
+    Merge pull request #132 from Znamm9/TestRozetka#21
+    
+    Test rozetka#21 clear Filter
+
+[33mcommit 7d5e151202168c69ffe2ab224027478e8f9c7e42[m[33m ([m[1;31morigin/TestRozetka#21[m[33m)[m
+Merge: ab757e5 9cf1e86
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:36:58 2021 +0300
+
+    Merge branch 'master' into TestRozetka#21
+
+[33mcommit 9cf1e8699d42e0507e9dd6a668febdcbba3b0dd0[m
+Merge: dccb7ff f0dca56
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:36:17 2021 +0300
+
+    Merge pull request #131 from Znamm9/TestRozetka#20
+    
+    Test rozetka#20 Test Filter Price
+
+[33mcommit f0dca56427b9096751699e0b170d8b0a52e12ee2[m[33m ([m[1;31morigin/TestRozetka#20[m[33m)[m
+Merge: 6df5e62 dccb7ff
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:36:08 2021 +0300
+
+    Merge branch 'master' into TestRozetka#20
+
+[33mcommit dccb7ff637b635b915e4062a65fd1afe5b0f4538[m
+Merge: 00d51ba bdbc4fb
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:35:02 2021 +0300
+
+    Merge pull request #128 from Znamm9/TestRozetka#18
+    
+    Test rozetka#18 Filter Test by Sellers
+
+[33mcommit bdbc4fb048e672dd9128950aca604fbc5eddbfe1[m[33m ([m[1;31morigin/TestRozetka#18[m[33m)[m
+Merge: 39e29a2 00d51ba
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:34:50 2021 +0300
+
+    Merge branch 'master' into TestRozetka#18
+
+[33mcommit 00d51bacbddf589bc88a356c02c1888b8344d559[m
+Merge: 0678311 16aad83
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Wed Apr 21 13:32:38 2021 +0200
+
+    Merge pull request #136 from Znamm9/DynamicLoading
+    
+    Dynamic loading
+
+[33mcommit 0678311c35bb840553c15ac0b5ad975dedc7ce59[m
+Merge: 92bf524 30fb875
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Wed Apr 21 13:31:39 2021 +0200
+
+    Merge pull request #125 from Znamm9/DynamicContent
+    
+    Dynamic content
+
+[33mcommit 92bf52420791ffe4d36745a4379900ff702e3d3a[m
+Merge: 01ac3aa 449e093
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:31:27 2021 +0300
+
+    Merge pull request #127 from Znamm9/TestRozetka#17
+    
+    Test rozetka#17 switch between Prices
+
+[33mcommit 449e09332938bc2591beb3ed6a5a78aa8e31a4dd[m[33m ([m[1;31morigin/TestRozetka#17[m[33m)[m
+Merge: 804a439 01ac3aa
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:29:53 2021 +0300
+
+    Merge branch 'master' into TestRozetka#17
+
+[33mcommit 01ac3aaca32f3d584e64be918baeafb996fb3843[m
+Merge: 82b470e ab39ff5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 21 14:27:13 2021 +0300
+
+    Merge pull request #124 from Znamm9/RozetkaTest#16
+    
+    Rozetka test#16 checks  good's Photo
+
+[33mcommit 16aad832dfc10130320c2d0d567c2f5b445dddcf[m[33m ([m[1;31morigin/DynamicLoading[m[33m, [m[1;31morigin/DynamicControls[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 21 12:48:58 2021 +0200
+
+    21.04.DynamicControls
+
+[33mcommit e7aa859f5110eb8d28eebf246a4761d80d05cc33[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 13:21:16 2021 +0300
+
+    RozetkaTest#23 Switch between small and big Array
+
+[33mcommit 46e49c27becd2bd47c32f3da9a95a0bc38369d08[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 21 12:43:30 2021 +0300
+
+    TestRozetka#22 This Test checks Work of Filter new or used
+
+[33mcommit ab757e5e2b1696b3944a30f51e6eabe8de6727d1[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 22:58:05 2021 +0300
+
+    TestRozetka#21
+
+[33mcommit 6df5e62c2c1897af16ab5660963db6ec06ebbcca[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 22:33:15 2021 +0300
+
+    RozetkaTest#20 Test Filter Price
+
+[33mcommit e4768782a64ea37c53f3e7e1aec414ca550c87f7[m
+Merge: ff7c427 82b470e
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 20 21:04:46 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testCity
+
+[33mcommit ff7c4272aaf36826eac1281e05ee1c5ddf55d1b5[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 20 21:04:35 2021 +0300
+
+    added test choose city in rozetka
+
+[33mcommit 7d3a5e0ec28a318c9fe7d3e1844e349f6c6b0d4b[m[33m ([m[1;31morigin/TestRozetka#19[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 17:36:51 2021 +0300
+
+    RozetkaTest#19 filter By Brend
+
+[33mcommit 39e29a22fc9c8a8c5f49a69bd1216319e5342029[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 16:48:25 2021 +0300
+
+    RozetkaTest#18 Filter Test by Sellers
+
+[33mcommit 30fb875a04ba70f739da44ef5e203ba64c637417[m[33m ([m[1;31morigin/DynamicContent[m[33m)[m
+Merge: 0397d7d 82b470e
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 20 14:14:49 2021 +0200
+
+    Testinit
+
+[33mcommit 0397d7d3811e87264481cbb36716aad2d120e606[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 20 14:07:14 2021 +0200
+
+    20.04.DynamicContent
+
+[33mcommit 804a439ef0046361222d01b070bf6e7b5053c250[m
+Merge: 3495a88 82b470e
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 13:31:07 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into TestRozetka#17
+
+[33mcommit 3495a8827f7a9b85305d0b25ccb249e925a28499[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 13:30:53 2021 +0300
+
+    TestRozetka#17
+
+[33mcommit 82b470eed27cc90155271d6017df8de18ec7348d[m
+Merge: 36de75c 75b9eff
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Tue Apr 20 13:26:53 2021 +0300
+
+    Merge pull request #116 from Znamm9/testCucumber
+    
+    Add cucumber test and cucumber dependency
+
+[33mcommit 75b9eff9f0fb60f297bca76cbf771b81e96d100a[m[33m ([m[1;31morigin/testCucumber[m[33m)[m
+Merge: eab5591 36de75c
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 20 13:25:29 2021 +0300
+
+    fix Rozetka
+
+[33mcommit eab55918e91371a29319381ad6a34ac6373ec939[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 20 13:10:39 2021 +0300
+
+    add compare test and some fixes
+
+[33mcommit ab39ff54c3be2bacb2d43ef1d475dda4aa0c31f5[m[33m ([m[1;31morigin/RozetkaTest#16[m[33m)[m
+Merge: d23c4fa 36de75c
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 13:03:59 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into RozetkaTest#16
+
+[33mcommit d23c4faaa0fb6f3953fee4da6c3e4334559c543a[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 20 13:03:49 2021 +0300
+
+    RozetkaTest#15 checks good's photo
+
+[33mcommit 36de75c002492f2920ca74d68e471d9fc5289937[m
+Merge: d370d33 bca6942
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 20 11:59:44 2021 +0200
+
+    Merge pull request #123 from Znamm9/Checkboxes
+    
+    Checkboxes
+
+[33mcommit d370d33cdb44da55dedfd3863f8febbf4af44e86[m
+Merge: d2359bb 2708f76
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 20 12:59:17 2021 +0300
+
+    Merge pull request #118 from Znamm9/RozetkaTest#15
+    
+    Rozetka test#15 Test Check in
+
+[33mcommit d2359bb36d1e3c506d5f895e74c7ef165077b67f[m
+Merge: 6fbaee8 a2045dc
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 20 12:59:05 2021 +0300
+
+    Merge pull request #117 from Znamm9/RozetkaTest#14
+    
+    RozetkaTest#14 Check Support
+
+[33mcommit bca69429cd71557496e48de03766e5d6886b9557[m[33m ([m[1;31morigin/addRemoveElements[m[33m, [m[1;31morigin/DropdownList[m[33m, [m[1;31morigin/Checkboxes[m[33m, [m[1;31morigin/BrokenImages[m[33m, [m[1;31morigin/ABTesting[m[33m)[m
+Merge: d814b27 6fbaee8
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 20 11:48:30 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into Checkboxes
+
+[33mcommit d814b271803e240e3f193c78b704ac9518251ef2[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 20 11:46:46 2021 +0200
+
+    20.04.up Herokuapp
+
+[33mcommit 2708f76d62efc0e2fb11583d64d3704c255ace4d[m[33m ([m[1;31morigin/RozetkaTest#15[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 19 21:19:22 2021 +0300
+
+    RozetkaTest#15 Test Check In
+
+[33mcommit a2045dc075d2ccbe3fd961ec111b10a29a506d66[m[33m ([m[1;31morigin/RozetkaTest#14[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 19 20:59:30 2021 +0300
+
+    RozetkaTest#14 Check Support
+
+[33mcommit 6fbaee85ae43efe0128d8dd1a1f503c31f66fea5[m
+Merge: e6296bc d2b72bb
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 19 20:19:52 2021 +0300
+
+    Merge pull request #113 from Znamm9/RozetkaTest#13
+    
+    Rozetka test#13
+
+[33mcommit d2b72bbe306c396d1964b2e21530fe1449e51199[m[33m ([m[1;31morigin/RozetkaTest#13[m[33m)[m
+Merge: 2352a99 e6296bc
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 19 20:19:41 2021 +0300
+
+    Merge branch 'master' into RozetkaTest#13
+
+[33mcommit e6296bc8574dd1b39f609cd2ce882c1e3fddbb5c[m
+Merge: a20d704 34a14b6
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 19 20:18:47 2021 +0300
+
+    Merge pull request #110 from Znamm9/RozetkaTest#12
+    
+    Rozetka test#12
+
+[33mcommit a20d704d7655623bbdd723923e432c607c69aa05[m
+Merge: 8723fb1 e3af0ec
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 19 20:18:29 2021 +0300
+
+    Merge pull request #109 from Znamm9/RozetkaTest#11
+    
+    Rozetka test#11
+
+[33mcommit e3af0ecc5c1d171aae7cc6901dba708e5971273c[m[33m ([m[1;31morigin/RozetkaTest#11[m[33m)[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 19 14:50:35 2021 +0300
+
+    Update SwitchCity.java
+
+[33mcommit 01eae6688fda5c0cc583c74108e7fbe8087c3310[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 19 14:49:50 2021 +0300
+
+    Update RozetkaPages5_34.java
+
+[33mcommit 8723fb130c149f3dc8a11568cd7e1817ea0d1783[m
+Merge: 9b0ba17 6fb9440
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Mon Apr 19 14:33:33 2021 +0300
+
+    Merge pull request #78 from Znamm9/APIrozetka
+    
+    Test product filter and API №6 test
+
+[33mcommit 2352a99f42f276529ea2ea40ee8adf91d0c6dc35[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 19 14:08:36 2021 +0300
+
+    RozetkaTest#13 after chaing
+
+[33mcommit 62466b524c622f142945ec317e44a0f7a19ccabe[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 19 13:24:04 2021 +0300
+
+    add cucumber test
+
+[33mcommit 6fb9440c506305126263b68109c9ca26d8c6f615[m[33m ([m[1;31morigin/APIrozetka[m[33m)[m
+Merge: 8f269d3 9b0ba17
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 17 15:34:16 2021 +0300
+
+    fix conflict
+
+[33mcommit 8f269d3a25fb082d72c196c987741b0fe46dd916[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Sat Apr 17 15:33:00 2021 +0300
+
+    add new test API
+
+[33mcommit ed78e38e68e5532c90ff807a375229eb64a0c924[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 16 15:05:11 2021 +0300
+
+    RozetkaTest#13
+
+[33mcommit 373c1d2152f542b4f40472d32b83552913e130e8[m[33m ([m[1;31morigin/AgreementTestUaText[m[33m, [m[1;31morigin/AgreementTestRuText[m[33m)[m
+Merge: d4d721d 9b0ba17
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 16 13:11:55 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into AgreementTestRuText
+
+[33mcommit d4d721de16a979bbcff6a38a6e96b166d2304379[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 16 13:02:25 2021 +0200
+
+    16.04.UP Arrey Text
+
+[33mcommit 34a14b6856b4949d61f397ea78d385fa9672bb76[m[33m ([m[1;31morigin/RozetkaTest#12[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 16 13:54:01 2021 +0300
+
+    ReozetkaTest#12
+
+[33mcommit 2c6f1af9e3acda4527775e20d5e10a0172a43095[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 16 12:26:14 2021 +0300
+
+    RozetkaTest#11
+
+[33mcommit 99536384544f02f1756d17e52974d866d330fa19[m
+Merge: c69a3fb 9b0ba17
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 16 12:19:17 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into RozetkaTest#11
+
+[33mcommit c69a3fba6b6229e74a7eb4825a93d4cf56b0f905[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 16 12:19:05 2021 +0300
+
+    RozetkaTest#11
+
+[33mcommit 9b0ba176e0b623f9dc9f835006457d5643222d74[m
+Merge: 9e6c343 bd9c583
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 16 11:55:39 2021 +0300
+
+    Merge pull request #105 from Znamm9/RozetkaTest#10
+    
+    Rozetka test#10
+
+[33mcommit 9e6c343d2b3cb56bbaa695b5cf0688ab1ee5db75[m
+Merge: 95f9d4f 2b3944e
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 16 10:55:29 2021 +0200
+
+    Merge pull request #106 from Znamm9/VadimSDnuhoy
+    
+    Block Price Url Clikabls
+
+[33mcommit 95f9d4f09b76c714d6389e7081407cac716064c5[m
+Merge: 622de03 a608565
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 16 11:55:23 2021 +0300
+
+    Merge pull request #103 from Znamm9/RozetkaTest#9
+    
+    Rozetka test#9
+
+[33mcommit 2b3944e9d2d0b945741c5c7f62d759669ab686bd[m[33m ([m[1;31morigin/VadimSDnuhoy[m[33m, [m[1;31morigin/SchastiyaIZdoroviya[m[33m, [m[1;31morigin/IVsegoHoroshego[m[33m)[m
+Merge: 7045ed3 622de03
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 15 17:07:25 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into VadimSDnuhoy
+
+[33mcommit 7045ed3da0d5348678188beae0ad0e156656e290[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 15 17:06:13 2021 +0200
+
+    15.04.Up
+
+[33mcommit bd9c58396e66d84e8c8b1d6921ab83b7e4316d00[m[33m ([m[1;31morigin/RozetkaTest#10[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 15 15:57:17 2021 +0300
+
+    RozetkaTest#10
+
+[33mcommit a6085652ce03120a0d9a15ca252140d1c73f1697[m[33m ([m[1;31morigin/RozetkaTest#9[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 15 14:34:30 2021 +0300
+
+    RozetkaTest#9
+
+[33mcommit 1360afb0dd0d35063569d88378398dc607b58c28[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 15 14:33:46 2021 +0300
+
+    RozetkaTest#9
+
+[33mcommit 622de030854d208872fd2e8b635c1a574ad352f3[m
+Merge: 1a9ac7d 7330bae
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 15 11:31:05 2021 +0200
+
+    Merge pull request #94 from Znamm9/VCatalogRelatedCategories
+    
+    V catalog related categories
+
+[33mcommit 7330baecbc0e2146a295bd7647f30d16ea8dc491[m[33m ([m[1;31morigin/VCatalogRelatedCategories[m[33m)[m
+Merge: cdd7b61 1a9ac7d
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 15 11:29:59 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into VCatalogRelatedCategories
+
+[33mcommit 1a9ac7dee65a214a004a441d000c5b249008f91c[m
+Merge: 06bb6f4 dc2054e
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 15 12:25:22 2021 +0300
+
+    Merge pull request #98 from Znamm9/RozetkaTest#8
+    
+    Rozetka test#8
+
+[33mcommit 06bb6f4b163e4c8720bb8c4d4ace0aa895661173[m
+Merge: 72e6449 85bfd23
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 15 12:25:11 2021 +0300
+
+    Merge pull request #97 from Znamm9/RozetkaTest#7
+    
+    Rozetka test#7
+
+[33mcommit 72e6449b27363731e8c068664309cab6cf88f5e5[m
+Merge: ee0435c b3b2c5d
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 15 12:25:02 2021 +0300
+
+    Merge pull request #96 from Znamm9/RozetkaTest#6
+    
+    Rozetka test#6
+
+[33mcommit ee0435c2174dff5566c6e17452967914ccbebd11[m
+Merge: 0bc2190 81eda66
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Apr 15 12:24:51 2021 +0300
+
+    Merge pull request #95 from Znamm9/RozetkaTest#5
+    
+    Rozetka test#5
+
+[33mcommit 0bc21909201dae3526056f222f8f11c133a727e4[m
+Merge: 9b02fed da6a047
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 15 11:23:20 2021 +0200
+
+    Merge pull request #91 from Znamm9/vCatalogCatalog
+    
+    V catalog catalog
+
+[33mcommit cdd7b61e1ffe6b519909e6210e4531826f0f67c1[m[33m ([m[1;31morigin/VCatalogUrlClicabl[m[33m, [m[1;31morigin/VCatalogRelatedCategoriesUrlClickk[m[33m, [m[1;31morigin/VCatalogRelatedCategoriesUrlClick[m[33m, [m[1;31morigin/VCatalogPopularUrlClick[m[33m, [m[1;31morigin/VCatalogManufaktureUrlClick[m[33m)[m
+Merge: 5717e61 9b02fed
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 14 22:24:28 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into VCatalogRelatedCategories
+
+[33mcommit dc2054e0f16d243edf0540904e3a015a18039ffe[m[33m ([m[1;31morigin/RozetkaTest#8[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 14 23:23:24 2021 +0300
+
+    RozetkaTest#8
+
+[33mcommit 5717e61a5b5204113a10d199c36fae8961ceec8a[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 14 22:21:52 2021 +0200
+
+    14.04.VCatalogUrlClicabl
+
+[33mcommit 85bfd23889a4ac05de6d81a73922949b955cf586[m[33m ([m[1;31morigin/RozetkaTest#7[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 14 23:04:51 2021 +0300
+
+    RozetkaTest#7
+
+[33mcommit b3b2c5d7927fe51cfe17466df57aeffd22fc202b[m[33m ([m[1;31morigin/RozetkaTest#6[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 14 17:21:09 2021 +0300
+
+    RozetkaTest#6
+
+[33mcommit 81eda66e5ec8028bf053e3c1163d6b9c8ff7297c[m[33m ([m[1;31morigin/RozetkaTest#5[m[33m)[m
+Merge: b4fd75b 9b02fed
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 14 16:28:00 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into RozetkaTest#5
+
+[33mcommit 9b02fed8f8049ba0840e97f664039b15a202ce65[m
+Merge: fac9459 4c3c7bd
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 16:27:24 2021 +0300
+
+    Merge pull request #89 from Znamm9/RozetkaTest#4
+    
+    Rozetka test#4
+
+[33mcommit fac9459ffc0ef7e86cee8f0d818df923fea7aaae[m
+Merge: b7fc346 f350d09
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 16:27:01 2021 +0300
+
+    Merge pull request #88 from Znamm9/RozetkaTest#3
+    
+    Rozetka test#3
+
+[33mcommit b7fc3465ef9d859129efdeff2057d3fdc2b97513[m
+Merge: 8e90508 b79d339
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 16:26:50 2021 +0300
+
+    Merge pull request #87 from Znamm9/RozetkaTest#2
+    
+    Rozetka test#2
+
+[33mcommit b4fd75b798b3c8daea170daa17b627ad39d3aa32[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 14 16:26:11 2021 +0300
+
+    RozetkaTest#5
+
+[33mcommit da6a047dbb106c8d73c636ab7eff7391609e2d32[m[33m ([m[1;31morigin/vCatalogCatalog[m[33m, [m[1;31morigin/VCatalogPopular[m[33m, [m[1;31morigin/VCatalogManufakture[m[33m)[m
+Merge: a049023 8e90508
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 14 13:04:47 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into vCatalogCatalog
+
+[33mcommit a0490237e2a748242e2112a3b36d8dc081e0b31e[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Apr 14 13:00:05 2021 +0200
+
+    14.04.Up vCatalogCatalog
+
+[33mcommit 8e90508991d8b771a06f31fda204a620e0b54743[m
+Merge: 1174afa 7e89dd5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 13:59:40 2021 +0300
+
+    Merge pull request #86 from Znamm9/RozetkaTest#1
+    
+    Rozetka test#1
+
+[33mcommit 1174afa1991c1576f4eae509b49d035cdac3533b[m
+Merge: 429508d 29baf9d
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 13:59:16 2021 +0300
+
+    Merge pull request #84 from Znamm9/VijarTest#15
+    
+    Vijar test#15
+
+[33mcommit 429508dd77ccfc0c2155d5258a99dad9926f7bc5[m
+Merge: d2df4c0 b5f84d6
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 13:58:49 2021 +0300
+
+    Merge pull request #82 from Znamm9/VijarTest#14
+    
+    Vijar test#14
+
+[33mcommit d2df4c0a9f6709daf6b6fa64a98f684c4dda7a87[m
+Merge: a3232c6 a1c6208
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Wed Apr 14 13:58:37 2021 +0300
+
+    Merge pull request #81 from Znamm9/VijarTest#13
+    
+    Vijar test#13
+
+[33mcommit a3232c6735f4b01916b10ab4dd12e238bd20a8c7[m
+Merge: 8f8b1fa 72c8ed5
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Wed Apr 14 12:57:47 2021 +0200
+
+    Merge pull request #85 from Znamm9/SmartAndTelefonsCheckBar
+    
+    Smart and telefons check bar
+
+[33mcommit 8f8b1fa22a5432f271e1a7667895a522335eafa1[m
+Merge: 6a21bc3 9b3fb3f
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Wed Apr 14 12:57:32 2021 +0200
+
+    Merge pull request #83 from Znamm9/FooterUsefulInformation
+    
+    Footer useful information
+
+[33mcommit bba0e05d910bd8961eb27cec273771347ab4ef75[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed Apr 14 13:10:42 2021 +0300
+
+    refactoring BasePage
+
+[33mcommit 4c3c7bd9225bbf969d991e00a779d195a1973fec[m[33m ([m[1;31morigin/RozetkaTest#4[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 23:10:22 2021 +0300
+
+    RozetkaTest#4
+
+[33mcommit f350d095bf165d677b612783c44ce0dbabf52f42[m[33m ([m[1;31morigin/RozetkaTest#3[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 22:35:01 2021 +0300
+
+    RozetkaTest#3
+
+[33mcommit b79d3390299b68d86ab83b602624daedc59731ae[m[33m ([m[1;31morigin/RozetkaTest#2[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 16:49:02 2021 +0300
+
+    RozetkaTest#2
+
+[33mcommit 7e89dd50bcecebee2e586da108799f6354fdb67f[m[33m ([m[1;31morigin/RozetkaTest#1[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 15:30:01 2021 +0300
+
+    RozetkaTest#1
+
+[33mcommit 72c8ed5ebfa82625cca1c9827b08d896a7c207b7[m[33m ([m[1;31morigin/SmartAndTelefonsCheckBar[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 13 14:26:28 2021 +0200
+
+    SmartAndTelefonsCheckBar
+
+[33mcommit 29baf9d999d4c437ec7d7ebf2e0445e0b9894037[m[33m ([m[1;31morigin/VijarTest#15[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 14:18:37 2021 +0300
+
+    VijarTest#15
+
+[33mcommit 9b3fb3fdb46479bd388cbf696201965d2256fcda[m[33m ([m[1;31morigin/FooterUsefulInformation[m[33m)[m
+Merge: 3e853b2 6a21bc3
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 13 12:46:03 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into FooterUsefulInformation
+
+[33mcommit 3e853b2de2cff886c48f85d11e6c520eca8b0ff4[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 13 12:45:19 2021 +0200
+
+    FooterUsefulInformation
+
+[33mcommit b5f84d6b8bdc2d2fbc4a1db027723f8803eb4126[m[33m ([m[1;31morigin/VijarTest#14[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 13:18:25 2021 +0300
+
+    VijarTest#14
+
+[33mcommit a1c62085741ac3c6a95a85fe07fb090ef524bd2b[m[33m ([m[1;31morigin/VijarTest#13[m[33m)[m
+Merge: 2b8564b 6a21bc3
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 12:29:09 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into VijarTest#13
+
+[33mcommit 2b8564bf3f6f0c7cd6a341e42346c330c5ffd590[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 13 12:28:53 2021 +0300
+
+    VijarTest#13
+
+[33mcommit 6a21bc30ffeb696414010aa58b45b7b45da295a2[m
+Merge: 19d1357 f1b9a71
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 13 11:13:07 2021 +0200
+
+    Merge pull request #80 from Znamm9/FooterHelpCheckUrl
+    
+    Footer help check url
+
+[33mcommit 19d135796c3e16c6fba56b7da7970d94e1cf4235[m
+Merge: afce854 75dc188
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 13 11:12:26 2021 +0200
+
+    Merge pull request #79 from Znamm9/FooterCompaniCheckUrl
+    
+    Footer compani check url
+
+[33mcommit afce854652fb993a362fcb790cfb416403976f73[m
+Merge: e1df1df e674edb
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:10:50 2021 +0300
+
+    Merge pull request #74 from Znamm9/VijarTest#12
+    
+    Vijar test#12
+
+[33mcommit e1df1dfa2d070b0c2c49cc395d466b9e257c676e[m
+Merge: f1e2cbf 145064a
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:10:27 2021 +0300
+
+    Merge pull request #73 from Znamm9/VijarTest#11
+    
+    Vijar test#11
+
+[33mcommit f1e2cbfc7d2fbe21c88e370f87c886aec6cafc80[m
+Merge: 45bb7ae a1b3524
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:10:05 2021 +0300
+
+    Merge pull request #72 from Znamm9/VijarTest#10
+    
+    Vijar test#10
+
+[33mcommit 45bb7ae652655b9d7a1bd43bc2f93c9ba36eac1c[m
+Merge: 76e3ef1 93757e6
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:09:48 2021 +0300
+
+    Merge pull request #71 from Znamm9/VijarTest#9
+    
+    Vijar test#9
+
+[33mcommit 76e3ef17f177167cd4937374ed5a315353076008[m
+Merge: 621b7e0 3165cae
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:09:38 2021 +0300
+
+    Merge pull request #70 from Znamm9/VijarTest#8
+    
+    Vijar test#8
+
+[33mcommit 621b7e03fe78654383f5188d3b4b64e64247d33c[m
+Merge: d12c234 b539cba
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:09:22 2021 +0300
+
+    Merge pull request #69 from Znamm9/VijarTest#7
+    
+    Vijar tests#6 and  7
+
+[33mcommit d12c2343c4be8319dcb142176bf0670f56506286[m
+Merge: 2cae9f7 740ffb5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:09:08 2021 +0300
+
+    Merge pull request #68 from Znamm9/VijarTest#5
+    
+    Vijar test#5
+
+[33mcommit 2cae9f711b1871838123015dd351b26d8d51a6d1[m
+Merge: f41fe54 b7c47ec
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:08:56 2021 +0300
+
+    Merge pull request #67 from Znamm9/VijarTest#4
+    
+    Vijar test#4
+
+[33mcommit f41fe547a401036c4560da1e45c12bcc95dcda52[m
+Merge: 70d750c 110432b
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:08:45 2021 +0300
+
+    Merge pull request #66 from Znamm9/VijarTest#3
+    
+    Vijar test#3
+
+[33mcommit 70d750c098d236d7c3ddbda6989a4cdb982c8c8c[m
+Merge: f311da7 e5e69c4
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 13 12:08:32 2021 +0300
+
+    Merge pull request #65 from Znamm9/VijarTest#2
+    
+    Vijar test#2
+
+[33mcommit f1b9a71bbdf2b1f92fc339ec0e1690892ab280cc[m[33m ([m[1;31morigin/FooterHelpCheckUrl[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 12 22:13:08 2021 +0200
+
+    FooterHelpCheckUrl
+
+[33mcommit 75dc1889376febeaf27cb811164b2427936cdd5c[m[33m ([m[1;31morigin/FooterCompaniCheckUrl[m[33m)[m
+Merge: c8f7a83 f311da7
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 12 21:51:39 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into FooterCompaniCheckUrl
+
+[33mcommit c8f7a83ffbac80764d206de25bfc21e6e568a8bb[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 12 21:50:27 2021 +0200
+
+    12.04.Up.FooterCompaniCheckUrl
+
+[33mcommit 210d476f98830c6be2d9ccf4b4c30045b90607ae[m
+Merge: 0e3c779 f311da7
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 12 21:52:20 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into APIrozetka
+
+[33mcommit e674edbad019d32d95e30439c6ecb2feac7a8111[m[33m ([m[1;31morigin/VijarTest#12[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 21:19:03 2021 +0300
+
+    VijarTest#12
+
+[33mcommit 145064a20525c756028516b6af7d7abfa40baa41[m[33m ([m[1;31morigin/VijarTest#11[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 21:10:52 2021 +0300
+
+    VijarTest#11
+
+[33mcommit 69326f12f8e49a56bac98eefb521a0c6a6c8d88a[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 18:00:18 2021 +0300
+
+    VijarTest#11
+
+[33mcommit a1b35241856b1e9e1bf298cda5c949f954eaae30[m[33m ([m[1;31morigin/VijarTest#10[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 17:52:10 2021 +0300
+
+    VijarTest10
+
+[33mcommit 93757e6cf00a5a484ed8983876a7730f302b316f[m[33m ([m[1;31morigin/VijarTest#9[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 17:34:44 2021 +0300
+
+    VijarTest#9
+
+[33mcommit 3165caea5ab010b9af78f4a15bff39c683f20ce7[m[33m ([m[1;31morigin/VijarTest#8[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 17:22:13 2021 +0300
+
+    VijarTest#8
+
+[33mcommit b539cba65b29006d356a07d41992b8e0ef5d78db[m[33m ([m[1;31morigin/VijarTest#7[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 17:08:25 2021 +0300
+
+    VijarTest#7
+
+[33mcommit 74b5d807b76ec7a05c2a2f3ed356eda648c1db64[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 17:07:52 2021 +0300
+
+    VijarTest#7
+
+[33mcommit 740ffb5a9b3ac2dfb52594d42ab52b5e8663c959[m[33m ([m[1;31morigin/VijarTest#5[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 16:55:05 2021 +0300
+
+    Vijar Test#6
+
+[33mcommit 73d82c4fc606cd9c0b9b49276853ac29ab051db5[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 14:51:56 2021 +0300
+
+    Vijar Test #5
+
+[33mcommit b7c47ec4422c54db8233c5e5164287d2c20a1ab3[m[33m ([m[1;31morigin/VijarTest#4[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 14:00:22 2021 +0300
+
+    Vijar Test#4
+
+[33mcommit 110432ba51e5461130c754834e9d16a8f53a4d25[m[33m ([m[1;31morigin/VijarTest#3[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 13:47:31 2021 +0300
+
+    Vijar Test #3
+
+[33mcommit ec8e873a808b148946241168e8a639819ab7fb06[m
+Merge: e5e69c4 f311da7
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 13:26:20 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into VijarTest#2
+
+[33mcommit f311da7c179757a3dc6afb43e0830c47caab8a22[m
+Merge: febc71c df66fa1
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 12:24:46 2021 +0200
+
+    Merge pull request #64 from Znamm9/FeedBackBooton
+    
+    Feed back booton
+
+[33mcommit e5e69c431e7cdc5d86495d70c8b485b8f822190e[m[33m ([m[1;31morigin/VijarTest#2[m[33m)[m
+Merge: 4a8e968 febc71c
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 13:24:16 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into VijarTest#2
+
+[33mcommit 4a8e968fa84419cd1565624ed847659ff17655d9[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 13:24:02 2021 +0300
+
+    Vijar Test#2
+
+[33mcommit febc71c7ed0dec1a1e2427cc42cde2a4e4ab45bf[m
+Merge: 6a0696f 7cef9d3
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 12 13:21:14 2021 +0300
+
+    Merge pull request #63 from Znamm9/VijarTest#1
+    
+    Vijar test#1
+
+[33mcommit 7cef9d3b3258c787fd9fbe663ec514e360dae6ae[m[33m ([m[1;31morigin/VijarTest#1[m[33m)[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 12 13:20:20 2021 +0300
+
+    Update HomePageVijar.java
+    
+    I have Done
+
+[33mcommit 0e3c7792f696c6f45def5c092c35c54f077a1bad[m
+Merge: cc4d354 6a0696f
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 12 13:16:01 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into APIrozetka
+
+[33mcommit cc4d3543c671359440b5871e83517614a48654fe[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 12 13:15:39 2021 +0300
+
+    add test and modified tests, add little API test
+
+[33mcommit df66fa104c04ecb25d396a1edba1bbe956128a7f[m[33m ([m[1;31morigin/FeedBackBooton[m[33m)[m
+Merge: c821ee6 6a0696f
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 12 12:14:21 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into FeedBackBooton
+
+[33mcommit c821ee6fd21366c8fd43bc28b91aebd3aff50bdb[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 12 12:13:22 2021 +0200
+
+    12.04.Up FeedBackBooton
+
+[33mcommit b9f2b23c44ed1e18279d9c3325c0302c395b5fda[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 12:44:16 2021 +0300
+
+    Login Test for Vijar #1
+
+[33mcommit 8d8c4eb5ce0d56d9ec13be906d44c15dac777bed[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 12 12:43:48 2021 +0300
+
+    Login Test for Vijar #1
+
+[33mcommit 6a0696fa6acb811537c6169041a3b258e8e33e87[m
+Merge: a66879b a4f0f25
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 11:02:33 2021 +0200
+
+    Merge pull request #62 from Znamm9/FooterUsefulInformationList
+    
+    Footer useful information list
+
+[33mcommit a66879b7f82bec3b86a0d8408b8b6442f80c5ce2[m
+Merge: 55419e1 b206f78
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 11:01:33 2021 +0200
+
+    Merge pull request #60 from Znamm9/FooterCompani
+    
+    Footer compani
+
+[33mcommit 55419e1c9090a15b2c0595e940d68249cef302c5[m
+Merge: bb00c8a d4cd55a
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 11:01:02 2021 +0200
+
+    Merge pull request #59 from Znamm9/CheckingHederItems
+    
+    Checking heder items
+
+[33mcommit bb00c8a44fd5c200ec6b42457cf9639f0b551633[m
+Merge: 4878831 b02dee1
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 11:00:44 2021 +0200
+
+    Merge pull request #57 from Znamm9/AddItemsInBasket
+    
+    Add items in basket
+
+[33mcommit 487883103721b7904892ec56e46075bf8e7970c3[m
+Merge: 739bf0f 6f76138
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 11:00:27 2021 +0200
+
+    Merge pull request #56 from Znamm9/CheckCategories
+    
+    Check categories
+
+[33mcommit 739bf0f92355d2762fcea5b259a4a2a33b0965f3[m
+Merge: 1b3833d c58664d
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 11:00:12 2021 +0200
+
+    Merge pull request #54 from Znamm9/choiceModelsTelefons
+    
+    Choice models telefons
+
+[33mcommit 1b3833de64fe592b1f1a1d39b6a0e397380362ab[m
+Merge: 6242520 800b2bb
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Mon Apr 12 10:59:42 2021 +0200
+
+    Merge pull request #50 from Znamm9/ExchangeProduks
+    
+    Exchange produks
+
+[33mcommit a4f0f251720a47144d7d4e38e5f58ff0b12ba87b[m[33m ([m[1;31morigin/FooterUsefulInformationList[m[33m)[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sun Apr 11 19:26:00 2021 +0200
+
+    Update CheckingHederItems.java
+
+[33mcommit b206f784c9555270ae2caac0afea96bb5a8d5b60[m[33m ([m[1;31morigin/FooterHelp[m[33m, [m[1;31morigin/FooterCompani[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sun Apr 11 19:18:53 2021 +0200
+
+    11.04.Up Evning
+
+[33mcommit d4cd55ab7937d0c432cab85e74e567b003bd8d3c[m[33m ([m[1;31morigin/CheckingHederItems[m[33m)[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sun Apr 11 11:02:59 2021 +0200
+
+    Update CheckingHederItems.java
+
+[33mcommit ba78fe82d1a73de125b5a45a1abe1a13e61ac2a9[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Sun Apr 11 11:01:48 2021 +0200
+
+    Update CheckingProductCatalogLocators.java
+
+[33mcommit c65c9c79a7a59fbd4ac5158b3b38a4fcbf00ccdc[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sun Apr 11 10:59:25 2021 +0200
+
+    11.04.Up CheckingHederItems
+
+[33mcommit 26eff9c44a71d07a79f2d4322041ccf7326c7c58[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Sun Apr 11 10:57:41 2021 +0200
+
+    11.04.Up CheckingProductCatalog
+
+[33mcommit b02dee1f141ff2fea964f6476b7307a620e118c3[m[33m ([m[1;31morigin/PersonSingIn[m[33m, [m[1;31morigin/AddItemsInBasket[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 9 16:55:23 2021 +0200
+
+    AddItemsInBasket
+
+[33mcommit 6f761387166aefc2b8ab5ff3b34e57bcbcece383[m[33m ([m[1;31morigin/CheckCategories[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 9 16:50:06 2021 +0200
+
+    CheckCategories
+
+[33mcommit 7ba9c766b58a167021a46f7c2ba9771f922754cb[m[33m ([m[1;31morigin/testHelpCentre[m[33m)[m
+Merge: 9a9f6eb 6242520
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Apr 9 17:44:35 2021 +0300
+
+    fix conflicts
+
+[33mcommit 03ee4267d591c42e0ea2b2de91a74804cf8262e5[m[33m ([m[1;31morigin/CheckAuthenticationRegister[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 9 16:43:27 2021 +0200
+
+    CheckAuthenticationRegister
+
+[33mcommit 9a9f6eb63590545754a90a46beaf61664a072cb1[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Apr 9 17:39:32 2021 +0300
+
+    add test search on page help centre and add test find site on 8 google pages
+
+[33mcommit c58664d84ef8f5b0b7e113a80cb5f89239a96875[m[33m ([m[1;31morigin/choiceModelsTelefons[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 9 16:34:42 2021 +0200
+
+     choiceModelsTelefons
+
+[33mcommit 800b2bbeabe0cf464f895a5dd84a44060347582c[m[33m ([m[1;31morigin/TestCities[m[33m, [m[1;31morigin/PriceCheckTelefons[m[33m, [m[1;31morigin/ExchangeProduks[m[33m, [m[1;31morigin/ChengesLanguage[m[33m)[m
+Merge: 400076d 6242520
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 9 16:18:20 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into ExchangeProduks
+
+[33mcommit 400076dfde341bc54ed23bb4be21517bac586132[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 9 16:12:50 2021 +0200
+
+    09.04.Up  ExchangeProduks
+
+[33mcommit 6242520a5ed33a386fc119f11156eff57801a8c7[m
+Merge: fa42284 7aed074
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 9 14:44:28 2021 +0300
+
+    Merge pull request #48 from Znamm9/Vijar2
+    
+    Vijar2
+
+[33mcommit 7aed074b7473828655d70477c553ea55183c2edf[m[33m ([m[1;31morigin/Vijar2[m[33m)[m
+Merge: 5fe41fa fa42284
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 9 14:44:17 2021 +0300
+
+    Merge branch 'master' into Vijar2
+
+[33mcommit fa4228449e6356b8222fd0a38a5d13f21cd6123c[m
+Merge: 4c5e012 0d650f3
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 9 13:01:47 2021 +0200
+
+    Merge pull request #49 from Znamm9/GooglePosition
+    
+    Google position
+
+[33mcommit 5fe41fa4d0fc1fe3ee6eb15a4544a4c8244cbf60[m
+Merge: 67c1683 4c5e012
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 8 16:43:33 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into Vijar2
+
+[33mcommit 67c16831c447b2386636502df46e1abb5e7045ff[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 8 16:43:18 2021 +0300
+
+    the 13th Test
+
+[33mcommit 0d650f33e8d3a884a58c637eeba3a3a1a296810a[m[33m ([m[1;31morigin/GooglePosition[m[33m)[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 8 14:36:45 2021 +0200
+
+    08.0.4Up GooglePosition
+
+[33mcommit 1fe8300c913c8598ebbb6680480c77dbd924f48e[m
+Merge: efb14a3 4c5e012
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 8 14:30:50 2021 +0200
+
+    08.0.4Up GooglePosition
+
+[33mcommit efb14a3be56fde99c6fa0f44eda8e1880c68c1ad[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 8 14:26:37 2021 +0200
+
+    08.0.4Up GooglePosition
+
+[33mcommit 4c5e012f91369d9f7b302b8e3692c65d84ae3c9e[m
+Merge: 6b43176 cfe436e
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Apr 8 10:50:56 2021 +0200
+
+    Merge pull request #47 from Znamm9/ChoicemodelsTelefon
+    
+    Choicemodels telefon
+
+[33mcommit b6c57af3be9cdc132f018422a460cc7df6bc611b[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 7 17:23:45 2021 +0300
+
+    Test number 12
+
+[33mcommit da3210c9fef049392ad90bb918e819c8605066fe[m
+Merge: 95d4625 6b43176
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 7 16:21:26 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into Vijar2
+
+[33mcommit 95d46250907608a39a27f4bf580df023892a2942[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Apr 7 16:21:10 2021 +0300
+
+    two new Tests
+
+[33mcommit cfe436eba678612bb12b0421d1c2534079f770e8[m[33m ([m[1;31morigin/ChoicemodelsTelefon[m[33m)[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 6 22:51:02 2021 +0200
+
+    Update ChoiceModelsTelefons.java
+
+[33mcommit 0f9e64e7ed44e8f90d2ba8ccc18de4d3fb71e467[m
+Merge: 5d3453c 6b43176
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 6 20:06:24 2021 +0200
+
+    Merge branch 'master' into ChoicemodelsTelefon
+
+[33mcommit 5d3453c3b144905f83ad47a41cfe6dae4cf70c7d[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 6 20:04:40 2021 +0200
+
+    06.04.Up ChoicemodelsTelefon
+
+[33mcommit 6b43176c31e8410a3b62ba4586faeb81faee149a[m
+Merge: a39a723 393b095
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 6 17:02:09 2021 +0300
+
+    Merge pull request #46 from Znamm9/Vijar2
+    
+    Vijar2
+
+[33mcommit a39a72377302ebb81cc9ed6c74a9810d872d525b[m
+Merge: 71f0d74 d775cbd
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 6 16:01:52 2021 +0200
+
+    Merge pull request #41 from Znamm9/testAlloSite
+    
+    05.04 Test allo site
+
+[33mcommit 393b09515add517dcb645c42baaa15e6ad4d4989[m
+Merge: de76f86 71f0d74
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 6 15:25:44 2021 +0300
+
+    fix conflict
+
+[33mcommit 71f0d74daf5ab41c2eb00aa196b75b6197f7198a[m
+Merge: b11bcbb 91abfe7
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 6 15:18:48 2021 +0300
+
+    Merge pull request #44 from Znamm9/Vijar2
+    
+    Vijar2
+
+[33mcommit 91abfe7abd490c19aa1d9f2e37855e188201c8c7[m
+Merge: 609c614 b11bcbb
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Tue Apr 6 15:18:26 2021 +0300
+
+    Merge branch 'master' into Vijar2
+
+[33mcommit de76f86e04b3631aae1765452529c07a04902e0f[m
+Merge: 609c614 b11bcbb
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 6 15:16:09 2021 +0300
+
+    Vijar2 06.04.21
+
+[33mcommit f845540700693745e3121e84995ad6f6ae469926[m
+Merge: 0a209d7 b11bcbb
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 6 14:12:05 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testAlloSite
+
+[33mcommit 609c6140cfa5a134f1fb1f15c2f273816f4b21c6[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 6 15:09:45 2021 +0300
+
+    Vijar 06.04.21
+
+[33mcommit d775cbdd9ac7080b6c7532faa80e4e8fa66c335a[m[33m ([m[1;31morigin/testAlloSite[m[33m)[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 6 13:51:50 2021 +0200
+
+    Update PriceCheckTelefons.java
+    
+    Fixed
+
+[33mcommit 3e21d35334354e10362fbb742f6c4a5f12c0bd04[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 6 13:50:56 2021 +0200
+
+    Update LocatorsForPriceCheckTelefons.java
+    
+    Fixed
+
+[33mcommit 7924b9896a696c6b45eae96b21001768d78865f2[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 6 13:50:11 2021 +0200
+
+    Update PersonSingIn.java
+
+[33mcommit ff428f57bc4a22332594a44457cbfcaef1ad6cab[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Apr 6 13:49:26 2021 +0200
+
+    Update PersonSingIn.java
+    
+    Fixed
+
+[33mcommit b11bcbb83f03d5271ef67fb3e52c891f3a5def12[m
+Merge: 3de7b50 d1b4a5c
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Tue Apr 6 14:42:10 2021 +0300
+
+    Merge pull request #45 from Znamm9/testLanguage
+    
+    Test language
+
+[33mcommit 0a209d7b6c5ea0088308609844059436a2351964[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Apr 6 13:27:33 2021 +0200
+
+    06.04.Day Up TestAllo
+
+[33mcommit d1b4a5c17d7b9e1221fa5d285ee6f4831429f03d[m[33m ([m[1;31morigin/testLanguage[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 6 14:01:36 2021 +0300
+
+    fix class TestRozetkaSearch
+
+[33mcommit 3223453cc095fdd88516333833bd3be2faf0aacc[m
+Merge: 1acd7e4 3de7b50
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 6 12:51:51 2021 +0300
+
+    fix bag in TestInit
+
+[33mcommit 1acd7e4f2d64a847c94db8c593fe57b5eb63e129[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 6 12:50:27 2021 +0300
+
+    add test assert language
+
+[33mcommit 682e4378037a8164088f1f470095ddc5dca32a52[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Apr 6 12:28:21 2021 +0300
+
+    add class logators
+
+[33mcommit 92da6bff709a3340afd954df68a1b8c56e1f8a55[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Apr 6 12:13:28 2021 +0300
+
+    Vijar 4 Test
+
+[33mcommit f4507143b4f2f0b1d8d35482e2279afe533df10b[m
+Merge: 5f4d2ec 6916104
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 20:07:24 2021 +0200
+
+    05.0.4.Evning  Add new TestAllo chengesLanguage
+
+[33mcommit 69161044ef17a7aea886385da92d6f465d517ec2[m
+Merge: cfd1874 3de7b50
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 19:47:19 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework
+
+[33mcommit 5f4d2ec2fd107e5ae6a08e454bc1fefcb6fedd5a[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 19:46:22 2021 +0200
+
+    05.0.4.Add new TestAllo chengesLanguage
+
+[33mcommit b8fc1c327b6798763494cd1a824e2b949bf9265d[m
+Merge: d90d32f 3de7b50
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 20:24:31 2021 +0300
+
+    Check Switching Vijar
+
+[33mcommit 3de7b5003e0ac70532a9f75e1ba807611ee81112[m
+Merge: b17865c 7670590
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 5 20:22:42 2021 +0300
+
+    Merge pull request #42 from Znamm9/Vijar
+    
+    Vijar
+
+[33mcommit d90d32f19bb52ba9e0cbaafd4074783ab192ac9b[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 20:21:09 2021 +0300
+
+     Check Switching Vijar
+
+[33mcommit fc134a2c52561eddd5bfa47a511baf4db8c9f0f8[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 5 18:37:17 2021 +0300
+
+    fix bag in TestInit
+
+[33mcommit da65d65abaa9532850bd96c5cf2808508ee30f84[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 5 18:35:37 2021 +0300
+
+    add test filter
+
+[33mcommit 76705902ad762bc9c4417b6350dcc8009a934aeb[m
+Merge: 9a580d8 b17865c
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 17:55:26 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into Vijar
+
+[33mcommit 9a580d8facf684e737b0b3ec1ecdf69dcadd9ea5[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 17:55:11 2021 +0300
+
+    Test for Vijar 2
+
+[33mcommit 5380f9d2d9369aa6d45ee21b640c0e5c591b0e5c[m
+Merge: 65463bf b17865c
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Mon Apr 5 16:52:54 2021 +0300
+
+    merge from origin master
+
+[33mcommit 16cded4978da9e51c3ee0f221ff81cf3e976760e[m
+Merge: 6a78dfc b17865c
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 13:28:23 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testAlloSite
+
+[33mcommit 6a78dfc79a40c80bf2735862fb97c13d8a00eb0f[m
+Merge: 06839e6 cfd1874
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 13:23:36 2021 +0200
+
+    uncomment method in PersonSingIn
+
+[33mcommit b17865c1680dd1183b4f6bdf0d7abd3f8e1c8da7[m
+Merge: bf09eec a6b3551
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Mon Apr 5 14:22:23 2021 +0300
+
+    Merge pull request #40 from Znamm9/Vijar
+    
+    Vijar
+
+[33mcommit cfd18740403f2b4eba44caa9296cf0bbd97cecf7[m
+Merge: cddf201 bf09eec
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 13:19:23 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework
+
+[33mcommit a6b35515cf479fd0a55bcf610cdb77c39f814ed8[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 14:19:17 2021 +0300
+
+    add something
+
+[33mcommit 06839e6344cb615357650788b6d81ce2bfad8dbc[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Mon Apr 5 13:18:55 2021 +0200
+
+    05.04.Up TestAllo
+
+[33mcommit e12e0390d5046140e486fda35a1e3f8b80e94518[m
+Merge: d74216a bf09eec
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 14:15:28 2021 +0300
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into Vijar
+
+[33mcommit d74216a7bc1fd355473a60b7b340027072c41553[m
+Author: Sam <grinred69@gmail.com>
+Date:   Mon Apr 5 14:14:21 2021 +0300
+
+    Test for Vijar Switch Language
+
+[33mcommit bf09eecfaf801d72399824b8364b45bb2e6be91e[m
+Merge: f755c64 69eb2a5
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 2 15:14:53 2021 +0200
+
+    Merge pull request #31 from Znamm9/testAlloSite
+    
+    Test allo site
+
+[33mcommit 69eb2a533fe977b5724b4269d0b8cbd230c2e1d6[m
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Fri Apr 2 15:12:58 2021 +0200
+
+    Update PersonSingIn.java
+
+[33mcommit 3b0f47f29a36f64cd26413a13ae1e784b8343b41[m
+Merge: 72d7f50 f755c64
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 2 14:34:23 2021 +0200
+
+    02.04 AlloTest
+
+[33mcommit cddf2017d75c81be3c1a5b8812b08a70ede3efe5[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 2 14:25:41 2021 +0200
+
+    qwerrty
+
+[33mcommit 936358351ea774e4f31ee97d43a96b72a043d019[m
+Merge: 9a8f377 f755c64
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 2 14:24:09 2021 +0200
+
+    qwerrty
+
+[33mcommit 72d7f50588fc4dc512032f5a208ee4369e1f2e52[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Apr 2 14:21:09 2021 +0200
+
+    02.04.Updeyt
+
+[33mcommit 594fc02eed628328217af4988d86b083f2024f8a[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 2 13:25:15 2021 +0300
+
+    Vtest
+
+[33mcommit d2b509c03f961b839f0172790dcf84a5b158bf24[m
+Merge: baca8e5 f755c64
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 2 13:04:49 2021 +0300
+
+    Vtest
+
+[33mcommit baca8e5c57ce4565b2248b253aebcc98b4781fc4[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Apr 2 12:57:58 2021 +0300
+
+    Vtest
+
+[33mcommit f755c643d5892b89d3a3cab376db92dc3709c749[m
+Merge: d08d513 e2a228d
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Fri Apr 2 12:52:24 2021 +0300
+
+    Merge pull request #39 from Znamm9/testRozetka2
+    
+    fix method getElement in BasePage
+
+[33mcommit e2a228d5a8004f6f92b547446ba2a3afec2ce6d3[m[33m ([m[1;31morigin/testRozetka2[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Apr 2 12:50:02 2021 +0300
+
+    fix method getElement in Base Page
+
+[33mcommit 65463bfbdf1d5947d673da7d88fe83442bf261cf[m
+Merge: 9550bf8 d08d513
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Apr 2 12:47:08 2021 +0300
+
+    merge
+
+[33mcommit 04746c0e905ea807e63b39cd0ddef03730a3565f[m
+Merge: 0d5c8a6 d08d513
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Apr 2 12:45:29 2021 +0300
+
+    merge origin master into testRozetka2
+
+[33mcommit d08d51341bd72672907095b9de5548c8441a9707[m
+Merge: 8efe46e f366a69
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 2 10:47:41 2021 +0300
+
+    Merge pull request #38 from Znamm9/Vijar
+    
+    Vijar
+
+[33mcommit f366a699a3404c3b578672d0b24af0dafca5a2f7[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 2 10:42:53 2021 +0300
+
+    Update Vijar.java
+
+[33mcommit 714d4dc09b77be67070fa2765a1719d89b2d7dd3[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 2 10:42:37 2021 +0300
+
+    Update Vijar.java
+
+[33mcommit d0e496f201ecf255249bb1dbdbc07de6a3cc093e[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 2 10:40:01 2021 +0300
+
+    Update Vijar.java
+
+[33mcommit 648af9726d2ef80b05f7c377f0841975025f3201[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Apr 2 10:38:39 2021 +0300
+
+    Update TestInit.java
+
+[33mcommit 34b3aa5fa3bd6909ab8fb6c450d93a53f5e0174b[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Apr 1 16:33:47 2021 +0300
+
+    new push
+
+[33mcommit 8efe46e3fc8d7fdd66851c0533656547003e1ce7[m
+Merge: fdc0c1a 179185d
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Thu Apr 1 16:27:21 2021 +0300
+
+    Merge pull request #36 from Znamm9/testAPI
+    
+    Test API
+
+[33mcommit 9a8f3777051bfd227da6b7c2c0f8e30f34e5e5f3[m
+Merge: 6ed1f53 78c9c1a
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 1 15:10:05 2021 +0200
+
+    Merge branch 'master' into testAlloSite
+
+[33mcommit 78c9c1a759c692dc49f1ad810c58a1a2cac6f8ef[m
+Merge: fb02f7c fdc0c1a
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 1 15:09:09 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework
+
+[33mcommit 6ed1f531f7c99a94149725b5edbf9443efe9f9bc[m
+Merge: a833d86 fb02f7c
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 1 14:52:05 2021 +0200
+
+    Merge branch 'master' into testAlloSite
+
+[33mcommit fb02f7ca6ad3bc106b877a788cb9364d76e0f679[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 1 14:50:16 2021 +0200
+
+    qwert
+
+[33mcommit a833d8694405e486bf2ae19877a0e66c07cb13a8[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Apr 1 14:33:09 2021 +0200
+
+    01.04 Updeyt AlloTest
+
+[33mcommit 179185d5fa612f48b31b16ef71747c7bfb3a867e[m[33m ([m[1;31morigin/testAPI[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Apr 1 14:09:49 2021 +0300
+
+    fix bag in API test
+
+[33mcommit db9ae671b01d9655832130a78b5ea2da835db159[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Apr 1 13:10:37 2021 +0300
+
+    add API test
+
+[33mcommit 0d5c8a696430dfb77787ab5ce8cf81d4045031df[m
+Merge: fc6750d fdc0c1a
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Mar 26 14:45:18 2021 +0200
+
+    commit changes
+
+[33mcommit 9550bf8f6d5e5570000f189aa8be27c81a89f7d3[m
+Merge: c0021b6 fdc0c1a
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Mar 26 14:42:33 2021 +0200
+
+    commit all
+
+[33mcommit ebb3fd85f7d566bfaf93f5df6a255ffa3cee11a0[m[33m ([m[1;31morigin/testRozetkaNegative[m[33m)[m
+Merge: 66363b2 fdc0c1a
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Mar 26 14:12:26 2021 +0200
+
+    fix bags
+
+[33mcommit 66363b22df67a38e6d69debcb7c0e5936ca72372[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Mar 26 14:10:00 2021 +0200
+
+    add test search negative
+
+[33mcommit 05d6b770855a642b641e3a776589ce6e5c6056de[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Mar 26 13:06:11 2021 +0200
+
+    New Test for Vijar
+
+[33mcommit fdc0c1a6fff5808fd931ffad9dc5fc9f7d79f530[m
+Merge: 030119d 549646d
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Mar 26 12:53:36 2021 +0200
+
+    Merge pull request #33 from Znamm9/TestsForRozetka
+    
+    Tests for rozetka
+
+[33mcommit 549646d9effe3de7eafe7f9389c1a6dbfba903a0[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Mar 24 13:13:12 2021 +0200
+
+    some chainging for Test 24.03.2021
+
+[33mcommit fc6750d25efede55f8bf05e29a70dcfe55a2162d[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Mar 11 15:28:40 2021 +0200
+
+    Add new test advertising
+
+[33mcommit 21b9a16fb80f2a441be5184b1299b72992bcaa76[m[33m ([m[1;31morigin/NewOlxTest[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Mar 11 15:14:21 2021 +0200
+
+    some changing in olx test
+
+[33mcommit 247fcd4cbf1d23a8f60dc4cdf3b2332cdc7e1267[m
+Merge: db99372 030119d
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Mar 11 13:46:10 2021 +0100
+
+    Mega Apdeyt Allo
+
+[33mcommit 15d482b9271a9ec2ab47ed01ff97dd6c5fc1208b[m
+Author: Sam <grinred69@gmail.com>
+Date:   Thu Mar 11 14:45:02 2021 +0200
+
+    olx fixed
+
+[33mcommit db99372352cfbc0c2f7253aa1bc02ab820bea5f2[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Mar 11 13:29:53 2021 +0100
+
+    Mega Apdeyt Allo
+
+[33mcommit 0c09db9df8ac7e0462e8f52c00d632b824457480[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Mar 11 13:21:41 2021 +0100
+
+    Mega 1
+
+[33mcommit 030119d58696ebe40fa31e064849b9185eee70da[m
+Merge: 7ceb70b 0e9b3f5
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Thu Mar 11 14:09:42 2021 +0200
+
+    Merge pull request #30 from Znamm9/NewOlxTest
+    
+    olx test
+
+[33mcommit 0e9b3f50a97ade28b5f49d0385b2b97c254e8aaa[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Mar 10 15:17:39 2021 +0200
+
+    olx test
+
+[33mcommit 7ceb70b5d1802323ce2ee303512937fcb128417d[m
+Merge: 1e88cc0 d50cfb1
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Wed Mar 10 14:31:32 2021 +0200
+
+    Merge pull request #28 from Znamm9/testRozetka2
+    
+    Fix test Rozetka and add in BasePage screenshots
+
+[33mcommit d50cfb19f26a0c7dbef34a63fbae8f778a5a20c4[m
+Merge: ae3514e 1e88cc0
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed Mar 10 14:30:25 2021 +0200
+
+    fix testInit
+
+[33mcommit ae3514ed6ce40a16a15e1de06356e74608a9c623[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed Mar 10 14:21:56 2021 +0200
+
+    add new test about fonegit
+
+[33mcommit 1e88cc0ea954b76cc1ac7c67404d755eb709f6c9[m
+Merge: 4abda86 7f58706
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Wed Mar 10 08:34:47 2021 +0200
+
+    Merge pull request #29 from Znamm9/testFacebook
+    
+    TestRozetka by Sergey
+
+[33mcommit 7f58706641ea803861c3d1edb59d8f884e10c203[m
+Author: Sam <grinred69@gmail.com>
+Date:   Wed Mar 10 08:11:47 2021 +0200
+
+    OlxTest by Sergey
+
+[33mcommit 2df1ea21b8c8bc6a4200a25aa04ca2babcb5edbd[m
+Merge: 7e63cbb 4abda86
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Mar 9 14:14:03 2021 +0200
+
+    fix
+
+[33mcommit 7e63cbb3fa64fe2a4a4af5650305ff4f62c55739[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Mar 9 14:04:40 2021 +0200
+
+    add TrayTest
+
+[33mcommit 16fddc6245a4aca1573bd25e067fa2aae961614c[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Mar 9 13:59:45 2021 +0200
+
+    added new Test
+
+[33mcommit 3f843f65d3c35502a60d2037499551b1da5c2d67[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Feb 26 16:36:26 2021 +0200
+
+    add wait in test
+
+[33mcommit 55d5759585ea10430f88cf5471d785d035d466e1[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Feb 26 13:27:15 2021 +0200
+
+    removed blank lines
+
+[33mcommit 5dd4ac3cdfcb4fb6d4ca15e5c8b2cc61c5c92601[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Feb 26 13:22:11 2021 +0200
+
+    fix test Rozetka
+
+[33mcommit c0021b6a9c4bf0e19a61109372cdd53bc5f856bc[m
+Merge: 7fb49b8 4abda86
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 25 15:30:09 2021 +0200
+
+    fix pom
+
+[33mcommit ac174c72c6790b5964d1fd5a4f0c2dcd7b18da1f[m
+Merge: a02d757 4abda86
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 25 13:28:42 2021 +0200
+
+    fix test Rozetka
+
+[33mcommit a02d7577b68379798577336176a9b634a4e77459[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 25 13:16:30 2021 +0200
+
+    fix test Rozetka and add in BasePage screenshots
+
+[33mcommit 7fb49b8c98b98ae4e8ea7fda0c772241139d7410[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Wed Feb 24 22:33:02 2021 +0200
+
+    fix test Rozetka
+
+[33mcommit 4abda868b30238176e3aa60f517f525cf767fec9[m
+Merge: d7ae1d9 c9819e6
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Wed Feb 24 14:29:56 2021 +0200
+
+    Merge pull request #27 from Znamm9/jenkins_setup
+    
+    Jenkins setup
+
+[33mcommit c9819e662bd3309d4edb04161138e060a62fa120[m[33m ([m[1;31morigin/jenkins_setup[m[33m)[m
+Merge: 89dfab7 d7ae1d9
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Wed Feb 24 14:29:22 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into jenkins_setup
+
+[33mcommit 89dfab770f16d646fd6871de7ae0949c98044439[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Wed Feb 24 14:28:20 2021 +0200
+
+    added sute variable to pom
+
+[33mcommit d7ae1d9ae2c1b914d4414b39c74f87f1baec1e03[m
+Merge: 4e7983f 04f0be3
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:21:23 2021 +0200
+
+    Merge pull request #25 from Znamm9/jenkins_setup
+    
+    Jenkins setup
+
+[33mcommit 04f0be31a1043cf90b20297095970f3a21ca38cc[m
+Merge: 91ad134 4e7983f
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:20:56 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into jenkins_setup
+
+[33mcommit 91ad13490e7eaccd4ebaa8b4d581518ed5d3dffe[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:20:20 2021 +0200
+
+    only one working test
+
+[33mcommit 4e7983f0a0ba6c273215ac4f67436c390c48e022[m
+Merge: 0f1c9b4 42a393d
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:14:18 2021 +0200
+
+    Merge pull request #24 from Znamm9/jenkins_setup
+    
+    Jenkins setup
+
+[33mcommit 42a393d70d49c147fa104e1524b1d69c60b25fd6[m
+Merge: 00a5354 0f1c9b4
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:13:08 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into jenkins_setup
+
+[33mcommit 00a5354dc769e2bc15769c36a8b5c6dd107112f6[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:12:28 2021 +0200
+
+    added suite for amazon
+
+[33mcommit 0f1c9b4c5c5cbc69ac23cefff4e46dc41832fa64[m
+Merge: 585fe3c fc53085
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:05:09 2021 +0200
+
+    Merge pull request #23 from Znamm9/jenkins_setup
+    
+    Jenkins setup
+
+[33mcommit fc53085e831dc2b197d5b4bf674263ffa08d11da[m
+Merge: 1c77d8d 585fe3c
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:03:34 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into jenkins_setup
+
+[33mcommit 1c77d8dfeddee7eafd1ad0c6db113e43c79c73c6[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:03:06 2021 +0200
+
+    added UI switcher for browser
+
+[33mcommit 884fcd63ab44a4170b239020848dd44bbc3c1f8c[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 17:00:14 2021 +0200
+
+    added headless option
+
+[33mcommit 585fe3c54b318752688359b035b4b787fa5dc3c2[m
+Merge: a34668c 38962e0
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 16:47:52 2021 +0200
+
+    Merge pull request #22 from Znamm9/jenkins_setup
+    
+    added chromedrivers, added test suite
+
+[33mcommit 38962e0ead7c2dc54738e7d49fcc968c22bd9721[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 23 16:40:48 2021 +0200
+
+    added chromedrivers, added test suite
+
+[33mcommit 19adb7e6631339bd58b7d2ccd2b9e0727d6773ae[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Feb 19 16:52:05 2021 +0100
+
+    Mega Obnova 1.0
+
+[33mcommit 34b850a943bb0cd97e023ce153c77c743d86990f[m
+Merge: da4551e a34668c
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Feb 19 16:49:16 2021 +0100
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework
+
+[33mcommit a34668c1f27c96f8ad84f107b403229cb3752b72[m
+Merge: 6a648aa f120f1d
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Fri Feb 19 17:43:07 2021 +0200
+
+    Merge pull request #20 from Znamm9/TestsAmazon
+    
+    Tests amazon
+
+[33mcommit f120f1dbcfb911146f0f67e4ff817c5f238a2d6e[m[33m ([m[1;31morigin/TestsAmazon[m[33m)[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Fri Feb 19 17:38:48 2021 +0200
+
+    change my test
+
+[33mcommit da4551e303885750d543fe98fc4321ec035f64c7[m
+Merge: 5c07f58 6a648aa
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Feb 19 15:56:19 2021 +0100
+
+    allo
+
+[33mcommit 5c07f58c812623f2326ee13d0ce3cf631ce3b708[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Fri Feb 19 15:51:30 2021 +0100
+
+    Allo Test 3
+
+[33mcommit 6a648aa9c562620edbd5e3cb1b4c0185d475653d[m
+Merge: 6a67f02 67922e1
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Fri Feb 19 15:34:38 2021 +0200
+
+    Merge pull request #19 from Znamm9/StepaniukAndii-patch-1
+    
+    Update pom.xml
+
+[33mcommit 67922e1a2d1997b08466be5af712cb4f6cf9f2fc[m[33m ([m[1;31morigin/StepaniukAndii-patch-1[m[33m)[m
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Fri Feb 19 15:33:57 2021 +0200
+
+    Update pom.xml
+
+[33mcommit 951dd06a46db6000e0169c11d8008cdbf644418f[m
+Merge: f762248 6a67f02
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 18 15:38:44 2021 +0200
+
+    change testFacebook
+
+[33mcommit f762248bbba14602bdb69265148fc60522476ed2[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 18 15:32:03 2021 +0200
+
+    add strings to my test
+
+[33mcommit 6a67f02b19579755ca74d81c21e226c8fe4ab8b3[m
+Merge: a55e5f5 6c49093
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Thu Feb 18 15:30:25 2021 +0200
+
+    Merge pull request #17 from Znamm9/testRozetka
+    
+    Made a test for search and fillter
+
+[33mcommit 6c490937a27ec1f14794f0430eda9534a977faec[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 18 15:24:58 2021 +0200
+
+    made a test for search and fillter
+
+[33mcommit a6b5a6ecaf786c2502e51765c7b152994763bc6d[m
+Merge: c1d7466 a55e5f5
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Feb 9 14:21:21 2021 +0200
+
+    Merge branch 'master' of https://github.com/Znamm9/justAutomationFramework into testFacebook
+
+[33mcommit c1d74662d4a182e7a819564c57dab312ea897fc9[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Feb 9 14:21:02 2021 +0200
+
+    09.02.21
+
+[33mcommit db82469c667742f0394bcb8f024b7271a016ab82[m
+Merge: 146b9e1 a55e5f5
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Mon Feb 8 08:31:14 2021 +0200
+
+    dell HomePageRozetka
+
+[33mcommit a55e5f5b29eeb121ff4bd3d0ccc3cdcdefb115f8[m
+Merge: 58f743c f570ab7
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Mon Feb 8 08:22:11 2021 +0200
+
+    Merge pull request #15 from Znamm9/testRozetka
+    
+    fixed bag test Rozetka
+
+[33mcommit 146b9e1916c787d82e14c4e1567fe9644729a88c[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Fri Feb 5 16:17:31 2021 +0200
+
+    Added new test
+
+[33mcommit f570ab7ccae216b4b91056b0844bb4c7129b6309[m
+Merge: 187e357 58f743c
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Feb 5 14:19:41 2021 +0200
+
+    fix bag
+
+[33mcommit 187e357042d304ea6dbde31a9fb7431275c79d55[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Fri Feb 5 14:14:17 2021 +0200
+
+    fix bag with my package TestRozetka
+
+[33mcommit a0b3cf2b8606c0eff0d61af59f347856351596b4[m
+Merge: b85f369 58f743c
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Fri Feb 5 14:12:39 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into TestsAmazon
+    
+    Hello people! Test.
+
+[33mcommit 58f743c0358ebece0836bf392484e133aa2dc991[m
+Merge: 47f473b deaf0de
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Feb 5 14:11:33 2021 +0200
+
+    Merge pull request #14 from Znamm9/testFacebook
+    
+    Test facebook
+
+[33mcommit deaf0deccd76f342059aeeb62bfdf7a2e13f5263[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Feb 5 14:09:49 2021 +0200
+
+    Update HomePageFacebook.java
+
+[33mcommit 80d89bc9333f282fc473636a38b210d00531c972[m
+Author: grinred <77415541+grinred@users.noreply.github.com>
+Date:   Fri Feb 5 14:08:01 2021 +0200
+
+    Update HomePageFacebook.java
+
+[33mcommit d3b55d336070757d64688472d806ecc65358ac93[m[33m ([m[1;31morigin/123[m[33m)[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Feb 5 13:24:14 2021 +0200
+
+    myNewFoulder
+
+[33mcommit 15b2dade0a72b6fc5a45193a63091fb8730a4e2e[m
+Merge: 188fb2a 47f473b
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Feb 5 13:08:32 2021 +0200
+
+    WTF
+
+[33mcommit 188fb2ac5a321a3ec96849c9f75089b6bee65727[m
+Author: Sam <grinred69@gmail.com>
+Date:   Fri Feb 5 13:00:30 2021 +0200
+
+    Etwas neues@
+
+[33mcommit b85f369a7ef01f8629b0ddddf6d45a25f0ca4244[m
+Merge: ecd4523 47f473b
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Fri Feb 5 12:02:45 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into TestsAmazon
+
+[33mcommit ecd452321d33d8ae2d9fcd0a1033a6ba2f0a3264[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Fri Feb 5 12:02:32 2021 +0200
+
+    Added new tests
+
+[33mcommit 47f473b7e952534220e7b2828f7019aebcbbe524[m
+Merge: a685f72 d3df191
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Fri Feb 5 12:01:07 2021 +0200
+
+    Merge pull request #12 from Znamm9/testAlloSite
+    
+    Test allo site
+
+[33mcommit d3df19164dc20c60381aa2878160186e8a50ed17[m
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Fri Feb 5 12:00:13 2021 +0200
+
+    Delete your BasePage and TestInit
+    
+    You should be use our TestInit and BasePage which was created for all us.
+
+[33mcommit 2cf2217a250824d0eddfb41f4e28d69dc409c2f5[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Feb 4 18:20:52 2021 +0100
+
+    conflict resoled fixed
+
+[33mcommit 14c9efca47479e228d4c031a3881a9a3639cbc03[m
+Merge: 75389c7 a685f72
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Feb 4 16:08:15 2021 +0300
+
+     new me test Allo site
+
+[33mcommit 75389c7add8b6d9b1cf62e1285d5966293d86a66[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Thu Feb 4 16:05:06 2021 +0300
+
+     new me test Allo site
+
+[33mcommit a685f72c37907752d70761970cb9f0f2c0b8c2a5[m
+Merge: cb41573 64b2123
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Thu Feb 4 14:46:09 2021 +0200
+
+    Merge pull request #11 from Znamm9/TestsAmazon
+    
+    Tests amazon
+
+[33mcommit 64b2123407480b4b559883cd900ab9c64798a7a7[m
+Merge: b87325d cb41573
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 4 13:50:23 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testBranch
+
+[33mcommit b87325d99282f721534edaabffcc3e37205a7489[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 4 13:50:11 2021 +0200
+
+    create two packages for me and for us
+
+[33mcommit cb41573f87fd48fcba1839950f3ed30d60d7ae7e[m
+Merge: 189619d 715a47c
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Feb 4 14:31:09 2021 +0300
+
+    Merge pull request #9 from Znamm9/testRozetka
+    
+    add test basket Rozetka
+
+[33mcommit 189619d823d53e1de0037999356cc895840d64e8[m
+Merge: c0532c3 603d3d8
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Thu Feb 4 14:27:41 2021 +0300
+
+    Merge pull request #10 from Znamm9/testBranch
+    
+    Test branch
+
+[33mcommit 715a47cb96f559f360e9a0d9c7325edef69e360b[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 4 13:22:28 2021 +0200
+
+    fixed test
+
+[33mcommit 504e52e3cfc493ee7ffa0d20b9602021fc08a597[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 4 13:20:21 2021 +0200
+
+    fixed test
+
+[33mcommit 603d3d8924e2ae5605c538c26726ceca7a0fb469[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 4 13:17:41 2021 +0200
+
+    change some methods
+
+[33mcommit 757f17a36e247195ff71d8792faa89612f41174c[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 4 13:09:00 2021 +0200
+
+    fixed bugs cart Rozetka
+
+[33mcommit 64596849403f680c08baefd1d7bcb889b8e372b2[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Thu Feb 4 12:10:21 2021 +0200
+
+    add test basket Rozetka
+
+[33mcommit 8f8775cc9b4b52f559179438d1ad233c3071c19f[m
+Merge: 585e98f c0532c3
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 4 09:33:37 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testBranch
+
+[33mcommit 585e98f434428b94da920e39a0a3e758c84dd66d[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Thu Feb 4 09:32:39 2021 +0200
+
+    finished my test
+
+[33mcommit 6b75119857ee512da805a1ae203dff4e484f1944[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Feb 3 16:21:14 2021 +0300
+
+    add new folder 2
+
+[33mcommit c0532c3cd7b716ca0f6a020882e2cb77032bde27[m
+Merge: 3371546 94538ef
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Wed Feb 3 14:30:54 2021 +0200
+
+    Merge pull request #8 from Znamm9/testBranch
+    
+    add new funct to TestInit
+
+[33mcommit 94538ef1bf0e627a91864982f8b9a8a434a7bd78[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Wed Feb 3 14:23:42 2021 +0200
+
+    add new funct to TestInit
+
+[33mcommit 23668c4bb7db63a7fb076c39710ac4c370e100d6[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Feb 3 15:07:44 2021 +0300
+
+    add new fplders
+
+[33mcommit afe306b84dbaea1bfdb243ac7d9a42a3e2fb31b6[m
+Merge: 7884cea c0532c3
+Author: Zoom <zoomfo@gmail.com>
+Date:   Wed Feb 3 14:39:11 2021 +0300
+
+    Merge branch 'master' into testAliE
+
+[33mcommit 337154682cde479162336caae387c44a92922a87[m
+Merge: 1326369 9ec3785
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Wed Feb 3 08:06:12 2021 +0200
+
+    Merge pull request #7 from Znamm9/ewasneus
+    
+    Etwasneus
+
+[33mcommit 9ec3785b3f41924a18bc0c25918da5473573318c[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Feb 2 17:25:14 2021 +0200
+
+    WTF
+
+[33mcommit 13263693dfd1b86b202fd3aa7bbe329ccd7baf6f[m
+Merge: 3303ea7 b69f86e
+Author: StepaniukAndii <78416481+StepaniukAndii@users.noreply.github.com>
+Date:   Tue Feb 2 17:13:22 2021 +0200
+
+    Merge pull request #5 from Znamm9/testBranch2
+    
+    Test branch2
+
+[33mcommit 74d2957e63b7ccb9f57d582205bd02b3e1db3729[m
+Author: Sam <grinred69@gmail.com>
+Date:   Tue Feb 2 17:12:28 2021 +0200
+
+    my first time
+
+[33mcommit b69f86e694dec54650db858899943b98dfd27c89[m[33m ([m[1;31morigin/testBranch2[m[33m)[m
+Merge: 4caed9f 3303ea7
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 17:11:40 2021 +0200
+
+    1
+
+[33mcommit 4caed9f0da101e49b7c393c09a85a56ecb5d5711[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 17:03:24 2021 +0200
+
+    change BasePage
+
+[33mcommit 31df248609427f535a17b39bb4fc064d385c653c[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 16:53:53 2021 +0200
+
+    Change method in BasePage
+
+[33mcommit 7525c5877ba2dcfbf7c2e2d3bc97ee1e485af96f[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 16:46:40 2021 +0200
+
+    add comment to Testinit
+
+[33mcommit 3303ea7a6f6d4c1959a427454996997f9198f4da[m
+Merge: 13ea7d7 b34c930
+Author: eltess <78352571+eltess@users.noreply.github.com>
+Date:   Tue Feb 2 17:25:07 2021 +0300
+
+    Merge pull request #4 from Znamm9/testAliE
+    
+    fix TestInit and BasePage
+
+[33mcommit 78903a87012446495e7a8d25d25ae95f7df54839[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 16:20:59 2021 +0200
+
+    add commit
+
+[33mcommit 8a6b0b3d815e881c3ef8f572ca4b4c61246141fa[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 16:09:32 2021 +0200
+
+    add commit
+
+[33mcommit 7884cea2ae294524881ea811e46208d73d777f62[m
+Merge: 930deb8 3303ea7
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Feb 2 17:08:22 2021 +0300
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testAliE
+
+[33mcommit 930deb86e774744837a99ce17427108755bdfeb1[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Feb 2 17:07:45 2021 +0300
+
+    Super Duper Fixs
+
+[33mcommit 6a9992e85b8f69a9f50cee90f27380794e35d02f[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 15:59:03 2021 +0200
+
+    add my homeWork
+
+[33mcommit 650e0c55376aad33a75cf66df85e8e2e253a95f2[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 15:55:53 2021 +0200
+
+    added new methods to TestInit and BasePage
+
+[33mcommit 19a6fee45e905935a894a9d96a42614021435617[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Feb 2 16:55:05 2021 +0300
+
+    fixed mistakes testAli and pageAli
+
+[33mcommit 62b753af5fcd16465f469628b3de3d08e51a559c[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Feb 2 16:34:14 2021 +0300
+
+    add TestAli and PageTestAli
+
+[33mcommit b34c93064526883942e48683a41c30168e8ac77b[m
+Author: Zoom <zoomfo@gmail.com>
+Date:   Tue Feb 2 16:21:54 2021 +0300
+
+    fix TestInit and BasePage
+
+[33mcommit 13ea7d73cf3da4b67f9776cdbc40e419151c9e7a[m
+Merge: f8a4f05 87d4731
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Tue Feb 2 14:58:32 2021 +0200
+
+    Merge pull request #3 from Znamm9/addTestInit
+    
+    Add test init
+
+[33mcommit 87d47315ddbd4e176560279be78e504ffd74a1f7[m[33m ([m[1;31morigin/addTestInit[m[33m)[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Feb 2 14:54:44 2021 +0200
+
+    change name metod
+
+[33mcommit c9bf3863b707b6ef87cefc52c58ded310a9c98e9[m
+Merge: 38e009a f8a4f05
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Feb 2 14:29:52 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into addTestInit
+
+[33mcommit 38e009a7a15f45df07683aeac091a3933a7cb502[m
+Author: Stepaniuk <andrii.stepaniuk18@gmail.com>
+Date:   Tue Feb 2 14:28:59 2021 +0200
+
+    add customization Driver
+
+[33mcommit f8a4f05ab5fe37bb7826527d0dd24e84d6c9e9c3[m
+Merge: a67e93d 19b0d99
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Tue Feb 2 14:19:33 2021 +0200
+
+    Merge pull request #2 from Znamm9/testBranch
+    
+    Test branch
+
+[33mcommit 19b0d99e4166f488f88c663bbf2afdf49fba36f4[m
+Merge: 061c30f 9eefc97
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 14:17:44 2021 +0200
+
+    Merge branch 'testBranch' of github.com:Znamm9/justAutomationFramework into testBranch
+
+[33mcommit 061c30fd48be1d20f92f5407cfbfa363ff8282cf[m
+Merge: 393681b a67e93d
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 14:13:14 2021 +0200
+
+    Merge branch 'master' of github.com:Znamm9/justAutomationFramework into testBranch
+
+[33mcommit 9eefc97158ed7155c90639863157c83b2a4947f0[m
+Author: Johasan <74094440+Johasan@users.noreply.github.com>
+Date:   Tue Feb 2 14:11:14 2021 +0200
+
+    Delete usless file
+
+[33mcommit 393681bad26447f7c4f69fcad6fa452b1540f68d[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 14:06:39 2021 +0200
+
+    remove 1 file, changed code in BasePage
+
+[33mcommit a67e93de324e18219e68ede3cbd3418d2f959f4a[m
+Merge: 5c4813e 71a95bd
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 14:00:32 2021 +0200
+
+    Merge pull request #1 from Znamm9/addingTestInit
+    
+    added new TestInit file
+
+[33mcommit 5fc5d702b9988a3889944cafd9a9bf4a86ec93a3[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 13:56:45 2021 +0200
+
+    added new file BasePage
+
+[33mcommit 71a95bd79ffe3327e486b3a6eda9414bd0c72c9e[m[33m ([m[1;31morigin/addingTestInit[m[33m)[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 13:55:12 2021 +0200
+
+    review fix added
+
+[33mcommit 9c9509f95e144f9cbbbf3120d60b4e8096cf24be[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 13:49:12 2021 +0200
+
+    added new TestInit file
+
+[33mcommit 768eb006e35bd258b379dffeb8fd399cac1b4e19[m
+Author: Johasan <evgeniy.afonin7@gmail.com>
+Date:   Tue Feb 2 13:42:26 2021 +0200
+
+    add file justAutomation
+
+[33mcommit 5c4813e667363c876dfa6133dd801ca56a7135a8[m
+Author: Znamm9 <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 13:16:50 2021 +0200
+
+    dependencies added
+
+[33mcommit d7257092945b635cfc90c710ff11977fe0a83139[m
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 13:00:32 2021 +0200
+
+    Update README.md
+
+[33mcommit 85c018578b827b32267daa504b3b4e581ded2c7f[m
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 13:00:13 2021 +0200
+
+    Update README.md
+
+[33mcommit 5e6497c441e0ead8de03ac3bfc2f8404c39a86c1[m
+Author: Vadym <v.rudenko106@gmail.com>
+Date:   Tue Feb 2 12:59:38 2021 +0200
+
+    Update README.md
+
+[33mcommit a93cb0e944a64009356c6177765222b1313b1cd6[m
+Author: Vadim Rudenko <vadimr@vadimr-mac.local>
+Date:   Mon Feb 1 11:55:52 2021 +0200
+
+    adding readme

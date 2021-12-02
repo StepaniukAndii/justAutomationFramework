@@ -19,7 +19,7 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
 //    put false here if you want to see browser)
-    boolean headless = true;
+    boolean headless = false;
 
     @BeforeMethod
     public void setUp() {
@@ -27,11 +27,11 @@ public class TestInit {
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
-            setProperty("src/test/drivers/chromedriver_91_mac");
+            setProperty("src/test/drivers/chromedriver_96_mac");
         }else if (isOSWindows()){
-            setProperty("src/test/drivers/chromedriver_92_windows.exe");
+            setProperty("src/test/drivers/chromedriver_95.exe");
         }else {
-            setProperty("src/test/drivers/chromedriver_90_linux");
+            setProperty("src/test/drivers/chromedriver_96_linux");
         }
 
         driver = new ChromeDriver(options);
@@ -73,10 +73,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-    @AfterMethod
-    public void afterTest() {
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void afterTest() {
+//        driver.quit();
+//    }
 
     public void openUrl(String site) {
         driver.get(site);
@@ -87,6 +87,12 @@ public class TestInit {
         action.sendKeys(Keys.RETURN);
         action.perform();
     }
+    public void pushEnter() {
+        Actions action = new Actions(driver);
+        action.sendKeys(Keys.ENTER);
+        action.perform();
+    }
+
 
     public void sleep(int seconds) {
         try {
@@ -140,5 +146,9 @@ public class TestInit {
         if (headless = false) {
             productPage.disableAd().click();
         }
+    }
+
+    public String getTextFromXpath(WebElement element) {
+        return element.getText();
     }
 }
