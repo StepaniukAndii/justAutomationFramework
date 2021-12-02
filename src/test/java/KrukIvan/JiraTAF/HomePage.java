@@ -179,5 +179,8 @@ public class HomePage extends BasePage {
     public WebElement assertCart(){
         return findElementByXpath("//a[@class=\"btn btn--orange btn-checkout full-width ng-binding btn-checkout--is-disabled\"]");
     }
+    public WebElement socialMediaInst(){
+        return findElementByXpath("//a[@aria-label=\"Instagram\"]");
+    }
 }
 
