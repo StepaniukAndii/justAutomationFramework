@@ -191,5 +191,14 @@ public class HomePage extends BasePage {
     public WebElement assertTwitter(){
         return findElementByXpath("//span[contains(text(), \"EatStreet\")]")    ;
     }
+    public WebElement emailFieldOnMainPage(){
+        return findElementByXpath("//input[@id=\"new-email\"]");
+    }
+    public WebElement signUpBTNOnMainPage(){
+        return findElementByXpath("//button[@type=\"submit\"]");
+    }
+    public WebElement assertSignUpOnMainPage(){
+        return findElementByXpath("//div[contains(text(), \"address to get you started.\")]");
+    }
 }
 
