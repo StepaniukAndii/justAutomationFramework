@@ -10,4 +10,11 @@ public class WebPlayerTests extends TestInit{
         openUrl("https://www.spotify.com/us/");
         webPlayer.webPlayerButton().click();
     }
+    @Test
+    public void searchField(){
+        WebPlayerPage webPlayer = new WebPlayerPage(driver);
+        openUrl("https://www.spotify.com/us/");
+        webPlayer.webPlayerButton().click();
+        webPlayer.album();
+    }
 }
