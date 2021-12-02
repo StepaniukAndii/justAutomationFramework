@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class TestHomePageEatstreet extends TestInit {
@@ -280,5 +281,17 @@ public class TestHomePageEatstreet extends TestInit {
         homeEatstreetPage.getAPILink().click();
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://developers.eatstreet.com/");
+    }
+    @Test
+    public void testAppStoreLink() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getAppStoreLink().click();
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("apps.apple.com/us/app/eatstreet-food-delivery"));
     }
 }

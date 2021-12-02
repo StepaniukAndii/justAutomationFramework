@@ -183,4 +183,8 @@ public class HomeEatstreetPage extends BasePage {
         return findElementByXpath("//a[contains(text(),'API')]");
 
     }
+    public WebElement getAppStoreLink(){
+        return findElementByXpath("//a[@class='app-btn-iphone']");
+
+    }
 }
