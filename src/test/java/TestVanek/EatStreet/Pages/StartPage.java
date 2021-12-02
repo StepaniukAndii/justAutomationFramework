@@ -61,7 +61,7 @@ public class StartPage extends BasePage {
     public WebElement whoopsModalBodyText(){
         return findElementByXpath("//div[contains(@class,'modal-body')]");
     }
-    public WebElement whoopsModalOkayBtn(){
-        return findElementByXpath("//a[contains(@id,'confirm')]");
+    public WebElement tablet(){
+        return findElementByXpath("//div[contains(@class,'tablet')]");
     }
 }
