@@ -294,4 +294,16 @@ public class TestHomePageEatstreet extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("apps.apple.com/us/app/eatstreet-food-delivery"));
     }
+    @Test
+    public void testGooglePlayLink() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getGooglePlayLink().click();
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("play.google.com/store/apps/details?id=com.eatstreet"));
+    }
 }

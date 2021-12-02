@@ -187,4 +187,8 @@ public class HomeEatstreetPage extends BasePage {
         return findElementByXpath("//a[@class='app-btn-iphone']");
 
     }
+    public WebElement getGooglePlayLink(){
+        return findElementByXpath("//a[@class='app-btn-android']");
+
+    }
 }
