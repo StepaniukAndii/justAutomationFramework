@@ -516,4 +516,8 @@ public class HomePage extends BasePage {
     public WebElement singIn() {
         return findElementByXpath("//div[@class='user-flow__content']/span");
     }
+
+    public WebElement getRadioBtnTakeOut() {
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+    }
 }
