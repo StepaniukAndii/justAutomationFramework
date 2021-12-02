@@ -29,4 +29,14 @@ public class SocialMedia extends TestInit {
         sleep(3);
         Assert.assertTrue(driver.findElement(By.xpath("//div[@class=\"_19sz\"]")).isDisplayed());
     }
+@Test
+    public void twitterLink(){
+    HomePage homePage = new HomePage(driver);
+    openUrl("https://qa2.eatstreet.com/");
+    homePage.clickButtonGotIt().click();
+    homePage.socialMediaTwitter().click();
+    ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+    driver.switchTo().window(tabs.get(1));
+    Assert.assertTrue(homePage.assertTwitter().isDisplayed());
+}
 }

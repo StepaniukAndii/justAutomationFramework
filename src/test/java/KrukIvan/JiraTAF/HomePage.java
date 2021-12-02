@@ -185,5 +185,11 @@ public class HomePage extends BasePage {
     public WebElement socialMediaFacebook(){
         return  findElementByXpath("//a[@aria-label=\"Facebook\"]");
     }
+    public WebElement socialMediaTwitter(){
+        return findElementByXpath("//a[@aria-label=\"Twitter\"]");
+    }
+    public WebElement assertTwitter(){
+        return findElementByXpath("//span[contains(text(), \"EatStreet\")]")    ;
+    }
 }
 
