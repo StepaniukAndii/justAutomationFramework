@@ -171,4 +171,13 @@ public class FooterPage extends BasePage {
     public WebElement clickLinkRestaurantTerms(){
         return findElementByXpath("//a[contains(text(),'www.adr.org')]");
     }
+    public WebElement clickFaceboock(){
+        return findElementByXpath("/html/body/div[4]/div/div/nav[2]/footer/div/div[2]/div[2]/ul/li[1]/a");
+    }
+    public WebElement selectFoto(){
+        return findElementByXpath("//*[@id=\"u_0_g_3O\"]/div[3]/a");
+    }
+    public WebElement cickВход(){
+        return findElementByXpath("//*[@id=\"u_0_1h_aj\"]/div/div[2]/div[1]");
+    }
 }
