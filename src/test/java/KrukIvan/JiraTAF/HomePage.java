@@ -158,5 +158,47 @@ public class HomePage extends BasePage {
     public WebElement assertReviews(){
         return findElementByXpath("//h2[@class=\"widget-header widget-header--menu-more-info widget-header--reviews-header margin-bottom-20 ng-binding\"]");
     }
+    public WebElement getTheAppAndroid(){
+        return findElementByXpath("//a[@class=\"app-btn-android\"]");
+    }
+    public WebElement getTheAppIOS(){
+        return findElementByXpath("//a[@class=\"app-btn-iphone\"]");
+    }
+    public  List<WebElement> becomeADriverLink(){
+        return findElementsByXpath("//a[@class=\"how-it-works_link\"]");
+    }
+    public WebElement bTNOrderAhead(){
+        return findElementByXpath("//label[@for=\"filter-Order Ahead\"]");
+    }
+    public WebElement termsOfUse(){
+        return findElementByXpath("//a[@ui-sref=\"terms\"]");
+    }
+    public WebElement cart(){
+        return findElementByXpath("//div[@ng-click=\"$cart.cartClicked()\"]");
+    }
+    public WebElement assertCart(){
+        return findElementByXpath("//a[@class=\"btn btn--orange btn-checkout full-width ng-binding btn-checkout--is-disabled\"]");
+    }
+    public WebElement socialMediaInst(){
+        return findElementByXpath("//a[@aria-label=\"Instagram\"]");
+    }
+    public WebElement socialMediaFacebook(){
+        return  findElementByXpath("//a[@aria-label=\"Facebook\"]");
+    }
+    public WebElement socialMediaTwitter(){
+        return findElementByXpath("//a[@aria-label=\"Twitter\"]");
+    }
+    public WebElement assertTwitter(){
+        return findElementByXpath("//span[contains(text(), \"EatStreet\")]")    ;
+    }
+    public WebElement emailFieldOnMainPage(){
+        return findElementByXpath("//input[@id=\"new-email\"]");
+    }
+    public WebElement signUpBTNOnMainPage(){
+        return findElementByXpath("//button[@type=\"submit\"]");
+    }
+    public WebElement assertSignUpOnMainPage(){
+        return findElementByXpath("//div[contains(text(), \"address to get you started.\")]");
+    }
 }
 

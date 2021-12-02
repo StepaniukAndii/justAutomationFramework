@@ -144,4 +144,40 @@ public class FooterPage extends BasePage {
     public WebElement checkPopup(){
         return findElementByXpath("//*[@id=\"exp-confirm-modal\"]/div[2]/div[2]");
     }
+    public WebElement clickPrivacyPolicy(){
+        return findElementByXpath("//a[contains(text(),'Privacy Policy')]");
+    }
+    public WebElement inputEmailPrivacyPolicy(){
+        return findElementByXpath("//*[@id=\"email\"]");
+    }
+    public WebElement selectRemove(){
+        return findElementByXpath("//*[@id=\"REQUEST_DELETION\"]");
+    }
+    public WebElement checkPrivacyPolicyOpened(){
+        return findElementByXpath("//h2[contains(text(),'Privacy Policy')]");
+    }
+    public WebElement checkPrivacyPolicySendForm(){
+        return findElementByXpath("/html/body/div[4]/div/div/div[1]/secure-action-tracker/main/div/div/div/div[1]");
+    }
+    public WebElement clickTermsOfUs(){
+        return findElementByXpath("//a[contains(text(),'Terms of')]");
+    }
+    public WebElement clickLinkPP(){
+        return findElementByXpath("//*[@id=\"main_content\"]/div/div/div/div[2]/p[64]/a");
+    }
+    public WebElement clickRestaurantTerms(){
+        return findElementByXpath("//a[contains(text(),'Restaurant Terms')]");
+    }
+    public WebElement clickLinkRestaurantTerms(){
+        return findElementByXpath("//a[contains(text(),'www.adr.org')]");
+    }
+    public WebElement clickFaceboock(){
+        return findElementByXpath("/html/body/div[4]/div/div/nav[2]/footer/div/div[2]/div[2]/ul/li[1]/a");
+    }
+    public WebElement selectFoto(){
+        return findElementByXpath("//*[@id=\"u_0_g_3O\"]/div[3]/a");
+    }
+    public WebElement cickВход(){
+        return findElementByXpath("//*[@id=\"u_0_1h_aj\"]/div/div[2]/div[1]");
+    }
 }

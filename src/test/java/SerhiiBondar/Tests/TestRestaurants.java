@@ -325,4 +325,20 @@ public class TestRestaurants extends TestInit {
         Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getRatingBtn()),"Rating");
         Assert.assertEquals(getTextFromXpath(restaurantEatstreetPage.getDeliveryFeeBtn()),"Delivery Fee");
     }
+    @Test
+    public void testTakeOutRadioBtn(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS );
+        HomeEatstreetPage homeEatstreetPage = new HomeEatstreetPage(driver);
+        openUrl("https://eatstreet.com/");
+        homeEatstreetPage.getGoItBtn().click();
+        homeEatstreetPage.getEnterYourAddressLink().sendKeys("Chicago");
+        homeEatstreetPage.passModalWindow();
+        RestaurantEatstreetPage restaurantEatstreetPage = new RestaurantEatstreetPage(driver);
+        restaurantEatstreetPage.getTakeoutRadioBtn().click();
+        restaurantEatstreetPage.getRestList().get(1).click();
+
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(0).getText().contains("Hours"));
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(1).getText().contains("Est. Pickup Time"));
+        Assert.assertTrue(restaurantEatstreetPage.RestInfoList().get(2).getText().contains("Takeout Minimum"));
+    }
 }

@@ -464,4 +464,60 @@ public class HomePage extends BasePage {
     public WebElement clickBtnProcesedToCheckout() {
         return driver.findElement(By.xpath("//a[@id='click-checkout']"));
     }
+
+    public WebElement btnAboutUs() {
+        return driver.findElement((By.xpath("//a[contains(text(), 'About Us')]")));
+    }
+
+    public WebElement getAdressHeaderInput() {
+        return driver.findElement((By.xpath("//input[@id='address-input']")));
+    }
+
+    public List<WebElement> btnShowMore() {
+        return findElementsByXpath("//button[contains(text(), 'Show More')]");
+    }
+
+    public List<WebElement> getMenuLink() {
+        return driver.findElements(By.xpath("//ul[@class='press__nav__list']//button"));
+    }
+
+    public List<WebElement> connectMenu() {
+        return findElementsByXpath("//ul[@class='connect__list']/li");
+    }
+
+    public List<WebElement> getMenuLinkBlog() {
+        return driver.findElements(By.xpath("//ul[@class='press__nav__list']//li"));
+    }
+
+    public WebElement getLinkInTextAssebilityStatement() {
+        return driver.findElement(By.xpath("//a[@ng-click='trackLinkClick($event)']"));
+    }
+
+    public WebElement openRestHoney() {
+        return driver.findElement(By.xpath("//h1[contains(text(),'Honey Baked Ham Company')]"));
+    }
+
+    public List<WebElement> btnMoreInfo() {
+        return findElementsByXpath("//a[contains(text(), 'More Info')]");
+    }
+
+    public WebElement btnViewAllJobListings() {
+        return findElementByXpath("//a[contains(text(), 'View All Job Listings')]");
+    }
+
+    public WebElement linkStripeServiceAgreement() {
+        return findElementByXpath("//a[contains(text(),'Stripe Services Agreement')]");
+    }
+
+    public WebElement linkPageContactUs() {
+        return findElementByXpath("//div[@class='col-6']/p/a");
+    }
+
+    public WebElement singIn() {
+        return findElementByXpath("//div[@class='user-flow__content']/span");
+    }
+
+    public WebElement getRadioBtnTakeOut() {
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+    }
 }
