@@ -1,6 +1,7 @@
 package PullRequestsSveta;
 
 import ClasesToAllUs.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AccessSpotifyTests extends TestInit {
@@ -20,6 +21,7 @@ public class AccessSpotifyTests extends TestInit {
         signUpAndInPages.sex().click();
         signUpAndInPages.confirm().click();
         signUpAndInPages.signUpButton().click();
+        Assert.assertTrue(signUpAndInPages.confirmYouAreNotARobot().isDisplayed());
     }
 
     @Test
@@ -31,6 +33,7 @@ public class AccessSpotifyTests extends TestInit {
         signUpAndInPages.logInUsername().sendKeys("svetlana.taran629@gmail.com");
         signUpAndInPages.logInPassword().sendKeys("fjskjdowfowkfow");
         signUpAndInPages.logInButton().click();
+        Assert.assertTrue(signUpAndInPages.emailOrPasswordIsWrong().isDisplayed());
     }
     @Test
     public void signInWithGoogle(){
@@ -41,5 +44,7 @@ public class AccessSpotifyTests extends TestInit {
         signUpAndInPages.logIn().click();
         signUpAndInPages.ligInWithGoogle().click();
         signUpAndInPages.logInWithGoogleEmail().sendKeys("svetlana.taran629@gmail.com");
+        signUpAndInPages.continueButton().get(0).click();
+        Assert.assertTrue(signUpAndInPages.cantHaveAccessToYourAccount().isDisplayed());
     }
 }
