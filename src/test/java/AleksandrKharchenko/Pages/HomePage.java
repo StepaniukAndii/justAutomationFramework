@@ -4,8 +4,6 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import javax.swing.*;
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -329,5 +327,9 @@ public class HomePage extends BasePage {
 
     public WebElement getReferenceBtnLink() {
         return findElementByXpath("//a[@title='Википедия:Справка']");
+    }
+
+    public WebElement getLinkSalinaCity() {
+        return findElementByXpath("//a[text()='Salina']");
     }
 }
