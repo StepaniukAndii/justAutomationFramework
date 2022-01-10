@@ -20,7 +20,6 @@ public class TestInit {
 
 //    put false here if you want to see browser)
     boolean headless = false;
-
     @BeforeMethod
     public void setUp() {
 //        if webdriver manager work fine, there is a bug at the moment
