@@ -1,5 +1,6 @@
 package AleksandrKharchenko.Tests;
 
+import AleksandrKharchenko.Pages.CityPage;
 import AleksandrKharchenko.Pages.HomePage;
 import AleksandrKharchenko.Pages.RestPage;
 import AleksandrKharchenko.Pages.SignInPage;
@@ -26,5 +27,16 @@ public class TestThreePullRequest extends TestInit {
         homePage.getFedBtn().click();
 
         Assert.assertTrue(restPage.getTextInLosAngelesRestIsDisplayed());
+    }
+
+    @Test
+    public void checkBlockDessertInCitySalina(){
+        HomePage homePage = new HomePage(driver);
+        CityPage cityPage = new CityPage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.closeModal();
+        homePage.getLinkSalinaCity().click();
+
+        Assert.assertTrue(cityPage.getTextDessertIsDisplayed());
     }
 }
