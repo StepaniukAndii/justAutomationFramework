@@ -26,6 +26,5 @@ public class TestSalaries extends TestInit {
             salariesPage.getSelectPosition().click();
             salariesPage.getSelectPositionChildren().get(i).click();
         }
-
     }
 }

@@ -31,4 +31,12 @@ public class HomePage extends BasePage {
         //0 - DOU 1-главная  2 - форум 3 - лента 4 - зарплаты 5 - работа 6 - календарь 7 - youtube
         return findElementsByXpath("//header/ul/li");
     }
+
+    public WebElement getProfile() {
+        return getElement("//a[@class='min-profile']");
+    }
+
+    public WebElement getLoginLink() {
+        return getElement("//a[@id='login-link']");
+    }
 }
