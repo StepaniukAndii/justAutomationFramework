@@ -42,7 +42,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getAddressField() {
-        return driver.findElement(By.xpath("//input[contains(@class,'enter-address__input')]"));
+        return findElementByXpath("//input[contains(@class,'enter-address__input')]");
     }
 
     public WebElement getFedBtn() {
