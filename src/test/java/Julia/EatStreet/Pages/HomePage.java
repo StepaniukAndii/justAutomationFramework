@@ -535,4 +535,13 @@ public class HomePage extends BasePage {
     public WebElement getBaltimoreTitle() {
         return findElementByXpath("//h1[contains(text(), 'Baltimore Restaurants That Deliver & Takeout')]");
     }
+
+
+    public WebElement btnSingIn() {
+        return findElementByXpath("//button[@id='signin']");
+    }
+
+    public WebElement isIncorrectText() {
+        return findElementByXpath("//span[contains(text(), 'The login information you entered is incorrect.')]");
+    }
 }
