@@ -17,4 +17,12 @@ public class CityPage extends BasePage {
     public boolean getTextDessertIsDisplayed() {
         return findElementByXpath("//span[text()='Dessert']").isDisplayed();
     }
+
+    public WebElement getBtnPizza() {
+        return findElementByXpath("//button[contains(text(),'Pizza options')]");
+    }
+
+    public boolean isDisplayedTextSaltLakeCityRestaurants() {
+        return findElementByXpath("//h1[contains(text(),'Salt Lake City Restaurants')]").isDisplayed();
+    }
 }
