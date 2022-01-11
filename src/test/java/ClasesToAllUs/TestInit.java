@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import testRozetkaDenis.pages.ProductPage;
 
+import java.time.Duration;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class TestInit {
         if (isOSMac()){
             setProperty("src/test/drivers/chromedriver_96_mac");
         }else if (isOSWindows()){
-            setProperty("src/test/drivers/chromedriver_95.exe");
+            setProperty("src/test/drivers/chromedriver_97.exe");
         }else {
             setProperty("src/test/drivers/chromedriver_96_linux");
         }
@@ -151,4 +152,6 @@ public class TestInit {
     public String getTextFromXpath(WebElement element) {
         return element.getText();
     }
+
+
 }
