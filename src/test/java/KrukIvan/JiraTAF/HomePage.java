@@ -200,5 +200,8 @@ public class HomePage extends BasePage {
     public WebElement assertSignUpOnMainPage(){
         return findElementByXpath("//div[contains(text(), \"address to get you started.\")]");
     }
+    public WebElement bTNPrivacyPolicy(){
+        return findElementByXpath("//a[@ui-sref=\"privacy\"]");
+    }
 }
 

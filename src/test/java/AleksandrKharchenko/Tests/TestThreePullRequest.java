@@ -41,7 +41,7 @@ public class TestThreePullRequest extends TestInit {
     }
 
     @Test
-    public void doIt() {
+    public void checkBlockPizzaInSaltLakeCity() {
         HomePage homePage = new HomePage(driver);
         CityPage cityPage = new CityPage(driver);
         openUrl("https://qa2.eatstreet.com/");
