@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class TestThreePullRequest extends TestInit {
 
     @Test
-    public void checkTextRestaurantLosAngeles(){
+    public void checkTextRestaurantLosAngeles() {
         HomePage homePage = new HomePage(driver);
         SignInPage signInPage = new SignInPage(driver);
         RestPage restPage = new RestPage(driver);
@@ -30,7 +30,7 @@ public class TestThreePullRequest extends TestInit {
     }
 
     @Test
-    public void checkBlockDessertInCitySalina(){
+    public void checkBlockDessertInCitySalina() {
         HomePage homePage = new HomePage(driver);
         CityPage cityPage = new CityPage(driver);
         openUrl("https://qa2.eatstreet.com/");
@@ -38,5 +38,17 @@ public class TestThreePullRequest extends TestInit {
         homePage.getLinkSalinaCity().click();
 
         Assert.assertTrue(cityPage.getTextDessertIsDisplayed());
+    }
+
+    @Test
+    public void doIt() {
+        HomePage homePage = new HomePage(driver);
+        CityPage cityPage = new CityPage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.closeModal();
+        homePage.getLinkSaltLakeCity().click();
+        cityPage.getBtnPizza().click();
+
+        Assert.assertTrue(cityPage.isDisplayedTextSaltLakeCityRestaurants());
     }
 }
