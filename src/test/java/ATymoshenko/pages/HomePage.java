@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import java.util.List;
+import java.util.Map;
 
 public class HomePage extends BasePage {
 
@@ -308,5 +309,9 @@ public class HomePage extends BasePage {
 
     public List<WebElement> addAnyCity() {
         return driver.findElements(By.xpath("//ul[@class='section-subheader--home ng-scope']//a"));
+    }
+
+    public List<WebElement> addAnyFood() {
+        return driver.findElements(By.xpath("//div[@class='container']//li[contains(@class,'cuisine-types__item')]"));
     }
 }

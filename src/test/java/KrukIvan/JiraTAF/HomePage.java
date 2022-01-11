@@ -179,5 +179,26 @@ public class HomePage extends BasePage {
     public WebElement assertCart(){
         return findElementByXpath("//a[@class=\"btn btn--orange btn-checkout full-width ng-binding btn-checkout--is-disabled\"]");
     }
+    public WebElement socialMediaInst(){
+        return findElementByXpath("//a[@aria-label=\"Instagram\"]");
+    }
+    public WebElement socialMediaFacebook(){
+        return  findElementByXpath("//a[@aria-label=\"Facebook\"]");
+    }
+    public WebElement socialMediaTwitter(){
+        return findElementByXpath("//a[@aria-label=\"Twitter\"]");
+    }
+    public WebElement assertTwitter(){
+        return findElementByXpath("//span[contains(text(), \"EatStreet\")]")    ;
+    }
+    public WebElement emailFieldOnMainPage(){
+        return findElementByXpath("//input[@id=\"new-email\"]");
+    }
+    public WebElement signUpBTNOnMainPage(){
+        return findElementByXpath("//button[@type=\"submit\"]");
+    }
+    public WebElement assertSignUpOnMainPage(){
+        return findElementByXpath("//div[contains(text(), \"address to get you started.\")]");
+    }
 }
 

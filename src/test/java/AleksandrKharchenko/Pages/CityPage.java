@@ -13,4 +13,8 @@ public class CityPage extends BasePage {
     public WebElement getCoffeeTeaInLosAngeles() {
         return driver.findElement(By.xpath("(//ul[@class='cuisine-types__list']//li)[6]"));
     }
+
+    public boolean getTextDessertIsDisplayed() {
+        return findElementByXpath("//span[text()='Dessert']").isDisplayed();
+    }
 }

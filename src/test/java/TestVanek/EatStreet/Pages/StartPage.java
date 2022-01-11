@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class StartPage extends BasePage {
     public StartPage(WebDriver driver){ super(driver); }
 
@@ -61,7 +63,10 @@ public class StartPage extends BasePage {
     public WebElement whoopsModalBodyText(){
         return findElementByXpath("//div[contains(@class,'modal-body')]");
     }
-    public WebElement whoopsModalOkayBtn(){
-        return findElementByXpath("//a[contains(@id,'confirm')]");
+    public WebElement tablet(){
+        return findElementByXpath("//div[contains(@class,'tablet')]");
+    }
+    public List<WebElement> mediaLinks(){
+        return findElementsByXpath("//ul[contains(@aria-label,'media')]/li");
     }
 }

@@ -43,4 +43,42 @@ public class GetTheUp extends TestInit {
 
         Assert.assertTrue(getTheUpPage.checkInputEmail().isDisplayed());
     }
+
+    @Test
+    public void getTheAppGames(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        GetTheUpPage getTheUpPage=new GetTheUpPage(driver);
+        getTheUpPage.clickGooglePlay().click();
+        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
+        sleep(3);
+        getTheUpPage.clickGames().click();
+        getTheUpPage.selectGameTom().click();
+        sleep(3);
+
+         Assert.assertTrue(getTheUpPage.checkGameOpened().isDisplayed());
+    }
+
+    @Test
+    public void getTheAppKids(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        openUrl("https://eatstreet.com/");
+        HomePage homePage=new HomePage(driver);
+        homePage.getClickGoItBtn().click();
+        GetTheUpPage getTheUpPage=new GetTheUpPage(driver);
+        getTheUpPage.clickGooglePlay().click();
+        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
+        sleep(3);
+        getTheUpPage.clickKids().click();
+        sleep(3);
+        getTheUpPage.cickDiscaver().click();
+
+        Assert.assertTrue(getTheUpPage.checkDiscaverOened().isDisplayed());
+
+    }
+
 }
