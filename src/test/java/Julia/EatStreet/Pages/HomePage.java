@@ -357,7 +357,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getBaltimoreCity() {
-        return driver.findElement(By.xpath("//a[contains(text(),'Baltimore, MD')]"));
+        return findElementByXpath("//a[contains(text(),'Baltimore')]");
     }
 
     public WebElement getDeKalb() {
@@ -528,4 +528,11 @@ public class HomePage extends BasePage {
                 .until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 
+    public WebElement getViewAllRestBaltimoreCity() {
+        return findElementByXpath("//a[contains(text(), 'View All Baltimore Restaurants')]");
+    }
+
+    public WebElement getBaltimoreTitle() {
+        return findElementByXpath("//h1[contains(text(), 'Baltimore Restaurants That Deliver & Takeout')]");
+    }
 }
