@@ -17,4 +17,17 @@ public class CheckLogin extends TestInit {
 
         Assert.assertTrue(homePage.getBaltimoreTitle().isDisplayed());
     }
+
+    @Test
+    public void checkLogin(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.clickSignInBtn().click();
+        homePage.enterEmailField().sendKeys("y.tymoshenko5@gmail.com");
+        homePage.enterPassField().sendKeys("Yli123456");
+        homePage.btnSingIn().click();
+
+        Assert.assertEquals(homePage.isIncorrectText().getText(),"The login information you entered is incorrect.");
+    }
 }
