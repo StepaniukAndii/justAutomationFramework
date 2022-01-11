@@ -4,7 +4,10 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +34,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getAllRest() {
-        return driver.findElements(By.xpath("//ul[@id='all-rests']/li"));
+        return findElementsByXpath("//ul[@id='all-rests']/li");
     }
 
     public void getSelectPageRest() {
@@ -177,9 +180,9 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'Get Help')]"));
     }
 
-    public WebElement getHelpBot() {
-        return driver.findElement(By.xpath("//div[contains(text(), 'EatStreet Bot')]"));
-    }
+//    public WebElement getHelpBot() {
+//        return driver.findElement(By.xpath("//div[contains(text(), 'EatStreet Bot')]"));
+//    }
 
     public WebElement clickContactUs() {
         return driver.findElement(By.xpath("//a[@ui-sref='contact']"));
@@ -362,7 +365,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getViewAllRestDeKalb() {
-        return driver.findElement(By.xpath("//a[contains(text(), 'View All DeKalb Restaurants')]"));
+        return findElementByXpath("//a[contains(text(), 'View All DeKalb Restaurants')]");
     }
 
     public WebElement btnSpecialist() {
@@ -397,15 +400,15 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> sectionMenu() {
-        return driver.findElements(By.xpath("//div[@class='list list--menu list--menu--scale']/section"));
+        return findElementsByXpath("//div[@class='list list--menu list--menu--scale']/section");
     }
 
     public WebElement addThisItem() {
-        return driver.findElement(By.xpath("//button[@id='quantity--adds']"));
+        return findElementByXpath("//button[@id='quantity--adds']");
     }
 
     public WebElement btnAddToCard() {
-        return driver.findElement(By.xpath("//a[@id='confirm-options']"));
+        return findElementByXpath("//a[@id='confirm-options']");
     }
 
     public WebElement ecqualsCard() {
@@ -418,7 +421,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> clickFiltrSection() {
-        return driver.findElements(By.xpath("//div[@class='row filters-section ng-scope']//label"));
+        return findElementsByXpath("//div[@class='row filters-section ng-scope']//label");
     }
 
     public List<WebElement> activeFiltr() {
@@ -457,12 +460,12 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//button[contains(text(), 'Delivery Fee')]"));
     }
 
-    public List<WebElement> selectOneDropDownWindow() {
-        return driver.findElements(By.xpath("//select[@id='main-option']/option"));
+    public WebElement selectOneDropDownWindow() {
+        return findElementByXpath("//div//label[@class='checkbox-input']");
     }
 
     public WebElement clickBtnProcesedToCheckout() {
-        return driver.findElement(By.xpath("//a[@id='click-checkout']"));
+        return findElementByXpath("//a[@id='click-checkout']");
     }
 
     public WebElement btnAboutUs() {
@@ -520,4 +523,9 @@ public class HomePage extends BasePage {
     public WebElement getRadioBtnTakeOut() {
         return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
     }
+    public WebElement explicitWaitClickable(String locator){
+        return new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+    }
+
 }
