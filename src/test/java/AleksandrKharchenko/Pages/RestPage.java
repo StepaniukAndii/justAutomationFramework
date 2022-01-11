@@ -63,4 +63,8 @@ public class RestPage extends BasePage {
     public WebElement getSpanIndianFood() {
         return driver.findElement(By.xpath("//span[contains(text(),'Indian Food')]"));
     }
+
+    public boolean getTextInLosAngelesRestIsDisplayed() {
+        return findElementByXpath("//h1[contains(text(),'Los Angeles Restaurants')]").isDisplayed();
+    }
 }

@@ -4,8 +4,6 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import javax.swing.*;
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -42,7 +40,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getAddressField() {
-        return driver.findElement(By.xpath("//input[contains(@class,'enter-address__input')]"));
+        return findElementByXpath("//input[contains(@class,'enter-address__input')]");
     }
 
     public WebElement getFedBtn() {
@@ -329,5 +327,9 @@ public class HomePage extends BasePage {
 
     public WebElement getReferenceBtnLink() {
         return findElementByXpath("//a[@title='Википедия:Справка']");
+    }
+
+    public WebElement getLinkSalinaCity() {
+        return findElementByXpath("//a[text()='Salina']");
     }
 }
