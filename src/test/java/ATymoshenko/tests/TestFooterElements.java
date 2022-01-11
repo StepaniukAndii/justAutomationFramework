@@ -71,16 +71,9 @@ public class TestFooterElements extends TestInit {
         homePage.addPrivacyPolicyBtn().click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("privacy"));
-    }
-    @Test
-    public void termsOfUseBtn(){
-        HomePage homePage = new HomePage(driver);
-        openUrl("https://eatstreet.com/");
-        homePage.getGoItBtn().click();
-        homePage.addTermsOfUseBtn().click();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("terms"));
     }
+
     @Test
     public void restaurantTermsBtnInFooter(){
         HomePage homePage = new HomePage(driver);
@@ -90,5 +83,15 @@ public class TestFooterElements extends TestInit {
         sleep(3);
 
         Assert.assertTrue(driver.getCurrentUrl().contains("restaurant-terms-of-service"));
+    }
+
+    @Test
+    public void termsOfUseBtn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.addTermsOfUseBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("terms"));
     }
 }
