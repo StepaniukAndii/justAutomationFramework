@@ -25,4 +25,12 @@ public class CityPage extends BasePage {
     public boolean isDisplayedTextSaltLakeCityRestaurants() {
         return findElementByXpath("//h1[contains(text(),'Salt Lake City Restaurants')]").isDisplayed();
     }
+
+    public WebElement getCheckboxBurgers() {
+        return findElementByXpath("//label[@for='filter-cuisine-Burgers' and @class='checkbox-input']");
+    }
+
+    public boolean isDisplayedSpanBurgers() {
+        return findElementByXpath("//span[@ng-repeat='filter in activeFilters']").isDisplayed();
+    }
 }

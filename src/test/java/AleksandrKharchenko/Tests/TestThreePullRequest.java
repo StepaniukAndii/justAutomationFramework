@@ -51,4 +51,19 @@ public class TestThreePullRequest extends TestInit {
 
         Assert.assertTrue(cityPage.isDisplayedTextSaltLakeCityRestaurants());
     }
+
+    @Test
+    public void doIt() {
+        HomePage homePage = new HomePage(driver);
+        CityPage cityPage = new CityPage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.closeModal();
+        homePage.getAddressField().sendKeys("Norfolk");
+        homePage.getFedBtn().click();
+        homePage.checkAndClosePopUpWindow();
+        homePage.getFedBtn().click();
+        cityPage.getCheckboxBurgers().click();
+
+        Assert.assertTrue(cityPage.isDisplayedSpanBurgers());
+    }
 }
