@@ -30,4 +30,17 @@ public class CheckLogin extends TestInit {
 
         Assert.assertEquals(homePage.isIncorrectText().getText(),"The login information you entered is incorrect.");
     }
+
+    @Test
+    public  void checkRestHouston() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
+        homePage.getAdressInput().sendKeys("Houston, TX");
+        homePage.getFedBtn().click();
+        homePage.checkAndClouseAdressSearchAttempt();
+        homePage.getAllRest().get(3).click();
+
+        Assert.assertTrue(homePage.getRestInHouston().isDisplayed());
+    }
 }
