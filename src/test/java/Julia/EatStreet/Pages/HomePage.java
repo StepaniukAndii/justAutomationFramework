@@ -26,7 +26,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getFedBtn() {
-        return driver.findElement((By.xpath("//a[@id='find-restaurants']")));
+        return findElementByXpath("//a[@id='find-restaurants']");
     }
 
     public List<WebElement> getPageNumberList() {
@@ -543,5 +543,9 @@ public class HomePage extends BasePage {
 
     public WebElement isIncorrectText() {
         return findElementByXpath("//span[contains(text(), 'The login information you entered is incorrect.')]");
+    }
+
+    public WebElement getRestInHouston() {
+        return findElementByXpath("//h1[contains(text(), 'Mi Casa De Sabor Bar & Grill')]");
     }
 }
