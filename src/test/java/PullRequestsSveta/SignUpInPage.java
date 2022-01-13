@@ -4,6 +4,9 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
 public class SignUpInPage extends BasePage {
     public SignUpInPage(WebDriver driver) {
         super(driver);
@@ -42,5 +45,15 @@ public class SignUpInPage extends BasePage {
         return findElementByXpath("//a[contains(@class, 'btn btn-block btn-default btn-google ng-binding')]");}
     public WebElement logInWithGoogleEmail(){
         return findElementByXpath("//input[contains(@id, 'identifierId')]");}
+    public WebElement iAmNotARobotButton(){
+        return findElementByXpath("//div[@class='recaptcha-checkbox-border']");}
+    public WebElement confirmYouAreNotARobot(){
+        return findElementByXpath("//div[contains(@aria-label, 'Error indicator')]");}
+    public WebElement emailOrPasswordIsWrong(){
+        return findElementByXpath("//p[@class='alert alert-warning']");}
+    public List<WebElement> continueButton(){
+        return findElementsByXpath("//span[contains(@jsname, 'V67aGc')]");}
+    public WebElement cantHaveAccessToYourAccount(){
+        return findElementByXpath("//h1[contains(@id, 'headingText')]");}
 
 }
