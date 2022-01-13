@@ -46,5 +46,7 @@ public class Test {
         chromeDriver.findElement(By.xpath("//span[text()=' Компьютер Everest Home 4070 (4070_9414) ']")).click();
         sleep(2);
         chromeDriver.findElement(By.xpath("//button[@ class='buy-button button button_with_icon button_color_green button_size_large ng-star-inserted' ]")).click();
+
+
     }
 }
