@@ -28,7 +28,7 @@ public class TestInit {
 //        WebDriverManager.chromedriver_88_mac().setup();
 
         if (isOSMac()){
-            setProperty("src/test/drivers/chromedriver_96_mac");
+            setProperty("src/test/drivers/chromedriver_97_mac");
         }else if (isOSWindows()){
             setProperty("src/test/drivers/chromedriver_97.exe");
         }else {
