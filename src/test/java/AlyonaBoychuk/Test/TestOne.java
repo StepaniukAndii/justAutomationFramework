@@ -16,4 +16,12 @@ public class TestOne extends TestInit {
         sleep(3);
         Assert.assertTrue(homePage.getUrlAboutUsIsDisplayed());
     }
+    @Test
+    public void testChtckClicSignIn() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.clouseGoItbutton();
+        homePage.getSignInLink();
+        Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
+    }
 }

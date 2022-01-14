@@ -22,4 +22,8 @@ public class HomePage extends BasePage {
     public boolean getUrlAboutUsIsDisplayed(){
         return driver.getCurrentUrl().contains("about-us");
     }
+
+    public void getSignInLink() {
+        driver.findElement(By.xpath("//a[@id='menu-signin']")).click();
+    }
 }
