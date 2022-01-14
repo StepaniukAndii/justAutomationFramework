@@ -3,7 +3,7 @@ package ClasesToAllUs;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-//if you want restart tests when fail. Write @Test(retryAnalyzer = Retry.class)
+//if you want restart tests when fail. Write @AlyonaBoychuk.Test(retryAnalyzer = Retry.class)
 
 public class Retry implements IRetryAnalyzer {
     private int actualRetry = 0;
