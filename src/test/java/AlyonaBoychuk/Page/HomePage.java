@@ -25,5 +25,10 @@ public class HomePage extends BasePage {
 
     public void getSignInLink() {
         driver.findElement(By.xpath("//a[@id='menu-signin']")).click();
+
+    }
+
+    public boolean getLifeChat() {
+        return driver.findElement(By.xpath("//span[text()='Live Chat']")).isDisplayed();
     }
 }
