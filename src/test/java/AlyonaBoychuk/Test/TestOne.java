@@ -24,4 +24,13 @@ public class TestOne extends TestInit {
         homePage.getSignInLink();
         Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
     }
+
+    @Test
+    public void testLifeChat() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePage.clouseGoItbutton();
+        sleep(5);
+        Assert.assertTrue(homePage.getLifeChat());
+    }
 }
