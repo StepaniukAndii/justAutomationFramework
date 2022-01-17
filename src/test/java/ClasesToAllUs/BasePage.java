@@ -60,5 +60,4 @@ public abstract class BasePage implements Expectations {
             e.printStackTrace();
         }
     }
-
 }
