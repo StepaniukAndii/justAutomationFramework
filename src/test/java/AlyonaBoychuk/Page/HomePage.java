@@ -40,7 +40,7 @@ public class HomePage extends BasePage {
     }
     public void getButtonAgreeAndJoin() {driver.findElement(By.xpath("//button[@class='join-form__form-body-submit-button']")).click();
     }
-    public void getButtonCookiePolicy() {driver.findElement(By.xpath("//a[text()='Cookie Policy']")).click();}
+    public void getButtonCookiePolicy() {driver.findElement(By.xpath("//a[@data-tracking-control-name='registration-frontend_join-form-cookie-policy']")).click();}
 
     public boolean numberOfWindows(){
         return new WebDriverWait(driver, 10)
