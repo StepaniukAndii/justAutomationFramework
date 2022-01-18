@@ -63,4 +63,16 @@ public class HomePage extends BasePage {
     public boolean isDisplayedTymchasovyyPlatig() {
         return driver.findElement(By.xpath("//a[text()='- ТИМЧАСОВИЙ ПЛАТІЖ']")).isDisplayed();
     }
+
+    public WebElement getButtonTaryfy() {
+        return driver.findElement(By.xpath("//a[text()='ТАРИФИ']"));
+    }
+
+    public WebElement getButtonBagatopoverhivky() {
+        return driver.findElement(By.xpath("//a[text()='Багатоповерхівки']"));
+    }
+
+    public boolean isDisplayedBeskoshtovnyiPaket() {
+        return driver.findElement(By.xpath("//a[text()='безкоштовний пакет IPTV']")).isDisplayed();
+    }
 }
