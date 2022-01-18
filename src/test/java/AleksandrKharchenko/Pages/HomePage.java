@@ -337,4 +337,8 @@ public class HomePage extends BasePage {
     public WebElement getLinkSaltLakeCity() {
         return findElementByXpath("//a[text()='Salt Lake City, UT']");
     }
+
+    public WebElement getBtnTarifi() {
+        return findElementByXpath("//a[text()='ТАРИФИ']");
+    }
 }
