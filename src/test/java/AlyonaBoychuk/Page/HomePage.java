@@ -75,4 +75,20 @@ public class HomePage extends BasePage {
     public boolean isDisplayedBeskoshtovnyiPaket() {
         return driver.findElement(By.xpath("//a[text()='безкоштовний пакет IPTV']")).isDisplayed();
     }
+
+    public WebElement getButtonPrivatniySector() {
+        return driver.findElement(By.xpath("//a[text()='Приватний сектор']"));
+    }
+
+    public boolean isDisplayedBezlim190() {
+        return driver.findElement(By.xpath("//td[@class='nazva']")).isDisplayed();
+    }
+
+    public boolean isDisplayedBezlim260() {
+        return driver.findElement(By.xpath("//td[text()='Безліміт 260 ']")).isDisplayed();
+    }
+
+    public boolean isDisplayedBezlim350() {
+        return driver.findElement(By.xpath("//td[text()='Безліміт 350 ']")).isDisplayed();
+    }
 }
