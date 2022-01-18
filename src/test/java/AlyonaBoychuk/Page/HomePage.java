@@ -3,6 +3,7 @@ package AlyonaBoychuk.Page;
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -45,5 +46,21 @@ public class HomePage extends BasePage {
     public boolean numberOfWindows(){
         return new WebDriverWait(driver, 10)
         .until(ExpectedConditions.numberOfWindowsToBe(2));
+    }
+
+    public WebElement getButtonKabinet() {
+        return driver.findElement(By.xpath("//a[text()='ОСОБИСТИЙ КАБІНЕТ']"));
+    }
+
+    public boolean isDisplayedPlatagi() {
+        return driver.findElement(By.xpath("//a[text()='Платежі']")).isDisplayed();
+    }
+
+    public boolean isDisplayedPopovnytyRahunok() {
+        return driver.findElement(By.xpath("//a[text()='- ПОПОВНИТИ РАХУНОК']")).isDisplayed();
+    }
+
+    public boolean isDisplayedTymchasovyyPlatig() {
+        return driver.findElement(By.xpath("//a[text()='- ТИМЧАСОВИЙ ПЛАТІЖ']")).isDisplayed();
     }
 }
