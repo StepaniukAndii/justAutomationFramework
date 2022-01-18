@@ -15,4 +15,12 @@ public class PulReqwest extends TestInit {
         Assert.assertTrue(homePage.isDisplayedTymchasovyyPlatig());
     }
 
+    @Test
+    public void checkBestLineButtonTaryfy(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonTaryfy().click();
+        homePage.getButtonBagatopoverhivky().click();
+        Assert.assertTrue(homePage.isDisplayedBeskoshtovnyiPaket());
+    }
 }
