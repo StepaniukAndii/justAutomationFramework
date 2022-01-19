@@ -26,10 +26,6 @@ public class SignUpPage extends BasePage {
         return driver.findElement(By.xpath("//button[@id='signup']"));
     }
 
-    public WebElement getMyAccountLink() {
-        return driver.findElement(By.xpath("//a[contains(text(),'My Account')]"));
-    }
-
     public WebElement getErrorPasswordAgainMSG() {
         return driver.findElement(By.xpath("//div[contains(text(),'Must match')]"));
     }
