@@ -1,10 +1,7 @@
 package SergKokan.Test;
 
 import ClasesToAllUs.TestInit;
-import SergKokan.Page.DostavkaPage;
-import SergKokan.Page.GarantiaVozvratPage;
-import SergKokan.Page.HomePage;
-import SergKokan.Page.OplataPage;
+import SergKokan.Page.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,5 +32,13 @@ public class TestLinkHeaderPrego extends TestInit {
         homePage.GarantiaVozvrat().click();
         Assert.assertTrue(garantiaVozvratPage.isDisplayedTexGarantiaVozvrat());
 
+    }
+    @Test
+    public void LinkNashiMagaziny(){
+        HomePage homePage = new HomePage(driver);
+        NashiMagazinyPage nashiMagazinyPage = new NashiMagazinyPage(driver);
+        homePage.navigatePrego();
+        homePage.NashiMagaziny().click();
+        Assert.assertTrue(nashiMagazinyPage.isDisplayedNashiMagazinyPage());
     }
 }
