@@ -19,7 +19,7 @@ public class TestThreePullRequest extends TestInit {
         homePage.closeModal();
         homePage.getSignInLink().click();
         signInPage.getEmailField().sendKeys("x-o-m@ukr.net");
-        signInPage.getPasswordField().sendKeys("qwer1526js");
+        signInPage.getPasswordField().sendKeys("qwer4152sj");
         signInPage.getSignInBtn().click();
         homePage.getAddressField().sendKeys("Los Angeles");
         homePage.getFedBtn().click();
