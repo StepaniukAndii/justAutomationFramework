@@ -65,4 +65,14 @@ public class PulReqwest extends TestInit {
         homePage.getButtonSingIn().click();
         Assert.assertTrue(homePage.isDisplayedGo());
     }
+
+    @Test
+    public void gamanec(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonOplata().click();
+        sleep(5);
+        homePage.getButtonGamanec().click();
+        Assert.assertTrue(homePage.isDisplayedPlayMarket());
+    }
 }

@@ -127,4 +127,13 @@ public class HomePage extends BasePage {
     public boolean isDisplayedGo() {
         return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']").isDisplayed();
     }
+
+    public WebElement getButtonGamanec() {
+        return driver.findElement(By.xpath("//div[text()='Гаманець']"));
+    }
+
+
+    public boolean isDisplayedPlayMarket() {
+        return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']").isDisplayed();
+    }
 }
