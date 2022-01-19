@@ -56,4 +56,13 @@ public class PulReqwest extends TestInit {
         Assert.assertTrue(homePage.isDisplayedOplata());
 
     }
+
+    @Test
+    public void plategiSingIn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonOplata().click();
+        homePage.getButtonSingIn().click();
+        Assert.assertTrue(homePage.isDisplayedGo());
+    }
 }

@@ -119,4 +119,12 @@ public class HomePage extends BasePage {
     public boolean isDisplayedOplata() {
         return findElementByXpath("//div[@class='sc-iAyFgw kewEJQ']").isDisplayed();
     }
+
+    public WebElement getButtonSingIn() {
+        return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']");
+    }
+
+    public boolean isDisplayedGo() {
+        return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']").isDisplayed();
+    }
 }
