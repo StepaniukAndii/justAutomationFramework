@@ -18,7 +18,7 @@ public class GetHelpTest extends TestInit {
         //checking reaction on wrong email or phone number
         supportPage.getHelpEmail().sendKeys("sg@gmail.com");
         supportPage.getHelpPhone().sendKeys("16505130514");
-        supportPage.getHelpMessage().sendKeys("Test Message");
+        supportPage.getHelpMessage().sendKeys("AlyonaBoychuk.Test Message");
         supportPage.submit().click();
         supportPage.getHelpSubject().click();
         supportPage.getHelpSubjectList().get(2).click();
