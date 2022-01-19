@@ -18,6 +18,7 @@ public class TestSignUp extends TestInit {
         SignInPage signInPage = new SignInPage(driver);
         SignUpPage signUpPage = new SignUpPage(driver);
         homePage.navigateHomeQa2();
+        homePage.closeModal();
         homePage.getSignInLink().click();
         signInPage.getSignUpLink().click();
         signUpPage.getEmailFieldSignUp().sendKeys("vasya@gmail.com");
@@ -34,6 +35,7 @@ public class TestSignUp extends TestInit {
         SignInPage signInPage = new SignInPage(driver);
         SignUpPage signUpPage = new SignUpPage(driver);
         homePage.navigateHomeQa2();
+        homePage.closeModal();
         homePage.getSignInLink().click();
         signInPage.getSignUpLink().click();
         signUpPage.getEmailFieldSignUp().sendKeys("vasya@gmail.com");
@@ -50,12 +52,12 @@ public class TestSignUp extends TestInit {
         SignInPage signInPage = new SignInPage(driver);
         SignUpPage signUpPage = new SignUpPage(driver);
         homePage.navigateHomeQa2();
+        homePage.closeModal();
         homePage.getSignInLink().click();
         signInPage.getSignUpLink().click();
         signUpPage.getEmailFieldSignUp().sendKeys("blablabla");
         signUpPage.getPasswordFieldSignUp().sendKeys("qwer1234");
         signUpPage.getPasswordAgainFieldSignUp().sendKeys("qwer1234");
-        sleep(1);
 
         Assert.assertTrue(signUpPage.getErrorEmailMSG().isDisplayed());
     }
@@ -71,9 +73,7 @@ public class TestSignUp extends TestInit {
         signInPage.getEmailField().sendKeys("x-o-m@ukr.net");
         signInPage.getPasswordField().sendKeys("qwer4152sj");
         signInPage.getSignInBtn().click();
-//        sleep(3);
         homePage.getMyAccountLink().click();
-//        sleep(1);
         myAccountPage.getAddNewAddressBtn().click();
         myAccountPage.getAptNumberField().sendKeys("blablabla");
         myAccountPage.getBuildingNameField().sendKeys("blablabla");
@@ -82,7 +82,6 @@ public class TestSignUp extends TestInit {
         myAccountPage.getZipField().sendKeys("10001");
         myAccountPage.getAddressLabelField().sendKeys("blablabla");
         myAccountPage.getSaveBtnAddress().click();
-//        sleep(1);
 
         Assert.assertTrue(myAccountPage.getStreetAddressRequiredMSG().isDisplayed());
     }

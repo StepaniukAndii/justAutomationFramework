@@ -35,6 +35,6 @@ public class SignUpPage extends BasePage {
     }
 
     public WebElement getErrorEmailMSG() {
-        return driver.findElement(By.xpath("//div[contains(text(),'the entered email')]"));
+        return findElementByXpath("//div[contains(text(),'the entered email')]");
     }
 }
