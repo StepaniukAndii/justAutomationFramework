@@ -75,4 +75,48 @@ public class HomePage extends BasePage {
     public boolean isDisplayedBeskoshtovnyiPaket() {
         return driver.findElement(By.xpath("//a[text()='безкоштовний пакет IPTV']")).isDisplayed();
     }
+
+    public WebElement getButtonPrivatniySector() {
+        return driver.findElement(By.xpath("//a[text()='Приватний сектор']"));
+    }
+
+    public boolean isDisplayedBezlim190() {
+        return driver.findElement(By.xpath("//td[@class='nazva']")).isDisplayed();
+    }
+
+    public boolean isDisplayedBezlim260() {
+        return driver.findElement(By.xpath("//td[text()='Безліміт 260 ']")).isDisplayed();
+    }
+
+    public boolean isDisplayedBezlim350() {
+        return driver.findElement(By.xpath("//td[text()='Безліміт 350 ']")).isDisplayed();
+    }
+
+    public WebElement getButtonIPTV() {
+        return driver.findElement(By.xpath("//a[text()='IPTV']"));
+    }
+
+    public WebElement getButtonPorivnyannya() {
+        return driver.findElement(By.xpath("//a[text()='порівняльний список']"));
+    }
+
+    public boolean isDisplayed4() {
+        return driver.findElement(By.xpath("//body[@class='body-trinity']")).isDisplayed();
+    }
+
+    public WebElement getButtonOplata() {
+       return driver.findElement(By.xpath("//a[text()='ОПЛАТА']"));
+    }
+
+    public WebElement getButtonZnachennya() {
+        return findElementByXpath("//input[@placeholder='Введіть значення']");
+    }
+
+    public WebElement getButtonClick() {
+        return driver.findElement(By.xpath("//button[@class='sc-VigVT cQOKFU']"));
+    }
+
+    public boolean isDisplayedOplata() {
+        return findElementByXpath("//div[@class='sc-iAyFgw kewEJQ']").isDisplayed();
+    }
 }

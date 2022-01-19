@@ -70,7 +70,7 @@ public class TestOthers extends TestInit {
         sleep(1);
         restPage.getLastPageRest();
         restPage.getThirdFromTheEndRest();
-        sleep(1);
+        sleep(3);
 
         Assert.assertTrue(foodPage.getAddAnyFood().isDisplayed());
     }

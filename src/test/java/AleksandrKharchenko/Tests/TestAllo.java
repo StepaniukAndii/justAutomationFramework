@@ -11,6 +11,7 @@ public class TestAllo extends TestInit {
     public void testTheRegistrationFieldPhoneOfTheAlloUa() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://allo.ua/");
+        homePage.getBtnProfile().click();
         homePage.getLinkSignUp().click();
         homePage.getNameField().sendKeys("Alex");
         homePage.getEmailField().sendKeys("dijosa2551@hobsun.com");
@@ -24,6 +25,7 @@ public class TestAllo extends TestInit {
     public void testRegistrationFieldsNameAndPhone() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://allo.ua/");
+        homePage.getBtnProfile().click();
         homePage.getLinkSignUp().click();
         homePage.getEmailField().sendKeys("dijosa2551@hobsun.com");
         homePage.getPasswordField().sendKeys("qwer1234");
@@ -36,6 +38,7 @@ public class TestAllo extends TestInit {
     public void testRegistrationFieldsNamePhoneAndPassword() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://allo.ua/");
+        homePage.getBtnProfile().click();
         homePage.getLinkSignUp().click();
         homePage.getEmailField().sendKeys("dijosa2551@hobsun.com");
         homePage.getSignUpBtn().click();
@@ -47,19 +50,19 @@ public class TestAllo extends TestInit {
     public void testSignInFieldsToTheUsersAccountAlloUa() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://allo.ua/");
-        homePage.getSignInAlloLink().click();
+        homePage.getBtnProfile().click();
         homePage.getLoginFieldSignInAllo().sendKeys("aleksandr.kharchenko35@gmail.com");
         homePage.getPasswordFieldSignInAllo().sendKeys("Qwer1234");
         homePage.getEnterBtnSignInAllo().click();
 
-        Assert.assertTrue(homePage.getUserName().isDisplayed());
+        Assert.assertTrue(homePage.getNumberOneInKorzina().isDisplayed());
     }
 
     @Test
     public void testSignInFieldsOnErrors() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://allo.ua/");
-        homePage.getSignInAlloLink().click();
+        homePage.getBtnProfile().click();
         homePage.getEnterBtnSignInAllo().click();
 
         Assert.assertTrue(homePage.getErrorSignUpMSG().size() == 2);

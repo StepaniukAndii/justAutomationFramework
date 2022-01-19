@@ -27,7 +27,7 @@ public class RestPage extends BasePage {
     }
 
     public List<WebElement> getAllRest() {
-        return driver.findElements(By.xpath("//ul[@id='all-rests']/li"));
+        return findElementsByXpath("//ul[@id='all-rests']/li");
     }
 
     public void getThirdFromTheEndRest() {

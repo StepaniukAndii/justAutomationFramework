@@ -191,10 +191,8 @@ public class TestFooter extends TestInit {
         homePage.navigateHomeQa2();
         homePage.closeModal();
         homePage.getRestaurantDashboardLink().click();
-        sleep(1);
         restaurantDashboardPage.getPasswordDashboardField().sendKeys("qwer1234");
         restaurantDashboardPage.getSignInDashboardBtn().click();
-        sleep(1);
 
         Assert.assertTrue(restaurantDashboardPage.getDashboardRequiredMSG().isDisplayed());
     }
@@ -232,6 +230,7 @@ public class TestFooter extends TestInit {
        ForCustomersPage forCustomersPage = new ForCustomersPage(driver);
        homePage.navigateHomeQa2();
        homePage.closeModal();
+       sleep(2);
        homePage.getForCustomersLink().click();
        forCustomersPage.getGetFedLinkForCustomers().click();
 
@@ -244,6 +243,7 @@ public class TestFooter extends TestInit {
         ForCustomersPage forCustomersPage = new ForCustomersPage(driver);
         homePage.navigateHomeQa2();
         homePage.closeModal();
+        sleep(2);
         homePage.getForCustomersLink().click();
         forCustomersPage.getContactUsLinkForCustomers().click();
 

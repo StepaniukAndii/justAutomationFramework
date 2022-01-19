@@ -84,7 +84,7 @@ public class TestWikipedia extends TestInit {
         Assert.assertEquals(homePage.getRubricationLink().getText(), "Рубрикация");
         Assert.assertEquals(homePage.getIndexLink().getText(), "Указатель А — Я");
         Assert.assertEquals(homePage.getFeaturedArticlesLink().getText(), "Избранные статьи");
-        Assert.assertEquals(homePage.getRandomPageLink().getText(), "Случайная страница");
+        Assert.assertEquals(homePage.getRandomPageLink().getText(), "Случайная статья");
         Assert.assertEquals(homePage.getCurrentEventsLink().getText(), "Текущие события");
     }
 

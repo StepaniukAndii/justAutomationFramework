@@ -23,4 +23,37 @@ public class PulReqwest extends TestInit {
         homePage.getButtonBagatopoverhivky().click();
         Assert.assertTrue(homePage.isDisplayedBeskoshtovnyiPaket());
     }
+
+    @Test
+    public void checkButtonPrivatniySector(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonTaryfy().click();
+        homePage.getButtonPrivatniySector().click();
+        Assert.assertTrue(homePage.isDisplayedBezlim190());
+        Assert.assertTrue(homePage.isDisplayedBezlim260());
+        Assert.assertTrue(homePage.isDisplayedBezlim350());
+
+    }
+
+    @Test
+    public void checkIPTV(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonIPTV().click();
+        homePage.getButtonPorivnyannya().click();
+        Assert.assertTrue(homePage.isDisplayed4());
+
+    }
+
+    @Test
+    public void checkOplata(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonOplata().click();
+        homePage.getButtonZnachennya().click();
+        homePage.getButtonClick().click();
+        Assert.assertTrue(homePage.isDisplayedOplata());
+
+    }
 }

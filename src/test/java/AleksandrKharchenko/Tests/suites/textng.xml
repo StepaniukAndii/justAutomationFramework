@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Nopackage" >
+        <classes>
+            <class name="AleksandrKharchenko.Tests.TestAllo" />
+            <class name="AleksandrKharchenko.Tests.TestBest" />
+            <class name="AleksandrKharchenko.Tests.TestErrorMessenger" />
+            <class name="AleksandrKharchenko.Tests.TestFooter" />
+            <class name="AleksandrKharchenko.Tests.TestOthers" />
+            <class name="AleksandrKharchenko.Tests.TestSignUp" />
+            <class name="AleksandrKharchenko.Tests.TestThreePullRequest" />
+            <class name="AleksandrKharchenko.Tests.TestWikipedia" />
+        </classes>
+    </test>
+</suite>

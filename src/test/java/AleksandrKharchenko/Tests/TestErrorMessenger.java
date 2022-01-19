@@ -16,7 +16,6 @@ public class TestErrorMessenger extends TestInit {
         signInPage.getPasswordField().sendKeys("dhsehaehaegareg");
         signInPage.closeModal();
         signInPage.getSignInBtn().click();
-        sleep(2);
 
         Assert.assertTrue(signInPage.getErrorMSG().isDisplayed());
     }
@@ -31,7 +30,6 @@ public class TestErrorMessenger extends TestInit {
         signInPage.getPasswordField().sendKeys("0");
         signInPage.closeModal();
         signInPage.getSignInBtn().click();
-        sleep(3);
 
         Assert.assertTrue(signInPage.getErrorMSG().isDisplayed());
     }
@@ -45,7 +43,6 @@ public class TestErrorMessenger extends TestInit {
         signInPage.closeModal();
         signInPage.getPasswordField().sendKeys("qwer1234");
         signInPage.getSignInBtn().click();
-        sleep(2);
 
         Assert.assertTrue(signInPage.getEmailRequiredMSG().isDisplayed());
     }
