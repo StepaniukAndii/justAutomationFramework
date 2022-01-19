@@ -2,6 +2,7 @@ package SergKokan.Test;
 
 import ClasesToAllUs.TestInit;
 import SergKokan.Page.DostavkaPage;
+import SergKokan.Page.GarantiaVozvratPage;
 import SergKokan.Page.HomePage;
 import SergKokan.Page.OplataPage;
 import org.testng.Assert;
@@ -25,5 +26,14 @@ public class TestLinkHeaderPrego extends TestInit {
         homePage.navigatePrego();
         homePage.Oplata().click();
         Assert.assertTrue(oplataPage.isDisplayedTextOplata());
+    }
+    @Test
+    public void LinkGarantiaVozvrat(){
+        HomePage homePage = new HomePage(driver);
+        GarantiaVozvratPage garantiaVozvratPage = new GarantiaVozvratPage(driver);
+        homePage.navigatePrego();
+        homePage.GarantiaVozvrat().click();
+        Assert.assertTrue(garantiaVozvratPage.isDisplayedTexGarantiaVozvrat());
+
     }
 }
