@@ -35,4 +35,14 @@ public class PulReqwest extends TestInit {
         Assert.assertTrue(homePage.isDisplayedBezlim350());
 
     }
+
+    @Test
+    public void checkIPTV(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonIPTV().click();
+        homePage.getButtonPorivnyannya().click();
+        Assert.assertTrue(homePage.isDisplayed4());
+
+    }
 }
