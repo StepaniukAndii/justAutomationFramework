@@ -136,4 +136,12 @@ public class HomePage extends BasePage {
     public boolean isDisplayedPlayMarket() {
         return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']").isDisplayed();
     }
+
+    public WebElement getButtonBeskoshtovniyPaket() {
+        return driver.findElement(By.xpath("//a[text()='безкоштовний пакет IPTV']"));
+    }
+
+    public boolean isDisplayedPromo() {
+        return findElementByXpath("//h1[text()='Промо']").isDisplayed();
+    }
 }
