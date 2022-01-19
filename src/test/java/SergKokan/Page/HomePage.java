@@ -8,6 +8,9 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver){
         super(driver);
     }
+    public void navigatePrego(){
+        driver.get("https://prego.ua/");
+    }
     public WebElement PersonalAccount(){
         return findElementByXpath("//span[contains(text(), 'Особистий кабінет')]");
     }
