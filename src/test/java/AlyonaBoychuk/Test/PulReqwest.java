@@ -75,4 +75,13 @@ public class PulReqwest extends TestInit {
         homePage.getButtonGamanec().click();
         Assert.assertTrue(homePage.isDisplayedPlayMarket());
     }
+    @Test
+    public void beskoshtovniyPaket(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonBeskoshtovniyPaket().click();
+        Assert.assertTrue(homePage.isDisplayedPromo());
+    }
+
+
 }
