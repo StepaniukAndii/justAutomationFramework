@@ -45,4 +45,15 @@ public class PulReqwest extends TestInit {
         Assert.assertTrue(homePage.isDisplayed4());
 
     }
+
+    @Test
+    public void checkOplata(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonOplata().click();
+        homePage.getButtonZnachennya().click();
+        homePage.getButtonClick().click();
+        Assert.assertTrue(homePage.isDisplayedOplata());
+
+    }
 }

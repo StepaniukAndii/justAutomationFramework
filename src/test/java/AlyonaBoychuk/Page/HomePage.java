@@ -103,4 +103,20 @@ public class HomePage extends BasePage {
     public boolean isDisplayed4() {
         return driver.findElement(By.xpath("//body[@class='body-trinity']")).isDisplayed();
     }
+
+    public WebElement getButtonOplata() {
+       return driver.findElement(By.xpath("//a[text()='ОПЛАТА']"));
+    }
+
+    public WebElement getButtonZnachennya() {
+        return findElementByXpath("//input[@placeholder='Введіть значення']");
+    }
+
+    public WebElement getButtonClick() {
+        return driver.findElement(By.xpath("//button[@class='sc-VigVT cQOKFU']"));
+    }
+
+    public boolean isDisplayedOplata() {
+        return findElementByXpath("//div[@class='sc-iAyFgw kewEJQ']").isDisplayed();
+    }
 }
