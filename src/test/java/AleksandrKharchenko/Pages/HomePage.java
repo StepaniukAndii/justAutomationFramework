@@ -33,7 +33,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getMyAccountLink() {
-        return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+        return findElementByXpath("//a[@id='menu-my-account']");
     }
 
     public WebElement getGetTheAppLink() {
@@ -116,10 +116,6 @@ public class HomePage extends BasePage {
 
     public WebElement getErrorPhoneMSG() {
         return findElementByXpath("//span[contains(text(),'для заповнення.')]");
-    }
-
-    public WebElement getFieldPhone() {
-        return findElementByXpath("//input[@id='v-register_telephone_number']");
     }
 
     public List<WebElement> getErrorSignUpMSG() {
