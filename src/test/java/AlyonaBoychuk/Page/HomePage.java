@@ -91,4 +91,16 @@ public class HomePage extends BasePage {
     public boolean isDisplayedBezlim350() {
         return driver.findElement(By.xpath("//td[text()='Безліміт 350 ']")).isDisplayed();
     }
+
+    public WebElement getButtonIPTV() {
+        return driver.findElement(By.xpath("//a[text()='IPTV']"));
+    }
+
+    public WebElement getButtonPorivnyannya() {
+        return driver.findElement(By.xpath("//a[text()='порівняльний список']"));
+    }
+
+    public boolean isDisplayed4() {
+        return driver.findElement(By.xpath("//body[@class='body-trinity']")).isDisplayed();
+    }
 }
