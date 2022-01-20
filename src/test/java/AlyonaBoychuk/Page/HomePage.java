@@ -127,4 +127,65 @@ public class HomePage extends BasePage {
     public boolean isDisplayedGo() {
         return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']").isDisplayed();
     }
+
+    public WebElement getButtonGamanec() {
+        return driver.findElement(By.xpath("//div[text()='Гаманець']"));
+    }
+
+
+    public boolean isDisplayedPlayMarket() {
+        return findElementByXpath("//div[@class='sc-fjdhpX btpMPh']").isDisplayed();
+    }
+
+    public WebElement getButtonBeskoshtovniyPaket() {
+        return driver.findElement(By.xpath("//a[text()='безкоштовний пакет IPTV']"));
+    }
+
+    public boolean isDisplayedPromo() {
+        return findElementByXpath("//h1[text()='Промо']").isDisplayed();
+    }
+
+    public WebElement getButtonDogovir() {
+        return driver.findElement(By.xpath("//a[text()='Договір 1']"));
+    }
+
+    public boolean isDisplayedOsnovniPonyattya() {
+        return findElementByXpath("//h4[text()='1. ОСНОВНІ ПОНЯТТЯ ТА ВИЗНАЧЕННЯ']").isDisplayed();
+    }
+
+    public WebElement getButtonGepon() {
+        return driver.findElement(By.xpath("//a[text()='FTTH / GEPON']"));
+    }
+
+    public WebElement getButtonGeponClick() {
+        return driver.findElement(By.xpath("//a[text()='GEPON']"));
+    }
+
+    public boolean isDisplayedVikipediya() {
+        return findElementByXpath("//span[text()='Заглавная страница']").isDisplayed();
+    }
+
+    public WebElement getIconHeder() {
+        return driver.findElement(By.xpath("//i[@class='fa fa-logo']"));
+    }
+
+    public boolean isDisplayed() {
+        return findElementByXpath("//a[@id='nav_translate_btn']").isDisplayed();
+    }
+
+    public WebElement getButtonLoginIn() {
+        return driver.findElement(By.xpath("//a[@id='w3loginbtn']"));
+    }
+
+    public WebElement getButtonShow() {
+        return driver.findElement(By.xpath("//span[@class='_8HgG3']"));
+    }
+
+    public WebElement getButtonLogin() {
+        return driver.findElement(By.xpath("//button[@class='_1VfsI _OD95i _3_H0V']"));
+    }
+
+    public boolean isDisplayedForGot() {
+        return findElementByXpath("//a[text()='Forgot password?']").isDisplayed();
+    }
 }
