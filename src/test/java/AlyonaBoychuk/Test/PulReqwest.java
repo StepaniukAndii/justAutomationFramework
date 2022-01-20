@@ -105,4 +105,14 @@ public class PulReqwest extends TestInit {
         homePage.getIconHeder().click();
         Assert.assertTrue(homePage.isDisplayed());
    }
+
+   @Test
+    public void loginIn(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        homePage.getButtonLoginIn().click();
+        homePage.getButtonShow().click();
+        homePage.getButtonLogin().click();
+        Assert.assertTrue(homePage.isDisplayedForGot());
+   }
 }
