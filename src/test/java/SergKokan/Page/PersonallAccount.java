@@ -10,6 +10,6 @@ public class PersonallAccount extends BasePage {
     }
 
     public boolean isDisplayedPersonallAccount() {
-        return findElementByXpath("//div[@class='header-top']//a[contains(text(), 'Наші магазини')]").isDisplayed();
+        return findElementByXpath("//div[@class='container popUpOpen modal']//div[@class='wrap-content']").isDisplayed();
     }
 }
