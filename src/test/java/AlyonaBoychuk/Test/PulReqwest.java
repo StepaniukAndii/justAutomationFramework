@@ -89,5 +89,12 @@ public class PulReqwest extends TestInit {
         homePage.getButtonDogovir().click();
         Assert.assertTrue(homePage.isDisplayedOsnovniPonyattya());
    }
-
+   @Test
+    public void gepon(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonGepon().click();
+        homePage.getButtonGeponClick().click();
+        Assert.assertTrue(homePage.isDisplayedVikipediya());
+   }
 }
