@@ -49,4 +49,12 @@ public class TestLinkHeaderPrego extends TestInit {
         homePage.Obrane().click();
         Assert.assertTrue(obrane.isDisplayedObrane());
     }
+    @Test
+    public void LinkPersonallAccount(){
+        HomePage homePage = new HomePage(driver);
+        PersonallAccount PersonallAccount = new PersonallAccount(driver);
+        homePage.navigatePrego();
+        homePage.PersonalAccount().click();
+        Assert.assertTrue(PersonallAccount.isDisplayedPersonallAccount());
+    }
 }
