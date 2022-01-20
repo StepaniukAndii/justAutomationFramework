@@ -144,4 +144,12 @@ public class HomePage extends BasePage {
     public boolean isDisplayedPromo() {
         return findElementByXpath("//h1[text()='Промо']").isDisplayed();
     }
+
+    public WebElement getButtonDogovir() {
+        return driver.findElement(By.xpath("//a[text()='Договір 1']"));
+    }
+
+    public boolean isDisplayedOsnovniPonyattya() {
+        return findElementByXpath("//h4[text()='1. ОСНОВНІ ПОНЯТТЯ ТА ВИЗНАЧЕННЯ']").isDisplayed();
+    }
 }

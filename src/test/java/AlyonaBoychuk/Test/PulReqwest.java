@@ -82,6 +82,12 @@ public class PulReqwest extends TestInit {
         homePage.getButtonBeskoshtovniyPaket().click();
         Assert.assertTrue(homePage.isDisplayedPromo());
     }
-
+   @Test
+    public void dogovir(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("http://bestline.net.ua/");
+        homePage.getButtonDogovir().click();
+        Assert.assertTrue(homePage.isDisplayedOsnovniPonyattya());
+   }
 
 }
