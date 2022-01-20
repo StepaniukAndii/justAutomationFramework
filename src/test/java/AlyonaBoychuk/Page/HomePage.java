@@ -152,4 +152,16 @@ public class HomePage extends BasePage {
     public boolean isDisplayedOsnovniPonyattya() {
         return findElementByXpath("//h4[text()='1. ОСНОВНІ ПОНЯТТЯ ТА ВИЗНАЧЕННЯ']").isDisplayed();
     }
+
+    public WebElement getButtonGepon() {
+        return driver.findElement(By.xpath("//a[text()='FTTH / GEPON']"));
+    }
+
+    public WebElement getButtonGeponClick() {
+        return driver.findElement(By.xpath("//a[text()='GEPON']"));
+    }
+
+    public boolean isDisplayedVikipediya() {
+        return findElementByXpath("//span[text()='Заглавная страница']").isDisplayed();
+    }
 }
