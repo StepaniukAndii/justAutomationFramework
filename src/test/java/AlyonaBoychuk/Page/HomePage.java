@@ -172,4 +172,20 @@ public class HomePage extends BasePage {
     public boolean isDisplayed() {
         return findElementByXpath("//a[@id='nav_translate_btn']").isDisplayed();
     }
+
+    public WebElement getButtonLoginIn() {
+        return driver.findElement(By.xpath("//a[@id='w3loginbtn']"));
+    }
+
+    public WebElement getButtonShow() {
+        return driver.findElement(By.xpath("//span[@class='_8HgG3']"));
+    }
+
+    public WebElement getButtonLogin() {
+        return driver.findElement(By.xpath("//button[@class='_1VfsI _OD95i _3_H0V']"));
+    }
+
+    public boolean isDisplayedForGot() {
+        return findElementByXpath("//a[text()='Forgot password?']").isDisplayed();
+    }
 }
