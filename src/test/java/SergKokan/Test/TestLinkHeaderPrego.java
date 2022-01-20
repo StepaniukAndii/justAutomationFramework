@@ -41,4 +41,12 @@ public class TestLinkHeaderPrego extends TestInit {
         homePage.NashiMagaziny().click();
         Assert.assertTrue(nashiMagazinyPage.isDisplayedNashiMagazinyPage());
     }
+    @Test
+    public void LinkObrane(){
+        HomePage homePage = new HomePage(driver);
+        ObranePage obrane = new ObranePage(driver);
+        homePage.navigatePrego();
+        homePage.Obrane().click();
+        Assert.assertTrue(obrane.isDisplayedObrane());
+    }
 }
