@@ -164,4 +164,12 @@ public class HomePage extends BasePage {
     public boolean isDisplayedVikipediya() {
         return findElementByXpath("//span[text()='Заглавная страница']").isDisplayed();
     }
+
+    public WebElement getIconHeder() {
+        return driver.findElement(By.xpath("//i[@class='fa fa-logo']"));
+    }
+
+    public boolean isDisplayed() {
+        return findElementByXpath("//a[@id='nav_translate_btn']").isDisplayed();
+    }
 }

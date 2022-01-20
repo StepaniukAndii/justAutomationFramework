@@ -97,4 +97,12 @@ public class PulReqwest extends TestInit {
         homePage.getButtonGeponClick().click();
         Assert.assertTrue(homePage.isDisplayedVikipediya());
    }
+
+   @Test
+    public void w3school(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        homePage.getIconHeder().click();
+        Assert.assertTrue(homePage.isDisplayed());
+   }
 }
