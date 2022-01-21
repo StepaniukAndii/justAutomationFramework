@@ -39,4 +39,7 @@ public class HomePage extends BasePage {
         return findElementByXpath("//span[@id='cartPreviewTrigger']");
     }
 
+    public WebElement novinki() {
+        return findElementByXpath("//div[@class='header__link header-bottom__nav-link']//a[contains(text(), 'НОВИНКИ')]");
+    }
 }
