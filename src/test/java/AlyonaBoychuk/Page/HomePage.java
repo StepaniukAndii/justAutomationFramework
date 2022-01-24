@@ -188,4 +188,12 @@ public class HomePage extends BasePage {
     public boolean isDisplayedForGot() {
         return findElementByXpath("//a[text()='Forgot password?']").isDisplayed();
     }
+
+    public WebElement getButtonWebSite() {
+        return driver.findElement(By.xpath("//a[@class='w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink']"));
+    }
+
+    public boolean getButtonLoginClick() {
+        return findElementByXpath("//span[text()='Get started for free']").isDisplayed();
+    }
 }

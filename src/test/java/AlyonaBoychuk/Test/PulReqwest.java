@@ -4,6 +4,8 @@ import ClasesToAllUs.TestInit;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+
 public class PulReqwest extends TestInit {
     @Test
     public void checkBestLineKabinet() {
@@ -114,5 +116,14 @@ public class PulReqwest extends TestInit {
         homePage.getButtonShow().click();
         homePage.getButtonLogin().click();
         Assert.assertTrue(homePage.isDisplayedForGot());
+   }
+   @Test
+    public void webSite(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        homePage.getButtonWebSite().click();
+       ArrayList<String> window = new ArrayList(driver.getWindowHandles());
+       driver.switchTo().window(window.get(1));
+        Assert.assertTrue(homePage.getButtonLoginClick());
    }
 }
