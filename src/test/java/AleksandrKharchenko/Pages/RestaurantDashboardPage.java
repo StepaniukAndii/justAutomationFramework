@@ -12,7 +12,7 @@ public class RestaurantDashboardPage extends BasePage {
     }
 
     public WebElement getPasswordDashboardField() {
-        return driver.findElement(By.xpath("//input[@id='password']"));
+        return findElementByXpath("//input[@id='password']");
     }
 
     public WebElement getSignInDashboardBtn() {
@@ -20,7 +20,7 @@ public class RestaurantDashboardPage extends BasePage {
     }
 
     public WebElement getDashboardRequiredMSG() {
-        return driver.findElement(By.xpath("//div[contains(text(),'Required')]"));
+        return findElementByXpath("//div[contains(text(),'Required')]");
     }
 
     public WebElement getEmailDashboardField() {
