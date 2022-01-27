@@ -111,6 +111,14 @@ public class TestLinkHeaderPrego extends TestInit {
         acsessuary.btnAcsessuary().click();
         Assert.assertTrue(acsessuary.textAcsessuary().isDisplayed());
     }
+    @Test
+    public void LinkAkciya(){
+        HomePage homePage = new HomePage(driver);
+        Akciya akciya = new Akciya(driver);
+        homePage.navigatePrego();
+        akciya.btnAkciya().click();
+        Assert.assertTrue(akciya.textAkciya().isDisplayed());
+    }
 
 
 }
