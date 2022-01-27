@@ -87,6 +87,14 @@ public class TestLinkHeaderPrego extends TestInit {
         mugskaya.btnMugskaya().click();
         Assert.assertTrue(mugskaya.textMugskaya().isDisplayed());
     }
+    @Test
+    public void LinkJinochiSumki(){
+        HomePage homePage = new HomePage(driver);
+        JinochiSumki jinochiSumki = new JinochiSumki(driver);
+        homePage.navigatePrego();
+        jinochiSumki.btnJinochiSumki().click();
+        Assert.assertTrue(jinochiSumki.textJinochiSumki().isDisplayed());
+    }
 
 
 }
