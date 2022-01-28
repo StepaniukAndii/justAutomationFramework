@@ -13,7 +13,8 @@ public class CheckSeasonSummerLoraShen extends TestInit {
     public void CheckSummerSeason() {
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");
-        landingPageLoraShen.SCollectionSumeer().click();
+        landingPageLoraShen.floristiks().click();
+        landingPageLoraShen.sCollectionSumeer().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("/shop-letnyaya-kollektsiya/"));
     }
 }

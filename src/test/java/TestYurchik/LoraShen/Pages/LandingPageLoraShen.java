@@ -12,5 +12,5 @@ public class LandingPageLoraShen extends BasePage {
     public WebElement floristiks(){ return findElementByXpath("//li[@id = 'shopbuketyi']"); }
     public WebElement floraTroyandi(){ return findElementByXpath("//a[contains(@href, 'kollektsiya-roz')]"); }
     public WebElement floraTulpany() { return findElementByXpath("//a[contains(@href, 'tulpanov')]"); }
-    public WebElement SCollectionSumeer() { return findElementByXpath("//a[contains(@href, 'letnyaya-kollektsiya')][contains(@class, 'dropdown')]"); }
+    public WebElement sCollectionSumeer() { return findElementByXpath("//a[contains(@href, 'letnyaya-kollektsiya')][contains(@class, 'dropdown')]"); }
 }
