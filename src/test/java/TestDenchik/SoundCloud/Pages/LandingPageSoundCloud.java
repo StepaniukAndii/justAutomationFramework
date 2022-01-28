@@ -18,4 +18,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement cookies (){
         return findElementByXpath("//button[contains(@id, 'onetrust-accept-btn-handler')]");
     }
+    public WebElement libraryButton() {
+        return findElementByXpath("//a[contains(@href,'library')]");
+    }
 }
