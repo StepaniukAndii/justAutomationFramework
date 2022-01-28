@@ -11,4 +11,5 @@ public class TroyandiPageLoraShen extends BasePage {
     public WebElement filterBar() { return  findElementByXpath("//div[@id = 'js-filterbar-toggle']"); }
     public WebElement filterPriceTag() { return findElementByXpath("//label[@for = 'id_price_6']"); }
     public WebElement filterAcceptButton() { return findElementByXpath("//button[@form = 'filter_form']"); }
+    public WebElement filterBuketTag() { return findElementByXpath("//label[@for = 'id_983']"); }
 }
