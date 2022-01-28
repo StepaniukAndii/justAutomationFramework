@@ -2,7 +2,7 @@ package SergKokan.Test;
 
 import ClasesToAllUs.TestInit;
 import SergKokan.Page.*;
-import org.openqa.selenium.WebElement;
+import SergKokan.Page.HeaderLinkPPage.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
