@@ -5,16 +5,16 @@ import TestYurchik.LoraShen.Pages.LandingPageLoraShen;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckSeasonSummerLoraShen extends TestInit {
+public class CheckDayOfAllLoveLoraShen extends TestInit {
 
     LandingPageLoraShen landingPageLoraShen;
 
     @Test
-    public void CheckSummerSeason() {
+    public void DayOfLove() {
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");
         landingPageLoraShen.floristiks().click();
-        landingPageLoraShen.sCollectionSumeer().click();
-        Assert.assertTrue(driver.getCurrentUrl().contains("letnyaya-kollektsiya"));
+        landingPageLoraShen.loveDayFlora().click();
+        Assert.assertTrue(driver.getCurrentUrl().contains("shop-den-vlyublennyih"));
     }
 }
