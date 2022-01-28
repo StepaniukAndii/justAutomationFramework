@@ -1,13 +1,8 @@
 package TestYurchik.LoraShen.Tests;
 
 import ClasesToAllUs.TestInit;
-import PullRequestsSveta.WebPlayerPage;
-import TestYurchik.LoraShen.Pages.CartPageLoraShen;
 import TestYurchik.LoraShen.Pages.LandingPageLoraShen;
 import TestYurchik.LoraShen.Pages.TroyandiPageLoraShen;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
