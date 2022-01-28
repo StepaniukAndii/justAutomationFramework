@@ -11,4 +11,5 @@ public class CartPageLoraShen extends BasePage {
 
     public WebElement deleteZeroElement(){ return findElementByXpath("//a[@data-marker = '#id_items-0']"); }
     public List<WebElement> checkCartEmpty() { return findElementsByXpath("//div[@class = 'cart-slot__empty']"); }
+    public List<WebElement> checkCartHasElement() {return findElementsByXpath("//span[contains(text(), '4412')]");}
 }
