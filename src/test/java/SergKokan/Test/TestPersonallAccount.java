@@ -2,14 +2,15 @@ package SergKokan.Test;
 
 import ClasesToAllUs.TestInit;
 import SergKokan.Page.HomePage;
-import SergKokan.Page.NoviyAccountRegistraciya;
+import SergKokan.Page.HeaderLinkPPage.NoviyAccountRegistraciya;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestPersonallAccount extends TestInit {
     @Test
     public void NoviyAccountRegistraciya(){
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage;
+        homePage = new HomePage(driver);
         NoviyAccountRegistraciya noviyAccountRegistraciya = new NoviyAccountRegistraciya(driver);
         homePage.navigatePrego();
         homePage.PersonalAccount().click();

@@ -1,4 +1,4 @@
-package SergKokan.Page;
+package SergKokan.Page.HeaderLinkPPage;
 
 import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
