@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Librarybutton extends TestInit {
     LandingPageSoundCloud landingPageSoundCloud;
     @Test
-    public void Librarybutton(){
+    public void librarybutton(){
         driver.get("https://soundcloud.com/discover");
         landingPageSoundCloud = new LandingPageSoundCloud(driver);
         landingPageSoundCloud.cookies().click();
