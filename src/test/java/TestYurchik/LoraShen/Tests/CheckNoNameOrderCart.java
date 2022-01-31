@@ -7,12 +7,12 @@ import TestYurchik.LoraShen.Pages.TroyandiPageLoraShen;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class OrderFromCartCalidLoraShen extends TestInit {
-    LandingPageLoraShen landingPageLoraShen;
+public class CheckNoNameOrderCart extends TestInit {
     TroyandiPageLoraShen troyandiPageLoraShen;
+    LandingPageLoraShen landingPageLoraShen;
     CartPageLoraShen cartPageLoraShen;
     @Test
-    public void OrderCheckValid() {
+    public void checkNoNameOrder() {
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
         cartPageLoraShen = new CartPageLoraShen(driver);
@@ -23,11 +23,10 @@ public class OrderFromCartCalidLoraShen extends TestInit {
         cartPageLoraShen.cartNameLine().sendKeys("Flex");
         cartPageLoraShen.cartEmailLine().sendKeys("shopogolik@gmail.com");
         cartPageLoraShen.cartMobilePhone().sendKeys("+380323232323");
-        cartPageLoraShen.cartNameOfDelivered().click();
-        cartPageLoraShen.cartMeBuyerCheckBox().click();
+        cartPageLoraShen.cartPhoneOfDelivered().sendKeys("+380323232323");
         cartPageLoraShen.cartSelectTime().click();
         cartPageLoraShen.cartSelectAdress().click();
         cartPageLoraShen.cartCompleteOrder().click();
-        Assert.assertTrue(driver.getCurrentUrl().contains("checkout/complete"));
+        Assert.assertTrue(cartPageLoraShen.checkNameDeliveredError().size() > 0);
     }
 }

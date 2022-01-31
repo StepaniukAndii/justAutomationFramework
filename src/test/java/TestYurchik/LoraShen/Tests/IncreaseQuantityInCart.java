@@ -12,7 +12,7 @@ public class IncreaseQuantityInCart extends TestInit {
     TroyandiPageLoraShen troyandiPageLoraShen;
     CartPageLoraShen cartPageLoraShen;
     @Test
-    public void CheckQuantityIncrease() {
+    public void checkQuantityIncrease() {
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
         cartPageLoraShen = new CartPageLoraShen(driver);

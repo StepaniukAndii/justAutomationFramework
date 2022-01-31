@@ -9,7 +9,7 @@ public class CheckTulpanyLoraShen extends TestInit {
     LandingPageLoraShen landingPageLoraShen;
 
     @Test
-    public void CheckTulpany(){
+    public void checkTulpany(){
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");
         landingPageLoraShen.floristiks().click();

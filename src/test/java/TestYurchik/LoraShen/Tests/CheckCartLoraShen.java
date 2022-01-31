@@ -14,7 +14,7 @@ public class CheckCartLoraShen extends TestInit {
     CartPageLoraShen cartPageLoraShen;
 
     @Test
-    public void CheckCartAfterDelete() {
+    public void checkCartAfterDelete() {
         driver.get("https://lorashen.ua/shop");
         cartPageLoraShen = new CartPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
