@@ -14,9 +14,9 @@ public class GooglePlaybutton extends TestInit {
         driver.get("https://soundcloud.com/discover");
         landingPageSoundCloud = new LandingPageSoundCloud(driver);
         landingPageSoundCloud.cookies().click();
-        landingPageSoundCloud.GooglePlaybutton().click();
+        landingPageSoundCloud.googlePlaybutton().click();
         ArrayList<String>tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        Assert.assertTrue(driver.getCurrentUrl().contains("com.soundcloud.android"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("=com.soundcloud.android"));
     }
 }
