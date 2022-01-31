@@ -22,4 +22,6 @@ public class CartPageLoraShen extends BasePage {
     public List<WebElement> checkCartEmailInvalid() { return findElementsByXpath("//div[contains(@class, 'error')]"); }
     public WebElement cartIncreaseQuantityOfFirstElement() { return findElementByXpath("//span[contains(@class, 'plus')]"); }
     public List<WebElement> checkQuantityTwo() { return findElementsByXpath("//input[contains(@value, '2')][contains(@name, 'quantity')]"); }
+    public WebElement cartNameOfDelivered () { return  findElementByXpath("//input[contains(@id, 'name')][contains(@name, 'ship')]"); }
+    public WebElement cartPhoneOfDelivered () { return findElementByXpath("//input[contains(@id, 'phone')][contains(@name, 'ship')]"); }
 }
