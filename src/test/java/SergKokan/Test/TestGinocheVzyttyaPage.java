@@ -1,14 +1,17 @@
 package SergKokan.Test;
 
 import ClasesToAllUs.TestInit;
-import SergKokan.Page.BosonogkiPage;
+import SergKokan.Page.*;
 import SergKokan.Page.HeaderLinkPPage.Jenskaya;
-import SergKokan.Page.HomePage;
-import SergKokan.Page.ShlepkiPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestGinocheVzyttyaPage extends TestInit {
+    public void openUrl(String site){
+        driver.get("https://prego.ua/");
+
+    }
     @Test
     public void BosonogkiPage (){
         HomePage homePage = new HomePage(driver);
@@ -21,12 +24,16 @@ public class TestGinocheVzyttyaPage extends TestInit {
     }
     @Test
     public void ShlepkiPage(){
+        driver.get("https://prego.ua/");
+
         HomePage homePage = new HomePage(driver);
         Jenskaya jenskaya = new Jenskaya(driver);
         ShlepkiPage shlepkiPage = new ShlepkiPage(driver);
-        homePage.navigatePrego();
+        VyborTovaraPage vyborTovaraPage = new VyborTovaraPage(driver);
         jenskaya.btnJenskaya().click();
         shlepkiPage.btnShlepki().click();
-        Assert.assertTrue(shlepkiPage.textShlepki().isDisplayed());
+//        Assert.assertTrue(shlepkiPage.textShlepki().isDisplayed());
+        vyborTovaraPage.btnVyborTovara().click();
+
     }
 }
