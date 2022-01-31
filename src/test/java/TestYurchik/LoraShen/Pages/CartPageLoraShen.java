@@ -13,10 +13,10 @@ public class CartPageLoraShen extends BasePage {
     public List<WebElement> checkCartEmpty() { return findElementsByXpath("//div[@class = 'cart-slot__empty']"); }
     public List<WebElement> checkCartHasElement() { return findElementsByXpath("//span[contains(text(), '4412')]"); }
     public WebElement cartNameLine() { return findElementByXpath("//input [contains(@id, 'id_billing_detail_l')]"); }
-    public WebElement cartEmailLine() { return findElementByXpath("//input[@id = 'id_billing_detail_email']"); }
-    public WebElement cartMobilePhone() { return findElementByXpath("//input[@id = 'id_billing_detail_phone']"); }
+    public WebElement cartEmailLine() { return findElementByXpath("//input[contains(@type,'email')]"); }
+    public WebElement cartMobilePhone() { return findElementByXpath("//div[contains(@class,'customer')]//input[contains(@name,'phone')]"); }
     public WebElement cartMeBuyerCheckBox() { return findElementByXpath("//label[contains(@for, 'id_same')]"); }
     public WebElement cartSelectTime() { return findElementByXpath("//label[contains(@for, 'self-6')]"); }
-    public WebElement cartCompleteOrder() { return findElementByXpath("//input[@name= 'complete_order'][@type = 'submit']"); }
+    public WebElement cartCompleteOrder() { return findElementByXpath("//input[contains(@name, 'complete')][contains(@type = 'submit')]"); }
     public WebElement cartSelectAdress() { return findElementByXpath("//label[contains(@for, 'addr1')]"); }
 }
