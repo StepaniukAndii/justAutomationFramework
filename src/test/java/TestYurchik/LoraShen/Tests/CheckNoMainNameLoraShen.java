@@ -15,7 +15,7 @@ public class CheckNoMainNameLoraShen extends TestInit {
     CartPageLoraShen cartPageLoraShen;
     TroyandiPageLoraShen troyandiPageLoraShen;
     @Test
-    public void CheckNoNameCart() {
+    public void checkNoNameCart() {
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
         cartPageLoraShen = new CartPageLoraShen(driver);
