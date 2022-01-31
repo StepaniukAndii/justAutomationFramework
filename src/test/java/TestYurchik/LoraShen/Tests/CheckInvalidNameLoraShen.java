@@ -14,7 +14,7 @@ public class CheckInvalidNameLoraShen extends TestInit {
     TroyandiPageLoraShen troyandiPageLoraShen;
     CartPageLoraShen cartPageLoraShen;
     @Test
-    public void OrderCheckEmailInvalid() {
+    public void orderCheckEmailInvalid() {
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
         cartPageLoraShen = new CartPageLoraShen(driver);

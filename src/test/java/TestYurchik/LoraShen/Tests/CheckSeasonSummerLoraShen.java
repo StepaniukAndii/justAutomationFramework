@@ -10,7 +10,7 @@ public class CheckSeasonSummerLoraShen extends TestInit {
     LandingPageLoraShen landingPageLoraShen;
 
     @Test
-    public void CheckSummerSeason() {
+    public void checkSummerSeason() {
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");
         landingPageLoraShen.floristiks().click();

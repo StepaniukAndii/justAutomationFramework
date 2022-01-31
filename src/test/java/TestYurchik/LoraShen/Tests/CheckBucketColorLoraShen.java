@@ -12,7 +12,7 @@ public class CheckBucketColorLoraShen extends TestInit {
     TroyandiPageLoraShen troyandiPageLoraShen;
 
     @Test
-    public void CheckBucketLoraShen() {
+    public void checkBucketLoraShen() {
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");

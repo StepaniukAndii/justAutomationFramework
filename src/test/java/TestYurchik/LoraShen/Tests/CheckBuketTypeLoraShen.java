@@ -12,7 +12,7 @@ public class CheckBuketTypeLoraShen extends TestInit {
     LandingPageLoraShen landingPageLoraShen;
 
     @Test
-    public void CheckBuketType() {
+    public void checkBuketType() {
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");

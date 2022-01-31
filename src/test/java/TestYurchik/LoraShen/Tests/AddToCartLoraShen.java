@@ -13,7 +13,7 @@ public class AddToCartLoraShen extends TestInit {
     CartPageLoraShen cartPageLoraShen;
 
     @Test
-    public void TestAddToCart(){
+    public void testAddToCart(){
         driver.get("https://lorashen.ua/shop");
         cartPageLoraShen = new CartPageLoraShen(driver);
         landingPageLoraShen = new LandingPageLoraShen(driver);

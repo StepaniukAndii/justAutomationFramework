@@ -10,7 +10,7 @@ public class CheckDayOfAllLoveLoraShen extends TestInit {
     LandingPageLoraShen landingPageLoraShen;
 
     @Test
-    public void DayOfLove() {
+    public void dayOfLove() {
         landingPageLoraShen = new LandingPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");
         landingPageLoraShen.floristiks().click();

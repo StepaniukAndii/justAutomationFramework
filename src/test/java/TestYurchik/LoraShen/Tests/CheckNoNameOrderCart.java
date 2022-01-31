@@ -4,6 +4,7 @@ import ClasesToAllUs.TestInit;
 import TestYurchik.LoraShen.Pages.CartPageLoraShen;
 import TestYurchik.LoraShen.Pages.LandingPageLoraShen;
 import TestYurchik.LoraShen.Pages.TroyandiPageLoraShen;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CheckNoNameOrderCart extends TestInit {
@@ -26,5 +27,6 @@ public class CheckNoNameOrderCart extends TestInit {
         cartPageLoraShen.cartSelectTime().click();
         cartPageLoraShen.cartSelectAdress().click();
         cartPageLoraShen.cartCompleteOrder().click();
+        Assert.assertTrue(cartPageLoraShen.checkNameDeliveredError().size() > 0);
     }
 }

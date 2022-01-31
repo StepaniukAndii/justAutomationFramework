@@ -23,6 +23,7 @@ public class OrderFromCartCalidLoraShen extends TestInit {
         cartPageLoraShen.cartNameLine().sendKeys("Flex");
         cartPageLoraShen.cartEmailLine().sendKeys("shopogolik@gmail.com");
         cartPageLoraShen.cartMobilePhone().sendKeys("+380323232323");
+        cartPageLoraShen.cartNameOfDelivered().click();
         cartPageLoraShen.cartMeBuyerCheckBox().click();
         cartPageLoraShen.cartSelectTime().click();
         cartPageLoraShen.cartSelectAdress().click();
