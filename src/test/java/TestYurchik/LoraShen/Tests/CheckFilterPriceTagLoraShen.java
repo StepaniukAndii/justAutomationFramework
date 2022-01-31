@@ -13,7 +13,7 @@ public class CheckFilterPriceTagLoraShen extends TestInit {
 
 
     @Test
-    public void CheckFilterPriceTag() {
+    public void checkFilterPriceTag() {
         landingPageLoraShen = new LandingPageLoraShen(driver);
         troyandiPageLoraShen = new TroyandiPageLoraShen(driver);
         driver.get("https://lorashen.ua/shop");

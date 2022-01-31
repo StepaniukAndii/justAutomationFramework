@@ -5,14 +5,18 @@ import TestDenchik.SoundCloud.Pages.LandingPageSoundCloud;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Streambutton extends TestInit {
+import java.util.ArrayList;
+
+public class GooglePlaybutton extends TestInit {
     LandingPageSoundCloud landingPageSoundCloud;
     @Test
-    public void streambutton(){
+    public void googlePlaybutton(){
         driver.get("https://soundcloud.com/discover");
         landingPageSoundCloud = new LandingPageSoundCloud(driver);
         landingPageSoundCloud.cookies().click();
-        landingPageSoundCloud.streamButton().click();
-        Assert.assertTrue(driver.getCurrentUrl().contains("stream"));
+        landingPageSoundCloud.googlePlaybutton().click();
+        ArrayList<String>tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        Assert.assertTrue(driver.getCurrentUrl().contains("com.soundcloud.android"));
     }
 }
