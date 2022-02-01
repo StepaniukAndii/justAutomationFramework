@@ -23,9 +23,7 @@ public class PartnerWithUsTest extends TestInit {
     body.applybtn().click();
     driverPage.applyinyourcitybtn().click();
     driverPage.deliverydriveramesbtn().click();
-     Boolean wait = new WebDriverWait(driver, 10).
-             until(ExpectedConditions.urlToBe("https://qa2.eatstreet.com/careers/delivery-driver-ames-ia"));
-     Assert.assertEquals(driver.getCurrentUrl(), "https://qa2.eatstreet.com/careers/delivery-driver-ames-ia");
+     Assert.assertTrue(driver.getCurrentUrl().contains("ames-ia"));
  }
 
 }
