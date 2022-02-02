@@ -245,4 +245,7 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[@class='w3-left w3-btn']")).isDisplayed();
     }
 
+    public boolean getHtmlExample() {
+        return driver.findElement(By.xpath("//div[@class='w3-code htmlHigh notranslate green-border']")).isDisplayed();
+    }
 }
