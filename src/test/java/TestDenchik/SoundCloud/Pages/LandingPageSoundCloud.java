@@ -27,4 +27,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement appStorebutton(){
         return findElementByXpath("//a[contains(@class, 'appStore')]");
     }
+    public WebElement uploadbutton(){
+        return findElementByXpath("//span[contains(@class, 'upload')]");
+    }
 }
