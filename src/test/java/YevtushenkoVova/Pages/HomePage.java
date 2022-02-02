@@ -16,18 +16,10 @@ public class HomePage extends BasePage {
     public WebElement openPageSingIn(){
         return findElement("//a[@id='menu-signin']");
     }
-    public WebElement inputEmail() {
-        return driver.findElement(By.xpath("//input[@id='email']"));
-    }
-    public WebElement inputPassword() {
 
-        return driver.findElement(By.xpath("//input[@id='password']"));
-    }
-    public WebElement getSignInBTN() {
-        return driver.findElement(By.xpath("//button[@id='signin']"));
-    }
     public WebElement getMyAccound(){
         return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
     }
+
 }
 
