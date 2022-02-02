@@ -15,7 +15,7 @@ import java.time.Duration;
 import java.util.LinkedList;
 import java.util.List;
 
-public class giTestInit {
+public class TestInit {
     public WebDriver driver;
     ChromeOptions options = new ChromeOptions();
 
