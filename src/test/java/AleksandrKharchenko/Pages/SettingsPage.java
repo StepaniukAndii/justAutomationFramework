@@ -10,7 +10,7 @@ public class SettingsPage extends BasePage {
     }
 
     public WebElement getEditingLink() {
-        return findElementByXpath("//div[@id='ooui-php-469']/span");
+        return findElementByXpath("//div[@id='ooui-php-467']//span[text()='Редактирование']");
     }
 
     public WebElement getFirstCheckboxInEditing() {
