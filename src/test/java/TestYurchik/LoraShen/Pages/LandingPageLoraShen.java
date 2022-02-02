@@ -32,4 +32,5 @@ public class LandingPageLoraShen extends BasePage {
     public WebElement luskunchickNYColl() { return findElementByXpath("//a[contains(@href, 'shop-schelkynchik')]"); }
     public WebElement aboutCompanyLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'about')]"); }
     public WebElement contactsLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'contact')]"); }
+    public WebElement shopFooterLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'shops')]"); }
 }
