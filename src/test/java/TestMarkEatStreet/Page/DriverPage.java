@@ -14,4 +14,5 @@ public class DriverPage extends BasePage {
     public WebElement deliverydriveramesbtn(){return findElementByXpath("//*[contains(text(),'Ames')]");}
     public WebElement enteryouraddressbtn(){return findElementByXpath("//input[contains(@id, 'address')]");}
     public WebElement restorauntorfoodbtn(){return findElementByXpath("//input[contains(@id, 'search-autocomplete')]");}
+    public WebElement gotitbtn(){return findElementByXpath("//*[contains(text(),'Got it')]");}
 }
