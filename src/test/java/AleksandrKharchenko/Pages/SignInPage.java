@@ -27,7 +27,7 @@ public class SignInPage extends BasePage {
     }
 
     public WebElement getErrorMSG() {
-        return driver.findElement(By.xpath("//span[contains(text(),'is incorrect.')]"));
+        return findElementByXpath("//span[contains(text(),'is incorrect.')]");
     }
 
     public void closeModal() {
@@ -39,7 +39,7 @@ public class SignInPage extends BasePage {
     }
 
     public WebElement getEmailRequiredMSG() {
-        return driver.findElement(By.xpath("//div[@id='email-validation-tag']"));
+        return findElementByXpath("//div[@id='email-validation-tag']");
     }
 
     public WebElement getNameFieldSignInWikipedia() {

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Smoke" verbose="3" parallel="classes" thread-count="3">
+    <test name="Smoke">
+        <classes>
+            <class name="AleksandrKharchenko.Tests.TestAllo"/>
+            <class name="AleksandrKharchenko.Tests.TestFooter"/>
+            <class name="AleksandrKharchenko.Tests.TestSignUp"/>
+        </classes>
+    </test>
+</suite>
