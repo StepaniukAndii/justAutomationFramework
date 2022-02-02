@@ -142,20 +142,6 @@ public class PulReqwest extends TestInit {
         Assert.assertTrue(homePage.getButtonPrevious());}
 
 
-//        @Test
-//        public void qqq () {
-//            HomePage homePage = new HomePage(driver);
-//        openUrl("https://support.w3schools.com/hc/en-gb/articles/4411122929553");
-////        homePage.getButtonWebSite().click();
-////        homePage.getButtonPaidCourses().click();
-////      ArrayList<String> window = new ArrayList(driver.getWindowHandles());
-////      driver.switchTo().window(window.get(1));
-////       homePage.getButtonAddMultipleUsers().click();
-////       driver.switchTo().window(window.get(4));
-////        homePage.getLinkW3School().click();
-//            //homePage.getButtonSubmitARequest().get(0).click();
-//            Assert.assertTrue(homePage.getButtonSubmitARequest().isDisplayed());
-//        }
        @Test
        public void html() {
            HomePage homePage = new HomePage(driver);
@@ -163,5 +149,15 @@ public class PulReqwest extends TestInit {
            Assert.assertTrue(homePage.getHtmlExample());
        }
 
+       @Test
+        public void submitAReqest () {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        homePage.getButtonWebSite().click();
+           ArrayList<String> window = new ArrayList(driver.getWindowHandles());
+           driver.switchTo().window(window.get(1));
+        sleep(3);
+        Assert.assertTrue(homePage.getButtonStartedForFree());
+       }
     }
 
