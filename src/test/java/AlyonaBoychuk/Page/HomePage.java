@@ -8,12 +8,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-    public void checkAboutUs() {driver.findElement(By.xpath("//a [@ui-sref='about-us']")).click();
+
+    public void checkAboutUs() {
+        driver.findElement(By.xpath("//a [@ui-sref='about-us']")).click();
     }
 
     public void clickGetTheAppLink() {
@@ -24,7 +27,7 @@ public class HomePage extends BasePage {
         driver.findElement(By.xpath("//button[@class='btn']")).click();
     }
 
-    public boolean getUrlAboutUsIsDisplayed(){
+    public boolean getUrlAboutUsIsDisplayed() {
         return driver.getCurrentUrl().contains("about-us");
     }
 
@@ -37,15 +40,21 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//span[text()='Live Chat']")).isDisplayed();
     }
 
-    private void openURLLinkedin() {driver.findElement(By.xpath("https://www.linkedin.com/feed/")).isDisplayed();
+    private void openURLLinkedin() {
+        driver.findElement(By.xpath("https://www.linkedin.com/feed/")).isDisplayed();
     }
-    public void getButtonAgreeAndJoin() {driver.findElement(By.xpath("//button[@class='join-form__form-body-submit-button']")).click();
-    }
-    public void getButtonCookiePolicy() {driver.findElement(By.xpath("//a[@data-tracking-control-name='registration-frontend_join-form-cookie-policy']")).click();}
 
-    public boolean numberOfWindows(){
+    public void getButtonAgreeAndJoin() {
+        driver.findElement(By.xpath("//button[@class='join-form__form-body-submit-button']")).click();
+    }
+
+    public void getButtonCookiePolicy() {
+        driver.findElement(By.xpath("//a[@data-tracking-control-name='registration-frontend_join-form-cookie-policy']")).click();
+    }
+
+    public boolean numberOfWindows() {
         return new WebDriverWait(driver, 10)
-        .until(ExpectedConditions.numberOfWindowsToBe(2));
+                .until(ExpectedConditions.numberOfWindowsToBe(2));
     }
 
     public WebElement getButtonKabinet() {
@@ -105,7 +114,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getButtonOplata() {
-       return driver.findElement(By.xpath("//a[text()='ОПЛАТА']"));
+        return driver.findElement(By.xpath("//a[text()='ОПЛАТА']"));
     }
 
     public WebElement getButtonZnachennya() {
@@ -196,4 +205,44 @@ public class HomePage extends BasePage {
     public boolean getButtonLoginClick() {
         return findElementByXpath("//span[text()='Get started for free']").isDisplayed();
     }
+
+    public WebElement getButtonPaidCourses() {
+        return driver.findElement(By.xpath("//a[@id='cert_navbtn']"));
+    }
+
+    public WebElement getButtonAddMultipleUsers() {
+        return findElementByXpath("//a[@class='btn btn-info btn-lg btn-action-light']");
+    }
+
+//    public List<WebElement> getButtonSubmitARequest() {
+//        return findElementsByXpath("//div[@id='anchor-state']");
+//    }
+    public WebElement getButtonSubmitARequest() {
+        return findElementByXpath("//a[@class='submit-a-request']");
+    }
+
+    public WebElement getLinkW3School() {
+        return findElementByXpath("//li/a[contains(text(),'W3Schools.com')]");
+    }
+
+    public WebElement getInputSearch() {
+        return findElementByXpath("//input[@id='search2']");
+    }
+
+    public WebElement getButtonSearch() {
+        return findElementByXpath("//i[@id='learntocode_searchicon']");
+    }
+
+    public WebElement getButtonJava() {
+        return findElementByXpath("//a[@title='Java Tutorial']");
+    }
+
+    public WebElement getButtonConstruktor() {
+        return findElementByXpath("//a[contains(text(),'Java Constructors')]");
+    }
+
+    public boolean getButtonPrevious() {
+        return driver.findElement(By.xpath("//a[@class='w3-left w3-btn']")).isDisplayed();
+    }
+
 }
