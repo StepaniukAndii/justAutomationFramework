@@ -26,4 +26,5 @@ public class LandingPageLoraShen extends BasePage {
     public WebElement blackFridayLoraShen() { return findElementByXpath("//a[contains(@href, 'black')]"); }
     public WebElement rasteniyaLoraShen() { return findElementByXpath("//li[contains(@id, 'rasteniya')][contains(@class, 'dropdown')]"); }
     public WebElement orkhideyaRoslinyLoraShen() { return findElementByXpath("//a[contains(@href, 'shop-orkhidei/')][contains(@class, 'dropdown')]"); }
+    public WebElement kashpoDlyaRoslin() { return findElementByXpath("//a[contains(@href, 'dla-rasteniy')]"); }
 }
