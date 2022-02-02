@@ -198,9 +198,6 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a[text()='Forgot password?']").isDisplayed();
     }
 
-    public WebElement getButtonWebSite() {
-        return driver.findElement(By.xpath("//a[@class='w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink']"));
-    }
 
     public boolean getButtonLoginClick() {
         return findElementByXpath("//span[text()='Get started for free']").isDisplayed();
@@ -214,9 +211,6 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a[@class='btn btn-info btn-lg btn-action-light']");
     }
 
-//    public List<WebElement> getButtonSubmitARequest() {
-//        return findElementsByXpath("//div[@id='anchor-state']");
-//    }
     public WebElement getButtonSubmitARequest() {
         return findElementByXpath("//a[@class='submit-a-request']");
     }
@@ -247,5 +241,12 @@ public class HomePage extends BasePage {
 
     public boolean getHtmlExample() {
         return driver.findElement(By.xpath("//div[@class='w3-code htmlHigh notranslate green-border']")).isDisplayed();
+    }
+    public WebElement getButtonWebSite() {
+        return driver.findElement(By.xpath("//a[@class='w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink']"));
+    }
+
+    public boolean getButtonStartedForFree() {
+        return findElementByXpath("//button[@class='_1VfsI _OD95i _3_H0V mobb']").isDisplayed();
     }
 }
