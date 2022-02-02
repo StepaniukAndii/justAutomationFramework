@@ -37,4 +37,5 @@ public class LandingPageLoraShen extends BasePage {
     public WebElement careraFooterLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'carera')]");}
     public WebElement ekoPrekolFooterLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'eko-')]"); }
     public WebElement novostiFooterLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'novost')]"); }
+    public WebElement uhodFooterLoraShen() { return findElementByXpath("//li[contains(@class, 'footer')]/a[contains(@href, 'rekomendasi')]"); }
 }
