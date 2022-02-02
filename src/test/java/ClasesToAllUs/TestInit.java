@@ -15,7 +15,7 @@ import java.time.Duration;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TestInit {
+public class giTestInit {
     public WebDriver driver;
     ChromeOptions options = new ChromeOptions();
 
@@ -74,10 +74,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-//    @AfterMethod
-//    public void afterTest() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void afterTest() {
+        driver.quit();
+    }
 
     public void openUrl(String site) {
         driver.get(site);
