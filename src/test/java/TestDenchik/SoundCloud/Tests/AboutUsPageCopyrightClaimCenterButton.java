@@ -12,7 +12,7 @@ public class AboutUsPageCopyrightClaimCenterButton extends TestInit {
         driver.get("https://soundcloud.com/pages/contact");
         landingPageSoundCloud = new LandingPageSoundCloud(driver);
         landingPageSoundCloud.cookies().click();
-        landingPageSoundCloud.aboutuspagecopyrightclaimcenterbutton().click();
+        landingPageSoundCloud.aboutUsPageCopyrightClaimCenterButton().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("secure"));
     }
 }
