@@ -139,41 +139,52 @@ public class PulReqwest extends TestInit {
         homePage.getButtonSearch().click();
         homePage.getButtonJava().click();
         homePage.getButtonConstruktor().click();
-        Assert.assertTrue(homePage.getButtonPrevious());}
+        Assert.assertTrue(homePage.getButtonPrevious());
+    }
 
 
-       @Test
-       public void html() {
-           HomePage homePage = new HomePage(driver);
-           openUrl("https://www.w3schools.com/");
-           Assert.assertTrue(homePage.getHtmlExample());
-       }
+    @Test
+    public void html() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        Assert.assertTrue(homePage.getHtmlExample());
+    }
 
-       @Test
-        public void submitAReqest () {
+    @Test
+    public void submitAReqest() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://www.w3schools.com/");
         homePage.getButtonWebSite().click();
-           ArrayList<String> window = new ArrayList(driver.getWindowHandles());
-           driver.switchTo().window(window.get(1));
+        ArrayList<String> window = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(window.get(1));
         sleep(3);
         Assert.assertTrue(homePage.getButtonStartedForFree());
-       }
+    }
+
     @Test
-    public void tutorials () {
+    public void tutorials() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://www.w3schools.com/");
         homePage.getButtontutorials().click();
         homePage.getButtonlearnCSS().click();
         Assert.assertTrue(homePage.getButtonHome());
     }
+
     @Test
-    public void references(){
+    public void references() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://www.w3schools.com/");
         homePage.getButtonReferences().click();
         homePage.getButtonVideoTutorials().click();
-       Assert.assertTrue(homePage.getButtonBuyVideo());
+        Assert.assertTrue(homePage.getButtonBuyVideo());
     }
+
+    @Test
+    public void playgame() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        homePage.getButtonPlaygame().click();
+        Assert.assertTrue(homePage.getButtonPlayCode());
     }
+}
 
