@@ -12,4 +12,6 @@ public class LandingPageProm extends BasePage {
     public WebElement regionChooseProm() { return findElementByXpath("//button[contains(@data-qaid,'qa_regions')]");}
     public WebElement searchTownRegionProm() { return findElementByXpath("//input[contains(@data-qaid,'delivery_')]");}
     public List<WebElement> checkRealRegionChange() { return findElementsByXpath("//span[contains(@class, 'Ii')]");}
+    public WebElement supportPageProm() { return findElementByXpath("//div[contains(@class, 'kf')]/a[contains(@href, 'help')]");}
+
 }
