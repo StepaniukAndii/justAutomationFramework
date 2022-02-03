@@ -15,7 +15,6 @@ public class FiltringItalianFoodRestEatstreet extends TestInit {
         homePage.getAdressInput().sendKeys("San Francisco, CA");
         homePage.getFedBtn().click();
         homePage.getItalianFoodLabel().get(57).click();
-        sleep(5);
         Assert.assertTrue(homePage.getItalianFood().getText().contains("Italian Food"));
     }
 
@@ -37,9 +36,7 @@ public class FiltringItalianFoodRestEatstreet extends TestInit {
         openUrl("https://qa2.eatstreet.com/");
         homePage.checkAndClousePopUpWindow();
         homePage.getDeKalb().click();
-        sleep(5);
         homePage.getViewAllRestDeKalb().click();
-        sleep(5);
         Assert.assertTrue(homePage.btnSpecialist().isDisplayed());
         Assert.assertTrue(homePage.btnOpenNow().isDisplayed());
         Assert.assertTrue(homePage.btnOrderAhead().isDisplayed());

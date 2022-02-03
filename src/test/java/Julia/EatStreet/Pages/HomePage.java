@@ -18,11 +18,11 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getAdressInput() {
-        return driver.findElement(By.xpath("//input[@ng-model='searchParam']"));
+        return findElementByXpath("//input[@ng-model='searchParam']");
     }
 
     public WebElement getGoItBtn() {
-        return driver.findElement(By.xpath("//button[@class='btn']"));
+        return findElementByXpath("//button[@class='btn']");
     }
 
     public WebElement getFedBtn() {
@@ -30,7 +30,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getPageNumberList() {
-        return driver.findElements(By.xpath("//ul[@class='pagination__pages']//a"));
+        return findElementsByXpath("//ul[@class='pagination__pages']//a");
     }
 
     public List<WebElement> getAllRest() {
@@ -54,7 +54,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getSearchAttempt() {
-        return driver.findElements(By.xpath("//button[@class='btn']"));
+        return findElementsByXpath("//button[@class='btn']");
     }
 
     public WebElement restName() {
@@ -62,7 +62,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement clickSignInBtn() {
-        return driver.findElement(By.xpath("//a[@id='menu-signin']"));
+        return findElementByXpath("//a[@id='menu-signin']");
     }
 
     public WebElement clickSingInWithGoogle() {
@@ -73,8 +73,8 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(), 'Вход')]"));
     }
 
-    public WebElement myAccountText() {
-        return driver.findElement(By.xpath("//a[contains(text(), 'My Account')]"));
+    public WebElement getNewToEatstreetText() {
+        return findElementByXpath("//span[contains(text(), 'New to EatStreet?')]");
     }
 
     public WebElement clickSingInWithFacebook() {
@@ -86,27 +86,27 @@ public class HomePage extends BasePage {
     }
 
     public WebElement enterPassWithFacebook() {
-        return driver.findElement(By.xpath("////input[@id='pass']"));
+        return findElementByXpath("//input[@id='password']");
     }
 
     public WebElement selectCityMuncie() {
-        return driver.findElement(By.xpath("//a[contains(text(), 'Muncie, IN').scrollIntoView(false)]"));
+        return findElementByXpath("//a[contains(text(), 'Muncie, IN')]");
     }
 
     public WebElement selectCategoryLateNightFood() {
-        return driver.findElement(By.xpath("//li[@class='cuisine-types__item']"));
+        return findElementByXpath("//li[@class='cuisine-types__item']");
     }
 
     public WebElement selectRestInCity() {
-        return driver.findElement(By.xpath("//button[@class='cuisine-types__item__button ng-binding']"));
+        return findElementByXpath("//a[@class='restaurant-header restaurant-header--rest-list ng-binding']");
     }
 
     public WebElement clickSearchMenu() {
-        return driver.findElement(By.xpath("//input[@placeholder='Search Menu']"));
+        return findElementByXpath("//input[@placeholder='Search Menu']");
     }
 
     public WebElement checkTextDeluxPizza() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'Deluxe Pizza')]"));
+        return findElementByXpath("//span[contains(text(), 'Deluxe Pizza')]");
     }
 
     public WebElement clickSignUpLink() {
@@ -205,7 +205,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getRestInNY() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'NY')]"));
+        return findElementByXpath("//span[contains(text(), 'NY')]");
     }
 
     public WebElement btnBlog() {
@@ -235,22 +235,23 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getAdressSearchAttempt() {
-        return driver.findElements(By.xpath("//div[@class='modal-footer']/a"));
+        return driver.findElements(By.xpath("//div[@class='modal-content']"));
     }
 
     public void checkAndClouseAdressSearchAttempt() {
         if (getAdressSearchAttempt().size() > 0) {
-            sleep(2);
             getAdressSearchAttempt().get(1).click();
+        }
+        else {getFedBtn().click();
         }
     }
 
     public List<WebElement> getItalianFoodLabel() {
-        return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
+        return findElementsByXpath("//ul[@class='filters-section_checkoxes']//label");
     }
 
     public WebElement getItalianFood() {
-        return driver.findElement(By.xpath("//span[contains(text(),'Italian Food')]"));
+        return findElementByXpath("//span[contains(text(),'Italian Food')]");
     }
 
     public WebElement getForCustomers() {
@@ -313,7 +314,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getBackToLakewood() {
-        return driver.findElement(By.xpath("//a[contains(text(), 'Back to Lakewood, CO Restaurants')]"));
+        return findElementByXpath("//a[contains(text(), 'Back to Lakewood, CO Restaurants')]");
     }
 
     public WebElement btnCareers() {
@@ -349,11 +350,11 @@ public class HomePage extends BasePage {
     }
 
     public WebElement clickTakeOutBtn() {
-        return driver.findElement(By.xpath("//label[contains(text(),'Takeout')]"));
+        return findElementByXpath("//label[contains(text(),'Takeout')]");
     }
 
     public List<WebElement> getDesertLabel() {
-        return driver.findElements(By.xpath("//ul[@class='cuisine-types__list']//li"));
+        return findElementsByXpath("//ul[@class='cuisine-types__list']//li");
     }
 
     public WebElement getBaltimoreCity() {
@@ -361,7 +362,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getDeKalb() {
-        return driver.findElement(By.xpath("//a[contains(text(),'DeKalb, IL')]"));
+        return findElementByXpath("//a[contains(text(),'DeKalb, IL')]");
     }
 
     public WebElement getViewAllRestDeKalb() {
@@ -369,22 +370,22 @@ public class HomePage extends BasePage {
     }
 
     public WebElement btnSpecialist() {
-        return driver.findElement(By.xpath("//label[contains(text(),'Specials')]"));
+        return findElementByXpath("//label[contains(text(),'Specials')]");
     }
 
     public WebElement btnOpenNow() {
-        return driver.findElement(By.xpath("//label[contains(text(),'Open Now')]"));
+        return findElementByXpath("//label[contains(text(),'Open Now')]");
     }
 
     public WebElement btnOrderAhead() {
-        return driver.findElement(By.xpath("//label[contains(text(),'Order Ahead')]"));
+        return findElementByXpath("//label[contains(text(),'Order Ahead')]");
     }
     public List<WebElement> enterFieldMyAnswer() {
         return driver.findElements(By.xpath("//div[@jsname='LwH6nd']"));
     }
 
     public List<WebElement> getbtnFiltrSection() {
-        return driver.findElements(By.xpath("//ul[@class='filters-section_checkoxes']//label"));
+        return findElementsByXpath("//ul[@class='filters-section_checkoxes']//label");
     }
 
     public WebElement getSectionFiltrAllRestInCity() {
@@ -521,7 +522,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getRadioBtnTakeOut() {
-        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+        return findElementByXpath("//input[@id='filters-checkbox-takeout']");
     }
     public WebElement explicitWaitClickable(String locator){
         return new WebDriverWait(driver, 10)
@@ -547,5 +548,13 @@ public class HomePage extends BasePage {
 
     public WebElement getRestInHouston() {
         return findElementByXpath("//h1[contains(text(), 'Mi Casa De Sabor Bar & Grill')]");
+    }
+
+    public WebElement getBackToPhoenix() {
+        return findElementByXpath("//a[contains(text(), 'Back to Phoenix, AZ Restaurants')]");
+    }
+
+    public WebElement getTryAnotherPasswordText() {
+        return findElementByXpath("//div[@id='password-validation-tag']");
     }
 }

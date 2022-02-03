@@ -11,11 +11,12 @@ public class SearchRestInCity extends TestInit {
     public void searchRestInCity() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://eatstreet.com/");
+        homePage.getGoItBtn().click();
         homePage.selectCityMuncie().click();
         homePage.selectCategoryLateNightFood().click();
         homePage.selectRestInCity().click();
         homePage.clickSearchMenu().sendKeys("Deluxe Pizza");
-        Assert.assertEquals(homePage.checkTextDeluxPizza().getText(),"Delux Pizza");
+        Assert.assertTrue(homePage.checkTextDeluxPizza().getText().contains("Deluxe Pizza"));
         }
 
 }
