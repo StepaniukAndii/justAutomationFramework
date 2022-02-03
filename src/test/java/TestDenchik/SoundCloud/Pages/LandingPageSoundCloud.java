@@ -30,4 +30,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement uploadbutton(){
         return findElementByXpath("//span[contains(@class, 'upload')]");
     }
+    public WebElement proplansbutton(){
+        return findElementByXpath("//li[contains(@class, 'g-tabs-item')]/a[contains(@href, 'pro')]");
+    }
 }
