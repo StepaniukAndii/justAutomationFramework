@@ -16,6 +16,7 @@ public class LandingPageProm extends BasePage {
     public WebElement specialForYouProm() { return findElementByXpath("//a[contains(@data-qaid, 'special')]");}
     public WebElement vlubleniyePodarkiProm() { return findElementByXpath("//a[contains(@data-qaid, 'android')]");}
     public WebElement iOSbuttonProm() { return findElementByXpath("//a[contains(@data-qaid, 'apple')]");}
+    public WebElement huaweiButtonProm() { return findElementByXpath("//a[contains(@data-qaid, 'huawei')]");}
 
 
 }
