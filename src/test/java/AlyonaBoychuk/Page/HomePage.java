@@ -249,4 +249,16 @@ public class HomePage extends BasePage {
     public boolean getButtonStartedForFree() {
         return findElementByXpath("//button[@class='_1VfsI _OD95i _3_H0V mobb']").isDisplayed();
     }
+
+    public WebElement getButtontutorials() {
+        return findElementByXpath("//a[@id='navbtn_tutorials']");
+    }
+
+    public WebElement getButtonlearnCSS() {
+        return findElementByXpath("//a[contains(text(),'Learn CSS')]");
+    }
+
+    public boolean getButtonHome() {
+        return findElementByXpath("//a[@class='w3-left w3-btn']").isDisplayed();
+    }
 }
