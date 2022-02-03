@@ -11,6 +11,8 @@ import java.time.Duration;
 import java.util.List;
 
 public class HomePage extends BasePage {
+
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -272,5 +274,13 @@ public class HomePage extends BasePage {
 
     public boolean getButtonBuyVideo() {
         return driver.findElement(By.xpath("//a[@id='planbox']")).isDisplayed();
+    }
+
+    public WebElement getButtonPlaygame() {
+        return driver.findElement(By.xpath("//a[@class='w3-button tut-button black-color']"));
+    }
+
+    public boolean getButtonPlayCode() {
+        return findElementByXpath("//a[@class='w3-button tut-button black-color']").isDisplayed();
     }
 }
