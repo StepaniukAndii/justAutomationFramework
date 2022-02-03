@@ -14,7 +14,7 @@ public class SingInCheck extends TestInit {
         HomePage homePage = new HomePage(driver);
         SingIn singIn = new SingIn(driver);
         openUrl("https://qa2.eatstreet.com/");
-        homePage.clickButtonGotIt().click();
+        homePage.buttonGotIt().click();
         homePage.openPageSingIn().click();
         singIn.inputEmail().sendKeys("vv1808@ukr.net");
         singIn.inputPassword().sendKeys("Qwert@54321");
@@ -28,7 +28,7 @@ public class SingInCheck extends TestInit {
         HomePage homePage = new HomePage(driver);
         SingIn singIn = new SingIn(driver);
         openUrl("https://qa2.eatstreet.com/");
-        homePage.clickButtonGotIt().click();
+        homePage.buttonGotIt().click();
         homePage.openPageSingIn().click();
 
         Assert.assertTrue(singIn.linkSingUp().isDisplayed());
