@@ -159,5 +159,13 @@ public class PulReqwest extends TestInit {
         sleep(3);
         Assert.assertTrue(homePage.getButtonStartedForFree());
        }
+    @Test
+    public void tutorials () {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.w3schools.com/");
+        homePage.getButtontutorials().click();
+        homePage.getButtonlearnCSS().click();
+        Assert.assertTrue(homePage.getButtonHome());
+    }
     }
 
