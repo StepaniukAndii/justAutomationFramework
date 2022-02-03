@@ -42,4 +42,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement aboutuspagefacebooklink(){
         return findElementByXpath("//a[contains(@href, 'http://www.facebook.com/soundcloud')]");
     }
+    public WebElement aboutuspagetwitterlink() {
+        return findElementByXpath("//a[contains(@href, 'http://twitter.com/soundcloud')]");
+    }
 }
