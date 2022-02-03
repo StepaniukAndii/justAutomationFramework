@@ -3,6 +3,7 @@ package SergKokan.Test;
 import ClasesToAllUs.TestInit;
 import SergKokan.Page.*;
 import SergKokan.Page.HeaderLinkPPage.Jenskaya;
+import SergKokan.Page.HeaderLinkPPage.Mugskaya;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,6 +35,14 @@ public class TestGinocheVzyttyaPage extends TestInit {
         shlepkiPage.btnShlepki().click();
 //        Assert.assertTrue(shlepkiPage.textShlepki().isDisplayed());
         vyborTovaraPage.btnVyborTovara().click();
+
+    }
+    @Test
+    public void pokupkaMugskihBotinok(){
+        driver.get("https://prego.ua/");
+        HomePage homePage = new HomePage(driver);
+        Mugskaya mugskaya = new Mugskaya(driver);
+        mugskaya.btnMugskaya().click();
 
     }
 }
