@@ -33,7 +33,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getMyAccountLink() {
-        return driver.findElement(By.xpath("//a[@id='menu-my-account']"));
+        return findElementByXpath("//a[@id='menu-my-account']");
     }
 
     public WebElement getGetTheAppLink() {
@@ -95,7 +95,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getLinkSignUp() {
-        return findElementByXpath("//button[contains(@class,'authentication__button--register')]");
+        return findElementByXpath("//li[@class='login-tab']");
     }
 
     public WebElement getNameField() {
@@ -118,16 +118,8 @@ public class HomePage extends BasePage {
         return findElementByXpath("//span[contains(text(),'для заповнення.')]");
     }
 
-    public WebElement getFieldPhone() {
-        return findElementByXpath("//input[@id='v-register_telephone_number']");
-    }
-
     public List<WebElement> getErrorSignUpMSG() {
         return findElementsByXpath("//span[contains(text(),'для заповнення.')]");
-    }
-
-    public WebElement getSignInAlloLink() {
-        return findElementByXpath("//button[@class='authentication__button--login']");
     }
 
     public WebElement getLoginFieldSignInAllo() {
@@ -142,8 +134,8 @@ public class HomePage extends BasePage {
         return findElementByXpath("//button[@type='button' and contains(text(),'Вхід')]");
     }
 
-    public WebElement getUserName() {
-        return findElementByXpath("//div[@id='account-top-name']");
+    public WebElement getNumberOneInKorzina() {
+        return findElementByXpath("//span[@class='c-counter']");
     }
 
     public WebElement getLinkSignInWikipedia() {
@@ -191,7 +183,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getRandomPageLink() {
-        return findElementByXpath("//span[contains(text(),'Случайная страница')]");
+        return findElementByXpath("//span[contains(text(),'Случайная статья')]");
     }
 
     public WebElement getCurrentEventsLink() {
@@ -336,5 +328,13 @@ public class HomePage extends BasePage {
 
     public WebElement getLinkSaltLakeCity() {
         return findElementByXpath("//a[text()='Salt Lake City, UT']");
+    }
+
+    public WebElement getBtnTarifi() {
+        return findElementByXpath("//a[text()='ТАРИФИ']");
+    }
+
+    public WebElement getBtnProfile() {
+        return findElementByXpath("//button[@aria-label='Профіль']");
     }
 }

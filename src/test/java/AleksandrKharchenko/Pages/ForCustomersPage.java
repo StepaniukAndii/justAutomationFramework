@@ -15,6 +15,6 @@ public class ForCustomersPage extends BasePage {
     }
 
     public WebElement getContactUsLinkForCustomers() {
-        return driver.findElement(By.xpath("//a[@id='9']"));
+        return findElementByXpath("//a[@id='9']");
     }
 }
