@@ -283,4 +283,24 @@ public class HomePage extends BasePage {
     public boolean getButtonPlayCode() {
         return findElementByXpath("//a[@class='w3-button tut-button black-color']").isDisplayed();
     }
+
+    public WebElement getButtonExertisses() {
+        return driver.findElement(By.xpath("//a[@id='navbtn_exercises']"));
+    }
+
+    public boolean getButtonExercises() {
+        return findElementByXpath("//a[@style='width:155px;font-size:21px']").isDisplayed();
+    }
+
+    public boolean getButtonQuizzes() {
+        return findElementByXpath("//a[@style='width:135px;font-size:21px']").isDisplayed();
+    }
+
+    public boolean getButtonCourses() {
+        return findElementByXpath("//a[@style='width:135px;font-size:21px']").isDisplayed();
+    }
+
+    public boolean getButtonCertificates() {
+        return findElementByXpath("//a[@style='width:150px;font-size:21px']").isDisplayed();
+    }
 }
