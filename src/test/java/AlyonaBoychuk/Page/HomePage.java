@@ -312,4 +312,17 @@ public class HomePage extends BasePage {
     public boolean getButtonCookie() {
         return findElementByXpath("//a[contains(text(),'Cookie')]").isDisplayed();
     }
+
+    public WebElement getStringSearch() {
+        return driver.findElement(By.xpath("//input[@class='_JcImSJ']"));
+    }
+
+    public WebElement getLinkVase() {
+        return driver.findElement(By.xpath("//a[contains(@href, 'shop/vaza-kaplya-steklyannaya')]/img[contains(@alt, 'Ваза Крапля')]"));
+    }
+
+    public boolean getButtonPay() {
+        return findElementByXpath("//button[@class='link link--blue link--inverted p-buy__link']").isDisplayed();
+
+    }
 }
