@@ -285,6 +285,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getButtonExertisses() {
+
         return driver.findElement(By.xpath("//a[@id='navbtn_exercises']"));
     }
 
@@ -302,5 +303,13 @@ public class HomePage extends BasePage {
 
     public boolean getButtonCertificates() {
         return findElementByXpath("//a[@style='width:150px;font-size:21px']").isDisplayed();
+    }
+
+    public WebElement getButtonVideos() {
+        return findElementByXpath("//a[@title='Video Tutorials']");
+    }
+
+    public boolean getButtonCookie() {
+        return findElementByXpath("//a[contains(text(),'Cookie')]").isDisplayed();
     }
 }
