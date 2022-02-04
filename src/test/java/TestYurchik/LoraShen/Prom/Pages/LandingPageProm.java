@@ -24,4 +24,13 @@ public class LandingPageProm extends BasePage {
     public WebElement secondTovarofMultipls() { return findElementByXpath("//input[contains(@data-qaid, 'multi')][contains(@placeholder, 'ш')]");}
     public WebElement confirmMultipleProm() { return findElementByXpath("//button[contains(@data-qaid, 'companies')]");}
     public List<WebElement> checkLabelNikeTshirt() { return findElementsByXpath("//div[contains(@data-qaid, 'title')]"); }
+    public WebElement checkRULangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ru')]");}
+    public List<WebElement> checkActualRuProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
+    public WebElement checkUALangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ua')]");}
+    public List<WebElement> checkActualUAProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
+    public WebElement chatButton() { return findElementByXpath("//div[contains(@data-qaid, 'besida')]");}
+    public WebElement chatPhoneNumber() { return findElementByXpath("//input[contains(@id, 'phone')]");}
+    public WebElement chatConfirmButton() { return findElementByXpath("//button[contains(@id, 'phone')]");}
+    public List<WebElement> chetresendButton() { return findElementsByXpath("//button[contains(@data-qaid, 'resend')]");}
+
 }
