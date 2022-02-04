@@ -325,4 +325,20 @@ public class HomePage extends BasePage {
         return findElementByXpath("//button[@class='link link--blue link--inverted p-buy__link']").isDisplayed();
 
     }
+
+    public WebElement getButtonProductCatalog() {
+        return driver.findElement(By.xpath("//div[@class='header__burger']"));
+    }
+
+    public WebElement getButtonfurniture() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Меблі')]"));
+    }
+
+    public WebElement getButtonTable() {
+        return driver.findElement(By.xpath("//a[contains(@href,'stol-pismennyy-yashma-cd-16132.')][contains(@class, 'link')]"));
+    }
+
+    public boolean getButtonHelp() {
+        return findElementByXpath("//div[@class='help']").isDisplayed();
+    }
 }
