@@ -26,6 +26,7 @@ public class LandingPageProm extends BasePage {
     public List<WebElement> checkLabelNikeTshirt() { return findElementsByXpath("//div[contains(@data-qaid, 'title')]"); }
     public WebElement checkRULangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ru')]");}
     public List<WebElement> checkActualRuProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
-
+    public WebElement checkUALangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ua')]");}
+    public List<WebElement> checkActualUAProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
 
 }
