@@ -12,5 +12,6 @@ public class Header extends BasePage {
         return findElementByXpath("//a[contains(@class,'logo')]");
     }
     public WebElement partnerBtn(){return findElementByXpath("//a[contains(@class, 'partners')]");}
+    public WebElement signinbtn(){return findElementByXpath("//a[contains(@class,'btn btn-sign')]");}
 
 }
