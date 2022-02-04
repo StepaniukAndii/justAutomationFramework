@@ -61,5 +61,29 @@ public class HomePage extends BasePage {
     public WebElement merchantTerms(){
         return driver.findElement(By.xpath("//h2[contains(text(),'Merchant Terms')]"));
     }
+    public WebElement btnGooglePlay(){
+        return driver.findElement(By.xpath("//a[@class='app-btn-android']"));
+    }
+    public WebElement googlePlayLinkEatSt(){
+        return driver.findElement(By.xpath("//a[@href='/store/apps/developer?id=EatStreet']"));
+    }
+    public WebElement btnAppStory(){
+        return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));
+    }
+    public WebElement appStoryLinkEatSt(){
+        return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
+    }
+    public WebElement w3BtnJava(){
+        return driver.findElement(By.xpath("//a[@href='/java/default.asp' and contains(@class,'w3-button tut')]"));
+    }
+    public WebElement w3BtnSubmit(){
+        return driver.findElement(By.xpath("//button"));
+    }
+    public WebElement w3BtnHome(){
+        return driver.findElement(By.xpath("//span[@class='menubtn fa fa-home']"));
+    }
+    public WebElement w3Website(){
+        return driver.findElement(By.xpath("//a[@title='Get Your Own Website With W3Schools Spaces']"));
+    }
 }
 
