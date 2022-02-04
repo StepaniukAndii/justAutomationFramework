@@ -24,4 +24,8 @@ public class LandingPageProm extends BasePage {
     public WebElement secondTovarofMultipls() { return findElementByXpath("//input[contains(@data-qaid, 'multi')][contains(@placeholder, 'ш')]");}
     public WebElement confirmMultipleProm() { return findElementByXpath("//button[contains(@data-qaid, 'companies')]");}
     public List<WebElement> checkLabelNikeTshirt() { return findElementsByXpath("//div[contains(@data-qaid, 'title')]"); }
+    public WebElement checkRULangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ru')]");}
+    public List<WebElement> checkActualRuProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
+
+
 }
