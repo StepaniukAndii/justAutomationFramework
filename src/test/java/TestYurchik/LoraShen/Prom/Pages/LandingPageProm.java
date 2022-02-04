@@ -34,6 +34,7 @@ public class LandingPageProm extends BasePage {
     public List<WebElement> chetresendButton() { return findElementsByXpath("//button[contains(@data-qaid, 'resend')]");}
     public WebElement cheprodavcidlya() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(text(), 'продавц')]");}
     public WebElement howToStart() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(@href, 'join')]");}
+    public WebElement tarifiPromPage() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(@href, 'order')]");}
 
 
 }
