@@ -25,5 +25,13 @@ public class Epicenter extends TestInit {
         Assert.assertTrue(homePage.getButtonHelp());
     }
 
+    @Test
+    public void login() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://epicentrk.ua/");
+        homePage.getButtonLoginOnSite().click();
+        homePage.getButtonpasswordrecovery().click();
+        Assert.assertTrue(homePage.getButtonfurther());
 
+    }
 }

@@ -341,4 +341,16 @@ public class HomePage extends BasePage {
     public boolean getButtonHelp() {
         return findElementByXpath("//div[@class='help']").isDisplayed();
     }
+
+    public WebElement getButtonLoginOnSite() {
+        return driver.findElement(By.xpath("//span[@class='header__login-opener-text']"));
+    }
+
+    public WebElement getButtonpasswordrecovery() {
+        return driver.findElement(By.xpath("//a[@class='anchor--element']"));
+    }
+
+    public boolean getButtonfurther() {
+        return findElementByXpath("//button[@class='btn btn--blue _Lj2bAS']").isDisplayed();
+    }
 }
