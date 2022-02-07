@@ -5,14 +5,11 @@ import SergKokan.Page.*;
 import SergKokan.Page.HeaderLinkPPage.Jenskaya;
 import SergKokan.Page.HeaderLinkPPage.Mugskaya;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TestGinocheVzyttyaPage extends TestInit {
-    public void openUrl(String site){
-        driver.get("https://prego.ua/");
+public class TestPokupkaVzyttyaPage extends TestInit {
 
-    }
+
     @Test
     public void BosonogkiPage (){
         HomePage homePage = new HomePage(driver);
@@ -42,7 +39,15 @@ public class TestGinocheVzyttyaPage extends TestInit {
         driver.get("https://prego.ua/");
         HomePage homePage = new HomePage(driver);
         Mugskaya mugskaya = new Mugskaya(driver);
+        Cherevyki cherevyki = new Cherevyki(driver);
+        VyborTovara vyborTovara = new VyborTovara(driver);
+        DobavitVKorzinu dobavitVKorzinu = new DobavitVKorzinu(driver);
         mugskaya.btnMugskaya().click();
-
+        cherevyki.btnCherevyki().click();
+        vyborTovara.qqq().get(0).click();
+        dobavitVKorzinu.getDobavitVKorzinu().click();
+        Assert.assertTrue(dobavitVKorzinu.tovarVKorzine().isDisplayed());
     }
+
 }
+
