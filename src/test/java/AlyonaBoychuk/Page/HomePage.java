@@ -8,12 +8,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class HomePage extends BasePage {
+
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
-    public void checkAboutUs() {driver.findElement(By.xpath("//a [@ui-sref='about-us']")).click();
+
+    public void checkAboutUs() {
+        driver.findElement(By.xpath("//a [@ui-sref='about-us']")).click();
     }
 
     public void clickGetTheAppLink() {
@@ -24,7 +29,7 @@ public class HomePage extends BasePage {
         driver.findElement(By.xpath("//button[@class='btn']")).click();
     }
 
-    public boolean getUrlAboutUsIsDisplayed(){
+    public boolean getUrlAboutUsIsDisplayed() {
         return driver.getCurrentUrl().contains("about-us");
     }
 
@@ -37,15 +42,21 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//span[text()='Live Chat']")).isDisplayed();
     }
 
-    private void openURLLinkedin() {driver.findElement(By.xpath("https://www.linkedin.com/feed/")).isDisplayed();
+    private void openURLLinkedin() {
+        driver.findElement(By.xpath("https://www.linkedin.com/feed/")).isDisplayed();
     }
-    public void getButtonAgreeAndJoin() {driver.findElement(By.xpath("//button[@class='join-form__form-body-submit-button']")).click();
-    }
-    public void getButtonCookiePolicy() {driver.findElement(By.xpath("//a[@data-tracking-control-name='registration-frontend_join-form-cookie-policy']")).click();}
 
-    public boolean numberOfWindows(){
+    public void getButtonAgreeAndJoin() {
+        driver.findElement(By.xpath("//button[@class='join-form__form-body-submit-button']")).click();
+    }
+
+    public void getButtonCookiePolicy() {
+        driver.findElement(By.xpath("//a[@data-tracking-control-name='registration-frontend_join-form-cookie-policy']")).click();
+    }
+
+    public boolean numberOfWindows() {
         return new WebDriverWait(driver, 10)
-        .until(ExpectedConditions.numberOfWindowsToBe(2));
+                .until(ExpectedConditions.numberOfWindowsToBe(2));
     }
 
     public WebElement getButtonKabinet() {
@@ -105,7 +116,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getButtonOplata() {
-       return driver.findElement(By.xpath("//a[text()='ОПЛАТА']"));
+        return driver.findElement(By.xpath("//a[text()='ОПЛАТА']"));
     }
 
     public WebElement getButtonZnachennya() {
@@ -187,5 +198,159 @@ public class HomePage extends BasePage {
 
     public boolean isDisplayedForGot() {
         return findElementByXpath("//a[text()='Forgot password?']").isDisplayed();
+    }
+
+
+    public boolean getButtonLoginClick() {
+        return findElementByXpath("//span[text()='Get started for free']").isDisplayed();
+    }
+
+    public WebElement getButtonPaidCourses() {
+        return driver.findElement(By.xpath("//a[@id='cert_navbtn']"));
+    }
+
+    public WebElement getButtonAddMultipleUsers() {
+        return findElementByXpath("//a[@class='btn btn-info btn-lg btn-action-light']");
+    }
+
+    public WebElement getButtonSubmitARequest() {
+        return findElementByXpath("//a[@class='submit-a-request']");
+    }
+
+    public WebElement getLinkW3School() {
+        return findElementByXpath("//li/a[contains(text(),'W3Schools.com')]");
+    }
+
+    public WebElement getInputSearch() {
+        return findElementByXpath("//input[@id='search2']");
+    }
+
+    public WebElement getButtonSearch() {
+        return findElementByXpath("//i[@id='learntocode_searchicon']");
+    }
+
+    public WebElement getButtonJava() {
+        return findElementByXpath("//a[@title='Java Tutorial']");
+    }
+
+    public WebElement getButtonConstruktor() {
+        return findElementByXpath("//a[contains(text(),'Java Constructors')]");
+    }
+
+    public boolean getButtonPrevious() {
+        return driver.findElement(By.xpath("//a[@class='w3-left w3-btn']")).isDisplayed();
+    }
+
+    public boolean getHtmlExample() {
+        return driver.findElement(By.xpath("//div[@class='w3-code htmlHigh notranslate green-border']")).isDisplayed();
+    }
+    public WebElement getButtonWebSite() {
+        return driver.findElement(By.xpath("//a[@class='w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink']"));
+    }
+
+    public boolean getButtonStartedForFree() {
+        return findElementByXpath("//button[@class='_1VfsI _OD95i _3_H0V mobb']").isDisplayed();
+    }
+
+    public WebElement getButtontutorials() {
+        return findElementByXpath("//a[@id='navbtn_tutorials']");
+    }
+
+    public WebElement getButtonlearnCSS() {
+        return findElementByXpath("//a[contains(text(),'Learn CSS')]");
+    }
+
+    public boolean getButtonHome() {
+        return findElementByXpath("//a[@class='w3-left w3-btn']").isDisplayed();
+    }
+
+    public WebElement getButtonReferences() {
+        return findElementByXpath("//a[@id='navbtn_references']");
+    }
+
+    public WebElement getButtonVideoTutorials() {
+        return findElementByXpath("//a[@class='w3-button ws-yellow tut-button ws-yellow-hover']");
+    }
+
+    public boolean getButtonBuyVideo() {
+        return driver.findElement(By.xpath("//a[@id='planbox']")).isDisplayed();
+    }
+
+    public WebElement getButtonPlaygame() {
+        return driver.findElement(By.xpath("//a[@class='w3-button tut-button black-color']"));
+    }
+
+    public boolean getButtonPlayCode() {
+        return findElementByXpath("//a[@class='w3-button tut-button black-color']").isDisplayed();
+    }
+
+    public WebElement getButtonExertisses() {
+
+        return driver.findElement(By.xpath("//a[@id='navbtn_exercises']"));
+    }
+
+    public boolean getButtonExercises() {
+        return findElementByXpath("//a[@style='width:155px;font-size:21px']").isDisplayed();
+    }
+
+    public boolean getButtonQuizzes() {
+        return findElementByXpath("//a[@style='width:135px;font-size:21px']").isDisplayed();
+    }
+
+    public boolean getButtonCourses() {
+        return findElementByXpath("//a[@style='width:135px;font-size:21px']").isDisplayed();
+    }
+
+    public boolean getButtonCertificates() {
+        return findElementByXpath("//a[@style='width:150px;font-size:21px']").isDisplayed();
+    }
+
+    public WebElement getButtonVideos() {
+        return findElementByXpath("//a[@title='Video Tutorials']");
+    }
+
+    public boolean getButtonCookie() {
+        return findElementByXpath("//a[contains(text(),'Cookie')]").isDisplayed();
+    }
+
+    public WebElement getStringSearch() {
+        return driver.findElement(By.xpath("//input[@class='_JcImSJ']"));
+    }
+
+    public WebElement getLinkVase() {
+        return driver.findElement(By.xpath("//a[contains(@href, 'shop/vaza-kaplya-steklyannaya')]/img[contains(@alt, 'Ваза Крапля')]"));
+    }
+
+    public boolean getButtonPay() {
+        return findElementByXpath("//button[@class='link link--blue link--inverted p-buy__link']").isDisplayed();
+
+    }
+
+    public WebElement getButtonProductCatalog() {
+        return driver.findElement(By.xpath("//div[@class='header__burger']"));
+    }
+
+    public WebElement getButtonfurniture() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Меблі')]"));
+    }
+
+    public WebElement getButtonTable() {
+        return driver.findElement(By.xpath("//a[contains(@href,'stol-pismennyy-yashma-cd-16132.')][contains(@class, 'link')]"));
+    }
+
+    public boolean getButtonHelp() {
+        return findElementByXpath("//div[@class='help']").isDisplayed();
+    }
+
+    public WebElement getButtonLoginOnSite() {
+        return driver.findElement(By.xpath("//span[@class='header__login-opener-text']"));
+    }
+
+    public WebElement getButtonpasswordrecovery() {
+        return driver.findElement(By.xpath("//a[@class='anchor--element']"));
+    }
+
+    public boolean getButtonfurther() {
+        return findElementByXpath("//button[@class='btn btn--blue _Lj2bAS']").isDisplayed();
     }
 }

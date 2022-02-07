@@ -21,7 +21,43 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement libraryButton(){
         return findElementByXpath("//a[contains(@href,'library')]");
     }
-    public WebElement GooglePlaybutton(){
+    public WebElement googlePlaybutton(){
         return findElementByXpath("//a[contains(@class,'googlePlay')]");
+    }
+    public WebElement appStorebutton(){
+        return findElementByXpath("//a[contains(@class, 'appStore')]");
+    }
+    public WebElement uploadbutton(){
+        return findElementByXpath("//span[contains(@class, 'upload')]");
+    }
+    public WebElement proplansbutton(){
+        return findElementByXpath("//li[contains(@class, 'g-tabs-item')]/a[contains(@href, 'pro')]");
+    }
+    public WebElement settingsandmoredropdownbutton(){
+        return findElementByXpath("//a[contains(@class, 'header__moreButton sc-ir')]");
+    }
+    public WebElement aboutusbutton(){
+        return findElementByXpath("//*[contains(text(), 'About us')]");
+    }
+    public WebElement aboutuspagefacebooklink(){
+        return findElementByXpath("//a[contains(@href, 'http://www.facebook.com/soundcloud')]");
+    }
+    public WebElement aboutuspagetwitterlink() {
+        return findElementByXpath("//a[contains(@href, 'http://twitter.com/soundcloud')]");
+    }
+    public WebElement aboutuspagehelpcenterbutton(){
+        return findElementByXpath("//a[contains(@href, 'http://help.soundcloud.com')]");
+    }
+    public WebElement aboutUsPageCopyrightClaimCenterButton(){
+        return findElementByXpath("//a[contains(@href, 'https://copyright.soundcloud.com/disputes')]");
+    }
+    public WebElement aboutuspagehelpcommunitybutton(){
+        return findElementByXpath("//a[contains(@href, 'http://soundcloudcommunity.com')]");
+    }
+    public WebElement aboutUsPageReportingCopyrightInfringement(){
+        return findElementByXpath("//a[contains(@href, 'https://soundcloud.com/pages/copyright/report')]");
+    }
+    public WebElement aboutUsPageAdvertisingOnSoundCloudButton(){
+        return findElementByXpath("//a[contains(@href, 'http://advertising.soundcloud.com')]");
     }
 }
