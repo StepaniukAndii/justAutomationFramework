@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite1" verbose="1" >
+    <test name="NopackageOne" >
+        <classes>
+            <class name="Julia.EatStreet.Tests.ApiTabCheck" />
+            <class name="Julia.EatStreet.Tests.AssebilityStatement" />
+            <class name="Julia.EatStreet.Tests.BlogTabEatstreet" />
+            <class name="Julia.EatStreet.Tests.BtnCareers" />
+            <class name="Julia.EatStreet.Tests.BtnRestDashboard" />
+            <class name="Julia.EatStreet.Tests.BtnRestTerms" />
+            <class name="Julia.EatStreet.Tests.BtnTermsUse" />
+            <class name="Julia.EatStreet.Tests.CheckApplyInYourCity" />
+            <class name="Julia.EatStreet.Tests.ContactUsEatstreet" />
+            <class name="Julia.EatStreet.Tests.DeliveryTakeOutBtn" />
+
+        </classes>
+    </test>
+</suite>

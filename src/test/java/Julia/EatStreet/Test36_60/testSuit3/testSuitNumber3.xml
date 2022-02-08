@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite3" verbose="1" >
+    <test name="NopackageOne" >
+        <classes>
+            <class name="Julia.EatStreet.Test36_60.CheckAboutUs" />
+            <class name="Julia.EatStreet.Test36_60.CheckLogin" />
+            <class name="Julia.EatStreet.Test36_60.CheckNumberInRest" />
+            <class name="Julia.EatStreet.Test36_60.CheckYourOrder" />
+            <class name="Julia.EatStreet.Test36_60.GetTheApp" />
+        </classes>
+    </test>
+</suite>
