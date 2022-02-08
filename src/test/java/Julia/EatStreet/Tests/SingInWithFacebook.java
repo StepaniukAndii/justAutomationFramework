@@ -9,14 +9,12 @@ public class SingInWithFacebook extends TestInit {
     @Test
     public  void singInWithFacebook () {
         HomePage homePage = new HomePage(driver);
-        driver.get("https://eatstreet.com/");
+        openUrl("https://eatstreet.com/");
         homePage.clickSignInBtn().click();
         homePage.clickSingInWithFacebook().click();
         homePage.enterEmailWithFacebook().sendKeys("y.tymoshenko5@gmail.com");
         homePage.enterPassWithFacebook().sendKeys("12554");
-        Assert.assertEquals(homePage.myAccountText().getText(),"My Account");
 
+        Assert.assertEquals(homePage.getNewToEatstreetText().getText(),"New to EatStreet?");
     }
-
-
 }

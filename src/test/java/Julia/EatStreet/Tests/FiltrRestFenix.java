@@ -12,31 +12,24 @@ public class FiltrRestFenix extends TestInit {
         HomePage homePage = new HomePage(driver);
         openUrl("https://qa2.eatstreet.com/");
         homePage.checkAndClousePopUpWindow();
-        homePage.getAdressInput().sendKeys("fenixs");
-        sleep(5);
+        homePage.getAdressInput().sendKeys("Phoenix,AZ");
         homePage.getFedBtn().click();
-        sleep(3);
-        homePage.getSelectPageRest();
-        homePage.getSelect70Rest();
-        sleep(3);
-        Assert.assertTrue(homePage.getBackToLakewood().isDisplayed());
+        homePage.checkAndClouseAdressSearchAttempt();
+        homePage.getFedBtn().click();
+        homePage.getAllRest().get(1).click();
+        Assert.assertTrue(homePage.getBackToPhoenix().isDisplayed());
     }
 
     @Test
     public void takeOutFiltrRestFenix() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://qa2.eatstreet.com/");
-        homePage.checkAndClousePopUpWindow();
-        homePage.getAdressInput().sendKeys("fenixs");
-        sleep(5);
-        homePage.getFedBtn().click();
-        sleep(3);
-        homePage.getSelectPageRest();
-        sleep(3);
+        homePage.getAdressInput().sendKeys("Pheonix");
+        homePage.checkAndClouseAdressSearchAttempt();
+        sleep(2);
         homePage.clickTakeOutBtn().click();
         sleep(2);
         homePage.getAllRest().get(0).click();
-        sleep(3);
-        Assert.assertTrue(homePage.getBackToLakewood().isDisplayed());
+        Assert.assertTrue(homePage.getBackToPhoenix().isDisplayed());
     }
 }
