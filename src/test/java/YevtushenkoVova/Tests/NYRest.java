@@ -64,8 +64,25 @@ public class NYRest extends TestInit {
         sleep(2);
 
          Assert.assertTrue(nyRestaurants.activeFreeDeliveryFilter().isDisplayed());
-
     }
 
+    @Test
+    public void nyRest1() {
+        HomePage homePage = new HomePage(driver);
+        NYRestaurants nyRestaurants = new NYRestaurants(driver);
+        homePage.openQa2HomePage();
+        homePage.buttonGotIt().click();
+        homePage.inputEetSt().sendKeys("New York City, NY" + "\n");
+        homePage.btnEnterAddress().click();
+        homePage.btnGetFet().click();
+        sleep(2);
+        nyRestaurants.bombaysRest().click();
+        sleep(4);
+        nyRestaurants.dishPapdiChaat().get(24).click();
+        sleep(2);
+        nyRestaurants.btnPlus().click();
+        nyRestaurants.btnAddToCart();
 
+       Assert.assertTrue(nyRestaurants.btnOrder().isDisplayed());
+    }
 }
