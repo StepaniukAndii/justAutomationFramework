@@ -353,4 +353,13 @@ public class HomePage extends BasePage {
     public boolean getButtonfurther() {
         return findElementByXpath("//button[@class='btn btn--blue _Lj2bAS']").isDisplayed();
     }
+
+    public WebElement getButtonBasket() {
+        return driver.findElement(By.xpath("//span[@class='header__cart-text--sum']"));
+
+    }
+
+    public boolean getButtonKiyv() {
+        return findElementByXpath("//div[@class='header__locations-opener is-light']").isDisplayed();
+    }
 }

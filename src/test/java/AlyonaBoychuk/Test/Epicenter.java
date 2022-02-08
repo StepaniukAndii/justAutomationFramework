@@ -34,4 +34,12 @@ public class Epicenter extends TestInit {
         Assert.assertTrue(homePage.getButtonfurther());
 
     }
+    @Test
+    public void basket(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://epicentrk.ua/");
+        homePage.getButtonBasket().click();
+        Assert.assertTrue(homePage.getButtonKiyv());
+
+    }
 }
