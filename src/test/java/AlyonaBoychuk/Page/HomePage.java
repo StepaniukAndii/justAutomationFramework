@@ -285,6 +285,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getButtonExertisses() {
+
         return driver.findElement(By.xpath("//a[@id='navbtn_exercises']"));
     }
 
@@ -302,5 +303,54 @@ public class HomePage extends BasePage {
 
     public boolean getButtonCertificates() {
         return findElementByXpath("//a[@style='width:150px;font-size:21px']").isDisplayed();
+    }
+
+    public WebElement getButtonVideos() {
+        return findElementByXpath("//a[@title='Video Tutorials']");
+    }
+
+    public boolean getButtonCookie() {
+        return findElementByXpath("//a[contains(text(),'Cookie')]").isDisplayed();
+    }
+
+    public WebElement getStringSearch() {
+        return driver.findElement(By.xpath("//input[@class='_JcImSJ']"));
+    }
+
+    public WebElement getLinkVase() {
+        return driver.findElement(By.xpath("//a[contains(@href, 'shop/vaza-kaplya-steklyannaya')]/img[contains(@alt, 'Ваза Крапля')]"));
+    }
+
+    public boolean getButtonPay() {
+        return findElementByXpath("//button[@class='link link--blue link--inverted p-buy__link']").isDisplayed();
+
+    }
+
+    public WebElement getButtonProductCatalog() {
+        return driver.findElement(By.xpath("//div[@class='header__burger']"));
+    }
+
+    public WebElement getButtonfurniture() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Меблі')]"));
+    }
+
+    public WebElement getButtonTable() {
+        return driver.findElement(By.xpath("//a[contains(@href,'stol-pismennyy-yashma-cd-16132.')][contains(@class, 'link')]"));
+    }
+
+    public boolean getButtonHelp() {
+        return findElementByXpath("//div[@class='help']").isDisplayed();
+    }
+
+    public WebElement getButtonLoginOnSite() {
+        return driver.findElement(By.xpath("//span[@class='header__login-opener-text']"));
+    }
+
+    public WebElement getButtonpasswordrecovery() {
+        return driver.findElement(By.xpath("//a[@class='anchor--element']"));
+    }
+
+    public boolean getButtonfurther() {
+        return findElementByXpath("//button[@class='btn btn--blue _Lj2bAS']").isDisplayed();
     }
 }
