@@ -235,7 +235,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getAdressSearchAttempt() {
-        return driver.findElements(By.xpath("//div[@class='modal-content']"));
+        return driver.findElements(By.xpath("//div[@class='modal-footer']"));
     }
 
     public void checkAndClouseAdressSearchAttempt() {
