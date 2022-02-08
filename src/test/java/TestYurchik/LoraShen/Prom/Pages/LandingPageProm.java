@@ -17,6 +17,24 @@ public class LandingPageProm extends BasePage {
     public WebElement vlubleniyePodarkiProm() { return findElementByXpath("//a[contains(@data-qaid, 'android')]");}
     public WebElement iOSbuttonProm() { return findElementByXpath("//a[contains(@data-qaid, 'apple')]");}
     public WebElement huaweiButtonProm() { return findElementByXpath("//a[contains(@data-qaid, 'huawei')]");}
-
+    public WebElement mainSearchInputProm() { return findElementByXpath("//input[contains(@name, 'search')][contains(@class, 'EU')]");}
+    public WebElement mainSearchButtonProm() { return findElementByXpath("//button[contains(@type, 'submit')][contains(@class, 'ggtwi')]");}
+    public List<WebElement> checkNeocubeCaptionProm() { return findElementsByXpath("//h1[contains(@data-qaid, 'caption')]");}
+    public WebElement firstTovarofMultipls() { return findElementByXpath("//input[contains(@data-qaid, 'multi')][contains(@placeholder, 'Nike')]");}
+    public WebElement secondTovarofMultipls() { return findElementByXpath("//input[contains(@data-qaid, 'multi')][contains(@placeholder, 'ш')]");}
+    public WebElement confirmMultipleProm() { return findElementByXpath("//button[contains(@data-qaid, 'companies')]");}
+    public List<WebElement> checkLabelNikeTshirt() { return findElementsByXpath("//div[contains(@data-qaid, 'title')]"); }
+    public WebElement checkRULangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ru')]");}
+    public List<WebElement> checkActualRuProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
+    public WebElement checkUALangProm() { return findElementByXpath("//span[contains(@data-qaid, 'ua')]");}
+    public List<WebElement> checkActualUAProm() { return findElementsByXpath("//span[contains(@data-qastate, 'active')]");}
+    public WebElement chatButton() { return findElementByXpath("//div[contains(@data-qaid, 'besida')]");}
+    public WebElement chatPhoneNumber() { return findElementByXpath("//input[contains(@id, 'phone')]");}
+    public WebElement chatConfirmButton() { return findElementByXpath("//button[contains(@id, 'phone')]");}
+    public List<WebElement> chetresendButton() { return findElementsByXpath("//button[contains(@data-qaid, 'resend')]");}
+    public WebElement cheprodavcidlya() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(text(), 'продавц')]");}
+    public WebElement howToStart() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(@href, 'join')]");}
+    public WebElement tarifiPromPage() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(@href, 'order')]");}
+    public WebElement ugodaKorystuvacha() { return findElementByXpath("//a[contains(@data-qaid, 'links')][contains(@href, 'terms')]");}
 
 }
