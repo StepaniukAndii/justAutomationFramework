@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
@@ -46,44 +48,83 @@ public class HomePage extends BasePage {
     public WebElement linkPrivacyPolicy() {
         return driver.findElement(By.xpath("//a[@ui-sref='privacy']"));
     }
-    public WebElement privacyText(){
+
+    public WebElement privacyText() {
         return driver.findElement(By.xpath("//h2[contains(text(),'Privacy Policy')]"));
     }
-    public WebElement linkTermsofUse(){
+
+    public WebElement linkTermsofUse() {
         return driver.findElement(By.xpath("//a[@href='/terms']"));
     }
-    public WebElement termsText(){
+
+    public WebElement termsText() {
         return driver.findElement(By.xpath("//h2[contains(text(),'Terms of Use')]"));
     }
-    public WebElement linkRestaurantTerms(){
+
+    public WebElement linkRestaurantTerms() {
         return driver.findElement(By.xpath("//a[@ui-sref='restaurant-terms-of-service']"));
     }
-    public WebElement merchantTerms(){
+
+    public WebElement merchantTerms() {
         return driver.findElement(By.xpath("//h2[contains(text(),'Merchant Terms')]"));
     }
-    public WebElement btnGooglePlay(){
+
+    public WebElement btnGooglePlay() {
         return driver.findElement(By.xpath("//a[@class='app-btn-android']"));
     }
-    public WebElement googlePlayLinkEatSt(){
+
+    public WebElement googlePlayLinkEatSt() {
         return driver.findElement(By.xpath("//a[@href='/store/apps/developer?id=EatStreet']"));
     }
-    public WebElement btnAppStory(){
+
+    public WebElement btnAppStory() {
         return driver.findElement(By.xpath("//a[@class='app-btn-iphone']"));
     }
-    public WebElement appStoryLinkEatSt(){
+
+    public WebElement appStoryLinkEatSt() {
         return driver.findElement(By.xpath("//a[@href='https://apps.apple.com/us/developer/eatstreet/id664697936']"));
     }
-    public WebElement w3BtnJava(){
+
+    public WebElement w3BtnJava() {
         return driver.findElement(By.xpath("//a[@href='/java/default.asp' and contains(@class,'w3-button tut')]"));
     }
-    public WebElement w3BtnSubmit(){
+
+    public WebElement w3BtnSubmit() {
         return driver.findElement(By.xpath("//button"));
     }
-    public WebElement w3BtnHome(){
+
+    public WebElement w3BtnHome() {
         return driver.findElement(By.xpath("//span[@class='menubtn fa fa-home']"));
     }
-    public WebElement w3Website(){
+
+    public WebElement w3Website() {
         return driver.findElement(By.xpath("//a[@title='Get Your Own Website With W3Schools Spaces']"));
     }
-}
 
+    public WebElement inputEetSt() {
+        return driver.findElement(By.xpath("//input[@id='input-food-search']"));
+    }
+
+    public WebElement nyRest() {
+        return driver.findElement(By.xpath("//a[@href='/new-york-city-ny/home']"));
+    }
+
+    public WebElement takeoutFilter() {
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+    }
+
+    public WebElement takeCheckBox() {
+        return driver.findElement(By.xpath("//input[contains(@class,'ng-valid-parse')]"));
+    }
+
+   public WebElement btnEnterAddress() {
+        return findElement("//a[@id='enter-address-btn']");
+        }
+
+    public WebElement btnGetFet(){
+        return findElement("//a[@id='find-restaurants']");
+    }
+    public List<WebElement> checkBoxBBQ(){
+        return driver.findElements(By.xpath("//label[@for=\"filter-cuisine-BBQ\"]"));
+    }
+}
