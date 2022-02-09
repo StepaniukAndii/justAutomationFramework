@@ -21,4 +21,17 @@ public class TestFooter extends TestInit {
         Assert.assertTrue(dobavitVKorzinu.tovarVKorzine().isDisplayed());
 
     }
+    @Test
+    public void FooterGinocheVzuttya(){
+        HomePage homePage = new HomePage(driver);
+        GinocheVzuttya ginocheVzuttya = new GinocheVzuttya(driver);
+        VyborTovaraPage vyborTovara = new VyborTovaraPage(driver);
+        DobavitVKorzinu dobavitVKorzinu = new DobavitVKorzinu(driver);
+        homePage.navigatePrego();
+        ginocheVzuttya.btnGinocheVzuttya().click();
+        vyborTovara.btnVyborTovara().click();
+        dobavitVKorzinu.clickKupyty().click();
+        Assert.assertTrue(dobavitVKorzinu.tovarVKorzine().isDisplayed());
+
+    }
 }
