@@ -127,4 +127,13 @@ public class HomePage extends BasePage {
     public List<WebElement> checkBoxBBQ(){
         return driver.findElements(By.xpath("//label[@for=\"filter-cuisine-BBQ\"]"));
     }
+    public WebElement sanFrancisko(){
+        return findElement("//a[@href=\"/san-francisco-ca/home\"]");
+    }
+    public WebElement sanDiego(){
+        return findElement("//a[@href=\"/san-diego-ca/home\"]");
+    }
+    public WebElement sanJose(){
+        return findElement("//a[@href=\"/sunnyvale-ca/home\"]");
+    }
 }
