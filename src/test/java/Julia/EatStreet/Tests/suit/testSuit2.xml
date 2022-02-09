@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite1" verbose="1" >
+    <test name="NopackageOne" >
+        <classes>
+            <class name="Julia.EatStreet.Tests.FiltringItalianFoodRestEatstreet" />
+            <class name="Julia.EatStreet.Tests.FiltrRestBeverlyHills" />
+            <class name="Julia.EatStreet.Tests.FiltrRestCorvallis" />
+            <class name="Julia.EatStreet.Tests.FiltrRestFenix" />
+            <class name="Julia.EatStreet.Tests.FiltrRestOrlando" />
+            <class name="Julia.EatStreet.Tests.ForCustomers" />
+            <class name="Julia.EatStreet.Tests.GetHelp" />
+            <class name="Julia.EatStreet.Tests.GetTheAppEatstreet" />
+            <class name="Julia.EatStreet.Tests.LiveChat" />
+            <class name="Julia.EatStreet.Tests.NYRestEatstreet" />
+            <class name="Julia.EatStreet.Tests.PrivasyPolicy" />
+            <class name="Julia.EatStreet.Tests.SearchRestInCity" />
+            <class name="Julia.EatStreet.Tests.SelectionOfAsianFood" />
+            <class name="Julia.EatStreet.Tests.SingInWithFacebook" />
+            <class name="Julia.EatStreet.Tests.SingInWithGoogle" />
+            <class name="Julia.EatStreet.Tests.SingUpWithEmail" />
+            <class name="Julia.EatStreet.Tests.TestAdressInput" />
+        </classes>
+    </test>
+</suite>
