@@ -1,6 +1,7 @@
 package ClasesToAllUs;
 
 import RozetkaSergey.RozetkaPages.RozetkaPages5_34;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,20 +21,21 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
 //    put false here if you want to see browser)
-    boolean headless = true;
+    boolean headless = false;
 
     @BeforeMethod
     public void setUp() {
 //        if webdriver manager work fine, there is a bug at the moment
 //        WebDriverManager.chromedriver_88_mac().setup();
+        WebDriverManager.chromedriver().setup();
 
-        if (isOSMac()){
-            setProperty("src/test/drivers/chromedriver_97_mac");
-        }else if (isOSWindows()){
-            setProperty("src/test/drivers/chromedriver_97.exe");
-        }else {
-            setProperty("src/test/drivers/chromedriver_96_linux");
-        }
+//        if (isOSMac()){
+//            setProperty("src/test/drivers/chromedriver_97_mac");
+//        }else if (isOSWindows()){
+//            setProperty("src/test/drivers/chromedriver_97.exe");
+//        }else {
+//            setProperty("src/test/drivers/chromedriver_96_linux");
+//        }
 
         driver = new ChromeDriver(options);
         if(headless) {
@@ -74,10 +76,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
-    @AfterMethod
-    public void afterTest() {
-        driver.quit();
-    }
+ //   @AfterMethod
+//    public void afterTest() {
+//        driver.quit();
+//    }
 
     public void openUrl(String site) {
         driver.get(site);
