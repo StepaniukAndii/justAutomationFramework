@@ -16,8 +16,9 @@ public class SingInNoEmail extends TestInit {
         homePage.openPageSingIn().click();
         singIn.inputPassword().sendKeys("Qwert@54321");
         singIn.getSignInBTN().click();
-        sleep(2);
+        getElement("//div[@id='email-validation-tag']");
 
         Assert.assertTrue(singIn.emailErrorRequired().isDisplayed());
     }
+
 }

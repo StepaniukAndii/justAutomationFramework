@@ -136,4 +136,31 @@ public class HomePage extends BasePage {
     public WebElement sanJose(){
         return findElement("//a[@href=\"/sunnyvale-ca/home\"]");
     }
+    public WebElement lincForCustomer(){
+        return findElement("//a[@href=\"https://eatst.force.com/customers\"]");
+    }
+    public WebElement btnAboutUs(){
+        return findElement("//a[@href=\"https://eatstreet.com/about-us\"]");
+    }
+    public WebElement assertAbout(){
+        return findElement("//button[contains(text(),'About Us')]");
+    }
+    public WebElement w3GetFree(){
+        return findElement("//button[@class=\"_1VfsI _OD95i _3_H0V mobb\"]");
+    }
+    public  WebElement accessibility(){
+        return findElement("//a[@ui-sref=\"accessibility\"]");
+    }
+    public WebElement assertAccessibility(){
+        return findElement("//h2[contains(text(),'Accessibility Statement')]");
+    }
+    public WebElement enterSignUpEmail(){
+        return findElement("//input[@id=\"new-email\"]");
+    }
+    public WebElement btnSignUp(){
+        return findElement("//button[@type=\"submit\"]");
+    }
+    public WebElement errorWindow(){
+        return findElement("//div[@class=\"modal-body ng-binding\"]");
+    }
 }
