@@ -9,7 +9,7 @@ public class DobavitVKorzinu extends BasePage {
         super(driver);
     }
 
-    public WebElement getDobavitVKorzinu() {
+    public WebElement clickKupyty() {
         return findElementByXpath("//div[@class='price-wrap']//span[contains(text(), 'Купити')]");
     }
 
@@ -19,5 +19,9 @@ public class DobavitVKorzinu extends BasePage {
 
     public WebElement tovarVKorzine1() {
         return findElementByXpath("//h5[contains(text(), 'Черевики класичні зимові prego')]");
+    }
+
+    public WebElement btnVyborTovara() {
+        return findElementByXpath("//div[@id='allArticles']/article[2]");
     }
 }
