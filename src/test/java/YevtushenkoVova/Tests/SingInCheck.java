@@ -33,4 +33,5 @@ public class SingInCheck extends TestInit {
 
         Assert.assertTrue(singIn.linkSingUp().isDisplayed());
     }
+
 }
