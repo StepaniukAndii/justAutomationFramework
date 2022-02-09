@@ -11,10 +11,8 @@ public class VyborTovara extends BasePage {
     public VyborTovara(WebDriver driver){
         super(driver);
     }
-   // public WebElement btnVyborTovara(){
-//        return findElementByXpath("")
-//    }
-    public List<WebElement> qqq(){
+
+    public List<WebElement> btnVyborTovara(){
         return driver.findElements(By.xpath("//img[@src='https://static.prego.ua/photo?n=43def57e-84fd-47e3-8701-bae5e026861d.jpg&s=279&q=80']"));
     }
 }
