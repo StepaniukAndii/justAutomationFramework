@@ -22,4 +22,9 @@ public class MyAccountPage extends BasePage{
     public WebElement newpasswordinputconfirm(){return findElementByXpath("//input[contains(@id,'newPasswordCon')]");}
     public WebElement updatepasswordbtn(){return findElementByXpath("//input[contains(@id,'confirm')]");}
     public WebElement signoutbtn(){return findElementByXpath("//a[contains(@id,'signout')]");}
+    public WebElement deleteaccountbtn(){return findElementByXpath("//a[contains(@ng-if,'$user.getUser().email')]");}
+    public WebElement yestodeleteaccbtn(){return findElementByXpath("//a[contains(@id,'confirm')]");}
+    public WebElement confirmtodeleteaccbtn(){return findElementByXpath("//a[contains(@id,'confirm-modal')]");}
+    public WebElement textareawhydeleteacc(){return findElementByXpath("//textarea[contains(@name,'reason')]");}
+    public WebElement submittodeleteaccbtn(){return findElementByXpath("//button[contains(@id,'reset')]");}
 }
