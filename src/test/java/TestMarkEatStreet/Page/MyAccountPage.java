@@ -21,5 +21,5 @@ public class MyAccountPage extends BasePage{
     public WebElement newpasswordinput(){return findElementByXpath("//input[contains(@id,'newPassword')]");}
     public WebElement newpasswordinputconfirm(){return findElementByXpath("//input[contains(@id,'newPasswordCon')]");}
     public WebElement updatepasswordbtn(){return findElementByXpath("//input[contains(@id,'confirm')]");}
-    public List<WebElement> checkchangepassword(){return findElementsByXpath("//div[contains(@class,'modal-body')]");}
+    public WebElement signoutbtn(){return findElementByXpath("//a[contains(@id,'signout')]");}
 }
