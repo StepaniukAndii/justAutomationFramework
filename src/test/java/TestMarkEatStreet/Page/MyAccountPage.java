@@ -4,6 +4,8 @@ import ClasesToAllUs.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class MyAccountPage extends BasePage{
     public MyAccountPage(WebDriver driver){super(driver);}
     public WebElement myaccountbtn(){return findElementByXpath("//a[contains(@id,'menu')]");}
@@ -19,4 +21,5 @@ public class MyAccountPage extends BasePage{
     public WebElement newpasswordinput(){return findElementByXpath("//input[contains(@id,'newPassword')]");}
     public WebElement newpasswordinputconfirm(){return findElementByXpath("//input[contains(@id,'newPasswordCon')]");}
     public WebElement updatepasswordbtn(){return findElementByXpath("//input[contains(@id,'confirm')]");}
+    public List<WebElement> checkchangepassword(){return findElementsByXpath("//div[contains(@class,'modal-body')]");}
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ChangePasswordEatStreetTest extends TestInit{
@@ -25,18 +26,17 @@ public class ChangePasswordEatStreetTest extends TestInit{
 
         openUrl("https://qa2.eatstreet.com/");
         header.signinbtn().click();
-        signin.signupbtn().click();
         signin.signinbtn().sendKeys("lazarchuk.mark.08@gmail.com");
-        signin.passwordinput().sendKeys("Neponimauchiy3414");
-        signin.passwordinputagain().sendKeys("Neponimauchiy3414");
+        signin.passwordinput().sendKeys("TestParol5");
         driverPage.gotitbtn().click();
-        signin.signupbutton().click();
+        signin.signinbutton().click();
         sleep(5);
         accountPage.myaccountbtn().click();
         accountPage.changepasswordbtn().click();
         accountPage.curentpasswordinput().sendKeys("Neponimauchiy3414");
-        accountPage.newpasswordinput().sendKeys("TestParol5");
-        accountPage.newpasswordinputconfirm().sendKeys("TestParol5");
+        accountPage.newpasswordinput().sendKeys("TestParol4");
+        accountPage.newpasswordinputconfirm().sendKeys("TestParol4");
         accountPage.updatepasswordbtn().click();
+        Assert.assertTrue(accountPage.edityourinfobtn().isEnabled());
     }
 }
