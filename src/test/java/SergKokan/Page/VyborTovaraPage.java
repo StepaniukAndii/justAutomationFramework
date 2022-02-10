@@ -22,5 +22,7 @@ public class VyborTovaraPage extends BasePage {
     public WebElement btnVyborTovara1() {
         return findElementByXpath("//div[@id='allArticles']/article[2]");
     }
+
+
 }
 

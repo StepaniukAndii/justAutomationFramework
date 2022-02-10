@@ -7,7 +7,7 @@ import SergKokan.Page.HeaderLinkPPage.Mugskaya;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestPokupkaVzyttya extends TestInit {
+public class TestPokupkaMugskogoVzyttya extends TestInit {
 
 
     @Test
@@ -44,7 +44,7 @@ public class TestPokupkaVzyttya extends TestInit {
         mugskaya.btnMugskaya().click();
         cherevyki.btnCherevyki().click();
         vyborTovara.btnVyborTovara().get(0).click();
-        dobavitVKorzinu.getDobavitVKorzinu().click();
+        dobavitVKorzinu.clickKupyty().click();
         Assert.assertTrue(dobavitVKorzinu.tovarVKorzine().isDisplayed());
     }
     @Test
@@ -61,7 +61,7 @@ public class TestPokupkaVzyttya extends TestInit {
         mugskaya.btnMugskaya().click();
         cherevyki.btnCherevyki().click();
         vyborTovara.btnVyborTovara().get(0).click();
-        dobavitVKorzinu.getDobavitVKorzinu().click();
+        dobavitVKorzinu.clickKupyty().click();
         sleep(5);
         dobavitEsheTovar.getDobavitEsheTovar().click();
         dobavitVKorzinu1.getClickKorzina().click();
@@ -69,7 +69,7 @@ public class TestPokupkaVzyttya extends TestInit {
         mugskaya.btnMugskaya().click();
         cherevyki.btnCherevyki().click();
         vyborTovaraPage1.btnVyborTovara1().click();
-        dobavitVKorzinu.getDobavitVKorzinu().click();
+        dobavitVKorzinu.clickKupyty().click();
         Assert.assertTrue(dobavitVKorzinu.tovarVKorzine().isDisplayed());
         Assert.assertTrue(dobavitVKorzinu.tovarVKorzine1().isDisplayed());
 
