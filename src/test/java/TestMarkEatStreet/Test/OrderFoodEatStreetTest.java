@@ -5,9 +5,14 @@ import TestMarkEatStreet.Page.*;
 import TestMarkEatStreet.Page.Body;
 import TestMarkEatStreet.Page.DriverPage;
 import TestMarkEatStreet.Page.Header;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class EnterYourAddressEatStreetTestForMark extends TestInit {
+public class OrderFoodEatStreetTest extends TestInit{
 
     Header header;
     Body body;
@@ -16,7 +21,7 @@ public class EnterYourAddressEatStreetTestForMark extends TestInit {
     PizzaCompanyFoodPage pizzaCompanyFoodPage;
 
     @Test
-    public void enteryouraddres(){
+    public void orderfood(){
 
         header = new Header(driver);
         body = new Body(driver);
@@ -26,12 +31,13 @@ public class EnterYourAddressEatStreetTestForMark extends TestInit {
 
         openUrl("https://qa2.eatstreet.com/");
         body.deliveybtn().click();
-
-        body.enteryouraddressinput().sendKeys("Las Vegas");
+        body.enteryouraddressinput().sendKeys("Las Vegas NV");
+        body.lasvegasselect().click();
+//        restorauntsPage.entermyaddressnowbtn().click();
         body.getfedbtn().click();
+        driverPage.gotitbtn().click();
         restorauntsPage.ratingbtn().click();
         restorauntsPage.italianfoodselect().click();
-        driverPage.gotitbtn().click();
         restorauntsPage.pizzacompanyhref().click();
         pizzaCompanyFoodPage.cheesygarlicbreadfood().click();
         pizzaCompanyFoodPage.addfoodbtn().click();
@@ -45,5 +51,7 @@ public class EnterYourAddressEatStreetTestForMark extends TestInit {
         pizzaCompanyFoodPage.cheeseburgercookstylemediumwell().click();
         pizzaCompanyFoodPage.cheeseburgerchoiceofside().click();
         pizzaCompanyFoodPage.addfoodtocartbtn().click();
+        Assert.assertTrue(driver.findElements(By.xpath("//div[contains(@class,'widget-body')]")).size()!=0);
     }
+
 }
