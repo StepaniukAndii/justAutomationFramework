@@ -8,7 +8,7 @@ public class JustEat extends BasePage {
 
     public JustEat(WebDriver driver){super(driver);}
     public void openJustEat(){
-         driver.get("https://just-eat.by/");
+         driver.get("https://just-eat.by/minsk");
     }
     public WebElement btnSinIn(){
         return findElement("//div[@class=\"login\"]//a[@href=\"/login.html\"]");
