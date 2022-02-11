@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 public class JustEatTest extends TestInit {
 
     @Test
-    public void noValid(){
+    public void noValid() {
         JustEat justEat = new JustEat(driver);
         justEat.openJustEat();
-       // justEat.banerCity().click();
+        justEat.banerCity().click();
         justEat.btnSinIn().click();
         justEat.inputEmail().sendKeys("fwiefj@564");
         justEat.inputPassword().sendKeys("wefwgwg");

@@ -21,7 +21,7 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
 //    put false here if you want to see browser)
-    boolean headless = false;
+    boolean headless = true;
 
     @BeforeMethod
     public void setUp() {
@@ -76,10 +76,10 @@ public class TestInit {
         return System.getProperty("os.name").toLowerCase();
     }
 
- //   @AfterMethod
-//    public void afterTest() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void afterTest() {
+        driver.quit();
+    }
 
     public void openUrl(String site) {
         driver.get(site);
