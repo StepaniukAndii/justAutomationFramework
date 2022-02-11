@@ -11,5 +11,6 @@ public class RestorauntsPage extends BasePage{
     public WebElement entermyaddressnowbtn(){return findElementByXpath("//a[contains(@id,'enter')]");}
     public WebElement italianfoodselect(){return findElementByXpath("//label[contains(@class,'checkbox-input')][contains(@for,'filter-cuisine-Italian')]");}
     public WebElement pizzacompanyhref(){return findElementByXpath("//a[contains(@href,'pizza-company')]");}
+    public WebElement newyorkpizzapasta(){return findElementByXpath("//a[contains(@href,'new')]");}
 
 }
