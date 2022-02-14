@@ -87,4 +87,10 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement dropDownListBlogButtonSoundCloud(){
         return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, 'https://blog.soundcloud.com')]");
     }
+    public WebElement searchInputSoundCloud(){
+        return findElementByXpath("//input[contains(@class, 'headerSearch__input sc-input g-all-transitions-300')]");
+    }
+    public WebElement searchButtonMusic(){
+        return findElementByXpath("//button[contains(@class, 'headerSearch__submit sc-ir')]");
+    }
 }
