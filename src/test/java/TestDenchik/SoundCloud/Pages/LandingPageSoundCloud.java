@@ -84,4 +84,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement copyrightPageFurtherResourcesSectionSecondLinkSoundCloud(){
         return findElementByXpath("//a[contains(@href, 'http://www.wipo.int/wipolex/en/')]");
     }
+    public WebElement dropDownListBlogButtonSoundCloud(){
+        return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, 'https://blog.soundcloud.com')]");
+    }
 }
