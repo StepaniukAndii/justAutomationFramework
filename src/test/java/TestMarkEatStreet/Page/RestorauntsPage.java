@@ -12,5 +12,6 @@ public class RestorauntsPage extends BasePage{
     public WebElement italianfoodselect(){return findElementByXpath("//label[contains(@class,'checkbox-input')][contains(@for,'filter-cuisine-Italian')]");}
     public WebElement pizzacompanyhref(){return findElementByXpath("//a[contains(@href,'pizza-company')]");}
     public WebElement newyorkpizzapasta(){return findElementByXpath("//a[contains(@href,'new')]");}
+    public WebElement freshkabobrestoraunt(){return findElementByXpath("//a[contains(@href,'fresh')]");}
 
 }
