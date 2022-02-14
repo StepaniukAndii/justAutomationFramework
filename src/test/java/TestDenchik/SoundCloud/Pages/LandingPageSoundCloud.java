@@ -75,4 +75,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement legalButton(){
         return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, '/terms-of-use')]");
     }
+    public WebElement dropDownListCopyrightButton(){
+        return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, 'pages/copyright')]");
+    }
 }
