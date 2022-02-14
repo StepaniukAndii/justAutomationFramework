@@ -13,4 +13,5 @@ public class Body extends BasePage {
     public WebElement getfedbtn(){return findElementByXpath("//a[contains(@id,'find')]");}
     public WebElement lasvegasselect(){return findElementByXpath("//li[contains(@index,'0')]");}
     public WebElement cartbody(){return findElementByXpath("//div[contains(@class,'widget-body')]");}
+    public WebElement takeoutbtn(){return findElementByXpath("//label[contains(@for,'takeout')]");}
 }

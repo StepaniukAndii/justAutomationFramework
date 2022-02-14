@@ -60,4 +60,16 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement aboutUsPageAdvertisingOnSoundCloudButton(){
         return findElementByXpath("//a[contains(@href, 'http://advertising.soundcloud.com')]");
     }
+    public WebElement aboutUsPageenquiriesbutton(){
+        return findElementByXpath("//a[contains(@href, 'http://soundcloud.com/press')]");
+    }
+    public WebElement aboutUsPageAPIandPartnershipsButton(){
+        return findElementByXpath("//a[contains(@href, 'http://developers.soundcloud.com/support')]");
+    }
+    public WebElement aboutUsPageLawEnforementRequestsButton(){
+        return findElementByXpath("//a[contains(@href, 'https://soundcloud.com/law-enforcement-guidelines')]");
+    }
+    public WebElement aboutUsPageCurrentOpeningsButton(){
+        return findElementByXpath("//a[contains(@href, 'http://soundcloud.com/jobs')]");
+    }
 }
