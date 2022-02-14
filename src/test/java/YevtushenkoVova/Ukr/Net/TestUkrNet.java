@@ -29,4 +29,37 @@ public class TestUkrNet extends TestInit {
 
         Assert.assertTrue(homePage.getRightTabs().pricePump().isDisplayed());
     }
+
+    @Test
+    public void fuelLvov(){
+        HomePage homePage = new HomePage(driver);
+        homePage.openUkrNet();
+        homePage.getRightTabs().tapFuel().click();
+        homePage.getRightTabs().cityTap().click();
+        homePage.getRightTabs().lvov().click();
+
+        Assert.assertTrue(homePage.getRightTabs().lvovAssert().isDisplayed());
+    }
+
+    @Test
+    public void golovneLink(){
+        HomePage homePage = new HomePage(driver);
+        homePage.openUkrNet();
+        homePage.golovne().click();
+
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.ukr.net/news/main.html");
+    }
+
+    @Test
+    public void c(){
+        HomePage homePage = new HomePage(driver);
+        homePage.openUkrNet();
+        homePage.getRightTabs().tabCurrency().click();
+        homePage.getRightTabs().tapFuel().click();
+        homePage.getRightTabs().cityTap().click();
+        homePage.getRightTabs().lvov().click();
+
+        Assert.assertTrue(homePage.getRightTabs().lvovAssert().isDisplayed());
+    }
 }
+

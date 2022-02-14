@@ -13,4 +13,8 @@ public class LeftTabs extends BasePage {
     public WebElement inputOnSinoptik(){
         return findElement("//input[@id=\"search_city\"]");
     }
+    public WebElement inputLogin(){return findElement("//input[@id=\"id-input-login\"]");}
+    public WebElement inputPassword(){return findElement("//input[@name='password']");}
+    public WebElement btnSignIn(){return findElement("//button[@class=\"form__submit\"]");}
+    public WebElement errorData(){return findElement("//p[@class=\"form__error form__error_wrong form__error_visible\"]");}
 }

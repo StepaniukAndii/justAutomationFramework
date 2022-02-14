@@ -18,4 +18,8 @@ public class RightTabs extends BasePage {
     public WebElement tabAfisha(){
         return findElement("//li[@data-tab=\"afisha\"]");
     }
+    public WebElement lvov(){return findElement("//a[@id='13']");}
+    public WebElement cityTap(){return findElement("//div[@id=\"fuel\"]//span[@class=\"act-region\"]");}
+    public WebElement lvovAssert(){return findElement("//span[text()='Львів']");}
+
 }
