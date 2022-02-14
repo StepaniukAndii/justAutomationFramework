@@ -78,4 +78,7 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement dropDownListCopyrightButton(){
         return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, 'pages/copyright')]");
     }
+    public WebElement copyrightPageFurtherResourcesSectionFirstLinkSoundCloud(){
+        return findElementByXpath("//a[contains(@href, 'http://www.wipo.int/directory/en/urls.jsp')]");
+    }
 }
