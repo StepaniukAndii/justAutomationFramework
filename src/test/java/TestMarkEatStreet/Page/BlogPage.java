@@ -9,4 +9,5 @@ public class BlogPage extends BasePage{
     public WebElement enneagramtextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to What')]");}
     public WebElement lgbtqtextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to LGBTQ')]");}
     public WebElement compostingtextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Nati')]");}
+    public WebElement pacificislandertextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Asian')]");}
 }
