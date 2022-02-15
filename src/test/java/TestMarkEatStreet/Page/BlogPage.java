@@ -14,4 +14,5 @@ public class BlogPage extends BasePage{
     public WebElement milwaukeetextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to EatStreet + Mil')]");}
     public WebElement womenrestorauntstextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Women')]");}
     public WebElement blackrestorauntstextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Wisconsin')]");}
+    public WebElement wingweektextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to EatStreet’s Wing Week')]");}
 }
