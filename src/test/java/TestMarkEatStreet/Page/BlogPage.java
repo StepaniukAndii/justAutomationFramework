@@ -12,4 +12,5 @@ public class BlogPage extends BasePage{
     public WebElement pacificislandertextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Asian')]");}
     public WebElement earthdaytestbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Earth')]");}
     public WebElement milwaukeetextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to EatStreet + Mil')]");}
+    public WebElement womenrestorauntstextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Women')]");}
 }
