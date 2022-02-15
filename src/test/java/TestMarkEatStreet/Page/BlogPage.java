@@ -8,4 +8,5 @@ public class BlogPage extends BasePage{
     public BlogPage(WebDriver driver){super(driver);}
     public WebElement enneagramtextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to What')]");}
     public WebElement lgbtqtextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to LGBTQ')]");}
+    public WebElement compostingtextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Nati')]");}
 }
