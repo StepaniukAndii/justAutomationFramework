@@ -11,4 +11,5 @@ public class ForCutomersPage extends BasePage{
     public WebElement accquestionsbtn(){return findElementByXpath("//div[contains(@class,'topicContent')]//*[contains(text(),'Acc')]");}
     public WebElement orderhelpbtn(){return findElementByXpath("//div[contains(@class,'topicContent')]//*[contains(text(),'Order')]");}
     public WebElement paymentquestionsbtn(){return findElementByXpath("//div[contains(@class,'topicContent')]//*[contains(text(),'Payment')]");}
+    public WebElement couponquestionsbtn(){return findElementByXpath("//div[contains(@class,'topicContent')]//*[contains(text(),'Coupon')]");}
 }
