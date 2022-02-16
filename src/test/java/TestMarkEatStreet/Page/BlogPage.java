@@ -17,4 +17,5 @@ public class BlogPage extends BasePage{
     public WebElement wingweektextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to EatStreet’s Wing Week')]");}
     public WebElement givingseasontextbtn(){return findElementByXpath("//a[contains(@title,'Permalink to Recap')]");}
     public WebElement mayarchivebtn(){return findElementByXpath("//*[contains(text(),'May 2021')]");}
+    public WebElement nextpagebtn(){return findElementByXpath("//a[contains(@class,'next page')]");}
 }
