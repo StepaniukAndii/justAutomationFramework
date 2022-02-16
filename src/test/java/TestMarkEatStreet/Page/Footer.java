@@ -12,4 +12,5 @@ public class Footer extends BasePage{
     public WebElement techjobsbtn(){return findElementByXpath("//label[contains(text(),'Tech')]");}
     public WebElement productanalysstbtn(){return findElementByXpath("//span[contains(text(),'Product')]");}
     public WebElement blogbtn(){return findElementByXpath("//a[contains(@href,'blog')]");}
+    public WebElement forcustomersbtn(){return findElementByXpath("//*[contains(text(),'For Cust')]");}
 }
