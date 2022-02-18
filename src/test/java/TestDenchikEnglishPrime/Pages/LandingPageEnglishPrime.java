@@ -28,4 +28,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement navMenuSpeakingClubButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'english-speaking-club-kiev/')]");
     }
+    public WebElement navMenuContactsButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'contact/')]");
+    }
 }
