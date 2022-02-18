@@ -19,4 +19,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement navMenuGuaranteesButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/garantii/')]");
     }
+    public WebElement navMenuScheduleButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/raspisanie/')]");
+    }
 }
