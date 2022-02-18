@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class NavMenuFreeLessonButton extends TestInit {
     LandingPageEnglishPrime landingPageEnglishPrime;
     @Test
-    public void navMenuAboutSchoolButton(){
+    public void navMenuFreeLessonButton(){
         driver.get("https://englishprime.ua/");
         landingPageEnglishPrime = new LandingPageEnglishPrime(driver);
         landingPageEnglishPrime.navMenuFreeLessonButton().click();
