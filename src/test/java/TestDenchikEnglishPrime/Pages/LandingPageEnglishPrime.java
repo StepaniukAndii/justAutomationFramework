@@ -22,4 +22,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement navMenuScheduleButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/raspisanie/')]");
     }
+    public WebElement navMenuFreeLessonButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/vvodniy-urok-free/')]");
+    }
 }
