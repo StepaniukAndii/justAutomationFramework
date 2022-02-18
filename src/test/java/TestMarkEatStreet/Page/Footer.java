@@ -16,4 +16,5 @@ public class Footer extends BasePage{
     public WebElement accessibilitystatementbtn(){return findElementByXpath("//a[contains(text(),'Acces')]");}
     public WebElement restorauntsdashboardbtn(){return findElementByXpath("//a[contains(text(),'Restaurant Dashboard')]");}
     public WebElement privacypolicybtn(){return findElementByXpath("//a[contains(text(),'Privacy')]");}
+    public WebElement termsofusebtn(){return findElementByXpath("//a[contains(text(),'Terms of Use')]");}
 }
