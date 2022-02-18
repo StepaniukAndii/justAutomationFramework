@@ -25,4 +25,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement navMenuFreeLessonButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/vvodniy-urok-free/')]");
     }
+    public WebElement navMenuSpeakingClubButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'english-speaking-club-kiev/')]");
+    }
 }
