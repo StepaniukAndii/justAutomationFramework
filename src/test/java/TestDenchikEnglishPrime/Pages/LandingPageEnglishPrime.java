@@ -31,4 +31,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement navMenuContactsButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'contact/')]");
     }
+    public WebElement aboutSchoolDropDownListMethodButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/metodika/')]");
+    }
 }
