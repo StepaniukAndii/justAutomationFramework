@@ -67,4 +67,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement coursesDropDownListPrepearingForZNOButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/podgotovka-k-zno-po-anglijskomu-yazyku/')]");
     }
+    public WebElement coursesDropDownListForBeginnersButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/english-language-for-beginners-kiev/')]");
+    }
 }
