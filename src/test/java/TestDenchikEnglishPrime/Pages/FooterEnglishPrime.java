@@ -16,4 +16,7 @@ public class FooterEnglishPrime extends BasePage {
     public WebElement instagramLinkButton(){
         return findElementByXpath("//a[contains(@href,'https://www.instagram.com/english_prime_school/')]");
     }
+    public WebElement websiteMapButton(){
+        return findElementByXpath("//a[contains(@href, '/maps/')]");
+    }
 }
