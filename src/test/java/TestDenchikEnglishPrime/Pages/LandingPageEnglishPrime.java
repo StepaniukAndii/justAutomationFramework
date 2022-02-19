@@ -55,4 +55,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement aboutSchoolDropDownListFAQButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/faq/')]");
     }
+    public WebElement aboutSchoolDropDownListVacanciesButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/vakansii/')]");
+    }
 }
