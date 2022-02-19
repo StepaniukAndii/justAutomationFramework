@@ -70,4 +70,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement coursesDropDownListForBeginnersButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/english-language-for-beginners-kiev/')]");
     }
+    public WebElement coursesDropDownListForStudentsButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/english-language-for-schoolboys-kiev/')]");
+    }
 }
