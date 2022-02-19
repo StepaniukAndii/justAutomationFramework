@@ -73,4 +73,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement coursesDropDownListForStudentsButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/english-language-for-schoolboys-kiev/')]");
     }
+    public WebElement coursesDropDownListMasterCourseButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/masterskij-kurs-mastery/')]");
+    }
 }
