@@ -103,4 +103,10 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement contactsDropDownListPecherskayaButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, '/kursy-anglijskogo-yazyka-na-metro-pecherskaya/')]");
     }
+    public WebElement changeLanguageButton(){
+        return findElementByXpath("//div[contains(@class, 'header-right')]//li[contains(@class, 'header-lang-item')]");
+    }
+    public WebElement ukrLanguageButton(){
+        return findElementByXpath("//div[contains(@class, 'header-right')]//a[contains(@href, '/uk/')]");
+    }
 }
