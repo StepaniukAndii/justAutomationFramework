@@ -88,4 +88,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement coursesDropDownListTravelEnglishButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/english-language-for-travelers-kiev/')]");
     }
+    public WebElement coursesDropDownListEnglishForJobInterviewButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, 'https://englishprime.ua/english-language-interview-rabota-priem/')]");
+    }
 }
