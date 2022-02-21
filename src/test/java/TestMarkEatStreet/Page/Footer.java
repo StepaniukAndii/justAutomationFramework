@@ -21,4 +21,5 @@ public class Footer extends BasePage{
     public WebElement googleplaybtn(){return findElementByXpath("//a[contains(@class,'app-btn-android')]");}
     public WebElement appstorebtn(){return findElementByXpath("//a[contains(@class,'app-btn-iphone')]");}
     public WebElement facebookbtn(){return findElementByXpath("//a[contains(@href,'https://www.facebook')]");}
+    public WebElement twitterbtn(){return findElementByXpath("//a[contains(@href,'https://twitter')]");}
 }
