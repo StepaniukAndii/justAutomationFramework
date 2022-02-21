@@ -94,4 +94,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement coursesDropDownListListeningSkillsButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, '/advanced-listening-skills/')]");
     }
+    public WebElement coursesDropDownListPrepearingForIELTSButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, '/kurs-podgotovki-k-ielts/')]");
+    }
 }
