@@ -100,4 +100,7 @@ public class LandingPageEnglishPrime extends BasePage {
     public WebElement coursesDropDownListCoursesForAdultsButton(){
         return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, '/kursy-anglijskogo-dlya-vzroslyh/')]");
     }
+    public WebElement contactsDropDownListPecherskayaButton(){
+        return findElementByXpath("//nav[contains(@class, 'header-nav')]//a[contains(@href, '/kursy-anglijskogo-yazyka-na-metro-pecherskaya/')]");
+    }
 }
