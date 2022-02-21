@@ -17,4 +17,7 @@ public class Body extends BasePage {
     public WebElement dallasbtn(){return findElementByXpath("//a[contains(@href,'dallas')]");}
     public WebElement learnmorebtn(){return findElementByXpath("//a[contains(text(),'Learn')]");}
     public WebElement gettheappbtn(){return findElementByXpath("//a[contains(text(),'Get The App')]");}
+    public WebElement enteremailfailinput(){return findElementByXpath("//input[contains(@placeholder,'Enter your')]");}
+    public WebElement signupemailfailbtn(){return findElementByXpath("//button[contains(@type,'submit')]");}
+    public WebElement whoopsemailfailokaybtn(){return findElementByXpath("//a[contains(@id,'confirm')]");}
 }
