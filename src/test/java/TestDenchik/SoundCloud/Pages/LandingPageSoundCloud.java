@@ -93,4 +93,13 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement searchButtonMusic(){
         return findElementByXpath("//button[contains(@class, 'headerSearch__submit sc-ir')]");
     }
+    public WebElement continueWithGoogleButton(){
+        return findElementByXpath("//button[contains(@class, 'google-plus-signin')]");
+    }
+    public WebElement soundCloudButton(){
+        return findElementByXpath("//button[contains(text(), 'SoundCloud')]");
+    }
+    public WebElement iframeSD(){
+        return findElementByXpath("//iframe[contains(@class, 'iframe')]");
+    }
 }
