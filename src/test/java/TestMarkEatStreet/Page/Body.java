@@ -20,4 +20,5 @@ public class Body extends BasePage {
     public WebElement enteremailfailinput(){return findElementByXpath("//input[contains(@placeholder,'Enter your')]");}
     public WebElement signupemailfailbtn(){return findElementByXpath("//button[contains(@type,'submit')]");}
     public WebElement whoopsemailfailokaybtn(){return findElementByXpath("//a[contains(@id,'confirm')]");}
+    public WebElement textandroinlinkbtn(){return findElementByXpath("//label[contains(@class,'label-and')]");}
 }
