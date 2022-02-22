@@ -353,4 +353,33 @@ public class HomePage extends BasePage {
     public boolean getButtonfurther() {
         return findElementByXpath("//button[@class='btn btn--blue _Lj2bAS']").isDisplayed();
     }
+
+    public WebElement getButtonBasket() {
+        return driver.findElement(By.xpath("//span[@class='header__cart-text--sum']"));
+
+    }
+
+    public boolean getButtonKiyv() {
+        return findElementByXpath("//div[@class='header__locations-opener is-light']").isDisplayed();
+    }
+
+    public WebElement getButtonCityChoice() {
+        return driver.findElement(By.xpath("//div[@class='header__menu-opener-button']"));
+    }
+
+    public WebElement getButtonRepair() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Ремонт')]"));
+    }
+
+    public WebElement getButtonGlye() {
+        return driver.findElement(By.xpath("//img[@data-img='/upload/iblock/fc1/4039.jpg']"));
+    }
+
+    public WebElement getButtonGlyeFORTile() {
+        return driver.findElement(By.xpath("//img[@data-img='/upload/iblock/086/kley_dlya_plitki_.png']"));
+    }
+
+    public boolean getButtonHardy() {
+        return driver.findElement(By.xpath("//div[@class='shop-categories__item-picture']")).isDisplayed();
+    }
 }

@@ -19,4 +19,10 @@ public class VyborTovaraPage extends BasePage {
         return findElementByXpath("//div[@id='allArticles']/article[1]");
     }
 
+    public WebElement btnVyborTovara1() {
+        return findElementByXpath("//div[@id='allArticles']/article[2]");
+    }
+
+
 }
+

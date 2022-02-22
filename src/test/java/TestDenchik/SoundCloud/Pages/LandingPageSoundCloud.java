@@ -60,4 +60,46 @@ public class LandingPageSoundCloud extends BasePage {
     public WebElement aboutUsPageAdvertisingOnSoundCloudButton(){
         return findElementByXpath("//a[contains(@href, 'http://advertising.soundcloud.com')]");
     }
+    public WebElement aboutUsPageenquiriesbutton(){
+        return findElementByXpath("//a[contains(@href, 'http://soundcloud.com/press')]");
+    }
+    public WebElement aboutUsPageAPIandPartnershipsButton(){
+        return findElementByXpath("//a[contains(@href, 'http://developers.soundcloud.com/support')]");
+    }
+    public WebElement aboutUsPageLawEnforementRequestsButton(){
+        return findElementByXpath("//a[contains(@href, 'https://soundcloud.com/law-enforcement-guidelines')]");
+    }
+    public WebElement aboutUsPageCurrentOpeningsButton(){
+        return findElementByXpath("//a[contains(@href, 'http://soundcloud.com/jobs')]");
+    }
+    public WebElement legalButton(){
+        return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, '/terms-of-use')]");
+    }
+    public WebElement dropDownListCopyrightButton(){
+        return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, 'pages/copyright')]");
+    }
+    public WebElement copyrightPageFurtherResourcesSectionFirstLinkSoundCloud(){
+        return findElementByXpath("//a[contains(@href, 'http://www.wipo.int/directory/en/urls.jsp')]");
+    }
+    public WebElement copyrightPageFurtherResourcesSectionSecondLinkSoundCloud(){
+        return findElementByXpath("//a[contains(@href, 'http://www.wipo.int/wipolex/en/')]");
+    }
+    public WebElement dropDownListBlogButtonSoundCloud(){
+        return findElementByXpath("//ul[contains(@class, 'headerMenu__list sc-list-nostyle')]//a[contains(@href, 'https://blog.soundcloud.com')]");
+    }
+    public WebElement searchInputSoundCloud(){
+        return findElementByXpath("//input[contains(@class, 'headerSearch__input sc-input g-all-transitions-300')]");
+    }
+    public WebElement searchButtonMusic(){
+        return findElementByXpath("//button[contains(@class, 'headerSearch__submit sc-ir')]");
+    }
+    public WebElement continueWithGoogleButton(){
+        return findElementByXpath("//button[contains(@class, 'google-plus-signin')]");
+    }
+    public WebElement soundCloudButton(){
+        return findElementByXpath("//button[contains(text(), 'SoundCloud')]");
+    }
+    public WebElement iframeSD(){
+        return findElementByXpath("//iframe[contains(@class, 'iframe')]");
+    }
 }
