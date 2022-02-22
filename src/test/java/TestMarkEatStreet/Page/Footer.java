@@ -24,4 +24,5 @@ public class Footer extends BasePage{
     public WebElement twitterbtn(){return findElementByXpath("//a[contains(@href,'https://twitter')]");}
     public WebElement instagrambtn(){return findElementByXpath("//a[contains(@href,'https://www.instagram')]");}
     public WebElement livechatbtn(){return findElementByXpath("//span[contains(text(),'Live Chat')]");}
+    public WebElement apibtn(){return findElementByXpath("//a[contains(text(),'API')]");}
 }
