@@ -13,6 +13,7 @@ public abstract class BasePage implements Expectations {
 
     int BASIC_TIME = 15;
 
+
     @Override
     public List<WebElement> waitVisibilityOfAllElementsLocatedBy(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
