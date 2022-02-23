@@ -26,4 +26,5 @@ public class Footer extends BasePage{
     public WebElement livechatbtn(){return findElementByXpath("//span[contains(text(),'Live Chat')]");}
     public WebElement apibtn(){return findElementByXpath("//a[contains(text(),'API')]");}
     public WebElement geteatstreetbtn(){return findElementByXpath("//a[contains(text(),'Get Eat')]");}
+    public WebElement footergethelpbtn(){return findElementByXpath("//a[contains(text(),'Get Help')]");}
 }
