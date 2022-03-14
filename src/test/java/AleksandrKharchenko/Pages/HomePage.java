@@ -337,4 +337,32 @@ public class HomePage extends BasePage {
     public WebElement getBtnProfile() {
         return findElementByXpath("//button[@aria-label='Профіль']");
     }
+
+    public WebElement getFieldAllUkraine() {
+        return findElementByXpath("//input[@id='cityField']");
+    }
+
+    public WebElement getVolynskayaObl() {
+        return findElementByXpath("//span[contains(text(),'Волынская')]");
+    }
+
+    public WebElement closeModalOlx() {
+        return findElementByXpath("//button[text()='Принять и Закрыть']");
+    }
+
+    public WebElement getCityLutsk() {
+        return findElementByXpath("//a[@id='a-region-72']");
+    }
+
+    public WebElement getNedvigimostSection() {
+        return findElementByXpath("//a[contains(@href, 'ua/nedvizhimost/lu')]//span[contains(text(),'Недвижимость')]");
+    }
+
+    public WebElement getLinkFlat() {
+        return findElementByXpath("//span//span[contains(text(),'Квартиры')]");
+    }
+
+    public boolean isDisplayedFlatInLuck() {
+        return findElementByXpath("//h1[contains(text(),'Квартиры Луцк')]").isDisplayed();
+    }
 }
