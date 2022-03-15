@@ -24,7 +24,7 @@ public class TestOlx extends TestInit {
     }
 
     @Test
-    public void checkDoIt(){
+    public void checkFacebookLoginVerificationPage(){
         HomePage homePage = new HomePage(driver);
         AccountPage accountPage = new AccountPage(driver);
         openUrl("https://www.olx.ua/");
@@ -33,5 +33,17 @@ public class TestOlx extends TestInit {
         accountPage.getFacebookLoginBtn().click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("facebook.com/login"));
+    }
+
+    @Test
+    public void checkNegativeLogin(){
+        HomePage homePage = new HomePage(driver);
+        AccountPage accountPage = new AccountPage(driver);
+        openUrl("https://www.olx.ua/");
+        homePage.closeModalOlx().click();
+        homePage.getLinkMyProfile().click();
+        accountPage.getSignInBtn().get(0).click();
+
+        Assert.assertTrue(accountPage.isDisplayedErrorOlxMSG());
     }
 }
