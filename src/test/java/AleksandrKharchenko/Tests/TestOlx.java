@@ -46,4 +46,15 @@ public class TestOlx extends TestInit {
 
         Assert.assertTrue(accountPage.isDisplayedErrorOlxMSG());
     }
+
+    @Test
+    public void checkChangeLanguage(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.olx.ua/");
+        homePage.closeModalOlx().click();
+        homePage.getLinkMova().click();
+        sleep(1);
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("/uk/"));
+    }
 }
