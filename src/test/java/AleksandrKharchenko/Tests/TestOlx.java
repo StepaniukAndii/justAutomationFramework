@@ -57,4 +57,16 @@ public class TestOlx extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("/uk/"));
     }
+
+    @Test
+    public void checkAdvertisingSection(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://www.olx.ua/");
+        homePage.closeModalOlx().click();
+        homePage.getBtnWork().click();
+        sleep(1);
+        homePage.getLinkAdvertising().click();
+
+        Assert.assertTrue(homePage.isDisplayedAdvertising());
+    }
 }
