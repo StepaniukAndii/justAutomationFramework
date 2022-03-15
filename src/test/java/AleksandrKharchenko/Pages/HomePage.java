@@ -369,4 +369,8 @@ public class HomePage extends BasePage {
     public WebElement getLinkMyProfile() {
         return findElementByXpath("//strong[text()='Мой профиль']");
     }
+
+    public WebElement getLinkMova() {
+        return findElementByXpath("//a[@id='changeLang']");
+    }
 }
