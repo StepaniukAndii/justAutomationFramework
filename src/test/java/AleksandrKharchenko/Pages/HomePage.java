@@ -373,4 +373,16 @@ public class HomePage extends BasePage {
     public WebElement getLinkMova() {
         return findElementByXpath("//a[@id='changeLang']");
     }
+
+    public WebElement getBtnWork() {
+        return findElementByXpath("//span[contains(@class,'cat-cmt-icon-6')]");
+    }
+
+    public WebElement getLinkAdvertising() {
+        return findElementByXpath("//span[contains(text(),'дизайн / PR')]");
+    }
+
+    public boolean isDisplayedAdvertising() {
+        return findElementByXpath("//span[@id='main-category-choose-label']").isDisplayed();
+    }
 }
