@@ -365,4 +365,8 @@ public class HomePage extends BasePage {
     public boolean isDisplayedFlatInLuck() {
         return findElementByXpath("//h1[contains(text(),'Квартиры Луцк')]").isDisplayed();
     }
+
+    public WebElement getLinkMyProfile() {
+        return findElementByXpath("//strong[text()='Мой профиль']");
+    }
 }

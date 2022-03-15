@@ -1,5 +1,6 @@
 package AleksandrKharchenko.Tests;
 
+import AleksandrKharchenko.Pages.AccountPage;
 import AleksandrKharchenko.Pages.HomePage;
 import ClasesToAllUs.TestInit;
 import org.testng.Assert;
@@ -20,5 +21,17 @@ public class TestOlx extends TestInit {
         homePage.getLinkFlat().click();
 
         Assert.assertTrue(homePage.isDisplayedFlatInLuck());
+    }
+
+    @Test
+    public void checkDoIt(){
+        HomePage homePage = new HomePage(driver);
+        AccountPage accountPage = new AccountPage(driver);
+        openUrl("https://www.olx.ua/");
+        homePage.closeModalOlx().click();
+        homePage.getLinkMyProfile().click();
+        accountPage.getFacebookLoginBtn().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("facebook.com/login"));
     }
 }
