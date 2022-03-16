@@ -31,4 +31,16 @@ public class CheckMenuKievstar extends TestInit {
 
         Assert.assertTrue(driver.getCurrentUrl().contains("phones"));
     }
+
+    @Test
+    public  void checTVKievstar(){
+        KievstarPage kievstarPage = new KievstarPage(driver);
+        openUrl("https://kyivstar.ua/");
+        kievstarPage.btnTV().click();
+        kievstarPage.btnApp().click();
+        kievstarPage.btnSelectTariff().get(0).click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("tv"));
+    }
+
 }
