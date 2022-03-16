@@ -57,4 +57,16 @@ public class KievstarPage extends BasePage {
             }
         }
     }
+
+    public WebElement btnTV() {
+        return findElementByXpath("//div/a[contains(text(), 'Телебачення')]");
+    }
+
+    public WebElement btnApp() {
+        return  findElementByXpath("//a[@id='app']");
+    }
+
+    public List<WebElement> btnSelectTariff() {
+        return findElementsByXpath("//a[contains(text(),'Вибрати тариф')]");
+    }
 }
