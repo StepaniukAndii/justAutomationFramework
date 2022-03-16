@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class CheckMenuKievstar extends TestInit {
 
     @Test
-    public void checkLinkMenuKievstar(){
+    public void checkLinkMenuKievstar() {
         KievstarPage kievstarPage = new KievstarPage(driver);
         openUrl("https://kyivstar.ua/");
 
@@ -17,5 +17,18 @@ public class CheckMenuKievstar extends TestInit {
         Assert.assertTrue(kievstarPage.menuLinkTV().get(0).isDisplayed());
         Assert.assertTrue(kievstarPage.menuLink4G().get(0).isDisplayed());
         Assert.assertTrue(kievstarPage.menuLinkForBisssnes().isDisplayed());
+    }
+
+
+    @Test
+    public void checkShopKievstar() {
+        KievstarPage kievstarPage = new KievstarPage(driver);
+        openUrl("https://kyivstar.ua/");
+        kievstarPage.buttonSelectCity().click();
+        kievstarPage.menuLink().click();
+        ShopKievstarPage shopKievstarPage = new ShopKievstarPage(driver);
+        shopKievstarPage.clickLinkPhone().get(0).click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("phones"));
     }
 }
