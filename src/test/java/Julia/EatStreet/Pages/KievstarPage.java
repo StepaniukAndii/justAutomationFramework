@@ -2,6 +2,8 @@ package Julia.EatStreet.Pages;
 
 import AlyonaBoychuk.Page.HomePage;
 import ClasesToAllUs.BasePage;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -68,5 +70,41 @@ public class KievstarPage extends BasePage {
 
     public List<WebElement> btnSelectTariff() {
         return findElementsByXpath("//a[contains(text(),'Вибрати тариф')]");
+    }
+
+    public WebElement linkDergavniySektor() {
+        return findElementByXpath("//span[contains(text(), 'Державному сектору')]");
+    }
+
+    public List<WebElement> btnTelefonia() {
+        return findElementsByXpath("//div[@class='DropdownMenu_drop-down-menu__container__3T6Vf']");
+    }
+
+    public WebElement btnVirtualAts() {
+        return findElementByXpath("//a[@id='Ats']");
+    }
+
+    public WebElement btnZamovitySms() {
+        return  findElementByXpath("//a[contains(text(), 'Підключити через SMS')]");
+    }
+
+    public WebElement btnZamovity() {
+        return  findElementByXpath("//button[@class='popup-trigger btn btn--blue btn--blue-business sticky-header__btn']");
+    }
+
+    public List<WebElement> fieldName() {
+        return findElementsByXpath("//input[@class='application-form__input']");
+    }
+
+    public WebElement fieldPhone() {
+        return driver.findElement(By.xpath("//input[@type='tel']"));
+    }
+
+    public WebElement closeWindow() {
+        return findElementByXpath("//div/div[@class='application-form__close']");
+    }
+
+    public WebElement logoAtc() {
+        return findElementByXpath("//div/p[@class='sections-container__product-title']");
     }
 }
