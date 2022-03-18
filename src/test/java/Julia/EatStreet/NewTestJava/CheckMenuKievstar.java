@@ -43,4 +43,25 @@ public class CheckMenuKievstar extends TestInit {
         Assert.assertTrue(driver.getCurrentUrl().contains("tv"));
     }
 
+    @Test
+    public void checkTefoniaKievstar(){
+        KievstarPage kievstarPage = new KievstarPage(driver);
+        openUrl("https://kyivstar.ua/");
+        kievstarPage.buttonSelectCity().click();
+        kievstarPage.linkDergavniySektor().click();
+        kievstarPage.btnTelefonia().get(2).click();
+        kievstarPage.btnVirtualAts().click();
+        kievstarPage.btnZamovitySms().click();
+        kievstarPage.btnZamovity().click();
+        kievstarPage.fieldName().get(0).sendKeys("Mary");
+        kievstarPage.fieldName().get(1).sendKeys("mary@gmail.com");
+        sleep(3);
+        kievstarPage.fieldPhone().click();
+        kievstarPage.fieldPhone().sendKeys("250561202");
+        kievstarPage.closeWindow().click();
+
+        Assert.assertTrue(kievstarPage.logoAtc().isDisplayed());
+        Assert.assertTrue(kievstarPage.btnZamovity().isDisplayed());
+    }
+
 }
