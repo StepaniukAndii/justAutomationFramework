@@ -107,4 +107,24 @@ public class KievstarPage extends BasePage {
     public WebElement logoAtc() {
         return findElementByXpath("//div/p[@class='sections-container__product-title']");
     }
+
+    public List<WebElement> btnPidcluchity() {
+        return  findElementsByXpath("//button/span[contains(text(), 'Підключити')]");
+    }
+
+    public WebElement rbtnCoristyetesKievstar() {
+        return findElementByXpath("//button/span[contains(text(), 'Ні')]");
+    }
+
+    public WebElement btnWantNumber() {
+        return findElementByXpath("//button/span[contains(text(), 'Хочу')]");
+    }
+
+    public List<WebElement> btnFindShop() {
+        return findElementsByXpath("//a/span[contains(text(), 'Знайти магазин')]");
+    }
+
+    public WebElement linkShopKievstar() {
+        return findElementByXpath("//span[contains(text(), 'Магазини Київстар')]");
+    }
 }
