@@ -2,6 +2,7 @@ package Julia.EatStreet.NewTestJava;
 
 import ClasesToAllUs.TestInit;
 import Julia.EatStreet.Pages.KievstarPage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -64,4 +65,20 @@ public class CheckMenuKievstar extends TestInit {
         Assert.assertTrue(kievstarPage.btnZamovity().isDisplayed());
     }
 
+    @Test
+    public void checkTarifKievstar() {
+        KievstarPage kievstarPage = new KievstarPage(driver);
+        openUrl("https://kyivstar.ua/");
+        kievstarPage.buttonSelectCity().click();
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)", "");
+
+        kievstarPage.btnPidcluchity().get(2).click();
+        kievstarPage.rbtnCoristyetesKievstar().click();
+        kievstarPage.btnWantNumber().click();
+        kievstarPage.btnFindShop().get(0).click();
+
+        Assert.assertTrue(kievstarPage.linkShopKievstar().isDisplayed());
+    }
 }
