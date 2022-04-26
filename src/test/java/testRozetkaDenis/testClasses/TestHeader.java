@@ -23,9 +23,7 @@ public class TestHeader extends TestInit {
 
     private void openAuthAndCart(HeaderPage headerPage) {
         for (int i = 0; i < 2; i++) {
-            sleep(1); //for elements presence
             headerPage.authAndCart().get(i).click();
-            sleep(1); //for modal window presence
             headerPage.modalMenuClose().click();
         }
     }
