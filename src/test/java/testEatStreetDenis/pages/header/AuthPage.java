@@ -26,11 +26,11 @@ public class AuthPage extends BasePage {
         return findElementByXpath("//div [@id='uniqueid']");
     }
 
-    public WebElement email() {
+    public WebElement inputEmail() {
         return findElementByXpath("//input [@name='email']");
     }
 
-    public WebElement pass() {
+    public WebElement inputPass() {
         return findElementByXpath("//input [@name='password']");
     }
 
@@ -54,11 +54,11 @@ public class AuthPage extends BasePage {
         return findElementByXpath("//button [@type='submit']");
     }
 
-    public WebElement signUp() {
+    public WebElement signUpTransfer() {
         return findElementByXpath("//a [@href='/create-account?next=~2F']");
     }
 
-    public WebElement signIn() {
-        return findElementByXpath("//a [@ui-sref='signin({nextState: nextState, next: next, alertText: signinCtrl.alertText})']");
+    public WebElement signInTransfer() {
+        return findElementByXpath("//a [contains(@ui-sref,'signin')]");
     }
 }

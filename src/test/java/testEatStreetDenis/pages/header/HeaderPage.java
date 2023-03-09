@@ -10,19 +10,23 @@ public class HeaderPage extends BasePage {
         super(driver);
     }
 
-    public WebElement logo() {
-        return findElementByXpath("//img [@class='logo-alternate']");
+    public WebElement getLogo() {
+        return findElementByXpath("//img [contains(@class,'logo-alternate')]");
     }
 
-    public WebElement partnerWithUs() {
-        return findElementByXpath("//a [@class='partners-link ng-scope']");
+    public WebElement transferToPartnerWithUsSection() {
+        return findElementByXpath("//a [contains(@class,'partners-link ng-scope')]");
     }
 
-    public WebElement signIn() {
-        return findElementByXpath("//div [@class='is-clickable']");
+    public WebElement openSignIn() {
+        return findElementByXpath("//div [contains(@class,'is-clickable')]");
     }
 
-    public WebElement cart() {
-        return findElementByXpath("//li [@class='is-clickable']");
+    public WebElement openCart() {
+        return findElementByXpath("//li [contains(@class,'is-clickable')]");
+    }
+
+    public WebElement cartSection() {
+        return findElementByXpath("//div [contains(@class, 'widget widget--cart')]");
     }
 }
